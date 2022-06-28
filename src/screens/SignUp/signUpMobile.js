@@ -61,10 +61,12 @@ const SignUpMobile = ({navigation}) => {
               style={{
                 fontWeight: '400',
 
-                fontSize: 20,
+                //fontSize: 20,
+                fontSize:17,
                 fontWeight: '500',
 
-                margin: 10,
+                //margin: 10,
+                margin:7,
                 color: 'black',
                 color: '#000000',
               }}>
@@ -72,15 +74,18 @@ const SignUpMobile = ({navigation}) => {
             </Text>
             <View
               style={{
-                left: 135,
-                top: -47.5,
+                //left: 135,
+                left:115,
+                //top: -47.5,
+                top: -37.5,
                 width: '20%',
                 borderWidth: 1,
                 height: '103%',
                 alignSelf: 'center',
                 backgroundColor: '#DCC7E1',
               }}>
-              <Text style={{textAlign: 'center', paddingTop: 10}}>
+              <Text style={{textAlign: 'center', //paddingTop: 10
+              paddingTop:5}}>
                 {icons.rightarrow}
               </Text>
             </View>

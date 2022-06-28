@@ -44,7 +44,7 @@ const GovtRegisterID = ({navigation}) => {
           </View>
           <View
             style={govtStyles.textMain}>
-            <Text style={govtStyles.textIDCard}>Adhar Card </Text>
+            <Text style={govtStyles.textIDCard}>Aadhaar Card </Text>
             <Text style={govtStyles.textCard}>
               Lorem Ipsum is simply dummy text of the printing
             </Text>

@@ -22,11 +22,11 @@ const SplashScreen = ({navigation}) => {
           resizeMode="cover"
         />
 
-        <Image
+        {/* <Image
           style={splashStyles.backgroundContainer}
           resizeMode="cover"
           source={require('../../../assets/images/screen1.png')}
-        />
+        /> */}
 
         <Image
           resizeMode="contain"
@@ -34,7 +34,8 @@ const SplashScreen = ({navigation}) => {
           source={require('../../../assets/images/logo.png')}
         />
 
-        <View style={{top: 290}}>
+        <View //style={{top: 290}}
+        style={{top: 250}}>
           <Text style={splashStyles.headline}>
             By clicking “Log in”, you agree with our Terms. learn how we process
             your data in our privacy policy and cokkies policy.

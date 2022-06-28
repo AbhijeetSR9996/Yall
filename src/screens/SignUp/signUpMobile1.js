@@ -83,8 +83,10 @@ const SignUpMobile1 = ({navigation}) => {
           onPress={() => navigation.navigate('VerificationCode')}>
           <Text
             style={{
-              left: 347,
-              top: 570,
+              //left: 347,
+              left:300,
+              //top: 570,
+              top:430,
               position: 'absolute',
               backgroundColor: '#DCC7E1',
               borderRadius: 20,

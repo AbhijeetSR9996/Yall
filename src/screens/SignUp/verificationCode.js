@@ -28,10 +28,11 @@ const VerificationCode = ({navigation}) => {
   return (
     <View style={signupStyles.container}>
       <View style={signupStyles.mainView}>
-        <Text style={signupStyles.text}>Enter your verification code</Text>
+        <Text style={signupStyles.text}>Enter your verification code.</Text>
       </View>
       <View style={signupStyles.text1}>
-        <Text>sent Code to 1234567990 - </Text>
+        {/* <Text>sent Code to 1234567990 - </Text> */}
+        <Text>Sent to 1234567990 - </Text>
         <TouchableOpacity>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
@@ -62,7 +63,7 @@ const VerificationCode = ({navigation}) => {
         />
       </View>
       <View style={signupStyles.textView}>
-        <Text style={signupStyles.text2}>Didn't get code?</Text>
+        <Text style={signupStyles.text2}>Didn't get a code?</Text>
         <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>

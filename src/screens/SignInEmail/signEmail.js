@@ -39,7 +39,7 @@ const SignEmail = ({navigation}) => {
           <Text style={emailStyles.headBelowText}>To continue yall</Text>
           <TouchableOpacity style={emailStyles.Touchablemail1}>
             <View style={{flexDirection: 'row'}}>
-              <Image source={imageicon.profile} style={{margin: 15}} />
+              <Image source={imageicon.profile2} style={{margin: 15,height:50,width:50}} />
               <View>
                 <Text style={emailStyles.userNameText}>Sahil Saifi</Text>
                 <Text style={emailStyles.userEmail}>sahil@gmail.com</Text>
@@ -48,7 +48,7 @@ const SignEmail = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity style={emailStyles.Touchablemail2}>
             <View style={{flexDirection: 'row'}}>
-              <Image source={imageicon.profile} style={{margin: 15}} />
+              <Image source={imageicon.profile3} style={{margin: 15,height:50,width:50}} />
               <View>
                 <Text style={emailStyles.userNameText}>Sahil Saifi</Text>
                 <Text style={emailStyles.userEmail}>sahil@gmail.com</Text>
