@@ -21,6 +21,9 @@ import Gender2 from '../src/screens/genderScreens/gender2';
 import Gender3 from '../src/screens/genderScreens/gender3';
 import Gender4 from '../src/screens/genderScreens/gender4';
 import AddPhoto from '../src/screens/AddPhoto/addPhoto';
+
+import ProfileDisplay from "../src/screens/ProfileDisplay/ProfileDisplay";
+
 const Stack = createStackNavigator();
 
 function MainStackNavigation() {
@@ -50,6 +53,8 @@ function MainStackNavigation() {
         <Stack.Screen name="Gender3" component={Gender3} />
         <Stack.Screen name="Gender4" component={Gender4} />
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
+
+        <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
       </Stack.Navigator>
     </NavigationContainer>
   );

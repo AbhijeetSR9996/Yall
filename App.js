@@ -14,9 +14,11 @@ import SignEmail from "./src/screens/SignInEmail/signEmail";
 import AboutPrivacy from "./src/screens/aboutPrivacy/privacy";
 import Gender from "./src/screens/genderScreens/gender";
 import Gender1 from "./src/screens/genderScreens/gender1";
-
 import Gender4 from "./src/screens/genderScreens/gender4";
 import AddPhoto from "./src/screens/AddPhoto/addPhoto";
+
+import ProfileDisplay from "./src/screens/ProfileDisplay/ProfileDisplay";
+
 export default function App() {
   return <MainStackNavigation />;
 

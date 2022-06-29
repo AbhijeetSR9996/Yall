@@ -64,7 +64,8 @@ const VerificationCode = ({navigation}) => {
       </View>
       <View style={signupStyles.textView}>
         <Text style={signupStyles.text2}>Didn't get a code?</Text>
-        <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
+        <TouchableOpacity //onPress={() => navigation.navigate('GovtRegisterID')}
+        onPress={() => navigation.navigate('ProfileDisplay')}>
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>
       </View>
