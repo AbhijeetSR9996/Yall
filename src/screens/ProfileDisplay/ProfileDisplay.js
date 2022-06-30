@@ -8,12 +8,12 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import {styles} from 'react-native-element-dropdown/src/components/TextInput/styles';
 import {ProfileDisplayStyles} from './ProfileDisplay.styles';
+//import LikeSvg from '../../../assets/svgs/like.svg';
 
 const {width, height} = Dimensions.get('window');
 
-const ProfileDisplay = ({navigation}) => {
+const ProfileDisplay = () => {
   return (
     <View style={ProfileDisplayStyles.main}>
       <View style={ProfileDisplayStyles.container}>
@@ -25,80 +25,51 @@ const ProfileDisplay = ({navigation}) => {
           <View style={ProfileDisplayStyles.itemcontainer}>
             <Image
               source={require('../../../assets/images/profilegirl.png')}
-              style={{height: 250, width: width}}
+              style={ProfileDisplayStyles.img}
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={{height: 30, width: 30, bottom: 235, left: 310}}
+              style={ProfileDisplayStyles.img2}
             />
+            {/* <LikeSvg /> */}
             <View style={[ProfileDisplayStyles.infocontainer, {bottom: 60}]}>
               <View style={ProfileDisplayStyles.infoview}>
                 <Image
                   source={require('../../../assets/images/bday.png')}
-                  style={{
-                    height: 20,
-                    width: 20,
-                    left: 10,
-                    position: 'absolute',
-                  }}
+                  style={ProfileDisplayStyles.img3}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    right: 15,
-                    fontWeight: 'bold',
-                    fontSize: 11,
-                  }}>
+                  style={ProfileDisplayStyles.text2}>
                   22
                 </Text>
               </View>
               <View style={ProfileDisplayStyles.infoview2}>
                 <Image
                   source={require('../../../assets/images/location.png')}
-                  style={{height: 30, width: 22, left: 5, position: 'absolute'}}
+                  style={ProfileDisplayStyles.img4}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    right: 10,
-                    fontWeight: 'bold',
-                    fontSize: 11,
-                  }}>
+                  style={ProfileDisplayStyles.text3}>
                   Noida 62
                 </Text>
               </View>
               <View style={ProfileDisplayStyles.infoview3}>
                 <Image
                   source={require('../../../assets/images/user.png')}
-                  style={{
-                    height: 25,
-                    width: 20,
-                    left: 10,
-                    position: 'absolute',
-                  }}
+                  style={ProfileDisplayStyles.img5}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    right: 15,
-                    fontWeight: 'bold',
-                    fontSize: 11,
-                  }}>
+                  style={ProfileDisplayStyles.text4}>
                   Women
                 </Text>
               </View>
               <View style={ProfileDisplayStyles.infoview4}>
                 <Image
                   source={require('../../../assets/images/work.png')}
-                  style={{height: 20, width: 20, left: 5, position: 'absolute'}}
+                  style={ProfileDisplayStyles.img6}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    right: 5,
-                    fontWeight: 'bold',
-                    fontSize: 11,
-                  }}>
+                  style={ProfileDisplayStyles.text5}>
                   Graphic Designer
                 </Text>
               </View>
@@ -108,11 +79,11 @@ const ProfileDisplay = ({navigation}) => {
           <View style={[ProfileDisplayStyles.itemcontainer, {height: 376}]}>
             <Image
               source={require('../../../assets/images/profilegirl.png')}
-              style={{height: 250, width: width}}
+              style={ProfileDisplayStyles.img}
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={{height: 30, width: 30, bottom: 235, left: 310}}
+              style={ProfileDisplayStyles.img2}
             />
             <View
               style={[
@@ -125,54 +96,22 @@ const ProfileDisplay = ({navigation}) => {
                   {width: 311, height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text
-                  style={{
-                    position: 'absolute',
-                    fontWeight: 'bold',
-                    fontSize: 18,
-                    left: 20,
-                    color: 'black',
-                  }}>
+                  style={ProfileDisplayStyles.text6}>
                   Ask a questions
                 </Text>
                 <Image
                   source={require('../../../assets/images/likebtn.png')}
-                  style={{
-                    height: 40,
-                    width: 40,
-                    position: 'absolute',
-                    right: 10,
-                  }}
+                  style={ProfileDisplayStyles.img7}
                 />
               </View>
               <View
-                style={{
-                  width: 311,
-                  height: 80,
-                  backgroundColor: '#f9dfff',
-                  position: 'relative',
-                  alignItems: 'space-between',
-                  justifyContent: 'center',
-                  borderWidth: 0.5,
-                }}>
+                style={ProfileDisplayStyles.vw}>
                 <Image
                   source={require('../../../assets/images/twitter.png')}
-                  style={{
-                    height: 32,
-                    width: 30,
-                    left: 10,
-                    position: 'absolute',
-                    bottom: 30,
-                  }}
+                  style={ProfileDisplayStyles.img8}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    left: 50,
-                    fontWeight: 'bold',
-                    fontSize: 11,
-                    position: 'absolute',
-                    right: 10,
-                  }}>
+                  style={ProfileDisplayStyles.text7}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been theLorem Ipsum is
                   simply dummy text of the printing and typesetting industry.
@@ -184,11 +123,11 @@ const ProfileDisplay = ({navigation}) => {
           <View style={[ProfileDisplayStyles.itemcontainer, {height: 450}]}>
             <Image
               source={require('../../../assets/images/profilegirl.png')}
-              style={{height: 250, width: width}}
+              style={ProfileDisplayStyles.img}
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={{height: 30, width: 30, bottom: 235, left: 310}}
+              style={ProfileDisplayStyles.img2}
             />
             <View
               style={[
@@ -201,109 +140,43 @@ const ProfileDisplay = ({navigation}) => {
                   {width: 311, height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text
-                  style={{
-                    position: 'absolute',
-                    fontWeight: 'bold',
-                    fontSize: 18,
-                    left: 20,
-                    color: 'black',
-                  }}>
+                  style={ProfileDisplayStyles.text8}>
                   Ask a questions
                 </Text>
                 <Image
                   source={require('../../../assets/images/likebtn.png')}
-                  style={{
-                    height: 40,
-                    width: 40,
-                    position: 'absolute',
-                    right: 10,
-                  }}
+                  style={ProfileDisplayStyles.img7}
                 />
               </View>
               <View
-                style={{
-                  width: 311,
-                  height: 150,
-                  backgroundColor: '#f9dfff',
-                  position: 'relative',
-                  alignItems: 'space-between',
-                  justifyContent: 'center',
-                  borderWidth: 0.5,
-                }}>
+                style={ProfileDisplayStyles.vw2}>
                 <Image
                   source={require('../../../assets/images/spotify.png')}
-                  style={{
-                    height: 30,
-                    width: 30,
-                    left: 10,
-                    position: 'absolute',
-                    bottom: 105,
-                  }}
+                  style={ProfileDisplayStyles.img9}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    fontWeight: 'bold',
-                    fontSize: 16,
-                    left: 45,
-                    top: 15,
-                    color: 'black',
-                  }}>
+                  style={ProfileDisplayStyles.text9}>
                   Favourite Songs powered by Spotify
                 </Text>
                 <Image
                   source={require('../../../assets/images/album.png')}
-                  style={{
-                    height: 50,
-                    width: 50,
-                    left: 10,
-                    position: 'absolute',
-                    bottom: 50,
-                  }}
+                  style={ProfileDisplayStyles.img10}
                 />
                 <Text
-                  style={{
-                    position: 'absolute',
-                    fontWeight: 'bold',
-                    fontSize: 13,
-                    left: 70,
-                    top: 55,
-                    position: 'absolute',
-                  }}>
+                  style={ProfileDisplayStyles.text10}>
                   Cool Me Down
                 </Text>
                 <Text
-                  style={{
-                    position: 'absolute',
-                    fontWeight: 'bold',
-                    fontSize: 13,
-                    left: 70,
-                    top: 70,
-                    position: 'absolute',
-                  }}>
+                  style={ProfileDisplayStyles.text11}>
                   Gromee - Cool Me Down
                 </Text>
                 <Image
                   source={require('../../../assets/images/playbtn.png')}
-                  style={{
-                    height: 20,
-                    width: 20,
-                    left: 10,
-                    top: 110,
-                    position: 'absolute',
-                    bottom: 50,
-                  }}
+                  style={ProfileDisplayStyles.img11}
                 />
                 <Image
                   source={require('../../../assets/images/scroller.png')}
-                  style={{
-                    height: 20,
-                    width: 240,
-                    left: 40,
-                    top: 110,
-                    position: 'absolute',
-                    bottom: 50,
-                  }}
+                  style={ProfileDisplayStyles.img12}
                 />
               </View>
             </View>
@@ -312,11 +185,11 @@ const ProfileDisplay = ({navigation}) => {
           <View style={[ProfileDisplayStyles.itemcontainer, {height: 376}]}>
             <Image
               source={require('../../../assets/images/profilegirl.png')}
-              style={{height: 250, width: width}}
+              style={ProfileDisplayStyles.img}
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={{height: 30, width: 30, bottom: 235, left: 310}}
+              style={ProfileDisplayStyles.img2}
             />
             <View
               style={[
@@ -329,44 +202,18 @@ const ProfileDisplay = ({navigation}) => {
                   {width: 311, height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text
-                  style={{
-                    position: 'absolute',
-                    fontWeight: 'bold',
-                    fontSize: 18,
-                    left: 20,
-                    color: 'black',
-                  }}>
+                  style={ProfileDisplayStyles.text6}>
                   Ask a questions
                 </Text>
                 <Image
                   source={require('../../../assets/images/likebtn.png')}
-                  style={{
-                    height: 40,
-                    width: 40,
-                    position: 'absolute',
-                    right: 10,
-                  }}
+                  style={ProfileDisplayStyles.img7}
                 />
               </View>
               <View
-                style={{
-                  width: 311,
-                  height: 50,
-                  backgroundColor: '#f9dfff',
-                  position: 'relative',
-                  alignItems: 'space-between',
-                  justifyContent: 'center',
-                  borderWidth: 0.5,
-                }}>
+                style={ProfileDisplayStyles.vw3}>
                 <Text
-                  style={{
-                    position: 'absolute',
-                    left: 40,
-                    fontSize: 18,
-                    fontWeight: '700',
-                    position: 'absolute',
-                    right: 10,
-                  }}>
+                  style={ProfileDisplayStyles.text12}>
                   Ride bike on high speed
                 </Text>
               </View>

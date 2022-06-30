@@ -439,13 +439,17 @@ const Gender = ({navigation}) => {
         </View>
       </View>
       <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+
+
+
         <View
           style={{
             borderWidth: 1.5,
             // top: 200,
             width: 'auto',
             height: 44,
-            left: 35,
+            //left: 35,
+            left: 22,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -464,13 +468,17 @@ const Gender = ({navigation}) => {
             Omnigender
           </Text>
         </View>
+
+
+
         <View
           style={{
             borderWidth: 1.5,
             // top: 200,
             width: 'auto',
             height: 44,
-            left: 50,
+            //left: 50,
+            left:35,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -492,13 +500,15 @@ const Gender = ({navigation}) => {
       </View>
       <View
         style={{
-          top: 270,
+          //top: 270,
+          top:150,
           flexDirection: 'row',
           justifyContent: 'space-between',
           width: '90%',
           alignSelf: 'center',
         }}>
-        <Text style={{fontSize: 15, width: 270}}>
+        <Text style={{//fontSize: 15, 
+          fontSize:13,width: 270}}>
           Learn more about we sue your gender to recommend people on Yall
         </Text>
 <View>

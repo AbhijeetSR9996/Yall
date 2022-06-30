@@ -18,9 +18,11 @@ import Gender4 from "./src/screens/genderScreens/gender4";
 import AddPhoto from "./src/screens/AddPhoto/addPhoto";
 
 import ProfileDisplay from "./src/screens/ProfileDisplay/ProfileDisplay";
+//import MainBottomNavigation from "./Navigation/mainBottomNavigation";
 
 export default function App() {
+   
   return <MainStackNavigation />;
-
+   //return <MainBottomNavigation/>;
  
 };
