@@ -1,5 +1,7 @@
 import React from "react";
 import MainStackNavigation from './Navigation/mainStackNavigation'
+import MainBottomNavigation from "./Navigation/mainBottomNavigation";
+
 import SplashScreen from './src/screens/splashScreen/splashScreen'
 import SignUpMobile1 from "./src/screens/SignUp/signUpMobile1";
 import NumberCode from "./src/screens/SignUp/verificationCode";
@@ -18,11 +20,25 @@ import Gender4 from "./src/screens/genderScreens/gender4";
 import AddPhoto from "./src/screens/AddPhoto/addPhoto";
 
 import ProfileDisplay from "./src/screens/ProfileDisplay/ProfileDisplay";
-//import MainBottomNavigation from "./Navigation/mainBottomNavigation";
+import { NavigationContainer } from "@react-navigation/native";
 
-export default function App() {
+
+// export default function App() {
    
-  return <MainStackNavigation />;
-   //return <MainBottomNavigation/>;
- 
-};
+//   return
+//   ( <NavigationContainer>
+//          <MainStackNavigation />
+//     </NavigationContainer>
+//   );
+
+// };
+
+const App = () => {
+  return (
+      // <NavigationContainer>
+        <MainStackNavigation/>
+      // </NavigationContainer>
+  )
+}
+
+export default App;

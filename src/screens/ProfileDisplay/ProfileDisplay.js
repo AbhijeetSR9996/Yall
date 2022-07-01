@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {ProfileDisplayStyles} from './ProfileDisplay.styles';
-//import LikeSvg from '../../../assets/svgs/like.svg';
+import LikeSvg from '../../../assets/svgs/like.svg';
 
 const {width, height} = Dimensions.get('window');
 
@@ -31,7 +31,6 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/likebtn.png')}
               style={ProfileDisplayStyles.img2}
             />
-            {/* <LikeSvg /> */}
             <View style={[ProfileDisplayStyles.infocontainer, {bottom: 60}]}>
               <View style={ProfileDisplayStyles.infoview}>
                 <Image
@@ -99,6 +98,7 @@ const ProfileDisplay = () => {
                   style={ProfileDisplayStyles.text6}>
                   Ask a questions
                 </Text>
+                {/* <LikeSvg/> */}
                 <Image
                   source={require('../../../assets/images/likebtn.png')}
                   style={ProfileDisplayStyles.img7}
@@ -191,10 +191,14 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/likebtn.png')}
               style={ProfileDisplayStyles.img2}
             />
+            <Image
+              source={require('../../../assets/images/cross.png')}
+              style={ProfileDisplayStyles.img2a} 
+            />
             <View
               style={[
                 ProfileDisplayStyles.infocontainer,
-                {height: 106, bottom: 60},
+                {height: 106, bottom: 90},
               ]}>
               <View
                 style={[

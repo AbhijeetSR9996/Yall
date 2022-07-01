@@ -10,6 +10,7 @@ import {
 import {signupStyles} from './signupStyles';
 import {icons, imageicon} from '../../../assets/icons/icons';
 
+
 import {
   CodeField,
   Cursor,
@@ -64,8 +65,9 @@ const VerificationCode = ({navigation}) => {
       </View>
       <View style={signupStyles.textView}>
         <Text style={signupStyles.text2}>Didn't get a code?</Text>
-        <TouchableOpacity //onPress={() => navigation.navigate('ProfileDisplay')}
-         onPress={() => navigation.navigate('govtRegisteration')}>
+        <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
+         {/* onPress={() => navigation.navigate('govtRegisteration')} */}
+         
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>
       </View>

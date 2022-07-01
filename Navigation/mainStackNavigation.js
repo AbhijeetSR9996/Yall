@@ -21,6 +21,7 @@ import Gender2 from '../src/screens/genderScreens/gender2';
 import Gender3 from '../src/screens/genderScreens/gender3';
 import Gender4 from '../src/screens/genderScreens/gender4';
 import AddPhoto from '../src/screens/AddPhoto/addPhoto';
+import MainBottomNavigation from './mainBottomNavigation';
 
 import ProfileDisplay from "../src/screens/ProfileDisplay/ProfileDisplay";
 
@@ -32,6 +33,7 @@ function MainStackNavigation() {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
+          
         }}
         initialRouteName="SplashScreen">
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
@@ -39,6 +41,8 @@ function MainStackNavigation() {
         <Stack.Screen name="SignUpMobile" component={SignUpMobile} />
         <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
+        <Stack.Screen name='MainBottomNavigation' component={MainBottomNavigation}/>
+
         <Stack.Screen name="UserName" component={UserName} />
         <Stack.Screen name="UserDOB" component={UserDOB} />
         <Stack.Screen name="UserEmail" component={UserEmail} />

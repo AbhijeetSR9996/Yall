@@ -1,16 +1,17 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
 
-
-const Screen2 = () => {
+const Screen4 = () => {
   return (
-    <View style={styles.screen}>
-      <Text style={styles.text}>I am Screen2</Text>
-    </View>
+    // <View style={styles.screen}>
+    //   <Text style={styles.text}>I am Screen4</Text>
+    // </View>
+        <ProfileDisplay/>
   )
 }
 
-export default Screen2
+export default Screen4
 
 const styles = StyleSheet.create({
   screen:{

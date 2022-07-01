@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-
+import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
 
 const Screen5 = () => {
   return (
-    <View style={styles.screen}>
-      <Text style={styles.text}>I am Screen5</Text>
-    </View>
+    // <View style={styles.screen}>
+    //   <Text style={styles.text}>I am Screen5</Text>
+    // </View>
+    <ProfileDisplay/>
   )
 }
 

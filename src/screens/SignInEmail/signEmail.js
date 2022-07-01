@@ -37,7 +37,8 @@ const SignEmail = ({navigation}) => {
           <Image style={emailStyles.logo} source={imageicon.yallLogo} />
           <Text style={emailStyles.accountHeadText}>Choose an account</Text>
           <Text style={emailStyles.headBelowText}>To continue yall</Text>
-          <TouchableOpacity style={emailStyles.Touchablemail1}>
+          <TouchableOpacity style={emailStyles.Touchablemail1} 
+          onPress={()=> navigation.navigate('SignUp')}>
             <View style={{flexDirection: 'row'}}>
               <Image source={imageicon.profile2} style={{margin: 15,height:50,width:50}} />
               <View>

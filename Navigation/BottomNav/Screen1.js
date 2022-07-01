@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet,TouchableOpacity } from 'react-native'
 import React from 'react'
-import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
+import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
 
 const Screen1 = ({navigation}) => {
   return (

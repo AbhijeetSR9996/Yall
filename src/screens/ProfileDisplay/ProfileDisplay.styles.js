@@ -178,6 +178,12 @@ infoview4:{
     bottom: 235, 
     left: 310
   },
+  img2a:{
+    height: 30, 
+    width: 30, 
+    bottom: 100, 
+    left: 20
+  },
   img3:{
     height: 20,
     width: 20,
@@ -217,10 +223,10 @@ infoview4:{
   },
   img9:{
     height: 30,
-    width: 30,
-    left: 10,
+    width: 32,
+    left: 8,
     position: 'absolute',
-    bottom: 105,
+    bottom: 108,
   },
   img10:{
     height: 50,
