@@ -1,3 +1,6 @@
+import { Dimensions } from "react-native";
+const {width, height} = Dimensions.get('window');
+
 export const emailStyles = {
   container: {
     flex: 1,
@@ -28,6 +31,8 @@ export const emailStyles = {
     borderColor: '#FFFFFF',
     //height: '80%',
     height:'95%',
+    //height:height/1.05,
+    //marginBottom:10,
     borderRadius: 15,
     elevation: 10,
   },
@@ -103,6 +108,7 @@ export const emailStyles = {
     left: 40,
     fontFamily: 'Inter-Medium',
     fontSize: 18,
+    color: '#646661'
   },
   paragraph:{
     fontFamily: 'Inter=Regular',

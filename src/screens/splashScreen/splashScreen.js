@@ -22,11 +22,11 @@ const SplashScreen = ({navigation}) => {
           resizeMode="cover"
         />
 
-        {/* <Image
+        <Image
           style={splashStyles.backgroundContainer}
           resizeMode="cover"
           source={require('../../../assets/images/screen1.png')}
-        /> */}
+        />
 
         <Image
           resizeMode="contain"

@@ -64,10 +64,10 @@ const VerificationCode = ({navigation}) => {
         />
       </View>
       <View style={signupStyles.textView}>
-        <Text style={signupStyles.text2}>Didn't get a code?</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
+      <Text style={signupStyles.text2}>Didn't get a code?</Text>    
+      </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
-         {/* onPress={() => navigation.navigate('govtRegisteration')} */}
-         
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>
       </View>

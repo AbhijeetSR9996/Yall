@@ -58,6 +58,7 @@ export const signupStyles = {
     height: '110%',
     alignSelf: 'center',
     backgroundColor: '#DCC7E1',
+    position:'relative'
   },
   loginButtonText: {
     fontWeight: '500',
@@ -68,14 +69,16 @@ export const signupStyles = {
   },
   borderView1: {
     //left: 135,
-    left: 115,
+    //left: 115,
     //top: -47.5,
-    top: -39.5,
+    //top: -39.5,
     width: '20%',
     borderWidth: 1,
-    height: '103%',
-    alignSelf: 'center',
+    height: '105%',
+    alignSelf: 'flex-end',
     //backgroundColor: '#DCC7E1',
+    position:'absolute',
+    marginTop:-1
   },
   arrowIcon: {textAlign: 'center', //paddingTop: 10,
   paddingTop:5},

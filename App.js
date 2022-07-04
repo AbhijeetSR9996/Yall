@@ -23,21 +23,9 @@ import ProfileDisplay from "./src/screens/ProfileDisplay/ProfileDisplay";
 import { NavigationContainer } from "@react-navigation/native";
 
 
-// export default function App() {
-   
-//   return
-//   ( <NavigationContainer>
-//          <MainStackNavigation />
-//     </NavigationContainer>
-//   );
-
-// };
-
 const App = () => {
   return (
-      // <NavigationContainer>
         <MainStackNavigation/>
-      // </NavigationContainer>
   )
 }
 

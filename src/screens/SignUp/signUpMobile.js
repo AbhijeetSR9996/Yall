@@ -56,33 +56,35 @@ const SignUpMobile = ({navigation}) => {
               height: '110%',
               alignSelf: 'center',
               backgroundColor: '#DCC7E1',
+              position:'relative'
             }}>
             <Text
               style={{
                 fontWeight: '400',
-
                 //fontSize: 20,
                 fontSize:17,
                 fontWeight: '500',
-
                 //margin: 10,
                 margin:7,
                 color: 'black',
                 color: '#000000',
               }}>
-              Sign Up with mobile number
+              Sign Up With Mobile Number
             </Text>
             <View
               style={{
                 //left: 135,
-                left:115,
+                //left:115,
                 //top: -47.5,
-                top: -37.5,
+                //top: -37.5,
+                marginVertical:-1,
                 width: '20%',
                 borderWidth: 1,
-                height: '103%',
-                alignSelf: 'center',
+                height: '105%',
+                //alignSelf: 'center',
+                alignSelf:'flex-end',
                 backgroundColor: '#DCC7E1',
+                position:'absolute'
               }}>
               <Text style={{textAlign: 'center', //paddingTop: 10
               paddingTop:5}}>

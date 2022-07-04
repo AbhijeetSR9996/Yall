@@ -44,24 +44,26 @@ export const splashStyles = {
     borderWidth: 1,
     borderRightWidth: 0,
     height: height * 0.07,
-    // alignItems: 'center',
-  alignSelf:'center',
+    //alignItems: 'center',
+    alignSelf:'center',
     backgroundColor: '#DCC7E1',
+    position:'relative'
   },
   buttonText: {
     fontWeight: '700',
     fontSize: 18,
     textAlign:'center',
     //margin: 15,
-    margin:10,
     fontFamily: 'Bakbak one-Regular',
     color: '#000000',
-    
+    alignSelf:'center',
+    justifyContent:'center',
+    paddingVertical:10
   },
   borderView1: {
  
     //top: -55,
-    top: -45.5,
+    //top: -45.5,
     width: width * 0.15,
     borderWidth: 1,
     height: height * 0.07,
@@ -69,6 +71,8 @@ export const splashStyles = {
     alignItems:'center',
     justifyContent:'center',
     backgroundColor: '#DCC7E1',
+    position:'absolute',
+    marginVertical:-1
   },
   arrowIcon: {textAlign: 'center', alignSelf:'center', },
 };
