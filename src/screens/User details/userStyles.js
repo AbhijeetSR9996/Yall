@@ -29,10 +29,13 @@ export const userStyles = {
     fontSize: 18,
   },
   nameScreenArrowIcon: {
-   left:348,
-    top: 535,
+    //left:348,
+    //top: 535,
     backgroundColor:"#DCC7E1", borderRadius:20,
     position: 'absolute',
+    right:20,
+    top:390,
+    
   },
 
   //  ====================USERDOB STYLES=======================
@@ -76,15 +79,24 @@ export const userStyles = {
     borderRadius: 80,
     height: 57,
   },
-  DobarrowIcon: {left:348, top: 605,position:'absolute', backgroundColor:"#DCC7E1", borderRadius:20  },
+  DobarrowIcon: {
+    //left:348, 
+    //top: 605,
+    position:'absolute', 
+    backgroundColor:"#DCC7E1", 
+    borderRadius:20,
+    right:20,
+    top:460,},
 
   // ================user Email styles======================
   useremailScreenArrowIcon: {
-   left:348,
-    top: 600,
-    
+    //left:348,
+    //top: 600,
     position: 'absolute',
-    backgroundColor:"#DCC7E1", borderRadius:20
+    backgroundColor:"#DCC7E1", 
+    borderRadius:20,
+    right:20,
+    top:460,
   },
   // ====================User Gender Styles====================
   userGenderScreenArrowIcon:{

@@ -28,14 +28,15 @@ export const govtStyles = {
     color: '#AAAAAA',
   },
   borderBox: {
-    width: 370,
+    //width: 370,
+    width:310,
     top: 180,
     height: 92,
     left: 25,
     borderWidth: 1,
     borderRadius: 10,
     borderColor: '#C4C4C4',
-    marginBottom:30
+    marginBottom:30,
   },
 
   idcardIcon: {
@@ -71,7 +72,12 @@ export const govtStyles = {
      moveRight:{
         left:20,
         textAlign:'center',
-        marginTop:30
+        marginTop:30,
      },
-     govtPageArrowIcon: {left:348, top: 390,position:'absolute', backgroundColor:"#DCC7E1", borderRadius:20 },
+     govtPageArrowIcon: {
+       //left:348,
+       left:300,
+       //top: 390,
+       top:239,
+       position:'absolute', backgroundColor:"#DCC7E1", borderRadius:20 },
 };

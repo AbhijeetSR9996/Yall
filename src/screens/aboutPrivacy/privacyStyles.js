@@ -20,8 +20,8 @@ export  const privacyStyles = {
           width:320,
           fontFamily:'Inter-Regular',
           fontSize:15,
-          marginBottom:30
-        
+          marginBottom:30,
+          color:'#AAAAAA'
 
       }
 }

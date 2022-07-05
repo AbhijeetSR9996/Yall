@@ -30,11 +30,11 @@ const UserDOB = ({navigation}) => {
           top: 160,
           justifyContent: 'space-around',
         }}>
-        <TextInput style={userStyles.dateInput} placeholder="mm" />
+        <TextInput style={userStyles.dateInput} placeholder="mm" keyboardType='numeric'/>
 
-        <TextInput style={userStyles.dateInput} placeholder="dd" />
+        <TextInput style={userStyles.dateInput} placeholder="dd" keyboardType='numeric'/>
 
-        <TextInput style={userStyles.yearInput} placeholder="yyyy" />
+        <TextInput style={userStyles.yearInput} placeholder="yyyy" keyboardType='numeric'/>
       </View>
 <View>
       <TouchableOpacity onPress={() => navigation.navigate('UserEmail')}>

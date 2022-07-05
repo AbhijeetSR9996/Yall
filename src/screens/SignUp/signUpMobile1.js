@@ -6,10 +6,12 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
+  Dimensions
 } from 'react-native';
 import {signupStyles} from './signupStyles';
 import {Dropdown} from 'react-native-element-dropdown';
 import {icons, imageicon} from '../../../assets/icons/icons';
+const {width, height} = Dimensions.get('window');
 const data = [
   {label: '+91', value: '1'},
   {label: '+92', value: '2'},
@@ -26,6 +28,7 @@ const SignUpMobile1 = ({navigation}) => {
       <View style={signupStyles.phoneNumber}>
         <Dropdown
           style={signupStyles.dropdown}
+          placeholder="+91"
           placeholderStyle={signupStyles.placeholderStyle}
           selectedTextStyle={signupStyles.selectedTextStyle}
           data={data}
@@ -40,7 +43,10 @@ const SignUpMobile1 = ({navigation}) => {
 
         <TextInput
           placeholder="Enter Number"
+          //placeholderStyle={signupStyles.placeholderStyle}
+          placeholderTextColor="#000000"
           keyboardType="numeric"
+          maxLength={10}
           style={{
             borderBottomWidth: 1.5,
             width: 165,
@@ -49,6 +55,8 @@ const SignUpMobile1 = ({navigation}) => {
             fontSize: 15,
             // textAlign:'center',
             color: '#000000',
+            height: 40,
+            top: -10 
           }}></TextInput>
       </View>
       <Text
@@ -61,6 +69,7 @@ const SignUpMobile1 = ({navigation}) => {
           fontSize: 15,
           display: 'flex',
           alignItems: 'center',
+          color: '#AAAAAA'
         }}>
         Please enter your valid phone number. We will send you 4-digital code to
         verify your
@@ -75,6 +84,7 @@ const SignUpMobile1 = ({navigation}) => {
           fontSize: 15,
           display: 'flex',
           alignItems: 'center',
+          color: '#AAAAAA'
         }}>
         account.
       </Text>
@@ -83,8 +93,14 @@ const SignUpMobile1 = ({navigation}) => {
           onPress={() => navigation.navigate('VerificationCode')}>
           <Text
             style={{
-              left: 347,
-              top: 570,
+              //left: 347,
+              right:20,
+              //top: 570,
+              //top:430,
+              //marginHorizontal:-5,
+              //marginHorizontal:width/2,
+              alignSelf:'flex-end',
+              marginVertical:height/1.6,
               position: 'absolute',
               backgroundColor: '#DCC7E1',
               borderRadius: 20,

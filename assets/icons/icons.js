@@ -11,6 +11,8 @@ rightArrow: require("../images/rightarrow.png"),
 camera: require("../images/cameraicon.png"),
 card: require("../images/card.png"),
 profile: require("../images/profile.png"),
+profile2: require("../images/profile2.png"),
+profile3: require("../images/profile3.png"),
 plus: require("../images/Plus.png"),
   };
 

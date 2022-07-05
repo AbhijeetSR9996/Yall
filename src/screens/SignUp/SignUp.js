@@ -33,7 +33,8 @@ const SignUp = ({navigation}) => {
         />
       </View>
       <View style={signupStyles.signinMainView}>
-        <TouchableOpacity style={signupStyles.touchablebuttons}>
+        <TouchableOpacity style={signupStyles.touchablebuttons}
+        onPress={() => navigation.navigate('MainBottomNavigation')}>
           <View style={signupStyles.borderView}>
             <Text style={signupStyles.loginButtonText}>Sign In</Text>
             <View style={signupStyles.borderView1}>
@@ -60,7 +61,7 @@ const SignUp = ({navigation}) => {
           onPress={() => navigation.navigate('SignEmail')}
           style={signupStyles.touchablebuttons}>
           <View style={signupStyles.borderView}>
-            <Text style={signupStyles.loginButtonText}>Sign in with Email</Text>
+            <Text style={signupStyles.loginButtonText}>Sign In With Email</Text>
             <View style={signupStyles.borderView1}>
               <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
             </View>

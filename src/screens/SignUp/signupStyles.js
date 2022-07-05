@@ -35,7 +35,8 @@ export const signupStyles = {
     alignItems: 'center',
     textAlign: 'center',
     margin: 15,
-    marginTop: 180,
+    //marginTop: 180,
+    marginTop: 90,
     color: 'white',
     paddingBottom: 10,
   },
@@ -57,23 +58,30 @@ export const signupStyles = {
     height: '110%',
     alignSelf: 'center',
     backgroundColor: '#DCC7E1',
+    position:'relative'
   },
   loginButtonText: {
     fontWeight: '500',
     fontSize: 20,
-    margin: 10,
+    //margin:10,
+    margin: 6,
     color: '#000000',
   },
   borderView1: {
-    left: 135,
-    top: -47.5,
+    //left: 135,
+    //left: 115,
+    //top: -47.5,
+    //top: -39.5,
     width: '20%',
     borderWidth: 1,
-    height: '103%',
-    alignSelf: 'center',
-    backgroundColor: '#DCC7E1',
+    height: '105%',
+    alignSelf: 'flex-end',
+    //backgroundColor: '#DCC7E1',
+    position:'absolute',
+    marginTop:-1
   },
-  arrowIcon: {textAlign: 'center', paddingTop: 10},
+  arrowIcon: {textAlign: 'center', //paddingTop: 10,
+  paddingTop:5},
 
   // styles of signupmobile1 screen
   mainView: {width: 214, height: 70, top: 85, left: 21},
@@ -92,7 +100,9 @@ export const signupStyles = {
     borderBottomWidth: 1,
     textAlign: 'center',
     alignItems: 'center',
-    color: '#000000',    
+    color: '#000000',
+    height:40,
+    top:-10    
   },
 
   placeholderStyle: {
@@ -147,7 +157,8 @@ export const signupStyles = {
     width: '90%',
   },
   text2:{
-    top: 10,
+    //top: 10,
+    bottom:130,
     color: '#6E3E89',
     fontFamily: 'Inter',
     fontWeight: '400',
@@ -155,5 +166,9 @@ export const signupStyles = {
     display: 'flex',
     alignItems: 'center',
   },
-  imageicon:{right: 10,  backgroundColor:"#DCC7E1", borderRadius:20,}
+  imageicon:{right: 10,  
+  backgroundColor:"#DCC7E1", 
+  borderRadius:20, 
+  bottom:140
+}
 };

@@ -1,3 +1,6 @@
+import { Dimensions } from "react-native";
+const {width, height} = Dimensions.get('window');
+
 export const emailStyles = {
   container: {
     flex: 1,
@@ -20,12 +23,16 @@ export const emailStyles = {
   },
   mainCardView:{
     borderWidth: 1,
-    top: '10%',
+    //top: '10%',
+    top:'3%',
     width: '90%',
     alignSelf: 'center',
     backgroundColor: '#FFFFFF',
     borderColor: '#FFFFFF',
-    height: '80%',
+    //height: '80%',
+    height:'95%',
+    //height:height/1.05,
+    //marginBottom:10,
     borderRadius: 15,
     elevation: 10,
   },
@@ -49,7 +56,7 @@ export const emailStyles = {
     width: '90%',
     position: 'absolute',
     alignSelf: 'center',
-    top: 250,
+    top: 240,
     height: 80,
     borderBottomWidth: 1,
     borderColor: '#C4C4C4',
@@ -101,6 +108,7 @@ export const emailStyles = {
     left: 40,
     fontFamily: 'Inter-Medium',
     fontSize: 18,
+    color: '#646661'
   },
   paragraph:{
     fontFamily: 'Inter=Regular',
@@ -109,7 +117,8 @@ export const emailStyles = {
     width: 319,
     textAlign: 'center',
     alignSelf: 'center',
-    top: 355,
+    //top: 355,
+    top:340
   },
       
 };

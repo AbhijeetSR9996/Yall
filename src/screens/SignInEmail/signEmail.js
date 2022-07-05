@@ -37,25 +37,28 @@ const SignEmail = ({navigation}) => {
           <Image style={emailStyles.logo} source={imageicon.yallLogo} />
           <Text style={emailStyles.accountHeadText}>Choose an account</Text>
           <Text style={emailStyles.headBelowText}>To continue yall</Text>
-          <TouchableOpacity style={emailStyles.Touchablemail1}>
+          <TouchableOpacity style={emailStyles.Touchablemail1} 
+          onPress={()=> navigation.navigate('MainBottomNavigation')}>
             <View style={{flexDirection: 'row'}}>
-              <Image source={imageicon.profile} style={{margin: 15}} />
+              <Image source={imageicon.profile2} style={{margin: 15,height:50,width:50}} />
               <View>
                 <Text style={emailStyles.userNameText}>Sahil Saifi</Text>
                 <Text style={emailStyles.userEmail}>sahil@gmail.com</Text>
               </View>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={emailStyles.Touchablemail2}>
+          <TouchableOpacity style={emailStyles.Touchablemail2}
+          onPress={()=> navigation.navigate('MainBottomNavigation')}>
             <View style={{flexDirection: 'row'}}>
-              <Image source={imageicon.profile} style={{margin: 15}} />
+              <Image source={imageicon.profile3} style={{margin: 15,height:50,width:50}} />
               <View>
                 <Text style={emailStyles.userNameText}>Sahil Saifi</Text>
                 <Text style={emailStyles.userEmail}>sahil@gmail.com</Text>
               </View>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={emailStyles.Touchablemail3}>
+          <TouchableOpacity style={emailStyles.Touchablemail3}
+          onPress={()=> navigation.navigate('MainBottomNavigation')}>
             <View style={{flexDirection: 'row'}}>
               <Image source={imageicon.profile} style={{margin: 15}} />
               <View>

@@ -22,11 +22,12 @@ const UserName = ({navigation}) => {
       <Text style={userStyles.text}>My Full Name is</Text>
     
       <View style={{flexDirection: 'row', top: 70, left: 22, width: 269}}>
-        <Text>Don’t lose access to your accont, verify your email.</Text>
+        <Text style={{color:'#AAAAAA'}}>Don’t lose access to your accont, verify your email.</Text>
       </View>
       <View style={userStyles.textInput}>
         <TextInput
           placeholder="Enter Name"
+          placeholderTextColor="#000000"
           style={userStyles.textInput1}></TextInput>
       </View>
       <Text
@@ -34,13 +35,14 @@ const UserName = ({navigation}) => {
           top: 130,
           left: 22,
           width: 269,
+          color:'#AAAAAA'
         }}>
         Don’t lose access to your accont, verify your email.
       </Text>
 
     
       <View style={{flexDirection:'row', top:150, left:21}}>
-        <Text>Only show my initials</Text>
+        <Text style={{color:'#000000'}}>Only show my initials</Text>
       <Switch
       style={{left:10}}
         trackColor={{ false: "#767577", true: "green" }}
@@ -51,7 +53,7 @@ const UserName = ({navigation}) => {
       />
       </View>
       <View>
-      <TouchableOpacity onPress={() => navigation.navigate('UserDOB')}>
+      <TouchableOpacity onPress={() => navigation.navigate('UserDOB')} >
         <Text
           style={userStyles.nameScreenArrowIcon}>{icons.rightcirclearrow}</Text>
          

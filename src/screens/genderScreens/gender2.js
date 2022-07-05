@@ -686,7 +686,9 @@ const Gender2 = ({navigation}) => {
             borderRadius: 50,
             borderColor: '#000000',
             backgroundColor: '#DCC7E1',
-            alignSelf: 'center', top: 100,
+            alignSelf: 'center', 
+            //top: 100,
+            top: -200,
             elevation: 10,
           }}>
           <Text

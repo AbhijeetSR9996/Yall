@@ -678,7 +678,7 @@ const Gender1 = ({navigation}) => {
       </View>
       <View style={{}}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('Gender2')}
+          onPress={() => navigation.navigate('AddPhoto')}
           style={{
             width: '80%',
             height: '24%',

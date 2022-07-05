@@ -10,6 +10,7 @@ import {
 import {signupStyles} from './signupStyles';
 import {icons, imageicon} from '../../../assets/icons/icons';
 
+
 import {
   CodeField,
   Cursor,
@@ -28,11 +29,13 @@ const VerificationCode = ({navigation}) => {
   return (
     <View style={signupStyles.container}>
       <View style={signupStyles.mainView}>
-        <Text style={signupStyles.text}>Enter your verification code</Text>
+        <Text style={signupStyles.text}>Enter your verification code.</Text>
       </View>
       <View style={signupStyles.text1}>
-        <Text>sent Code to 1234567990 - </Text>
-        <TouchableOpacity>
+        {/* <Text>sent Code to 1234567990 - </Text> */}
+        <Text style={{color:'#AAAAAA'}}>Sent to 1234567990 - </Text>
+        <TouchableOpacity
+        onPress={() => navigation.navigate('SignUpMobile1')}>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
       </View>
@@ -62,7 +65,9 @@ const VerificationCode = ({navigation}) => {
         />
       </View>
       <View style={signupStyles.textView}>
-        <Text style={signupStyles.text2}>Didn't get code?</Text>
+      <TouchableOpacity >
+      <Text style={signupStyles.text2}>Didn't get a code?</Text>    
+      </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>
