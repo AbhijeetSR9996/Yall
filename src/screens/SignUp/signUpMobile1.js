@@ -91,10 +91,11 @@ const SignUpMobile1 = ({navigation}) => {
           <Text
             style={{
               //left: 347,
-              //left:300,
+              right:20,
               //top: 570,
               //top:430,
               //marginHorizontal:-5,
+              //marginHorizontal:width/2,
               alignSelf:'flex-end',
               marginVertical:height/1.6,
               position: 'absolute',

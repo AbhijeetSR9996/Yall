@@ -33,7 +33,7 @@ const VerificationCode = ({navigation}) => {
       </View>
       <View style={signupStyles.text1}>
         {/* <Text>sent Code to 1234567990 - </Text> */}
-        <Text>Sent to 1234567990 - </Text>
+        <Text style={{color:'#AAAAAA'}}>Sent to 1234567990 - </Text>
         <TouchableOpacity>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
@@ -67,7 +67,9 @@ const VerificationCode = ({navigation}) => {
       <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
       <Text style={signupStyles.text2}>Didn't get a code?</Text>    
       </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
+        <TouchableOpacity onPress={() => {
+          if("SignUp"){navigation.navigate('MainBottomNavigation')}
+          else {navigation.navigate('GovtRegisterID')}}}>
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>
       </View>

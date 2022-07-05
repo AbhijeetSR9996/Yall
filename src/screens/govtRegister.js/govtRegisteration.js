@@ -37,7 +37,8 @@ const GovtRegisterID = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </Card>
-      <Card style={govtStyles.borderBox}>
+      <Card style={govtStyles.borderBox} 
+        onPress={() => navigation.navigate('UserName')}>
         <View style={{flexDirection: 'row'}}>
           <View style={govtStyles.insideBox}>
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
