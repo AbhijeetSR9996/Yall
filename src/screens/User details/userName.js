@@ -51,7 +51,7 @@ const UserName = ({navigation}) => {
       />
       </View>
       <View>
-      <TouchableOpacity onPress={() => navigation.navigate('UserDOB')}>
+      <TouchableOpacity onPress={() => navigation.navigate('UserDOB')} >
         <Text
           style={userStyles.nameScreenArrowIcon}>{icons.rightcirclearrow}</Text>
          

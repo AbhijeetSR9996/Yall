@@ -29,10 +29,13 @@ export const userStyles = {
     fontSize: 18,
   },
   nameScreenArrowIcon: {
-   left:348,
-    top: 535,
+    //left:348,
+    //top: 535,
     backgroundColor:"#DCC7E1", borderRadius:20,
     position: 'absolute',
+    right:'5%',
+    top:'16%',
+
   },
 
   //  ====================USERDOB STYLES=======================

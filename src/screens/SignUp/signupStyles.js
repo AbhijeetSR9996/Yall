@@ -165,8 +165,7 @@ export const signupStyles = {
     alignItems: 'center',
   },
   imageicon:{right: 10,  
-  backgroundColor:"#DCC7E1",
-  //backgroundColor:"grey", 
+  backgroundColor:"#DCC7E1", 
   borderRadius:20, 
   bottom:140
 }
