@@ -23,11 +23,12 @@ const UserJob = ({navigation}) => {
       <View style={userStyles.textInput}>
         <TextInput
           placeholder="Job title"
+          placeholderTextColor="#000000"
           style={userStyles.textInput1}></TextInput>
       </View>
 
       <View style={{flexDirection: 'row', top: 150, left: 21}}>
-        <Text style={{top: 5}}>Visit on profile</Text>
+        <Text style={{top: 5,color:'#000000'}}>Visit on profile</Text>
         <Switch
           style={{left: 10}}
           trackColor={{false: '#767577', true: '#008000'}}

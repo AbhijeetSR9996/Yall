@@ -46,6 +46,7 @@ const SignUpMobile1 = ({navigation}) => {
           //placeholderStyle={signupStyles.placeholderStyle}
           placeholderTextColor="#000000"
           keyboardType="numeric"
+          maxLength={10}
           style={{
             borderBottomWidth: 1.5,
             width: 165,
@@ -54,6 +55,8 @@ const SignUpMobile1 = ({navigation}) => {
             fontSize: 15,
             // textAlign:'center',
             color: '#000000',
+            height: 40,
+            top: -10 
           }}></TextInput>
       </View>
       <Text

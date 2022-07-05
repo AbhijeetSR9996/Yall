@@ -100,7 +100,9 @@ export const signupStyles = {
     borderBottomWidth: 1,
     textAlign: 'center',
     alignItems: 'center',
-    color: '#000000',    
+    color: '#000000',
+    height:40,
+    top:-10    
   },
 
   placeholderStyle: {

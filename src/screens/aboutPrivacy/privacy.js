@@ -8,7 +8,7 @@ import {
   TextInput,
   Switch,
 } from 'react-native';
-
+import {signupStyles} from '../SignUp/signupStyles';
 import {privacyStyles} from './privacyStyles';
 import {imageicon, icons} from '../../../assets/icons/icons';
 
@@ -27,7 +27,7 @@ const AboutPrivacy = ({navigation}) => {
         industry. Lorem Ipsum has been the industry's standard.
       </Text>
       <View style={{}}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           onPress={() => navigation.navigate('Gender')}
           style={{
             width: '80%',
@@ -36,9 +36,9 @@ const AboutPrivacy = ({navigation}) => {
             borderRadius: 50,
             borderColor: '#000000',
             alignSelf: 'center',
-            top: 400,
+            //top: 400,
+            top: 300,
             backgroundColor: '#DCC7E1',
-
             elevation: 10,
           }}>
           <Text
@@ -46,19 +46,34 @@ const AboutPrivacy = ({navigation}) => {
               fontWeight: '700',
               fontFamily: 'Bakbak one-Regular',
               fontSize: 18,
-
-              marginTop: 10,
-
+              //marginTop: 10,
+              marginTop: 5,
               textAlign: 'center',
-
               color: '#000000',
             }}>
-            Continue
+            Accept
           </Text>
+        </TouchableOpacity> */}
+        <TouchableOpacity style={[signupStyles.touchablebuttons,{alignSelf:'center',top:'150%'}]}
+        onPress={() => navigation.navigate('Gender')}>
+          <View style={signupStyles.borderView}>
+            <Text style={[signupStyles.loginButtonText,{textAlign:'center'}]}>Accept</Text>
+            <View style={signupStyles.borderView1}>
+              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
+            </View>
+          </View>
         </TouchableOpacity>
       </View>
       <View style={{}}>
-        <TouchableOpacity
+      <TouchableOpacity style={[signupStyles.touchablebuttons,{alignSelf:'center',top:'90%'}]}>
+          <View style={signupStyles.borderView}>
+            <Text style={[signupStyles.loginButtonText,{textAlign:'center'}]}>Decline</Text>
+            <View style={signupStyles.borderView1}>
+              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        {/* <TouchableOpacity
           onPress={() => navigation.navigate('UserJob')}
           style={{
             width: '80%',
@@ -86,7 +101,7 @@ const AboutPrivacy = ({navigation}) => {
             }}>
             Decline
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     </View>
     

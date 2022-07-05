@@ -512,7 +512,7 @@ const Gender = ({navigation}) => {
           Learn more about we sue your gender to recommend people on Yall
         </Text>
 <View>
-        <TouchableOpacity onPress={() => navigation.navigate('Gender1')}>
+        <TouchableOpacity onPress={() => navigation.navigate('AddPhoto')}>
           <Text
             style={styles.userGenderScreenArrowIcon}>{icons.rightcirclearrow}</Text>
            

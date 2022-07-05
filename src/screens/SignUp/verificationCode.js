@@ -34,7 +34,8 @@ const VerificationCode = ({navigation}) => {
       <View style={signupStyles.text1}>
         {/* <Text>sent Code to 1234567990 - </Text> */}
         <Text style={{color:'#AAAAAA'}}>Sent to 1234567990 - </Text>
-        <TouchableOpacity>
+        <TouchableOpacity
+        onPress={() => navigation.navigate('SignUpMobile1')}>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
       </View>
