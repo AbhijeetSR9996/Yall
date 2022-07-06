@@ -7,7 +7,7 @@ const SignUp = ({navigation}) => {
   return (
     <View style={signupStyles.container}>
       <View style={signupStyles.backgroundContainer}>
-        <Image source={require('../../../assets/images/splashScreen1.png')} />
+        <Image source={require('../../../assets/images/splashScreen2.png')} />
       </View>
       <View>
         <Image
@@ -22,7 +22,7 @@ const SignUp = ({navigation}) => {
         />
       </View>
 
-      <Text style={signupStyles.headline}>
+      <Text style={[signupStyles.headline,{top:'-1%'}]}>
         By clicking “Log in”, you agree with our Terms. learn how we process
         your data in our privacy policy and cokkies policy.
       </Text>

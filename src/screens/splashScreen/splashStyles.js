@@ -52,13 +52,14 @@ export const splashStyles = {
   buttonText: {
     fontWeight: '700',
     fontSize: 18,
-    textAlign:'center',
+    //textAlign:'center',
     //margin: 15,
     fontFamily: 'Bakbak one-Regular',
     color: '#000000',
     alignSelf:'center',
     justifyContent:'center',
-    paddingVertical:10
+    paddingVertical:10,
+    right:'10%'
   },
   borderView1: {
  
@@ -66,7 +67,8 @@ export const splashStyles = {
     //top: -45.5,
     width: width * 0.15,
     borderWidth: 1,
-    height: height * 0.07,
+    //height: height * 0.07,
+    height: '105%',
     alignSelf: 'flex-end',
     alignItems:'center',
     justifyContent:'center',

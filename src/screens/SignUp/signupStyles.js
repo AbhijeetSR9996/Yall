@@ -1,4 +1,6 @@
 import React from 'react';
+import {Dimensions} from 'react-native';
+const {width, height} = Dimensions.get('window');
 
 export const signupStyles = {
   backgroundContainer: {
@@ -39,6 +41,7 @@ export const signupStyles = {
     marginTop: 90,
     color: 'white',
     paddingBottom: 10,
+    top:'8%',
   },
   signinMainView:{alignItems: 'center'},
   signupMainView:{alignItems: 'center', top: '-15%'},
@@ -72,13 +75,25 @@ export const signupStyles = {
     //left: 115,
     //top: -47.5,
     //top: -39.5,
-    width: '20%',
+    // right:'0%',
+    // width: '20%',
+    // borderWidth: 1,
+    // height: '105%',
+    // alignSelf: 'flex-end',
+    // //backgroundColor: '#DCC7E1',
+    // position:'absolute',
+    // marginTop:-1
+
+    width: width * 0.15,
     borderWidth: 1,
+    //height: height * 0.07,
     height: '105%',
     alignSelf: 'flex-end',
-    //backgroundColor: '#DCC7E1',
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor: '#DCC7E1',
     position:'absolute',
-    marginTop:-1
+    marginVertical:-1
   },
   arrowIcon: {textAlign: 'center', //paddingTop: 10,
   paddingTop:5},

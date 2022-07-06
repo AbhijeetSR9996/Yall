@@ -8,7 +8,7 @@ const SignUpMobile = ({navigation}) => {
     <View style={signupStyles.container}>
       <View style={signupStyles.backgroundContainer}>
         <Image
-          source={require('../../../assets/images/splashScreen1.png')}
+          source={require('../../../assets/images/splashScreen2.png')}
           resizeMode="cover"
         />
       </View>
@@ -25,7 +25,7 @@ const SignUpMobile = ({navigation}) => {
         />
       </View>
 
-      <Text style={signupStyles.headline}>
+      <Text style={[signupStyles.headline,{top: '8%',}]}>
         By clicking “Log in”, you agree with our Terms. learn how we process
         your data in our privacy policy and cokkies policy.
       </Text>
@@ -37,7 +37,7 @@ const SignUpMobile = ({navigation}) => {
           source={require('../../../assets/images/screen2.png')}
         />
       </View>
-      <View style={{alignItems: 'center'}}>
+      <View style={{alignItems: 'center',top:'8%'}}>
         <TouchableOpacity
         onPress={() => navigation.navigate('SignUpMobile1')}
           style={{
@@ -82,9 +82,10 @@ const SignUpMobile = ({navigation}) => {
                 borderWidth: 1,
                 height: '105%',
                 //alignSelf: 'center',
-                alignSelf:'flex-end',
+                //alignSelf:'flex-end',
                 backgroundColor: '#DCC7E1',
-                position:'absolute'
+                position:'absolute',
+                right:'0%'
               }}>
               <Text style={{textAlign: 'center', //paddingTop: 10
               paddingTop:5}}>

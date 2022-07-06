@@ -9,14 +9,13 @@ import {
 } from 'react-native';
 import {signupStyles} from './signupStyles';
 import {icons, imageicon} from '../../../assets/icons/icons';
-
-
 import {
   CodeField,
   Cursor,
   useBlurOnFulfill,
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
+import Switching from '../../component/SwitchingScreens/Switching';
 const CELL_COUNT = 4;
 
 const VerificationCode = ({navigation}) => {
@@ -71,6 +70,7 @@ const VerificationCode = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
           <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
         </TouchableOpacity>
+        {/* <Switching /> */}
       </View>
     </View>
   );

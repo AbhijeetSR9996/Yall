@@ -36,7 +36,7 @@ const SplashScreen = ({navigation}) => {
 
         <View //style={{top: 290}}
         style={{top: 250}}>
-          <Text style={splashStyles.headline}>
+          <Text style={[splashStyles.headline,{top:'145%'}]}>
             By clicking “Log in”, you agree with our Terms. learn how we process
             your data in our privacy policy and cokkies policy.
           </Text>

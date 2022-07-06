@@ -11,6 +11,8 @@ import {
 import {signupStyles} from './signupStyles';
 import {Dropdown} from 'react-native-element-dropdown';
 import {icons, imageicon} from '../../../assets/icons/icons';
+import Switching from '../../component/SwitchingScreens/Switching';
+
 const {width, height} = Dimensions.get('window');
 const data = [
   {label: '+91', value: '1'},
@@ -88,9 +90,10 @@ const SignUpMobile1 = ({navigation}) => {
         }}>
         account.
       </Text>
-      <View>
+      {/* <View>
         <TouchableOpacity
-          onPress={() => navigation.navigate('VerificationCode')}>
+          onPress={() => navigation.navigate('VerificationCode')}
+          >
           <Text
             style={{
               //left: 347,
@@ -108,7 +111,8 @@ const SignUpMobile1 = ({navigation}) => {
             {icons.rightcirclearrow}
           </Text>
         </TouchableOpacity>
-      </View>
+      </View> */}
+      <Switching/>
     </View>
   );
 };

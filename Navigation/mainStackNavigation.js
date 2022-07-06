@@ -59,6 +59,7 @@ function MainStackNavigation() {
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
 
         <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

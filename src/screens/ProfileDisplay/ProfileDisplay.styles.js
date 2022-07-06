@@ -14,7 +14,9 @@ export const ProfileDisplayStyles = {
     top: 5, 
 },
 container2:{
-    width: width, 
+    //width: width,
+    //marginLeft: 10,
+    //marginRight: 10, 
     height: height/1.2, 
     top: 10, 
     backgroundColor:'green',
@@ -28,9 +30,12 @@ itemcontainer:{
     position:'relative'
 },
 infocontainer:{
-    width: 315, 
+    //width: 315,
+    width: width, 
     height: 66,
-    left:20, 
+    //left:20, 
+    marginLeft: 10,
+    marginRight: 10,
     bottom:150,
     backgroundColor:'white',
     position:'relative',
