@@ -6,12 +6,12 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-  Dimensions
+  Dimensions,
 } from 'react-native';
 import {signupStyles} from './signupStyles';
 import {Dropdown} from 'react-native-element-dropdown';
 import {icons, imageicon} from '../../../assets/icons/icons';
-import Switching from '../../component/SwitchingScreens/Switching';
+import {CircularButton} from '../../component/Buttons/circular';
 
 const {width, height} = Dimensions.get('window');
 const data = [
@@ -58,7 +58,7 @@ const SignUpMobile1 = ({navigation}) => {
             // textAlign:'center',
             color: '#000000',
             height: 40,
-            top: -10 
+            top: -10,
           }}></TextInput>
       </View>
       <Text
@@ -71,7 +71,7 @@ const SignUpMobile1 = ({navigation}) => {
           fontSize: 15,
           display: 'flex',
           alignItems: 'center',
-          color: '#AAAAAA'
+          color: '#AAAAAA',
         }}>
         Please enter your valid phone number. We will send you 4-digital code to
         verify your
@@ -86,33 +86,11 @@ const SignUpMobile1 = ({navigation}) => {
           fontSize: 15,
           display: 'flex',
           alignItems: 'center',
-          color: '#AAAAAA'
+          color: '#AAAAAA',
         }}>
         account.
       </Text>
-      {/* <View>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('VerificationCode')}
-          >
-          <Text
-            style={{
-              //left: 347,
-              right:20,
-              //top: 570,
-              //top:430,
-              //marginHorizontal:-5,
-              //marginHorizontal:width/2,
-              alignSelf:'flex-end',
-              marginVertical:height/1.6,
-              position: 'absolute',
-              backgroundColor: '#DCC7E1',
-              borderRadius: 20,
-            }}>
-            {icons.rightcirclearrow}
-          </Text>
-        </TouchableOpacity>
-      </View> */}
-      <Switching/>
+      <CircularButton path="VerificationCode" />
     </View>
   );
 };

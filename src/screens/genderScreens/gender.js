@@ -13,6 +13,7 @@ import {RadioButton} from 'react-native-paper';
 import {styles} from './styles';
 import {imageicon, icons} from '../../../assets/icons/icons';
 
+
 const Gender = ({navigation}) => {
   return (
     <View style={styles.container}>
@@ -507,11 +508,12 @@ const Gender = ({navigation}) => {
           width: '90%',
           alignSelf: 'center',
         }}>
-        <Text style={{//fontSize: 15, 
-          fontSize:13,width: 270}}>
-          Learn more about we sue your gender to recommend people on Yall
+        <Text style={{fontSize:13,width: 270,color:'#AD5DD7'}}>
+          Learn more </Text>  
+        <Text style={{fontSize:13,width: 270,color:'#AAAAAA'}}>
+          about we sue your gender to recommend people on Yall
         </Text>
-<View>
+        <View>
         <TouchableOpacity onPress={() => navigation.navigate('AddPhoto')}>
           <Text
             style={styles.userGenderScreenArrowIcon}>{icons.rightcirclearrow}</Text>

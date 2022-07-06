@@ -11,6 +11,8 @@ import {
 import {images} from '../../constants/styles';
 import {splashStyles} from '../splashScreen/splashStyles';
 import {icons} from '../../../assets/icons/icons';
+import {Rectangular} from '../../component/Buttons/rectangular';
+
 const {width, height} = Dimensions.get('window');
 const SplashScreen = ({navigation}) => {
   return (
@@ -35,24 +37,13 @@ const SplashScreen = ({navigation}) => {
         />
 
         <View //style={{top: 290}}
-        style={{top: 250}}>
-          <Text style={[splashStyles.headline,{top:'145%'}]}>
+          style={{top: 250}}>
+          <Text style={[splashStyles.headline, {top: '145%'}]}>
             By clicking “Log in”, you agree with our Terms. learn how we process
             your data in our privacy policy and cokkies policy.
           </Text>
 
-          <View style={splashStyles.getStartedButtonMain}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('SignUp')}
-              style={splashStyles.touchableStarted}>
-              <View style={splashStyles.borderView}> 
-           
-              <Text style={splashStyles.buttonText}>Get Started</Text>
-             
-              <View style={splashStyles.borderView1}>{icons.rightarrow}</View>
-              </View>
-            </TouchableOpacity>
-          </View>
+          <Rectangular path="SignUp" />
         </View>
       </View>
     </SafeAreaView>

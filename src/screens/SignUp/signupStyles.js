@@ -173,7 +173,8 @@ export const signupStyles = {
   },
   text2:{
     //top: 10,
-    bottom:130,
+    //bottom:130,
+    bottom:80,
     color: '#6E3E89',
     fontFamily: 'Inter',
     fontWeight: '400',

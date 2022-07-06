@@ -8,12 +8,13 @@ import {
   Pressable,
   TextInput,
   Switch,
-  Dimensions
+  Dimensions,
 } from 'react-native';
 import {RadioButton} from 'react-native-paper';
 import {userStyles} from './userStyles';
 import {imageicon, icons} from '../../../assets/icons/icons';
 const {width, height} = Dimensions.get('window');
+import {CircularButton} from '../../component/Buttons/circular';
 
 const UserGender = ({navigation}) => {
   return (
@@ -23,7 +24,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             //top: 200,
             width: 70,
             height: 44,
@@ -50,7 +51,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 100,
             height: 44,
             left: 35,
@@ -76,7 +77,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 100,
             height: 44,
             left: 50,
@@ -131,7 +132,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 120,
             height: 44,
             left: 35,
@@ -156,7 +157,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 120,
             height: 45,
             left: 50,
@@ -209,7 +210,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 70,
             height: 44,
             left: 35,
@@ -234,7 +235,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 150,
             height: 44,
             left: 50,
@@ -261,7 +262,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 180,
             height: 44,
             left: 22,
@@ -287,7 +288,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 120,
             height: 44,
             left: 35,
@@ -314,7 +315,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 200,
             height: 44,
             left: 22,
@@ -340,7 +341,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 90,
             height: 44,
             left: 35,
@@ -367,7 +368,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             left: 22,
@@ -393,7 +394,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             left: 35,
@@ -418,7 +419,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             left: 50,
@@ -445,7 +446,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             //left: 35,
@@ -471,7 +472,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             //left: 50,
@@ -498,7 +499,7 @@ const UserGender = ({navigation}) => {
       <View
         style={{
           //top: 270,
-          top: 130,
+          top: 185,
           flexDirection: 'row',
           justifyContent: 'space-between',
           width: '90%',
@@ -507,14 +508,7 @@ const UserGender = ({navigation}) => {
         <Text style={{fontSize: 15, width: 270}}>
           Learn more about we sue your gender to recommend people on Yall{' '}
         </Text>
-<View>
-        <TouchableOpacity onPress={() => navigation.navigate('UserJob')}>
-          <Text
-            style={userStyles.userGenderScreenArrowIcon}> {icons.rightcirclearrow}</Text>
-          
-         
-        </TouchableOpacity>
-        </View>
+        <CircularButton path="UserJob" />
       </View>
     </View>
   );

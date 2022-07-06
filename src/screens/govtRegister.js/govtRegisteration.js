@@ -11,6 +11,7 @@ import {
 import {Card} from 'react-native-paper';
 import {govtStyles} from './govtStyles';
 import {imageicon, icons} from '../../../assets/icons/icons';
+import {CircularButton} from '../../component/Buttons/circular';
 
 const GovtRegisterID = ({navigation}) => {
   return (
@@ -25,9 +26,13 @@ const GovtRegisterID = ({navigation}) => {
           <View style={govtStyles.insideBox}>
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
           </View>
-          <View
-            style={govtStyles.textMain}>
-            <Text style={govtStyles.textIDCard}>Driver’s License </Text>
+          <View style={govtStyles.textMain}>
+            <Text style={govtStyles.textIDCard}>Driver’s</Text>
+            <Text
+              style={[govtStyles.textIDCard, {marginTop: -25, left: '30%'}]}>
+              {' '}
+              License{' '}
+            </Text>
             <Text style={govtStyles.textCard}>
               Lorem Ipsum is simply dummy text of the printing
             </Text>
@@ -37,14 +42,14 @@ const GovtRegisterID = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </Card>
-      <Card style={govtStyles.borderBox} 
+      <Card
+        style={govtStyles.borderBox}
         onPress={() => navigation.navigate('UserName')}>
         <View style={{flexDirection: 'row'}}>
           <View style={govtStyles.insideBox}>
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
           </View>
-          <View
-            style={govtStyles.textMain}>
+          <View style={govtStyles.textMain}>
             <Text style={govtStyles.textIDCard}>Aadhaar Card </Text>
             <Text style={govtStyles.textCard}>
               Lorem Ipsum is simply dummy text of the printing
@@ -55,12 +60,7 @@ const GovtRegisterID = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </Card>
-
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate('UserName')}>
-        <Text  style={govtStyles.govtPageArrowIcon}>{icons.rightcirclearrow}</Text>
-        </TouchableOpacity>
-      </View>
+      <CircularButton path="UserName" />
     </View>
   );
 };

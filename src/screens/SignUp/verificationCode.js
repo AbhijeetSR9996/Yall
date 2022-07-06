@@ -15,7 +15,8 @@ import {
   useBlurOnFulfill,
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
-import Switching from '../../component/SwitchingScreens/Switching';
+import {CircularButton} from '../../component/Buttons/circular';
+
 const CELL_COUNT = 4;
 
 const VerificationCode = ({navigation}) => {
@@ -32,9 +33,8 @@ const VerificationCode = ({navigation}) => {
       </View>
       <View style={signupStyles.text1}>
         {/* <Text>sent Code to 1234567990 - </Text> */}
-        <Text style={{color:'#AAAAAA'}}>Sent to 1234567990 - </Text>
-        <TouchableOpacity
-        onPress={() => navigation.navigate('SignUpMobile1')}>
+        <Text style={{color: '#AAAAAA'}}>Sent to 1234567990 - </Text>
+        <TouchableOpacity onPress={() => navigation.navigate('SignUpMobile1')}>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
       </View>
@@ -64,13 +64,10 @@ const VerificationCode = ({navigation}) => {
         />
       </View>
       <View style={signupStyles.textView}>
-      <TouchableOpacity >
-      <Text style={signupStyles.text2}>Didn't get a code?</Text>    
-      </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
-          <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
+        <TouchableOpacity>
+          <Text style={signupStyles.text2}>Didn't get a code?</Text>
         </TouchableOpacity>
-        {/* <Switching /> */}
+        <CircularButton path="GovtRegisterID" />
       </View>
     </View>
   );

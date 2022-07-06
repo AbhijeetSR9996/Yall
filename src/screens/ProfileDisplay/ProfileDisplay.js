@@ -92,7 +92,7 @@ const ProfileDisplay = () => {
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
-                  {width: 311, height: 53, borderTopRightRadius: 16},
+                  {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text
                   style={ProfileDisplayStyles.text6}>
@@ -137,7 +137,7 @@ const ProfileDisplay = () => {
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
-                  {width: 311, height: 53, borderTopRightRadius: 16},
+                  {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text
                   style={ProfileDisplayStyles.text8}>
@@ -203,7 +203,7 @@ const ProfileDisplay = () => {
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
-                  {width: 311, height: 53, borderTopRightRadius: 16},
+                  {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text
                   style={ProfileDisplayStyles.text6}>

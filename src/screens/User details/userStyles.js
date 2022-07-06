@@ -22,11 +22,13 @@ export const userStyles = {
   },
   textInput1: {
     borderBottomWidth: 1.5,
-    width: 367,
+    //width: 367,
+    width: 344,
     left: 23,
     fontWeight: '500',
     color: '#000000',
     fontSize: 18,
+    
   },
   nameScreenArrowIcon: {
     //left:348,
