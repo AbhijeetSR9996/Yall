@@ -23,7 +23,10 @@ import Gender4 from '../src/screens/genderScreens/gender4';
 import AddPhoto from '../src/screens/AddPhoto/addPhoto';
 import MainBottomNavigation from './mainBottomNavigation';
 
-import ProfileDisplay from "../src/screens/ProfileDisplay/ProfileDisplay";
+import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
+import Upload from '../src/screens/UploadID/upload';
+import Selfie from '../src/screens/Selfie/selfie';
+import Edit from '../src/screens/EditProfile/edit';
 
 const Stack = createStackNavigator();
 
@@ -33,7 +36,6 @@ function MainStackNavigation() {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-          
         }}
         initialRouteName="SplashScreen">
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
@@ -41,7 +43,10 @@ function MainStackNavigation() {
         <Stack.Screen name="SignUpMobile" component={SignUpMobile} />
         <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
-        <Stack.Screen name='MainBottomNavigation' component={MainBottomNavigation}/>
+        <Stack.Screen
+          name="MainBottomNavigation"
+          component={MainBottomNavigation}
+        />
 
         <Stack.Screen name="UserName" component={UserName} />
         <Stack.Screen name="UserDOB" component={UserDOB} />
@@ -59,7 +64,9 @@ function MainStackNavigation() {
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
 
         <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
-        
+        <Stack.Screen name="Upload" component={Upload} />
+        <Stack.Screen name="Edit" component={Edit} />
+        <Stack.Screen name="Selfie" component={Selfie} />
       </Stack.Navigator>
     </NavigationContainer>
   );

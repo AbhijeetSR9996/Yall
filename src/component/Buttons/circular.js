@@ -1,20 +1,12 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  TextInput,
-  Dimensions,
-} from 'react-native';
+import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
+import {icons} from '../../../assets/icons/icons';
 
-import {icons, imageicon} from '../../../assets/icons/icons';
+const {height} = Dimensions.get('window');
 
-const {width, height} = Dimensions.get('window');
-
-export const CircularButton = ({path}) => {
+export const CircularButton = props => {
+  const {path, style} = props;
   const navigation = useNavigation();
   return (
     <View>
@@ -28,6 +20,7 @@ export const CircularButton = ({path}) => {
             backgroundColor: '#DCC7E1',
             borderRadius: 20,
             top: 50,
+            ...style,
           }}>
           {icons.rightcirclearrow}
         </Text>

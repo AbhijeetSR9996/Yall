@@ -1,19 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  SafeAreaView,
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  Dimensions,
-} from 'react-native';
-import {images} from '../../constants/styles';
+import {SafeAreaView, View, Text, Image} from 'react-native';
 import {splashStyles} from '../splashScreen/splashStyles';
-import {icons} from '../../../assets/icons/icons';
 import {Rectangular} from '../../component/Buttons/rectangular';
 
-const {width, height} = Dimensions.get('window');
 const SplashScreen = ({navigation}) => {
   return (
     <SafeAreaView style={splashStyles.container}>
@@ -36,14 +25,13 @@ const SplashScreen = ({navigation}) => {
           source={require('../../../assets/images/logo.png')}
         />
 
-        <View //style={{top: 290}}
-          style={{top: 250}}>
+        <View style={{top: 250}}>
           <Text style={[splashStyles.headline, {top: '145%'}]}>
             By clicking “Log in”, you agree with our Terms. learn how we process
             your data in our privacy policy and cokkies policy.
           </Text>
 
-          <Rectangular path="SignUp" />
+          <Rectangular path="SignUp" name="Get Started" />
         </View>
       </View>
     </SafeAreaView>

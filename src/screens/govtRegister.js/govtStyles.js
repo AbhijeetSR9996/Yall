@@ -3,7 +3,7 @@ export const govtStyles = {
     flex: 1,
     backgroundColor: '#FFFFFF',
   },
-  textMain:{
+  textMain: {
     flexDirection: 'column',
     margin: 12,
     alignContent: 'center',
@@ -28,15 +28,14 @@ export const govtStyles = {
     color: '#AAAAAA',
   },
   borderBox: {
-    //width: 370,
-    width:310,
+    width: 310,
     top: 180,
     height: 92,
     left: 25,
     borderWidth: 1,
     borderRadius: 10,
     borderColor: '#C4C4C4',
-    marginBottom:30,
+    marginBottom: 30,
   },
 
   idcardIcon: {
@@ -55,29 +54,30 @@ export const govtStyles = {
   },
   textIDCard: {
     fontFamily: 'Bakbak one-Regular',
-    fontSize: 18,   
+    fontSize: 18,
     width: 133,
     fontWeight: '700',
-   
     color: '#000000',
   },
-  textCard:{
-      fontFamily:'Inter-Regular',
-      color:'#AAAAAA',
-      fontSize:12,
-      width:193,
-      top:5
-  
-     },
-     moveRight:{
-        left:20,
-        textAlign:'center',
-        marginTop:30,
-     },
-     govtPageArrowIcon: {
-       //left:348,
-       left:300,
-       //top: 390,
-       top:239,
-       position:'absolute', backgroundColor:"#DCC7E1", borderRadius:20 },
+  textCard: {
+    fontFamily: 'Inter-Regular',
+    color: '#AAAAAA',
+    fontSize: 12,
+    width: 193,
+    top: 5,
+  },
+  moveRight: {
+    left: 20,
+    textAlign: 'center',
+    marginTop: 30,
+  },
+  govtPageArrowIcon: {
+    //left:348,
+    left: 300,
+    //top: 390,
+    top: 239,
+    position: 'absolute',
+    backgroundColor: '#DCC7E1',
+    borderRadius: 20,
+  },
 };

@@ -1,26 +1,16 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  TextInput,
-  Dimensions,
-} from 'react-native';
+import {View, Text, TextInput, Dimensions} from 'react-native';
 import {signupStyles} from './signupStyles';
 import {Dropdown} from 'react-native-element-dropdown';
-import {icons, imageicon} from '../../../assets/icons/icons';
 import {CircularButton} from '../../component/Buttons/circular';
 
-const {width, height} = Dimensions.get('window');
 const data = [
   {label: '+91', value: '1'},
   {label: '+92', value: '2'},
   {label: '+11', value: '3'},
   {label: '+12', value: '4'},
 ];
-const SignUpMobile1 = ({navigation}) => {
+const SignUpMobile1 = () => {
   const [value, setValue] = React.useState(null);
   return (
     <View style={signupStyles.container}>
@@ -34,7 +24,6 @@ const SignUpMobile1 = ({navigation}) => {
           placeholderStyle={signupStyles.placeholderStyle}
           selectedTextStyle={signupStyles.selectedTextStyle}
           data={data}
-          // maxHeight={300}
           labelField="label"
           valueField="value"
           value={value}
@@ -45,7 +34,6 @@ const SignUpMobile1 = ({navigation}) => {
 
         <TextInput
           placeholder="Enter Number"
-          //placeholderStyle={signupStyles.placeholderStyle}
           placeholderTextColor="#000000"
           keyboardType="numeric"
           maxLength={10}
@@ -55,7 +43,6 @@ const SignUpMobile1 = ({navigation}) => {
             left: 74,
             letterSpacing: 3,
             fontSize: 15,
-            // textAlign:'center',
             color: '#000000',
             height: 40,
             top: -10,

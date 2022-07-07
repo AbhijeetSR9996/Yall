@@ -7,7 +7,7 @@ const SignUp = ({navigation}) => {
   return (
     <View style={signupStyles.container}>
       <View style={signupStyles.backgroundContainer}>
-        <Image source={require('../../../assets/images/splashScreen2.png')} />
+        <Image source={require('../../../assets/images/splashScreen1.png')} />
       </View>
       <View>
         <Image
@@ -22,7 +22,7 @@ const SignUp = ({navigation}) => {
         />
       </View>
 
-      <Text style={[signupStyles.headline,{top:'-1%'}]}>
+      <Text style={[signupStyles.headline, {top: '-1%'}]}>
         By clicking “Log in”, you agree with our Terms. learn how we process
         your data in our privacy policy and cokkies policy.
       </Text>
@@ -33,8 +33,9 @@ const SignUp = ({navigation}) => {
         />
       </View>
       <View style={signupStyles.signinMainView}>
-        <TouchableOpacity style={signupStyles.touchablebuttons}
-        onPress={() => navigation.navigate('MainBottomNavigation')}>
+        <TouchableOpacity
+          style={signupStyles.touchablebuttons}
+          onPress={() => navigation.navigate('MainBottomNavigation')}>
           <View style={signupStyles.borderView}>
             <Text style={signupStyles.loginButtonText}>Sign In</Text>
             <View style={signupStyles.borderView1}>

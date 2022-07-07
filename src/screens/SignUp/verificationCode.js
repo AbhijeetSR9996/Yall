@@ -1,14 +1,6 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  TextInput,
-} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import {signupStyles} from './signupStyles';
-import {icons, imageicon} from '../../../assets/icons/icons';
 import {
   CodeField,
   Cursor,
@@ -32,7 +24,6 @@ const VerificationCode = ({navigation}) => {
         <Text style={signupStyles.text}>Enter your verification code.</Text>
       </View>
       <View style={signupStyles.text1}>
-        {/* <Text>sent Code to 1234567990 - </Text> */}
         <Text style={{color: '#AAAAAA'}}>Sent to 1234567990 - </Text>
         <TouchableOpacity onPress={() => navigation.navigate('SignUpMobile1')}>
           <Text style={signupStyles.editText}>Edit</Text>
@@ -67,7 +58,7 @@ const VerificationCode = ({navigation}) => {
         <TouchableOpacity>
           <Text style={signupStyles.text2}>Didn't get a code?</Text>
         </TouchableOpacity>
-        <CircularButton path="GovtRegisterID" />
+        <CircularButton path="GovtRegisterID" style={{top: 10, right: 50}} />
       </View>
     </View>
   );
