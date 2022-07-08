@@ -10,9 +10,7 @@ import {
 } from 'react-native';
 
 import {userStyles} from './userStyles';
-import {icons, imageicon} from '../../../assets/icons/icons';
-import {Directions} from 'react-native-gesture-handler';
-import iconButton from 'react-native-vector-icons/dist/lib/icon-button';
+import {CircularButton} from '../../component/Buttons/circular';
 
 const UserDOB = ({navigation}) => {
   return (
@@ -30,16 +28,26 @@ const UserDOB = ({navigation}) => {
           top: 160,
           justifyContent: 'space-around',
         }}>
-        <TextInput style={userStyles.dateInput} placeholder="mm" keyboardType='numeric'/>
+        <TextInput
+          style={userStyles.dateInput}
+          placeholder="mm"
+          keyboardType="numeric"
+        />
 
-        <TextInput style={userStyles.dateInput} placeholder="dd" keyboardType='numeric'/>
+        <TextInput
+          style={userStyles.dateInput}
+          placeholder="dd"
+          keyboardType="numeric"
+        />
 
-        <TextInput style={userStyles.yearInput} placeholder="yyyy" keyboardType='numeric'/>
+        <TextInput
+          style={userStyles.yearInput}
+          placeholder="yyyy"
+          keyboardType="numeric"
+        />
       </View>
-<View>
-      <TouchableOpacity onPress={() => navigation.navigate('UserEmail')}>
-        <Text style={userStyles.DobarrowIcon}>{icons.rightcirclearrow}</Text> 
-      </TouchableOpacity>
+      <View>
+        <CircularButton path="UserEmail" style={{top: 45}} />
       </View>
     </View>
   );

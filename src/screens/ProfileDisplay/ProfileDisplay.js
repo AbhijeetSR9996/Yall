@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, ScrollView, Image} from 'react-native';
 import {ProfileDisplayStyles} from './ProfileDisplay.styles';
+import {Heart} from '../../../assets/svgs/heart.svg';
 
 const ProfileDisplay = () => {
   return (
@@ -20,6 +21,7 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/likebtn.png')}
               style={ProfileDisplayStyles.img2}
             />
+            {/* <Heart /> */}
             <View style={[ProfileDisplayStyles.infocontainer, {bottom: 60}]}>
               <View style={ProfileDisplayStyles.infoview}>
                 <Image
@@ -59,7 +61,7 @@ const ProfileDisplay = () => {
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={ProfileDisplayStyles.img2}
+              style={[ProfileDisplayStyles.img2, {bottom: '67%'}]}
             />
             <View
               style={[
@@ -99,7 +101,7 @@ const ProfileDisplay = () => {
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={ProfileDisplayStyles.img2}
+              style={[ProfileDisplayStyles.img2, {bottom: '56%'}]}
             />
             <View
               style={[
@@ -152,7 +154,7 @@ const ProfileDisplay = () => {
             />
             <Image
               source={require('../../../assets/images/likebtn.png')}
-              style={ProfileDisplayStyles.img2}
+              style={[ProfileDisplayStyles.img2, {bottom: '67%'}]}
             />
             <Image
               source={require('../../../assets/images/cross.png')}

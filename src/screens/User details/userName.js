@@ -53,7 +53,7 @@ const UserName = ({navigation}) => {
           value={isEnabled}
         />
       </View>
-      <CircularButton path="UserDOB" />
+      <CircularButton path="UserDOB" style={{top: -25}} />
     </View>
   );
 };

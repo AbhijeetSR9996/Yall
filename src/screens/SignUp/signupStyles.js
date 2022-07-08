@@ -151,13 +151,14 @@ export const signupStyles = {
     width: '90%',
   },
   text2: {
-    bottom: 80,
+    bottom: 100,
     color: '#6E3E89',
     fontFamily: 'Inter',
     fontWeight: '400',
     fontSize: 15,
     display: 'flex',
     alignItems: 'center',
+    position: 'absolute',
   },
   imageicon: {
     right: 10,

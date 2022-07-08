@@ -498,18 +498,32 @@ const UserGender = ({navigation}) => {
       </View>
       <View
         style={{
-          //top: 270,
-          top: 185,
+          top: 135,
           flexDirection: 'row',
           justifyContent: 'space-between',
           width: '90%',
+          height: '10%',
           alignSelf: 'center',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-        <Text style={{fontSize: 15, width: 270}}>
-          Learn more about we sue your gender to recommend people on Yall{' '}
+        <Text style={{fontSize: 15, width: 270, color: '#AD5DD7', bottom: 20}}>
+          Learn more
         </Text>
-        <CircularButton path="UserJob" />
+        <Text
+          style={{
+            fontSize: 15,
+            width: 270,
+            right: '280%',
+            bottom: 20,
+          }}>
+          about we sue your gender
+        </Text>
+        <Text style={{fontSize: 15, width: 270, right: '790%', bottom: 5}}>
+          to recommend people on Yall
+        </Text>
       </View>
+      <CircularButton path="UserJob" style={{marginTop: 40}} />
     </View>
   );
 };

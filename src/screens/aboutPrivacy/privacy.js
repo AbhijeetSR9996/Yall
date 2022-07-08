@@ -27,37 +27,16 @@ const AboutPrivacy = ({navigation}) => {
         industry. Lorem Ipsum has been the industry's standard.
       </Text>
       <View style={{}}>
-        {/* <TouchableOpacity
-          onPress={() => navigation.navigate('Gender')}
-          style={{
-            width: '80%',
-            height: '24%',
-            borderWidth: 1,
-            borderRadius: 50,
-            borderColor: '#000000',
-            alignSelf: 'center',
-            //top: 400,
-            top: 300,
-            backgroundColor: '#DCC7E1',
-            elevation: 10,
-          }}>
-          <Text
-            style={{
-              fontWeight: '700',
-              fontFamily: 'Bakbak one-Regular',
-              fontSize: 18,
-              //marginTop: 10,
-              marginTop: 5,
-              textAlign: 'center',
-              color: '#000000',
-            }}>
-            Accept
-          </Text>
-        </TouchableOpacity> */}
-        <TouchableOpacity style={[signupStyles.touchablebuttons,{alignSelf:'center',top:'150%'}]}
-        onPress={() => navigation.navigate('Gender')}>
+        <TouchableOpacity
+          style={[
+            signupStyles.touchablebuttons,
+            {alignSelf: 'center', top: '150%'},
+          ]}
+          onPress={() => navigation.navigate('Gender')}>
           <View style={signupStyles.borderView}>
-            <Text style={[signupStyles.loginButtonText,{textAlign:'center'}]}>Accept</Text>
+            <Text style={[signupStyles.loginButtonText, {textAlign: 'center'}]}>
+              Accept
+            </Text>
             <View style={signupStyles.borderView1}>
               <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
             </View>
@@ -65,46 +44,22 @@ const AboutPrivacy = ({navigation}) => {
         </TouchableOpacity>
       </View>
       <View style={{}}>
-      <TouchableOpacity style={[signupStyles.touchablebuttons,{alignSelf:'center',top:'90%'}]}>
+        <TouchableOpacity
+          style={[
+            signupStyles.touchablebuttons,
+            {alignSelf: 'center', top: '90%'},
+          ]}>
           <View style={signupStyles.borderView}>
-            <Text style={[signupStyles.loginButtonText,{textAlign:'center'}]}>Decline</Text>
+            <Text style={[signupStyles.loginButtonText, {textAlign: 'center'}]}>
+              Decline
+            </Text>
             <View style={signupStyles.borderView1}>
               <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
             </View>
           </View>
         </TouchableOpacity>
-        {/* <TouchableOpacity
-          onPress={() => navigation.navigate('UserJob')}
-          style={{
-            width: '80%',
-            height: '24%',
-            // borderWidth: 1,
-            borderRadius: 50,
-            // borderColor: '#000000',
-            alignSelf: 'center',
-            top: 280,
-            // backgroundColor: '#DCC7E1',
-
-            // elevation: 10,
-          }}>
-          <Text
-            style={{
-              fontWeight: '700',
-              fontFamily: 'Bakbak one-Regular',
-              fontSize: 18,
-
-              marginTop: 10,
-
-              textAlign: 'center',
-
-              color: '#000000',
-            }}>
-            Decline
-          </Text>
-        </TouchableOpacity> */}
       </View>
     </View>
-    
   );
 };
 export default AboutPrivacy;

@@ -12,11 +12,12 @@ import {
 
 import {styles} from './styles';
 import {imageicon, icons} from '../../../assets/icons/icons';
+import {Rectangular} from '../../component/Buttons/rectangular';
 
 const Gender3 = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity  onPress={() => navigation.navigate('Gender2')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Gender2')}>
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
 
@@ -25,7 +26,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 110,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 22,
@@ -51,7 +52,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: ,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 35,
@@ -77,7 +78,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 50,
@@ -102,7 +103,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 60,
@@ -129,7 +130,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 22,
@@ -155,7 +156,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 35,
@@ -180,7 +181,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 50,
@@ -208,7 +209,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 22,
@@ -234,7 +235,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 35,
@@ -258,12 +259,12 @@ const Gender3 = ({navigation}) => {
         </View>
       </View>
 
-      <Text style={styles.foodHead}>Hobbies</Text>
+      <Text style={[styles.foodHead, {top: 10}]}>Hobbies</Text>
       <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
         <View
           style={{
             borderWidth: 1.5,
-            // top: 110,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 22,
@@ -289,7 +290,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: ,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 35,
@@ -315,7 +316,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 50,
@@ -340,7 +341,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 60,
@@ -367,7 +368,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 22,
@@ -393,7 +394,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 35,
@@ -418,7 +419,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 50,
@@ -445,7 +446,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 110,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 22,
@@ -471,7 +472,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: ,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 35,
@@ -497,7 +498,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 50,
@@ -522,7 +523,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 60,
@@ -549,7 +550,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 22,
@@ -575,7 +576,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 35,
@@ -600,7 +601,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 50,
@@ -627,7 +628,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 22,
@@ -653,7 +654,7 @@ const Gender3 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -30,
             width: 'auto',
             height: 44,
             left: 35,
@@ -676,37 +677,16 @@ const Gender3 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{}}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('Gender4')}
-          style={{
-            width: '80%',
-            height: '24%',
-            borderWidth: 1,
-            borderRadius: 50,
-            borderColor: '#000000',
-            alignSelf: 'center',
-            top: 100,
-            backgroundColor: '#DCC7E1',
-
-            elevation: 10,
-          }}>
-          <Text
-            style={{
-              fontWeight: '700',
-              fontFamily: 'Bakbak one-Regular',
-              fontSize: 18,
-
-              marginTop: 10,
-
-              textAlign: 'center',
-
-              color: '#000000',
-            }}>
-            Continue [3/4]
-          </Text>
-        </TouchableOpacity>
-      </View>
+      <Rectangular
+        path="Gender4"
+        style={{
+          width: 10,
+          position: 'absolute',
+          alignSelf: 'center',
+          top: '90%',
+        }}
+        name="Continue [3/4]"
+      />
     </View>
   );
 };

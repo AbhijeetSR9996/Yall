@@ -14,7 +14,8 @@ import ImagePicker from 'react-native-image-crop-picker';
 import {styles} from '../genderScreens/styles';
 import {imageicon, icons} from '../../../assets/icons/icons';
 import {photoStyles} from './styles';
-import { signupStyles } from '../SignUp/signupStyles';
+import {signupStyles} from '../SignUp/signupStyles';
+import {Rectangular} from '../../component/Buttons/rectangular';
 
 const AddPhoto = ({navigation}) => {
   const requestCameraPermission = async () => {
@@ -162,52 +163,21 @@ const AddPhoto = ({navigation}) => {
             height: 30,
             width: 30,
             borderRadius: 10,
-            // top: 200,
           }}
           onPress={() => createTwoButtonAlert()}>
           <Text>{icons.plus}</Text>
         </TouchableOpacity>
       </View>
-
-      <View style={{}}>
-        {/* <TouchableOpacity
-          onPress={() => navigation.navigate('MainBottomNavigation')}
-          style={{
-            width: '80%',
-            height: '24%',
-            borderWidth: 1,
-            borderRadius: 50,
-            borderColor: '#000000',
-            alignSelf: 'center',
-            top: 550,
-            backgroundColor: '#DCC7E1',
-            elevation: 10,
-          }}>
-          <Text
-            style={{
-              fontWeight: '700',
-              fontFamily: 'Bakbak one-Regular',
-              fontSize: 18,
-
-              marginTop: 10,
-
-              textAlign: 'center',
-
-              color: '#000000',
-            }}>
-            Continue
-          </Text>
-        </TouchableOpacity> */}
-        <TouchableOpacity style={[signupStyles.touchablebuttons,{alignSelf:'center',top:'250%'}]}
-        onPress={() => navigation.navigate('MainBottomNavigation')}>
-          <View style={signupStyles.borderView}>
-            <Text style={[signupStyles.loginButtonText,{textAlign:'center'}]}>Continue</Text>
-            <View style={signupStyles.borderView1}>
-              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
-            </View>
-          </View>
-        </TouchableOpacity>
-      </View>
+      <Rectangular
+        path="Edit"
+        style={{
+          width: 10,
+          position: 'absolute',
+          alignSelf: 'center',
+          top: '90%',
+        }}
+        name="Continue"
+      />
     </View>
   );
 };

@@ -2,7 +2,7 @@ export const userStyles = {
   container: {
     flex: 1,
   },
-  
+
   text: {
     color: 'black',
     fontFamily: 'Bakbak One',
@@ -22,22 +22,18 @@ export const userStyles = {
   },
   textInput1: {
     borderBottomWidth: 1.5,
-    //width: 367,
-    width: 344,
+    width: 314,
     left: 23,
     fontWeight: '500',
     color: '#000000',
     fontSize: 18,
-    
   },
   nameScreenArrowIcon: {
-    //left:348,
-    //top: 535,
-    backgroundColor:"#DCC7E1", borderRadius:20,
+    backgroundColor: '#DCC7E1',
+    borderRadius: 20,
     position: 'absolute',
-    right:20,
-    top:390,
-    
+    right: 20,
+    top: 390,
   },
 
   //  ====================USERDOB STYLES=======================
@@ -47,21 +43,21 @@ export const userStyles = {
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
-    left: 40,
+    left: '170%',
   },
   textDOB2: {
     color: '#000000',
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
-    left: 140,
+    left: '550%',
   },
   textDOB3: {
     color: '#000000',
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
-    left: 260,
+    left: '1010%',
   },
   dateInput: {
     borderWidth: 1.5,
@@ -82,28 +78,30 @@ export const userStyles = {
     height: 57,
   },
   DobarrowIcon: {
-    //left:348, 
+    //left:348,
     //top: 605,
-    position:'absolute', 
-    backgroundColor:"#DCC7E1", 
-    borderRadius:20,
-    right:20,
-    top:460,},
+    position: 'absolute',
+    backgroundColor: '#DCC7E1',
+    borderRadius: 20,
+    right: 20,
+    top: 460,
+  },
 
   // ================user Email styles======================
   useremailScreenArrowIcon: {
     //left:348,
     //top: 600,
     position: 'absolute',
-    backgroundColor:"#DCC7E1", 
-    borderRadius:20,
-    right:20,
-    top:460,
+    backgroundColor: '#DCC7E1',
+    borderRadius: 20,
+    right: 20,
+    top: 460,
   },
   // ====================User Gender Styles====================
-  userGenderScreenArrowIcon:{
-  //  right:50,
-  //  left:70
-  backgroundColor:"#DCC7E1", borderRadius:20
-  }
+  userGenderScreenArrowIcon: {
+    //  right:50,
+    //  left:70
+    backgroundColor: '#DCC7E1',
+    borderRadius: 20,
+  },
 };

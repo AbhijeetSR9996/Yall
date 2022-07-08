@@ -67,7 +67,7 @@ export const ProfileDisplayStyles = {
   infoview3: {
     width: '30%',
     height: 62,
-    right: 80,
+    right: 85,
     backgroundColor: '#f9dfff',
     position: 'absolute',
     alignItems: 'space-between',
@@ -75,7 +75,7 @@ export const ProfileDisplayStyles = {
     borderWidth: 0.5,
   },
   infoview4: {
-    width: 80,
+    width: 85,
     height: 62,
     right: 0,
     backgroundColor: '#f9dfff',
@@ -94,24 +94,28 @@ export const ProfileDisplayStyles = {
     top: '35%',
   },
   text2: {
+    color: '#000000',
     position: 'absolute',
     right: 15,
     fontWeight: 'bold',
     fontSize: 11,
   },
   text3: {
+    color: '#000000',
     position: 'absolute',
     right: 10,
     fontWeight: 'bold',
     fontSize: 11,
   },
   text4: {
+    color: '#000000',
     position: 'absolute',
     right: 15,
     fontWeight: 'bold',
     fontSize: 11,
   },
   text5: {
+    color: '#000000',
     position: 'absolute',
     right: 5,
     fontWeight: 'bold',
@@ -125,6 +129,7 @@ export const ProfileDisplayStyles = {
     color: 'black',
   },
   text7: {
+    color: '#000000',
     position: 'absolute',
     left: 50,
     fontWeight: 'bold',
@@ -148,6 +153,7 @@ export const ProfileDisplayStyles = {
     color: 'black',
   },
   text10: {
+    color: '#000000',
     position: 'absolute',
     fontWeight: 'bold',
     fontSize: 13,
@@ -156,6 +162,7 @@ export const ProfileDisplayStyles = {
     position: 'absolute',
   },
   text11: {
+    color: '#000000',
     position: 'absolute',
     fontWeight: 'bold',
     fontSize: 13,
@@ -164,6 +171,7 @@ export const ProfileDisplayStyles = {
     position: 'absolute',
   },
   text12: {
+    color: '#000000',
     position: 'absolute',
     left: 40,
     fontSize: 18,
@@ -178,8 +186,9 @@ export const ProfileDisplayStyles = {
   img2: {
     height: 30,
     width: 30,
-    bottom: '65%',
+    bottom: '73%',
     alignSelf: 'flex-end',
+    right: '5%',
   },
   img2a: {
     height: 30,

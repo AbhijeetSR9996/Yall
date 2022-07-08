@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
 import {signupStyles} from './signupStyles';
 import {
   CodeField,
@@ -8,6 +8,10 @@ import {
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
 import {CircularButton} from '../../component/Buttons/circular';
+import {s, vs, ms, mvs} from 'react-native-size-matters';
+import {icons} from '../../../assets/icons/icons';
+
+const {height} = Dimensions.get('window');
 
 const CELL_COUNT = 4;
 
@@ -54,12 +58,20 @@ const VerificationCode = ({navigation}) => {
           )}
         />
       </View>
-      <View style={signupStyles.textView}>
+      <View
+        style={[
+          signupStyles.textView,
+          {
+            position: 'relative',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          },
+        ]}>
         <TouchableOpacity>
           <Text style={signupStyles.text2}>Didn't get a code?</Text>
         </TouchableOpacity>
-        <CircularButton path="GovtRegisterID" style={{top: 10, right: 50}} />
       </View>
+      <CircularButton path="GovtRegisterID" style={{marginTop: 440}} />
     </View>
   );
 };

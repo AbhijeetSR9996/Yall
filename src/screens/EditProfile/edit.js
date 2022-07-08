@@ -120,14 +120,14 @@ const Edit = ({navigation}) => {
           },
         ]}>
         <Image
-          source={require('../../../assets/images/heart.png')}
+          source={require('../../../assets/images/editprofile.png')}
           style={[
             ProfileDisplayStyles.img2,
             {
-              width: 90,
-              height: 90,
-              top: 6,
-              right: 10,
+              width: 173,
+              height: 132,
+              top: 0,
+              right: 0,
             },
           ]}
         />
@@ -146,6 +146,7 @@ const Edit = ({navigation}) => {
         ]}>
         <Image
           source={require('../../../assets/images/camera.png')}
+          onPress={() => createTwoButtonAlert()}
           style={[
             ProfileDisplayStyles.img7,
             {
@@ -163,14 +164,14 @@ const Edit = ({navigation}) => {
           {
             fontSize: 18,
             top: '-20%',
-            left: '10%',
+            left: '7%',
             color: 'grey',
             fontWeight: '300',
           },
         ]}>
         Full name
       </Text>
-      <View style={[userStyles.textInput, {top: '-28%', left: '3%'}]}>
+      <View style={[userStyles.textInput, {top: '-28%', left: '0%'}]}>
         <TextInput
           placeholder="John Doe"
           placeholderTextColor="#000000"
@@ -183,14 +184,14 @@ const Edit = ({navigation}) => {
           {
             fontSize: 18,
             top: '-27%',
-            left: '10%',
+            left: '7%',
             color: 'grey',
             fontWeight: '300',
           },
         ]}>
         Surname
       </Text>
-      <View style={[userStyles.textInput, {top: '-35%', left: '3%'}]}>
+      <View style={[userStyles.textInput, {top: '-35%', left: '0%'}]}>
         <TextInput
           placeholder="Doe"
           placeholderTextColor="#000000"
@@ -203,14 +204,14 @@ const Edit = ({navigation}) => {
           {
             fontSize: 18,
             top: '-34%',
-            left: '10%',
+            left: '7%',
             color: 'grey',
             fontWeight: '300',
           },
         ]}>
         Phone
       </Text>
-      <View style={[userStyles.textInput, {top: '-42%', left: '3%'}]}>
+      <View style={[userStyles.textInput, {top: '-42%', left: '0%'}]}>
         <TextInput
           placeholder="+8511 6654 5265"
           placeholderTextColor="#000000"
@@ -223,14 +224,14 @@ const Edit = ({navigation}) => {
           {
             fontSize: 18,
             top: '-41%',
-            left: '10%',
+            left: '7%',
             color: 'grey',
             fontWeight: '300',
           },
         ]}>
         Gender
       </Text>
-      <View style={[userStyles.textInput, {top: '-49%', left: '3%'}]}>
+      <View style={[userStyles.textInput, {top: '-49%', left: '0%'}]}>
         <TextInput
           placeholder="Male"
           placeholderTextColor="#000000"
@@ -243,14 +244,14 @@ const Edit = ({navigation}) => {
           {
             fontSize: 18,
             top: '-48%',
-            left: '10%',
+            left: '7%',
             color: 'grey',
             fontWeight: '300',
           },
         ]}>
         Date of birth
       </Text>
-      <View style={[userStyles.textInput, {top: '-56%', left: '3%'}]}>
+      <View style={[userStyles.textInput, {top: '-56%', left: '0%'}]}>
         <TextInput
           placeholder="01-01-2001"
           placeholderTextColor="#000000"

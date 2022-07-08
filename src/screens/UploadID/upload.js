@@ -1,10 +1,20 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity, Alert} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Alert,
+  Dimensions,
+} from 'react-native';
 import {govtStyles} from '../../screens/govtRegister.js/govtStyles';
 import {ProfileDisplayStyles} from '../../screens/ProfileDisplay/ProfileDisplay.styles';
 import {Card} from 'react-native-paper';
 import {Rectangular} from '../../component/Buttons/rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
+import {splashStyles} from '../../screens/splashScreen/splashStyles';
+import {icons} from '../../../assets/icons/icons';
+const {width, height} = Dimensions.get('window');
 
 const Upload = ({navigation}) => {
   const requestCameraPermission = async () => {
@@ -77,7 +87,7 @@ const Upload = ({navigation}) => {
       <Text style={[govtStyles.text, {top: '2.1%', left: '55%'}]}> card</Text>
 
       <Text style={[govtStyles.paragraph, {top: '0%'}]}>
-        Don’t lose access to your accont, verify your email 50kb.
+        Don’t lose access to your account, verify your email 50kb.
       </Text>
       <Card
         style={[
@@ -104,8 +114,7 @@ const Upload = ({navigation}) => {
             ]}>
             <TouchableOpacity
               style={{
-                //backgroundColor: '#DCC7E1',
-                left: 15,
+                alignSelf: 'center',
                 height: 70,
                 width: 70,
                 borderRadius: 10,
@@ -118,9 +127,9 @@ const Upload = ({navigation}) => {
                   ProfileDisplayStyles.img2,
                   {
                     width: 90,
-                    height: 90,
+                    height: 100,
                     top: 6,
-                    right: 10,
+                    left: '10%',
                   },
                 ]}
               />
@@ -128,20 +137,22 @@ const Upload = ({navigation}) => {
             <Text
               style={[
                 govtStyles.textCard,
-                {top: 115, left: 20, fontSize: 15, position: 'absolute'},
+                {top: 115, left: '45%', fontSize: 15, position: 'absolute'},
               ]}>
               Or
             </Text>
-            <Rectangular
-              path="UserName"
-              style={{
-                width: '70%',
-                position: 'absolute',
-                alignSelf: 'center',
-                top: 150,
-              }}
-              name="Upload File"
-            />
+            <TouchableOpacity
+              onPress={() => createTwoButtonAlert()}
+              style={[
+                splashStyles.touchableStarted,
+                {top: '70%', width: width * 0.5},
+              ]}>
+              <View style={[splashStyles.borderView, {width: width * 0.5}]}>
+                <Text style={splashStyles.buttonText}>Upload File</Text>
+
+                <View style={splashStyles.borderView1}>{icons.rightarrow}</View>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
       </Card>
@@ -150,31 +161,35 @@ const Upload = ({navigation}) => {
         style={[
           ProfileDisplayStyles.img2,
           {
-            width: 30,
-            height: 30,
+            width: 40,
+            height: 50,
             top: 23,
             left: -300,
           },
         ]}
       />
-      <Text style={[govtStyles.paragraph, {top: '-2%', left: '20%'}]}>
-        Aadharr card
+      <Text
+        style={[
+          govtStyles.paragraph,
+          {top: '-3%', left: '20%', color: '#000000'},
+        ]}>
+        Aadhaar card
       </Text>
       <Image
         source={require('../../../assets/images/scroller.png')}
         style={[
           ProfileDisplayStyles.img2,
           {
-            width: 30,
+            width: '73%',
             height: 30,
-            top: -20,
-            left: -260,
+            top: -25,
+            left: -25,
           },
         ]}
       />
 
       <Rectangular
-        path="UserName"
+        path="Selfie"
         style={{
           width: 10,
           position: 'absolute',

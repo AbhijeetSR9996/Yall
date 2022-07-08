@@ -5,8 +5,7 @@ import {icons} from '../../../assets/icons/icons';
 
 const {height} = Dimensions.get('window');
 
-export const CircularButton = props => {
-  const {path, style} = props;
+export const CircularButton = ({path, style}) => {
   const navigation = useNavigation();
   return (
     <View>
@@ -19,7 +18,7 @@ export const CircularButton = props => {
             position: 'absolute',
             backgroundColor: '#DCC7E1',
             borderRadius: 20,
-            top: 50,
+            top: 30,
             ...style,
           }}>
           {icons.rightcirclearrow}

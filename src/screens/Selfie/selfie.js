@@ -86,7 +86,6 @@ const Selfie = ({navigation}) => {
           {
             width: 310,
             top: '15%',
-            left: '15%',
             height: 310,
             borderRadius: 150,
             alignItems: 'center',
@@ -97,7 +96,7 @@ const Selfie = ({navigation}) => {
         ]}></Card>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate('Edit')}
+        onPress={() => createTwoButtonAlert()}
         style={[
           splashStyles.touchableStarted,
           {top: '30%', alignSelf: 'center'},
@@ -107,6 +106,16 @@ const Selfie = ({navigation}) => {
           <View style={splashStyles.borderView1}>{icons.rightarrow}</View>
         </View>
       </TouchableOpacity>
+      <Rectangular
+        path="UserName"
+        style={{
+          width: 10,
+          position: 'absolute',
+          alignSelf: 'center',
+          top: '90%',
+        }}
+        name="Continue"
+      />
     </View>
   );
 };

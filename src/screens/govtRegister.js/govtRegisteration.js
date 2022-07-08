@@ -60,7 +60,7 @@ const GovtRegisterID = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </Card>
-      <CircularButton path="UserName" />
+      <CircularButton path="Upload" style={{marginTop: 220}} />
     </View>
   );
 };
