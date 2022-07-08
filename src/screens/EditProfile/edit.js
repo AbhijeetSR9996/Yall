@@ -11,16 +11,16 @@ import {
   Alert,
 } from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
-import {styles} from '../genderScreens/styles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-import {photoStyles} from '../AddPhoto/styles';
-import {signupStyles} from '../SignUp/signupStyles';
-import {govtStyles} from '../../screens/govtRegister.js/govtStyles';
-import {Card} from 'react-native-paper';
-import {ProfileDisplayStyles} from '../../screens/ProfileDisplay/ProfileDisplay.styles';
-import {userStyles} from '../../screens/User details/userStyles';
+import { styles } from '../genderScreens/styles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { photoStyles } from '../AddPhoto/styles';
+import { signupStyles } from '../SignUp/signupStyles';
+import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
+import { Card } from 'react-native-paper';
+import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDisplay.styles';
+import { userStyles } from '../../screens/User details/userStyles';
 
-const Edit = ({navigation}) => {
+const Edit = ({ navigation }) => {
   const requestCameraPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
@@ -51,7 +51,7 @@ const Edit = ({navigation}) => {
       compressImageMaxWidth: 700,
       compressImageMaxHeight: 700,
       includeBase64: true,
-    }).catch(error => {});
+    }).catch(error => { });
   };
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -82,11 +82,11 @@ const Edit = ({navigation}) => {
           onPress: () => choosePhotoFromLibrary(),
         },
       ],
-      {cancelable: false},
+      { cancelable: false },
     );
 
   return (
-    <View style={[styles.container, {flex: 1}]}>
+    <View style={[styles.container, { flex: 1 }]}>
       <TouchableOpacity onPress={() => navigation.navigate('Gender4')}>
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
@@ -94,17 +94,19 @@ const Edit = ({navigation}) => {
       <Text
         style={[
           photoStyles.addPhotoText,
-          {fontSize: 18, top: '-5%', left: '15%'},
+          { fontSize: 18, top: '-4%', left: '15%' },
         ]}>
         Profile
       </Text>
-      <Text
-        style={[
-          photoStyles.addPhotoText,
-          {fontSize: 18, top: '-16%', left: '80%'},
-        ]}>
-        Save
-      </Text>
+      <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
+        <Text
+          style={[
+            photoStyles.addPhotoText,
+            { fontSize: 18, top: '-150%', left: '80%' },
+          ]}>
+          Save
+        </Text>
+      </TouchableOpacity>
       <Card
         style={[
           govtStyles.borderBox,
@@ -171,7 +173,7 @@ const Edit = ({navigation}) => {
         ]}>
         Full name
       </Text>
-      <View style={[userStyles.textInput, {top: '-28%', left: '0%'}]}>
+      <View style={[userStyles.textInput, { top: '-28%', left: '0%' }]}>
         <TextInput
           placeholder="John Doe"
           placeholderTextColor="#000000"
@@ -191,7 +193,7 @@ const Edit = ({navigation}) => {
         ]}>
         Surname
       </Text>
-      <View style={[userStyles.textInput, {top: '-35%', left: '0%'}]}>
+      <View style={[userStyles.textInput, { top: '-35%', left: '0%' }]}>
         <TextInput
           placeholder="Doe"
           placeholderTextColor="#000000"
@@ -211,7 +213,7 @@ const Edit = ({navigation}) => {
         ]}>
         Phone
       </Text>
-      <View style={[userStyles.textInput, {top: '-42%', left: '0%'}]}>
+      <View style={[userStyles.textInput, { top: '-42%', left: '0%' }]}>
         <TextInput
           placeholder="+8511 6654 5265"
           placeholderTextColor="#000000"
@@ -231,7 +233,7 @@ const Edit = ({navigation}) => {
         ]}>
         Gender
       </Text>
-      <View style={[userStyles.textInput, {top: '-49%', left: '0%'}]}>
+      <View style={[userStyles.textInput, { top: '-49%', left: '0%' }]}>
         <TextInput
           placeholder="Male"
           placeholderTextColor="#000000"
@@ -251,7 +253,7 @@ const Edit = ({navigation}) => {
         ]}>
         Date of birth
       </Text>
-      <View style={[userStyles.textInput, {top: '-56%', left: '0%'}]}>
+      <View style={[userStyles.textInput, { top: '-56%', left: '0%' }]}>
         <TextInput
           placeholder="01-01-2001"
           placeholderTextColor="#000000"

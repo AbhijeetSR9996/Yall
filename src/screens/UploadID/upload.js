@@ -7,16 +7,16 @@ import {
   Alert,
   Dimensions,
 } from 'react-native';
-import {govtStyles} from '../../screens/govtRegister.js/govtStyles';
-import {ProfileDisplayStyles} from '../../screens/ProfileDisplay/ProfileDisplay.styles';
-import {Card} from 'react-native-paper';
-import {Rectangular} from '../../component/Buttons/rectangular';
+import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
+import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDisplay.styles';
+import { Card } from 'react-native-paper';
+import { Rectangular } from '../../component/Buttons/rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
-import {splashStyles} from '../../screens/splashScreen/splashStyles';
-import {icons} from '../../../assets/icons/icons';
-const {width, height} = Dimensions.get('window');
+import { splashStyles } from '../../screens/splashScreen/splashStyles';
+import { icons } from '../../../assets/icons/icons';
+const { width, height } = Dimensions.get('window');
 
-const Upload = ({navigation}) => {
+const Upload = ({ navigation }) => {
   const requestCameraPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
@@ -47,7 +47,7 @@ const Upload = ({navigation}) => {
       compressImageMaxWidth: 700,
       compressImageMaxHeight: 700,
       includeBase64: true,
-    }).catch(error => {});
+    }).catch(error => { });
   };
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -78,22 +78,22 @@ const Upload = ({navigation}) => {
           onPress: () => choosePhotoFromLibrary(),
         },
       ],
-      {cancelable: false},
+      { cancelable: false },
     );
 
   return (
     <View style={govtStyles.container}>
       <Text style={govtStyles.text}>Upload Aadhaar</Text>
-      <Text style={[govtStyles.text, {top: '2.1%', left: '55%'}]}> card</Text>
+      <Text style={[govtStyles.text, { top: '2%', left: '49%' }]}> Card</Text>
 
-      <Text style={[govtStyles.paragraph, {top: '0%'}]}>
+      <Text style={[govtStyles.paragraph, { top: '0%' }]}>
         Don’t lose access to your account, verify your email 50kb.
       </Text>
       <Card
         style={[
           govtStyles.borderBox,
           {
-            width: 310,
+            width: 365,
             top: '5%',
             height: 250,
             alignItems: 'center',
@@ -110,7 +110,7 @@ const Upload = ({navigation}) => {
           <View
             style={[
               govtStyles.textMain,
-              {position: 'relative', justifyContent: 'center'},
+              { position: 'relative', justifyContent: 'center' },
             ]}>
             <TouchableOpacity
               style={{
@@ -137,7 +137,7 @@ const Upload = ({navigation}) => {
             <Text
               style={[
                 govtStyles.textCard,
-                {top: 115, left: '45%', fontSize: 15, position: 'absolute'},
+                { top: 115, left: '45%', fontSize: 15, position: 'absolute' },
               ]}>
               Or
             </Text>
@@ -145,9 +145,9 @@ const Upload = ({navigation}) => {
               onPress={() => createTwoButtonAlert()}
               style={[
                 splashStyles.touchableStarted,
-                {top: '70%', width: width * 0.5},
+                { top: '70%', width: width * 0.5 },
               ]}>
-              <View style={[splashStyles.borderView, {width: width * 0.5}]}>
+              <View style={[splashStyles.borderView, { width: width * 0.5 }]}>
                 <Text style={splashStyles.buttonText}>Upload File</Text>
 
                 <View style={splashStyles.borderView1}>{icons.rightarrow}</View>
@@ -171,7 +171,7 @@ const Upload = ({navigation}) => {
       <Text
         style={[
           govtStyles.paragraph,
-          {top: '-3%', left: '20%', color: '#000000'},
+          { top: '-3%', left: '20%', color: '#000000' },
         ]}>
         Aadhaar card
       </Text>

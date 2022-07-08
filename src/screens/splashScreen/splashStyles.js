@@ -1,5 +1,5 @@
-import {Dimensions} from 'react-native';
-const {width, height} = Dimensions.get('window');
+import { Dimensions } from 'react-native';
+const { width, height } = Dimensions.get('window');
 export const splashStyles = {
   container: {
     flex: 1,
@@ -49,8 +49,6 @@ export const splashStyles = {
   buttonText: {
     fontWeight: '700',
     fontSize: 18,
-    //textAlign:'center',
-    //margin: 15,
     fontFamily: 'Bakbak one-Regular',
     color: '#000000',
     alignSelf: 'center',
@@ -59,12 +57,9 @@ export const splashStyles = {
     right: '10%',
   },
   borderView1: {
-    //top: -55,
-    //top: -45.5,
     width: width * 0.15,
     borderWidth: 1,
-    //height: height * 0.07,
-    height: '105%',
+    height: '104%',
     alignSelf: 'flex-end',
     alignItems: 'center',
     justifyContent: 'center',
@@ -72,5 +67,5 @@ export const splashStyles = {
     position: 'absolute',
     marginVertical: -1,
   },
-  arrowIcon: {textAlign: 'center', alignSelf: 'center'},
+  arrowIcon: { textAlign: 'center', alignSelf: 'center' },
 };

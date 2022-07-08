@@ -8,12 +8,12 @@ import {
   TextInput,
   Switch,
 } from 'react-native';
-import {Card} from 'react-native-paper';
-import {govtStyles} from './govtStyles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-import {CircularButton} from '../../component/Buttons/circular';
+import { Card } from 'react-native-paper';
+import { govtStyles } from './govtStyles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { CircularButton } from '../../component/Buttons/circular';
 
-const GovtRegisterID = ({navigation}) => {
+const GovtRegisterID = ({ navigation }) => {
   return (
     <View style={govtStyles.container}>
       <Text style={govtStyles.text}>Govt. Register ID. </Text>
@@ -22,14 +22,14 @@ const GovtRegisterID = ({navigation}) => {
         industry. Lorem Ipsum has been the industry's standard.
       </Text>
       <Card style={govtStyles.borderBox}>
-        <View style={{flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row' }}>
           <View style={govtStyles.insideBox}>
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
           </View>
           <View style={govtStyles.textMain}>
             <Text style={govtStyles.textIDCard}>Driver’s</Text>
             <Text
-              style={[govtStyles.textIDCard, {marginTop: -25, left: '30%'}]}>
+              style={[govtStyles.textIDCard, { marginTop: -25, left: '30%' }]}>
               {' '}
               License{' '}
             </Text>
@@ -44,8 +44,8 @@ const GovtRegisterID = ({navigation}) => {
       </Card>
       <Card
         style={govtStyles.borderBox}
-        onPress={() => navigation.navigate('UserName')}>
-        <View style={{flexDirection: 'row'}}>
+        onPress={() => navigation.navigate('Upload')}>
+        <View style={{ flexDirection: 'row' }}>
           <View style={govtStyles.insideBox}>
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
           </View>
@@ -60,7 +60,7 @@ const GovtRegisterID = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </Card>
-      <CircularButton path="Upload" style={{marginTop: 220}} />
+      <CircularButton path="Upload" style={{ marginTop: 280 }} />
     </View>
   );
 };

@@ -28,7 +28,7 @@ export const govtStyles = {
     color: '#AAAAAA',
   },
   borderBox: {
-    width: 310,
+    width: 370,
     top: 180,
     height: 92,
     left: 25,

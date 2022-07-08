@@ -9,17 +9,17 @@ import {
   TextInput,
   Switch,
 } from 'react-native';
-import {RadioButton} from 'react-native-paper';
-import {styles} from './styles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-import {CircularButton} from '../../component/Buttons/circular';
+import { RadioButton } from 'react-native-paper';
+import { styles } from './styles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { CircularButton } from '../../component/Buttons/circular';
 
-const Gender = ({navigation}) => {
+const Gender = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Which gender you prefer? </Text>
 
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -99,7 +99,7 @@ const Gender = ({navigation}) => {
         </View>
       </View>
 
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -177,7 +177,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -255,7 +255,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -308,7 +308,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -361,7 +361,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -439,7 +439,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -505,7 +505,7 @@ const Gender = ({navigation}) => {
           alignItems: 'center',
           justifyContent: 'space-between',
         }}>
-        <Text style={{fontSize: 15, width: 270, color: '#000000', bottom: 20}}>
+        <Text style={{ fontSize: 15, width: 270, color: '#000000', bottom: 20 }}>
           Learn more
         </Text>
         <Text
@@ -517,11 +517,11 @@ const Gender = ({navigation}) => {
           }}>
           about we sue your gender
         </Text>
-        <Text style={{fontSize: 15, width: 270, right: '790%', bottom: 5}}>
+        <Text style={{ fontSize: 15, width: 270, right: '790%', bottom: 5 }}>
           to recommend people on Yall
         </Text>
       </View>
-      <CircularButton path="Gender1" style={{marginTop: 70}} />
+      <CircularButton path="Gender1" style={{ marginTop: 80 }} />
     </View>
   );
 };

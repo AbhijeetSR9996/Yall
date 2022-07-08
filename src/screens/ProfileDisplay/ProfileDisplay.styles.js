@@ -1,6 +1,6 @@
 import React from 'react';
-import {Dimensions} from 'react-native';
-const {width, height} = Dimensions.get('window');
+import { Dimensions } from 'react-native';
+const { width, height } = Dimensions.get('window');
 
 export const ProfileDisplayStyles = {
   main: {
@@ -40,7 +40,7 @@ export const ProfileDisplayStyles = {
     borderTopLeftRadius: 20,
     borderWidth: 2,
     shadowColor: 'black',
-    shadowOffset: {width: -2, height: 10},
+    shadowOffset: { width: -2, height: 10 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
   },
@@ -103,14 +103,14 @@ export const ProfileDisplayStyles = {
   text3: {
     color: '#000000',
     position: 'absolute',
-    right: 10,
+    right: 14,
     fontWeight: 'bold',
     fontSize: 11,
   },
   text4: {
     color: '#000000',
     position: 'absolute',
-    right: 15,
+    right: 25,
     fontWeight: 'bold',
     fontSize: 11,
   },

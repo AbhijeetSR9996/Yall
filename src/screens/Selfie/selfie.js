@@ -1,14 +1,14 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity, Alert} from 'react-native';
-import {govtStyles} from '../../screens/govtRegister.js/govtStyles';
-import {ProfileDisplayStyles} from '../../screens/ProfileDisplay/ProfileDisplay.styles';
-import {Card} from 'react-native-paper';
-import {Rectangular} from '../../component/Buttons/rectangular';
+import { View, Text, Image, TouchableOpacity, Alert } from 'react-native';
+import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
+import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDisplay.styles';
+import { Card } from 'react-native-paper';
+import { Rectangular } from '../../component/Buttons/rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
-import {splashStyles} from '../splashScreen/splashStyles';
-import {icons} from '../../../assets/icons/icons';
+import { splashStyles } from '../splashScreen/splashStyles';
+import { icons } from '../../../assets/icons/icons';
 
-const Selfie = ({navigation}) => {
+const Selfie = ({ navigation }) => {
   const requestCameraPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
@@ -39,13 +39,12 @@ const Selfie = ({navigation}) => {
       compressImageMaxWidth: 700,
       compressImageMaxHeight: 700,
       includeBase64: true,
-    }).catch(error => {});
+    }).catch(error => { });
   };
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
       width: 700,
       height: 700,
-
       includeBase64: true,
       compressImageQuality: 0.5,
     });
@@ -70,7 +69,7 @@ const Selfie = ({navigation}) => {
           onPress: () => choosePhotoFromLibrary(),
         },
       ],
-      {cancelable: false},
+      { cancelable: false },
     );
 
   return (
@@ -99,7 +98,7 @@ const Selfie = ({navigation}) => {
         onPress={() => createTwoButtonAlert()}
         style={[
           splashStyles.touchableStarted,
-          {top: '30%', alignSelf: 'center'},
+          { top: '30%', alignSelf: 'center' },
         ]}>
         <View style={splashStyles.borderView}>
           <Text style={splashStyles.buttonText}>Take a selfie</Text>
