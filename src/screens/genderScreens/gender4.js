@@ -12,11 +12,12 @@ import {
 
 import {styles} from './styles';
 import {imageicon, icons} from '../../../assets/icons/icons';
+import {Rectangular} from '../../component/Buttons/rectangular';
 
 const Gender4 = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity  onPress={() => navigation.navigate('Gender3')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Gender3')}>
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
 
@@ -25,7 +26,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 110,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 22,
@@ -51,7 +52,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: ,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 35,
@@ -77,7 +78,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 50,
@@ -102,7 +103,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 60,
@@ -129,7 +130,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 22,
@@ -155,7 +156,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 35,
@@ -180,7 +181,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 50,
@@ -208,7 +209,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 22,
@@ -234,7 +235,7 @@ const Gender4 = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 200,
+            top: -20,
             width: 'auto',
             height: 44,
             left: 35,
@@ -258,37 +259,16 @@ const Gender4 = ({navigation}) => {
         </View>
       </View>
 
-      <View style={{}}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('AddPhoto')}
-          style={{
-            width: '80%',
-            height: '24%',
-            borderWidth: 1,
-            borderRadius: 50,
-            borderColor: '#000000',
-            alignSelf: 'center',
-            top: 450,
-            backgroundColor: '#DCC7E1',
-
-            elevation: 10,
-          }}>
-          <Text
-            style={{
-              fontWeight: '700',
-              fontFamily: 'Bakbak one-Regular',
-              fontSize: 18,
-
-              marginTop: 10,
-
-              textAlign: 'center',
-
-              color: '#000000',
-            }}>
-            Continue [4/4]
-          </Text>
-        </TouchableOpacity>
-      </View>
+      <Rectangular
+        path="AddPhoto"
+        style={{
+          width: 10,
+          position: 'absolute',
+          alignSelf: 'center',
+          top: '90%',
+        }}
+        name="Continue [4/4]"
+      />
     </View>
   );
 };

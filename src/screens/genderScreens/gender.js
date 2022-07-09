@@ -9,16 +9,17 @@ import {
   TextInput,
   Switch,
 } from 'react-native';
-import {RadioButton} from 'react-native-paper';
-import {styles} from './styles';
-import {imageicon, icons} from '../../../assets/icons/icons';
+import { RadioButton } from 'react-native-paper';
+import { styles } from './styles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { CircularButton } from '../../component/Buttons/circular';
 
-const Gender = ({navigation}) => {
+const Gender = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Which gender you prefer? </Text>
 
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -98,7 +99,7 @@ const Gender = ({navigation}) => {
         </View>
       </View>
 
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -176,7 +177,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -254,7 +255,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -307,7 +308,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -360,7 +361,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -438,10 +439,7 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 110}}>
-
-
-
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 110 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -469,8 +467,6 @@ const Gender = ({navigation}) => {
           </Text>
         </View>
 
-
-
         <View
           style={{
             borderWidth: 1.5,
@@ -478,7 +474,7 @@ const Gender = ({navigation}) => {
             width: 'auto',
             height: 44,
             //left: 50,
-            left:35,
+            left: 35,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -500,25 +496,32 @@ const Gender = ({navigation}) => {
       </View>
       <View
         style={{
-          //top: 270,
-          top:150,
+          top: 165,
           flexDirection: 'row',
           justifyContent: 'space-between',
           width: '90%',
+          height: '10%',
           alignSelf: 'center',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-        <Text style={{//fontSize: 15, 
-          fontSize:13,width: 270}}>
-          Learn more about we sue your gender to recommend people on Yall
+        <Text style={{ fontSize: 15, width: 270, color: '#000000', bottom: 20 }}>
+          Learn more
         </Text>
-<View>
-        <TouchableOpacity onPress={() => navigation.navigate('AddPhoto')}>
-          <Text
-            style={styles.userGenderScreenArrowIcon}>{icons.rightcirclearrow}</Text>
-           
-        </TouchableOpacity>
-        </View>
+        <Text
+          style={{
+            fontSize: 15,
+            width: 270,
+            right: '280%',
+            bottom: 20,
+          }}>
+          about we sue your gender
+        </Text>
+        <Text style={{ fontSize: 15, width: 270, right: '790%', bottom: 5 }}>
+          to recommend people on Yall
+        </Text>
       </View>
+      <CircularButton path="Gender1" style={{ marginTop: 80 }} />
     </View>
   );
 };

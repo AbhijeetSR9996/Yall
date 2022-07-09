@@ -8,22 +8,23 @@ import {
   Pressable,
   TextInput,
   Switch,
-  Dimensions
+  Dimensions,
 } from 'react-native';
-import {RadioButton} from 'react-native-paper';
-import {userStyles} from './userStyles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-const {width, height} = Dimensions.get('window');
+import { RadioButton } from 'react-native-paper';
+import { userStyles } from './userStyles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+const { width, height } = Dimensions.get('window');
+import { CircularButton } from '../../component/Buttons/circular';
 
-const UserGender = ({navigation}) => {
+const UserGender = ({ navigation }) => {
   return (
     <View style={[userStyles.container]}>
       <Text style={userStyles.text}>Which gender best describe you? </Text>
-      <View style={{flexDirection: 'row', marginBottom: 15}}>
+      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             //top: 200,
             width: 70,
             height: 44,
@@ -50,7 +51,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 100,
             height: 44,
             left: 35,
@@ -76,7 +77,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 100,
             height: 44,
             left: 50,
@@ -100,7 +101,7 @@ const UserGender = ({navigation}) => {
         </View>
       </View>
 
-      <View style={{flexDirection: 'row', marginBottom: 15}}>
+      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -131,7 +132,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 120,
             height: 44,
             left: 35,
@@ -156,7 +157,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 120,
             height: 45,
             left: 50,
@@ -179,7 +180,7 @@ const UserGender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 15}}>
+      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -209,7 +210,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 70,
             height: 44,
             left: 35,
@@ -234,7 +235,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 150,
             height: 44,
             left: 50,
@@ -257,11 +258,11 @@ const UserGender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 15}}>
+      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 180,
             height: 44,
             left: 22,
@@ -287,7 +288,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 120,
             height: 44,
             left: 35,
@@ -310,11 +311,11 @@ const UserGender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 15}}>
+      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 200,
             height: 44,
             left: 22,
@@ -340,7 +341,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 90,
             height: 44,
             left: 35,
@@ -363,11 +364,11 @@ const UserGender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10 }}>
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             left: 22,
@@ -393,7 +394,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             left: 35,
@@ -418,7 +419,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             left: 50,
@@ -441,11 +442,11 @@ const UserGender = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 15}}>
+      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             //left: 35,
@@ -471,7 +472,7 @@ const UserGender = ({navigation}) => {
         <View
           style={{
             borderWidth: 1.5,
-            top:100,
+            top: 100,
             width: 110,
             height: 44,
             //left: 50,
@@ -497,25 +498,32 @@ const UserGender = ({navigation}) => {
       </View>
       <View
         style={{
-          //top: 270,
-          top: 130,
+          top: 135,
           flexDirection: 'row',
           justifyContent: 'space-between',
           width: '90%',
+          height: '10%',
           alignSelf: 'center',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}>
-        <Text style={{fontSize: 15, width: 270}}>
-          Learn more about we sue your gender to recommend people on Yall{' '}
+        <Text style={{ fontSize: 15, width: 270, color: '#AD5DD7', bottom: 20 }}>
+          Learn more
         </Text>
-<View>
-        <TouchableOpacity onPress={() => navigation.navigate('UserJob')}>
-          <Text
-            style={userStyles.userGenderScreenArrowIcon}> {icons.rightcirclearrow}</Text>
-          
-         
-        </TouchableOpacity>
-        </View>
+        <Text
+          style={{
+            fontSize: 15,
+            width: 270,
+            right: '280%',
+            bottom: 20,
+          }}>
+          about we sue your gender
+        </Text>
+        <Text style={{ fontSize: 15, width: 270, right: '790%', bottom: 5 }}>
+          to recommend people on Yall
+        </Text>
       </View>
+      <CircularButton path="UserJob" style={{ marginTop: 80 }} />
     </View>
   );
 };

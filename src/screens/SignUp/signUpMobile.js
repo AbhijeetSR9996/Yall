@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
-import {images} from '../../constants/styles';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import {signupStyles} from './signupStyles';
 import {icons} from '../../../assets/icons/icons';
 const SignUpMobile = ({navigation}) => {
@@ -25,21 +24,20 @@ const SignUpMobile = ({navigation}) => {
         />
       </View>
 
-      <Text style={signupStyles.headline}>
+      <Text style={[signupStyles.headline, {top: '8%'}]}>
         By clicking “Log in”, you agree with our Terms. learn how we process
         your data in our privacy policy and cokkies policy.
       </Text>
 
-     
       <View>
         <Image
           style={signupStyles.backgroundthirdContainer}
           source={require('../../../assets/images/screen2.png')}
         />
       </View>
-      <View style={{alignItems: 'center'}}>
+      <View style={{alignItems: 'center', top: '8%'}}>
         <TouchableOpacity
-        onPress={() => navigation.navigate('SignUpMobile1')}
+          onPress={() => navigation.navigate('SignUpMobile1')}
           style={{
             width: '80%',
             height: '24%',
@@ -56,16 +54,14 @@ const SignUpMobile = ({navigation}) => {
               height: '110%',
               alignSelf: 'center',
               backgroundColor: '#DCC7E1',
-              position:'relative'
+              position: 'relative',
             }}>
             <Text
               style={{
                 fontWeight: '400',
-                //fontSize: 20,
-                fontSize:17,
+                fontSize: 17,
                 fontWeight: '500',
-                //margin: 10,
-                margin:7,
+                margin: 7,
                 color: 'black',
                 color: '#000000',
               }}>
@@ -73,21 +69,19 @@ const SignUpMobile = ({navigation}) => {
             </Text>
             <View
               style={{
-                //left: 135,
-                //left:115,
-                //top: -47.5,
-                //top: -37.5,
-                marginVertical:-1,
+                marginVertical: -1,
                 width: '20%',
                 borderWidth: 1,
                 height: '105%',
-                //alignSelf: 'center',
-                alignSelf:'flex-end',
                 backgroundColor: '#DCC7E1',
-                position:'absolute'
+                position: 'absolute',
+                right: '0%',
               }}>
-              <Text style={{textAlign: 'center', //paddingTop: 10
-              paddingTop:5}}>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  paddingTop: 5,
+                }}>
                 {icons.rightarrow}
               </Text>
             </View>

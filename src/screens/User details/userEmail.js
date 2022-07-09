@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 import {userStyles} from './userStyles';
-import {imageicon, icons} from '../../../assets/icons/icons';
+import {CircularButton} from '../../component/Buttons/circular';
 
 const UserEmail = ({navigation}) => {
   const [isEnabled, setIsEnabled] = React.useState(false);
@@ -23,12 +23,12 @@ const UserEmail = ({navigation}) => {
       <View style={userStyles.textInput}>
         <TextInput
           placeholder="Email"
-          placeholderTextColor="#000000"
+          placeholderTextColor="#AAAAAA"
           style={userStyles.textInput1}></TextInput>
       </View>
 
       <View style={{flexDirection: 'row', top: 150, left: 21}}>
-        <Text style={{top: 5,color:'#000000'}}>Visit on profile</Text>
+        <Text style={{top: 5, color: '#AAAAAA'}}>Visit on profile</Text>
         <Switch
           style={{left: 10}}
           trackColor={{false: '#767577', true: '#008000'}}
@@ -39,12 +39,7 @@ const UserEmail = ({navigation}) => {
         />
       </View>
       <View>
-      <TouchableOpacity onPress={() => navigation.navigate('UserGender')}>
-        <Text
-          style={userStyles.useremailScreenArrowIcon}>{icons.rightcirclearrow}</Text>
-        
-        
-      </TouchableOpacity>
+        <CircularButton path="UserGender" style={{top: 45}} />
       </View>
     </View>
   );

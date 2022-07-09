@@ -1,22 +1,18 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  TextInput,
-} from 'react-native';
+import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
 import {signupStyles} from './signupStyles';
-import {icons, imageicon} from '../../../assets/icons/icons';
-
-
 import {
   CodeField,
   Cursor,
   useBlurOnFulfill,
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
+import {CircularButton} from '../../component/Buttons/circular';
+import {s, vs, ms, mvs} from 'react-native-size-matters';
+import {icons} from '../../../assets/icons/icons';
+
+const {height} = Dimensions.get('window');
+
 const CELL_COUNT = 4;
 
 const VerificationCode = ({navigation}) => {
@@ -32,10 +28,8 @@ const VerificationCode = ({navigation}) => {
         <Text style={signupStyles.text}>Enter your verification code.</Text>
       </View>
       <View style={signupStyles.text1}>
-        {/* <Text>sent Code to 1234567990 - </Text> */}
-        <Text style={{color:'#AAAAAA'}}>Sent to 1234567990 - </Text>
-        <TouchableOpacity
-        onPress={() => navigation.navigate('SignUpMobile1')}>
+        <Text style={{color: '#AAAAAA'}}>Sent to 1234567990 - </Text>
+        <TouchableOpacity onPress={() => navigation.navigate('SignUpMobile1')}>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
       </View>
@@ -64,14 +58,20 @@ const VerificationCode = ({navigation}) => {
           )}
         />
       </View>
-      <View style={signupStyles.textView}>
-      <TouchableOpacity >
-      <Text style={signupStyles.text2}>Didn't get a code?</Text>    
-      </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('GovtRegisterID')}>
-          <Text style={signupStyles.imageicon}> {icons.rightcirclearrow}</Text>
+      <View
+        style={[
+          signupStyles.textView,
+          {
+            position: 'relative',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          },
+        ]}>
+        <TouchableOpacity>
+          <Text style={signupStyles.text2}>Didn't get a code?</Text>
         </TouchableOpacity>
       </View>
+      <CircularButton path="GovtRegisterID" style={{marginTop: 440}} />
     </View>
   );
 };

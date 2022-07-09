@@ -1,11 +1,8 @@
-import React from 'react';
-import {Dimensions} from 'react-native';
-const {width, height} = Dimensions.get('window');
+import { Dimensions } from 'react-native';
+const { width, height } = Dimensions.get('window');
 export const splashStyles = {
   container: {
-    flex:1,
-   
-   
+    flex: 1,
   },
   backgroundContainer: {
     position: 'absolute',
@@ -25,7 +22,7 @@ export const splashStyles = {
     alignSelf: 'center',
     textAlign: 'center',
     color: '#FFFFFF',
-    top:130
+    top: 130,
   },
   getStartedButtonMain: {
     alignItems: 'center',
@@ -45,34 +42,30 @@ export const splashStyles = {
     borderRightWidth: 0,
     height: height * 0.07,
     //alignItems: 'center',
-    alignSelf:'center',
+    alignSelf: 'center',
     backgroundColor: '#DCC7E1',
-    position:'relative'
+    position: 'relative',
   },
   buttonText: {
     fontWeight: '700',
     fontSize: 18,
-    textAlign:'center',
-    //margin: 15,
     fontFamily: 'Bakbak one-Regular',
     color: '#000000',
-    alignSelf:'center',
-    justifyContent:'center',
-    paddingVertical:10
+    alignSelf: 'center',
+    justifyContent: 'center',
+    paddingVertical: 10,
+    right: '10%',
   },
   borderView1: {
- 
-    //top: -55,
-    //top: -45.5,
     width: width * 0.15,
     borderWidth: 1,
-    height: height * 0.07,
+    height: '104%',
     alignSelf: 'flex-end',
-    alignItems:'center',
-    justifyContent:'center',
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#DCC7E1',
-    position:'absolute',
-    marginVertical:-1
+    position: 'absolute',
+    marginVertical: -1,
   },
-  arrowIcon: {textAlign: 'center', alignSelf:'center', },
+  arrowIcon: { textAlign: 'center', alignSelf: 'center' },
 };
