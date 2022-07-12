@@ -1,32 +1,38 @@
 import React from "react";
-import { View, Text, ImageBackground ,Image} from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { View, Text, ImageBackground, Image, TouchableOpacity, ScrollView } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import styles from "./styles"
 
 const Events = () => {
+    const navigation = useNavigation();
     return (
-        // <View style={styles.mainContainer}>
         <ImageBackground style={styles.mainContainer} source={require('../../../assets/images/Gradient-Fill.png')}>
             <View style={styles.firstContainer}>
                 <TouchableOpacity>
-                <Image
-                  source={require('../../../assets/images/weekend-event.png')}
-                  style={styles.weekendEvent}
-                  resizeMode="stretch"
-                />
+                    <ImageBackground
+                        source={require('../../../assets/images/weekend.png')}
+                        style={styles.weekendEvent}
+                        resizeMode="stretch"
+                    >
+                        <Text style={styles.weekendText}>Weekend Event</Text>
+                    </ImageBackground>
                 </TouchableOpacity>
             </View>
             <View style={styles.sceondContainer}>
-            <TouchableOpacity>
-                <Image
-                  source={require('../../../assets/images/discover-dates.png')}
-                  style={styles.discoverDates}
-                  resizeMode="stretch"
-                />
+                {/* <TouchableOpacity onPress={() => navigation.navigate('Discover')}> */}
+                    <TouchableOpacity>
+                    <ImageBackground
+                        source={require('../../../assets/images/discover-event.png')}
+                        style={styles.discoverDates}
+                        resizeMode="stretch"
+                    >
+                        <Text style={styles.discoverText}>Discover Event</Text>
+
+                    </ImageBackground>
                 </TouchableOpacity>
             </View>
+
         </ImageBackground>
-        // </View>
     );
 }
 

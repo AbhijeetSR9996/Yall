@@ -27,6 +27,8 @@ import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from '../src/screens/UploadID/upload';
 import Selfie from '../src/screens/Selfie/selfie';
 import Edit from '../src/screens/EditProfile/edit';
+import Events from '../src/screens/Events';
+import Discover from '../src/screens/Discover';
 
 const Stack = createStackNavigator();
 
@@ -67,6 +69,8 @@ function MainStackNavigation() {
         <Stack.Screen name="Upload" component={Upload} />
         <Stack.Screen name="Edit" component={Edit} />
         <Stack.Screen name="Selfie" component={Selfie} />
+        <Stack.Screen name="Events" component={Events} />
+        <Stack.Screen name="Discover" component={Discover} />
       </Stack.Navigator>
     </NavigationContainer>
   );
