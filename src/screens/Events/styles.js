@@ -1,24 +1,24 @@
-import { StyleSheet } from 'react-native';
-import { Dimensions } from 'react-native';
+import { StyleSheet,Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
-    mainContainer: {
+    main_container: {
         backgroundColor: '#E5E5E5',
-        flex: 1,
+        height:height,
     },
-    firstContainer: {
+    first_container: {
         flex: 1,
         width: width,
         paddingTop: 50,
         paddingBottom: 0,
-        paddingHorizontal: '6%'
+        paddingHorizontal: '6%',
+        height:height,
     },
-    weekendEvent: {
+    weekend_event: {
         width: width * 0.88,
         height: height * 0.4,
     },
-    weekendText: {
+    weekend_text: {
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,
@@ -32,17 +32,17 @@ export default StyleSheet.create({
         color: "#FFFFFF",
         textTransform: 'uppercase',
     },
-    sceondContainer: {
+    sceond_container: {
         flex: 1,
         width: width,
-        // paddingTop:50,
-        paddingHorizontal: '6%'
+        marginTop:"-8%",
+        paddingHorizontal: '6%',
     },
-    discoverDates: {
+    discover_dates: {
         width: width * 0.88,
         height: height * 0.4
     },
-    discoverText: {
+    discover_text: {
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,

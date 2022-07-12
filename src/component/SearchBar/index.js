@@ -1,28 +1,26 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
-// import Icon from "react-native-vector-icons/Ionicons";
+import Icon from "react-native-vector-icons/EvilIcons";
 import { s } from "react-native-size-matters";
 import styles from "./styles";
-import { Search } from "../../../assets/svgs";
 
-const SearchBar = ({ title, style, props, onChangeInput, onPressSearch, inputText }) => {
+const SearchBar = (props) => {
 
-    
+    const { title, style, onChangeInput, onPressSearch, inputText, LeftIcon , ...restProps} = props
     return (
         <View style={{...styles.container, ...style}}>
-
-            {/* <Text style={Styles.title}>{title}</Text> */}
+            <TouchableOpacity onPress={() => onPressSearch(inputText)}>
+                <Icon name="location"
+                size={s(30)}
+                ></Icon>
+  </TouchableOpacity>
             <TextInput
                 placeholder={title}
-                style={{ ...styles.textInput }}
-                {...props}
+                style={{ ...styles.text_input }}
                 onChangeText={onChangeInput}
                 caretHidden={false}
+                {...restProps}
             />
-            <TouchableOpacity onPress={() => onPressSearch(inputText)}>
-                <Search source={require("../../../assets/images/glass.png")} name="search-outline" size={s(20)} color="#AFAFAF" />
-            </TouchableOpacity>
-
         </View>
     );
 };
