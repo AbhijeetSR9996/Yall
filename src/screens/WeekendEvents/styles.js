@@ -52,6 +52,8 @@ export default StyleSheet.create({
         alignItems:'center',
         textAlign:'center',
         backgroundColor:'#FF0000'
+    },
+    right_btn:{
+        fontSize:18,
     }
-
 })
