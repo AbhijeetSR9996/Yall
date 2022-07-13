@@ -9,7 +9,7 @@ const Events = () => {
         <SafeAreaView >
         <ImageBackground style={styles.main_container} source={require('../../../assets/images/Gradient-Fill.png')}>
             <View style={styles.first_container}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('WeekendEvent')}>
                     <ImageBackground
                         source={require('../../../assets/images/weekend.png')}
                         style={styles.weekend_event}

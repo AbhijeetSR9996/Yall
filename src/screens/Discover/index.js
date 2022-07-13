@@ -21,7 +21,7 @@ const Discover = ({ navigation }) => {
                 </View>
                 <View>
                     <SearchBar
-                        title="What are you looking for ?"
+                        title="Type location"
                         onPressSearch={onPressSearch}
                     />
                 </View>
