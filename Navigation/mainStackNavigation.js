@@ -30,6 +30,8 @@ import Edit from '../src/screens/EditProfile/edit';
 import Events from '../src/screens/Events';
 import Discover from '../src/screens/Discover';
 import WeekendEvent from '../src/screens/WeekendEvents';
+import WednesdayLoveNight from '../src/screens/WednesdayLoveNight';
+import PaymentMethods from '../src/screens/PaymentMethods';
 
 const Stack = createStackNavigator();
 
@@ -73,6 +75,9 @@ function MainStackNavigation() {
         <Stack.Screen name="Events" component={Events} />
         <Stack.Screen name="Discover" component={Discover} />
         <Stack.Screen name="WeekendEvent" component={WeekendEvent}/>
+        <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
+        <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

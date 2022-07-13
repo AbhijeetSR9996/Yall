@@ -29,15 +29,62 @@ const WeekendEvent = ({ navigation }) => {
                 <ImageBackground
                         source={require('../../../assets/images/weekend.png')}
                         style={styles.image_size}
-                        resizeMode="stretch"
-                    >
-                        
+                        resizeMode="stretch">
                         <Text style={styles.image_inner_text}><Icon name="calendar" /> 09 May 2022</Text>
                         <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
                     </ImageBackground>
                     <View style={styles.right_container}>
                         <Text style={styles.right_heading}>Wensday Love Night</Text>
-                        <TouchableOpacity style={styles.right_container_btn}>
+                        <TouchableOpacity style={styles.right_container_btn}
+                        onPress={() => navigation.navigate('WednesdayLoveNight')}>
+                            <Text style={styles.right_btn}>Know More</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={styles.weekend_container}>
+                <ImageBackground
+                        source={require('../../../assets/images/weekend.png')}
+                        style={styles.image_size}
+                        resizeMode="stretch">
+                        <Text style={styles.image_inner_text}><Icon name="calendar" /> 09 May 2022</Text>
+                        <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
+                    </ImageBackground>
+                    <View style={styles.right_container}>
+                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <TouchableOpacity style={styles.right_container_btn}
+                        onPress={() => navigation.navigate('WednesdayLoveNight')}>
+                            <Text style={styles.right_btn}>Know More</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={styles.weekend_container}>
+                <ImageBackground
+                        source={require('../../../assets/images/weekend.png')}
+                        style={styles.image_size}
+                        resizeMode="stretch">
+                        <Text style={styles.image_inner_text}><Icon name="calendar" /> 09 May 2022</Text>
+                        <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
+                    </ImageBackground>
+                    <View style={styles.right_container}>
+                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <TouchableOpacity style={styles.right_container_btn}
+                        onPress={() => navigation.navigate('WednesdayLoveNight')}>                        
+                            <Text style={styles.right_btn}>Know More</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={styles.weekend_container}>
+                <ImageBackground
+                        source={require('../../../assets/images/weekend.png')}
+                        style={styles.image_size}
+                        resizeMode="stretch">
+                        <Text style={styles.image_inner_text}><Icon name="calendar" /> 09 May 2022</Text>
+                        <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
+                    </ImageBackground>
+                    <View style={styles.right_container}>
+                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <TouchableOpacity style={styles.right_container_btn}
+                        onPress={() => navigation.navigate('WednesdayLoveNight')}>                        
                             <Text style={styles.right_btn}>Know More</Text>
                         </TouchableOpacity>
                     </View>

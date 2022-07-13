@@ -3,6 +3,8 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
 import {splashStyles} from '../../screens/splashScreen/splashStyles';
 import {icons} from '../../../assets/icons/icons';
+import Icon1 from 'react-native-vector-icons/Feather';
+
 
 export const Rectangular = props => {
   const {path, style, name} = props;
@@ -13,8 +15,8 @@ export const Rectangular = props => {
         onPress={() => navigation.navigate(path)}
         style={splashStyles.touchableStarted}>
         <View style={splashStyles.borderView}>
+          
           <Text style={splashStyles.buttonText}>{name}</Text>
-
           <View style={splashStyles.borderView1}>{icons.rightarrow}</View>
         </View>
       </TouchableOpacity>
