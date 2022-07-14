@@ -32,18 +32,21 @@ const UserDOB = ({navigation}) => {
           style={userStyles.dateInput}
           placeholder="mm"
           keyboardType="numeric"
+          maxLength={2}
         />
 
         <TextInput
           style={userStyles.dateInput}
           placeholder="dd"
           keyboardType="numeric"
+          maxLength={2}
         />
 
         <TextInput
           style={userStyles.yearInput}
           placeholder="yyyy"
           keyboardType="numeric"
+          maxLength={4}
         />
       </View>
       <View>

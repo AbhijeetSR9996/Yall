@@ -64,6 +64,7 @@ export const userStyles = {
     width: 75,
     textAlign: 'center',
     backgroundColor: '#DCC7E1',
+    color: '#000000',
     borderRadius: 80,
     fontWeight: '500',
     height: 57,
@@ -78,8 +79,6 @@ export const userStyles = {
     height: 57,
   },
   DobarrowIcon: {
-    //left:348,
-    //top: 605,
     position: 'absolute',
     backgroundColor: '#DCC7E1',
     borderRadius: 20,

@@ -17,9 +17,9 @@ const MainBottomNavigation = () => {
       screenOptions={{headerShown: false}}
       backBehavior="none"
       tabBarOptions={{
-        labelStyle: {fontSize: 1},
-        activeTintColor: 'red',
-        inactiveTintColor: 'black',
+        labelStyle: {fontSize: 0},
+        activeTintColor: 'white',
+        inactiveTintColor: 'white',
       }}>
       <Tab.Screen
         name="Screen 1"

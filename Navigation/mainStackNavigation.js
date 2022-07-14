@@ -32,6 +32,7 @@ import Discover from '../src/screens/Discover';
 import WeekendEvent from '../src/screens/WeekendEvents';
 import WednesdayLoveNight from '../src/screens/WednesdayLoveNight';
 import PaymentMethods from '../src/screens/PaymentMethods';
+import BookingConfirm from '../src/screens/BookingConfirm';
 
 const Stack = createStackNavigator();
 
@@ -77,6 +78,7 @@ function MainStackNavigation() {
         <Stack.Screen name="WeekendEvent" component={WeekendEvent}/>
         <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
         <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
+        <Stack.Screen name='BookingConfirm' component={BookingConfirm}/>
         
       </Stack.Navigator>
     </NavigationContainer>
