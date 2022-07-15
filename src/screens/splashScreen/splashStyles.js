@@ -10,14 +10,18 @@ export const splashStyles = {
 
   logo: {
     // position: 'absolute',
-    top: 170,
+    //top: 170,
+    //top: '147%',
+    marginTop: '90%',
+    marginBottom: '-70%',
     alignSelf: 'center',
   },
 
   headline: {
     fontWeight: '400',
     fontSize: 15,
-    width: width * 0.8,
+    //width: width * 0.8,
+    width:319,
     fontFamily: 'Inter-Regular',
     alignSelf: 'center',
     textAlign: 'center',

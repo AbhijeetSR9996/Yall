@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
 
+
 const Screen4 = () => {
   return (
     // <View style={styles.screen}>

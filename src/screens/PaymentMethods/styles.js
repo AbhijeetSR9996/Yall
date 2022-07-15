@@ -15,6 +15,7 @@ export default StyleSheet.create({
         backgroundColor:'#FFFFFF',
         borderTopLeftRadius:30,
         borderTopRightRadius:30,
+        flexDirection:'column'
     },
     other_view: {
         borderBottomColor:'black',
@@ -23,43 +24,52 @@ export default StyleSheet.create({
     },
     scrollview: { 
         backgroundColor: 'transparent', 
-        maxHeight: '50%', 
-        maxWidth: '100%' 
+        maxHeight: '35%', 
+        maxWidth: '100%', 
     },
     container_view: {
         backgroundColor:'transparent',
-        height: height * 0.2,
-        width: width * 0.2,
+        //height: height * 0.2,
+        //width: width * 0.2,
+        width:76,
+        height:169,
         justifyContent:'center',
         position:'relative',
-        marginVertical:'5%',
-        left:'10%'
+        marginVertical:'3%',
+        left:'10%',
+        borderRadius:20
     },
     container_view2: {
         backgroundColor:'transparent',
-        height: height * 0.2,
-        width: width * 0.6,
+        //height: height * 0.2,
+        //width: width * 0.6,
+        width:249,
+        height:169,
         justifyContent:'center',
         position:'relative',
-        marginVertical:'5%',
+        marginVertical:'3%',
         left:'20%'
     },
     container_view3: {
         backgroundColor:'transparent',
-        height: height * 0.2,
-        width: width * 0.6,
-        justifyContent:'center'
-        ,position:'relative',
-        marginVertical:'5%',
+        // height: height * 0.2,
+        // width: width * 0.6,
+        width:249,
+        height:169,
+        justifyContent:'center',
+        position:'relative',
+        marginVertical:'3%',
         left:'30%'
     },
     container_view4: {
         backgroundColor:'transparent',
-        height: height * 0.2,
-        width: width * 0.6,
+        // height: height * 0.2,
+        // width: width * 0.6,
+        width:249,
+        height:169,
         justifyContent:'center',
         position:'relative',
-        marginVertical:'5%',
+        marginVertical:'3%',
         left:'40%'
     },
     icon_view: {
@@ -76,9 +86,12 @@ export default StyleSheet.create({
     anothericon_view: {
         borderColor:'grey',
         borderWidth:1,
-        height:'20%',
-        width:'10%',
-        borderRadius:10,
+        //height:'20%',
+        height:45,
+        //width:'10%',
+        width:49,
+        //borderRadius:10,
+        borderRadius:18,
         marginLeft:'5%',
         alignItems:'center',
         justifyContent:'center',
@@ -90,11 +103,11 @@ export default StyleSheet.create({
         height:'8%',
         width:'67%',
         position:'relative',
-        marginLeft:'-18%',
+        marginLeft:'-16%',
         alignItems:'flex-start',
         justifyContent:'center',
         flexDirection:'column',
-        bottom:'9%'
+        bottom:'8%'
     },
     dot1: {
         backgroundColor:'#FFFFFF',
@@ -192,8 +205,8 @@ export default StyleSheet.create({
         left:'91%'
     },
     payment_box: {
-        marginTop:'10%',
-        marginBottom:'-10%',
+        //marginTop:'30%',
+        marginBottom:'-13%',
         width: width,
         height: height * 0.20,
         backgroundColor:'#DCC7E1',
@@ -206,12 +219,12 @@ export default StyleSheet.create({
         flexDirection:'row',
         height:'8%',
         width:width * 0.7,
-        backgroundColor:'#FFFFFF',
+        backgroundColor:'transparent',
         alignItems:'center',
         justifyContent:'space-between',
         marginLeft:'7%',
-        position:'relative',
-        marginTop:'7%'
+        //position:'relative',
+        marginTop:'10%'
     },
     payment_buttonview: {
         width: width * 0.5,
@@ -224,12 +237,20 @@ export default StyleSheet.create({
         backgroundColor: '#DCC7E1',
         position: 'relative', 
     },
+    payments_view: {
+        backgroundColor:'transparent',
+        display:'flex',
+        top:'3%',
+        width: width, 
+        height: height * 0.5,
+    },
     big_text: {
         color: "#000000",
         fontSize: 18,
         fontWeight: "700",
         marginTop: '-10%',
         marginLeft:'15%',
+        //letterSpacing: '-1.7%',
         letterSpacing: -1.7,
         width: width * 0.7 
     },
@@ -237,8 +258,10 @@ export default StyleSheet.create({
         color: "#000000",
         fontSize: 18,
         fontWeight: "700",
-        marginTop: '5%',
+        marginTop: '0%',
         marginLeft:'5%',
+        //letterSpacing: '-1.7%',
+        letterSpacing: -1.7,
         width: width * 0.7 
     },
     icon_text: {
@@ -248,19 +271,29 @@ export default StyleSheet.create({
         marginTop: '5%',
         marginLeft:'10%',
     },
+    payment_optiontext1: {color: "#000000",fontSize: 18,fontWeight: "700",marginVertical:'-13%'},
+    payment_optiontext2: {color: "#000000",fontSize: 18,fontWeight: "700",marginVertical:'-20%'},
+    payment_optiontext3: {color: "#000000",fontSize: 18,fontWeight: "700",marginVertical:'-13%'},
     right_container_btn:{
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'#AD5DD7',
+        //backgroundColor:'#AD5DD7',
+        backgroundColor:'transparent',
+        //background: linear-gradient(180deg, '#B58DCA' 0%, '#9081C3' 100%),
         borderRadius: 20,
         marginTop: '30%',
-        height: height * 0.2,
-        width: width * 0.2,
+        //height: height * 0.2,
+        //width: width * 0.2,
+        width:249,
+        height:169,
         position:'absolute'
     },  
     icon: {
         color:'#FFFFFF',
-        fontSize:50
+        fontSize:40,
+        width:36,
+        height:36,
+        textAlign:'center'
     },
     icon1: {
         backgroundColor:'#FF001F',
@@ -312,6 +345,7 @@ export default StyleSheet.create({
         alignSelf: 'center',
         justifyContent: 'center',
         paddingVertical: 10,
-        right: '10%',},
+        right: '10%',
+    },
 
 })

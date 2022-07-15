@@ -2,6 +2,8 @@ import React from 'react';
 import {View, Text, ScrollView, Image} from 'react-native';
 import {ProfileDisplayStyles} from './ProfileDisplay.styles';
 import {Heart} from '../../../assets/svgs/heart.svg';
+import { Dimensions } from 'react-native';
+const { width, height } = Dimensions.get('window');
 
 const ProfileDisplay = () => {
   return (
@@ -10,7 +12,7 @@ const ProfileDisplay = () => {
         <Text style={ProfileDisplayStyles.text}> Priya Sharma </Text>
       </View>
 
-      <View>
+      <View style={[ProfileDisplayStyles.container2,{top:5}]}>
         <ScrollView style={ProfileDisplayStyles.container2}>
           <View style={ProfileDisplayStyles.itemcontainer}>
             <Image

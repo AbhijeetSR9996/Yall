@@ -3,7 +3,7 @@ import React from 'react';
 import Edit from '../../src/screens/EditProfile/edit';
 
 const Screen2 = () => {
-  return <Edit />;
+  return <Edit />
 };
 
 export default Screen2;

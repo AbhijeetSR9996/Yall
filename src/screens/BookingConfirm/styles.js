@@ -33,13 +33,18 @@ export default StyleSheet.create({
     desc_text: {        
         color: "#000000",
         fontSize: 15,
-        fontWeight: "500",
+        fontWeight: "400",
         marginTop: '5%',
-        marginLeft:'0%',
+        marginHorizontal: '5%',
+        //marginLeft:'0%',
         letterSpacing: -1.7,
-        width: width * 0.8, 
+        //width: width * 0.8,
+        width: 324,
+        height: 54,
         color:'#AAAAAA',
-        alignSelf:'center' 
+        //alignSelf:'center',
+        textAlign:'center',
+        lineHeight:18 
     },
     button1: {
         marginTop:'-40%'
@@ -47,5 +52,11 @@ export default StyleSheet.create({
     button2: {
         marginTop:'10%'
     },
-
-})
+    icons: {
+        width:273.98,
+        height:204.07,
+        marginHorizontal:'10%',
+        marginTop:'10%',
+        top:'15%'
+    },
+});

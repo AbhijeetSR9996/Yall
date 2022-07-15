@@ -7,7 +7,6 @@ import Screen2 from './BottomNav/Screen2';
 import Screen3 from './BottomNav/Screen3';
 import Screen4 from './BottomNav/Screen4';
 import Screen5 from './BottomNav/Screen5';
-import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
 
 const Tab = createBottomTabNavigator();
 

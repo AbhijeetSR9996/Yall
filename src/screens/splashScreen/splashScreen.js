@@ -31,7 +31,7 @@ const SplashScreen = ({navigation}) => {
             your data in our privacy policy and cokkies policy.
           </Text>
 
-          <Rectangular path="SignUp" name="Get Started" />
+          <Rectangular path="SignUp" name="Get Started"  />
         </View>
       </View>
     </SafeAreaView>

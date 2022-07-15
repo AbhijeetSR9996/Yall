@@ -23,6 +23,7 @@ import ProfileDisplay from './src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from './src/screens/UploadID/upload';
 import Selfie from './src/screens/Selfie/selfie';
 import Edit from './src/screens/EditProfile/edit';
+import Events from './src/screens/Events/index';
 
 import {NavigationContainer} from '@react-navigation/native';
 

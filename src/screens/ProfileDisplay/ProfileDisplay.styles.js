@@ -14,13 +14,14 @@ export const ProfileDisplayStyles = {
     width: width,
     height: 50,
     top: 5,
+    backgroundColor:'transparent',
+    marginTop:'-20%'
   },
   container2: {
-    height: height / 1.2,
-    top: 10,
+    height: height / 1.15,
+    //top: 10,
     backgroundColor: 'white',
     position: 'relative',
-    zIndex: 0,
   },
   itemcontainer: {
     width: width,
@@ -65,7 +66,7 @@ export const ProfileDisplayStyles = {
     borderWidth: 0.5,
   },
   infoview3: {
-    width: '30%',
+    width: '31%',
     height: 62,
     right: 85,
     backgroundColor: '#f9dfff',

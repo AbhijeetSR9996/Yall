@@ -20,7 +20,7 @@ const SignUpMobile1 = () => {
       <View style={signupStyles.phoneNumber}>
         <Dropdown
           style={signupStyles.dropdown}
-          placeholder="+91"
+          placeholder="IN +91"
           placeholderStyle={signupStyles.placeholderStyle}
           selectedTextStyle={signupStyles.selectedTextStyle}
           data={data}

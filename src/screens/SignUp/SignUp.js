@@ -35,7 +35,7 @@ const SignUp = ({navigation}) => {
       <View style={signupStyles.signinMainView}>
         <TouchableOpacity
           style={signupStyles.touchablebuttons}
-          onPress={() => navigation.navigate('MainBottomNavigation')}>
+          onPress={() => navigation.navigate('SignUpMobile')}>
           <View style={signupStyles.borderView}>
             <Text style={signupStyles.loginButtonText}>Sign In</Text>
             <View style={signupStyles.borderView1}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Image, SafeAreaView } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Image, SafeAreaView, Alert } from 'react-native';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icon1 from 'react-native-vector-icons/Feather';
@@ -8,8 +8,73 @@ import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 import { Rectangular } from '../../component/Buttons/rectangular';
 import { icons } from '../../../assets/icons/icons';
+import ImagePicker from 'react-native-image-crop-picker';
 
 const PaymentMethods = ({ navigation }) => {
+
+    const requestCameraPermission = async () => {
+        try {
+          const granted = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.CAMERA,
+            {
+              title: 'Camera Permission',
+              message: 'Yall needs access to your camera ',
+    
+              buttonNeutral: 'Ask Me Later',
+              buttonNegative: 'Cancel',
+              buttonPositive: 'OK',
+            },
+          );
+          if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+            console.log('You can use the camera');
+          } else {
+            console.log('Camera permission denied');
+          }
+        } catch (err) {
+          console.warn(err);
+        }
+      };
+      const takePhotoFromCamera = () => {
+        ImagePicker.openCamera({
+          width: 700,
+          height: 700,
+          compressImageQuality: 0.7,
+          compressImageMaxWidth: 700,
+          compressImageMaxHeight: 700,
+          includeBase64: true,
+        }).catch(error => { });
+      };
+      const choosePhotoFromLibrary = () => {
+        ImagePicker.openPicker({
+          width: 700,
+          height: 700,
+    
+          includeBase64: true,
+          compressImageQuality: 0.5,
+        });
+      };
+      const createTwoButtonAlert = () =>
+        Alert.alert(
+          '',
+          'ADD PICTURE',
+    
+          [
+            {
+              text: 'Cancel',
+              onPress: () => console.log('Cancel Pressed'),
+              style: 'cancel',
+            },
+            {
+              text: 'Camera',
+              onPress: () => takePhotoFromCamera(),
+            },
+            {
+              text: 'Choose from Gallery',
+              onPress: () => choosePhotoFromLibrary(),
+            },
+          ],
+          { cancelable: false },
+        );
 
     return (
 
@@ -26,20 +91,30 @@ const PaymentMethods = ({ navigation }) => {
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.scrollview}>
 
                     <View style={styles.container_view}>
-                        <TouchableOpacity style={styles.right_container_btn}>
-                            <Icon name="plus" style={styles.icon} />
+                    <ImageBackground
+                        source={require('../../../assets/images/debitcard-bg.png')}
+                        style={[styles.right_container_btn,{width:76,height:169}]}
+                        imageStyle={{borderRadius:20}}>
+                        <TouchableOpacity style={[styles.right_container_btn,{width:76,height:169}]}
+                        onPress={() => createTwoButtonAlert()}>
+                            <Icon1 name="plus" style={styles.icon} />
                         </TouchableOpacity>
+                        </ImageBackground>
                     </View>
 
                     <View style={styles.container_view2}>
-                        <TouchableOpacity style={[styles.right_container_btn, { width: width * 0.6 }]}>
+                    <ImageBackground
+                        source={require('../../../assets/images/debitcard-bg.png')}
+                        style={[styles.right_container_btn,{width:249,height:169}]}
+                        imageStyle={{borderRadius:20}}> 
+                        <TouchableOpacity style={styles.right_container_btn}>
                             <View style={styles.icon_view}>
                                 <View style={styles.icon1} />
                                 <View style={styles.icon2} />
                             </View>
-                            <Text style={[styles.icon_text, { position: 'absolute', left: '65%', bottom: '58%', fontSize: 13, color: '#FFFFFF' }]}> 09/23 </Text>
+                            <Text style={[styles.icon_text, { position: 'absolute', left: '65%', bottom: '59%', fontSize: 13, color: '#FFFFFF' }]}> 09/23 </Text>
                             <Text style={[styles.icon_text, { position: 'absolute', left: '68%', bottom: '38%', fontSize: 13, color: '#FFFFFF' }]}> 7041 </Text>
-                            <Text style={[styles.icon_text, { position: 'absolute', left: '-3%', bottom: '20%', fontSize: 13, color: '#FFFFFF' }]}> MELINA THOSE </Text>
+                            <Text style={[styles.icon_text, { position: 'absolute', left: '-3%', bottom: '18.5%', fontSize: 13, color: '#FFFFFF' }]}> MELINA THOSE </Text>
                             <Text style={[styles.icon_text, { position: 'absolute', left: '53%', bottom: '18%', fontSize: 13, color: '#FFFFFF' }]}> Debit Card</Text>
                             <View style={styles.dots_view}>
                                 <View style={styles.dot1} />
@@ -56,17 +131,22 @@ const PaymentMethods = ({ navigation }) => {
                                 <View style={styles.dot12} />
                             </View>
                         </TouchableOpacity>
+                        </ImageBackground>
                     </View>
 
                     <View style={styles.container_view3}>
-                        <TouchableOpacity style={[styles.right_container_btn, { width: width * 0.6 }]}>
+                    <ImageBackground
+                        source={require('../../../assets/images/debitcard-bg.png')}
+                        style={[styles.right_container_btn,{width:249,height:169}]}
+                        imageStyle={{borderRadius:20}}> 
+                        <TouchableOpacity style={styles.right_container_btn}>
                             <View style={styles.icon_view}>
                                 <View style={styles.icon1} />
                                 <View style={styles.icon2} />
                             </View>
-                            <Text style={[styles.icon_text, { position: 'absolute', left: '65%', bottom: '58%', fontSize: 13, color: '#FFFFFF' }]}> 09/23 </Text>
+                            <Text style={[styles.icon_text, { position: 'absolute', left: '65%', bottom: '59%', fontSize: 13, color: '#FFFFFF' }]}> 09/23 </Text>
                             <Text style={[styles.icon_text, { position: 'absolute', left: '68%', bottom: '38%', fontSize: 13, color: '#FFFFFF' }]}> 7041 </Text>
-                            <Text style={[styles.icon_text, { position: 'absolute', left: '-3%', bottom: '20%', fontSize: 13, color: '#FFFFFF' }]}> MELINA THOSE </Text>
+                            <Text style={[styles.icon_text, { position: 'absolute', left: '-3%', bottom: '18.5%', fontSize: 13, color: '#FFFFFF' }]}> MELINA THOSE </Text>
                             <Text style={[styles.icon_text, { position: 'absolute', left: '53%', bottom: '18%', fontSize: 13, color: '#FFFFFF' }]}> Debit Card</Text>
                             <View style={styles.dots_view}>
                                 <View style={styles.dot1} />
@@ -83,17 +163,22 @@ const PaymentMethods = ({ navigation }) => {
                                 <View style={styles.dot12} />
                             </View>
                         </TouchableOpacity>
+                        </ImageBackground>
                     </View>
 
                     <View style={styles.container_view4}>
-                        <TouchableOpacity style={[styles.right_container_btn, { width: width * 0.6 }]}>
+                    <ImageBackground
+                        source={require('../../../assets/images/debitcard-bg.png')}
+                        style={[styles.right_container_btn,{width:249,height:169}]}
+                        imageStyle={{borderRadius:20}}>
+                        <TouchableOpacity style={styles.right_container_btn}>
                             <View style={styles.icon_view}>
                                 <View style={styles.icon1} />
                                 <View style={styles.icon2} />
                             </View>
-                            <Text style={[styles.icon_text, { position: 'absolute', left: '65%', bottom: '58%', fontSize: 13, color: '#FFFFFF' }]}> 09/23 </Text>
+                            <Text style={[styles.icon_text, { position: 'absolute', left: '65%', bottom: '59%', fontSize: 13, color: '#FFFFFF' }]}> 09/23 </Text>
                             <Text style={[styles.icon_text, { position: 'absolute', left: '68%', bottom: '38%', fontSize: 13, color: '#FFFFFF' }]}> 7041 </Text>
-                            <Text style={[styles.icon_text, { position: 'absolute', left: '-3%', bottom: '20%', fontSize: 13, color: '#FFFFFF' }]}> MELINA THOSE </Text>
+                            <Text style={[styles.icon_text, { position: 'absolute', left: '-3%', bottom: '18.5%', fontSize: 13, color: '#FFFFFF' }]}> MELINA THOSE </Text>
                             <Text style={[styles.icon_text, { position: 'absolute', left: '53%', bottom: '18%', fontSize: 13, color: '#FFFFFF' }]}> Debit Card</Text>
                             <View style={styles.dots_view}>
                                 <View style={styles.dot1} />
@@ -110,27 +195,48 @@ const PaymentMethods = ({ navigation }) => {
                                 <View style={styles.dot12} />
                             </View>
                         </TouchableOpacity>
+                        </ImageBackground>
                     </View>
-
-
                 </ScrollView>
 
+                <View style={styles.payments_view}>
                 <Text style={styles.small_text}>Other Payment Methods </Text>
                 <View style={styles.text_view}>
-                    <View style={styles.anothericon_view}><Icon name="credit-card" /></View>
-                    <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '20%' }]}> Credit / Debit Card</Text>
+                    <View style={styles.anothericon_view}>
+                        <Image source={require('../../../assets/images/debitcard.png')}/>
+                    </View>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', letterSpacing: -1.7, }]}>
+                    <Text style={styles.payment_optiontext1}> Credit / Debit Card</Text>
+                    </TouchableOpacity>
                 </View>
-                <View style={{ display: "flex", flexDirection: 'row', height: '8%', width: width * 0.7, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-between', marginLeft: '7%', position: 'relative' }}>
-                    <View style={styles.anothericon_view}><Icon name="bank" /></View>
-                    <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '20%' }]}> Net Banking</Text>
+
+                <View style={styles.text_view}>
+                    <View style={styles.anothericon_view}>
+                        <Image source={require('../../../assets/images/bank.png')}/>
+                    </View>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', letterSpacing: -1.7, }]}>
+                    <Text style={styles.payment_optiontext2}> Net Banking</Text>
+                    </TouchableOpacity>
                 </View>
-                <View style={{ display: "flex", flexDirection: 'row', height: '8%', width: width * 0.7, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-between', marginLeft: '7%', position: 'relative' }}>
-                    <View style={styles.anothericon_view}><Icon name="google-wallet" /></View>
+
+                <View style={styles.text_view}>
+                <TouchableOpacity style={[styles.text_view,{marginLeft:'0%',marginTop:'0%'}]}>
+                    <View style={styles.anothericon_view}>
+                        <Image source={require('../../../assets/images/phonepe.png')}/>
+                    </View>
+                </TouchableOpacity>
+                    
                 </View>
-                <View style={{ display: "flex", flexDirection: 'row', height: '8%', width: width * 0.7, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-between', marginLeft: '7%', position: 'relative' }}>
-                    <View style={styles.anothericon_view}><Icon name="google-wallet" /></View>
-                    <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '20%' }]}> Other Wallets</Text>
-                </View>
+
+                <View style={styles.text_view}>
+                    <View style={styles.anothericon_view}>
+                        <Image source={require('../../../assets/images/wallet.png')}/>
+                    </View>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', letterSpacing: -1.7, marginVertical:'5%'}]}>
+                    <Text style={styles.payment_optiontext3}> Other Wallets</Text>
+                    </TouchableOpacity>
+                </View>      
+                </View> 
 
                 <View style={styles.payment_box}>
                     <View style={styles.payment_text}>
