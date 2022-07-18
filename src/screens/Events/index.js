@@ -15,7 +15,7 @@ const Events = () => {
                         style={styles.weekend_event}
                         resizeMode="stretch"
                     >
-                        <Text style={styles.weekend_text}>Weekend Event</Text>
+                        <Text style={styles.weekend_text}>Weekend Events</Text>
                     </ImageBackground>
                 </TouchableOpacity>
             </View>
@@ -26,7 +26,7 @@ const Events = () => {
                         style={styles.discover_dates}
                         resizeMode="stretch"
                     >
-                        <Text style={styles.discover_text}>Discover Event</Text>
+                        <Text style={styles.discover_text}>Discover Dates</Text>
 
                     </ImageBackground>
                 </TouchableOpacity>

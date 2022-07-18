@@ -22,13 +22,16 @@ export default StyleSheet.create({
         height:height,
     },
     main_view2: {
-        marginTop:'20%',
+        //marginTop:'20%',
+        marginTop:'30%',
+        //flex:1,
         width: width,
-        height: height * 0.75,
+        //height: height * 0.75,
+        height: height * 0.85,
         backgroundColor:'#FFFFFF',
         borderTopLeftRadius:30,
         borderTopRightRadius:30,
-        marginHorizontal:'-8%'
+        alignSelf:'center'
     },
     main_view3: {
         display: 'flex',
@@ -39,8 +42,8 @@ export default StyleSheet.create({
     big_text: {
         color: "#000000",
         fontSize: 30,
-        fontWeight: "700",
-        marginTop: '10%',
+        fontWeight: "400",
+        marginTop: '5%',
         marginLeft:'5%',
         letterSpacing: -1,
         width: width * 0.7 
@@ -48,7 +51,7 @@ export default StyleSheet.create({
     small_text: {
         color: "#000000",
         fontSize: 12,
-        fontWeight: "500",
+        fontWeight: "400",
         marginTop: '5%',
         marginLeft:'5%',
         width: width * 0.7 
@@ -56,7 +59,7 @@ export default StyleSheet.create({
     small_text2: {
         color: "#000000",
         fontSize: 12,
-        fontWeight: "500",
+        fontWeight: "400",
         marginTop: '5%',
         marginLeft:'5%',
         width: width * 0.9 
@@ -64,9 +67,10 @@ export default StyleSheet.create({
     icon_text: {
         color: "#000000",
         fontSize: 12,
-        fontWeight: "500",
+        fontWeight: "400",
         marginTop: '5%',
         marginLeft:'5%'
+        
     },
     buttonContainer: {    
         alignItems:'center',
@@ -77,7 +81,7 @@ export default StyleSheet.create({
         borderColor: '#000000',
         backgroundColor: '#DCC7E1',
         width:91,
-        marginLeft: '10%',
+        marginLeft: '20%',
         bottom:'-30%',
     },
     buttonText: {
@@ -92,7 +96,7 @@ export default StyleSheet.create({
         borderWidth: 1.5,
         borderColor: '#000000',
         backgroundColor: '#DCC7E1',
-        marginLeft: '60%',
+        marginLeft: '55%',
         bottom:'20%',
         width:91
     },
@@ -100,7 +104,8 @@ export default StyleSheet.create({
         width: 10,
         position: 'absolute',
         alignSelf: 'center',
-        top: '85%',
+        //top: '73%',
+        marginTop:'65%'
       },
 
 })

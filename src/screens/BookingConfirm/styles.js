@@ -1,62 +1,98 @@
 import { StyleSheet, Dimensions } from 'react-native';
-
 const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
-    image: {
+    image_bg: {
         position:'absolute'
     },
-    left_arrow: {
-        fontSize: 50,
-        //color: '#AD5DD7',
-        color: 'transparent',
-        fontWeight: "200",
-        alignSelf:'center',
-        marginTop:'40%'
-    },
     main_view: {
-        width: width,
-        height: height,
-        backgroundColor:'#FFFFFF',
-        borderTopLeftRadius:30,
-        borderTopRightRadius:30,
+        flex:1,
+        flexDirection:'column'    
     },
-    main_text: {
+    first_view: {
+        flex:2,
+        flexDirection:'row',
+        alignItems:'flex-end',
+        justifyContent:"center",
+        backgroundColor:'transparent'
+    },
+    second_view: {
+        flex:1,
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:"space-evenly",
+        backgroundColor:'transparent'
+    },
+    third_view: {
+        flex:0.5,
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:"space-evenly",
+        backgroundColor:'transparent'
+    },
+    image: {
+        width:273.98,
+        height:204.07,
+    },
+    main_text: { 
         color: "#000000",
         fontSize: 30,
         fontWeight: "700",
-        marginTop: '10%',
-        marginHorizontal: '20%',
-        letterSpacing: -1.7,
-        width: width * 0.7, 
+        alignSelf: 'center',
+        //marginHorizontal: '10%',
+        letterSpacing: -0.017,
+        //width: width * 0.7,
     },
-    desc_text: {        
+    desc_text: {
         color: "#000000",
         fontSize: 15,
         fontWeight: "400",
-        marginTop: '5%',
-        marginHorizontal: '5%',
-        //marginLeft:'0%',
-        letterSpacing: -1.7,
-        //width: width * 0.8,
+        letterSpacing: -0.017,
         width: 324,
         height: 54,
         color:'#AAAAAA',
-        //alignSelf:'center',
+        alignSelf:'center',
         textAlign:'center',
-        lineHeight:18 
+        lineHeight:18
     },
-    button1: {
-        marginTop:'-40%'
+    buttonContainer: {         
+        width: width * 0.8 ,
+        height: height * 0.07,
+        borderWidth: 1,
     },
-    button2: {
-        marginTop:'10%'
+    buttonView: {
+        left: 10,
+        top: 8,
+        width: width * 0.8,
+        borderWidth: 1,
+        borderRightWidth: 0,
+        height: height * 0.07,
+        alignSelf: 'center',
+        backgroundColor: '#DCC7E1',
+        position: 'relative', 
     },
-    icons: {
-        width:273.98,
-        height:204.07,
-        marginHorizontal:'10%',
-        marginTop:'10%',
-        top:'15%'
+    buttonText: {
+        fontWeight: '700',
+        fontSize: 18,
+        fontFamily: 'Bakbak one-Regular',
+        color: '#000000',
+        alignSelf: 'center',
+        justifyContent: 'center',
+        paddingVertical: 10,
+        right: '10%',
     },
+    buttonIcon: {
+        width: width * 0.15,
+        borderWidth: 1,
+        height: '104%',
+        alignSelf: 'flex-end',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#DCC7E1',
+        position: 'absolute',
+        marginVertical: -1,
+        },
+
+
+
 });

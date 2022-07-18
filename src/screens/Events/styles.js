@@ -35,7 +35,8 @@ export default StyleSheet.create({
     sceond_container: {
         flex: 1,
         width: width,
-        marginTop:"-8%",
+        //marginTop:"-8%",
+        marginTop:"-12%",
         paddingHorizontal: '6%',
     },
     discover_dates: {

@@ -1,11 +1,12 @@
 import React from 'react';
-import {View, Text, ScrollView, Image} from 'react-native';
+import {View, Text, ScrollView, Image,TouchableOpacity} from 'react-native';
 import {ProfileDisplayStyles} from './ProfileDisplay.styles';
-import {Heart} from '../../../assets/svgs/heart.svg';
+import { useNavigation } from '@react-navigation/native';
 import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 const ProfileDisplay = () => {
+  const navigation = useNavigation();
   return (
     <View style={ProfileDisplayStyles.main}>
       <View style={ProfileDisplayStyles.container}>
@@ -17,14 +18,17 @@ const ProfileDisplay = () => {
           <View style={ProfileDisplayStyles.itemcontainer}>
             <Image
               source={require('../../../assets/images/profilegirl.png')}
-              style={ProfileDisplayStyles.img}
-            />
-            <Image
-              source={require('../../../assets/images/likebtn.png')}
-              style={ProfileDisplayStyles.img2}
-            />
-            {/* <Heart /> */}
-            <View style={[ProfileDisplayStyles.infocontainer, {bottom: 60}]}>
+              style={ProfileDisplayStyles.img}/>
+
+            <TouchableOpacity style={ProfileDisplayStyles.iconcontainer}
+            onPress={()=> navigation.navigate('MatchProfile')}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+            </TouchableOpacity>
+
+            <View style={[ProfileDisplayStyles.infocontainer, {backgroundColor:'#000000',bottom: 60,height:70,}]}>
+            <View style={{right:'1%'}}>
               <View style={ProfileDisplayStyles.infoview}>
                 <Image
                   source={require('../../../assets/images/bday.png')}
@@ -51,8 +55,9 @@ const ProfileDisplay = () => {
                   source={require('../../../assets/images/work.png')}
                   style={ProfileDisplayStyles.img6}
                 />
-                <Text style={ProfileDisplayStyles.text5}>Graphic Designer</Text>
+                <Text style={ProfileDisplayStyles.text5}> Graphic Designer</Text>
               </View>
+            </View>
             </View>
           </View>
 
@@ -61,27 +66,33 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <Image
-              source={require('../../../assets/images/likebtn.png')}
-              style={[ProfileDisplayStyles.img2, {bottom: '67%'}]}
-            />
+            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+            </TouchableOpacity>
+            
             <View
               style={[
                 ProfileDisplayStyles.infocontainer,
-                {height: 136, bottom: 60},
+                {backgroundColor:'#000000',height: 140, bottom: 60},
               ]}>
+              <View style={{right:'1%'}}>  
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
                   {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text style={ProfileDisplayStyles.text6}>Ask a questions</Text>
-
-                <Image
-                  source={require('../../../assets/images/likebtn.png')}
-                  style={ProfileDisplayStyles.img7}
-                />
+                
+              <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+              </TouchableOpacity>   
               </View>
+              {/* </View>     */}
+
               <View style={ProfileDisplayStyles.vw}>
                 <Image
                   source={require('../../../assets/images/twitter.png')}
@@ -93,6 +104,7 @@ const ProfileDisplay = () => {
                   simply dummy text of the printing and typesetting industry.
                 </Text>
               </View>
+              </View>
             </View>
           </View>
 
@@ -101,25 +113,29 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <Image
-              source={require('../../../assets/images/likebtn.png')}
-              style={[ProfileDisplayStyles.img2, {bottom: '56%'}]}
-            />
+            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'56%'}]}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+            </TouchableOpacity>
+           
             <View
               style={[
                 ProfileDisplayStyles.infocontainer,
-                {height: 206, bottom: 60},
+                {backgroundColor:'#000000',height: 210, bottom: 60},
               ]}>
+              <View style={{right:'1%'}}>
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
                   {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text style={ProfileDisplayStyles.text8}>Ask a questions</Text>
-                <Image
-                  source={require('../../../assets/images/likebtn.png')}
-                  style={ProfileDisplayStyles.img7}
-                />
+                <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+              </TouchableOpacity>
               </View>
               <View style={ProfileDisplayStyles.vw2}>
                 <Image
@@ -147,6 +163,7 @@ const ProfileDisplay = () => {
                 />
               </View>
             </View>
+            </View>
           </View>
 
           <View style={[ProfileDisplayStyles.itemcontainer, {height: 376}]}>
@@ -154,35 +171,41 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <Image
-              source={require('../../../assets/images/likebtn.png')}
-              style={[ProfileDisplayStyles.img2, {bottom: '67%'}]}
-            />
-            <Image
+            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+            </TouchableOpacity>
+            <TouchableOpacity style={ProfileDisplayStyles.crosscontainer}>
+              <Image
               source={require('../../../assets/images/cross.png')}
-              style={ProfileDisplayStyles.img2a}
-            />
+              style={ProfileDisplayStyles.imglike}/>
+              </TouchableOpacity>
             <View
               style={[
                 ProfileDisplayStyles.infocontainer,
-                {height: 106, bottom: 90},
+                {backgroundColor:'#000000',height: 110, bottom: 90},
               ]}>
+              <View style={{right:'1%'}}>
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
                   {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text style={ProfileDisplayStyles.text6}>Ask a questions</Text>
-                <Image
-                  source={require('../../../assets/images/likebtn.png')}
-                  style={ProfileDisplayStyles.img7}
-                />
+              <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}/>
+              </TouchableOpacity>
+                
               </View>
               <View style={ProfileDisplayStyles.vw3}>
                 <Text style={ProfileDisplayStyles.text12}>
                   Ride bike on high speed
                 </Text>
               </View>
+            </View>
             </View>
           </View>
         </ScrollView>

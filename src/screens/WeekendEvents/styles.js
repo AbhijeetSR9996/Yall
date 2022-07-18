@@ -35,7 +35,7 @@ export default StyleSheet.create({
     },
     right_container: {
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'center',      
     },
     right_heading: {
         fontWeight: '400',
@@ -47,6 +47,7 @@ export default StyleSheet.create({
         color: '#232323',
         width: width * 0.4,
         paddingLeft: '5%',
+        marginLeft:'-9%'
     },
     right_container_btn:{
         alignItems:'center',
@@ -59,9 +60,11 @@ export default StyleSheet.create({
         marginTop: '5%',
         width: width * 0.3,
         marginLeft: '10%',         
+        marginLeft: '5%'
     },
     right_btn:{
         fontSize: 15,
-        color: '#000000'
+        color: '#000000',
+
     },
 })

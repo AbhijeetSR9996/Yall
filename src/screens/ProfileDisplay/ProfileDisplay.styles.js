@@ -1,4 +1,3 @@
-import React from 'react';
 import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
@@ -40,11 +39,35 @@ export const ProfileDisplayStyles = {
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
     borderWidth: 2,
-    shadowColor: 'black',
-    shadowOffset: { width: -2, height: 10 },
-    shadowOpacity: 0.2,
-    shadowRadius: 3,
   },
+  iconcontainer: { 
+    height: 30,
+    width: 30,
+    backgroundColor:'transparent',
+    bottom: '73%',
+    right: '-40%',
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:17
+  },
+  iconcontainer2: { 
+    height: 30,
+    width: 30,
+    backgroundColor:'transparent',
+    right: '3%',
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:17
+  },
+  crosscontainer: { 
+    height: 30,
+    width: 30,
+    backgroundColor:'transparent',
+    bottom:'27%',
+    right: '43%',
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:17},
   infoview: {
     width: '20%',
     height: 62,
@@ -53,7 +76,7 @@ export const ProfileDisplayStyles = {
     borderTopLeftRadius: 18,
     alignItems: 'space-between',
     justifyContent: 'center',
-    borderWidth: 0.5,
+    //borderWidth: 0.5,
   },
   infoview2: {
     width: '27%',
@@ -82,7 +105,7 @@ export const ProfileDisplayStyles = {
     backgroundColor: '#f9dfff',
     position: 'absolute',
     borderTopRightRadius: 18,
-    alignItems: 'space-between',
+    //alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 0.5,
   },
@@ -118,7 +141,9 @@ export const ProfileDisplayStyles = {
   text5: {
     color: '#000000',
     position: 'absolute',
-    right: 5,
+    //right: 5,
+    //right: '5%',
+    left: '40%',
     fontWeight: 'bold',
     fontSize: 11,
   },
@@ -184,19 +209,6 @@ export const ProfileDisplayStyles = {
     height: 260,
     width: width,
   },
-  img2: {
-    height: 30,
-    width: 30,
-    bottom: '73%',
-    alignSelf: 'flex-end',
-    right: '5%',
-  },
-  img2a: {
-    height: 30,
-    width: 30,
-    bottom: 100,
-    right: '43%',
-  },
   img3: {
     height: 20,
     width: 20,
@@ -218,14 +230,9 @@ export const ProfileDisplayStyles = {
   img6: {
     height: 20,
     width: 20,
-    left: 5,
+    //left: 5,
+    left: '5%',
     position: 'absolute',
-  },
-  img7: {
-    height: 40,
-    width: 40,
-    position: 'absolute',
-    right: 10,
   },
   img8: {
     height: 32,
@@ -263,6 +270,10 @@ export const ProfileDisplayStyles = {
     top: 110,
     position: 'absolute',
     bottom: 50,
+  },
+  imglike: {
+    height: 30,
+    width: 30
   },
   vw: {
     width: '100%',

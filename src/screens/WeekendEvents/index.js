@@ -34,7 +34,7 @@ const WeekendEvent = ({ navigation }) => {
                         <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
                     </ImageBackground>
                     <View style={styles.right_container}>
-                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <Text style={styles.right_heading}>Wednesday Love Night</Text>
                         <TouchableOpacity style={styles.right_container_btn}
                         onPress={() => navigation.navigate('WednesdayLoveNight')}>
                             <Text style={styles.right_btn}>Know More</Text>
@@ -50,7 +50,7 @@ const WeekendEvent = ({ navigation }) => {
                         <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
                     </ImageBackground>
                     <View style={styles.right_container}>
-                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <Text style={styles.right_heading}>Wednesday Love Night</Text>
                         <TouchableOpacity style={styles.right_container_btn}
                         onPress={() => navigation.navigate('WednesdayLoveNight')}>
                             <Text style={styles.right_btn}>Know More</Text>
@@ -66,7 +66,7 @@ const WeekendEvent = ({ navigation }) => {
                         <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
                     </ImageBackground>
                     <View style={styles.right_container}>
-                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <Text style={styles.right_heading}>Wednesday Love Night</Text>
                         <TouchableOpacity style={styles.right_container_btn}
                         onPress={() => navigation.navigate('WednesdayLoveNight')}>                        
                             <Text style={styles.right_btn}>Know More</Text>
@@ -82,7 +82,7 @@ const WeekendEvent = ({ navigation }) => {
                         <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
                     </ImageBackground>
                     <View style={styles.right_container}>
-                        <Text style={styles.right_heading}>Wensday Love Night</Text>
+                        <Text style={styles.right_heading}>Wednesday Love Night</Text>
                         <TouchableOpacity style={styles.right_container_btn}
                         onPress={() => navigation.navigate('WednesdayLoveNight')}>                        
                             <Text style={styles.right_btn}>Know More</Text>

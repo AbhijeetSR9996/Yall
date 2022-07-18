@@ -151,7 +151,9 @@ export const signupStyles = {
     width: '90%',
   },
   text2: {
-    bottom: 100,
+    //bottom: 100,
+    bottom: 60,
+    //top: '50%',
     color: '#6E3E89',
     fontFamily: 'Inter',
     fontWeight: '400',

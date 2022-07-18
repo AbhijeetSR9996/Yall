@@ -4,9 +4,6 @@ import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
 
 const Screen1 = ({navigation}) => {
   return (
-    // <View style={styles.screen}>
-    //   <Text style={styles.text}>I am Screen1</Text>
-    // </View>
     <ProfileDisplay/>
   )
 }

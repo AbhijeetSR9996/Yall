@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from '../src/screens/splashScreen/splashScreen';
 import SignUp from '../src/screens/SignUp/SignUp';
+import SignInMobile from '../src/screens/SignUp/SignInMobile';
 import SignUpMobile from '../src/screens/SignUp/signUpMobile';
 import SignUpMobile1 from '../src/screens/SignUp/signUpMobile1';
 import VerificationCode from '../src/screens/SignUp/verificationCode';
@@ -22,7 +23,7 @@ import Gender3 from '../src/screens/genderScreens/gender3';
 import Gender4 from '../src/screens/genderScreens/gender4';
 import AddPhoto from '../src/screens/AddPhoto/addPhoto';
 import MainBottomNavigation from './mainBottomNavigation';
-
+import MatchProfile from '../src/screens/MatchProfile';
 import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from '../src/screens/UploadID/upload';
 import Selfie from '../src/screens/Selfie/selfie';
@@ -46,6 +47,7 @@ function MainStackNavigation() {
         initialRouteName="SplashScreen">
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="SignInMobile" component={SignInMobile}/>
         <Stack.Screen name="SignUpMobile" component={SignUpMobile} />
         <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
@@ -68,7 +70,7 @@ function MainStackNavigation() {
         <Stack.Screen name="Gender3" component={Gender3} />
         <Stack.Screen name="Gender4" component={Gender4} />
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
-
+        <Stack.Screen name="MatchProfile" component={MatchProfile}/>
         <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
         <Stack.Screen name="Upload" component={Upload} />
         <Stack.Screen name="Edit" component={Edit} />

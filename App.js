@@ -1,7 +1,7 @@
 import React from 'react';
 import MainStackNavigation from './Navigation/mainStackNavigation';
 import MainBottomNavigation from './Navigation/mainBottomNavigation';
-
+import SignInMobile from './src/screens/SignUp/SignInMobile';
 import SplashScreen from './src/screens/splashScreen/splashScreen';
 import SignUpMobile1 from './src/screens/SignUp/signUpMobile1';
 import NumberCode from './src/screens/SignUp/verificationCode';
@@ -18,7 +18,7 @@ import Gender from './src/screens/genderScreens/gender';
 import Gender1 from './src/screens/genderScreens/gender1';
 import Gender4 from './src/screens/genderScreens/gender4';
 import AddPhoto from './src/screens/AddPhoto/addPhoto';
-
+import MatchProfile from './src/screens/MatchProfile';
 import ProfileDisplay from './src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from './src/screens/UploadID/upload';
 import Selfie from './src/screens/Selfie/selfie';

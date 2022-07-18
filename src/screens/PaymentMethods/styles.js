@@ -84,8 +84,9 @@ export default StyleSheet.create({
         bottom:'15%'
     },
     anothericon_view: {
-        borderColor:'grey',
-        borderWidth:1,
+        borderColor:'#DCC7E1',
+        backgroundColor:'#F4F4F4',
+        borderWidth:0.5,
         //height:'20%',
         height:45,
         //width:'10%',
@@ -205,10 +206,10 @@ export default StyleSheet.create({
         left:'91%'
     },
     payment_box: {
-        //marginTop:'30%',
-        marginBottom:'-13%',
+        marginBottom: '-32%',
         width: width,
-        height: height * 0.20,
+        //height: height * 0.2,
+        height: height * 0.3,
         backgroundColor:'#DCC7E1',
         borderTopLeftRadius:30,
         borderTopRightRadius:30,
@@ -251,7 +252,7 @@ export default StyleSheet.create({
         marginTop: '-10%',
         marginLeft:'15%',
         //letterSpacing: '-1.7%',
-        letterSpacing: -1.7,
+        letterSpacing: -0.017,
         width: width * 0.7 
     },
     small_text: {
@@ -259,9 +260,9 @@ export default StyleSheet.create({
         fontSize: 18,
         fontWeight: "700",
         marginTop: '0%',
-        marginLeft:'5%',
+        marginLeft:'10%',
         //letterSpacing: '-1.7%',
-        letterSpacing: -1.7,
+        letterSpacing: -0.017,
         width: width * 0.7 
     },
     icon_text: {
@@ -271,15 +272,39 @@ export default StyleSheet.create({
         marginTop: '5%',
         marginLeft:'10%',
     },
-    payment_optiontext1: {color: "#000000",fontSize: 18,fontWeight: "700",marginVertical:'-13%'},
-    payment_optiontext2: {color: "#000000",fontSize: 18,fontWeight: "700",marginVertical:'-20%'},
-    payment_optiontext3: {color: "#000000",fontSize: 18,fontWeight: "700",marginVertical:'-13%'},
+    payment_optiontext1: {
+        color: "#000000",
+        fontSize: 18,
+        fontWeight: "700",
+        marginVertical:'-13%',
+        letterSpacing: -0.017,
+    },
+    payment_optiontext2: {
+        color: "#000000",
+        fontSize: 18,
+        fontWeight: "700",
+        marginVertical:'-20%',
+        letterSpacing: -0.017,
+    },
+    payment_optiontext3: {
+        color: "#000000",
+        fontSize: 18,
+        fontWeight: "700",
+        marginVertical:'-15%',
+        letterSpacing: -0.017,
+    },
+    payment_optiontext4: {
+        color: "#000000",
+        fontSize: 18,
+        fontWeight: "700",
+        marginVertical:'-25%',
+        letterSpacing: -0.017,
+    },
     right_container_btn:{
         alignItems:'center',
         justifyContent:'center',
         //backgroundColor:'#AD5DD7',
         backgroundColor:'transparent',
-        //background: linear-gradient(180deg, '#B58DCA' 0%, '#9081C3' 100%),
         borderRadius: 20,
         marginTop: '30%',
         //height: height * 0.2,
@@ -320,7 +345,8 @@ export default StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#DCC7E1',
         position: 'absolute',
-        marginVertical: -1,},
+        marginVertical: -1,
+    },
     payment_text: {
         display:"flex",
         flexDirection:'row',
@@ -333,12 +359,15 @@ export default StyleSheet.create({
         marginTop:'5%'
     },
     payment_button: { 
-        marginTop: '-18%',
+        //marginTop: '-18%',
+        marginTop: '-28%',
         marginLeft:'43%', 
         width: width * 0.5 ,
         height: height * 0.07,
-        borderWidth: 1,},
-        payment_buttontext: {fontWeight: '700',
+        borderWidth: 1,
+    },
+    payment_buttontext: {
+        fontWeight: '700',
         fontSize: 18,
         fontFamily: 'Bakbak one-Regular',
         color: '#000000',

@@ -25,9 +25,9 @@ const WednesdayLoveNight = ({ navigation }) => {
                 <Text style={styles.small_text}>Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry. Lorem Ipsum 
                 has been the industry's standard. </Text>
-                <Text style={styles.icon_text}><Icon2 name="location" /> Sector-62 Noida</Text>                
-                <Text style={styles.icon_text}><Icon1 name="watch" /> 07:00 PM</Text>                
-                <Text style={styles.icon_text}><Icon name="calendar" /> 20 Dec. 2020</Text>
+                <Text style={[styles.icon_text]}><Icon2 name="location" style={{fontSize:21}} />   Sector-62 Noida</Text>                
+                <Text style={styles.icon_text}><Icon1 name="watch" style={{fontSize:21}}/>   07:00 PM</Text>                
+                <Text style={styles.icon_text}><Icon name="calendar" style={{fontSize:21}}/>   20 Dec. 2020</Text>
                 <Text style={styles.small_text2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry. Lorem Ipsum 
                 has been the industry's standard.</Text>  

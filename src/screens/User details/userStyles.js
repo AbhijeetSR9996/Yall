@@ -75,6 +75,7 @@ export const userStyles = {
     width: 100,
     textAlign: 'center',
     backgroundColor: '#DCC7E1',
+    color: '#000000',
     borderRadius: 80,
     height: 57,
   },

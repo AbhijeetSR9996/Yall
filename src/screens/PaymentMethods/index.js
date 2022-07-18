@@ -205,7 +205,7 @@ const PaymentMethods = ({ navigation }) => {
                     <View style={styles.anothericon_view}>
                         <Image source={require('../../../assets/images/debitcard.png')}/>
                     </View>
-                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', letterSpacing: -1.7, }]}>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', }]}>
                     <Text style={styles.payment_optiontext1}> Credit / Debit Card</Text>
                     </TouchableOpacity>
                 </View>
@@ -214,17 +214,18 @@ const PaymentMethods = ({ navigation }) => {
                     <View style={styles.anothericon_view}>
                         <Image source={require('../../../assets/images/bank.png')}/>
                     </View>
-                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', letterSpacing: -1.7, }]}>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%'}]}>
                     <Text style={styles.payment_optiontext2}> Net Banking</Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style={styles.text_view}>
-                <TouchableOpacity style={[styles.text_view,{marginLeft:'0%',marginTop:'0%'}]}>
                     <View style={styles.anothericon_view}>
                         <Image source={require('../../../assets/images/phonepe.png')}/>
                     </View>
-                </TouchableOpacity>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%'}]}>
+                    <Text style={styles.payment_optiontext4}> PhonePe</Text>
+                    </TouchableOpacity>
                     
                 </View>
 
@@ -232,7 +233,7 @@ const PaymentMethods = ({ navigation }) => {
                     <View style={styles.anothericon_view}>
                         <Image source={require('../../../assets/images/wallet.png')}/>
                     </View>
-                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%', letterSpacing: -1.7, marginVertical:'5%'}]}>
+                    <TouchableOpacity style={[styles.icon_text, {marginLeft: '35%'}]}>
                     <Text style={styles.payment_optiontext3}> Other Wallets</Text>
                     </TouchableOpacity>
                 </View>      
@@ -240,8 +241,8 @@ const PaymentMethods = ({ navigation }) => {
 
                 <View style={styles.payment_box}>
                     <View style={styles.payment_text}>
-                        <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '12%', fontSize: 25, letterSpacing: -1.7, fontWeight: '600' }]}> $ 200</Text>
-                        <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '14%', fontSize: 15, marginTop: '30%', fontWeight: '600', letterSpacing: -1.7 }]}> View Details</Text>
+                        <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '12%', fontSize: 25, letterSpacing: -0.017, fontWeight: '600' }]}> $ 200</Text>
+                        <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '14%', fontSize: 15, marginTop: '30%', fontWeight: '600', letterSpacing: -0.017, }]}> View Details</Text>
                     </View>
                     <TouchableOpacity
                         style={styles.payment_button}
