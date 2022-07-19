@@ -51,6 +51,7 @@ function MainStackNavigation() {
         <Stack.Screen name="SignUpMobile" component={SignUpMobile} />
         <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
+        <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
         <Stack.Screen
           name="MainBottomNavigation"
           component={MainBottomNavigation}
@@ -79,7 +80,7 @@ function MainStackNavigation() {
         <Stack.Screen name="Discover" component={Discover} />
         <Stack.Screen name="WeekendEvent" component={WeekendEvent}/>
         <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
-        <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
+        {/* <Stack.Screen name="PaymentMethods" component={PaymentMethods}/> */}
         <Stack.Screen name='BookingConfirm' component={BookingConfirm}/>
         
       </Stack.Navigator>

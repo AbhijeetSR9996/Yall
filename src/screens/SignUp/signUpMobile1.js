@@ -5,7 +5,7 @@ import {Dropdown} from 'react-native-element-dropdown';
 import {CircularButton} from '../../component/Buttons/circular';
 
 const data = [
-  {label: '+91', value: '1'},
+  {label: 'IN +91', value: '1'},
   {label: '+92', value: '2'},
   {label: '+11', value: '3'},
   {label: '+12', value: '4'},

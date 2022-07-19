@@ -98,7 +98,7 @@ const Selfie = ({ navigation }) => {
         onPress={() => createTwoButtonAlert()}
         style={[
           splashStyles.touchableStarted,
-          { top: '30%', alignSelf: 'center' },
+          { top: '35%', alignSelf: 'center' },
         ]}>
         <View style={splashStyles.borderView}>
           <Text style={splashStyles.buttonText}>Take a selfie</Text>

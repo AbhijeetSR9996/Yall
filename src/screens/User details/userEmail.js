@@ -40,6 +40,7 @@ const UserEmail = ({navigation}) => {
       </View>
       <View>
         <CircularButton path="UserGender" style={{top: 45}} />
+        {/* <CircularButton path="Gender" style={{top: 45}} /> */}
       </View>
     </View>
   );

@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
 import {splashStyles} from '../../screens/splashScreen/splashStyles';
 import {icons} from '../../../assets/icons/icons';
-import Icon1 from 'react-native-vector-icons/Feather';
+//import Icon1 from 'react-native-vector-icons/Feather';
 
 
 export const Rectangular = props => {

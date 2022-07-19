@@ -28,7 +28,7 @@ const ProfileDisplay = () => {
             </TouchableOpacity>
 
             <View style={[ProfileDisplayStyles.infocontainer, {backgroundColor:'#000000',bottom: 60,height:70,}]}>
-            <View style={{right:'1%'}}>
+            <View style={{right:'1%',bottom:'2%',borderWidth:1.5,borderTopRightRadius: 20, borderTopLeftRadius: 20,}}>
               <View style={ProfileDisplayStyles.infoview}>
                 <Image
                   source={require('../../../assets/images/bday.png')}
@@ -66,10 +66,12 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}>
+            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}
+            onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
-              style={ProfileDisplayStyles.imglike}/>
+              style={ProfileDisplayStyles.imglike}
+              />
             </TouchableOpacity>
             
             <View
@@ -77,7 +79,7 @@ const ProfileDisplay = () => {
                 ProfileDisplayStyles.infocontainer,
                 {backgroundColor:'#000000',height: 140, bottom: 60},
               ]}>
-              <View style={{right:'1%'}}>  
+              <View style={{right:'1%',bottom:'2%',borderWidth:1.5,borderTopRightRadius: 20, borderTopLeftRadius: 20,}}>  
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
@@ -91,7 +93,7 @@ const ProfileDisplay = () => {
               style={ProfileDisplayStyles.imglike}/>
               </TouchableOpacity>   
               </View>
-              {/* </View>     */}
+              
 
               <View style={ProfileDisplayStyles.vw}>
                 <Image
@@ -113,10 +115,12 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'56%'}]}>
+            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'56%'}]}
+            onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
-              style={ProfileDisplayStyles.imglike}/>
+              style={ProfileDisplayStyles.imglike}
+              />
             </TouchableOpacity>
            
             <View
@@ -124,7 +128,7 @@ const ProfileDisplay = () => {
                 ProfileDisplayStyles.infocontainer,
                 {backgroundColor:'#000000',height: 210, bottom: 60},
               ]}>
-              <View style={{right:'1%'}}>
+              <View style={{right:'1%',bottom:'2%',borderWidth:1.5,borderTopRightRadius: 20, borderTopLeftRadius: 20,}}>
               <View
                 style={[
                   ProfileDisplayStyles.infoview,
@@ -171,12 +175,15 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}>
+            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}
+            onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
-              style={ProfileDisplayStyles.imglike}/>
+              style={ProfileDisplayStyles.imglike}
+              />
             </TouchableOpacity>
-            <TouchableOpacity style={ProfileDisplayStyles.crosscontainer}>
+            <TouchableOpacity style={ProfileDisplayStyles.crosscontainer}
+            onPress={()=> navigation.navigate('MainBottomNavigation')}>
               <Image
               source={require('../../../assets/images/cross.png')}
               style={ProfileDisplayStyles.imglike}/>
@@ -186,7 +193,7 @@ const ProfileDisplay = () => {
                 ProfileDisplayStyles.infocontainer,
                 {backgroundColor:'#000000',height: 110, bottom: 90},
               ]}>
-              <View style={{right:'1%'}}>
+              <View style={{right:'1%',bottom:'2%',borderWidth:1.5,borderTopRightRadius: 20, borderTopLeftRadius: 20,}}>
               <View
                 style={[
                   ProfileDisplayStyles.infoview,

@@ -59,7 +59,8 @@ export const govtStyles = {
   textIDCard: {
     fontFamily: 'Bakbak one-Regular',
     fontSize: 18,
-    width: 133,
+    //width: 133,
+    width: 143,
     fontWeight: '700',
     color: '#000000',
   },

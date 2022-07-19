@@ -257,6 +257,6 @@ const PaymentMethods = ({ navigation }) => {
 
         </SafeAreaView>
     )
-}
+};
 
 export default PaymentMethods;

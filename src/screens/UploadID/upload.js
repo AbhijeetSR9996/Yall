@@ -14,7 +14,10 @@ import { Rectangular } from '../../component/Buttons/rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
 import { splashStyles } from '../../screens/splashScreen/splashStyles';
 import { icons } from '../../../assets/icons/icons';
+import styles from './styles';
+
 const { width, height } = Dimensions.get('window');
+
 
 const Upload = ({ navigation }) => {
   const requestCameraPermission = async () => {
@@ -83,8 +86,8 @@ const Upload = ({ navigation }) => {
 
   return (
     <View style={govtStyles.container}>
-      <Text style={govtStyles.text}>Upload Aadhaar</Text>
-      <Text style={[govtStyles.text, { top: '2%', left: '49%' }]}> Card</Text>
+      <Text style={[govtStyles.text,{width:248}]}>Upload Aadhaar Card</Text>
+      <Text style={[govtStyles.text, { top: '2.1%', left: '55%' }]}> </Text>
 
       <Text style={[govtStyles.paragraph, { top: '0%' }]}>
         Don’t lose access to your account, verify your email 50kb.
@@ -93,7 +96,8 @@ const Upload = ({ navigation }) => {
         style={[
           govtStyles.borderBox,
           {
-            width: 365,
+            //width: 368,
+            width: 310,
             top: '5%',
             height: 250,
             alignItems: 'center',
@@ -102,42 +106,32 @@ const Upload = ({ navigation }) => {
           },
         ]}>
         <View
-          style={{
-            flexDirection: 'column',
-            alignContent: 'center',
-            justifyContent: 'center',
-          }}>
+          style={styles.card_view}>
           <View
             style={[
               govtStyles.textMain,
               { position: 'relative', justifyContent: 'center' },
             ]}>
             <TouchableOpacity
-              style={{
-                alignSelf: 'center',
-                height: 70,
-                width: 70,
-                borderRadius: 10,
-                top: 10,
-              }}
+              style={styles.uploadContainer}
               onPress={() => createTwoButtonAlert()}>
               <Image
                 source={require('../../../assets/images/idupload.png')}
-                style={[
-                  ProfileDisplayStyles.img2,
+                style={
                   {
-                    width: 90,
+                    width: 95,
                     height: 100,
                     top: 6,
-                    left: '10%',
-                  },
-                ]}
+                    //left: '0%',
+                    alignSelf:'center'
+                  }
+                }
               />
             </TouchableOpacity>
             <Text
               style={[
                 govtStyles.textCard,
-                { top: 115, left: '45%', fontSize: 15, position: 'absolute' },
+                { top: 120, left: '45%', fontSize: 15, position: 'absolute' },
               ]}>
               Or
             </Text>
@@ -158,15 +152,13 @@ const Upload = ({ navigation }) => {
       </Card>
       <Image
         source={require('../../../assets/images/file.png')}
-        style={[
-          ProfileDisplayStyles.img2,
-          {
+        style={{
             width: 40,
             height: 50,
             top: 23,
-            left: -300,
-          },
-        ]}
+            //left: -300,
+            marginLeft:'7%'
+          }}
       />
       <Text
         style={[
@@ -177,15 +169,13 @@ const Upload = ({ navigation }) => {
       </Text>
       <Image
         source={require('../../../assets/images/scroller.png')}
-        style={[
-          ProfileDisplayStyles.img2,
-          {
+        style={{
             width: '73%',
             height: 30,
             top: -25,
-            left: -25,
-          },
-        ]}
+            //left: -25,
+            marginLeft:'20%'
+          }}
       />
 
       <Rectangular

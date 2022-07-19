@@ -5,7 +5,9 @@ const { width, height } = Dimensions.get('window');
 export default StyleSheet.create({
     image_background: {
         backgroundColor: '#E5E5E5',
-        height:height,
+        //height:height,
+        width:414,
+        height:332,
     },
     left_arrow: {
         fontSize: 50,
@@ -23,7 +25,7 @@ export default StyleSheet.create({
     },
     main_view2: {
         //marginTop:'20%',
-        marginTop:'30%',
+        marginTop:'60%',
         //flex:1,
         width: width,
         //height: height * 0.75,
@@ -46,7 +48,8 @@ export default StyleSheet.create({
         marginTop: '5%',
         marginLeft:'5%',
         letterSpacing: -1,
-        width: width * 0.7 
+        //width: width * 0.7
+        width:227 
     },
     small_text: {
         color: "#000000",
@@ -105,7 +108,8 @@ export default StyleSheet.create({
         position: 'absolute',
         alignSelf: 'center',
         //top: '73%',
-        marginTop:'65%'
+        //marginTop:'65%'
+        marginTop:'60%'
       },
 
 })

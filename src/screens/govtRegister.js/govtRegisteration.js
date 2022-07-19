@@ -27,12 +27,12 @@ const GovtRegisterID = ({ navigation }) => {
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
           </View>
           <View style={govtStyles.textMain}>
-            <Text style={govtStyles.textIDCard}>Driver’s</Text>
-            <Text
+            <Text style={govtStyles.textIDCard}>Driver’s License </Text>
+            {/* <Text
               style={[govtStyles.textIDCard, { marginTop: -25, left: '30%' }]}>
               {' '}
               License
-            </Text>
+            </Text> */}
             <Text style={govtStyles.textCard}>
               Lorem Ipsum is simply dummy text of the printing
             </Text>
