@@ -86,23 +86,25 @@ const Upload = ({ navigation }) => {
 
   return (
     <View style={govtStyles.container}>
-      <Text style={[govtStyles.text,{width:248}]}>Upload Aadhaar Card</Text>
+      <Text style={[govtStyles.text,{width:268}]}>Upload Aadhaar Card</Text>
       <Text style={[govtStyles.text, { top: '2.1%', left: '55%' }]}> </Text>
 
       <Text style={[govtStyles.paragraph, { top: '0%' }]}>
-        Don’t lose access to your account, verify your email 50kb.
+        Don’t loose access to your account, verify your email 50kb.
       </Text>
       <Card
         style={[
           govtStyles.borderBox,
           {
             //width: 368,
-            width: 310,
+            width: 320,
             top: '5%',
             height: 250,
             alignItems: 'center',
             justifyContent: 'center',
             color: '#e8e6e6',
+            
+            //marginHorizontal: '20%'
           },
         ]}>
         <View
@@ -139,7 +141,7 @@ const Upload = ({ navigation }) => {
               onPress={() => createTwoButtonAlert()}
               style={[
                 splashStyles.touchableStarted,
-                { top: '70%', width: width * 0.5 },
+                { top: '65%', width: width * 0.5 },
               ]}>
               <View style={[splashStyles.borderView, { width: width * 0.5 }]}>
                 <Text style={splashStyles.buttonText}>Upload File</Text>
@@ -157,7 +159,8 @@ const Upload = ({ navigation }) => {
             height: 50,
             top: 23,
             //left: -300,
-            marginLeft:'7%'
+            //marginLeft:'7%',
+            marginLeft:'4%'
           }}
       />
       <Text
@@ -189,7 +192,7 @@ const Upload = ({ navigation }) => {
         name="Verify & Continue"
       />
       <Rectangular
-        path="Selfie"
+        path="Upload"
         style={{
           width: 10,
           position: 'absolute',

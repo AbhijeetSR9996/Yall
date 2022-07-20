@@ -516,17 +516,17 @@ const UserGender = ({ navigation }) => {
             fontSize: 15,
             width: 270,
             //right: '280%',
-            right: '230%',
+            right: '240%',
             bottom: 20,
             color:'#AAAAAA'
           }}>
           about we sue your gender
         </Text>
-        <Text style={{ fontSize: 15, width: 270, right: '680%', bottom: 5, color:'#AAAAAA' }}>
+        <Text style={{ fontSize: 15, width: 270, right: '699%', bottom: 5, color:'#AAAAAA' }}>
           to recommend people on Yall
         </Text>
       </View>
-      <CircularButton path="Gender1" style={{ marginTop: 80 }} />
+      <CircularButton path="UserJob" style={{ marginTop: 80 }} />
     </View>
   );
 };

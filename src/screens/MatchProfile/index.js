@@ -22,8 +22,8 @@ const { width, height } = Dimensions.get('window');
 const MatchProfile = ({ navigation }) => {
 
   return (
-    <KeyboardAvoidingView style={{flex:1}}>
-    {/* <View style={{ flex: 1 }}> */}
+    // <KeyboardAvoidingView style={{flex:1}}>
+    <View style={{ flex: 1 }}> 
       <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-end' }}>
         <Text style={styles.text}>Sam</Text>
       </View>
@@ -124,9 +124,10 @@ const MatchProfile = ({ navigation }) => {
           </View>
         </TouchableOpacity>
       </View>
-    {/* </View> */}
-    </KeyboardAvoidingView>
+    {/* </KeyboardAvoidingView> */}
 
+    </View>
+    
   );
 };
 export default MatchProfile;

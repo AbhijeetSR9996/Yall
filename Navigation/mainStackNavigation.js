@@ -52,11 +52,6 @@ function MainStackNavigation() {
         <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
         <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
-        <Stack.Screen
-          name="MainBottomNavigation"
-          component={MainBottomNavigation}
-        />
-
         <Stack.Screen name="UserName" component={UserName} />
         <Stack.Screen name="UserDOB" component={UserDOB} />
         <Stack.Screen name="UserEmail" component={UserEmail} />
@@ -72,17 +67,19 @@ function MainStackNavigation() {
         <Stack.Screen name="Gender4" component={Gender4} />
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
         <Stack.Screen name="MatchProfile" component={MatchProfile}/>
-        <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
         <Stack.Screen name="Upload" component={Upload} />
-        <Stack.Screen name="Edit" component={Edit} />
         <Stack.Screen name="Selfie" component={Selfie} />
+        <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
+
+        <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
+
+        <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
+        <Stack.Screen name="Edit" component={Edit} />
+        <Stack.Screen name="WeekendEvent" component={WeekendEvent} />
         <Stack.Screen name="Events" component={Events} />
         <Stack.Screen name="Discover" component={Discover} />
-        <Stack.Screen name="WeekendEvent" component={WeekendEvent}/>
-        <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
-        {/* <Stack.Screen name="PaymentMethods" component={PaymentMethods}/> */}
         <Stack.Screen name='BookingConfirm' component={BookingConfirm}/>
-        
+
       </Stack.Navigator>
     </NavigationContainer>
   );

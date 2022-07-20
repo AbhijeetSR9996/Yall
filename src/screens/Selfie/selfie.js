@@ -73,7 +73,7 @@ const Selfie = ({ navigation }) => {
     );
 
   return (
-    <View style={govtStyles.container}>
+    <View style={[govtStyles.container,{alignItems:'center'}]}>
       <Image
         style={splashStyles.backgroundContainer}
         source={require('../../../assets/images/selfieimage.png')}

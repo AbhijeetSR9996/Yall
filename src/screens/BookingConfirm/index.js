@@ -34,7 +34,7 @@ const BookingConfirm = ({ navigation }) => {
             <View style={styles.second_view}>
                 <TouchableOpacity
                     style={styles.buttonContainer}
-                    onPress={() => navigation.navigate('BookingConfirm')}>
+                    onPress={() => navigation.navigate('PaymentMethods')}>
                     <View style={styles.buttonView}>
                         <Text style={styles.buttonText}>Back Home</Text>
                         <View style={styles.buttonIcon}>{icons.rightarrow}</View>

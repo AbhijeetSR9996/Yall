@@ -29,7 +29,7 @@ export default StyleSheet.create({
         //flex:1,
         width: width,
         //height: height * 0.75,
-        height: height * 0.85,
+        height: height * 0.95,
         backgroundColor:'#FFFFFF',
         borderTopLeftRadius:30,
         borderTopRightRadius:30,

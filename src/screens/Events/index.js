@@ -24,8 +24,7 @@ const Events = () => {
                     <ImageBackground
                         source={require('../../../assets/images/discover-event.png')}
                         style={styles.discover_dates}
-                        resizeMode="stretch"
-                    >
+                        resizeMode="stretch">
                         <Text style={styles.discover_text}>Discover Dates</Text>
 
                     </ImageBackground>

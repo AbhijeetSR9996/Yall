@@ -52,6 +52,11 @@ const UserName = ({navigation}) => {
           onValueChange={toggleSwitch}
           value={isEnabled}
         />
+        {/* <TouchableOpacity style={{backgroundColor:'lime',}}>
+          <Image source={require('../../../assets/images/toggle1.png')} />
+          <Image source={require('../../../assets/images/toggle2.png')} style={{bottom:'38%',left:'15%'}}/>
+          <Image source={require('../../../assets/images/toggle3.png')} style={{top:'-60%'}}/>
+        </TouchableOpacity> */}
       </View>
       <CircularButton path="UserDOB" style={{top: -25}} />
     </View>

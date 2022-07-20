@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
 import React from 'react';
-import Edit from '../../src/screens/EditProfile/edit';
+//import Edit from '../../src/screens/EditProfile/edit';
+import Discover from '../../src/screens/Discover';
 
 const Screen2 = () => {
-  return <Edit />
+  return <Discover/>
 };
 
 export default Screen2;

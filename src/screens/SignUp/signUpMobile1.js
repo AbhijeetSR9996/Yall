@@ -1,8 +1,10 @@
 import React from 'react';
-import {View, Text, TextInput, Dimensions} from 'react-native';
+import {View, Text, TextInput, Dimensions, TouchableOpacity} from 'react-native';
 import {signupStyles} from './signupStyles';
 import {Dropdown} from 'react-native-element-dropdown';
 import {CircularButton} from '../../component/Buttons/circular';
+import {icons} from '../../../assets/icons/icons';
+const {height} = Dimensions.get('window');
 
 const data = [
   {label: 'IN +91', value: '1'},
@@ -10,7 +12,7 @@ const data = [
   {label: '+11', value: '3'},
   {label: '+12', value: '4'},
 ];
-const SignUpMobile1 = () => {
+const SignUpMobile1 = ({navigation}) => {
   const [value, setValue] = React.useState(null);
   return (
     <View style={signupStyles.container}>
@@ -77,7 +79,23 @@ const SignUpMobile1 = () => {
         }}>
         account.
       </Text>
-      <CircularButton path="VerificationCode" />
+      {/* <CircularButton path="VerificationCode" /> */}
+      <View>
+      <TouchableOpacity onPress={() => navigation.navigate('VerificationCode')}>
+        <Text
+          style={{
+            right: 20,
+            alignSelf: 'flex-end',
+            marginVertical: height / 1.6,
+            position: 'absolute',
+            backgroundColor: '#DCC7E1',
+            borderRadius: 20,
+            top: 30,
+          }}>
+          {icons.rightcirclearrow}
+        </Text>
+      </TouchableOpacity>
+    </View>
     </View>
   );
 };

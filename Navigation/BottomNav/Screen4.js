@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
+//import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
+import WeekendEvent from '../../src/screens/WeekendEvents';
 
 
 const Screen4 = () => {
@@ -8,7 +9,8 @@ const Screen4 = () => {
     // <View style={styles.screen}>
     //   <Text style={styles.text}>I am Screen4</Text>
     // </View>
-        <ProfileDisplay/>
+        // <ProfileDisplay/>
+        <WeekendEvent/>
   )
 }
 
