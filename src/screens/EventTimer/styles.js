@@ -10,48 +10,62 @@ export default StyleSheet.create({
         flexDirection:'column'    
     },
     first_view: {
-        flex:2,
-        flexDirection:'row',
-        alignItems:'flex-end',
-        justifyContent:"center",
+        flex:3,
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'center',
         backgroundColor:'transparent'
     },
     second_view: {
         flex:1,
-        flexDirection:'column',
+        width:'90%',
+        flexDirection:'row',
         alignItems:'center',
-        justifyContent:"space-evenly",
-        backgroundColor:'transparent'
+        justifyContent:'space-between',
+        backgroundColor:'transparent',
+        //marginHorizontal:'5%'
+        
     },
     third_view: {
-        flex:0.5,
+        flex:1.5,
         flexDirection:'column',
         alignItems:'center',
-        justifyContent:"space-evenly",
-        backgroundColor:'transparent'
+        justifyContent:'space-evenly',
+        backgroundColor:'transparent',
+        
+    },
+    fourth_view: {
+        flex:1,
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:"center",
+        backgroundColor:'transparent',
+        
     },
     image: {
         width:273.98,
         height:204.07,
     },
     main_text: { 
-        color: "#000000",
+        fontFamily: "Bakbak One",
+        color: "#FFFFFF",
         fontSize: 30,
-        fontWeight: "700",
+        fontWeight: "400",
         alignSelf: 'center',
-        //marginHorizontal: '10%',
         letterSpacing: -0.017,
-        //width: width * 0.7,
+        lineHeight: 42,
+        //paddingVertical:'5%'
     },
     desc_text: {
+        fontFamily:'Inter',
+        color: "#FFFFFF",
         fontSize: 15,
         fontWeight: "400",
         letterSpacing: -0.017,
         //width: 324,
         width: '90%',
         height: 54,
-        color:'#AAAAAA',
-        alignSelf:'center',
+        //alignSelf:'center',
         textAlign:'center',
         lineHeight:18
     },

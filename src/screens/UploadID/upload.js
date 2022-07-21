@@ -76,13 +76,28 @@ const Upload = ({ navigation }) => {
           text: 'Camera',
           onPress: () => takePhotoFromCamera(),
         },
+      ],
+      { cancelable: false },
+    );
+
+    const createOneButtonAlert = () =>
+    Alert.alert(
+      '',
+      'ADD PICTURE',
+
+      [
+        {
+          text: 'Cancel',
+          onPress: () => console.log('Cancel Pressed'),
+          style: 'cancel',
+        },
         {
           text: 'Choose from Gallery',
           onPress: () => choosePhotoFromLibrary(),
         },
       ],
       { cancelable: false },
-    );
+    ); 
 
   return (
     <View style={govtStyles.container}>
@@ -97,7 +112,7 @@ const Upload = ({ navigation }) => {
           govtStyles.borderBox,
           {
             //width: 368,
-            width: 320,
+            width: 330,
             top: '5%',
             height: 250,
             alignItems: 'center',
@@ -138,7 +153,7 @@ const Upload = ({ navigation }) => {
               Or
             </Text>
             <TouchableOpacity
-              onPress={() => createTwoButtonAlert()}
+              onPress={() => createOneButtonAlert()}
               style={[
                 splashStyles.touchableStarted,
                 { top: '65%', width: width * 0.5 },

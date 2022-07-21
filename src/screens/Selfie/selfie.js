@@ -64,10 +64,10 @@ const Selfie = ({ navigation }) => {
           text: 'Camera',
           onPress: () => takePhotoFromCamera(),
         },
-        {
-          text: 'Choose from Gallery',
-          onPress: () => choosePhotoFromLibrary(),
-        },
+        // {
+        //   text: 'Choose from Gallery',
+        //   onPress: () => choosePhotoFromLibrary(),
+        // },
       ],
       { cancelable: false },
     );

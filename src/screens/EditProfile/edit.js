@@ -105,7 +105,7 @@ const Edit = ({ navigation }) => {
         <Text
           style={[
             photoStyles.addPhotoText,
-            { fontSize: 18, fontFamily:'Bakbak One', fontWeight:'400', letterSpacing:-0.017, left:'20%'},
+            { fontSize: 18, fontFamily:'Bakbak One', fontWeight:'400', letterSpacing:-0.017, left:'34%'},
           ]}>
           Save
         </Text>

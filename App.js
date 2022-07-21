@@ -1,6 +1,8 @@
 import React from 'react';
 import MainStackNavigation from './Navigation/mainStackNavigation';
 import MainBottomNavigation from './Navigation/mainBottomNavigation';
+import BottomStack from './Navigation/BottomStack';
+
 import SignInMobile from './src/screens/SignUp/SignInMobile';
 import SplashScreen from './src/screens/splashScreen/splashScreen';
 import SignUpMobile1 from './src/screens/SignUp/signUpMobile1';
@@ -24,6 +26,9 @@ import Upload from './src/screens/UploadID/upload';
 import Selfie from './src/screens/Selfie/selfie';
 import Edit from './src/screens/EditProfile/edit';
 import Events from './src/screens/Events/index';
+import EventTicket from './src/screens/EventTicket/index';
+import EventTimer from './src/screens/EventTimer/index';
+import TicketSold from './src/screens/TicketSold/index';
 
 import {NavigationContainer} from '@react-navigation/native';
 

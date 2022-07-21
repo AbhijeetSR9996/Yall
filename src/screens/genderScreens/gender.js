@@ -518,7 +518,7 @@ const Gender = ({ navigation }) => {
           }}>
           about we sue your gender
         </Text>
-        <Text style={{ fontSize: 15, width: 270, right: '699%', bottom: 5, color:'#AAAAAA' }}>
+        <Text style={{ fontSize: 15, width: 270, right: '698%', bottom: 5, color:'#AAAAAA' }}>
           to recommend people on Yall
         </Text>
       </View>

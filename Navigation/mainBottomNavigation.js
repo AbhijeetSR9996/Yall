@@ -2,6 +2,7 @@ import React from 'react';
 import {Image} from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import BottomStack from './BottomStack';
 
 import Screen1 from './BottomNav/Screen1';
 import Screen2 from './BottomNav/Screen2';
@@ -15,6 +16,7 @@ import WeekendEvent from '../src/screens/WeekendEvents';
 import Discover from '../src/screens/Discover';
 import BookingConfirm from '../src/screens/BookingConfirm/index';
 
+
 const Tab = createBottomTabNavigator();
 
 const MainBottomNavigation = () => {
@@ -27,7 +29,19 @@ const MainBottomNavigation = () => {
         activeTintColor: 'white',
         inactiveTintColor: 'white',
       }}>
-      <Tab.Screen
+        <Tab.Screen
+        name="Profile"
+        component={BottomStack}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/home.png')}
+              style={{width: 22, height: 20}}
+            />
+          ),
+        }}
+      />
+      {/* <Tab.Screen
         name="ProfileDisplay"
         component={ProfileDisplay}
         options={{
@@ -37,10 +51,21 @@ const MainBottomNavigation = () => {
               style={{width: 22, height: 20}}
             />
           ),
-          //tabBarStyle: {display:"flex"},
+        }}
+      /> */}
+      <Tab.Screen
+        name="Edit"
+        component={Edit}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/heart.png')}
+              style={{width: 22, height: 20}}
+            />
+          ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Discover"
         component={Discover}
         options={{
@@ -51,7 +76,7 @@ const MainBottomNavigation = () => {
             />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Events"
         component={Events}

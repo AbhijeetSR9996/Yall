@@ -42,7 +42,7 @@ const BookingConfirm = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.buttonContainer}
-                    onPress={() => navigation.navigate('BookingConfirm')}>
+                    onPress={() => navigation.navigate('EventTicket')}>
                     <View style={styles.buttonView}>
                         <Text style={styles.buttonText}>Get Ticket</Text>
                         <View style={styles.buttonIcon}>{icons.rightarrow}</View>
