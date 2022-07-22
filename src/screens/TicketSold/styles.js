@@ -23,8 +23,9 @@ export default StyleSheet.create({
         alignItems:'center',
         justifyContent:'space-between',
         backgroundColor:'transparent',
-        //marginHorizontal:'5%'
-        
+        //marginHorizontal:'2%'
+        marginLeft:'2%',
+        marginRight:'2%'
     },
     third_view: {
         flex:2.5,

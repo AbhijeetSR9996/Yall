@@ -37,11 +37,11 @@ const WednesdayLoveNight = ({ navigation }) => {
 
                 <View style={styles.main_view3}>
                 <TouchableOpacity style={styles.buttonContainer}
-                onPress={() => navigation.navigate('WednesdayLoveNight')}>
+                onPress={() => navigation.navigate('SendTicket')}>
                     <Text style={styles.buttonText}><Icon1 name="send" /> Send</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonContainer2}
-                onPress={() => navigation.navigate('WednesdayLoveNight')}>
+                onPress={() => navigation.navigate('ShareLink')}>
                     <Text style={styles.buttonText}><Icon1 name="share-2" /> Share</Text>
                 </TouchableOpacity>                  
                 </View>       

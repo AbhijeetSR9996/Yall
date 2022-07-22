@@ -46,10 +46,6 @@ const EventTicket = ({ navigation }) => {
                     </View>
                     </View>
                 </Card>
-
-            </View>
-
-            <View style={styles.third_view}>
                 <Card
                     style={styles.card_view2}>
                     <Image
@@ -57,6 +53,15 @@ const EventTicket = ({ navigation }) => {
                         source={require('../../../assets/images/barcode.png')} />
                 </Card>
             </View>
+
+            {/* <View style={styles.third_view}>
+            <Card
+                    style={styles.card_view2}>
+                    <Image
+                        style={styles.image2}
+                        source={require('../../../assets/images/barcode.png')} />
+                </Card>
+            </View> */}
         </View>
     )
 }

@@ -29,6 +29,9 @@ import Events from './src/screens/Events/index';
 import EventTicket from './src/screens/EventTicket/index';
 import EventTimer from './src/screens/EventTimer/index';
 import TicketSold from './src/screens/TicketSold/index';
+import ShareLink from './src/screens/ShareLink';
+import JoinParty from './src/screens/JoinParty';
+import SendTicket from './src/screens/SendTicket';
 
 import {NavigationContainer} from '@react-navigation/native';
 

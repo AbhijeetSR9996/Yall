@@ -23,7 +23,7 @@ export default StyleSheet.create({
         alignItems:'center',
         justifyContent:'space-between',
         backgroundColor:'transparent',
-        //marginHorizontal:'5%'
+        marginHorizontal:'2%'
         
     },
     third_view: {
@@ -62,8 +62,8 @@ export default StyleSheet.create({
         fontSize: 15,
         fontWeight: "400",
         letterSpacing: -0.017,
-        //width: 324,
-        width: '90%',
+        width: 324,
+        //width: '90%',
         height: 54,
         //alignSelf:'center',
         textAlign:'center',

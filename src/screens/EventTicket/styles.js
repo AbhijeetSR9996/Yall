@@ -10,7 +10,8 @@ export default StyleSheet.create({
         flexDirection:'column'    
     },
     first_view: {
-        flex:1,
+        //flex:1,
+        flex:0.5,
         flexDirection:'column',
         alignItems:'center',
         justifyContent:'flex-end',
@@ -28,7 +29,7 @@ export default StyleSheet.create({
         flex:1.5,
         flexDirection:'column',
         alignItems:'center',
-        justifyContent:"flex-start",
+        justifyContent:"center",
         backgroundColor:'transparent',
         
     },
@@ -55,7 +56,8 @@ export default StyleSheet.create({
         borderStyle:'dashed',
         borderWidth:1 ,
         borderColor:'#000000',
-        //marginTop:'-0.5%'
+        //bottom:'22%'
+        //marginTop:'-0.5%',
     },
     view1: {
         flex:1,
@@ -94,7 +96,7 @@ export default StyleSheet.create({
         //width: '90%',
         height: 47, 
         marginVertical: '7%',
-        marginHorizontal:'7%'
+        marginHorizontal:'7%',
         //margin:'17%' 
     },
     main_text: { 
@@ -102,11 +104,10 @@ export default StyleSheet.create({
         color: "#000000",
         fontSize: 25,
         fontWeight: "400",
-        alignSelf: 'center',
+        //alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 35,
-        paddingVertical:'0%',
-        //paddingBottom:'0%'
+        top:'50%'
     },
     desc_text: {
         fontFamily: "Bakbak One",

@@ -37,6 +37,9 @@ import BookingConfirm from '../src/screens/BookingConfirm';
 import EventTicket from '../src/screens/EventTicket';
 import EventTimer from '../src/screens/EventTimer';
 import TicketSold from '../src/screens/TicketSold';
+import ShareLink from '../src/screens/ShareLink';
+import JoinParty from '../src/screens/JoinParty';
+import SendTicket from '../src/screens/SendTicket';
 
 const Stack = createStackNavigator();
 
@@ -74,6 +77,7 @@ function MainStackNavigation() {
         <Stack.Screen name="Selfie" component={Selfie} />
         <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
 
+
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
 
         <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
@@ -85,6 +89,9 @@ function MainStackNavigation() {
         <Stack.Screen name='EventTicket' component={EventTicket}/>
         <Stack.Screen name='EventTimer' component={EventTimer}/>
         <Stack.Screen name='TicketSold' component={TicketSold}/>
+        <Stack.Screen name='ShareLink' component={ShareLink}/>
+        <Stack.Screen name="JoinParty" component={JoinParty}/>
+        <Stack.Screen name="SendTicket" component={SendTicket}/>
 
       </Stack.Navigator>
     </NavigationContainer>

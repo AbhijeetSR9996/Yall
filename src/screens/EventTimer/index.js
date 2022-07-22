@@ -173,7 +173,7 @@ const EventTimer = ({ navigation }) => {
                             height: '30%',
                             width: '30%',
                             alignSelf: 'flex-start',
-                            marginLeft: '5%',
+                            marginLeft: '7%',
                             marginBottom: '5%'
                         }}
                             onPress={() => navigation.navigate('TicketSold')}>
