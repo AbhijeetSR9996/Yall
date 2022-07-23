@@ -90,7 +90,7 @@ const AddPhoto = ({navigation}) => {
 
       <Text style={photoStyles.addPhotoText}>Add Photos </Text>
       <Text style={photoStyles.highlightText}>
-        Ad at least 2 photos to continue
+        Add at least 2 photos to continue
       </Text>
       <View style={{flexDirection: 'row', top: 200}}>
         <TouchableOpacity

@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from '../src/screens/splashScreen/splashScreen';
 import SignUp from '../src/screens/SignUp/SignUp';
+import SignInMobile from '../src/screens/SignUp/SignInMobile';
 import SignUpMobile from '../src/screens/SignUp/signUpMobile';
 import SignUpMobile1 from '../src/screens/SignUp/signUpMobile1';
 import VerificationCode from '../src/screens/SignUp/verificationCode';
@@ -22,7 +23,7 @@ import Gender3 from '../src/screens/genderScreens/gender3';
 import Gender4 from '../src/screens/genderScreens/gender4';
 import AddPhoto from '../src/screens/AddPhoto/addPhoto';
 import MainBottomNavigation from './mainBottomNavigation';
-
+import MatchProfile from '../src/screens/MatchProfile';
 import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from '../src/screens/UploadID/upload';
 import Selfie from '../src/screens/Selfie/selfie';
@@ -30,6 +31,15 @@ import Edit from '../src/screens/EditProfile/edit';
 import Events from '../src/screens/Events';
 import Discover from '../src/screens/Discover';
 import WeekendEvent from '../src/screens/WeekendEvents';
+import WednesdayLoveNight from '../src/screens/WednesdayLoveNight';
+import PaymentMethods from '../src/screens/PaymentMethods';
+import BookingConfirm from '../src/screens/BookingConfirm';
+import EventTicket from '../src/screens/EventTicket';
+import EventTimer from '../src/screens/EventTimer';
+import TicketSold from '../src/screens/TicketSold';
+import ShareLink from '../src/screens/ShareLink';
+import JoinParty from '../src/screens/JoinParty';
+import SendTicket from '../src/screens/SendTicket';
 
 const Stack = createStackNavigator();
 
@@ -43,14 +53,11 @@ function MainStackNavigation() {
         initialRouteName="SplashScreen">
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="SignInMobile" component={SignInMobile}/>
         <Stack.Screen name="SignUpMobile" component={SignUpMobile} />
         <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
-        <Stack.Screen
-          name="MainBottomNavigation"
-          component={MainBottomNavigation}
-        />
-
+        <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
         <Stack.Screen name="UserName" component={UserName} />
         <Stack.Screen name="UserDOB" component={UserDOB} />
         <Stack.Screen name="UserEmail" component={UserEmail} />
@@ -65,14 +72,27 @@ function MainStackNavigation() {
         <Stack.Screen name="Gender3" component={Gender3} />
         <Stack.Screen name="Gender4" component={Gender4} />
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
+        <Stack.Screen name="MatchProfile" component={MatchProfile}/>
+        <Stack.Screen name="Upload" component={Upload} />
+        <Stack.Screen name="Selfie" component={Selfie} />
+        <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
+
+
+        <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
 
         <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
-        <Stack.Screen name="Upload" component={Upload} />
         <Stack.Screen name="Edit" component={Edit} />
-        <Stack.Screen name="Selfie" component={Selfie} />
+        <Stack.Screen name="WeekendEvent" component={WeekendEvent} />
         <Stack.Screen name="Events" component={Events} />
         <Stack.Screen name="Discover" component={Discover} />
-        <Stack.Screen name="WeekendEvent" component={WeekendEvent}/>
+        <Stack.Screen name='BookingConfirm' component={BookingConfirm}/>
+        <Stack.Screen name='EventTicket' component={EventTicket}/>
+        <Stack.Screen name='EventTimer' component={EventTimer}/>
+        <Stack.Screen name='TicketSold' component={TicketSold}/>
+        <Stack.Screen name='ShareLink' component={ShareLink}/>
+        <Stack.Screen name="JoinParty" component={JoinParty}/>
+        <Stack.Screen name="SendTicket" component={SendTicket}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   );

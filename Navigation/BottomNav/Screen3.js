@@ -1,19 +1,12 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native'
 import React from 'react'
-import ProfileDisplay from '../../src/screens/ProfileDisplay/ProfileDisplay';
-import Events from '../../src/screens/Events'
+import Events from '../../src/screens/Events/index'
 
 const Screen3 = () => {
-  return (
-    // <View style={styles.screen}>
-    //   <Text style={styles.text}>I am Screen3</Text>
-    // </View>
-        // <ProfileDisplay />
-        <Events />
-  )
-}
+  return  <Events /> 
+};
 
-export default Screen3
+export default Screen3;
 
 const styles = StyleSheet.create({
   screen:{
@@ -27,5 +20,5 @@ const styles = StyleSheet.create({
     color:'#000',
     fontWeight:'700',
     fontSize:30
-  }    
-})
+  },    
+});

@@ -1,13 +1,21 @@
 import React from 'react';
 import {Image} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import BottomStack from './BottomStack';
+
 import Screen1 from './BottomNav/Screen1';
 import Screen2 from './BottomNav/Screen2';
 import Screen3 from './BottomNav/Screen3';
 import Screen4 from './BottomNav/Screen4';
 import Screen5 from './BottomNav/Screen5';
 import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
+import Events from '../src/screens/Events';
+import Edit from '../src/screens/EditProfile/edit';
+import WeekendEvent from '../src/screens/WeekendEvents';
+import Discover from '../src/screens/Discover';
+import BookingConfirm from '../src/screens/BookingConfirm/index';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -17,13 +25,13 @@ const MainBottomNavigation = () => {
       screenOptions={{headerShown: false}}
       backBehavior="none"
       tabBarOptions={{
-        labelStyle: {fontSize: 1},
-        activeTintColor: 'red',
-        inactiveTintColor: 'black',
+        labelStyle: {fontSize: 0},
+        activeTintColor: 'white',
+        inactiveTintColor: 'white',
       }}>
-      <Tab.Screen
-        name="Screen 1"
-        component={Screen1}
+        <Tab.Screen
+        name="Profile"
+        component={BottomStack}
         options={{
           tabBarIcon: () => (
             <Image
@@ -33,9 +41,21 @@ const MainBottomNavigation = () => {
           ),
         }}
       />
+      {/* <Tab.Screen
+        name="ProfileDisplay"
+        component={ProfileDisplay}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/home.png')}
+              style={{width: 22, height: 20}}
+            />
+          ),
+        }}
+      /> */}
       <Tab.Screen
-        name="Screen 2"
-        component={Screen2}
+        name="Edit"
+        component={Edit}
         options={{
           tabBarIcon: () => (
             <Image
@@ -45,9 +65,21 @@ const MainBottomNavigation = () => {
           ),
         }}
       />
+      {/* <Tab.Screen
+        name="Discover"
+        component={Discover}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/heart.png')}
+              style={{width: 22, height: 20}}
+            />
+          ),
+        }}
+      /> */}
       <Tab.Screen
-        name="Screen 3"
-        component={Screen3}
+        name="Events"
+        component={Events}
         options={{
           tabBarIcon: () => (
             <Image
@@ -57,9 +89,10 @@ const MainBottomNavigation = () => {
           ),
         }}
       />
+
       <Tab.Screen
-        name="Screen 4"
-        component={Screen4}
+        name="WeekendEvent"
+        component={WeekendEvent}
         options={{
           tabBarIcon: () => (
             <Image
@@ -69,9 +102,10 @@ const MainBottomNavigation = () => {
           ),
         }}
       />
+
       <Tab.Screen
-        name="Screen 5"
-        component={Screen5}
+        name="BookingConfirm"
+        component={BookingConfirm}
         options={{
           tabBarIcon: () => (
             <Image
@@ -80,7 +114,8 @@ const MainBottomNavigation = () => {
             />
           ),
         }}
-      />
+      /> 
+
     </Tab.Navigator>
   );
 };

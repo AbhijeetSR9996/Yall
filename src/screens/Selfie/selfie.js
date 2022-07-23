@@ -64,16 +64,16 @@ const Selfie = ({ navigation }) => {
           text: 'Camera',
           onPress: () => takePhotoFromCamera(),
         },
-        {
-          text: 'Choose from Gallery',
-          onPress: () => choosePhotoFromLibrary(),
-        },
+        // {
+        //   text: 'Choose from Gallery',
+        //   onPress: () => choosePhotoFromLibrary(),
+        // },
       ],
       { cancelable: false },
     );
 
   return (
-    <View style={govtStyles.container}>
+    <View style={[govtStyles.container,{alignItems:'center'}]}>
       <Image
         style={splashStyles.backgroundContainer}
         source={require('../../../assets/images/selfieimage.png')}
@@ -98,7 +98,7 @@ const Selfie = ({ navigation }) => {
         onPress={() => createTwoButtonAlert()}
         style={[
           splashStyles.touchableStarted,
-          { top: '30%', alignSelf: 'center' },
+          { top: '35%', alignSelf: 'center' },
         ]}>
         <View style={splashStyles.borderView}>
           <Text style={splashStyles.buttonText}>Take a selfie</Text>

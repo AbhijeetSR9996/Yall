@@ -37,33 +37,50 @@ export const userStyles = {
   },
 
   //  ====================USERDOB STYLES=======================
-  mainViewDob: {top: 150, flexDirection: 'row'},
+  mainViewDob: {top: 150, flexDirection: 'row',justifyContent:'space-around'},
   textDOB1: {
+    fontFamily: 'Inter',
+    fontWeight:'400',
     color: '#000000',
+    letterSpacing: -0.017,
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
-    left: '170%',
+    left: '-60%',
+    //marginLeft: '-3%'
+    //marginHorizontal:'-8%'
+    //paddingLeft:'-6%'
   },
   textDOB2: {
+    fontFamily: 'Inter',
+    fontWeight:'400',
     color: '#000000',
+    letterSpacing: -0.017,
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
-    left: '550%',
+    //paddingHorizontal:'5%'
+    left: '-100%',
+     //marginLeft: '-8%'
+     //marginHorizontal:'-3%' 
   },
   textDOB3: {
+    fontFamily: 'Inter',
+    fontWeight:'400',
     color: '#000000',
+    letterSpacing: -0.017,
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
-    left: '1010%',
+    //marginLeft: '-11%'
+    right: '50%',
   },
   dateInput: {
     borderWidth: 1.5,
     width: 75,
     textAlign: 'center',
     backgroundColor: '#DCC7E1',
+    color: '#000000',
     borderRadius: 80,
     fontWeight: '500',
     height: 57,
@@ -74,12 +91,11 @@ export const userStyles = {
     width: 100,
     textAlign: 'center',
     backgroundColor: '#DCC7E1',
+    color: '#000000',
     borderRadius: 80,
     height: 57,
   },
   DobarrowIcon: {
-    //left:348,
-    //top: 605,
     position: 'absolute',
     backgroundColor: '#DCC7E1',
     borderRadius: 20,

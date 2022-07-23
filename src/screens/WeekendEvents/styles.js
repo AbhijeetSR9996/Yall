@@ -35,7 +35,7 @@ export default StyleSheet.create({
     },
     right_container: {
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'center',      
     },
     right_heading: {
         fontWeight: '400',
@@ -47,11 +47,24 @@ export default StyleSheet.create({
         color: '#232323',
         width: width * 0.4,
         paddingLeft: '5%',
+        marginLeft:'-9%'
     },
     right_container_btn:{
         alignItems:'center',
         textAlign:'center',
-        backgroundColor:'#FF0000'
-    }
+        backgroundColor:'#FF0000',
+        borderRadius: 20,
+        borderWidth: 1.5,
+        borderColor: '#000000',
+        backgroundColor: '#DCC7E1',
+        marginTop: '5%',
+        width: width * 0.3,
+        marginLeft: '10%',         
+        marginLeft: '5%'
+    },
+    right_btn:{
+        fontSize: 15,
+        color: '#000000',
 
+    },
 })

@@ -1,9 +1,10 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity,KeyboardAvoidingView} from 'react-native';
 import {signupStyles} from './signupStyles';
 import {icons} from '../../../assets/icons/icons';
 const SignUpMobile = ({navigation}) => {
   return (
+    <KeyboardAvoidingView behavior='padding' style={{flex:1}}>
     <View style={signupStyles.container}>
       <View style={signupStyles.backgroundContainer}>
         <Image
@@ -89,6 +90,7 @@ const SignUpMobile = ({navigation}) => {
         </TouchableOpacity>
       </View>
     </View>
+    </KeyboardAvoidingView>
   );
 };
 export default SignUpMobile;

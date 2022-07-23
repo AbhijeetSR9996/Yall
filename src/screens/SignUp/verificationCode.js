@@ -8,8 +8,7 @@ import {
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
 import {CircularButton} from '../../component/Buttons/circular';
-import {s, vs, ms, mvs} from 'react-native-size-matters';
-import {icons} from '../../../assets/icons/icons';
+
 
 const {height} = Dimensions.get('window');
 
@@ -71,7 +70,7 @@ const VerificationCode = ({navigation}) => {
           <Text style={signupStyles.text2}>Didn't get a code?</Text>
         </TouchableOpacity>
       </View>
-      <CircularButton path="GovtRegisterID" style={{marginTop: 440}} />
+      <CircularButton path="GovtRegisterID" style={{marginTop: 480}} />
     </View>
   );
 };

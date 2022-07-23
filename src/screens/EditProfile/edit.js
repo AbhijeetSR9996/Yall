@@ -9,6 +9,7 @@ import {
   TextInput,
   Switch,
   Alert,
+  Dimensions
 } from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import { styles } from '../genderScreens/styles';
@@ -19,6 +20,7 @@ import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
 import { Card } from 'react-native-paper';
 import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDisplay.styles';
 import { userStyles } from '../../screens/User details/userStyles';
+const { width, height } = Dimensions.get('window');
 
 const Edit = ({ navigation }) => {
   const requestCameraPermission = async () => {
@@ -87,32 +89,37 @@ const Edit = ({ navigation }) => {
 
   return (
     <View style={[styles.container, { flex: 1 }]}>
-      <TouchableOpacity onPress={() => navigation.navigate('Gender4')}>
+      <TouchableOpacity>
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
 
+      <View style={{justifyContent:'space-between',bottom:'17%',marginHorizontal:'8%',backgroundColor:'transparent',width:width ,height:height * 0.11,flexDirection:'row'}}>
       <Text
         style={[
           photoStyles.addPhotoText,
-          { fontSize: 18, top: '-4%', left: '15%' },
+          { fontSize: 18, fontFamily:'Bakbak One', fontWeight:'400', letterSpacing:-0.017, },
         ]}>
         Profile
       </Text>
-      <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
+      <TouchableOpacity>
         <Text
           style={[
             photoStyles.addPhotoText,
-            { fontSize: 18, top: '-150%', left: '80%' },
+            { fontSize: 18, fontFamily:'Bakbak One', fontWeight:'400', letterSpacing:-0.017, left:'34%'},
           ]}>
           Save
         </Text>
       </TouchableOpacity>
+      </View>
+
+      <View style={{borderBottomColor:'black',
+        borderBottomWidth:0.5,bottom:'10%'}}/>
       <Card
         style={[
           govtStyles.borderBox,
           {
             width: 173,
-            top: '-15%',
+            top: '-5%',
             height: 132,
             borderRadius: 66,
             alignItems: 'center',
@@ -124,7 +131,6 @@ const Edit = ({ navigation }) => {
         <Image
           source={require('../../../assets/images/editprofile.png')}
           style={[
-            ProfileDisplayStyles.img2,
             {
               width: 173,
               height: 132,
@@ -140,8 +146,11 @@ const Edit = ({ navigation }) => {
           {
             height: 30,
             width: 60,
-            bottom: 150,
-            left: 180,
+            //bottom: '20.5%',
+            marginTop: '18%',
+            marginBottom: '10%',
+            //left: 150,
+            left: '43%',
             alignItems: 'center',
             justifyContent: 'center',
           },
@@ -150,11 +159,11 @@ const Edit = ({ navigation }) => {
           source={require('../../../assets/images/camera.png')}
           onPress={() => createTwoButtonAlert()}
           style={[
-            ProfileDisplayStyles.img7,
             {
               height: 20,
               width: 30,
-              left: 15,
+              //left: '0%',
+              alignSelf:'center'
             },
           ]}
         />
@@ -164,100 +173,111 @@ const Edit = ({ navigation }) => {
         style={[
           photoStyles.addPhotoText,
           {
-            fontSize: 18,
+            fontFamily: 'Inter',
+            fontSize: 15,
+            //marginTop: '20%',
             top: '-20%',
             left: '7%',
-            color: 'grey',
+            color: '#B4B4B4',
             fontWeight: '300',
           },
         ]}>
         Full name
       </Text>
-      <View style={[userStyles.textInput, { top: '-28%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-26%', left: '0%' }]}>
         <TextInput
           placeholder="John Doe"
           placeholderTextColor="#000000"
-          style={userStyles.textInput1}></TextInput>
+          editable={false}
+          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
       </View>
 
       <Text
         style={[
           photoStyles.addPhotoText,
           {
-            fontSize: 18,
-            top: '-27%',
+            fontFamily: 'Inter',
+            fontSize: 15,
+            top: '-25%',
             left: '7%',
-            color: 'grey',
+            color: '#B4B4B4',
             fontWeight: '300',
           },
         ]}>
         Surname
       </Text>
-      <View style={[userStyles.textInput, { top: '-35%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-31%', left: '0%' }]}>
         <TextInput
           placeholder="Doe"
           placeholderTextColor="#000000"
-          style={userStyles.textInput1}></TextInput>
+          editable={false}
+          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
       </View>
 
       <Text
         style={[
           photoStyles.addPhotoText,
           {
-            fontSize: 18,
-            top: '-34%',
+            fontFamily: 'Inter',
+            fontSize: 15,
+            top: '-30%',
             left: '7%',
-            color: 'grey',
+            color: '#B4B4B4',
             fontWeight: '300',
           },
         ]}>
         Phone
       </Text>
-      <View style={[userStyles.textInput, { top: '-42%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-36%', left: '0%' }]}>
         <TextInput
           placeholder="+8511 6654 5265"
           placeholderTextColor="#000000"
-          style={userStyles.textInput1}></TextInput>
+          editable={false}
+          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
       </View>
 
       <Text
         style={[
           photoStyles.addPhotoText,
           {
-            fontSize: 18,
-            top: '-41%',
+            fontFamily: 'Inter',
+            fontSize: 15,
+            top: '-35%',
             left: '7%',
-            color: 'grey',
+            color: '#B4B4B4',
             fontWeight: '300',
           },
         ]}>
         Gender
       </Text>
-      <View style={[userStyles.textInput, { top: '-49%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-41%', left: '0%' }]}>
         <TextInput
           placeholder="Male"
           placeholderTextColor="#000000"
-          style={userStyles.textInput1}></TextInput>
+          editable={false}
+          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
       </View>
 
       <Text
         style={[
           photoStyles.addPhotoText,
           {
-            fontSize: 18,
-            top: '-48%',
+            fontFamily: 'Inter',
+            fontSize: 15,
+            top: '-40%',
             left: '7%',
-            color: 'grey',
+            color: '#B4B4B4',
             fontWeight: '300',
           },
         ]}>
         Date of birth
       </Text>
-      <View style={[userStyles.textInput, { top: '-56%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-46%', left: '0%' }]}>
         <TextInput
           placeholder="01-01-2001"
           placeholderTextColor="#000000"
-          style={userStyles.textInput1}></TextInput>
+          editable={false}
+          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
       </View>
     </View>
   );

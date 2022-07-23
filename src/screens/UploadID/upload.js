@@ -14,7 +14,10 @@ import { Rectangular } from '../../component/Buttons/rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
 import { splashStyles } from '../../screens/splashScreen/splashStyles';
 import { icons } from '../../../assets/icons/icons';
+import styles from './styles';
+
 const { width, height } = Dimensions.get('window');
+
 
 const Upload = ({ navigation }) => {
   const requestCameraPermission = async () => {
@@ -73,79 +76,87 @@ const Upload = ({ navigation }) => {
           text: 'Camera',
           onPress: () => takePhotoFromCamera(),
         },
+      ],
+      { cancelable: false },
+    );
+
+    const createOneButtonAlert = () =>
+    Alert.alert(
+      '',
+      'ADD PICTURE',
+
+      [
+        {
+          text: 'Cancel',
+          onPress: () => console.log('Cancel Pressed'),
+          style: 'cancel',
+        },
         {
           text: 'Choose from Gallery',
           onPress: () => choosePhotoFromLibrary(),
         },
       ],
       { cancelable: false },
-    );
+    ); 
 
   return (
     <View style={govtStyles.container}>
-      <Text style={govtStyles.text}>Upload Aadhaar</Text>
-      <Text style={[govtStyles.text, { top: '2%', left: '49%' }]}> Card</Text>
+      <Text style={[govtStyles.text,{width:268}]}>Upload Aadhaar Card</Text>
+      <Text style={[govtStyles.text, { top: '2.1%', left: '55%' }]}> </Text>
 
       <Text style={[govtStyles.paragraph, { top: '0%' }]}>
-        Don’t lose access to your account, verify your email 50kb.
+        Don’t loose access to your account, verify your email 50kb.
       </Text>
       <Card
         style={[
           govtStyles.borderBox,
           {
-            width: 365,
+            //width: 368,
+            width: 330,
             top: '5%',
             height: 250,
             alignItems: 'center',
             justifyContent: 'center',
             color: '#e8e6e6',
+            
+            //marginHorizontal: '20%'
           },
         ]}>
         <View
-          style={{
-            flexDirection: 'column',
-            alignContent: 'center',
-            justifyContent: 'center',
-          }}>
+          style={styles.card_view}>
           <View
             style={[
               govtStyles.textMain,
               { position: 'relative', justifyContent: 'center' },
             ]}>
             <TouchableOpacity
-              style={{
-                alignSelf: 'center',
-                height: 70,
-                width: 70,
-                borderRadius: 10,
-                top: 10,
-              }}
+              style={styles.uploadContainer}
               onPress={() => createTwoButtonAlert()}>
               <Image
                 source={require('../../../assets/images/idupload.png')}
-                style={[
-                  ProfileDisplayStyles.img2,
+                style={
                   {
-                    width: 90,
+                    width: 95,
                     height: 100,
                     top: 6,
-                    left: '10%',
-                  },
-                ]}
+                    //left: '0%',
+                    alignSelf:'center'
+                  }
+                }
               />
             </TouchableOpacity>
             <Text
               style={[
                 govtStyles.textCard,
-                { top: 115, left: '45%', fontSize: 15, position: 'absolute' },
+                { top: 120, left: '45%', fontSize: 15, position: 'absolute' },
               ]}>
               Or
             </Text>
             <TouchableOpacity
-              onPress={() => createTwoButtonAlert()}
+              onPress={() => createOneButtonAlert()}
               style={[
                 splashStyles.touchableStarted,
-                { top: '70%', width: width * 0.5 },
+                { top: '65%', width: width * 0.5 },
               ]}>
               <View style={[splashStyles.borderView, { width: width * 0.5 }]}>
                 <Text style={splashStyles.buttonText}>Upload File</Text>
@@ -158,15 +169,14 @@ const Upload = ({ navigation }) => {
       </Card>
       <Image
         source={require('../../../assets/images/file.png')}
-        style={[
-          ProfileDisplayStyles.img2,
-          {
+        style={{
             width: 40,
             height: 50,
             top: 23,
-            left: -300,
-          },
-        ]}
+            //left: -300,
+            //marginLeft:'7%',
+            marginLeft:'4%'
+          }}
       />
       <Text
         style={[
@@ -177,15 +187,13 @@ const Upload = ({ navigation }) => {
       </Text>
       <Image
         source={require('../../../assets/images/scroller.png')}
-        style={[
-          ProfileDisplayStyles.img2,
-          {
+        style={{
             width: '73%',
             height: 30,
             top: -25,
-            left: -25,
-          },
-        ]}
+            //left: -25,
+            marginLeft:'20%'
+          }}
       />
 
       <Rectangular
@@ -199,7 +207,7 @@ const Upload = ({ navigation }) => {
         name="Verify & Continue"
       />
       <Rectangular
-        path="Selfie"
+        path="Upload"
         style={{
           width: 10,
           position: 'absolute',

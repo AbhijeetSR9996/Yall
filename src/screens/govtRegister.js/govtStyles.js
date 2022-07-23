@@ -28,10 +28,14 @@ export const govtStyles = {
     color: '#AAAAAA',
   },
   borderBox: {
-    width: 370,
+    //width: 370,
+    width: 320,
+    alignSelf:'center',
+    //marginHorizontal: '0%',
     top: 180,
     height: 92,
-    left: 25,
+    left: 0,
+    
     borderWidth: 1,
     borderRadius: 10,
     borderColor: '#C4C4C4',
@@ -55,7 +59,8 @@ export const govtStyles = {
   textIDCard: {
     fontFamily: 'Bakbak one-Regular',
     fontSize: 18,
-    width: 133,
+    //width: 133,
+    width: 143,
     fontWeight: '700',
     color: '#000000',
   },
