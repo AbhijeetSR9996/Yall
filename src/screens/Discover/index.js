@@ -14,7 +14,7 @@ const Discover = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.main_container}>
             <ScrollView>
-                <View>
+                <View >
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Icon name="angle-left" style={styles.letf_arrow} />
                     </TouchableOpacity>

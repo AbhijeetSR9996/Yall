@@ -16,7 +16,7 @@ const ShareLink = ({ navigation }) => {
         <SafeAreaView >
             <ImageBackground style={styles.image_background} source={require('../../../assets/images/wednesdaynight-share.png')}>
                 <View style={styles.main_view}>
-                    <View>
+                    <View style={{marginRight:'95%'}}>
                         <TouchableOpacity onPress={() => navigation.goBack()}>
                             <Icon name="angle-left" style={styles.left_arrow} />
                         </TouchableOpacity>
@@ -29,28 +29,29 @@ const ShareLink = ({ navigation }) => {
                             borderTopLeftRadius: 30,
                             borderTopRightRadius: 30,
                         }}>
-                            <View style={{ flex: 0.15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', marginTop: '-70%' }}>
-                                {/* <SearchBar title={'Share via "Nearby Share"'} /> */}
+                            <View style={{ flex: 0.15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', marginTop: '-75%' }}>
+                              
 
                                 <Card style={{
-                                    width: '80%',
+                                    width: '90%',
                                     alignSelf: 'center',
                                     height: 61,
                                     borderWidth: 1,
                                     borderRadius: 10,
-                                    borderColor: '#828282',
+                                    borderColor: '#6B6B6B',
                                     backgroundColor: '#F7F7F7',
                                 }}>
-                                    <TouchableOpacity onPress={()=>{navigation.navigate('SendTicket')}}>
+                                    <TouchableOpacity>
                                         <Image source={require('../../../assets/images/linkicon.png')}
-                                            style={{ left: '7%', top: '100%' }} />
+                                            style={{ left: '5%', top: '100%' }} />
                                     </TouchableOpacity>
                                     <TextInput
                                         placeholder='Share via "Nearby Share"'
+                                        placeholderTextColor='#000000'
                                         style={{
                                             flex: 1,
                                             fontSize: 15,
-                                            color: '#A9A9A9', left: '20%', bottom: '15%'
+                                            color: '#000000', left: '13%', bottom: '15%'
                                         }} />
                                 </Card>
 
@@ -64,7 +65,7 @@ const ShareLink = ({ navigation }) => {
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/whatsapp.png')} style={{ left: '5%', }} />
                                         </TouchableOpacity>
-                                        <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Whatsapp</Text>
+                                        <Text style={{ left: '4%',color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Whatsapp</Text>
                                     </View>
                                     <View style={{ left: '75%' }}>
                                         <TouchableOpacity >
@@ -76,13 +77,13 @@ const ShareLink = ({ navigation }) => {
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/snapchat.png')} style={{ left: '5%' }} />
                                         </TouchableOpacity>
-                                        <Text style={{ left: '0%', top: '0%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Snapchat</Text>
+                                        <Text style={{ left: '4%', top: '0%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Snapchat</Text>
                                     </View>
                                     <View style={{ left: '165%' }}>
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/facebook.png')} style={{ left: '5%' }} />
                                         </TouchableOpacity>
-                                        <Text style={{ left: '0%', top: '0%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> News Feed</Text>
+                                        <Text style={{ left: '-2%', top: '0%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> News Feed</Text>
                                     </View>
                                     <View style={{ left: '210%' }}>
                                         <TouchableOpacity >
@@ -117,13 +118,13 @@ const ShareLink = ({ navigation }) => {
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/facebook.png')} style={{ left: '5%' }} />
                                         </TouchableOpacity>
-                                        <Text style={{ left: '-10%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Your groups</Text>
+                                        <Text style={{ left: '-5%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Your groups</Text>
                                     </View>
                                     <View style={{ left: '65%' }}>
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/gmail.png')} style={{ left: '5%' }} />
                                         </TouchableOpacity>
-                                        <Text style={{ left: '25%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Chat</Text>
+                                        <Text style={{ left: '26%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Chat</Text>
                                     </View>
                                     <View style={{ left: '110%' }}>
                                         <TouchableOpacity >
@@ -141,7 +142,7 @@ const ShareLink = ({ navigation }) => {
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/whatsapp.png')} style={{ left: '5%' }} />
                                         </TouchableOpacity>
-                                        <Text style={{ left: '0%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Whatsapp</Text>
+                                        <Text style={{ left: '3%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Whatsapp</Text>
                                     </View>
                                     <View style={{ left: '255%' }}>
                                         <TouchableOpacity >

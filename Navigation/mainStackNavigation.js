@@ -40,6 +40,10 @@ import TicketSold from '../src/screens/TicketSold';
 import ShareLink from '../src/screens/ShareLink';
 import JoinParty from '../src/screens/JoinParty';
 import SendTicket from '../src/screens/SendTicket';
+import WeeklyEventLocation from '../src/screens/WeeklyEventLocation';
+import WeeklyEventMap from '../src/screens/WeeklyEventMap';
+import Liked from '../src/screens/Liked';
+import Match from '../src/screens/Match';
 
 const Stack = createStackNavigator();
 
@@ -76,7 +80,8 @@ function MainStackNavigation() {
         <Stack.Screen name="Upload" component={Upload} />
         <Stack.Screen name="Selfie" component={Selfie} />
         <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
-
+        <Stack.Screen name="WeeklyEventLocation" component={WeeklyEventLocation}/>
+        <Stack.Screen name="WeeklyEventMap" component={WeeklyEventMap}/>
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
 
@@ -92,6 +97,8 @@ function MainStackNavigation() {
         <Stack.Screen name='ShareLink' component={ShareLink}/>
         <Stack.Screen name="JoinParty" component={JoinParty}/>
         <Stack.Screen name="SendTicket" component={SendTicket}/>
+        <Stack.Screen name="Liked" component={Liked}/>
+        <Stack.Screen name="Match" component={Match}/>
 
       </Stack.Navigator>
     </NavigationContainer>

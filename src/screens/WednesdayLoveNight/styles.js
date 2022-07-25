@@ -108,8 +108,8 @@ export default StyleSheet.create({
         position: 'absolute',
         alignSelf: 'center',
         //top: '73%',
-        //marginTop:'65%'
-        marginTop:'60%'
+        marginTop:'75%'
+        //marginTop:'60%',
       },
 
 })

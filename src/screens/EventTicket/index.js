@@ -19,15 +19,16 @@ const EventTicket = ({ navigation }) => {
                 source={require('../../../assets/images/Gradient-Fill.png')}
                 resizeMode="cover" />
             <View style={styles.first_view}>
-                <Text style={styles.main_text} onPress={()=>navigation.navigate('EventTimer')}>My Ticket </Text>
+                {/* <Text style={styles.main_text} onPress={()=>navigation.navigate('EventTimer')}>My Ticket </Text> */}
             </View>
 
             <View style={styles.second_view}>
+            <Text style={styles.main_text} onPress={()=>navigation.navigate('EventTimer')}>My Ticket </Text>
                 <Card
                     style={styles.card_view}>
                     <Image
                         source={require('../../../assets/images/ticket-image.png')}  style={styles.image}/>
-                    <Text style={styles.desc_text}>Jhone week </Text>
+                    <Text style={styles.desc_text} onPress={()=>navigation.navigate('EventTimer')}>Jhone week </Text>
                     
                     <View style={styles.view1}>
                     <View style={styles.view2}>
@@ -46,8 +47,8 @@ const EventTicket = ({ navigation }) => {
                     </View>
                     </View>
                 </Card>
-                <Card
-                    style={styles.card_view2}>
+                    <Image source={require('../../../assets/images/horizontaline2.png')} style={{ width: '80%',height:'0.1%',backgroundColor:'white' }} />
+                <Card style={styles.card_view2}>
                     <Image
                         style={styles.image2}
                         source={require('../../../assets/images/barcode.png')} />

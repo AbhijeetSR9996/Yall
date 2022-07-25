@@ -19,6 +19,7 @@ export default StyleSheet.create({
     second_view: {
         flex:1,
         width:'90%',
+        //width:width - 10,
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'space-between',

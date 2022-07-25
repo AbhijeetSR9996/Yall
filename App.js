@@ -32,6 +32,10 @@ import TicketSold from './src/screens/TicketSold/index';
 import ShareLink from './src/screens/ShareLink';
 import JoinParty from './src/screens/JoinParty';
 import SendTicket from './src/screens/SendTicket';
+import WeeklyEventLocation from './src/screens/WeeklyEventLocation';
+import WeeklyEventMap from './src/screens/WeeklyEventMap';
+import Liked from './src/screens/Liked';
+import Match from './src/screens/Match';
 
 import {NavigationContainer} from '@react-navigation/native';
 
