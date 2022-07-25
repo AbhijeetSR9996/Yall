@@ -2,7 +2,7 @@ import React from 'react';
 import {Image} from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import BottomStack from './BottomStack';
+//import BottomStack from './BottomStack';
 
 import Screen1 from './BottomNav/Screen1';
 import Screen2 from './BottomNav/Screen2';
@@ -15,7 +15,7 @@ import Edit from '../src/screens/EditProfile/edit';
 import WeekendEvent from '../src/screens/WeekendEvents';
 import Discover from '../src/screens/Discover';
 import BookingConfirm from '../src/screens/BookingConfirm/index';
-
+import Liked from '../src/screens/Liked/index';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +29,7 @@ const MainBottomNavigation = () => {
         activeTintColor: 'white',
         inactiveTintColor: 'white',
       }}>
-        <Tab.Screen
+        {/* <Tab.Screen
         name="Profile"
         component={BottomStack}
         options={{
@@ -40,8 +40,8 @@ const MainBottomNavigation = () => {
             />
           ),
         }}
-      />
-      {/* <Tab.Screen
+      /> */}
+      <Tab.Screen
         name="ProfileDisplay"
         component={ProfileDisplay}
         options={{
@@ -52,8 +52,20 @@ const MainBottomNavigation = () => {
             />
           ),
         }}
-      /> */}
+      />
       <Tab.Screen
+        name="Liked"
+        component={Liked}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/heart.png')}
+              style={{width: 22, height: 20}}
+            />
+          ),
+        }}
+      />
+      {/* <Tab.Screen
         name="Edit"
         component={Edit}
         options={{
@@ -64,7 +76,7 @@ const MainBottomNavigation = () => {
             />
           ),
         }}
-      />
+      /> */}
       {/* <Tab.Screen
         name="Discover"
         component={Discover}

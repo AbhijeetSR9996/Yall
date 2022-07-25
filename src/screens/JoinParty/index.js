@@ -18,7 +18,7 @@ const JoinParty = ({ navigation }) => {
                 source={require('../../../assets/images/joinpartybg.png')}
                 resizeMode="cover" />
 
-            <View style={{ backgroundColor: 'transparent', flex: 2 }}>
+            <View style={{ backgroundColor: 'transparent', flex: 2,marginRight:'95%',marginBottom:'10%' }}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <Icon name="angle-left" style={styles.left_arrow} />
                 </TouchableOpacity>
@@ -58,7 +58,8 @@ const JoinParty = ({ navigation }) => {
                             height: height * 0.07,
                             borderWidth: 1,
                         },
-                    ]}>
+                    ]}
+                    onPress={()=>{navigation.navigate('WeeklyEventLocation')}}>
                     <View style={{
                         left: 10,
                         top: 8,

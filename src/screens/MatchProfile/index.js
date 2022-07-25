@@ -47,7 +47,7 @@ const MatchProfile = ({ navigation }) => {
             height: height * 0.07,
             borderWidth: 1,
           }}
-          onPress={() => navigation.navigate('MatchProfile')}>
+          onPress={() => navigation.navigate('Match')}>
           <View style={{
             left: 10,
             top: 8,
@@ -99,7 +99,7 @@ const MatchProfile = ({ navigation }) => {
             backgroundColor: '#DCC7E1',
             position: 'relative',
           }}
-            onPress={() => navigation.navigate('MainBottomNavigation')}>
+            onPress={() => navigation.navigate('ProfileDisplay')}>
             <Text style={{
               fontWeight: '700',
               fontSize: 18,

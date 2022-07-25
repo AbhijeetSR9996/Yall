@@ -19,13 +19,15 @@ export default StyleSheet.create({
     second_view: {
         flex:1,
         width:'90%',
+        //width:width - 20,
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'space-between',
         backgroundColor:'transparent',
         //marginHorizontal:'2%'
-        marginLeft:'2%',
-        marginRight:'2%'
+        //marginLeft:'2%',
+        //marginRight:'2%',
+        marginHorizontal:'2.5%'
     },
     third_view: {
         flex:2.5,

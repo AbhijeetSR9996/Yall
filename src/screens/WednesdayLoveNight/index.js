@@ -14,7 +14,7 @@ const WednesdayLoveNight = ({ navigation }) => {
         <SafeAreaView >
         <ImageBackground style={styles.image_background} source={require('../../../assets/images/wednesday-night.png')}>
             <View style={styles.main_view}>
-            <View>
+            <View style={{marginRight:'95%',}}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <Icon name="angle-left" style={styles.left_arrow} />
                 </TouchableOpacity>
@@ -25,8 +25,9 @@ const WednesdayLoveNight = ({ navigation }) => {
                 <Text style={styles.small_text}>Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry. Lorem Ipsum 
                 has been the industry's standard. </Text>
-                <Text style={[styles.icon_text]}>
-                    <Image source={require('../../../assets/images/location-icon.png')} style={{height:25,width:18}}/>    Sector-62 Noida</Text>                
+                
+                     <Text style={[styles.icon_text,{marginLeft:'6%'}]}>
+                        <Image source={require('../../../assets/images/location.png')} style={{ width: 12, height: 17}} />     Sector-62 Noida</Text>
                 <Text style={styles.icon_text}>
                     <Image source={require('../../../assets/images/watch.png')}/>    07:00 PM</Text>                
                 <Text style={[styles.icon_text]}>

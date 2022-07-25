@@ -41,9 +41,9 @@ export default StyleSheet.create({
         //justifyContent: 'space-around',
         color: '#e8e6e6',
         borderRadius: 20,
-        borderWidth:1,
-        borderStyle:'dashed',
-        borderColor:'#000000'
+        // borderWidth:1,
+        // borderStyle:'dashed',
+        // borderColor:'#000000'
     },
     card_view2: {
         width: '90%',
@@ -53,9 +53,9 @@ export default StyleSheet.create({
         justifyContent: 'center',
         color: '#e8e6e6',
         borderRadius: 20,
-        borderStyle:'dashed',
-        borderWidth:1 ,
-        borderColor:'#000000',
+        // borderStyle:'dashed',
+        // borderWidth:1 ,
+        // borderColor:'#000000',
         //bottom:'22%'
         //marginTop:'-0.5%',
     },
@@ -107,7 +107,7 @@ export default StyleSheet.create({
         //alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 35,
-        top:'50%'
+        bottom:'3%'
     },
     desc_text: {
         fontFamily: "Bakbak One",
@@ -135,7 +135,8 @@ export default StyleSheet.create({
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 18,
-        paddingLeft:'5%'
+        //paddingLeft:'5%',
+        paddingLeft:'0%',
     },
     text2a: {
         fontFamily: "Inter",
@@ -145,7 +146,8 @@ export default StyleSheet.create({
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 18,
-        paddingLeft:'3%',
+        //paddingLeft:'3%',
+        paddingLeft:'0%',
         bottom:'8%',
     },
     text3: {
@@ -167,7 +169,8 @@ export default StyleSheet.create({
         letterSpacing: -0.017,
         lineHeight: 24,
         //paddingLeft:'5%',
-        left: '6%',
+        paddingLeft:'35%',
+        //left: '6%',
         bottom:'6%',
     },
     buttonContainer: {         

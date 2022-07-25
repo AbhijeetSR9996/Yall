@@ -30,7 +30,7 @@ export default StyleSheet.create({
     },
     main_view2: {
         //marginTop:'20%',
-        marginTop:'60%',
+        marginTop:'63%',
         //flex:1,
         width: width,
         //height: height * 0.75,

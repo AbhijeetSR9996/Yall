@@ -6,13 +6,9 @@ export default StyleSheet.create({
     image_background: {
         backgroundColor: '#E5E5E5',
         //height:height,
-        //width:414,
-        width:'100%',
-        height:'100%'
-        //width:1344,
-        //height:896,
+        width:414,
         //height:332,
-        //height:532,
+        height:262,
     },
     left_arrow: {
         fontSize: 50,
@@ -29,15 +25,16 @@ export default StyleSheet.create({
         height:height,
     },
     main_view2: {
-        marginTop:'27%',
-        //marginTop:'15%',
+        //flex:1,
+        //marginTop:'20%',
+        marginTop:'60%',
         //flex:1,
         width: width,
         //height: height * 0.75,
         height: height * 0.95,
         backgroundColor:'#FFFFFF',
-        borderTopLeftRadius:30,
-        borderTopRightRadius:30,
+        //borderTopLeftRadius:30,
+        //borderTopRightRadius:30,
         alignSelf:'center'
     },
     main_view3: {
@@ -50,34 +47,36 @@ export default StyleSheet.create({
         color: "#000000",
         fontSize: 30,
         fontWeight: "400",
-        marginTop: '5%',
-        marginLeft:'5%',
+        //marginTop: '5%',
+        //marginLeft:'5%',
         letterSpacing: -1,
         //width: width * 0.7
-        width:227 
+        width:227,
+        marginLeft:'5%' 
     },
     small_text: {
         color: "#000000",
         fontSize: 12,
         fontWeight: "400",
-        marginTop: '5%',
-        marginLeft:'5%',
-        width: width * 0.7 
+        //marginTop: '5%',
+        //marginLeft:'5%',
+        width: width * 0.7,
+        marginLeft:'5%' 
     },
     small_text2: {
         color: "#000000",
         fontSize: 12,
         fontWeight: "400",
-        marginTop: '5%',
-        marginLeft:'5%',
+        //marginTop: '5%',
+        marginLeft:'1%',
         width: width * 0.9 
     },
     icon_text: {
         color: "#000000",
         fontSize: 12,
         fontWeight: "400",
-        marginTop: '5%',
-        marginLeft:'5%'
+        //marginTop: '5%',
+        //marginLeft:'5%'
         
     },
     buttonContainer: {    
@@ -89,8 +88,8 @@ export default StyleSheet.create({
         borderColor: '#000000',
         backgroundColor: '#DCC7E1',
         width:91,
-        marginLeft: '20%',
-        bottom:'-30%',
+        //marginLeft: '20%',
+        //bottom:'-30%',
     },
     buttonText: {
         fontSize: 15,
@@ -104,17 +103,18 @@ export default StyleSheet.create({
         borderWidth: 1.5,
         borderColor: '#000000',
         backgroundColor: '#DCC7E1',
-        marginLeft: '55%',
-        bottom:'20%',
+        //marginLeft: '55%',
+        //bottom:'20%',
         width:91
     },
     rectangularButton: {
         width: 10,
         position: 'absolute',
         alignSelf: 'center',
-        //top: '73%',
-        //marginTop:'65%'
-        marginTop:'60%'
+        //top: '33%',
+        top:'43%'
+        //marginTop:'-5%'
+        //marginTop:'60%',
       },
 
 })
