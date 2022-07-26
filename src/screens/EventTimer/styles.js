@@ -24,7 +24,7 @@ export default StyleSheet.create({
         alignItems:'center',
         justifyContent:'space-between',
         backgroundColor:'transparent',
-        marginHorizontal:'2%'
+        marginHorizontal:'3%'
         
     },
     third_view: {

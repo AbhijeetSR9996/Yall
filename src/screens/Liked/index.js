@@ -26,7 +26,7 @@ const Liked = ({ navigation }) => {
       <View style={{ flex: 0.2, width: width, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-end' }}>
         <Text style={[styles.text,{marginTop:'10%'}]}>Likes You</Text>
       </View>
-      <ScrollView style={{ backgroundColor: 'transparent', height: '90%', flex: 1, width: width, marginTop: '5%', marginBottom: '15%' }}>
+      <ScrollView style={{ backgroundColor: 'transparent', height: '90%', flex: 1, width: width, marginTop: '5%', marginBottom: '0%' }}>
         <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 522, marginTop: '0%', borderRadius: 20, alignSelf: 'center',borderWidth:1,borderColor:'rgba(0,0,0,0.2)' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.3, justifyContent: 'space-evenly', alignItems: 'flex-start', width: '100%', alignSelf: 'center', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
             <TouchableOpacity style={{

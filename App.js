@@ -36,6 +36,7 @@ import WeeklyEventLocation from './src/screens/WeeklyEventLocation';
 import WeeklyEventMap from './src/screens/WeeklyEventMap';
 import Liked from './src/screens/Liked';
 import Match from './src/screens/Match';
+import Chat from './src/screens/Chat';
 
 import {NavigationContainer} from '@react-navigation/native';
 

@@ -44,6 +44,7 @@ import WeeklyEventLocation from '../src/screens/WeeklyEventLocation';
 import WeeklyEventMap from '../src/screens/WeeklyEventMap';
 import Liked from '../src/screens/Liked';
 import Match from '../src/screens/Match';
+import Chat from '../src/screens/Chat';
 
 const Stack = createStackNavigator();
 
@@ -99,6 +100,7 @@ function MainStackNavigation() {
         <Stack.Screen name="SendTicket" component={SendTicket}/>
         <Stack.Screen name="Liked" component={Liked}/>
         <Stack.Screen name="Match" component={Match}/>
+        <Stack.Screen name="Chat" component={Chat}/>
 
       </Stack.Navigator>
     </NavigationContainer>

@@ -27,7 +27,7 @@ export default StyleSheet.create({
         //marginHorizontal:'2%'
         //marginLeft:'2%',
         //marginRight:'2%',
-        marginHorizontal:'2.5%'
+        marginHorizontal:'3%'
     },
     third_view: {
         flex:2.5,

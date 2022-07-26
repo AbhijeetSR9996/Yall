@@ -8,7 +8,8 @@ export default StyleSheet.create({
         //height:height,
         width:414,
         //height:332,
-        height:262,
+        //height:262,
+        height:285
     },
     left_arrow: {
         fontSize: 50,

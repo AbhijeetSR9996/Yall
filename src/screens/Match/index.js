@@ -28,7 +28,7 @@ const Match = ({ navigation }) => {
       </View>
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%' }} />
 
-      <ScrollView style={{ backgroundColor: 'transparent', height: '90%', flex: 1, width: width, marginTop: '0%', marginBottom: '20%' }}>
+      <ScrollView style={{ backgroundColor: 'transparent', height: '90%', flex: 1, width: width, marginTop: '0%', marginBottom: '0%' }}>
 
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
@@ -49,7 +49,8 @@ const Match = ({ navigation }) => {
               width: 72,
               marginTop:'40%',
               marginRight:'20%'
-            }}>
+            }}
+            onPress={()=>{navigation.navigate('Chat')}}>
               <Text style={[{
                 paddingVertical: '0%',
                 letterSpacing: -0.017,

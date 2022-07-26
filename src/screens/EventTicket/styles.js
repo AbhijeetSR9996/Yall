@@ -169,7 +169,7 @@ export default StyleSheet.create({
         letterSpacing: -0.017,
         lineHeight: 24,
         //paddingLeft:'5%',
-        paddingLeft:'35%',
+        //paddingLeft:'35%',
         //left: '6%',
         bottom:'6%',
     },

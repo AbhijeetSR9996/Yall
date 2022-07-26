@@ -49,15 +49,16 @@ const WeeklyEventMap = ({ navigation }) => {
                         borderRadius: 20,
                         borderColor: '#6B6B6B',
                         backgroundColor: '#F7F7F7',
-                        bottom:'5%'
+                        bottom:'5%',
+                        flex:1
                     }}>
 
-                        <View style={{ flex: 3, alignItems: 'flex-start', justifyContent: 'space-evenly', flexDirection: 'row', backgroundColor: 'transparent', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
+                        <View style={{ flex: 3, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
                             <TouchableOpacity>
-                                <Image source={require('../../../assets/images/map.png')} style={{height:157,width:322,borderRadius:20}}/>
+                                <Image source={require('../../../assets/images/map.png')} style={{height:160,width:342,borderTopLeftRadius: 20, borderTopRightRadius: 20,marginTop:'0%'}}/>
                             </TouchableOpacity>
                         </View>
-                        <View style={{ flex: 1, alignItems: 'center', justifyContent:'center', flexDirection: 'column', backgroundColor: '#FFFFFF', borderBottomLeftRadius: 20, borderBottomRightRadius: 20,top:'10%' }}>
+                        <View style={{ flex: 1, alignItems: 'center', justifyContent:'center', flexDirection: 'column', backgroundColor: '#FFFFFF', borderBottomLeftRadius: 20, borderBottomRightRadius: 20,top:'0%' }}>
                         <Text style={{fontFamily:'Bakbak One',fontWeight:'400',fontSize:15,color:'#000000',lineHeight:21,letterSpacing:-0.017,alignItems:'center'}}>Mumbai rooftop cocktail </Text>
                         </View>
                     </Card>
