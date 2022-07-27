@@ -58,7 +58,7 @@ const SignEmail = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={emailStyles.Touchablemail3}
-            onPress={() => navigation.navigate('Upload')}>
+            onPress={() => navigation.navigate('MainBottomNavigation')}>
             <View style={{flexDirection: 'row'}}>
               <Image source={imageicon.profile} style={{margin: 15}} />
               <View>

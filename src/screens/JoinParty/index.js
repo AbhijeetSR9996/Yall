@@ -59,7 +59,7 @@ const JoinParty = ({ navigation }) => {
                             borderWidth: 1,
                         },
                     ]}
-                    onPress={()=>{navigation.navigate('WeeklyEventLocation')}}>
+                    onPress={()=>{navigation.navigate('WednesdayLoveNight')}}>
                     <View style={{
                         left: 10,
                         top: 8,

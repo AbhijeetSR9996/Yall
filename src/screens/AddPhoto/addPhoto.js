@@ -84,7 +84,7 @@ const AddPhoto = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('Gender4')}>
+      <TouchableOpacity onPress={() => navigation.goBack()}>
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
 

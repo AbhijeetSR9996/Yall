@@ -89,7 +89,7 @@ const Edit = ({ navigation }) => {
 
   return (
     <View style={[styles.container, { flex: 1 }]}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.goBack()}>
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
 

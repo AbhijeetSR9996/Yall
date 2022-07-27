@@ -87,7 +87,9 @@ function MainStackNavigation() {
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
 
-        <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
+        <Stack.Screen name="Edit" component={Edit} />
+
+        {/* <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
         <Stack.Screen name="Edit" component={Edit} />
         <Stack.Screen name="WeekendEvent" component={WeekendEvent} />
         <Stack.Screen name="Events" component={Events} />
@@ -102,7 +104,7 @@ function MainStackNavigation() {
         <Stack.Screen name="Liked" component={Liked}/>
         <Stack.Screen name="Match" component={Match}/>
         <Stack.Screen name="Chat" component={Chat}/>
-        <Stack.Screen name="ChatQNA" component={ChatQNA}/>
+        <Stack.Screen name="ChatQNA" component={ChatQNA}/> */}
 
       </Stack.Navigator>
     </NavigationContainer>

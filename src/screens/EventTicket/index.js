@@ -19,16 +19,15 @@ const EventTicket = ({ navigation }) => {
                 source={require('../../../assets/images/Gradient-Fill.png')}
                 resizeMode="cover" />
             <View style={styles.first_view}>
-                {/* <Text style={styles.main_text} onPress={()=>navigation.navigate('EventTimer')}>My Ticket </Text> */}
             </View>
 
             <View style={styles.second_view}>
-            <Text style={styles.main_text} onPress={()=>navigation.navigate('EventTimer')}>My Ticket </Text>
+            <Text style={styles.main_text} >My Ticket </Text>
                 <Card
                     style={styles.card_view}>
                     <Image
                         source={require('../../../assets/images/ticket-image.png')}  style={styles.image}/>
-                    <Text style={styles.desc_text} onPress={()=>navigation.navigate('EventTimer')}>Jhone week </Text>
+                    <Text style={styles.desc_text} >Jhone week </Text>
                     
                     <View style={styles.view1}>
                     <View style={styles.view2}>

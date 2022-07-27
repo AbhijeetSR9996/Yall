@@ -1,7 +1,7 @@
 import React from 'react';
 import MainStackNavigation from './Navigation/mainStackNavigation';
 import MainBottomNavigation from './Navigation/mainBottomNavigation';
-import BottomStack from './Navigation/BottomStack';
+
 
 import SignInMobile from './src/screens/SignUp/SignInMobile';
 import SplashScreen from './src/screens/splashScreen/splashScreen';
@@ -38,6 +38,7 @@ import Liked from './src/screens/Liked';
 import Match from './src/screens/Match';
 import Chat from './src/screens/Chat';
 import ChatQNA from './src/screens/ChatQNA';
+import ChatQNA2 from './src/screens/ChatQNA2';
 
 import {NavigationContainer} from '@react-navigation/native';
 
