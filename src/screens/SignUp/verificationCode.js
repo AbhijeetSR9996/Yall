@@ -9,6 +9,7 @@ import {
 } from 'react-native-confirmation-code-field';
 import {CircularButton} from '../../component/Buttons/circular';
 import {VerifyCode} from '../../component/Buttons/verifycode';
+import {VerifyCode2} from '../../component/Buttons/verifycode2';
 
 
 const {height} = Dimensions.get('window');
@@ -16,12 +17,12 @@ const {height} = Dimensions.get('window');
 const CELL_COUNT = 4;
 
 const VerificationCode = ({navigation}) => {
-  const [value, setValue] = React.useState('');
-  const ref = useBlurOnFulfill({value, cellCount: CELL_COUNT});
-  const [props, getCellOnLayoutHandler] = useClearByFocusCell({
-    value,
-    setValue,
-  });
+  // const [value, setValue] = React.useState('');
+  // const ref = useBlurOnFulfill({value, cellCount: CELL_COUNT});
+  // const [props, getCellOnLayoutHandler] = useClearByFocusCell({
+  //   value,
+  //   setValue,
+  // });
   return (
     <View style={signupStyles.container}>
       {/* <View style={signupStyles.mainView}>
@@ -59,9 +60,11 @@ const VerificationCode = ({navigation}) => {
         />
       </View> */}
 
-      <VerifyCode path="SignUpMobile1"/>
+      <VerifyCode path="SignUpMobile1" paths="ProfileDisplay"/>
 
-      <View
+      <VerifyCode2 path="GovtRegisterID"/>
+
+      {/* <View
         style={[
           signupStyles.textView,
           {
@@ -74,7 +77,11 @@ const VerificationCode = ({navigation}) => {
           <Text style={signupStyles.text2}>Didn't get a code?</Text>
         </TouchableOpacity>
       </View>
-      <CircularButton path="GovtRegisterID" style={{marginTop: 480}} />
+
+      <CircularButton path="GovtRegisterID" style={{marginTop: 480}} /> */}
+
+      
+
     </View>
   );
 };

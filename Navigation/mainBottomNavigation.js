@@ -27,6 +27,7 @@ import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
 import ChatQNA2 from '../src/screens/ChatQNA2/index';
 
+
 const Tab = createBottomTabNavigator();
 
 const MainBottomNavigation = () => {
@@ -387,6 +388,20 @@ const MainBottomNavigation = () => {
         }}    
       />
 
+<Tab.Screen
+        name="BookingConfirm"
+        component={BookingConfirm}
+        options={{
+          //tabBarStyle:{display:'none'},
+          tabBarButton: () => null,
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/user2.png')}
+              style={{width: 20, height: 20}}
+            />
+          )
+        }}
+      />
 
     </Tab.Navigator>
   );

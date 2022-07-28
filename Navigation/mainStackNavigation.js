@@ -90,6 +90,7 @@ function MainStackNavigation() {
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
 
         <Stack.Screen name="Edit" component={Edit} />
+        <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
 
       </Stack.Navigator>
     </NavigationContainer>

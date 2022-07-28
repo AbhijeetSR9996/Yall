@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
 import {signupStyles} from '../../screens/SignUp/signupStyles';
+import {useNavigation} from '@react-navigation/native';
 import {
   CodeField,
   Cursor,
@@ -13,7 +14,10 @@ const {height} = Dimensions.get('window');
 
 const CELL_COUNT = 4;
 
- export const VerifyCode = ({navigation}) => {
+ export const VerifyCode = ({path,paths}) => {
+
+  const navigation = useNavigation();
+
   const [value, setValue] = React.useState('');
   const ref = useBlurOnFulfill({value, cellCount: CELL_COUNT});
   const [props, getCellOnLayoutHandler] = useClearByFocusCell({
@@ -27,7 +31,7 @@ const CELL_COUNT = 4;
       </View>
       <View style={signupStyles.text1}>
         <Text style={{color: '#AAAAAA'}}>Sent to 1234567990 - </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('SignUpMobile1')}>
+        <TouchableOpacity onPress={() => navigation.navigate(path)}>
           <Text style={signupStyles.editText}>Edit</Text>
         </TouchableOpacity>
       </View>
@@ -41,6 +45,7 @@ const CELL_COUNT = 4;
           rootStyle={signupStyles.codeFieldRoot}
           keyboardType="number-pad"
           textContentType="oneTimeCode"
+          onPress={()=>{navigation.navigate(paths)}}
           renderCell={({index, symbol, isFocused}) => (
             <View
               onLayout={getCellOnLayoutHandler(index)}
