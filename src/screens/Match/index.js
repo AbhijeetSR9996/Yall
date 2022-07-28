@@ -8,7 +8,8 @@ import {
   ScrollView,
   Platform,
   KeyboardAvoidingView,
-  Keyboard
+  Keyboard,
+  BackHandler
 } from 'react-native';
 import { Rectangular } from '../../component/Buttons/rectangular';
 import { styles } from './styles';
@@ -29,7 +30,8 @@ const Match = ({ navigation }) => {
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%' }} />
 
       <ScrollView style={{ backgroundColor: 'transparent', height: '90%', flex: 1, width: width, marginTop: '0%', marginBottom: '0%' }}>
-
+        
+        <TouchableOpacity onPress={()=>{navigation.navigate('Chat')}}>
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
             <Image source={require('../../../assets/images/mask3.png')} style={{marginLeft:'65%', width:80,height:80 }} />
@@ -50,7 +52,7 @@ const Match = ({ navigation }) => {
               marginTop:'40%',
               marginRight:'20%'
             }}
-            onPress={()=>{navigation.navigate('Chat')}}>
+            >
               <Text style={[{
                 paddingVertical: '0%',
                 letterSpacing: -0.017,
@@ -70,10 +72,13 @@ const Match = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
+        </TouchableOpacity>
+
         <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
           <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%' }} />
         </View>
 
+        <TouchableOpacity onPress={()=>{navigation.navigate('Chat')}}>
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
             <Image source={require('../../../assets/images/mask3.png')} style={{marginLeft:'65%', width:80,height:80 }} />
@@ -93,7 +98,7 @@ const Match = ({ navigation }) => {
               width: 72,
               marginTop:'40%',
               marginRight:'20%'
-            }}>
+            }} >
               <Text style={[{
                 paddingVertical: '0%',
                 letterSpacing: -0.017,
@@ -113,10 +118,12 @@ const Match = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
+        </TouchableOpacity>
         <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
           <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%' }} />
         </View>
 
+        <TouchableOpacity onPress={()=>{navigation.navigate('Chat')}}>
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
             <Image source={require('../../../assets/images/mask3.png')} style={{marginLeft:'65%', width:80,height:80 }} />
@@ -136,7 +143,7 @@ const Match = ({ navigation }) => {
               width: 72,
               marginTop:'40%',
               marginRight:'20%'
-            }}>
+            }} >
               <Text style={[{
                 paddingVertical: '0%',
                 letterSpacing: -0.017,
@@ -156,10 +163,13 @@ const Match = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
+       </TouchableOpacity>
+
         <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
           <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%' }} />
         </View>
 
+        <TouchableOpacity onPress={()=>{navigation.navigate('Chat')}}>
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
             <Image source={require('../../../assets/images/mask3.png')} style={{marginLeft:'65%', width:80,height:80 }} />
@@ -173,10 +183,13 @@ const Match = ({ navigation }) => {
             
           </View>
         </View>
+        </TouchableOpacity> 
+
         <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
           <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%' }} />
         </View>
 
+        <TouchableOpacity onPress={()=>{navigation.navigate('Chat')}}>
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
             <Image source={require('../../../assets/images/mask3.png')} style={{marginLeft:'65%', width:80,height:80 }} />
@@ -190,10 +203,13 @@ const Match = ({ navigation }) => {
             
           </View>
         </View>
+        </TouchableOpacity>
+
         <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
           <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%' }} />
         </View>
 
+        <TouchableOpacity onPress={()=>{navigation.navigate('Chat')}}>
         <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
           <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
             <Image source={require('../../../assets/images/mask3.png')} style={{marginLeft:'65%', width:80,height:80 }} />
@@ -207,6 +223,8 @@ const Match = ({ navigation }) => {
             
           </View>
         </View>
+        </TouchableOpacity>
+
         <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
           <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%' }} />
         </View>

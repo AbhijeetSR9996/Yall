@@ -39,6 +39,7 @@ import Match from './src/screens/Match';
 import Chat from './src/screens/Chat';
 import ChatQNA from './src/screens/ChatQNA';
 import ChatQNA2 from './src/screens/ChatQNA2';
+import SignUpEmail from './src/screens/SignUpEmail';
 
 import {NavigationContainer} from '@react-navigation/native';
 

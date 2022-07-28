@@ -45,7 +45,7 @@ export const styles = {
         fontSize: 18,
         elevation:5,
         backgroundColor:'#FFFEFC',
-        paddingTop:20,
+        //paddingTop:20,
         //bottom:'23%',
         borderRadius:20,
         paddingLeft:20,

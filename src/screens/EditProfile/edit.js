@@ -37,9 +37,9 @@ const Edit = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the camera');
+        //console.log('You can use the camera');
       } else {
-        console.log('Camera permission denied');
+        //console.log('Camera permission denied');
       }
     } catch (err) {
       console.warn(err);
@@ -101,7 +101,7 @@ const Edit = ({ navigation }) => {
         ]}>
         Profile
       </Text>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> {navigation.navigate('ProfileDisplay')}}>
         <Text
           style={[
             photoStyles.addPhotoText,

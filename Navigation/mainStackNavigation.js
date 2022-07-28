@@ -46,6 +46,7 @@ import Liked from '../src/screens/Liked';
 import Match from '../src/screens/Match';
 import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
+import SignUpEmail from '../src/screens/SignUpEmail';
 
 const Stack = createStackNavigator();
 
@@ -84,27 +85,11 @@ function MainStackNavigation() {
         <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
         <Stack.Screen name="WeeklyEventLocation" component={WeeklyEventLocation}/>
         <Stack.Screen name="WeeklyEventMap" component={WeeklyEventMap}/>
+        <Stack.Screen name="SignUpEmail" component={SignUpEmail}/>
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
 
         <Stack.Screen name="Edit" component={Edit} />
-
-        {/* <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />
-        <Stack.Screen name="Edit" component={Edit} />
-        <Stack.Screen name="WeekendEvent" component={WeekendEvent} />
-        <Stack.Screen name="Events" component={Events} />
-        <Stack.Screen name="Discover" component={Discover} />
-        <Stack.Screen name='BookingConfirm' component={BookingConfirm}/>
-        <Stack.Screen name='EventTicket' component={EventTicket}/>
-        <Stack.Screen name='EventTimer' component={EventTimer}/>
-        <Stack.Screen name='TicketSold' component={TicketSold}/>
-        <Stack.Screen name='ShareLink' component={ShareLink}/>
-        <Stack.Screen name="JoinParty" component={JoinParty}/>
-        <Stack.Screen name="SendTicket" component={SendTicket}/>
-        <Stack.Screen name="Liked" component={Liked}/>
-        <Stack.Screen name="Match" component={Match}/>
-        <Stack.Screen name="Chat" component={Chat}/>
-        <Stack.Screen name="ChatQNA" component={ChatQNA}/> */}
 
       </Stack.Navigator>
     </NavigationContainer>

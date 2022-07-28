@@ -362,7 +362,7 @@ const MainBottomNavigation = () => {
         component={BookingConfirm}
         options={{
           //tabBarStyle:{display:'none'},
-          //tabBarButton: () => null,
+          tabBarButton: () => null,
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/user2.png')}
@@ -377,7 +377,7 @@ const MainBottomNavigation = () => {
         component={Edit}
         options={{
           //tabBarStyle:{display:'none'},
-          tabBarButton: () => null,
+          //tabBarButton: () => null,
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/user2.png')}
