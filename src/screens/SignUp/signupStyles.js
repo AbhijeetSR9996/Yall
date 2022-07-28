@@ -25,6 +25,7 @@ export const signupStyles = {
     top: 90,
   },
   headline: {
+    fontFamily:'Inter-Regular',
     fontWeight: '400',
     fontSize: 15,
     width: 319,
@@ -38,6 +39,7 @@ export const signupStyles = {
     color: 'white',
     paddingBottom: 10,
     top: '8%',
+    
   },
   signinMainView: {alignItems: 'center'},
   signupMainView: {alignItems: 'center', top: '-15%'},
@@ -60,10 +62,14 @@ export const signupStyles = {
     position: 'relative',
   },
   loginButtonText: {
-    fontWeight: '500',
-    fontSize: 20,
+    fontFamily: 'BakbakOneRegular',
+    fontWeight: '400',
+    fontSize: 18,
     margin: 6,
     color: '#000000',
+    lineHeight: 25,
+    letterSpacing: -0.017,
+    left:'5%'
   },
   borderView1: {
     width: width * 0.15,
@@ -82,7 +88,7 @@ export const signupStyles = {
   mainView: {width: 214, height: 70, top: 85, left: 21},
   text: {
     color: '#000000',
-    fontFamily: 'Bakbak One',
+    fontFamily: 'BakbakOneRegular',
     fontWeight: '800',
     fontSize: 25,
     lineHeight: 35,

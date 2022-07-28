@@ -64,11 +64,10 @@ const SignInMobile = ({navigation}) => {
             }}>
             <Text
               style={{
+                fontFamily:'BakbakOneRegular',
                 fontWeight: '400',
                 fontSize: 17,
-                fontWeight: '500',
                 margin: 7,
-                color: 'black',
                 color: '#000000',
               }}>
               Sign In With Mobile Number

@@ -30,7 +30,7 @@ const SignEmail = ({navigation}) => {
           <Text style={emailStyles.headBelowText}>To continue yall</Text>
           <TouchableOpacity
             style={emailStyles.Touchablemail1}
-            onPress={() => navigation.navigate('MainBottomNavigation')}>
+            onPress={() => navigation.navigate('SignUpEmail')}>
             <View style={{flexDirection: 'row'}}>
               <Image
                 source={imageicon.profile2}

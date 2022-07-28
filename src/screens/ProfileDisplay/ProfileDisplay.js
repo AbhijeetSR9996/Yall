@@ -12,20 +12,23 @@ const ProfileDisplay = () => {
       <View style={ProfileDisplayStyles.container}>
         <Text style={ProfileDisplayStyles.text}> Priya Sharma </Text>
       </View>
-
-      <View style={[ProfileDisplayStyles.container2,{top:5}]}>
+        
+      <View style={[ProfileDisplayStyles.container2,{top:35}]}>
+        
         <ScrollView style={ProfileDisplayStyles.container2}>
           <View style={ProfileDisplayStyles.itemcontainer}>
             <Image
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}/>
 
-            <TouchableOpacity style={ProfileDisplayStyles.iconcontainer}
+            {/* <TouchableOpacity style={ProfileDisplayStyles.iconcontainer}
             onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}/>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
+
+           
 
             <View style={[ProfileDisplayStyles.infocontainer, {backgroundColor:'#000000',bottom: 60,height:70,}]}>
             <View style={{right:'1%',bottom:'2%',borderWidth:1.5,borderTopRightRadius: 20, borderTopLeftRadius: 20,}}>
@@ -66,13 +69,13 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}
+            {/* <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}
             onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}
               />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
             
             <View
               style={[
@@ -87,11 +90,11 @@ const ProfileDisplay = () => {
                 ]}>
                 <Text style={ProfileDisplayStyles.text6}>Ask a questions</Text>
                 
-              <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
+              {/* <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}/>
-              </TouchableOpacity>   
+              </TouchableOpacity>    */}
               </View>
               
 
@@ -115,13 +118,13 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'56%'}]}
+            {/* <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'56%'}]}
             onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}
               />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
            
             <View
               style={[
@@ -135,11 +138,11 @@ const ProfileDisplay = () => {
                   {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text style={ProfileDisplayStyles.text8}>Ask a questions</Text>
-                <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
+                {/* <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}/>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
               </View>
               <View style={ProfileDisplayStyles.vw2}>
                 <Image
@@ -175,19 +178,21 @@ const ProfileDisplay = () => {
               source={require('../../../assets/images/profilegirl.png')}
               style={ProfileDisplayStyles.img}
             />
-            <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}
+            {/* <TouchableOpacity style={[ProfileDisplayStyles.iconcontainer,{bottom:'67%'}]}
             onPress={()=> navigation.navigate('MatchProfile')}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}
               />
-            </TouchableOpacity>
-            <TouchableOpacity style={ProfileDisplayStyles.crosscontainer}
+            </TouchableOpacity> */}
+            
+            {/* <TouchableOpacity style={ProfileDisplayStyles.crosscontainer}
             onPress={()=> navigation.navigate('MainBottomNavigation')}>
               <Image
               source={require('../../../assets/images/cross.png')}
               style={ProfileDisplayStyles.imglike}/>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
+
             <View
               style={[
                 ProfileDisplayStyles.infocontainer,
@@ -200,11 +205,11 @@ const ProfileDisplay = () => {
                   {width: '100%', height: 53, borderTopRightRadius: 16},
                 ]}>
                 <Text style={ProfileDisplayStyles.text6}>Ask a questions</Text>
-              <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
+              {/* <TouchableOpacity style={ProfileDisplayStyles.iconcontainer2}>
               <Image
               source={require('../../../assets/images/likebtn2.png')}
               style={ProfileDisplayStyles.imglike}/>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
                 
               </View>
               <View style={ProfileDisplayStyles.vw3}>
@@ -216,8 +221,31 @@ const ProfileDisplay = () => {
             </View>
           </View>
         </ScrollView>
+
+        
+
       </View>
+      
+      <TouchableOpacity style={ProfileDisplayStyles.iconcontainer} 
+        activeOpacity={0.5}
+            onPress={()=> navigation.navigate('MatchProfile')}>
+              <Image
+              source={require('../../../assets/images/likebtn2.png')}
+              style={ProfileDisplayStyles.imglike}
+              resizeMode="contain"/>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={ProfileDisplayStyles.crosscontainer}
+            activeOpacity={0.5}
+            onPress={()=> navigation.navigate('MainBottomNavigation')}>
+              <Image
+              source={require('../../../assets/images/cross.png')}
+              style={ProfileDisplayStyles.imglike}
+              resizeMode="contain"/>
+              </TouchableOpacity>
     </View>
+
+    
   );
 };
 

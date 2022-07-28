@@ -25,9 +25,6 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
-	
-
-
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
@@ -84,8 +81,8 @@
 		<string>Zocial.ttf</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-  	<string>Camera Usage Description</string>
-	  <key>NSMicrophoneUsageDescription</key>
-  	<string>Microphone Usage Description</string>
+	<string>Camera Usage Description</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone Usage Description</string>
 </dict>
 </plist>

@@ -18,25 +18,29 @@ export const splashStyles = {
   },
 
   headline: {
+    //fontFamily:'Inter',
+    fontFamily:'Inter-Regular',
     fontWeight: '400',
     fontSize: 15,
     //width: width * 0.8,
     width:319,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter',
     alignSelf: 'center',
     textAlign: 'center',
     color: '#FFFFFF',
     top: 130,
+    lineHeight: 18,
+    letterSpacing: -0.017
   },
   getStartedButtonMain: {
     alignItems: 'center',
     top: 180,
-    //backgroundColor:'green'
   },
   touchableStarted: {
     width: width * 0.8,
     height: height * 0.07,
     borderWidth: 1,
+    alignSelf:'center',
   },
   borderView: {
     left: 10,
@@ -51,14 +55,18 @@ export const splashStyles = {
     position: 'relative',
   },
   buttonText: {
-    fontWeight: '700',
+    fontWeight: '400',
     fontSize: 18,
-    fontFamily: 'Bakbak one-Regular',
+    //fontFamily: 'Bakbak One',
+    fontFamily: 'BakbakOneRegular',
     color: '#000000',
     alignSelf: 'center',
     justifyContent: 'center',
-    paddingVertical: 10,
+    //paddingVertical: 10,
+    paddingVertical: 13,
     right: '10%',
+    lineHeight: 25,
+    letterSpacing: -0.017
   },
   borderView1: {
     width: width * 0.15,

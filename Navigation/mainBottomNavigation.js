@@ -27,7 +27,6 @@ import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
 import ChatQNA2 from '../src/screens/ChatQNA2/index';
 
-
 const Tab = createBottomTabNavigator();
 
 const MainBottomNavigation = () => {
@@ -388,7 +387,7 @@ const MainBottomNavigation = () => {
         }}    
       />
 
-<Tab.Screen
+{/* <Tab.Screen
         name="BookingConfirm"
         component={BookingConfirm}
         options={{
@@ -401,7 +400,7 @@ const MainBottomNavigation = () => {
             />
           )
         }}
-      />
+      /> */}
 
     </Tab.Navigator>
   );

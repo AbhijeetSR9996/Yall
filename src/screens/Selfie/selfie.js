@@ -23,12 +23,12 @@ const Selfie = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the camera');
+        //console.log('You can use the camera');
       } else {
-        console.log('Camera permission denied');
+        //console.log('Camera permission denied');
       }
     } catch (err) {
-      console.warn(err);
+      //console.warn(err);
     }
   };
   const takePhotoFromCamera = () => {

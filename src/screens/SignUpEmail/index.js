@@ -55,7 +55,7 @@ const SignUpEmail = ({ navigation }) => {
               //bottom: '25%',
             },
           ]}
-          onPress={()=>{navigation.navigate('ProfileDisplay')}}>
+          onPress={()=>{navigation.navigate('MainBottomNavigation')}}>
             
           <View style={{
             left: 10,
@@ -185,7 +185,7 @@ const SignUpEmail = ({ navigation }) => {
           </View>
         </TouchableOpacity>
       </View>
-      <View style={{ flex: 0.3, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}></View>
+      <View style={{ flex: 0.2, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}></View>
     </View>
 
   );
