@@ -1,99 +1,58 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import {signupStyles} from './signupStyles';
-import {icons} from '../../../assets/icons/icons';
-const SignInMobile = ({navigation}) => {
+import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native';
+import { signupStyles } from './signupStyles';
+import { Rectangular } from '../../component/Buttons/Rectangular/index';
+import { icons } from '../../../assets/icons/icons';
+
+const SignInMobile = ({ navigation }) => {
   return (
-    <View style={signupStyles.container}>
-      <View style={signupStyles.backgroundContainer}>
-        <Image
-          source={require('../../../assets/images/splashScreen1.png')}
-          resizeMode="cover"
-        />
-      </View>
-      {/* <View>
-        <Image
-          style={signupStyles.backgroundsecondContainer}
-          source={require('../../../assets/images/screen1.png')}
-        />
-      </View> */}
-      <View style={signupStyles.backgroundContainer}>
-        <Image
-          source={require('../../../assets/images/main-background.png')}
-          resizeMode="cover"
-        />
-      </View>
-      <View>
-        <Image
-          style={signupStyles.logo}
-          source={require('../../../assets/images/logo.png')}
-        />
-      </View>
+    <View style={{
+      flex: 1,
+      alignItems: 'stretch',
+      justifyContent: 'center'
+    }}>
+      <ImageBackground
+        source={require('../../../assets/images/core/background-signup.png')}
+        resizeMode="stretch"
+        style={{
+          flex: 1,
+          justifyContent: 'center'
+        }}
+      >
 
-      <Text style={[signupStyles.headline, {top: '8%'}]}>
-        By clicking “Log in”, you agree with our Terms. learn how we process
-        your data in our privacy policy and cokkies policy.
-      </Text>
-
-      <View>
-        <Image
-          style={signupStyles.backgroundthirdContainer}
-          source={require('../../../assets/images/screen2.png')}
-        />
-      </View>
-      <View style={{alignItems: 'center', top: '8%'}}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('SignUpMobile1')}
-          style={{
-            width: '80%',
-            height: '24%',
-            borderWidth: 1,
-            borderColor: '#000000',
-          }}>
-          <View
+        <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'transparent', justifyContent: 'center' }}>
+          <Image
+            resizeMode="stretch"
+            source={require('../../../assets/images/logo.png')}
             style={{
-              left: 10,
-              top: 8,
-              width: '100%',
-              borderWidth: 1,
-              borderRightWidth: 0,
-              height: '110%',
               alignSelf: 'center',
-              backgroundColor: '#DCC7E1',
-              position: 'relative',
-            }}>
-            <Text
-              style={{
-                fontFamily:'BakbakOneRegular',
-                fontWeight: '400',
-                fontSize: 17,
-                margin: 7,
-                color: '#000000',
-              }}>
-              Sign In With Mobile Number
+              display: 'flex',
+              top: '10%'
+            }}
+          />
+        </View>
+        <View style={{ flex: 1, alignItems: 'stretch', backgroundColor: 'transparent', flexDirection: 'column' }}>
+          <View style={{
+            flex: 0.7, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
+            justifyContent: 'center', flexDirection: 'column'
+          }}>
+            <Text style={[signupStyles.headline, { top: '40%' }]}>
+              By clicking “Log in”, you agree with our Terms. learn how we process
+              your data in our privacy policy and cokkies policy.
             </Text>
-            <View
-              style={{
-                marginVertical: -1,
-                width: '20%',
-                borderWidth: 1,
-                height: '105%',
-                backgroundColor: '#DCC7E1',
-                position: 'absolute',
-                right: '0%',
-              }}>
-              <Text
-                style={{
-                  textAlign: 'center',
-                  paddingTop: 5,
-                }}>
-                {icons.rightarrow}
-              </Text>
-            </View>
           </View>
-        </TouchableOpacity>
-      </View>
+          <View style={{
+            flex: 2, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
+            justifyContent: 'flex-start'
+          }}>
+            <Rectangular path="SignedInMobile" name="Sign In With Mobile Number" style={{ top: '15%' }} />
+          </View>
+        </View>
+
+      </ImageBackground>
     </View>
+
+
   );
 };
 export default SignInMobile;

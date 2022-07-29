@@ -10,11 +10,11 @@ import {
   Switch,
 } from 'react-native';
 
-import {styles} from './styles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-import {Rectangular} from '../../component/Buttons/rectangular';
+import { styles } from './styles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { Rectangular } from '../../component/Buttons/Rectangular';
 
-const Gender4 = ({navigation}) => {
+const Gender4 = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate('Gender3')}>
@@ -22,7 +22,7 @@ const Gender4 = ({navigation}) => {
       </TouchableOpacity>
 
       <Text style={styles.gender1Text}>Going out</Text>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -126,7 +126,7 @@ const Gender4 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -205,7 +205,7 @@ const Gender4 = ({navigation}) => {
         </View>
       </View>
 
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,

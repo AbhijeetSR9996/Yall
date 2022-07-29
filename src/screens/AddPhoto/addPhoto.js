@@ -11,13 +11,13 @@ import {
   Alert,
 } from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
-import {styles} from '../genderScreens/styles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-import {photoStyles} from './styles';
-import {signupStyles} from '../SignUp/signupStyles';
-import {Rectangular} from '../../component/Buttons/rectangular';
+import { styles } from '../genderScreens/styles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { photoStyles } from './styles';
+import { signupStyles } from '../SignUp/signupStyles';
+import { Rectangular } from '../../component/Buttons/Rectangular';
 
-const AddPhoto = ({navigation}) => {
+const AddPhoto = ({ navigation }) => {
   const requestCameraPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
@@ -48,7 +48,7 @@ const AddPhoto = ({navigation}) => {
       compressImageMaxWidth: 700,
       compressImageMaxHeight: 700,
       includeBase64: true,
-    }).catch(error => {});
+    }).catch(error => { });
   };
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -79,7 +79,7 @@ const AddPhoto = ({navigation}) => {
           onPress: () => choosePhotoFromLibrary(),
         },
       ],
-      {cancelable: false},
+      { cancelable: false },
     );
 
   return (
@@ -92,7 +92,7 @@ const AddPhoto = ({navigation}) => {
       <Text style={photoStyles.highlightText}>
         Add at least 2 photos to continue
       </Text>
-      <View style={{flexDirection: 'row', top: 200}}>
+      <View style={{ flexDirection: 'row', top: 200 }}>
         <TouchableOpacity
           style={{
             backgroundColor: '#DCC7E1',
@@ -131,7 +131,7 @@ const AddPhoto = ({navigation}) => {
           <Text>{icons.plus}</Text>
         </TouchableOpacity>
       </View>
-      <View style={{flexDirection: 'row', top: 400}}>
+      <View style={{ flexDirection: 'row', top: 400 }}>
         <TouchableOpacity
           style={{
             backgroundColor: '#DCC7E1',

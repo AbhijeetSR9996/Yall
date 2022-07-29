@@ -2,14 +2,16 @@ import React from 'react';
 import MainStackNavigation from './Navigation/mainStackNavigation';
 import MainBottomNavigation from './Navigation/mainBottomNavigation';
 
+import GetStarted from './src/screens/GetStarted/index';
+import Selfie from './src/screens/Selfie/index';
+import SignedInMobile from './src/screens/SignedInMobile/index';
+import SignedUpMobile from './src/screens/SignedUpMobile/index';
+import MobileCode1 from './src/screens/MobileCode1';
+import MobileCode2 from './src/screens/MobileCode2';
 
 import SignInMobile from './src/screens/SignUp/SignInMobile';
-import SplashScreen from './src/screens/splashScreen/splashScreen';
-import SignUpMobile1 from './src/screens/SignUp/signUpMobile1';
-import NumberCode from './src/screens/SignUp/verificationCode';
 import UserName from './src/screens/User details/userName';
 import UserDOB from './src/screens/User details/userDOB';
-import VerificationCode from './src/screens/SignUp/verificationCode';
 import UserEmail from './src/screens/User details/userEmail';
 import UserGender from './src/screens/User details/userGender';
 import GovtRegisterID from './src/screens/govtRegister.js/govtRegisteration';
@@ -23,7 +25,6 @@ import AddPhoto from './src/screens/AddPhoto/addPhoto';
 import MatchProfile from './src/screens/MatchProfile';
 import ProfileDisplay from './src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from './src/screens/UploadID/upload';
-import Selfie from './src/screens/Selfie/selfie';
 import Edit from './src/screens/EditProfile/edit';
 import Events from './src/screens/Events/index';
 import EventTicket from './src/screens/EventTicket/index';
@@ -41,7 +42,7 @@ import ChatQNA from './src/screens/ChatQNA';
 import ChatQNA2 from './src/screens/ChatQNA2';
 import SignUpEmail from './src/screens/SignUpEmail';
 
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   return <MainStackNavigation />;

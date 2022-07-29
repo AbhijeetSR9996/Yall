@@ -1,5 +1,5 @@
-import {Dimensions} from 'react-native';
-const {width} = Dimensions.get('window');
+import { Dimensions } from 'react-native';
+const { width } = Dimensions.get('window');
 
 export const signupStyles = {
   backgroundContainer: {
@@ -25,25 +25,29 @@ export const signupStyles = {
     top: 90,
   },
   headline: {
-    fontFamily:'Inter-Regular',
+    fontFamily: 'Inter',
     fontWeight: '400',
     fontSize: 15,
-    width: 319,
+    //width: 319,
+    width: width * 0.8,
+    letterSpacing: -0.017,
+    color: '#FFFFFF',
+    lineHeight: 18,
     justifyContent: 'center',
     alignSelf: 'center',
     alignContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
     margin: 15,
-    marginTop: 90,
+    //marginTop: 90,
     color: 'white',
-    paddingBottom: 10,
-    top: '8%',
-    
+    //paddingBottom: 10,
+    top: '25%',
+
   },
-  signinMainView: {alignItems: 'center'},
-  signupMainView: {alignItems: 'center', top: '-15%'},
-  signEmailMainView: {alignItems: 'center', top: '-30%'},
+  signinMainView: { alignItems: 'center' },
+  signupMainView: { alignItems: 'center' },
+  signEmailMainView: { alignItems: 'center' },
   touchablebuttons: {
     width: '80%',
     height: '24%',
@@ -69,7 +73,8 @@ export const signupStyles = {
     color: '#000000',
     lineHeight: 25,
     letterSpacing: -0.017,
-    left:'5%'
+    left: '5%',
+    paddingVertical: 3,
   },
   borderView1: {
     width: width * 0.15,
@@ -82,10 +87,10 @@ export const signupStyles = {
     position: 'absolute',
     marginVertical: -1,
   },
-  arrowIcon: {textAlign: 'center', paddingTop: 5},
+  arrowIcon: { textAlign: 'center', paddingTop: 5 },
 
   // styles of signupmobile1 screen
-  mainView: {width: 214, height: 70, top: 85, left: 21},
+  mainView: { width: 214, height: 70, top: 85, left: 21 },
   text: {
     color: '#000000',
     fontFamily: 'BakbakOneRegular',
@@ -93,7 +98,7 @@ export const signupStyles = {
     fontSize: 25,
     lineHeight: 35,
   },
-  phoneNumber: {flexDirection: 'row', top: 120},
+  phoneNumber: { flexDirection: 'row', top: 120 },
   dropdown: {
     left: 22,
     width: 70,
@@ -121,13 +126,13 @@ export const signupStyles = {
   },
 
   //==========================verification code styles==============================
-  text1: {flexDirection: 'row', top: 100, left: 22, width: 190},
-  editText: {color: '#000000', fontWeight: '500'},
+  text1: { flexDirection: 'row', top: 100, left: 22, width: 190 },
+  editText: { color: '#000000', fontWeight: '500' },
   code: {
     top: 120,
   },
-  root: {padding: 20, minHeight: 300},
-  title: {textAlign: 'center', fontSize: 30},
+  root: { padding: 20, minHeight: 300 },
+  title: { textAlign: 'center', fontSize: 30 },
   codeFieldRoot: {
     width: 280,
     left: 22,

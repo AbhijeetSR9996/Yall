@@ -1,13 +1,18 @@
 import * as React from 'react';
-import {View, Text} from 'react-native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-import SplashScreen from '../src/screens/splashScreen/splashScreen';
+import { View, Text } from 'react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+
+import GetStarted from '../src/screens/GetStarted/index';
+import Selfie from '../src/screens/Selfie/index';
+import SignedInMobile from '../src/screens/SignedInMobile/index';
+import SignedUpMobile from '../src/screens/SignedUpMobile/index';
+import MobileCode1 from '../src/screens/MobileCode1/index';
+import MobileCode2 from '../src/screens/MobileCode2/index';
+
 import SignUp from '../src/screens/SignUp/SignUp';
 import SignInMobile from '../src/screens/SignUp/SignInMobile';
 import SignUpMobile from '../src/screens/SignUp/signUpMobile';
-import SignUpMobile1 from '../src/screens/SignUp/signUpMobile1';
-import VerificationCode from '../src/screens/SignUp/verificationCode';
 import UserName from '../src/screens/User details/userName';
 import UserDOB from '../src/screens/User details/userDOB';
 import UserEmail from '../src/screens/User details/userEmail';
@@ -26,7 +31,6 @@ import MainBottomNavigation from './mainBottomNavigation';
 import MatchProfile from '../src/screens/MatchProfile';
 import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
 import Upload from '../src/screens/UploadID/upload';
-import Selfie from '../src/screens/Selfie/selfie';
 import Edit from '../src/screens/EditProfile/edit';
 import Events from '../src/screens/Events';
 import Discover from '../src/screens/Discover';
@@ -57,14 +61,13 @@ function MainStackNavigation() {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName="SplashScreen">
-        <Stack.Screen name="SplashScreen" component={SplashScreen} />
+        initialRouteName="GetStarted">
+        <Stack.Screen name="GetStarted" component={GetStarted} />
+
         <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="SignInMobile" component={SignInMobile}/>
+        <Stack.Screen name="SignInMobile" component={SignInMobile} />
         <Stack.Screen name="SignUpMobile" component={SignUpMobile} />
-        <Stack.Screen name="SignUpMobile1" component={SignUpMobile1} />
-        <Stack.Screen name="VerificationCode" component={VerificationCode} />
-        <Stack.Screen name="PaymentMethods" component={PaymentMethods}/>
+        <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
         <Stack.Screen name="UserName" component={UserName} />
         <Stack.Screen name="UserDOB" component={UserDOB} />
         <Stack.Screen name="UserEmail" component={UserEmail} />
@@ -79,15 +82,19 @@ function MainStackNavigation() {
         <Stack.Screen name="Gender3" component={Gender3} />
         <Stack.Screen name="Gender4" component={Gender4} />
         <Stack.Screen name="AddPhoto" component={AddPhoto} />
-        <Stack.Screen name="MatchProfile" component={MatchProfile}/>
+        <Stack.Screen name="MatchProfile" component={MatchProfile} />
         <Stack.Screen name="Upload" component={Upload} />
         <Stack.Screen name="Selfie" component={Selfie} />
-        <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight}/>
-        <Stack.Screen name="WeeklyEventLocation" component={WeeklyEventLocation}/>
-        <Stack.Screen name="WeeklyEventMap" component={WeeklyEventMap}/>
-        <Stack.Screen name="SignUpEmail" component={SignUpEmail}/>
+        <Stack.Screen name="WednesdayLoveNight" component={WednesdayLoveNight} />
+        <Stack.Screen name="WeeklyEventLocation" component={WeeklyEventLocation} />
+        <Stack.Screen name="WeeklyEventMap" component={WeeklyEventMap} />
+        <Stack.Screen name="SignUpEmail" component={SignUpEmail} />
+        <Stack.Screen name="SignedUpMobile" component={SignedUpMobile} />
+        <Stack.Screen name="SignedInMobile" component={SignedInMobile} />
+        <Stack.Screen name="MobileCode1" component={MobileCode1} />
+        <Stack.Screen name="MobileCode2" component={MobileCode2} />
 
-        <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation}/>
+        <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation} />
 
         <Stack.Screen name="Edit" component={Edit} />
         <Stack.Screen name="ProfileDisplay" component={ProfileDisplay} />

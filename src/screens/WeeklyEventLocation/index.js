@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 import Icon1 from 'react-native-vector-icons/Feather';
-import { Rectangular } from '../../component/Buttons/rectangular';
+import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 
 const WeeklyEventLocation = ({ navigation }) => {
@@ -27,8 +27,8 @@ const WeeklyEventLocation = ({ navigation }) => {
                             borderTopLeftRadius: 30,
                             borderTopRightRadius: 30,
                         }}>
-                            
-                            <View style={{ flex: 0.15, alignItems: 'flex-start', justifyContent: 'space-between', backgroundColor: '#FFFFFF', marginTop: '-75%', paddingTop:'5%' }}>
+
+                            <View style={{ flex: 0.15, alignItems: 'flex-start', justifyContent: 'space-between', backgroundColor: '#FFFFFF', marginTop: '-75%', paddingTop: '5%' }}>
                                 <Text style={styles.big_text}>Wednesday Love Night </Text>
                                 <Text style={styles.small_text}>Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem Ipsum
@@ -37,13 +37,13 @@ const WeeklyEventLocation = ({ navigation }) => {
 
                             <View style={{ flex: 0.10, alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', }}>
                                 <View style={{ flex: 1, alignItems: 'flex-start', backgroundColor: 'transparent', justifyContent: 'space-evenly', }}>
-                                    <Text style={[styles.icon_text,{marginLeft:'12%'}]}>
-                                        <Image source={require('../../../assets/images/location.png')} style={{ width: 12, height: 17}} />   Sector-62 Noida</Text>
-                                    <Text style={[styles.icon_text,{marginLeft:'12%'}]}>
+                                    <Text style={[styles.icon_text, { marginLeft: '12%' }]}>
+                                        <Image source={require('../../../assets/images/location.png')} style={{ width: 12, height: 17 }} />   Sector-62 Noida</Text>
+                                    <Text style={[styles.icon_text, { marginLeft: '12%' }]}>
                                         <Image source={require('../../../assets/images/calendar.png')} />   20 Dec. 2020</Text>
                                 </View>
                                 <View style={{ flex: 1.1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-start', }}>
-                                    <Text style={[styles.icon_text, { marginTop: '5%',marginLeft:'5%' }]}>
+                                    <Text style={[styles.icon_text, { marginTop: '5%', marginLeft: '5%' }]}>
                                         <Image source={require('../../../assets/images/watch2.png')} />    07:00 PM</Text>
                                 </View>
                             </View>
@@ -54,11 +54,11 @@ const WeeklyEventLocation = ({ navigation }) => {
                             </View >
                             <View style={{ flex: 0.1, alignItems: 'stretch', justifyContent: 'center', backgroundColor: 'transparent', flexDirection: 'column', }}>
                                 <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'space-evenly', flexDirection: 'row', backgroundColor: 'transparent', }}>
-                                    <TouchableOpacity style={[styles.buttonContainer,{left:'20%'}]}
+                                    <TouchableOpacity style={[styles.buttonContainer, { left: '20%' }]}
                                         onPress={() => navigation.navigate('SendTicket')}>
                                         <Text style={styles.buttonText}><Icon1 name="send" /> Send</Text>
                                     </TouchableOpacity>
-                                    <TouchableOpacity style={[styles.buttonContainer2,{left:'-15%'}]}
+                                    <TouchableOpacity style={[styles.buttonContainer2, { left: '-15%' }]}
                                         onPress={() => navigation.navigate('ShareLink')}>
                                         <Text style={styles.buttonText}><Icon1 name="share-2" /> Share</Text>
                                     </TouchableOpacity>

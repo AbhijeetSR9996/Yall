@@ -10,11 +10,11 @@ import {
   Switch,
 } from 'react-native';
 
-import {styles} from './styles';
-import {imageicon, icons} from '../../../assets/icons/icons';
-import {Rectangular} from '../../component/Buttons/rectangular';
+import { styles } from './styles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { Rectangular } from '../../component/Buttons/Rectangular';
 
-const Gender3 = ({navigation}) => {
+const Gender3 = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate('Gender2')}>
@@ -22,7 +22,7 @@ const Gender3 = ({navigation}) => {
       </TouchableOpacity>
 
       <Text style={styles.gender1Text}>Films & TV </Text>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -126,7 +126,7 @@ const Gender3 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -205,7 +205,7 @@ const Gender3 = ({navigation}) => {
         </View>
       </View>
 
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -259,8 +259,8 @@ const Gender3 = ({navigation}) => {
         </View>
       </View>
 
-      <Text style={[styles.foodHead, {top: 10}]}>Hobbies</Text>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <Text style={[styles.foodHead, { top: 10 }]}>Hobbies</Text>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -364,7 +364,7 @@ const Gender3 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -442,7 +442,7 @@ const Gender3 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -546,7 +546,7 @@ const Gender3 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -624,7 +624,7 @@ const Gender3 = ({navigation}) => {
           </Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row', marginBottom: 10, top: 20}}>
+      <View style={{ flexDirection: 'row', marginBottom: 10, top: 20 }}>
         <View
           style={{
             borderWidth: 1.5,

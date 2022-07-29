@@ -36,14 +36,15 @@ const GovtRegisterID = ({ navigation }) => {
             <Text style={govtStyles.textCard}>
               Lorem Ipsum is simply dummy text of the printing
             </Text>
-          </View>
-          <TouchableOpacity>
-            <Text style={govtStyles.moveRight}>{icons.right}</Text>
+            <TouchableOpacity>
+            <Text style={[govtStyles.moveRight,{left:110,marginTop:-40}]}>{icons.right}</Text>
           </TouchableOpacity>
+          </View>
+          
         </View>
       </Card>
       <Card
-        style={govtStyles.borderBox}
+        style={[govtStyles.borderBox,{borderWidth:1.5,borderColor:'#000000'}]}
         onPress={() => navigation.navigate('Upload')}>
         <View style={{ flexDirection: 'row' }}>
           <View style={govtStyles.insideBox}>

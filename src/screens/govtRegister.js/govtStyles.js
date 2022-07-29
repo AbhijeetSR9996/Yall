@@ -70,11 +70,16 @@ export const govtStyles = {
     fontSize: 12,
     width: 193,
     top: 5,
+    fontWeight:'400',
+    lineHeight:15,
+    letterSpacing:-0.017
   },
   moveRight: {
-    left: 20,
+    //left: 20,
+    left:-15,
     textAlign: 'center',
     marginTop: 30,
+    color:'#797979'
   },
   govtPageArrowIcon: {
     //left:348,

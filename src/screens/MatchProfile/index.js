@@ -60,14 +60,16 @@ const MatchProfile = ({ navigation }) => {
             position: 'relative',
           }}>
             <Text style={{
-              fontWeight: '700',
+              fontWeight: '400',
               fontSize: 18,
-              fontFamily: 'Bakbak one-Regular',
+              fontFamily: 'BakbakOneRegular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
+              lineHeight:25,
+              letterSpacing:-0.017
             }}>Send Like</Text>
             <View style={{
               width: width * 0.15,
@@ -82,7 +84,7 @@ const MatchProfile = ({ navigation }) => {
             }}>{icons.rightarrow}</View>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={{
             width: width * 0.8,
             height: height * 0.07,
@@ -122,7 +124,12 @@ const MatchProfile = ({ navigation }) => {
               marginVertical: -1,
             }}>{icons.rightarrow}</View>
           </View>
+        </TouchableOpacity> */}
+
+        <TouchableOpacity>
+        <Text style={{alignSelf:'center',left:'-5%',fontSize:15,fontFamily:'Inter-Regular',fontWeight:'500',lineHeight:18,letterSpacing:-0.017,color:'#000000'}}>Cancel</Text>
         </TouchableOpacity>
+
       </View>
     {/* </KeyboardAvoidingView> */}
 

@@ -1,75 +1,61 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native';
+import { Rectangular } from '../../component/Buttons/Rectangular/index';
+import { icons } from '../../../assets/icons/icons';
+import { signupStyles } from './signupStyles';
 
-import {icons} from '../../../assets/icons/icons';
-import {signupStyles} from './signupStyles';
-const SignUp = ({navigation}) => {
+
+const SignUp = ({ navigation }) => {
   return (
-    <View style={signupStyles.container}>
-      <View style={signupStyles.backgroundContainer}>
-        <Image source={require('../../../assets/images/splashScreen1.png')} />
-      </View>
-      <View>
-        <Image
-          style={signupStyles.backgroundsecondContainer}
-          source={require('../../../assets/images/screen1.png')}
-        />
-      </View>
-      <View>
-        <Image
-          style={signupStyles.logo}
-          source={require('../../../assets/images/logo.png')}
-        />
-      </View>
+    <View style={{
+      flex: 1,
+      alignItems: 'stretch',
+      justifyContent: 'center'
+    }}>
+      <ImageBackground
+        source={require('../../../assets/images/core/background-signup.png')}
+        resizeMode="stretch"
+        style={{
+          flex: 1,
+          justifyContent: 'center'
+        }}
+      >
 
-      <Text style={[signupStyles.headline, {top: '-1%'}]}>
-        By clicking “Log in”, you agree with our Terms. learn how we process
-        your data in our privacy policy and cokkies policy.
-      </Text>
-      <View>
-        <Image
-          style={signupStyles.backgroundthirdContainer}
-          source={require('../../../assets/images/screen2.png')}
-        />
-      </View>
-      <View style={signupStyles.signinMainView}>
-        <TouchableOpacity
-          style={signupStyles.touchablebuttons}
-          onPress={() => navigation.navigate('SignInMobile')}>
-          <View style={signupStyles.borderView}>
-            <Text style={signupStyles.loginButtonText}>Sign In</Text>
-            <View style={signupStyles.borderView1}>
-              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
-            </View>
+        <View style={{ flex: 0.4, alignItems: 'center', backgroundColor: 'transparent', justifyContent: 'flex-end' }}>
+          <Image
+            resizeMode="stretch"
+            source={require('../../../assets/images/logo.png')}
+            style={{
+              alignSelf: 'center',
+              display: 'flex',
+              top: '10%'
+            }}
+          />
+        </View>
+        <View style={{ flex: 1, alignItems: 'stretch', backgroundColor: 'transparent', flexDirection: 'column' }}>
+          <View style={{
+            flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
+            justifyContent: 'flex-end', flexDirection: 'column'
+          }}>
+            <Text style={[signupStyles.headline]}>
+              By clicking “Log in”, you agree with our Terms. learn how we process
+              your data in our privacy policy and cokkies policy.
+            </Text>
           </View>
-        </TouchableOpacity>
-      </View>
+          <View style={{
+            flex: 2.4, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
+            justifyContent: 'space-evenly'
+          }}>
+            <Rectangular path="SignInMobile" name="Sign In" style={{ bottom: '4%' }} />
+            <Rectangular path="SignUpMobile" name="Sign Up" style={{ bottom: '12%' }} />
+            <Rectangular path="SignEmail" name="Sign In With Email" style={{ bottom: '20%' }} />
+          </View>
+        </View>
 
-      <View style={signupStyles.signupMainView}>
-        <TouchableOpacity
-          style={signupStyles.touchablebuttons}
-          onPress={() => navigation.navigate('SignUpMobile')}>
-          <View style={signupStyles.borderView}>
-            <Text style={signupStyles.loginButtonText}>Sign Up</Text>
-            <View style={signupStyles.borderView1}>
-              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
-            </View>
-          </View>
-        </TouchableOpacity>
-      </View>
-      <View style={signupStyles.signEmailMainView}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('SignEmail')}
-          style={signupStyles.touchablebuttons}>
-          <View style={signupStyles.borderView}>
-            <Text style={signupStyles.loginButtonText}>Sign In With Email</Text>
-            <View style={signupStyles.borderView1}>
-              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
-            </View>
-          </View>
-        </TouchableOpacity>
-      </View>
+      </ImageBackground>
     </View>
   );
 };
 export default SignUp;
+
+

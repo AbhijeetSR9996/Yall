@@ -31,6 +31,7 @@ const UserDOB = ({navigation}) => {
         <TextInput
           style={userStyles.dateInput}
           placeholder="mm"
+          placeholderTextColor="#000000"
           keyboardType="numeric"
           maxLength={2}
         />
@@ -38,6 +39,7 @@ const UserDOB = ({navigation}) => {
         <TextInput
           style={userStyles.dateInput}
           placeholder="dd"
+          placeholderTextColor="#000000"
           keyboardType="numeric"
           maxLength={2}
         />
@@ -45,6 +47,7 @@ const UserDOB = ({navigation}) => {
         <TextInput
           style={userStyles.yearInput}
           placeholder="yyyy"
+          placeholderTextColor="#000000"
           keyboardType="numeric"
           maxLength={4}
         />

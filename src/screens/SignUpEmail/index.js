@@ -70,14 +70,16 @@ const SignUpEmail = ({ navigation }) => {
             position: 'relative',
           }}>
             <Text style={{
-              fontWeight: '700',
+              fontWeight: '400',
               fontSize: 18,
-              fontFamily: 'Bakbak one-Regular',
+              fontFamily: 'BakbakOneRegular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
+              lineHeight:25,
+              letterSpacing: -0.017
             }}>Continue</Text>
             <View style={{
               width: width * 0.15,
@@ -116,14 +118,16 @@ const SignUpEmail = ({ navigation }) => {
             position: 'relative',
           }}>
             <Text style={{
-              fontWeight: '700',
+              fontWeight: '400',
               fontSize: 18,
-              fontFamily: 'Bakbak one-Regular',
+              fontFamily: 'BakbakOneRegular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
+              lineHeight:25,
+              letterSpacing: -0.017
             }}>Go to Email</Text>
             <View style={{
               width: width * 0.15,
@@ -162,14 +166,16 @@ const SignUpEmail = ({ navigation }) => {
             position: 'relative',
           }}>
             <Text style={{
-              fontWeight: '700',
+              fontWeight: '400',
               fontSize: 18,
-              fontFamily: 'Bakbak one-Regular',
+              fontFamily: 'BakbakOneRegular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
+              lineHeight:25,
+              letterSpacing: -0.017
             }}>Resend Code</Text>
             <View style={{
               width: width * 0.15,

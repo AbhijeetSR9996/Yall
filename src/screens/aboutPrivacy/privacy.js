@@ -43,8 +43,8 @@ const AboutPrivacy = ({navigation}) => {
           </View>
         </TouchableOpacity>
       </View>
-      <View style={{}}>
-        <TouchableOpacity
+      <View >
+        {/* <TouchableOpacity
           style={[
             signupStyles.touchablebuttons,
             {alignSelf: 'center', top: '90%'},
@@ -57,6 +57,9 @@ const AboutPrivacy = ({navigation}) => {
               <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
             </View>
           </View>
+        </TouchableOpacity> */}
+        <TouchableOpacity>
+        <Text style={{alignSelf:'center',fontSize:15,fontFamily:'Inter-Regular',fontWeight:'400',lineHeight:18,letterSpacing:-0.017,color:'#000000',marginTop:'40%',marginLeft:'13%'}}>Decline</Text>
         </TouchableOpacity>
       </View>
     </View>

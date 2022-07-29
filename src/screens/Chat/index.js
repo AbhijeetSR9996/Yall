@@ -304,12 +304,13 @@ const Chat = ({ navigation }) => {
                   placeholderTextColor='#BEBEBE'
                   style={{
                     //flex: 1,
-                    //width:'80%',
+                    width:'90%',
                     //height:47,
                     fontSize: 20,
                     color: '#000000',
                     fontWeight: '400',
-                    right: '35%',
+                    left: '2%',
+                    top: '7%',
                     lineHeight: 24,
                     letterSpacing: -0.017,
                   }} />
