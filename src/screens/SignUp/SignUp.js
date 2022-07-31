@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-nati
 import { Rectangular } from '../../component/Buttons/Rectangular/index';
 import { icons } from '../../../assets/icons/icons';
 import { signupStyles } from './signupStyles';
-
+import { height, width } from '../../services/helper';
 
 const SignUp = ({ navigation }) => {
   return (
@@ -46,9 +46,161 @@ const SignUp = ({ navigation }) => {
             flex: 2.4, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
             justifyContent: 'space-evenly'
           }}>
-            <Rectangular path="SignInMobile" name="Sign In" style={{ bottom: '4%' }} />
+
+            {/* <Rectangular path="SignInMobile" name="Sign In" style={{ bottom: '4%' }} />
             <Rectangular path="SignUpMobile" name="Sign Up" style={{ bottom: '12%' }} />
-            <Rectangular path="SignEmail" name="Sign In With Email" style={{ bottom: '20%' }} />
+            <Rectangular path="SignEmail" name="Sign In With Email" style={{ bottom: '20%' }} /> */}
+
+            <TouchableOpacity
+              style={{
+                bottom: '4%',
+                alignSelf: 'center',
+                width: width * 0.8,
+                height: height * 0.07,
+                borderWidth: 1,
+                alignSelf: 'center',
+              }}
+              onPress={() => { navigation.navigate('SignInMobile') }}>
+              <View style={{
+                left: 10,
+                top: 8,
+                width: width * 0.8,
+                borderWidth: 1,
+                borderRightWidth: 0,
+                height: height * 0.07,
+                //alignItems: 'center',
+                alignSelf: 'center',
+                backgroundColor: '#DCC7E1',
+                position: 'relative',
+              }}>
+                <Text style={{
+                  fontWeight: '400',
+                  fontSize: 17,
+                  //fontFamily: 'Bakbak One',
+                  fontFamily: 'BakbakOneRegular',
+                  color: '#000000',
+                  alignSelf: 'center',
+                  justifyContent: 'center',
+                  //paddingVertical: 10,
+                  paddingVertical: 13,
+                  right: '35%',
+                  //right: '20%',
+                  lineHeight: 25,
+                  letterSpacing: -0.017
+                }}>Sign In </Text>
+                <View style={{
+                  width: width * 0.15,
+                  borderWidth: 1,
+                  height: '104%',
+                  alignSelf: 'flex-end',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: '#DCC7E1',
+                  position: 'absolute',
+                  marginVertical: -1,
+                }}>{icons.rightarrow}</View>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                bottom: '12%',
+                alignSelf: 'center',
+                width: width * 0.8,
+                height: height * 0.07,
+                borderWidth: 1,
+                alignSelf: 'center',
+              }}
+              onPress={() => { navigation.navigate('SignUpMobile') }}>
+              <View style={{
+                left: 10,
+                top: 8,
+                width: width * 0.8,
+                borderWidth: 1,
+                borderRightWidth: 0,
+                height: height * 0.07,
+                //alignItems: 'center',
+                alignSelf: 'center',
+                backgroundColor: '#DCC7E1',
+                position: 'relative',
+              }}>
+                <Text style={{
+                  fontWeight: '400',
+                  fontSize: 17,
+                  //fontFamily: 'Bakbak One',
+                  fontFamily: 'BakbakOneRegular',
+                  color: '#000000',
+                  alignSelf: 'center',
+                  justifyContent: 'center',
+                  //paddingVertical: 10,
+                  paddingVertical: 13,
+                  right: '35%',
+                  //right: '20%',
+                  lineHeight: 25,
+                  letterSpacing: -0.017
+                }}>Sign Up</Text>
+                <View style={{
+                  width: width * 0.15,
+                  borderWidth: 1,
+                  height: '104%',
+                  alignSelf: 'flex-end',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: '#DCC7E1',
+                  position: 'absolute',
+                  marginVertical: -1,
+                }}>{icons.rightarrow}</View>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                bottom: '20%',
+                alignSelf: 'center',
+                width: width * 0.8,
+                height: height * 0.07,
+                borderWidth: 1,
+                alignSelf: 'center',
+              }}
+              onPress={() => { navigation.navigate('SignEmail') }}>
+              <View style={{
+                left: 10,
+                top: 8,
+                width: width * 0.8,
+                borderWidth: 1,
+                borderRightWidth: 0,
+                height: height * 0.07,
+                //alignItems: 'center',
+                alignSelf: 'center',
+                backgroundColor: '#DCC7E1',
+                position: 'relative',
+              }}>
+                <Text style={{
+                  fontWeight: '400',
+                  fontSize: 17,
+                  //fontFamily: 'Bakbak One',
+                  fontFamily: 'BakbakOneRegular',
+                  color: '#000000',
+                  alignSelf: 'center',
+                  justifyContent: 'center',
+                  //paddingVertical: 10,
+                  paddingVertical: 13,
+                  right: '22%',
+                  //right: '20%',
+                  lineHeight: 25,
+                  letterSpacing: -0.017
+                }}>Sign In With Email</Text>
+                <View style={{
+                  width: width * 0.15,
+                  borderWidth: 1,
+                  height: '104%',
+                  alignSelf: 'flex-end',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: '#DCC7E1',
+                  position: 'absolute',
+                  marginVertical: -1,
+                }}>{icons.rightarrow}</View>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
 

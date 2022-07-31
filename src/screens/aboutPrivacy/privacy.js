@@ -8,11 +8,12 @@ import {
   TextInput,
   Switch,
 } from 'react-native';
-import {signupStyles} from '../SignUp/signupStyles';
-import {privacyStyles} from './privacyStyles';
-import {imageicon, icons} from '../../../assets/icons/icons';
+import { signupStyles } from '../SignUp/signupStyles';
+import { privacyStyles } from './privacyStyles';
+import { imageicon, icons } from '../../../assets/icons/icons';
+import { Rectangular } from '../../component/Buttons/Rectangular/index';
 
-const AboutPrivacy = ({navigation}) => {
+const AboutPrivacy = ({ navigation }) => {
   return (
     <View style={privacyStyles.container}>
       <Text style={privacyStyles.text}>We care about your privacy</Text>
@@ -26,31 +27,17 @@ const AboutPrivacy = ({navigation}) => {
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard.
       </Text>
-      <View style={{}}>
-        <TouchableOpacity
-          style={[
-            signupStyles.touchablebuttons,
-            {alignSelf: 'center', top: '150%'},
-          ]}
-          onPress={() => navigation.navigate('Gender')}>
-          <View style={signupStyles.borderView}>
-            <Text style={[signupStyles.loginButtonText, {textAlign: 'center'}]}>
-              Accept
-            </Text>
-            <View style={signupStyles.borderView1}>
-              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
-            </View>
-          </View>
-        </TouchableOpacity>
+      <View >
+        <Rectangular path="Gender" name="Accept" style={{ marginTop: '70%' }} />
       </View>
       <View >
         {/* <TouchableOpacity
           style={[
             signupStyles.touchablebuttons,
-            {alignSelf: 'center', top: '90%'},
+            { alignSelf: 'center', top: '90%' },
           ]}>
           <View style={signupStyles.borderView}>
-            <Text style={[signupStyles.loginButtonText, {textAlign: 'center'}]}>
+            <Text style={[signupStyles.loginButtonText, { textAlign: 'center' }]}>
               Decline
             </Text>
             <View style={signupStyles.borderView1}>
@@ -59,7 +46,7 @@ const AboutPrivacy = ({navigation}) => {
           </View>
         </TouchableOpacity> */}
         <TouchableOpacity>
-        <Text style={{alignSelf:'center',fontSize:15,fontFamily:'Inter-Regular',fontWeight:'400',lineHeight:18,letterSpacing:-0.017,color:'#000000',marginTop:'40%',marginLeft:'13%'}}>Decline</Text>
+          <Text style={{ alignSelf: 'center', fontSize: 15, fontFamily: 'Inter-Regular', fontWeight: '400', lineHeight: 18, letterSpacing: -0.017, color: '#000000', marginTop: '7%', marginLeft: '-10%' }}>Decline</Text>
         </TouchableOpacity>
       </View>
     </View>

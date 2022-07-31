@@ -79,6 +79,25 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>BakbakOneRegular.woff</string>
+		<string>Inter-Black.woff</string>
+		<string>Inter-BlackItalic.woff</string>
+		<string>Inter-Bold.woff</string>
+		<string>Inter-BoldItalic.woff</string>
+		<string>Inter-ExtraBold.woff</string>
+		<string>Inter-ExtraBoldItalic.woff</string>
+		<string>Inter-ExtraLight-BETA.woff</string>
+		<string>Inter-ExtraLightItalic-BETA.woff</string>
+		<string>Inter-Italic.woff</string>
+		<string>Inter-Light-BETA.woff</string>
+		<string>Inter-LightItalic-BETA.woff</string>
+		<string>Inter-Medium.woff</string>
+		<string>Inter-MediumItalic.woff</string>
+		<string>Inter-Regular.woff</string>
+		<string>Inter-SemiBold.woff</string>
+		<string>Inter-SemiBoldItalic.woff</string>
+		<string>Inter-Thin-BETA.woff</string>
+		<string>Inter-ThinItalic-BETA.woff</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera Usage Description</string>

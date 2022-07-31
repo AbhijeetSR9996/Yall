@@ -1,8 +1,10 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, KeyboardAvoidingView, ImageBackground } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { signupStyles } from './signupStyles';
 import { Rectangular } from '../../component/Buttons/Rectangular/index';
 import { icons } from '../../../assets/icons/icons';
+import { height, width } from '../../services/helper';
+
 const SignUpMobile = ({ navigation }) => {
   return (
 
@@ -45,7 +47,57 @@ const SignUpMobile = ({ navigation }) => {
             flex: 2, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
             justifyContent: 'flex-start'
           }}>
-            <Rectangular path="SignedUpMobile" name="Sign Up With Mobile Number" style={{ top: '15%' }} />
+            {/* <Rectangular path="SignedUpMobile" name="Sign Up With Mobile Number" style={{ top: '15%', marginLeft: '0%' }} /> */}
+            <TouchableOpacity
+              style={{
+                top: '10%',
+                alignSelf: 'center',
+                width: width * 0.8,
+                height: height * 0.07,
+                borderWidth: 1,
+                alignSelf: 'center',
+              }}
+              onPress={() => { navigation.navigate('SignedUpMobile') }}>
+              <View style={{
+                left: 10,
+                top: 8,
+                width: width * 0.8,
+                borderWidth: 1,
+                borderRightWidth: 0,
+                height: height * 0.07,
+                //alignItems: 'center',
+                alignSelf: 'center',
+                backgroundColor: '#DCC7E1',
+                position: 'relative',
+              }}>
+                <Text style={{
+                  fontWeight: '400',
+                  fontSize: 17,
+                  //fontFamily: 'Bakbak One',
+                  fontFamily: 'BakbakOneRegular',
+                  color: '#000000',
+                  alignSelf: 'center',
+                  justifyContent: 'center',
+                  //paddingVertical: 10,
+                  paddingVertical: 13,
+                  right: '10%',
+                  //right: '20%',
+                  lineHeight: 25,
+                  letterSpacing: -0.017
+                }}>Sign Up With Mobile Number</Text>
+                <View style={{
+                  width: width * 0.15,
+                  borderWidth: 1,
+                  height: '104%',
+                  alignSelf: 'flex-end',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: '#DCC7E1',
+                  position: 'absolute',
+                  marginVertical: -1,
+                }}>{icons.rightarrow}</View>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
 

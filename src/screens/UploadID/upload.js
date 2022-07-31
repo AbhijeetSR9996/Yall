@@ -156,7 +156,9 @@ const Upload = ({ navigation }) => {
             <TouchableOpacity
               onPress={() => createOneButtonAlert()}
               style={{
-                top: '65%', width: width * 0.5, height: height * 0.07,
+                top: '63%',
+                width: width * 0.5,
+                height: height * 0.07,
                 borderWidth: 1,
                 alignSelf: 'center',
               }}>
@@ -204,12 +206,16 @@ const Upload = ({ navigation }) => {
       <Image
         source={require('../../../assets/images/file.png')}
         style={{
-          width: 40,
-          height: 50,
-          top: 23,
+          //width: 40,
+          //height: 50,
+          width: 28,
+          height: 35,
+          //top: 23,
+          top: 18,
           //left: -300,
           //marginLeft:'7%',
-          marginLeft: '4%'
+          //marginLeft: '4%',
+          marginLeft: '8%'
         }}
       />
       <Text

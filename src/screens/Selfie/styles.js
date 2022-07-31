@@ -30,7 +30,7 @@ const Styles = StyleSheet.create({
         top: '90%',
     },
     button_container: {
-        top: '10%',
+        top: '12%',
         alignSelf: 'center',
         width: width * 0.8,
         height: height * 0.07,
@@ -60,6 +60,7 @@ const Styles = StyleSheet.create({
         //paddingVertical: 10,
         paddingVertical: 13,
         right: '10%',
+        //right: '20%',
         lineHeight: 25,
         letterSpacing: -0.017
     },

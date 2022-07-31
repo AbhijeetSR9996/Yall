@@ -28,7 +28,7 @@ const SignUpEmail = ({ navigation }) => {
       <View style={{ flex: 0.2, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }} />
       <View style={{ flex: 0.4, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'flex-start' }}>
         <Text style={{ fontFamily: 'Bakbak One', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 317, color: '#000000', marginLeft: '5%' }}>When sent a 4 digit code to </Text>
-        <Text style={{ fontFamily: 'Bakbak One', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 317, color: '#000000', marginLeft: '6%' }}>your mail@12354 </Text>
+        <Text style={{ fontFamily: 'Bakbak One', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 307, color: '#000000', marginLeft: '6%' }}>your mail@12354 </Text>
       </View>
       <View style={{ flex: 1.2, backgroundColor: 'transparent', justifyContent: 'flex-start', flexDirection: 'column', alignItems: 'flex-start' }}>
         <TextInput
@@ -52,11 +52,11 @@ const SignUpEmail = ({ navigation }) => {
               height: height * 0.07,
               borderWidth: 1,
               //bottom: '20%',
-              //bottom: '25%',
+              top: '10%',
             },
           ]}
-          onPress={()=>{navigation.navigate('MainBottomNavigation')}}>
-            
+          onPress={() => { navigation.navigate('MainBottomNavigation') }}>
+
           <View style={{
             left: 10,
             top: 8,
@@ -78,7 +78,7 @@ const SignUpEmail = ({ navigation }) => {
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
-              lineHeight:25,
+              lineHeight: 25,
               letterSpacing: -0.017
             }}>Continue</Text>
             <View style={{
@@ -102,7 +102,7 @@ const SignUpEmail = ({ navigation }) => {
               height: height * 0.07,
               borderWidth: 1,
               //bottom: '20%',
-              //bottom: '25%',
+              top: '5%',
             },
           ]}>
           <View style={{
@@ -126,7 +126,7 @@ const SignUpEmail = ({ navigation }) => {
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
-              lineHeight:25,
+              lineHeight: 25,
               letterSpacing: -0.017
             }}>Go to Email</Text>
             <View style={{
@@ -174,7 +174,7 @@ const SignUpEmail = ({ navigation }) => {
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
-              lineHeight:25,
+              lineHeight: 25,
               letterSpacing: -0.017
             }}>Resend Code</Text>
             <View style={{

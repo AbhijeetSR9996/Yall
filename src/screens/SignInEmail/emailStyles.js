@@ -1,9 +1,11 @@
 import { Dimensions } from "react-native";
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 export const emailStyles = {
   container: {
     flex: 1,
+    // alignItems: 'stretch',
+    // justifyContent: 'center'
   },
   backgroundContainer: {
     position: 'absolute',
@@ -21,10 +23,10 @@ export const emailStyles = {
     marginTop: 50,
     alignSelf: 'center',
   },
-  mainCardView:{
+  mainCardView: {
     borderWidth: 1,
-    //top: '10%',
-    top:'3%',
+    top: '8%',
+    //top: '3%',
     width: '90%',
     alignSelf: 'center',
     backgroundColor: '#FFFFFF',
@@ -36,7 +38,7 @@ export const emailStyles = {
     borderRadius: 15,
     elevation: 10,
   },
-  accountHeadText:{
+  accountHeadText: {
     fontFamily: 'Bakbak one-Regular',
     fontSize: 25,
     fontWeight: '700',
@@ -44,7 +46,7 @@ export const emailStyles = {
     top: 10,
     textAlign: 'center',
   },
-  headBelowText:{
+  headBelowText: {
     fontFamily: 'Inter-Regular',
     fontSize: 18,
     fontWeight: '400',
@@ -52,7 +54,7 @@ export const emailStyles = {
     top: 10,
     textAlign: 'center',
   },
-  Touchablemail1:{
+  Touchablemail1: {
     width: '90%',
     position: 'absolute',
     alignSelf: 'center',
@@ -61,8 +63,8 @@ export const emailStyles = {
     borderBottomWidth: 1,
     borderColor: '#C4C4C4',
     marginBottom: 10,
-  }, 
-  Touchablemail2:{
+  },
+  Touchablemail2: {
     width: '90%',
     position: 'absolute',
     alignSelf: 'center',
@@ -71,7 +73,7 @@ export const emailStyles = {
     borderBottomWidth: 1,
     borderColor: '#C4C4C4',
   },
-  Touchablemail3:{
+  Touchablemail3: {
     width: '90%',
     position: 'absolute',
     alignSelf: 'center',
@@ -81,7 +83,7 @@ export const emailStyles = {
     borderColor: '#C4C4C4',
     marginBottom: 10,
   },
-  Touchablemail4:{
+  Touchablemail4: {
     top: 320,
     borderBottomWidth: 1,
     paddingBottom: 15,
@@ -90,27 +92,27 @@ export const emailStyles = {
     left: 22,
     flexDirection: 'row',
   },
-  userNameText:{
+  userNameText: {
     fontFamily: 'Inter-Medium',
     color: '#646661',
     fontSize: 18,
     marginTop: 15,
   },
-  userEmail:{
+  userEmail: {
     fontFamily: 'Inter-Regular',
     fontSize: 12,
     top: 2,
     color: '#B4B4B4',
     width: 218,
   },
-  AddText:{
+  AddText: {
     alignSelf: 'center',
     left: 40,
     fontFamily: 'Inter-Medium',
     fontSize: 18,
     color: '#646661'
   },
-  paragraph:{
+  paragraph: {
     fontFamily: 'Inter=Regular',
     fontSize: 15,
     color: '#B4B4B4',
@@ -118,7 +120,7 @@ export const emailStyles = {
     textAlign: 'center',
     alignSelf: 'center',
     //top: 355,
-    top:340
+    top: 340
   },
-      
+
 };

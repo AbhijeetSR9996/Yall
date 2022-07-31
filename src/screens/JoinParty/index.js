@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 import Icon1 from 'react-native-vector-icons/Feather';
-import { Rectangular } from '../../component/Buttons/rectangular';
+import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
 
@@ -18,7 +18,7 @@ const JoinParty = ({ navigation }) => {
                 source={require('../../../assets/images/joinpartybg.png')}
                 resizeMode="cover" />
 
-            <View style={{ backgroundColor: 'transparent', flex: 2,marginRight:'95%',marginBottom:'10%' }}>
+            <View style={{ backgroundColor: 'transparent', flex: 2, marginRight: '95%', marginBottom: '10%' }}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <Icon name="angle-left" style={styles.left_arrow} />
                 </TouchableOpacity>
@@ -49,9 +49,9 @@ const JoinParty = ({ navigation }) => {
                     printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard. </Text>
             </View>
-            <View style={{ backgroundColor: 'transparent', flex: 0.5,alignItems:'center',justifyContent:'flex-start' }}>
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'flex-start' }}>
 
-                <TouchableOpacity
+                {/* <TouchableOpacity
                     style={[
                         {
                             top: '35%', alignSelf: 'center', width: width * 0.8,
@@ -59,7 +59,7 @@ const JoinParty = ({ navigation }) => {
                             borderWidth: 1,
                         },
                     ]}
-                    onPress={()=>{navigation.navigate('WednesdayLoveNight')}}>
+                    onPress={() => { navigation.navigate('WednesdayLoveNight') }}>
                     <View style={{
                         left: 10,
                         top: 8,
@@ -94,9 +94,19 @@ const JoinParty = ({ navigation }) => {
                             marginVertical: -1,
                         }}>{icons.rightarrow}</View>
                     </View>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
+                <Rectangular
+                    path="WednesdayLoveNight"
+                    style={{
+                        width: 10,
+                        position: 'absolute',
+                        alignSelf: 'center',
+                        top: '40%',
+                    }}
+                    name="Book Now"
+                />
             </View>
-            <View style={{ backgroundColor: 'transparent', flex: 0.5,alignItems:'center',justifyContent:'flex-start' }}></View>
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'flex-start' }}></View>
         </View>
     )
 }

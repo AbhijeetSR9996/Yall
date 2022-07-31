@@ -23,7 +23,7 @@ const MatchProfile = ({ navigation }) => {
 
   return (
     // <KeyboardAvoidingView style={{flex:1}}>
-    <View style={{ flex: 1 }}> 
+    <View style={{ flex: 1 }}>
       <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-end' }}>
         <Text style={styles.text}>Sam</Text>
       </View>
@@ -68,8 +68,9 @@ const MatchProfile = ({ navigation }) => {
               justifyContent: 'center',
               paddingVertical: 10,
               right: '10%',
-              lineHeight:25,
-              letterSpacing:-0.017
+              //right: '30%',
+              lineHeight: 25,
+              letterSpacing: -0.017
             }}>Send Like</Text>
             <View style={{
               width: width * 0.15,
@@ -127,14 +128,14 @@ const MatchProfile = ({ navigation }) => {
         </TouchableOpacity> */}
 
         <TouchableOpacity>
-        <Text style={{alignSelf:'center',left:'-5%',fontSize:15,fontFamily:'Inter-Regular',fontWeight:'500',lineHeight:18,letterSpacing:-0.017,color:'#000000'}}>Cancel</Text>
+          <Text style={{ alignSelf: 'center', left: '-5%', fontSize: 15, fontFamily: 'Inter-Regular', fontWeight: '500', lineHeight: 18, letterSpacing: -0.017, color: '#000000' }}>Cancel</Text>
         </TouchableOpacity>
 
       </View>
-    {/* </KeyboardAvoidingView> */}
+      {/* </KeyboardAvoidingView> */}
 
     </View>
-    
+
   );
 };
 export default MatchProfile;

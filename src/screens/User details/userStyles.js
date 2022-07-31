@@ -37,10 +37,10 @@ export const userStyles = {
   },
 
   //  ====================USERDOB STYLES=======================
-  mainViewDob: {top: 150, flexDirection: 'row',justifyContent:'space-around'},
+  mainViewDob: { top: 150, flexDirection: 'row', justifyContent: 'space-around' },
   textDOB1: {
     fontFamily: 'Inter',
-    fontWeight:'400',
+    fontWeight: '400',
     color: '#000000',
     letterSpacing: -0.017,
     fontSize: 15,
@@ -53,27 +53,29 @@ export const userStyles = {
   },
   textDOB2: {
     fontFamily: 'Inter',
-    fontWeight:'400',
+    fontWeight: '400',
     color: '#000000',
     letterSpacing: -0.017,
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
     //paddingHorizontal:'5%'
-    left: '-100%',
-     //marginLeft: '-8%'
-     //marginHorizontal:'-3%' 
+    //left: '-100%',
+    left: '-140%',
+    //marginLeft: '-8%'
+    //marginHorizontal:'-3%' 
   },
   textDOB3: {
     fontFamily: 'Inter',
-    fontWeight:'400',
+    fontWeight: '400',
     color: '#000000',
     letterSpacing: -0.017,
     fontSize: 15,
     fontFamily: 'Inter',
     display: 'flex',
     //marginLeft: '-11%'
-    right: '50%',
+    //right: '50%',
+    right: '80%',
   },
   dateInput: {
     borderWidth: 1.5,
