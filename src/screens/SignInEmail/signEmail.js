@@ -5,24 +5,6 @@ import { emailStyles } from '../SignInEmail/emailStyles';
 const SignEmail = ({ navigation }) => {
   return (
     <View style={emailStyles.container}>
-      {/* <View style={emailStyles.backgroundContainer}>
-        <Image
-          source={require('../../../assets/images/splashScreen1.png')}
-          resizeMode="cover"
-        />
-      </View>
-      <View>
-        <Image
-          style={emailStyles.backgroundsecondContainer}
-          source={require('../../../assets/images/screen1.png')}
-        />
-      </View>
-      <View>
-        <Image
-          style={emailStyles.backgroundthirdContainer}
-          source={require('../../../assets/images/screen2.png')}
-        />
-      </View> */}
       <ImageBackground
         source={require('../../../assets/images/core/background-signup.png')}
         resizeMode="stretch"

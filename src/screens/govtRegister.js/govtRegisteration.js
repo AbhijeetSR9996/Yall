@@ -21,7 +21,8 @@ const GovtRegisterID = ({ navigation }) => {
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard.
       </Text>
-      <Card style={govtStyles.borderBox}>
+      <Card style={govtStyles.borderBox}
+        onPress={() => navigation.navigate('Upload')}>
         <View style={{ flexDirection: 'row' }}>
           <View style={govtStyles.insideBox}>
             <Text style={govtStyles.idcardIcon}>{icons.idcard}</Text>
@@ -37,14 +38,14 @@ const GovtRegisterID = ({ navigation }) => {
               Lorem Ipsum is simply dummy text of the printing
             </Text>
             <TouchableOpacity>
-            <Text style={[govtStyles.moveRight,{left:110,marginTop:-40}]}>{icons.right}</Text>
-          </TouchableOpacity>
+              <Text style={[govtStyles.moveRight, { left: 110, marginTop: -40 }]}>{icons.right}</Text>
+            </TouchableOpacity>
           </View>
-          
+
         </View>
       </Card>
       <Card
-        style={[govtStyles.borderBox,{borderWidth:1.5,borderColor:'#000000'}]}
+        style={govtStyles.borderBox}
         onPress={() => navigation.navigate('Upload')}>
         <View style={{ flexDirection: 'row' }}>
           <View style={govtStyles.insideBox}>

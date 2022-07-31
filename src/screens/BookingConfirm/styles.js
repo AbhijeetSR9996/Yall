@@ -3,38 +3,38 @@ const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     image_bg: {
-        position:'absolute'
+        position: 'absolute'
     },
     main_view: {
-        flex:1,
-        flexDirection:'column'    
+        flex: 1,
+        flexDirection: 'column'
     },
     first_view: {
-        flex:2,
-        flexDirection:'row',
-        alignItems:'flex-end',
-        justifyContent:"center",
-        backgroundColor:'transparent'
+        flex: 2,
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        justifyContent: "center",
+        backgroundColor: 'transparent'
     },
     second_view: {
-        flex:1,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:"space-evenly",
-        backgroundColor:'transparent'
+        flex: 1,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: "space-evenly",
+        backgroundColor: 'transparent'
     },
     third_view: {
-        flex:0.5,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:"space-evenly",
-        backgroundColor:'transparent'
+        flex: 0.5,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: "space-evenly",
+        backgroundColor: 'transparent'
     },
     image: {
-        width:273.98,
-        height:204.07,
+        width: 273.98,
+        height: 204.07,
     },
-    main_text: { 
+    main_text: {
         color: "#000000",
         fontSize: 30,
         fontWeight: "700",
@@ -50,15 +50,16 @@ export default StyleSheet.create({
         //width: 324,
         width: '90%',
         height: 54,
-        color:'#AAAAAA',
-        alignSelf:'center',
-        textAlign:'center',
-        lineHeight:18
+        color: '#AAAAAA',
+        alignSelf: 'center',
+        textAlign: 'center',
+        lineHeight: 18
     },
-    buttonContainer: {         
-        width: width * 0.8 ,
+    buttonContainer: {
+        width: width * 0.8,
         height: height * 0.07,
         borderWidth: 1,
+        right: '2%'
     },
     buttonView: {
         left: 10,
@@ -69,17 +70,18 @@ export default StyleSheet.create({
         height: height * 0.07,
         alignSelf: 'center',
         backgroundColor: '#DCC7E1',
-        position: 'relative', 
+        position: 'relative',
     },
     buttonText: {
-        fontWeight: '700',
+        fontWeight: '900',
         fontSize: 18,
         fontFamily: 'Bakbak one-Regular',
         color: '#000000',
         alignSelf: 'center',
         justifyContent: 'center',
-        paddingVertical: 10,
-        right: '10%',
+        //paddingVertical: 10,
+        top: '30.3%',
+        right: '30%',
     },
     buttonIcon: {
         width: width * 0.15,
@@ -91,7 +93,7 @@ export default StyleSheet.create({
         backgroundColor: '#DCC7E1',
         position: 'absolute',
         marginVertical: -1,
-        },
+    },
 
 
 

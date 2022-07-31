@@ -58,7 +58,8 @@ const Styles = StyleSheet.create({
         position: 'relative',
     },
     buttonText: {
-        fontWeight: '400',
+        //fontWeight: '400',
+        fontWeight: 'bold',
         fontSize: 18,
         //fontFamily: 'Bakbak One',
         fontFamily: 'BakbakOneRegular',

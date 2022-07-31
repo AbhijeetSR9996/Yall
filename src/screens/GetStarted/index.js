@@ -1,9 +1,11 @@
 import React from 'react';
-import { ImageBackground, View, Text, Image } from 'react-native';
+import { ImageBackground, View, Text, Image, TouchableOpacity } from 'react-native';
 import { Rectangular } from '../../component/Buttons/Rectangular/index';
+import { icons } from '../../../assets/icons/icons';
+import { height, width } from '../../services/helper';
 import Styles from "./styles";
 
-const GetStarted = () => {
+const GetStarted = ({ navigation }) => {
     return (
         <View style={Styles.main_container}>
             <ImageBackground
@@ -21,13 +23,64 @@ const GetStarted = () => {
                 </View>
                 <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-evenly', flexDirection: 'column' }}>
                     <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'flex-end' }}>
-                        <Text style={Styles.headline}>
-                            By clicking “Log in”, you agree with our Terms. learn how we process
-                            your data in our privacy policy and cokkies policy.
-                        </Text>
+                        <Text style={Styles.headline}>By clicking “Log in”, you agree with our Terms. Learn, how we process
+                            your data in our privacy policy and cokkies policy.</Text>
                     </View>
                     <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
-                        <Rectangular path="SignUp" name="Get Started" />
+                        {/* <Rectangular path="SignUp" name="Get Started" style={{ marginRight: '0%', }} /> */}
+                        <TouchableOpacity
+                            style={{
+                                top: '0%',
+                                alignSelf: 'center',
+                                width: width * 0.8,
+                                height: height * 0.07,
+                                borderWidth: 1,
+                                //alignSelf: 'center',
+                                right: '2%'
+                            }}
+                            onPress={() => { navigation.navigate('SignUp') }}>
+                            <View style={{
+                                left: 10,
+                                top: 8,
+                                width: width * 0.8,
+                                borderWidth: 1,
+                                borderRightWidth: 0,
+                                height: height * 0.07,
+                                //alignItems: 'center',
+                                alignSelf: 'center',
+                                backgroundColor: '#DCC7E1',
+                                position: 'relative',
+                            }}>
+                                <Text style={{
+                                    //fontWeight: '400',
+                                    fontWeight: '900',
+                                    fontSize: 17,
+                                    //fontFamily: 'Bakbak One',
+                                    fontFamily: 'BakbakOneRegular',
+                                    color: '#000000',
+                                    alignSelf: 'center',
+                                    justifyContent: 'center',
+                                    //paddingVertical: 10,
+                                    //paddingVertical: 13,
+                                    top: '30%',
+                                    //right: '10%',
+                                    right: '30.3%',
+                                    lineHeight: 25,
+                                    letterSpacing: -0.017
+                                }}>Get Started</Text>
+                                <View style={{
+                                    width: width * 0.15,
+                                    borderWidth: 1,
+                                    height: '104%',
+                                    alignSelf: 'flex-end',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    backgroundColor: '#DCC7E1',
+                                    position: 'absolute',
+                                    marginVertical: -1,
+                                }}>{icons.rightarrow}</View>
+                            </View>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ImageBackground>

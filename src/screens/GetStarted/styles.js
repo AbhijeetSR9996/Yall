@@ -14,14 +14,14 @@ const Styles = StyleSheet.create({
   logo_img: {
     alignSelf: 'center',
     display: 'flex',
-    //bottom: '5%'
+    bottom: '26%'
   },
   headline: {
     fontFamily: 'Inter',
     fontWeight: '400',
     fontSize: 15,
-    width: width * 0.8,
-    //width: 319,
+    //width: width * 0.8,
+    width: 319,
     alignSelf: 'center',
     textAlign: 'center',
     //letterSpacing: 0.1,

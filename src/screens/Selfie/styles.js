@@ -36,6 +36,7 @@ const Styles = StyleSheet.create({
         height: height * 0.07,
         borderWidth: 1,
         alignSelf: 'center',
+        right: '2%'
     },
     borderView: {
         left: 10,
@@ -50,7 +51,7 @@ const Styles = StyleSheet.create({
         position: 'relative',
     },
     buttonText: {
-        fontWeight: '400',
+        fontWeight: '900',
         fontSize: 18,
         //fontFamily: 'Bakbak One',
         fontFamily: 'BakbakOneRegular',
@@ -58,8 +59,9 @@ const Styles = StyleSheet.create({
         alignSelf: 'center',
         justifyContent: 'center',
         //paddingVertical: 10,
-        paddingVertical: 13,
-        right: '10%',
+        //paddingVertical: 13,
+        top: '30.3%',
+        right: '25%',
         //right: '20%',
         lineHeight: 25,
         letterSpacing: -0.017

@@ -96,11 +96,19 @@ const Selfie = ({ navigation }) => {
                     </View>
                 </TouchableOpacity>
 
-                <Rectangular
+                <TouchableOpacity
+                    onPress={() => { navigation.navigate('UserName') }}
+                    style={[Styles.button_container, { top: '15%' }]}>
+                    <View style={Styles.borderView}>
+                        <Text style={[Styles.buttonText, { right: '30%' }]}>Continue</Text>
+                        <View style={Styles.borderView1}>{icons.rightarrow}</View>
+                    </View>
+                </TouchableOpacity>
+                {/* <Rectangular
                     path="UserName"
                     style={Styles.button}
                     name="Continue"
-                />
+                /> */}
             </ImageBackground>
         </View>
     );

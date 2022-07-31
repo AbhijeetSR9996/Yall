@@ -1,10 +1,12 @@
 import React from 'react';
-import { View, Text, TextInput, Dimensions, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, Dimensions, TouchableOpacity, Pressable } from 'react-native';
 import { signupStyles } from './signupStyles';
 import { Dropdown } from 'react-native-element-dropdown';
 import { CircularButton } from '../../component/Buttons/circular';
 import { icons } from '../../../assets/icons/icons';
 import MobileNumber from '../../component/MobileNumber/index';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+
 
 const { height } = Dimensions.get('window');
 
@@ -23,7 +25,7 @@ const SignedInMobile = ({ navigation }) => {
             <MobileNumber />
 
             <View>
-                <TouchableOpacity onPress={() => navigation.navigate('MobileCode1')}>
+                {/* <Pressable onPress={() => navigation.navigate('MobileCode1')}>
                     <Text
                         style={{
                             right: 20,
@@ -36,7 +38,12 @@ const SignedInMobile = ({ navigation }) => {
                         }}>
                         {icons.rightcirclearrow}
                     </Text>
-                </TouchableOpacity>
+                </Pressable> */}
+
+                <CircularButton path="MobileCode1" />
+
+
+
             </View>
         </View>
     );

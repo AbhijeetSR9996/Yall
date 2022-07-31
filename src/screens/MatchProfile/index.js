@@ -46,6 +46,7 @@ const MatchProfile = ({ navigation }) => {
             width: width * 0.8,
             height: height * 0.07,
             borderWidth: 1,
+            right: '2%'
           }}
           onPress={() => navigation.navigate('Match')}>
           <View style={{
@@ -60,14 +61,15 @@ const MatchProfile = ({ navigation }) => {
             position: 'relative',
           }}>
             <Text style={{
-              fontWeight: '400',
+              fontWeight: '900',
               fontSize: 18,
               fontFamily: 'BakbakOneRegular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
-              paddingVertical: 10,
-              right: '10%',
+              //paddingVertical: 10,
+              top: '30.3%',
+              right: '30%',
               //right: '30%',
               lineHeight: 25,
               letterSpacing: -0.017
@@ -128,7 +130,7 @@ const MatchProfile = ({ navigation }) => {
         </TouchableOpacity> */}
 
         <TouchableOpacity>
-          <Text style={{ alignSelf: 'center', left: '-5%', fontSize: 15, fontFamily: 'Inter-Regular', fontWeight: '500', lineHeight: 18, letterSpacing: -0.017, color: '#000000' }}>Cancel</Text>
+          <Text style={{ alignSelf: 'center', left: '-27%', fontSize: 15, fontFamily: 'Inter-Regular', fontWeight: '500', lineHeight: 18, letterSpacing: -0.017, color: '#000000' }}>Cancel</Text>
         </TouchableOpacity>
 
       </View>

@@ -13,6 +13,7 @@ import {
 import { styles } from './styles';
 import { imageicon, icons } from '../../../assets/icons/icons';
 import { Rectangular } from '../../component/Buttons/Rectangular';
+import { height, width } from '../../services/helper';
 
 const Gender2 = ({ navigation }) => {
   return (
@@ -677,7 +678,7 @@ const Gender2 = ({ navigation }) => {
           </Text>
         </View>
       </View>
-      <Rectangular
+      {/* <Rectangular
         path="Gender3"
         style={{
           width: 10,
@@ -686,7 +687,60 @@ const Gender2 = ({ navigation }) => {
           top: '90%',
         }}
         name="Continue [2/4]"
-      />
+      /> */}
+      <TouchableOpacity
+        style={{
+          top: '-1%',
+          alignSelf: 'center',
+          width: width * 0.8,
+          height: height * 0.07,
+          borderWidth: 1,
+          //alignSelf: 'center',
+          right: '2%'
+        }}
+        onPress={() => { navigation.navigate('Gender3') }}>
+        <View style={{
+          left: 10,
+          top: 8,
+          width: width * 0.8,
+          borderWidth: 1,
+          borderRightWidth: 0,
+          height: height * 0.07,
+          //alignItems: 'center',
+          alignSelf: 'center',
+          backgroundColor: '#DCC7E1',
+          position: 'relative',
+        }}>
+          <Text style={{
+            //fontWeight: '400',
+            fontWeight: '900',
+            fontSize: 17,
+            //fontFamily: 'Bakbak One',
+            fontFamily: 'BakbakOneRegular',
+            color: '#000000',
+            alignSelf: 'center',
+            justifyContent: 'center',
+            //paddingVertical: 10,
+            //paddingVertical: 13,
+            top: '30.3%',
+            right: '25%',
+            //right: '20%',
+            lineHeight: 25,
+            letterSpacing: -0.017
+          }}>Continue [2/4]</Text>
+          <View style={{
+            width: width * 0.15,
+            borderWidth: 1,
+            height: '104%',
+            alignSelf: 'flex-end',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: '#DCC7E1',
+            position: 'absolute',
+            marginVertical: -1,
+          }}>{icons.rightarrow}</View>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };

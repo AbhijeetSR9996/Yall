@@ -29,7 +29,7 @@ const SignUpMobile = ({ navigation }) => {
             style={{
               alignSelf: 'center',
               display: 'flex',
-              top: '10%'
+              top: '34%'
             }}
           />
         </View>
@@ -38,10 +38,12 @@ const SignUpMobile = ({ navigation }) => {
             flex: 0.7, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
             justifyContent: 'center', flexDirection: 'column'
           }}>
-            <Text style={[signupStyles.headline, { top: '40%' }]}>
+            {/* <Text style={[signupStyles.headline, { top: '40%' }]}>
               By clicking “Log in”, you agree with our Terms. learn how we process
               your data in our privacy policy and cokkies policy.
-            </Text>
+            </Text> */}
+            <Text style={[signupStyles.headline, { top: '40%' }]}>By clicking “Log in”, you agree with our Terms. Learn, how we process
+              your data in our privacy policy and cokkies policy.</Text>
           </View>
           <View style={{
             flex: 2, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
@@ -50,12 +52,13 @@ const SignUpMobile = ({ navigation }) => {
             {/* <Rectangular path="SignedUpMobile" name="Sign Up With Mobile Number" style={{ top: '15%', marginLeft: '0%' }} /> */}
             <TouchableOpacity
               style={{
-                top: '10%',
+                top: '13%',
                 alignSelf: 'center',
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
-                alignSelf: 'center',
+                //alignSelf: 'center',
+                right: '2%'
               }}
               onPress={() => { navigation.navigate('SignedUpMobile') }}>
               <View style={{
@@ -71,7 +74,8 @@ const SignUpMobile = ({ navigation }) => {
                 position: 'relative',
               }}>
                 <Text style={{
-                  fontWeight: '400',
+                  //fontWeight: '400',
+                  fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
                   fontFamily: 'BakbakOneRegular',
@@ -79,7 +83,8 @@ const SignUpMobile = ({ navigation }) => {
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
-                  paddingVertical: 13,
+                  //paddingVertical: 13,
+                  top: '30.3%',
                   right: '10%',
                   //right: '20%',
                   lineHeight: 25,

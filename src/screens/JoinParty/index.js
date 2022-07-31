@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Im
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { StyleSheet, Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
+import { width, height } from '../../services/helper';
 import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
@@ -51,12 +51,15 @@ const JoinParty = ({ navigation }) => {
             </View>
             <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'flex-start' }}>
 
-                {/* <TouchableOpacity
+                <TouchableOpacity
                     style={[
                         {
-                            top: '35%', alignSelf: 'center', width: width * 0.8,
+                            top: '35%',
+                            alignSelf: 'center',
+                            width: width * 0.8,
                             height: height * 0.07,
                             borderWidth: 1,
+                            right: '2%'
                         },
                     ]}
                     onPress={() => { navigation.navigate('WednesdayLoveNight') }}>
@@ -73,14 +76,15 @@ const JoinParty = ({ navigation }) => {
                         position: 'relative',
                     }}>
                         <Text style={{
-                            fontWeight: '700',
+                            fontWeight: '900',
                             fontSize: 18,
-                            fontFamily: 'Bakbak one-Regular',
+                            fontFamily: 'BakbakOneRegular',
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            paddingVertical: 10,
-                            right: '10%',
+                            //paddingVertical: 10,
+                            top: '30.3%',
+                            right: '30%',
                         }}>Book Now</Text>
                         <View style={{
                             width: width * 0.15,
@@ -94,8 +98,8 @@ const JoinParty = ({ navigation }) => {
                             marginVertical: -1,
                         }}>{icons.rightarrow}</View>
                     </View>
-                </TouchableOpacity> */}
-                <Rectangular
+                </TouchableOpacity>
+                {/* <Rectangular
                     path="WednesdayLoveNight"
                     style={{
                         width: 10,
@@ -104,7 +108,7 @@ const JoinParty = ({ navigation }) => {
                         top: '40%',
                     }}
                     name="Book Now"
-                />
+                /> */}
             </View>
             <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'flex-start' }}></View>
         </View>

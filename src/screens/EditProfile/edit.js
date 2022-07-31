@@ -93,27 +93,29 @@ const Edit = ({ navigation }) => {
         <Text style={styles.moveBack}>{icons.back}</Text>
       </TouchableOpacity>
 
-      <View style={{justifyContent:'space-between',bottom:'17%',marginHorizontal:'8%',backgroundColor:'transparent',width:width ,height:height * 0.11,flexDirection:'row'}}>
-      <Text
-        style={[
-          photoStyles.addPhotoText,
-          { fontSize: 18, fontFamily:'Bakbak One', fontWeight:'400', letterSpacing:-0.017, },
-        ]}>
-        Profile
-      </Text>
-      <TouchableOpacity onPress={()=> {navigation.navigate('ProfileDisplay')}}>
+      <View style={{ justifyContent: 'space-between', bottom: '17%', marginHorizontal: '8%', backgroundColor: 'transparent', width: width, height: height * 0.11, flexDirection: 'row' }}>
         <Text
           style={[
             photoStyles.addPhotoText,
-            { fontSize: 18, fontFamily:'Bakbak One', fontWeight:'400', letterSpacing:-0.017, left:'34%'},
+            { fontSize: 18, fontFamily: 'Bakbak One', fontWeight: '400', letterSpacing: -0.017, },
           ]}>
-          Save
+          Profile
         </Text>
-      </TouchableOpacity>
+        <TouchableOpacity onPress={() => { navigation.navigate('MainBottomNavigation') }}>
+          <Text
+            style={[
+              photoStyles.addPhotoText,
+              { fontSize: 18, fontFamily: 'Bakbak One', fontWeight: '400', letterSpacing: -0.017, left: '34%' },
+            ]}>
+            Save
+          </Text>
+        </TouchableOpacity>
       </View>
 
-      <View style={{borderBottomColor:'black',
-        borderBottomWidth:0.5,bottom:'10%'}}/>
+      <View style={{
+        borderBottomColor: 'black',
+        borderBottomWidth: 0.5, bottom: '10%'
+      }} />
       <Card
         style={[
           govtStyles.borderBox,
@@ -163,7 +165,7 @@ const Edit = ({ navigation }) => {
               height: 20,
               width: 30,
               //left: '0%',
-              alignSelf:'center'
+              alignSelf: 'center'
             },
           ]}
         />
@@ -189,7 +191,7 @@ const Edit = ({ navigation }) => {
           placeholder="John Doe"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -211,7 +213,7 @@ const Edit = ({ navigation }) => {
           placeholder="Doe"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -233,7 +235,7 @@ const Edit = ({ navigation }) => {
           placeholder="+8511 6654 5265"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -255,7 +257,7 @@ const Edit = ({ navigation }) => {
           placeholder="Male"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -277,7 +279,7 @@ const Edit = ({ navigation }) => {
           placeholder="01-01-2001"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1,{fontFamily:'Bakbak One',fontWeight:'400',fontSize:18,color:'#B4B4B4'}]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
     </View>
   );

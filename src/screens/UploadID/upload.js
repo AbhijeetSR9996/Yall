@@ -14,10 +14,11 @@ import { Rectangular } from '../../component/Buttons/Rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
 //import { splashStyles } from '../../screens/splashScreen/splashStyles';
 import Styles from '../GetStarted/styles';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import { icons } from '../../../assets/icons/icons';
 import styles from './styles';
+import { height, width } from '../../services/helper';
 
-const { width, height } = Dimensions.get('window');
 
 
 const Upload = ({ navigation }) => {
@@ -182,7 +183,7 @@ const Upload = ({ navigation }) => {
                   justifyContent: 'center',
                   //paddingVertical: 10,
                   paddingVertical: 13,
-                  right: '10%',
+                  right: '15%',
                   lineHeight: 25,
                   letterSpacing: -0.017
                 }}>Upload File</Text>
@@ -236,18 +237,130 @@ const Upload = ({ navigation }) => {
         }}
       />
 
-      <Rectangular
+      {/* <Rectangular
         path="Selfie"
         style={{
           width: 10,
           position: 'absolute',
           alignSelf: 'center',
           top: '80%',
+          //top: '13%',
         }}
         name="Verify & Continue"
-      />
-      <Rectangular
-        path="Upload"
+      /> */}
+      <TouchableOpacity
+        style={{
+          top: '0%',
+          alignSelf: 'center',
+          width: width * 0.8,
+          height: height * 0.07,
+          borderWidth: 1,
+          //alignSelf: 'center',
+          right: '2%',
+          //top: '-20%',
+        }}
+        onPress={() => { navigation.navigate('Selfie') }}>
+        <View style={{
+          left: 10,
+          top: 8,
+          width: width * 0.8,
+          borderWidth: 1,
+          borderRightWidth: 0,
+          height: height * 0.07,
+          //alignItems: 'center',
+          alignSelf: 'center',
+          backgroundColor: '#DCC7E1',
+          position: 'relative',
+        }}>
+          <Text style={{
+            //fontWeight: '400',
+            fontWeight: '900',
+            fontSize: 17,
+            //fontFamily: 'Bakbak One',
+            fontFamily: 'BakbakOneRegular',
+            color: '#000000',
+            alignSelf: 'center',
+            justifyContent: 'center',
+            //paddingVertical: 10,
+            //paddingVertical: 13,
+            top: '33%',
+            right: '21%',
+            //right: '20%',
+            lineHeight: 25,
+            letterSpacing: -0.017
+          }}>Verify & Continue</Text>
+          <View style={{
+            width: width * 0.15,
+            borderWidth: 1,
+            height: '104%',
+            alignSelf: 'flex-end',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: '#DCC7E1',
+            position: 'absolute',
+            marginVertical: -1,
+          }}>{icons.rightarrow}</View>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={[
+          {
+            alignSelf: 'center', width: width * 0.8,
+            height: height * 0.07,
+            borderWidth: 1,
+            //bottom: '20%',
+            //bottom: '25%',
+            right: '2%',
+            top: '3%',
+          },
+        ]}
+        onPress={() => { navigation.navigate('GovtRegisterID') }}>
+        <View style={{
+          left: 10,
+          top: 8,
+          width: width * 0.8,
+          borderWidth: 1,
+          borderColor: '#FFFFFF',
+          borderRightWidth: 0,
+          height: height * 0.07,
+          //alignItems: 'center',
+          alignSelf: 'center',
+          //backgroundColor: '#DCC7E1',
+          backgroundColor: '#000000',
+          position: 'relative',
+        }}>
+          <Text style={{
+            fontWeight: '900',
+            fontSize: 18,
+            fontFamily: 'BakbakOneRegular',
+            //color: '#000000',
+            color: '#FFFFFF',
+            alignSelf: 'center',
+            justifyContent: 'center',
+            //paddingVertical: 10,
+            //right: '10%',
+            top: '33%',
+            right: '36%',
+            lineHeight: 25,
+            letterSpacing: -0.017
+          }}>Back</Text>
+          <View style={{
+            width: width * 0.15,
+            borderWidth: 1,
+            borderColor: '#FFFFFF',
+            height: '104%',
+            alignSelf: 'flex-end',
+            alignItems: 'center',
+            justifyContent: 'center',
+            //backgroundColor: '#DCC7E1',
+            backgroundColor: '#000000',
+            position: 'absolute',
+            marginVertical: -1,
+          }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
+        </View>
+      </TouchableOpacity>
+      {/* <Rectangular
+        path="GovtRegisterID"
         style={{
           width: 10,
           position: 'absolute',
@@ -255,7 +368,7 @@ const Upload = ({ navigation }) => {
           top: '90%',
         }}
         name="Back"
-      />
+      /> */}
     </View>
   );
 };

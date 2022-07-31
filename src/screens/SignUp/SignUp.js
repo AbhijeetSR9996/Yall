@@ -28,7 +28,7 @@ const SignUp = ({ navigation }) => {
             style={{
               alignSelf: 'center',
               display: 'flex',
-              top: '10%'
+              top: '70%'
             }}
           />
         </View>
@@ -37,10 +37,12 @@ const SignUp = ({ navigation }) => {
             flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
             justifyContent: 'flex-end', flexDirection: 'column'
           }}>
-            <Text style={[signupStyles.headline]}>
+            {/* <Text style={[signupStyles.headline]}>
               By clicking “Log in”, you agree with our Terms. learn how we process
               your data in our privacy policy and cokkies policy.
-            </Text>
+            </Text> */}
+            <Text style={[signupStyles.headline, { top: '55%', }]}>By clicking “Log in”, you agree with our Terms. Learn, how we process
+              your data in our privacy policy and cokkies policy.</Text>
           </View>
           <View style={{
             flex: 2.4, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
@@ -53,12 +55,12 @@ const SignUp = ({ navigation }) => {
 
             <TouchableOpacity
               style={{
-                bottom: '4%',
-                alignSelf: 'center',
+                bottom: '-10%',
+                //alignSelf: 'center',
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
-                alignSelf: 'center',
+                right: '2%'
               }}
               onPress={() => { navigation.navigate('SignInMobile') }}>
               <View style={{
@@ -74,7 +76,8 @@ const SignUp = ({ navigation }) => {
                 position: 'relative',
               }}>
                 <Text style={{
-                  fontWeight: '400',
+                  //fontWeight: '400',
+                  fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
                   fontFamily: 'BakbakOneRegular',
@@ -82,7 +85,8 @@ const SignUp = ({ navigation }) => {
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
-                  paddingVertical: 13,
+                  //paddingVertical: 13,
+                  top: '30.3%',
                   right: '35%',
                   //right: '20%',
                   lineHeight: 25,
@@ -103,12 +107,12 @@ const SignUp = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity
               style={{
-                bottom: '12%',
-                alignSelf: 'center',
+                bottom: '-1%',
+                //alignSelf: 'center',
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
-                alignSelf: 'center',
+                right: '2%'
               }}
               onPress={() => { navigation.navigate('SignUpMobile') }}>
               <View style={{
@@ -124,7 +128,8 @@ const SignUp = ({ navigation }) => {
                 position: 'relative',
               }}>
                 <Text style={{
-                  fontWeight: '400',
+                  //fontWeight: '400',
+                  fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
                   fontFamily: 'BakbakOneRegular',
@@ -132,7 +137,8 @@ const SignUp = ({ navigation }) => {
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
-                  paddingVertical: 13,
+                  //paddingVertical: 13,
+                  top: '30.3%',
                   right: '35%',
                   //right: '20%',
                   lineHeight: 25,
@@ -153,12 +159,12 @@ const SignUp = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity
               style={{
-                bottom: '20%',
-                alignSelf: 'center',
+                bottom: '8%',
+                //alignSelf: 'center',
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
-                alignSelf: 'center',
+                right: '2%'
               }}
               onPress={() => { navigation.navigate('SignEmail') }}>
               <View style={{
@@ -174,7 +180,8 @@ const SignUp = ({ navigation }) => {
                 position: 'relative',
               }}>
                 <Text style={{
-                  fontWeight: '400',
+                  //fontWeight: '400',
+                  fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
                   fontFamily: 'BakbakOneRegular',
@@ -182,9 +189,10 @@ const SignUp = ({ navigation }) => {
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
-                  paddingVertical: 13,
-                  right: '22%',
-                  //right: '20%',
+                  //paddingVertical: 13,
+                  top: '30.3%',
+                  //right: '40%',
+                  right: '23%',
                   lineHeight: 25,
                   letterSpacing: -0.017
                 }}>Sign In With Email</Text>

@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Im
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { StyleSheet, Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
+import { width, height } from '../../services/helper';
 import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
@@ -376,6 +376,7 @@ const SendTicket = ({ navigation }) => {
                                             borderWidth: 1,
                                             //bottom: '20%',
                                             bottom: '28%',
+                                            right: '2%'
                                         },
                                     ]}>
                                     <View style={{
@@ -389,16 +390,18 @@ const SendTicket = ({ navigation }) => {
                                         alignSelf: 'center',
                                         backgroundColor: '#DCC7E1',
                                         position: 'relative',
+
                                     }}>
                                         <Text style={{
-                                            fontWeight: '700',
+                                            fontWeight: '900',
                                             fontSize: 18,
-                                            fontFamily: 'Bakbak one-Regular',
+                                            fontFamily: 'BakbakOneRegular',
                                             color: '#000000',
                                             alignSelf: 'center',
                                             justifyContent: 'center',
-                                            paddingVertical: 10,
-                                            right: '10%',
+                                            //paddingVertical: 10,
+                                            top: '30.3%',
+                                            right: '35%',
                                         }}>Done</Text>
                                         <View style={{
                                             width: width * 0.15,

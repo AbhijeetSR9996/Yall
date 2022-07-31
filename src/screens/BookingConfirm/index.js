@@ -4,8 +4,9 @@ import styles from './styles';
 import { Rectangular } from '../../component/Buttons/rectangular';
 import { StyleSheet, Dimensions } from 'react-native';
 import { icons } from '../../../assets/icons/icons';
+import { height, width } from '../../services/helper';
 
-const { width, height } = Dimensions.get('window');
+
 
 const BookingConfirm = ({ navigation }) => {
 
@@ -36,7 +37,7 @@ const BookingConfirm = ({ navigation }) => {
                     style={styles.buttonContainer}
                     onPress={() => navigation.navigate('PaymentMethods')}>
                     <View style={styles.buttonView}>
-                        <Text style={styles.buttonText}>Back Home</Text>
+                        <Text style={[styles.buttonText, { right: '28%' }]}>Back Home</Text>
                         <View style={styles.buttonIcon}>{icons.rightarrow}</View>
                     </View>
                 </TouchableOpacity>
