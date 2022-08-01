@@ -3,35 +3,35 @@ const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     image_bg: {
-        position:'absolute'
+        position: 'absolute'
     },
     main_view: {
-        flex:1,
-        flexDirection:'column'    
+        flex: 1,
+        flexDirection: 'column'
     },
     first_view: {
         //flex:1,
-        flex:0.5,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:'flex-end',
-        backgroundColor:'transparent'
+        flex: 0.5,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+        backgroundColor: 'transparent'
     },
     second_view: {
-        flex:4,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:"center",
-        backgroundColor:'transparent',
-        
+        flex: 4,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: "center",
+        backgroundColor: 'transparent',
+
     },
     third_view: {
-        flex:1.5,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:"center",
-        backgroundColor:'transparent',
-        
+        flex: 1.5,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: "center",
+        backgroundColor: 'transparent',
+
     },
     card_view: {
         width: '90%',
@@ -60,60 +60,60 @@ export default StyleSheet.create({
         //marginTop:'-0.5%',
     },
     view1: {
-        flex:1,
-        backgroundColor:'transparent',
-        alignItems:'stretch',
-        justifyContent:'center',
-        flexDirection:'row'
+        flex: 1,
+        backgroundColor: 'transparent',
+        alignItems: 'stretch',
+        justifyContent: 'center',
+        flexDirection: 'row'
     },
     view2: {
-        flex:1,
-        backgroundColor:'transparent',
-        alignItems:'center',
-        flexDirection:'column',
-        justifyContent:'space-evenly'
+        flex: 1,
+        backgroundColor: 'transparent',
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'space-evenly'
     },
     view3: {
-        flex:1,
-        backgroundColor:'transparent',
-        alignItems:'stretch',
-        flexDirection:'column'
+        flex: 1,
+        backgroundColor: 'transparent',
+        alignItems: 'stretch',
+        flexDirection: 'column'
     },
     view4: {
-        flex:1,
-        backgroundColor:'transparent',
-        flexDirection:'column',
-        justifyContent:'center'
+        flex: 1,
+        backgroundColor: 'transparent',
+        flexDirection: 'column',
+        justifyContent: 'center'
     },
     image: {
         marginVertical: '5%',
-        width:300,
-        borderRadius:20
+        width: 300,
+        borderRadius: 20
     },
-    image2: { 
+    image2: {
         //width: 326,
-        width: 306, 
+        width: 306,
         //width: '90%',
-        height: 47, 
+        height: 47,
         marginVertical: '7%',
-        marginHorizontal:'7%',
+        marginHorizontal: '7%',
         //margin:'17%' 
     },
-    main_text: { 
-        fontFamily: "Bakbak One",
+    main_text: {
+        fontFamily: "BakbakOne-Regular",
         color: "#000000",
         fontSize: 25,
-        fontWeight: "400",
+        //fontWeight: "400",
         //alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 35,
-        bottom:'3%'
+        bottom: '3%'
     },
     desc_text: {
-        fontFamily: "Bakbak One",
+        fontFamily: 'BakbakOne-Regular',
         color: "#000000",
         fontSize: 20,
-        fontWeight: "400",
+        //fontWeight: "400",
         alignSelf: 'flex-start',
         letterSpacing: -0.017,
         lineHeight: 28,
@@ -122,7 +122,7 @@ export default StyleSheet.create({
         fontFamily: "Inter",
         color: "#000000",
         fontSize: 20,
-        fontWeight: "500",
+        //fontWeight: "500",
         alignSelf: 'flex-start',
         letterSpacing: -0.017,
         lineHeight: 24,
@@ -131,50 +131,50 @@ export default StyleSheet.create({
         fontFamily: "Inter",
         color: "#989898",
         fontSize: 15,
-        fontWeight: "400",
+        //fontWeight: "400",
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 18,
         //paddingLeft:'5%',
-        paddingLeft:'0%',
+        paddingLeft: '0%',
     },
     text2a: {
         fontFamily: "Inter",
         color: "#989898",
         fontSize: 15,
-        fontWeight: "400",
+        //fontWeight: "400",
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 18,
         //paddingLeft:'3%',
-        paddingLeft:'0%',
-        bottom:'8%',
+        paddingLeft: '0%',
+        bottom: '8%',
     },
     text3: {
         fontFamily: "Inter",
         color: "#000000",
         fontSize: 20,
-        fontWeight: "500",
+        //fontWeight: "500",
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 24,
-        paddingLeft:'35%',
+        paddingLeft: '35%',
     },
     text3a: {
         fontFamily: "Inter",
         color: "#000000",
         fontSize: 20,
-        fontWeight: "500",
+        //fontWeight: "500",
         alignSelf: 'flex-end',
         letterSpacing: -0.017,
         lineHeight: 24,
         //paddingLeft:'5%',
         //paddingLeft:'35%',
-        //left: '6%',
-        bottom:'6%',
+        left: '4%',
+        bottom: '6%',
     },
-    buttonContainer: {         
-        width: width * 0.8 ,
+    buttonContainer: {
+        width: width * 0.8,
         height: height * 0.07,
         borderWidth: 1,
     },
@@ -187,12 +187,12 @@ export default StyleSheet.create({
         height: height * 0.07,
         alignSelf: 'center',
         backgroundColor: '#DCC7E1',
-        position: 'relative', 
+        position: 'relative',
     },
     buttonText: {
-        fontWeight: '700',
+        //fontWeight: '700',
         fontSize: 18,
-        fontFamily: 'Bakbak one-Regular',
+        fontFamily: 'BakbakOne-Regular',
         color: '#000000',
         alignSelf: 'center',
         justifyContent: 'center',
@@ -209,7 +209,7 @@ export default StyleSheet.create({
         backgroundColor: '#DCC7E1',
         position: 'absolute',
         marginVertical: -1,
-        },
+    },
 
 
 

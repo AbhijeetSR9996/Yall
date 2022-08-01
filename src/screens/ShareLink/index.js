@@ -16,7 +16,7 @@ const ShareLink = ({ navigation }) => {
         <SafeAreaView >
             <ImageBackground style={styles.image_background} source={require('../../../assets/images/wednesdaynight-share.png')}>
                 <View style={styles.main_view}>
-                    <View style={{marginRight:'95%'}}>
+                    <View style={{ marginRight: '95%' }}>
                         <TouchableOpacity onPress={() => navigation.goBack()}>
                             <Icon name="angle-left" style={styles.left_arrow} />
                         </TouchableOpacity>
@@ -30,7 +30,7 @@ const ShareLink = ({ navigation }) => {
                             borderTopRightRadius: 30,
                         }}>
                             <View style={{ flex: 0.15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', marginTop: '-75%' }}>
-                              
+
 
                                 <Card style={{
                                     width: '90%',
@@ -50,6 +50,7 @@ const ShareLink = ({ navigation }) => {
                                         placeholderTextColor='#000000'
                                         style={{
                                             flex: 1,
+                                            fontFamily: 'Inter',
                                             fontSize: 15,
                                             color: '#000000', left: '13%', bottom: '15%'
                                         }} />
@@ -65,7 +66,7 @@ const ShareLink = ({ navigation }) => {
                                         <TouchableOpacity >
                                             <Image source={require('../../../assets/images/whatsapp.png')} style={{ left: '5%', }} />
                                         </TouchableOpacity>
-                                        <Text style={{ left: '4%',color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Whatsapp</Text>
+                                        <Text style={{ left: '4%', color: '#A9A9A9', fontWeight: '400', fontSize: 12, fontFamily: 'Inter', lineHeight: 15 }}> Whatsapp</Text>
                                     </View>
                                     <View style={{ left: '75%' }}>
                                         <TouchableOpacity >

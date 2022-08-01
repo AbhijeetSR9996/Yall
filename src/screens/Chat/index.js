@@ -92,8 +92,8 @@ const Chat = ({ navigation }) => {
           <TouchableOpacity>
             <Text style={{
               color: '#000000',
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 15,
               lineHeight: 21,
               letterSpacing: -0.017,
@@ -118,52 +118,52 @@ const Chat = ({ navigation }) => {
         </View>
         <View style={{ flex: 0.08, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
-          <ImageBackground
-            source={require('../../../assets/images/buttonbg2.png')}
-            style={[{
-              width: 65, 
-              height: 40, 
-              marginLeft: '5%'
-            }]}
-            imageStyle={{
-              borderTopLeftRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 20,
-              borderBottomLeftRadius: 2,
-            }}
+            <ImageBackground
+              source={require('../../../assets/images/buttonbg2.png')}
+              style={[{
+                width: 65,
+                height: 40,
+                marginLeft: '5%'
+              }]}
+              imageStyle={{
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+                borderBottomRightRadius: 20,
+                borderBottomLeftRadius: 2,
+              }}
             >
-            <TouchableOpacity   
-            style={{
-              fontSize: 15,
-              color: '#000000',
-              backgroundColor:'transparent',
-              //top: '60%',
-              //left: '25%',
-              fontFamily: 'Inter',
-              fontWeight: '400',
-              letterSpacing: -0.017,
-              lineHeight: 18,
-              width: 65, 
-              height: 40,
-              borderTopLeftRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 20,
-              borderBottomLeftRadius: 2,
-              alignItems:'center',
-              justifyContent:'center'
-              }}>
-              <Text style={{
-                fontSize: 15,
-                color: '#000000',
-                //top: '60%',
-                //left: '25%',
-                fontFamily: 'Inter',
-                fontWeight: '400',
-                letterSpacing: -0.017,
-                lineHeight: 18
-              }}> Hey </Text>
-            </TouchableOpacity>
-          </ImageBackground>
+              <TouchableOpacity
+                style={{
+                  fontSize: 15,
+                  color: '#000000',
+                  backgroundColor: 'transparent',
+                  //top: '60%',
+                  //left: '25%',
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                  letterSpacing: -0.017,
+                  lineHeight: 18,
+                  width: 65,
+                  height: 40,
+                  borderTopLeftRadius: 20,
+                  borderTopRightRadius: 20,
+                  borderBottomRightRadius: 20,
+                  borderBottomLeftRadius: 2,
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                <Text style={{
+                  fontSize: 15,
+                  color: '#000000',
+                  //top: '60%',
+                  //left: '25%',
+                  fontFamily: 'Inter',
+                  //fontWeight: '400',
+                  letterSpacing: -0.017,
+                  lineHeight: 18
+                }}> Hey </Text>
+              </TouchableOpacity>
+            </ImageBackground>
           </TouchableOpacity>
         </View>
         <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
@@ -171,103 +171,103 @@ const Chat = ({ navigation }) => {
         </View>
         <View style={{ flex: 0.08, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
-          <ImageBackground
-            source={require('../../../assets/images/buttonbg.png')}
-            style={[{
-              width: 65, 
-              height: 40, 
-              marginRight: '5%'
-            }]}
-            imageStyle={{
-              borderTopLeftRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 2,
-              borderBottomLeftRadius: 20,
-            }}
+            <ImageBackground
+              source={require('../../../assets/images/buttonbg.png')}
+              style={[{
+                width: 65,
+                height: 40,
+                marginRight: '5%'
+              }]}
+              imageStyle={{
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+                borderBottomRightRadius: 2,
+                borderBottomLeftRadius: 20,
+              }}
             >
-            <TouchableOpacity   
-            style={{
-              fontSize: 15,
-              color: '#000000',
-              backgroundColor:'transparent',
-              //top: '60%',
-              //left: '25%',
-              fontFamily: 'Inter',
-              fontWeight: '400',
-              letterSpacing: -0.017,
-              lineHeight: 18,
-              width: 65, 
-              height: 40,
-              borderTopLeftRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 2,
-              borderBottomLeftRadius: 20,
-              alignItems:'center',
-              justifyContent:'center'
-              }}>
-              <Text style={{
-                fontSize: 15,
-                color: '#000000',
-                //top: '60%',
-                //left: '25%',
-                fontFamily: 'Inter',
-                fontWeight: '400',
-                letterSpacing: -0.017,
-                lineHeight: 18
-              }}> Hey </Text>
-            </TouchableOpacity>
-          </ImageBackground>
+              <TouchableOpacity
+                style={{
+                  fontSize: 15,
+                  color: '#000000',
+                  backgroundColor: 'transparent',
+                  //top: '60%',
+                  //left: '25%',
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                  letterSpacing: -0.017,
+                  lineHeight: 18,
+                  width: 65,
+                  height: 40,
+                  borderTopLeftRadius: 20,
+                  borderTopRightRadius: 20,
+                  borderBottomRightRadius: 2,
+                  borderBottomLeftRadius: 20,
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                <Text style={{
+                  fontSize: 15,
+                  color: '#000000',
+                  //top: '60%',
+                  //left: '25%',
+                  fontFamily: 'Inter',
+                  //fontWeight: '400',
+                  letterSpacing: -0.017,
+                  lineHeight: 18
+                }}> Hey </Text>
+              </TouchableOpacity>
+            </ImageBackground>
           </TouchableOpacity>
         </View>
 
         <View style={{ flex: 0.7, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
-          <ImageBackground
-            source={require('../../../assets/images/buttonbg3.png')}
-            style={[{
-              width: 89, 
-              height: 40, 
-              marginLeft: '5%'
-            }]}
-            imageStyle={{
-              borderTopLeftRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 20,
-              borderBottomLeftRadius: 2,
-            }}
+            <ImageBackground
+              source={require('../../../assets/images/buttonbg3.png')}
+              style={[{
+                width: 89,
+                height: 40,
+                marginLeft: '5%'
+              }]}
+              imageStyle={{
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+                borderBottomRightRadius: 20,
+                borderBottomLeftRadius: 2,
+              }}
             >
-            <TouchableOpacity   
-            style={{
-              fontSize: 15,
-              color: '#000000',
-              backgroundColor:'transparent',
-              //top: '60%',
-              //left: '25%',
-              fontFamily: 'Inter',
-              fontWeight: '400',
-              letterSpacing: -0.017,
-              lineHeight: 18,
-              width: 89, 
-              height: 40,
-              borderTopLeftRadius: 20,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 20,
-              borderBottomLeftRadius: 2,
-              alignItems:'center',
-              justifyContent:'center'
-              }}>
-              <Text style={{
-                fontSize: 15,
-                color: '#000000',
-                //top: '60%',
-                //left: '25%',
-                fontFamily: 'Inter',
-                fontWeight: '400',
-                letterSpacing: -0.017,
-                lineHeight: 18
-              }}> Djadsahk, </Text>
-            </TouchableOpacity>
-          </ImageBackground>
+              <TouchableOpacity
+                style={{
+                  fontSize: 15,
+                  color: '#000000',
+                  backgroundColor: 'transparent',
+                  //top: '60%',
+                  //left: '25%',
+                  fontFamily: 'Inter',
+                  fontWeight: '400',
+                  letterSpacing: -0.017,
+                  lineHeight: 18,
+                  width: 89,
+                  height: 40,
+                  borderTopLeftRadius: 20,
+                  borderTopRightRadius: 20,
+                  borderBottomRightRadius: 20,
+                  borderBottomLeftRadius: 2,
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                <Text style={{
+                  fontSize: 15,
+                  color: '#000000',
+                  //top: '60%',
+                  //left: '25%',
+                  fontFamily: 'Inter',
+                  //fontWeight: '400',
+                  letterSpacing: -0.017,
+                  lineHeight: 18
+                }}> Djadsahk, </Text>
+              </TouchableOpacity>
+            </ImageBackground>
           </TouchableOpacity>
         </View>
         {/* <View style={{ flex: 0.1, width: width, backgroundColor: 'grey', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
@@ -304,11 +304,12 @@ const Chat = ({ navigation }) => {
                   placeholderTextColor='#BEBEBE'
                   style={{
                     //flex: 1,
-                    width:'90%',
+                    width: '90%',
                     //height:47,
+                    fontFamily: 'Inter',
                     fontSize: 20,
                     color: '#000000',
-                    fontWeight: '400',
+                    //fontWeight: '400',
                     left: '2%',
                     top: '7%',
                     lineHeight: 24,

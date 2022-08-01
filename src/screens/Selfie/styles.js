@@ -51,10 +51,10 @@ const Styles = StyleSheet.create({
         position: 'relative',
     },
     buttonText: {
-        fontWeight: '900',
+        //fontWeight: '900',
         fontSize: 18,
         //fontFamily: 'Bakbak One',
-        fontFamily: 'BakbakOneRegular',
+        fontFamily: 'BakbakOne-Regular',
         color: '#000000',
         alignSelf: 'center',
         justifyContent: 'center',

@@ -92,8 +92,8 @@ const ChatQNA2 = ({ navigation }) => {
           <TouchableOpacity>
             <Text style={{
               color: '#000000',
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 15,
               lineHeight: 21,
               letterSpacing: -0.017,
@@ -158,7 +158,7 @@ const ChatQNA2 = ({ navigation }) => {
                   //top: '60%',
                   //left: '25%',
                   fontFamily: 'Inter',
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -212,7 +212,7 @@ const ChatQNA2 = ({ navigation }) => {
                   //top: '60%',
                   //left: '25%',
                   fontFamily: 'Inter',
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -243,7 +243,7 @@ const ChatQNA2 = ({ navigation }) => {
               left: '-5%',
               textAlignVertical: 'center',
               fontFamily: 'Inter',
-              fontWeight: '400',
+              //fontWeight: '400',
               letterSpacing: -0.017,
               lineHeight: 18,
               width: 208
@@ -297,7 +297,7 @@ const ChatQNA2 = ({ navigation }) => {
                   //top: '60%',
                   //left: '25%',
                   fontFamily: 'Inter',
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -404,7 +404,7 @@ const ChatQNA2 = ({ navigation }) => {
                         height: 18,
                         //left: 73,
                         fontFamily: 'Inter',
-                        fontWeight: '400',
+                        //fontWeight: '400',
                         fontSize: 15,
                         lineHeight: 18,
                         color: '#FFFFFF',
@@ -415,8 +415,8 @@ const ChatQNA2 = ({ navigation }) => {
                         width: 184,
                         height: 50,
                         //left: 73,
-                        fontFamily: 'Bakbak One',
-                        fontWeight: '400',
+                        fontFamily: 'BakbakOne-Regular',
+                        //fontWeight: '400',
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
@@ -427,8 +427,8 @@ const ChatQNA2 = ({ navigation }) => {
                         width: 184,
                         height: 50,
                         //left: 73,
-                        fontFamily: 'Bakbak One',
-                        fontWeight: '400',
+                        fontFamily: 'BakbakOne-Regular',
+                        //fontWeight: '400',
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
@@ -477,7 +477,7 @@ const ChatQNA2 = ({ navigation }) => {
                           height: 41,
                           //left: 73,
                           fontFamily: 'Inter',
-                          fontWeight: '500',
+                          //fontWeight: '500',
                           fontSize: 15,
                           lineHeight: 18,
                           color: '#FFFFFF',
@@ -508,7 +508,7 @@ const ChatQNA2 = ({ navigation }) => {
                           height: 41,
                           //left: 73,
                           fontFamily: 'Inter',
-                          fontWeight: '500',
+                          //fontWeight: '500',
                           fontSize: 15,
                           lineHeight: 18,
                           color: '#FFFFFF',
@@ -523,208 +523,16 @@ const ChatQNA2 = ({ navigation }) => {
               </ImageBackground>
             </View>
 
-            {/* <ImageBackground
-              source={require('../../../assets/images/questionbg2.png')}
-              style={[{
-                width: '100%',
-                height: '100%',
-                marginLeft: '20%',
-                // marginRight: '-3%',
-                //alignSelf:'center',
-                paddingHorizontal: '10%',
-                //marginHorizontal:'5%'
-              }]}
-              imageStyle={{
-                borderTopLeftRadius: 20,
-                borderTopRightRadius: 20,
-                borderBottomRightRadius: 2,
-                borderBottomLeftRadius: 2,
-              }}
-            >
-              <TouchableOpacity style={{
-                flex: 1,
-                width: '100%',
-                height: '100%',
-                marginLeft: '-12.5%',
-                // marginRight: '-3%',
-                //alignSelf:'center',
-                //paddingHorizontal:'10%',
-                borderTopLeftRadius: 20,
-                borderTopRightRadius: 20,
-                borderBottomRightRadius: 2,
-                borderBottomLeftRadius: 2,
-                backgroundColor: 'transparent',
-                alignItems: 'stretch',
-                justifyContent: 'center',
-                flexDirection: 'column'
-              }}
-              onPress={()=>{navigation.navigate('Chat')}}>
-              <View style={{
-                flex: 1,
-                width: '100%',
-                height: '100%',
-                //marginLeft: '-12.5%',
-                // marginRight: '-3%',
-                //alignSelf:'center',
-                //paddingHorizontal:'10%',
-                borderTopLeftRadius: 20,
-                borderTopRightRadius: 20,
-                borderBottomRightRadius: 2,
-                borderBottomLeftRadius: 2,
-                backgroundColor: 'transparent',
-                alignItems: 'stretch',
-                justifyContent: 'center',
-                flexDirection: 'column'
-              }}>
-                <View style={{
-                  flex: 1.5,
-                  // width: '120%', 
-                  // height: '100%', 
-                  //marginLeft: '-12.5%',
-                  // marginRight: '-3%',
-                  //alignSelf:'center',
-                  //paddingHorizontal:'10%',
-                  borderTopLeftRadius: 20,
-                  borderTopRightRadius: 20,
-                  borderBottomRightRadius: 2,
-                  borderBottomLeftRadius: 2,
-                  backgroundColor: 'transparent',
-                  alignItems: 'center',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  //borderWidth: 1,
-                }}>
-                  <Text style={{
-                    width: 75,
-                    height: 18,
-                    //left: 73,
-                    fontFamily: 'Inter',
-                    fontWeight: '400',
-                    fontSize: 15,
-                    lineHeight: 18,
-                    color: '#FFFFFF',
-                    textAlign: "center",
-                    top: '25%'
-                  }}>You asked:</Text>
-                  <Text style={{
-                    width: 184,
-                    height: 50,
-                    //left: 73,
-                    fontFamily: 'Bakbak One',
-                    fontWeight: '400',
-                    fontSize: 18,
-                    lineHeight: 25,
-                    color: '#FFFFFF',
-                    textAlign: "center",
-                    top: '30%'
-                  }}>Whats your favourite </Text>
-                  <Text style={{
-                    width: 184,
-                    height: 50,
-                    //left: 73,
-                    fontFamily: 'Bakbak One',
-                    fontWeight: '400',
-                    fontSize: 18,
-                    lineHeight: 25,
-                    color: '#FFFFFF',
-                    textAlign: "center"
-                  }}>show on netflix</Text>
-                </View>
-
-                <View style={{
-                  flex: 1,
-                  // width: '100%', 
-                  // height: '100%', 
-                  //marginLeft: '-12.5%',
-                  // marginRight: '-3%',
-                  //alignSelf:'center',
-                  //paddingHorizontal:'10%',
-                  // borderTopLeftRadius: 20,
-                  // borderTopRightRadius: 20,
-                  borderBottomRightRadius: 2,
-                  borderBottomLeftRadius: 2,
-                  backgroundColor: 'transparent',
-                  alignItems: 'stretch',
-                  justifyContent: 'center',
-                  flexDirection: 'row'
-                }}>
-                  <View style={{
-                    flex: 1,
-                    // width: '100%', 
-                    // height: '100%', 
-                    //marginLeft: '-12.5%',
-                    // marginRight: '-3%',
-                    //alignSelf:'center',
-                    //paddingHorizontal:'10%',
-                    // borderTopLeftRadius: 20,
-                    // borderTopRightRadius: 20,
-                    borderBottomRightRadius: 2,
-                    borderBottomLeftRadius: 2,
-                    backgroundColor: 'transparent',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexDirection: 'row',
-                    borderWidth: 1,
-                  }}>
-                    <Text style={{
-                      width: 135,
-                      height: 41,
-                      //left: 73,
-                      fontFamily: 'Inter',
-                      fontWeight: '500',
-                      fontSize: 15,
-                      lineHeight: 18,
-                      color: '#FFFFFF',
-                      textAlign: "center",
-                      top: '10%',
-                    }}> My answer;hsc sdv</Text>
-                    
-                  </View>
-                  <View style={{
-                    flex: 1,
-                    // width: '100%', 
-                    // height: '100%', 
-                    //marginLeft: '-12.5%',
-                    // marginRight: '-3%',
-                    //alignSelf:'center',
-                    //paddingHorizontal:'10%',
-                    // borderTopLeftRadius: 20,
-                    // borderTopRightRadius: 20,
-                    borderBottomRightRadius: 2,
-                    borderBottomLeftRadius: 2,
-                    backgroundColor: 'transparent',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexDirection: 'row',
-                    borderWidth: 1,
-                  }}>
-                    <Text style={{
-                      width: 135,
-                      height: 41,
-                      //left: 73,
-                      fontFamily: 'Inter',
-                      fontWeight: '500',
-                      fontSize: 15,
-                      lineHeight: 18,
-                      color: '#FFFFFF',
-                      textAlign: "center",
-                      top: '10%'
-                    }}> My answer;hsc sdv</Text>
-                  </View>
-                </View>
-              </View>
-              </TouchableOpacity>
-            </ImageBackground> */}
 
 
           </View>
           <View style={{ flex: 0.4, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
             <Text style={{
-              width: 268,
+              width: 278,
               height: 50,
               //left: 73,
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 18,
               lineHeight: 25,
               color: '#000000',
@@ -735,8 +543,8 @@ const ChatQNA2 = ({ navigation }) => {
               width: 268,
               height: 50,
               //left: 73,
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 18,
               lineHeight: 25,
               color: '#000000',
@@ -780,11 +588,12 @@ const ChatQNA2 = ({ navigation }) => {
                   placeholderTextColor='#BEBEBE'
                   style={{
                     //flex: 1,
-                    width:'90%',
+                    width: '90%',
                     //height:47,
+                    fontFamily: 'Inter',
                     fontSize: 20,
                     color: '#000000',
-                    fontWeight: '400',
+                    //fontWeight: '400',
                     left: '2%',
                     top: '7%',
                     lineHeight: 24,

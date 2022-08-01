@@ -72,9 +72,9 @@ const WednesdayLoveNight = ({ navigation }) => {
                                 position: 'relative',
                             }}>
                                 <Text style={{
-                                    fontWeight: '900',
+                                    //fontWeight: '900',
                                     fontSize: 18,
-                                    fontFamily: 'BakbakOneRegular',
+                                    fontFamily: 'BakbakOne-Regular',
                                     color: '#000000',
                                     alignSelf: 'center',
                                     justifyContent: 'center',

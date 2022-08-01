@@ -4,6 +4,7 @@ import { Rectangular } from '../../component/Buttons/Rectangular/index';
 import { icons } from '../../../assets/icons/icons';
 import { height, width } from '../../services/helper';
 import Styles from "./styles";
+//import BakbakOneRegular from '../../../assets/fonts/BakbakOneRegular.woff';
 
 const GetStarted = ({ navigation }) => {
     return (
@@ -53,10 +54,10 @@ const GetStarted = ({ navigation }) => {
                             }}>
                                 <Text style={{
                                     //fontWeight: '400',
-                                    fontWeight: '900',
+                                    //fontWeight: '900',
                                     fontSize: 17,
-                                    //fontFamily: 'Bakbak One',
-                                    fontFamily: 'BakbakOneRegular',
+                                    fontFamily: "BakbakOne-Regular",
+                                    //fontFamily: "BakbakOneRegular",
                                     color: '#000000',
                                     alignSelf: 'center',
                                     justifyContent: 'center',
@@ -64,7 +65,8 @@ const GetStarted = ({ navigation }) => {
                                     //paddingVertical: 13,
                                     top: '30%',
                                     //right: '10%',
-                                    right: '30.3%',
+                                    //right: '30.3%',
+                                    right: '25.3%',
                                     lineHeight: 25,
                                     letterSpacing: -0.017
                                 }}>Get Started</Text>

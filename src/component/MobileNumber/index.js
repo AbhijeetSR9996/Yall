@@ -20,8 +20,8 @@ export const MobileNumber = ({ navigation }) => {
             <View style={{ width: 214, height: 70, top: 85, left: 21 }}>
                 <Text style={{
                     color: '#000000',
-                    fontFamily: 'BakbakOneRegular',
-                    fontWeight: '800',
+                    fontFamily: 'BakbakOne-Regular',
+                    //fontWeight: '800',
                     fontSize: 25,
                     lineHeight: 35,
                 }}>Whats your phone number?</Text>
@@ -43,10 +43,10 @@ export const MobileNumber = ({ navigation }) => {
                     placeholderStyle={{
                         fontSize: 15,
                         alignItems: 'center',
-                        fontWeight: '400',
+                        //fontWeight: '400',
                         height: 18,
                         fontFamily: 'Inter',
-                        fontWeight: '400',
+                        //fontWeight: '400',
                         color: '#000000',
                     }}
                     selectedTextStyle={{
@@ -68,6 +68,7 @@ export const MobileNumber = ({ navigation }) => {
                     keyboardType="numeric"
                     maxLength={10}
                     style={{
+
                         borderBottomWidth: 1.5,
                         width: 165,
                         left: 74,
@@ -84,7 +85,7 @@ export const MobileNumber = ({ navigation }) => {
                     left: 25,
                     top: 130,
                     fontFamily: 'Inter',
-                    fontWeight: '400',
+                    //fontWeight: '400',
                     fontSize: 15,
                     display: 'flex',
                     alignItems: 'center',
@@ -99,7 +100,7 @@ export const MobileNumber = ({ navigation }) => {
                     left: 25,
                     top: 130,
                     fontFamily: 'Inter',
-                    fontWeight: '400',
+                    //fontWeight: '400',
                     fontSize: 15,
                     display: 'flex',
                     alignItems: 'center',

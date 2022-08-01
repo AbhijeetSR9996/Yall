@@ -42,7 +42,7 @@ export const emailStyles = {
     elevation: 10,
   },
   accountHeadText: {
-    fontFamily: 'Bakbak one-Regular',
+    fontFamily: 'BakbakOne-Regular',
     fontSize: 25,
     fontWeight: '700',
     color: '#000000',
@@ -50,7 +50,7 @@ export const emailStyles = {
     textAlign: 'center',
   },
   headBelowText: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter',
     fontSize: 18,
     fontWeight: '400',
     color: '#B4B4B4',
@@ -96,19 +96,20 @@ export const emailStyles = {
     flexDirection: 'row',
   },
   userNameText: {
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Inter',
     color: '#646661',
     fontSize: 18,
     marginTop: 15,
   },
   userEmail: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter',
     fontSize: 12,
     top: 2,
     color: '#B4B4B4',
     width: 218,
   },
   AddText: {
+    fontFamily: 'Inter',
     alignSelf: 'center',
     left: 40,
     fontFamily: 'Inter-Medium',
@@ -116,14 +117,14 @@ export const emailStyles = {
     color: '#646661'
   },
   paragraph: {
-    fontFamily: 'Inter=Regular',
+    fontFamily: 'Inter',
     fontSize: 15,
     color: '#B4B4B4',
     width: 319,
     textAlign: 'center',
     alignSelf: 'center',
-    //top: 355,
-    top: 340
+    top: 330,
+    //top: 340
   },
 
 };

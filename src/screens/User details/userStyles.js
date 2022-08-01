@@ -5,8 +5,8 @@ export const userStyles = {
 
   text: {
     color: 'black',
-    fontFamily: 'Bakbak One',
-    fontWeight: '800',
+    fontFamily: 'BakbakOne-Regular',
+    //fontWeight: '800',
     fontSize: 25,
     lineHeight: 35,
     width: 230,
@@ -16,7 +16,7 @@ export const userStyles = {
   },
   textInput: {
     top: 110,
-    fontWeight: '500',
+    //fontWeight: '500',
     fontFamily: 'Inter',
     fontWeight: 38,
   },
@@ -27,6 +27,7 @@ export const userStyles = {
     fontWeight: '500',
     color: '#000000',
     fontSize: 18,
+    fontFamily: 'Inter'
   },
   nameScreenArrowIcon: {
     backgroundColor: '#DCC7E1',
@@ -40,11 +41,11 @@ export const userStyles = {
   mainViewDob: { top: 150, flexDirection: 'row', justifyContent: 'space-around' },
   textDOB1: {
     fontFamily: 'Inter',
-    fontWeight: '400',
+    //fontWeight: '400',
     color: '#000000',
     letterSpacing: -0.017,
     fontSize: 15,
-    fontFamily: 'Inter',
+    //fontFamily: 'Inter',
     display: 'flex',
     left: '-60%',
     //marginLeft: '-3%'
@@ -53,7 +54,7 @@ export const userStyles = {
   },
   textDOB2: {
     fontFamily: 'Inter',
-    fontWeight: '400',
+    //fontWeight: '400',
     color: '#000000',
     letterSpacing: -0.017,
     fontSize: 15,
@@ -67,11 +68,11 @@ export const userStyles = {
   },
   textDOB3: {
     fontFamily: 'Inter',
-    fontWeight: '400',
+    //fontWeight: '400',
     color: '#000000',
     letterSpacing: -0.017,
     fontSize: 15,
-    fontFamily: 'Inter',
+    //fontFamily: 'Inter',
     display: 'flex',
     //marginLeft: '-11%'
     //right: '50%',

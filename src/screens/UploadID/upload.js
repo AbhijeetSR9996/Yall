@@ -174,7 +174,7 @@ const Upload = ({ navigation }) => {
                 position: 'relative',
               }}>
                 <Text style={{
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   fontSize: 18,
                   //fontFamily: 'Bakbak One',
                   fontFamily: 'BakbakOneRegular',
@@ -212,7 +212,8 @@ const Upload = ({ navigation }) => {
           width: 28,
           height: 35,
           //top: 23,
-          top: 18,
+          //top: 18,
+          top: '6%',
           //left: -300,
           //marginLeft:'7%',
           //marginLeft: '4%',
@@ -222,7 +223,7 @@ const Upload = ({ navigation }) => {
       <Text
         style={[
           govtStyles.paragraph,
-          { top: '-3%', left: '20%', color: '#000000' },
+          { top: '0.5%', left: '20%', color: '#000000' },
         ]}>
         Aadhaar card
       </Text>
@@ -231,7 +232,7 @@ const Upload = ({ navigation }) => {
         style={{
           width: '73%',
           height: 30,
-          top: -25,
+          top: -3,
           //left: -25,
           marginLeft: '20%'
         }}
@@ -250,7 +251,7 @@ const Upload = ({ navigation }) => {
       /> */}
       <TouchableOpacity
         style={{
-          top: '0%',
+          top: '7%',
           alignSelf: 'center',
           width: width * 0.8,
           height: height * 0.07,
@@ -274,17 +275,17 @@ const Upload = ({ navigation }) => {
         }}>
           <Text style={{
             //fontWeight: '400',
-            fontWeight: '900',
+
             fontSize: 17,
             //fontFamily: 'Bakbak One',
-            fontFamily: 'BakbakOneRegular',
+            fontFamily: 'BakbakOne-Regular',
             color: '#000000',
             alignSelf: 'center',
             justifyContent: 'center',
             //paddingVertical: 10,
             //paddingVertical: 13,
             top: '33%',
-            right: '21%',
+            right: '16%',
             //right: '20%',
             lineHeight: 25,
             letterSpacing: -0.017
@@ -311,7 +312,8 @@ const Upload = ({ navigation }) => {
             //bottom: '20%',
             //bottom: '25%',
             right: '2%',
-            top: '3%',
+            //top: '3%',
+            top: '10%'
           },
         ]}
         onPress={() => { navigation.navigate('GovtRegisterID') }}>
@@ -330,9 +332,9 @@ const Upload = ({ navigation }) => {
           position: 'relative',
         }}>
           <Text style={{
-            fontWeight: '900',
+
             fontSize: 18,
-            fontFamily: 'BakbakOneRegular',
+            fontFamily: 'BakbakOne-Regular',
             //color: '#000000',
             color: '#FFFFFF',
             alignSelf: 'center',
@@ -340,7 +342,7 @@ const Upload = ({ navigation }) => {
             //paddingVertical: 10,
             //right: '10%',
             top: '33%',
-            right: '36%',
+            right: '32%',
             lineHeight: 25,
             letterSpacing: -0.017
           }}>Back</Text>

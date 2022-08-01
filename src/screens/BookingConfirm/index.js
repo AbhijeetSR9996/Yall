@@ -37,7 +37,7 @@ const BookingConfirm = ({ navigation }) => {
                     style={styles.buttonContainer}
                     onPress={() => navigation.navigate('PaymentMethods')}>
                     <View style={styles.buttonView}>
-                        <Text style={[styles.buttonText, { right: '28%' }]}>Back Home</Text>
+                        <Text style={[styles.buttonText, { right: '25%' }]}>Back Home</Text>
                         <View style={styles.buttonIcon}>{icons.rightarrow}</View>
                     </View>
                 </TouchableOpacity>

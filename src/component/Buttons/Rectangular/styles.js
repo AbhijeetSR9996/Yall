@@ -59,10 +59,10 @@ const Styles = StyleSheet.create({
     },
     buttonText: {
         //fontWeight: '400',
-        fontWeight: 'bold',
+        //fontWeight: 'bold',
         fontSize: 18,
         //fontFamily: 'Bakbak One',
-        fontFamily: 'BakbakOneRegular',
+        fontFamily: 'BakbakOne-Regular',
         color: '#000000',
         alignSelf: 'center',
         justifyContent: 'center',

@@ -62,7 +62,7 @@ const SignEmail = ({ navigation }) => {
               <Text style={emailStyles.AddText}>Add another account</Text>
             </TouchableOpacity>
             <Text style={emailStyles.paragraph}>
-              By clicking “Log in”, you agree with our Terms. learn how we process
+              By clicking “Log in”, you agree with our Terms. Learn, how we process
               your data in our privacy policy and cokkies policy.
             </Text>
           </View>

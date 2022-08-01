@@ -29,7 +29,7 @@ import Gender4 from '../src/screens/genderScreens/gender4';
 import AddPhoto from '../src/screens/AddPhoto/addPhoto';
 import MainBottomNavigation from './mainBottomNavigation';
 import MatchProfile from '../src/screens/MatchProfile';
-import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
+import ProfileDisplay from '../src/screens/ProfileDisplay/index';
 import Upload from '../src/screens/UploadID/upload';
 import Edit from '../src/screens/EditProfile/edit';
 import Events from '../src/screens/Events';

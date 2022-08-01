@@ -42,9 +42,10 @@ export default StyleSheet.create({
         marginHorizontal: 20
     },
     big_text: {
+        fontFamily: 'BakbakOne-Regular',
         color: "#000000",
         fontSize: 30,
-        fontWeight: "400",
+        //fontWeight: "400",
         marginTop: '5%',
         marginLeft: '5%',
         letterSpacing: -1,
@@ -52,25 +53,28 @@ export default StyleSheet.create({
         width: 227
     },
     small_text: {
+        fontFamily: 'Inter',
         color: "#000000",
         fontSize: 12,
-        fontWeight: "400",
+        //fontWeight: "400",
         marginTop: '5%',
         marginLeft: '5%',
         width: width * 0.7
     },
     small_text2: {
+        fontFamily: 'Inter',
         color: "#000000",
         fontSize: 12,
-        fontWeight: "400",
+        //fontWeight: "400",
         marginTop: '5%',
         marginLeft: '5%',
         width: width * 0.9
     },
     icon_text: {
+        fontFamily: 'Inter',
         color: "#000000",
         fontSize: 12,
-        fontWeight: "400",
+        //fontWeight: "400",
         marginTop: '5%',
         marginLeft: '5%'
 
@@ -88,8 +92,10 @@ export default StyleSheet.create({
         bottom: '-30%',
     },
     buttonText: {
+        fontFamily: 'BakbakOne-Regular',
         fontSize: 15,
-        color: '#000000'
+        color: '#000000',
+        top: '6%'
     },
     buttonContainer2: {
         alignItems: 'center',

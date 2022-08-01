@@ -42,10 +42,10 @@ const SendTicket = ({ navigation }) => {
                                             <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <Text style={{ color: '#000000', fontFamily: 'BakbakOne-Regular', fontSize: 15, lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
                                             <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                                <Text style={{ color: '#A9A9A9', fontFamily: 'Inter', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontFamily: 'Inter', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
                                             </View>
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -88,57 +88,10 @@ const SendTicket = ({ navigation }) => {
                                             <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <Text style={{ color: '#000000', fontSize: 15, fontFamily: 'BakbakOne-Regular', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
                                             <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
-                                            </View>
-                                        </View>
-                                        <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                                            <TouchableOpacity style={{
-                                                borderRadius: 20,
-                                                borderWidth: 1,
-                                                borderColor: '#020203',
-                                                backgroundColor: '#DCC7E1',
-                                                height: '40%',
-                                                width: '65%',
-                                            }}
-                                                onPress={() => navigation.navigate('Chat')}>
-                                                <Text style={[{
-                                                    paddingVertical: '0%',
-                                                    letterSpacing: -0.017,
-                                                    fontWeight: '500',
-                                                    fontSize: 8,
-                                                    lineHeight: 10,
-                                                    alignSelf: 'center',
-                                                    color: '#000000',
-                                                    fontFamily: 'Inter',
-                                                    fontSize: 10,
-                                                    fontWeight: "400",
-                                                    letterSpacing: -0.017,
-                                                    width: 324,
-                                                    //width: '90%',
-                                                    height: 54,
-                                                    //alignSelf:'center',
-                                                    textAlign: 'center',
-                                                    lineHeight: 18
-                                                }]}>Send</Text>
-                                            </TouchableOpacity>
-                                        </View>
-                                    </View>
-                                    <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
-                                        <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '90%' }} />
-                                    </View>
-
-                                    <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
-                                        <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
-                                            <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
-                                        </View>
-                                        <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
-                                            <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
                                             </View>
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -182,10 +135,10 @@ const SendTicket = ({ navigation }) => {
                                             <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <Text style={{ color: '#000000', fontSize: 15, fontFamily: 'BakbakOne-Regular', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
                                             <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
                                             </View>
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -229,10 +182,10 @@ const SendTicket = ({ navigation }) => {
                                             <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <Text style={{ color: '#000000', fontSize: 15, fontFamily: 'BakbakOne-Regular', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
                                             <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
                                             </View>
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -276,10 +229,10 @@ const SendTicket = ({ navigation }) => {
                                             <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <Text style={{ color: '#000000', fontSize: 15, fontFamily: 'BakbakOne-Regular', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
                                             <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
                                             </View>
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -323,10 +276,57 @@ const SendTicket = ({ navigation }) => {
                                             <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
-                                            <Text style={{ color: '#000000', fontWeight: '400', fontSize: 15, fontFamily: 'Bakbak One', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <Text style={{ color: '#000000', fontSize: 15, fontFamily: 'BakbakOne-Regular', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
                                             <View>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
-                                                <Text style={{ color: '#A9A9A9', fontWeight: '400', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
+                                            </View>
+                                        </View>
+                                        <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                                            <TouchableOpacity style={{
+                                                borderRadius: 20,
+                                                borderWidth: 1,
+                                                borderColor: '#020203',
+                                                backgroundColor: '#DCC7E1',
+                                                height: '40%',
+                                                width: '65%',
+                                            }}
+                                                onPress={() => navigation.navigate('Chat')}>
+                                                <Text style={[{
+                                                    paddingVertical: '0%',
+                                                    letterSpacing: -0.017,
+                                                    fontWeight: '500',
+                                                    fontSize: 8,
+                                                    lineHeight: 10,
+                                                    alignSelf: 'center',
+                                                    color: '#000000',
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 10,
+                                                    fontWeight: "400",
+                                                    letterSpacing: -0.017,
+                                                    width: 324,
+                                                    //width: '90%',
+                                                    height: 54,
+                                                    //alignSelf:'center',
+                                                    textAlign: 'center',
+                                                    lineHeight: 18
+                                                }]}>Send</Text>
+                                            </TouchableOpacity>
+                                        </View>
+                                    </View>
+                                    <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
+                                        <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '90%' }} />
+                                    </View>
+
+                                    <View style={{ backgroundColor: 'transparent', flexDirection: 'row', flex: 1, paddingVertical: '5%' }}>
+                                        <View style={{ backgroundColor: 'transparent', flex: 0.8, justifyContent: 'center', alignItems: 'center' }}>
+                                            <Image source={require('../../../assets/images/sendphoto.png')} style={{ left: '10%' }} />
+                                        </View>
+                                        <View style={{ backgroundColor: 'transparent', flex: 2, justifyContent: 'space-evenly', alignItems: 'flex-start' }}>
+                                            <Text style={{ color: '#000000', fontSize: 15, fontFamily: 'BakbakOne-Regular', lineHeight: 21, letterSpacing: -0.017, left: '5%' }}> Jhone</Text>
+                                            <View>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> Lorem Ipsum is simply dummy text of</Text>
+                                                <Text style={{ color: '#A9A9A9', fontSize: 10, fontFamily: 'Inter', lineHeight: 12, letterSpacing: -0.017, left: '5.5%', width: '100%' }}> printing and typesetting industry.</Text>
                                             </View>
                                         </View>
                                         <View style={{ backgroundColor: 'transparent', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -378,7 +378,7 @@ const SendTicket = ({ navigation }) => {
                                             bottom: '28%',
                                             right: '2%'
                                         },
-                                    ]}>
+                                    ]} onPress={() => { navigation.navigate('Chat') }}>
                                     <View style={{
                                         left: 10,
                                         top: 8,
@@ -393,9 +393,9 @@ const SendTicket = ({ navigation }) => {
 
                                     }}>
                                         <Text style={{
-                                            fontWeight: '900',
+                                            //fontWeight: '900',
                                             fontSize: 18,
-                                            fontFamily: 'BakbakOneRegular',
+                                            fontFamily: 'BakbakOne-Regular',
                                             color: '#000000',
                                             alignSelf: 'center',
                                             justifyContent: 'center',

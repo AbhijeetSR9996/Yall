@@ -25,10 +25,10 @@ const JoinParty = ({ navigation }) => {
             </View >
             <View style={{ backgroundColor: 'transparent', alignContent: 'space-between', justifyContent: 'space-around', alignSelf: 'center', flex: 1 }}>
                 <Text style={{
-                    fontFamily: "Bakbak One",
+                    fontFamily: "BakbakOne-Regular",
                     color: "#FFFFFF",
                     fontSize: 35,
-                    fontWeight: "400",
+                    //fontWeight: "400",
                     alignSelf: 'center',
                     letterSpacing: -0.017,
                     lineHeight: 49,
@@ -37,7 +37,7 @@ const JoinParty = ({ navigation }) => {
                     fontFamily: 'Inter',
                     color: "#FFFFFF",
                     fontSize: 15,
-                    fontWeight: "400",
+                    //fontWeight: "400",
                     letterSpacing: -0.017,
                     width: 324,
                     //width: '90%',
@@ -76,15 +76,15 @@ const JoinParty = ({ navigation }) => {
                         position: 'relative',
                     }}>
                         <Text style={{
-                            fontWeight: '900',
+                            //fontWeight: '900',
                             fontSize: 18,
-                            fontFamily: 'BakbakOneRegular',
+                            fontFamily: 'BakbakOne-Regular',
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
                             //paddingVertical: 10,
                             top: '30.3%',
-                            right: '30%',
+                            right: '28%',
                         }}>Book Now</Text>
                         <View style={{
                             width: width * 0.15,

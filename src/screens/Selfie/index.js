@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
-import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDisplay.styles';
+//import { Styles } from '../../screens/ProfileDisplay/styles';
 import { Card } from 'react-native-paper';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import ImagePicker from 'react-native-image-crop-picker';

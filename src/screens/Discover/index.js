@@ -26,16 +26,17 @@ const Discover = ({ navigation }) => {
                     />
                 </View>
                 <View style={styles.discover_second_container}>
-                    <TouchableOpacity onPress={()=>navigation.navigate('JoinParty')}>
-                    <ImageBackground
-                        source={require('../../../assets/images/weekend.png')}
-                        style={styles.image_size}
-                        resizeMode="stretch"
-                    >
-                        <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                        <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                        <Text style={styles.discover_sub_title_text}>Discover</Text>
-                    </ImageBackground>
+                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
+                        style={{ marginVertical: '2%', left: '0.5%' }}>
+                        <ImageBackground
+                            source={require('../../../assets/images/weekend.png')}
+                            style={styles.image_size}
+                            resizeMode="stretch"
+                        >
+                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
+                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
+                            <Text style={styles.discover_sub_title_text}>Discover</Text>
+                        </ImageBackground>
                     </TouchableOpacity>
                     <ImageBackground
                         source={require('../../../assets/images/weekend.png')}

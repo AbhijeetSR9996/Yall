@@ -29,16 +29,16 @@ export const VerifyingCode = ({ path, paths }) => {
             <View style={{ width: 214, height: 70, top: 85, left: 21 }}>
                 <Text style={{
                     color: '#000000',
-                    fontFamily: 'BakbakOneRegular',
-                    fontWeight: '800',
+                    fontFamily: 'BakbakOne-Regular',
+                    //fontWeight: '800',
                     fontSize: 25,
                     lineHeight: 35,
                 }}>Enter your verification code.</Text>
             </View>
             <View style={{ flexDirection: 'row', top: 100, left: 22, width: 190 }}>
-                <Text style={{ color: '#AAAAAA' }}>Sent to 1234567990 - </Text>
+                <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>Sent to 1234567990 - </Text>
                 <TouchableOpacity onPress={() => navigation.navigate(path)}>
-                    <Text style={{ color: '#000000', fontWeight: '500' }}>Edit</Text>
+                    <Text style={{ color: '#000000', fontWeight: '500', fontFamily: 'Inter' }}>Edit</Text>
                 </TouchableOpacity>
             </View>
             <View style={{ top: 120 }}>

@@ -261,7 +261,7 @@ const Gender4 = ({ navigation }) => {
       </View>
       <TouchableOpacity
         style={{
-          marginTop: '93%',
+          marginTop: '103%',
           alignSelf: 'center',
           width: width * 0.8,
           height: height * 0.07,
@@ -284,10 +284,10 @@ const Gender4 = ({ navigation }) => {
         }}>
           <Text style={{
             //fontWeight: '400',
-            fontWeight: '900',
+            //fontWeight: '900',
             fontSize: 17,
             //fontFamily: 'Bakbak One',
-            fontFamily: 'BakbakOneRegular',
+            fontFamily: 'BakbakOne-Regular',
             color: '#000000',
             alignSelf: 'center',
             justifyContent: 'center',

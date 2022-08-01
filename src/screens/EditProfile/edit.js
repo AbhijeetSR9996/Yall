@@ -9,7 +9,6 @@ import {
   TextInput,
   Switch,
   Alert,
-  Dimensions
 } from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import { styles } from '../genderScreens/styles';
@@ -18,9 +17,9 @@ import { photoStyles } from '../AddPhoto/styles';
 import { signupStyles } from '../SignUp/signupStyles';
 import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
 import { Card } from 'react-native-paper';
-import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDisplay.styles';
+import { Styles } from '../../screens/ProfileDisplay/styles';
 import { userStyles } from '../../screens/User details/userStyles';
-const { width, height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
 
 const Edit = ({ navigation }) => {
   const requestCameraPermission = async () => {
@@ -97,7 +96,7 @@ const Edit = ({ navigation }) => {
         <Text
           style={[
             photoStyles.addPhotoText,
-            { fontSize: 18, fontFamily: 'Bakbak One', fontWeight: '400', letterSpacing: -0.017, },
+            { fontSize: 18, fontFamily: 'BakbakOne-Regular', letterSpacing: -0.017, },
           ]}>
           Profile
         </Text>
@@ -105,7 +104,7 @@ const Edit = ({ navigation }) => {
           <Text
             style={[
               photoStyles.addPhotoText,
-              { fontSize: 18, fontFamily: 'Bakbak One', fontWeight: '400', letterSpacing: -0.017, left: '34%' },
+              { fontSize: 18, fontFamily: 'BakbakOne-Regular', letterSpacing: -0.017, left: '34%' },
             ]}>
             Save
           </Text>
@@ -144,7 +143,7 @@ const Edit = ({ navigation }) => {
       </Card>
       <View
         style={[
-          ProfileDisplayStyles.infocontainer,
+          Styles.infocontainer,
           {
             height: 30,
             width: 60,
@@ -181,7 +180,7 @@ const Edit = ({ navigation }) => {
             top: '-20%',
             left: '7%',
             color: '#B4B4B4',
-            fontWeight: '300',
+
           },
         ]}>
         Full name
@@ -191,7 +190,7 @@ const Edit = ({ navigation }) => {
           placeholder="John Doe"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'BakbakOne-Regular', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -203,7 +202,7 @@ const Edit = ({ navigation }) => {
             top: '-25%',
             left: '7%',
             color: '#B4B4B4',
-            fontWeight: '300',
+
           },
         ]}>
         Surname
@@ -213,7 +212,7 @@ const Edit = ({ navigation }) => {
           placeholder="Doe"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'BakbakOne-Regular', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -225,7 +224,7 @@ const Edit = ({ navigation }) => {
             top: '-30%',
             left: '7%',
             color: '#B4B4B4',
-            fontWeight: '300',
+
           },
         ]}>
         Phone
@@ -235,7 +234,7 @@ const Edit = ({ navigation }) => {
           placeholder="+8511 6654 5265"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'BakbakOne-Regular', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -247,7 +246,7 @@ const Edit = ({ navigation }) => {
             top: '-35%',
             left: '7%',
             color: '#B4B4B4',
-            fontWeight: '300',
+
           },
         ]}>
         Gender
@@ -257,7 +256,7 @@ const Edit = ({ navigation }) => {
           placeholder="Male"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'BakbakOne-Regular', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
 
       <Text
@@ -269,7 +268,7 @@ const Edit = ({ navigation }) => {
             top: '-40%',
             left: '7%',
             color: '#B4B4B4',
-            fontWeight: '300',
+
           },
         ]}>
         Date of birth
@@ -279,7 +278,7 @@ const Edit = ({ navigation }) => {
           placeholder="01-01-2001"
           placeholderTextColor="#000000"
           editable={false}
-          style={[userStyles.textInput1, { fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
+          style={[userStyles.textInput1, { fontFamily: 'BakbakOne-Regular', fontSize: 18, color: '#B4B4B4' }]}></TextInput>
       </View>
     </View>
   );

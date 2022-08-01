@@ -77,18 +77,18 @@ const SignUp = ({ navigation }) => {
               }}>
                 <Text style={{
                   //fontWeight: '400',
-                  fontWeight: '900',
+                  //fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
-                  fontFamily: 'BakbakOneRegular',
+                  fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
                   //paddingVertical: 13,
                   top: '30.3%',
-                  right: '35%',
-                  //right: '20%',
+                  //right: '35%',
+                  right: '30%',
                   lineHeight: 25,
                   letterSpacing: -0.017
                 }}>Sign In </Text>
@@ -129,18 +129,18 @@ const SignUp = ({ navigation }) => {
               }}>
                 <Text style={{
                   //fontWeight: '400',
-                  fontWeight: '900',
+                  //fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
-                  fontFamily: 'BakbakOneRegular',
+                  fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
                   //paddingVertical: 13,
                   top: '30.3%',
-                  right: '35%',
-                  //right: '20%',
+                  //right: '35%',
+                  right: '30%',
                   lineHeight: 25,
                   letterSpacing: -0.017
                 }}>Sign Up</Text>
@@ -181,10 +181,10 @@ const SignUp = ({ navigation }) => {
               }}>
                 <Text style={{
                   //fontWeight: '400',
-                  fontWeight: '900',
+                  //fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
-                  fontFamily: 'BakbakOneRegular',
+                  fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
@@ -192,10 +192,11 @@ const SignUp = ({ navigation }) => {
                   //paddingVertical: 13,
                   top: '30.3%',
                   //right: '40%',
-                  right: '23%',
+                  //right: '23%',
+                  right: '16%',
                   lineHeight: 25,
                   letterSpacing: -0.017
-                }}>Sign In With Email</Text>
+                }}>Sign In with Email</Text>
                 <View style={{
                   width: width * 0.15,
                   borderWidth: 1,

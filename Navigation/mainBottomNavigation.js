@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image} from 'react-native';
-import {NavigationContainer, StackActions} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { Image } from 'react-native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //import BottomStack from './BottomStack';
 
 import Screen1 from './BottomNav/Screen1';
@@ -9,7 +9,7 @@ import Screen2 from './BottomNav/Screen2';
 import Screen3 from './BottomNav/Screen3';
 import Screen4 from './BottomNav/Screen4';
 import Screen5 from './BottomNav/Screen5';
-import ProfileDisplay from '../src/screens/ProfileDisplay/ProfileDisplay';
+import ProfileDisplay from '../src/screens/ProfileDisplay/index';
 import Events from '../src/screens/Events';
 import Edit from '../src/screens/EditProfile/edit';
 import WeekendEvent from '../src/screens/WeekendEvents';
@@ -32,16 +32,17 @@ const Tab = createBottomTabNavigator();
 const MainBottomNavigation = () => {
   return (
     <Tab.Navigator
-      screenOptions={{headerShown: false,//tabBarIconStyle:{display:'none'}
-    }}
+      screenOptions={{
+        headerShown: false,//tabBarIconStyle:{display:'none'}
+      }}
       backBehavior="none"
       tabBarOptions={{
-        labelStyle: {fontSize: 0},
+        labelStyle: { fontSize: 0 },
         activeTintColor: 'white',
         inactiveTintColor: 'white',
         //tabBarStyle:{display:'none'}
       }}>
-        
+
       {/* <Tab.Screen
         name="ProfileDisplay"
         component={ProfileDisplay}
@@ -124,11 +125,11 @@ const MainBottomNavigation = () => {
 
 
 
-{/*=================================*/}
+      {/*=================================*/}
 
 
 
-<Tab.Screen
+      <Tab.Screen
         name="ProfileDisplay"
         component={ProfileDisplay}
         options={{
@@ -137,7 +138,7 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
@@ -145,7 +146,7 @@ const MainBottomNavigation = () => {
 
 
 
-<Tab.Screen
+      <Tab.Screen
         name="Chat"
         component={Chat}
         options={{
@@ -154,13 +155,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
-      />      
+      />
 
-<Tab.Screen
+      <Tab.Screen
         name="ChatQNA"
         component={ChatQNA}
         options={{
@@ -169,13 +170,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="ChatQNA2"
         component={ChatQNA2}
         options={{
@@ -184,13 +185,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="Liked"
         component={Liked}
         options={{
@@ -199,13 +200,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/heart.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="WeekendEvent"
         component={WeekendEvent}
         options={{
@@ -214,13 +215,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
+              style={{ width: 13, height: 22 }}
             />
           )
         }}
-      />      
+      />
 
-<Tab.Screen
+      <Tab.Screen
         name="Events"
         component={Events}
         options={{
@@ -229,13 +230,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
+              style={{ width: 13, height: 22 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="Discover"
         component={Discover}
         options={{
@@ -244,7 +245,7 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
@@ -252,7 +253,7 @@ const MainBottomNavigation = () => {
 
 
 
-<Tab.Screen
+      <Tab.Screen
         name="EventTicket"
         component={EventTicket}
         options={{
@@ -261,13 +262,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
+              style={{ width: 13, height: 22 }}
             />
           )
         }}
-      />      
+      />
 
-{/* <Tab.Screen
+      {/* <Tab.Screen
         name="EventTimer"
         component={EventTimer}
         options={{
@@ -282,7 +283,7 @@ const MainBottomNavigation = () => {
         }}
       />    */}
 
-{/* <Tab.Screen
+      {/* <Tab.Screen
         name="TicketSold"
         component={TicketSold}
         options={{
@@ -297,7 +298,7 @@ const MainBottomNavigation = () => {
         }}
       /> */}
 
-<Tab.Screen
+      <Tab.Screen
         name="ShareLink"
         component={ShareLink}
         options={{
@@ -306,13 +307,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
+              style={{ width: 13, height: 22 }}
             />
           )
-        }}      
+        }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="JoinParty"
         component={JoinParty}
         options={{
@@ -321,13 +322,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
+              style={{ width: 13, height: 22 }}
             />
           )
         }}
-      />      
+      />
 
-<Tab.Screen
+      <Tab.Screen
         name="SendTicket"
         component={SendTicket}
         options={{
@@ -336,13 +337,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
+              style={{ width: 13, height: 22 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="Match"
         component={Match}
         options={{
@@ -351,13 +352,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/message.png')}
-              style={{width: 20, height: 20}}
+              style={{ width: 20, height: 20 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="BookingConfirm"
         component={BookingConfirm}
         options={{
@@ -366,13 +367,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/user2.png')}
-              style={{width: 20, height: 20}}
+              style={{ width: 20, height: 20 }}
             />
           )
         }}
       />
 
-<Tab.Screen
+      <Tab.Screen
         name="Edit"
         component={Edit}
         options={{
@@ -381,13 +382,13 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/user2.png')}
-              style={{width: 20, height: 20}}
+              style={{ width: 20, height: 20 }}
             />
           )
-        }}    
+        }}
       />
 
-{/* <Tab.Screen
+      {/* <Tab.Screen
         name="BookingConfirm"
         component={BookingConfirm}
         options={{

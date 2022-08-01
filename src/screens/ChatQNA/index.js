@@ -40,12 +40,12 @@ const ChatQNA = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the camera');
+        //console.log('You can use the camera');
       } else {
-        console.log('Camera permission denied');
+        //console.log('Camera permission denied');
       }
     } catch (err) {
-      console.warn(err);
+      //console.warn(err);
     }
   };
   const takePhotoFromCamera = () => {
@@ -92,8 +92,8 @@ const ChatQNA = ({ navigation }) => {
           <TouchableOpacity>
             <Text style={{
               color: '#000000',
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 15,
               lineHeight: 21,
               letterSpacing: -0.017,
@@ -158,7 +158,7 @@ const ChatQNA = ({ navigation }) => {
                   //top: '60%',
                   //left: '25%',
                   fontFamily: 'Inter',
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -212,7 +212,7 @@ const ChatQNA = ({ navigation }) => {
                   //top: '60%',
                   //left: '25%',
                   fontFamily: 'Inter',
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -243,7 +243,7 @@ const ChatQNA = ({ navigation }) => {
               left: '-5%',
               textAlignVertical: 'center',
               fontFamily: 'Inter',
-              fontWeight: '400',
+              //fontWeight: '400',
               letterSpacing: -0.017,
               lineHeight: 18,
               width: 208
@@ -297,7 +297,7 @@ const ChatQNA = ({ navigation }) => {
                   //top: '60%',
                   //left: '25%',
                   fontFamily: 'Inter',
-                  fontWeight: '400',
+                  //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -403,7 +403,7 @@ const ChatQNA = ({ navigation }) => {
                         height: 18,
                         //left: 73,
                         fontFamily: 'Inter',
-                        fontWeight: '400',
+                        //fontWeight: '400',
                         fontSize: 15,
                         lineHeight: 18,
                         color: '#FFFFFF',
@@ -414,8 +414,8 @@ const ChatQNA = ({ navigation }) => {
                         width: 184,
                         height: 50,
                         //left: 73,
-                        fontFamily: 'Bakbak One',
-                        fontWeight: '400',
+                        fontFamily: 'BakbakOne-Regular',
+                        //fontWeight: '400',
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
@@ -426,8 +426,8 @@ const ChatQNA = ({ navigation }) => {
                         width: 184,
                         height: 50,
                         //left: 73,
-                        fontFamily: 'Bakbak One',
-                        fontWeight: '400',
+                        fontFamily: 'BakbakOne-Regular',
+                        //fontWeight: '400',
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
@@ -498,7 +498,7 @@ const ChatQNA = ({ navigation }) => {
                           height: 41,
                           //left: 73,
                           fontFamily: 'Inter',
-                          fontWeight: '500',
+                          //fontWeight: '500',
                           fontSize: 15,
                           lineHeight: 18,
                           color: '#FFFFFF',
@@ -516,11 +516,11 @@ const ChatQNA = ({ navigation }) => {
           </View>
           <View style={{ flex: 0.4, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
             <Text style={{
-              width: 268,
+              width: 278,
               height: 50,
               //left: 73,
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 18,
               lineHeight: 25,
               color: '#000000',
@@ -528,11 +528,11 @@ const ChatQNA = ({ navigation }) => {
               top: '30%'
             }}>Answered are revealed when you </Text>
             <Text style={{
-              width: 268,
+              width: 168,
               height: 50,
               //left: 73,
-              fontFamily: 'Bakbak One',
-              fontWeight: '400',
+              fontFamily: 'BakbakOne-Regular',
+              //fontWeight: '400',
               fontSize: 18,
               lineHeight: 25,
               color: '#000000',
@@ -576,7 +576,7 @@ const ChatQNA = ({ navigation }) => {
                   placeholderTextColor='#BEBEBE'
                   style={{
                     //flex: 1,
-                    width:'90%',
+                    width: '90%',
                     //height:47,
                     fontSize: 20,
                     color: '#000000',
@@ -585,6 +585,7 @@ const ChatQNA = ({ navigation }) => {
                     top: '7%',
                     lineHeight: 24,
                     letterSpacing: -0.017,
+                    fontFamily: 'Inter'
                   }} />
               </View>
             </Card>

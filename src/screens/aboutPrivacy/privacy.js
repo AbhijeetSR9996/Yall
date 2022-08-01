@@ -32,7 +32,7 @@ const AboutPrivacy = ({ navigation }) => {
         {/* <Rectangular path="Gender" name="Accept" style={{ marginTop: '70%' }} /> */}
         <TouchableOpacity
           style={{
-            marginTop: '70%',
+            marginTop: '85%',
             alignSelf: 'center',
             width: width * 0.8,
             height: height * 0.07,
@@ -55,10 +55,10 @@ const AboutPrivacy = ({ navigation }) => {
           }}>
             <Text style={{
               //fontWeight: '400',
-              fontWeight: '900',
+              //fontWeight: '900',
               fontSize: 17,
               //fontFamily: 'Bakbak One',
-              fontFamily: 'BakbakOneRegular',
+              fontFamily: 'BakbakOne-Regular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
@@ -100,7 +100,7 @@ const AboutPrivacy = ({ navigation }) => {
           </View>
         </TouchableOpacity> */}
         <TouchableOpacity>
-          <Text style={{ alignSelf: 'center', fontSize: 15, fontFamily: 'Inter-Regular', fontWeight: '400', lineHeight: 18, letterSpacing: -0.017, color: '#000000', marginTop: '7%', marginLeft: '-55%' }}>Decline</Text>
+          <Text style={{ alignSelf: 'center', fontSize: 15, fontFamily: 'Inter', lineHeight: 18, letterSpacing: -0.017, color: '#000000', marginTop: '20%', marginLeft: '-55%' }}>Decline</Text>
         </TouchableOpacity>
       </View>
     </View>

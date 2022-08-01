@@ -1,11 +1,11 @@
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {View, Text, TouchableOpacity, Dimensions} from 'react-native';
-import {icons} from '../../../assets/icons/icons';
+import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
+import { icons } from '../../../assets/icons/icons';
 
-const {height} = Dimensions.get('window');
+const { height } = Dimensions.get('window');
 
-export const CircularButton = ({path, style}) => {
+export const CircularButton = ({ path, style }) => {
   const navigation = useNavigation();
   return (
     <View>

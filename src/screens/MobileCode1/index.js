@@ -19,7 +19,7 @@ const MobileCode1
     return (
       <View style={{ flex: 1 }}>
 
-        <VerifyingCode />
+        <VerifyingCode path="SignedInMobile" />
 
         <View
           style={{
@@ -37,7 +37,7 @@ const MobileCode1
               //top: '50%',
               color: '#6E3E89',
               fontFamily: 'Inter',
-              fontWeight: '400',
+              //fontWeight: '400',
               fontSize: 15,
               display: 'flex',
               alignItems: 'center',

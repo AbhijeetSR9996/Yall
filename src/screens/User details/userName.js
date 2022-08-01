@@ -9,11 +9,11 @@ import {
   Switch,
 } from 'react-native';
 
-import {userStyles} from './userStyles';
-import {icons, imageicon} from '../../../assets/icons/icons';
-import {CircularButton} from '../../component/Buttons/circular';
+import { userStyles } from './userStyles';
+import { icons, imageicon } from '../../../assets/icons/icons';
+import { CircularButton } from '../../component/Buttons/circular';
 
-const UserName = ({navigation}) => {
+const UserName = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = React.useState(false);
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
@@ -21,8 +21,8 @@ const UserName = ({navigation}) => {
     <View style={userStyles.container}>
       <Text style={userStyles.text}>My Full Name is</Text>
 
-      <View style={{flexDirection: 'row', top: 70, left: 22, width: 269}}>
-        <Text style={{color: '#AAAAAA'}}>
+      <View style={{ flexDirection: 'row', top: 70, left: 22, width: 269 }}>
+        <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>
           Don’t lose access to your accont, verify your email.
         </Text>
       </View>
@@ -38,15 +38,16 @@ const UserName = ({navigation}) => {
           left: 22,
           width: 269,
           color: '#AAAAAA',
+          fontFamily: 'Inter'
         }}>
         Don’t lose access to your accont, verify your email.
       </Text>
 
-      <View style={{flexDirection: 'row', top: 150, left: 21}}>
-        <Text style={{color: '#AAAAAA', top: 5}}>Only show my initials</Text>
+      <View style={{ flexDirection: 'row', top: 150, left: 21 }}>
+        <Text style={{ color: '#AAAAAA', top: 5, fontFamily: 'Inter' }}>Only show my initials</Text>
         <Switch
-          style={{left: 10}}
-          trackColor={{false: '#767577', true: 'green'}}
+          style={{ left: 10 }}
+          trackColor={{ false: '#767577', true: 'green' }}
           thumbColor={isEnabled ? 'green' : '#f4f3f4'}
           ios_backgroundColor="#3e3e3e"
           onValueChange={toggleSwitch}
@@ -58,7 +59,7 @@ const UserName = ({navigation}) => {
           <Image source={require('../../../assets/images/toggle3.png')} style={{top:'-60%'}}/>
         </TouchableOpacity> */}
       </View>
-      <CircularButton path="UserDOB" style={{top: -25}} />
+      <CircularButton path="UserDOB" style={{ top: -25 }} />
     </View>
   );
 };

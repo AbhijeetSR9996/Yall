@@ -33,7 +33,7 @@ const MatchProfile = ({ navigation }) => {
           style={styles.img2}
         />
       </View>
-      <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
         <TextInput
           placeholder="Add a comment"
           placeholderTextColor="lightgrey"
@@ -44,7 +44,7 @@ const MatchProfile = ({ navigation }) => {
         <TouchableOpacity
           style={{
             width: width * 0.8,
-            height: height * 0.07,
+            //height: height * 0.07,
             borderWidth: 1,
             right: '2%'
           }}
@@ -61,9 +61,9 @@ const MatchProfile = ({ navigation }) => {
             position: 'relative',
           }}>
             <Text style={{
-              fontWeight: '900',
+              //fontWeight: '900',
               fontSize: 18,
-              fontFamily: 'BakbakOneRegular',
+              fontFamily: 'BakbakOne-Regular',
               color: '#000000',
               alignSelf: 'center',
               justifyContent: 'center',
@@ -129,8 +129,8 @@ const MatchProfile = ({ navigation }) => {
           </View>
         </TouchableOpacity> */}
 
-        <TouchableOpacity>
-          <Text style={{ alignSelf: 'center', left: '-27%', fontSize: 15, fontFamily: 'Inter-Regular', fontWeight: '500', lineHeight: 18, letterSpacing: -0.017, color: '#000000' }}>Cancel</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
+          <Text style={{ left: '-27%', fontSize: 15, fontFamily: 'Inter', lineHeight: 18, letterSpacing: -0.017, color: '#000000' }}>Cancel</Text>
         </TouchableOpacity>
 
       </View>

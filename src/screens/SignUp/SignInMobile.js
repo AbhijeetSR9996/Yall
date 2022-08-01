@@ -74,21 +74,21 @@ const SignInMobile = ({ navigation }) => {
               }}>
                 <Text style={{
                   //fontWeight: '400',
-                  fontWeight: '900',
+                  //fontWeight: '900',
                   fontSize: 17,
                   //fontFamily: 'Bakbak One',
-                  fontFamily: 'BakbakOneRegular',
+                  fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
                   //paddingVertical: 10,
                   //paddingVertical: 13,
                   top: '30.3%',
-                  right: '10%',
-                  //right: '20%',
+                  //right: '10%',
+                  right: '9.5%',
                   lineHeight: 25,
                   letterSpacing: -0.017
-                }}>Sign In With Mobile Number</Text>
+                }}>Sign In with Mobile Number</Text>
                 <View style={{
                   width: width * 0.15,
                   borderWidth: 1,

@@ -204,10 +204,10 @@ const AddPhoto = ({ navigation }) => {
         }}>
           <Text style={{
             //fontWeight: '400',
-            fontWeight: '900',
+            //fontWeight: '900',
             fontSize: 17,
             //fontFamily: 'Bakbak One',
-            fontFamily: 'BakbakOneRegular',
+            fontFamily: 'BakbakOne-Regular',
             color: '#000000',
             alignSelf: 'center',
             justifyContent: 'center',

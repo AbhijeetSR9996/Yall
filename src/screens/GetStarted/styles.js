@@ -18,7 +18,7 @@ const Styles = StyleSheet.create({
   },
   headline: {
     fontFamily: 'Inter',
-    fontWeight: '400',
+    //fontWeight: '400',
     fontSize: 15,
     //width: width * 0.8,
     width: 319,
