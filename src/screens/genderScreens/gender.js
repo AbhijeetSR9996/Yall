@@ -512,14 +512,14 @@ const Gender = ({ navigation }) => {
           style={{
             fontSize: 15,
             width: 270,
-            right: '240%',
+            right: '230%',
             bottom: 20,
             color: '#AAAAAA',
             fontFamily: 'Inter'
           }}>
           about we sue your gender
         </Text>
-        <Text style={{ fontSize: 15, width: 270, right: '698%', bottom: 5, color: '#AAAAAA', fontFamily: 'Inter' }}>
+        <Text style={{ fontSize: 15, width: 270, right: '648%', bottom: 5, color: '#AAAAAA', fontFamily: 'Inter' }}>
           to recommend people on Yall
         </Text>
       </View>

@@ -10,20 +10,20 @@ import {
 import { icons } from '../../../assets/icons/icons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { height, width } from '../../services/helper';
-
+import { Rectangular } from '../../component/Buttons/Rectangular/index';
 
 const SignUpEmail = ({ navigation }) => {
 
 
   return (
     <View style={{ flex: 1, backgroundColor: '#FFFFFF', justifyContent: 'center', flexDirection: 'column', alignItems: 'stretch' }}>
-      <View style={{ flex: 0.2, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }} />
+      {/* <View style={{ flex: 0.2, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }} /> */}
       <View style={{ flex: 0.4, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'flex-start', }}>
         <Text style={{ fontFamily: 'BakbakOne-Regular', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 297, color: '#000000', marginLeft: '5%' }}>When sent a 4 digit code to your mail@12354</Text>
         {/* <Text style={{ fontFamily: 'Bakbak One', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 307, color: '#000000', marginLeft: '6%' }}>your mail@12354 </Text> */}
       </View>
       {/* <View style={{ flex: 1.2, backgroundColor: 'transparent', flexDirection: 'column', alignItems: 'flex-start', marginTop: '0%', }}> */}
-      <View style={{ flex: 0.6, backgroundColor: 'transparent', marginTop: '0%', }}>
+      <View style={{ flex: 0.7, backgroundColor: 'transparent', marginTop: '-5%', }}>
         <TextInput
           placeholder="Enter code"
           placeholderTextColor="#AAAAAA"
@@ -98,7 +98,7 @@ const SignUpEmail = ({ navigation }) => {
               justifyContent: 'center',
               backgroundColor: '#DCC7E1',
               //position: 'absolute',
-              marginTop: '-8.2%'
+              marginTop: '-8.1%'
               //marginVertical: -1,
             }}>{icons.rightarrow}</View>
           </View>
@@ -157,7 +157,7 @@ const SignUpEmail = ({ navigation }) => {
               //backgroundColor: '#DCC7E1',
               backgroundColor: '#000000',
               //position: 'absolute',
-              marginTop: '-8.2%'
+              marginTop: '-8.1%'
               //marginVertical: -1,
             }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
           </View>
@@ -217,11 +217,14 @@ const SignUpEmail = ({ navigation }) => {
               //backgroundColor: '#DCC7E1',
               backgroundColor: '#000000',
               //position: 'absolute',
-              marginTop: '-8.2%'
+              marginTop: '-8.1%'
               //marginVertical: -1,
             }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
           </View>
         </TouchableOpacity>
+
+        {/* <Rectangular name="Resend Code" bgcolor="#000000" txtcolor="#FFFFFF" bgcolor2="#000000" txtcolor2="#FFFFFF" rgt="2%" rgt2txt="22%" top="32%" /> */}
+
       </View>
       <View style={{
         flex: 0.2,

@@ -41,8 +41,8 @@ export const Styles = StyleSheet.create({
     borderWidth: 2,
   },
   iconcontainer: {
-    height: 30,
-    width: 30,
+    height: 35,
+    width: 35,
     backgroundColor: 'transparent',
     //bottom: '73%',
     bottom: '79%',
@@ -61,18 +61,19 @@ export const Styles = StyleSheet.create({
     borderRadius: 17
   },
   crosscontainer: {
-    height: 30,
-    width: 30,
+    height: 37,
+    width: 35,
     backgroundColor: 'transparent',
     //bottom:'27%',
     bottom: '6%',
     right: '43%',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 17
+    borderRadius: 17,
+    //position: 'relative'
   },
   infoview: {
-    width: '20%',
+    width: '19%',
     height: 62,
     backgroundColor: '#f9dfff',
     position: 'relative',
@@ -84,7 +85,7 @@ export const Styles = StyleSheet.create({
   infoview2: {
     width: '27%',
     height: 62,
-    left: 68,
+    left: 64,
     backgroundColor: '#f9dfff',
     position: 'absolute',
     alignItems: 'space-between',
@@ -94,7 +95,7 @@ export const Styles = StyleSheet.create({
   infoview3: {
     width: '30%',
     height: 62,
-    right: 85,
+    right: 69,
     marginLeft: '5%',
     backgroundColor: '#f9dfff',
     position: 'absolute',
@@ -103,7 +104,8 @@ export const Styles = StyleSheet.create({
     borderWidth: 0.5,
   },
   infoview4: {
-    width: 85,
+    //width: 85,
+    width: 95,
     height: 62,
     right: 0,
     backgroundColor: '#f9dfff',
@@ -120,42 +122,46 @@ export const Styles = StyleSheet.create({
     fontSize: 22,
     justifyContent: 'center',
     //top: '35%',
-    top: '85%',
+    top: '95%',
     letterSpacing: -0.017
   },
   text2: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
     position: 'absolute',
-    right: 15,
+    right: 10,
     //fontWeight: '400',
     fontSize: 12,
+    bottom: '22%'
   },
   text3: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
     position: 'absolute',
-    right: 14,
+    right: 8,
     //fontWeight: '400',
     fontSize: 12,
+    bottom: '29%'
   },
   text4: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
     position: 'absolute',
-    right: 25,
+    right: 33,
     //fontWeight: '400',
     fontSize: 12,
+    bottom: '27%'
   },
   text5: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
     position: 'absolute',
-    right: 5,
+    right: 6,
     //right: '5%',
     //left: '40%',
     //fontWeight: '400',
     fontSize: 12,
+    bottom: '16%'
   },
   text6: {
     fontFamily: 'BakbakOne-Regular',
@@ -234,29 +240,35 @@ export const Styles = StyleSheet.create({
     width: width,
   },
   img3: {
-    height: 20,
-    width: 20,
+    height: 25,
+    width: 23,
     left: 10,
     position: 'absolute',
+    bottom: '28%'
   },
   img4: {
-    height: 30,
-    width: 22,
-    left: 5,
+    //height: 30,
+    height: 23,
+    //width: 22,
+    width: 17,
+    left: 9,
     position: 'absolute',
+    bottom: '29%'
   },
   img5: {
-    height: 25,
-    width: 20,
-    left: 10,
+    height: 26,
+    width: 21,
+    left: 8,
     position: 'absolute',
+    bottom: '26%'
   },
   img6: {
-    height: 20,
-    width: 20,
+    height: 24,
+    width: 24,
     //left: 5,
-    left: '5%',
+    left: 6,
     position: 'absolute',
+    bottom: '29%'
   },
   img8: {
     height: 32,
@@ -299,9 +311,10 @@ export const Styles = StyleSheet.create({
     //height: 30,
     height: 35,
     //width: 30,
-    width: 35
+    width: 35,
     // height: '10%',
-    // width: '10%'
+    // width: '10%',
+    //position: 'absolute'
   },
   vw: {
     width: '100%',

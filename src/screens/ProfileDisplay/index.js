@@ -57,7 +57,7 @@ const ProfileDisplay = () => {
                     source={require('../../../assets/images/work.png')}
                     style={Styles.img6}
                   />
-                  <Text style={Styles.text5}> Graphic Designer</Text>
+                  <Text style={Styles.text5}>Graphic Designer</Text>
                 </View>
               </View>
             </View>
@@ -238,7 +238,7 @@ const ProfileDisplay = () => {
         activeOpacity={0.5}
         onPress={() => navigation.navigate('MainBottomNavigation')}>
         <Image
-          source={require('../../../assets/images/cross.png')}
+          source={require('../../../assets/images/cross2.png')}
           style={Styles.imglike}
           resizeMode="contain" />
       </TouchableOpacity>

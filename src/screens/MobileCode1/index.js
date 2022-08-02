@@ -8,6 +8,7 @@ import {
 } from 'react-native-confirmation-code-field';
 import { CircularButton } from '../../component/Buttons/circular';
 import { VerifyingCode } from '../../component/VerifyingCode/index';
+import { icons } from '../../../assets/icons/icons';
 
 const { height } = Dimensions.get('window');
 
@@ -33,7 +34,8 @@ const MobileCode1
           }}>
           <TouchableOpacity>
             <Text style={{
-              bottom: 60,
+              //bottom: 60,
+              bottom: 40,
               //top: '50%',
               color: '#6E3E89',
               fontFamily: 'Inter',
@@ -46,9 +48,22 @@ const MobileCode1
           </TouchableOpacity>
         </View>
 
-        <CircularButton path="MainBottomNavigation" style={{ marginTop: 480 }} />
+        {/* <CircularButton path="MainBottomNavigation" style={{ marginTop: 480 }} /> */}
 
-
+        <TouchableOpacity onPress={() => navigation.navigate('MainBottomNavigation')}>
+          <Text
+            style={{
+              right: 20,
+              alignSelf: 'flex-end',
+              marginVertical: height / 1.6,
+              position: 'absolute',
+              backgroundColor: '#DCC7E1',
+              borderRadius: 20,
+              top: 100,
+            }}>
+            {icons.rightcirclearrow}
+          </Text>
+        </TouchableOpacity>
 
       </View>
     );

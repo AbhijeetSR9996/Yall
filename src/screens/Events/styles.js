@@ -19,7 +19,7 @@ export default StyleSheet.create({
         height: height * 0.4,
     },
     weekend_text: {
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,
@@ -45,7 +45,7 @@ export default StyleSheet.create({
         height: height * 0.4
     },
     discover_text: {
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,
