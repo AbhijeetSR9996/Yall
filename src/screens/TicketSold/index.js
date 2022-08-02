@@ -1,35 +1,33 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, SafeAreaView, Button } from 'react-native';
+import { View, Text, TouchableOpacity, Image, SafeAreaView, Button, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 import styles from './styles';
 import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
 import { Rectangular } from '../../component/Buttons/rectangular';
-import { StyleSheet, Dimensions } from 'react-native';
 import { Icons } from '../../../assets/icons/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
-
-const { width, height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
 
 const TicketSold = ({ navigation }) => {
 
     return (
 
         <View style={styles.main_view}>
-            
+
             <Image
                 style={styles.image_bg}
                 source={require('../../../assets/images/soldoutbg.png')}
-                resizeMode="cover" />        
+                resizeMode="cover" />
             <Image
                 style={styles.image_bg}
                 source={require('../../../assets/images/soldoutbg2.png')}
                 resizeMode="cover" />
             <Image
-                style={[styles.image_bg,{transform:[{rotate:'0deg'}],left:245}]}
+                style={[styles.image_bg, { transform: [{ rotate: '0deg' }], left: 245 }]}
                 source={require('../../../assets/images/SoldOut.png')}
-                resizeMode="cover" />    
+                resizeMode="cover" />
             <View style={styles.first_view}>
-                <Image source={require('../../../assets/images/timer-glass2.png')} style={{top:'5%'}}
+                <Image source={require('../../../assets/images/timer-glass2.png')} style={{ top: '5%' }}
                 />
             </View>
 
@@ -48,7 +46,7 @@ const TicketSold = ({ navigation }) => {
                             borderColor: '#FFFFFF',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            elevation:8
+                            elevation: 8
                         }
                     }>
                     <Text style={[styles.main_text, { color: '#000000', fontSize: 50, lineHeight: 70, letterSpacing: -0.017 }]}>00</Text>
@@ -69,8 +67,8 @@ const TicketSold = ({ navigation }) => {
                             textAlignVertical: 'center'
                         }
                     }>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
                 </View>
                 <View
                     style={
@@ -86,7 +84,7 @@ const TicketSold = ({ navigation }) => {
                             borderColor: '#FFFFFF',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            elevation:8
+                            elevation: 8
                         }
                     }>
                     <Text style={[styles.main_text, { color: '#000000', fontSize: 50, lineHeight: 70, letterSpacing: -0.017 }]}>00</Text>
@@ -107,8 +105,8 @@ const TicketSold = ({ navigation }) => {
                             textAlignVertical: 'center'
                         }
                     }>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
                 </View>
                 <View
                     style={
@@ -124,7 +122,7 @@ const TicketSold = ({ navigation }) => {
                             borderColor: '#FFFFFF',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            elevation:8
+                            elevation: 8
                         }
                     }>
                     <Text style={[styles.main_text, { color: '#000000', fontSize: 50, lineHeight: 70, letterSpacing: -0.017 }]}>00</Text>
@@ -133,11 +131,11 @@ const TicketSold = ({ navigation }) => {
 
             </View>
             <View style={styles.third_view}>
-                <Text style={[styles.main_text,{width:146,textAlign:'center'}]}>Sold Out </Text>
-                <Text style={[styles.main_text,{width:325,textAlign:'center'}]}>Wait the next event in </Text>
-                <Text style={[styles.main_text,{width:295,textAlign:'center'}]}>7 days </Text>
+                <Text style={[styles.main_text, { width: 146, textAlign: 'center' }]}>Sold Out </Text>
+                <Text style={[styles.main_text, { width: 325, textAlign: 'center' }]}>Wait the next event in </Text>
+                <Text style={[styles.main_text, { width: 295, textAlign: 'center' }]}>7 days </Text>
             </View>
-            
+
         </View >
     )
 }

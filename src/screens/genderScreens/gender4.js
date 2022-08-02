@@ -261,7 +261,7 @@ const Gender4 = ({ navigation }) => {
       </View>
       <TouchableOpacity
         style={{
-          marginTop: '103%',
+          marginTop: '105%',
           alignSelf: 'center',
           width: width * 0.8,
           height: height * 0.07,

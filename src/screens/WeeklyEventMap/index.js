@@ -59,7 +59,7 @@ const WeeklyEventMap = ({ navigation }) => {
                             </TouchableOpacity>
                         </View>
                         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, top: '0%' }}>
-                            <Text style={{ fontFamily: 'Bakbak One', fontWeight: '400', fontSize: 15, color: '#000000', lineHeight: 21, letterSpacing: -0.017, alignItems: 'center' }}>Mumbai rooftop cocktail </Text>
+                            <Text style={{ fontFamily: 'BakbakOne-Regular', fontSize: 15, color: '#000000', lineHeight: 21, letterSpacing: -0.017, alignItems: 'center' }}>Mumbai rooftop cocktail </Text>
                         </View>
                     </Card>
                 </View>
@@ -76,7 +76,55 @@ const WeeklyEventMap = ({ navigation }) => {
                         <Text style={styles.buttonText}><Icon1 name="share-2" /> Share</Text>
                     </TouchableOpacity>
                 </View>
-                <Rectangular path="WeeklyEventMap" name="Book Now" style={styles.rectangularButton} />
+                {/* <Rectangular path="WeeklyEventMap" name="Book Now" style={styles.rectangularButton} /> */}
+                <TouchableOpacity
+                    style={[
+                        {
+                            bottom: '15%',
+                            alignSelf: 'center',
+                            width: width * 0.8,
+                            height: height * 0.07,
+                            borderWidth: 1,
+                            right: '2%'
+                        },
+                    ]}
+                    onPress={() => { navigation.navigate('WeeklyEventMap') }}>
+                    <View style={{
+                        left: 10,
+                        top: 8,
+                        width: width * 0.8,
+                        borderWidth: 1,
+                        borderRightWidth: 0,
+                        height: height * 0.07,
+                        //alignItems: 'center',
+                        alignSelf: 'center',
+                        backgroundColor: '#DCC7E1',
+                        position: 'relative',
+                    }}>
+                        <Text style={{
+                            //fontWeight: '900',
+                            fontSize: 18,
+                            fontFamily: 'BakbakOne-Regular',
+                            color: '#000000',
+                            alignSelf: 'center',
+                            justifyContent: 'center',
+                            //paddingVertical: 10,
+                            top: '30.3%',
+                            right: '30%',
+                        }}>Book Now</Text>
+                        <View style={{
+                            width: width * 0.15,
+                            borderWidth: 1,
+                            height: '104%',
+                            alignSelf: 'flex-end',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#DCC7E1',
+                            position: 'absolute',
+                            marginVertical: -1,
+                        }}>{icons.rightarrow}</View>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     )

@@ -297,6 +297,15 @@ const Chat = ({ navigation }) => {
                   <Image source={require('../../../assets/images/gifattachment.png')} />
                 </TouchableOpacity>
                 <View style={{ bottom: '33%' }}><Image source={require('../../../assets/images/GIF.png')} /></View>
+                {/* <TouchableOpacity>
+                  <Icon name="GIF" style={{
+                    //fontSize: 50,
+                    //color: '#000000',
+                    //fontWeight: "200",
+                    top: '0%',
+                  }} />
+                </TouchableOpacity> */}
+
               </View>
               <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', marginTop: '-25%', width: '80%', height: 47, borderRadius: 30, top: '5%' }}>
                 <TextInput

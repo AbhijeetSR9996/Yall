@@ -12,7 +12,7 @@ export const photoStyles = {
     width: 222,
     height: 70,
     //top: 30,
-    top: 33,
+    top: 35.5,
     left: 21,
     letterSpacing: -0.017
   },

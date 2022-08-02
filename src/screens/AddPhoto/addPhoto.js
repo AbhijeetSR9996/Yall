@@ -181,7 +181,7 @@ const AddPhoto = ({ navigation }) => {
       /> */}
       <TouchableOpacity
         style={{
-          top: '61%',
+          top: '63%',
           alignSelf: 'center',
           width: width * 0.8,
           height: height * 0.07,

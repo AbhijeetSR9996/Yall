@@ -33,6 +33,7 @@ const AboutPrivacy = ({ navigation }) => {
         <TouchableOpacity
           style={{
             marginTop: '85%',
+            //marginTop: '60%',
             alignSelf: 'center',
             width: width * 0.8,
             height: height * 0.07,
@@ -100,7 +101,7 @@ const AboutPrivacy = ({ navigation }) => {
           </View>
         </TouchableOpacity> */}
         <TouchableOpacity>
-          <Text style={{ alignSelf: 'center', fontSize: 15, fontFamily: 'Inter', lineHeight: 18, letterSpacing: -0.017, color: '#000000', marginTop: '20%', marginLeft: '-55%' }}>Decline</Text>
+          <Text style={{ alignSelf: 'center', fontSize: 15, fontFamily: 'Inter', lineHeight: 18, letterSpacing: -0.017, color: '#000000', marginTop: '7%', marginLeft: '-55%' }}>Decline</Text>
         </TouchableOpacity>
       </View>
     </View>

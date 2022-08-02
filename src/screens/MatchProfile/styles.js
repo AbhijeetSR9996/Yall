@@ -34,7 +34,6 @@ export const styles = {
     //position:'absolute',
     borderRadius: 20,
     //marginHorizontal:'5%',
-
   },
   textInput1: {
     fontFamily: 'Inter',

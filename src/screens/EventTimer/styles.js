@@ -3,75 +3,75 @@ const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     image_bg: {
-        position:'absolute'
+        position: 'absolute'
     },
     main_view: {
-        flex:1,
-        flexDirection:'column'    
+        flex: 1,
+        flexDirection: 'column'
     },
     first_view: {
-        flex:3,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:'center',
-        backgroundColor:'transparent'
+        flex: 3,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'transparent'
     },
     second_view: {
-        flex:1,
-        width:'90%',
+        flex: 1,
+        width: '90%',
         //width:width - 10,
-        flexDirection:'row',
-        alignItems:'center',
-        justifyContent:'space-between',
-        backgroundColor:'transparent',
-        marginHorizontal:'3%'
-        
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        backgroundColor: 'transparent',
+        marginHorizontal: '3%'
+
     },
     third_view: {
-        flex:1.5,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:'space-evenly',
-        backgroundColor:'transparent',
-        
+        flex: 1.5,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        backgroundColor: 'transparent',
+
     },
     fourth_view: {
-        flex:1,
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:"center",
-        backgroundColor:'transparent',
-        
+        flex: 1,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: "center",
+        backgroundColor: 'transparent',
+
     },
     image: {
-        width:273.98,
-        height:204.07,
+        width: 273.98,
+        height: 204.07,
     },
-    main_text: { 
-        fontFamily: "Bakbak One",
+    main_text: {
+        fontFamily: "BakbakOne-Regular",
         color: "#FFFFFF",
         fontSize: 30,
-        fontWeight: "400",
+        //fontWeight: "400",
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 42,
         //paddingVertical:'5%'
     },
     desc_text: {
-        fontFamily:'Inter',
+        fontFamily: 'Inter',
         color: "#FFFFFF",
         fontSize: 15,
-        fontWeight: "400",
+        //fontWeight: "400",
         letterSpacing: -0.017,
         width: 324,
         //width: '90%',
         height: 54,
         //alignSelf:'center',
-        textAlign:'center',
-        lineHeight:18
+        textAlign: 'center',
+        lineHeight: 18
     },
-    buttonContainer: {         
-        width: width * 0.8 ,
+    buttonContainer: {
+        width: width * 0.8,
         height: height * 0.07,
         borderWidth: 1,
     },
@@ -84,7 +84,7 @@ export default StyleSheet.create({
         height: height * 0.07,
         alignSelf: 'center',
         backgroundColor: '#DCC7E1',
-        position: 'relative', 
+        position: 'relative',
     },
     buttonText: {
         fontWeight: '700',
@@ -106,7 +106,7 @@ export default StyleSheet.create({
         backgroundColor: '#DCC7E1',
         position: 'absolute',
         marginVertical: -1,
-        },
+    },
 
 
 

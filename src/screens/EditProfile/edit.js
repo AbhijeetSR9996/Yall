@@ -178,14 +178,14 @@ const Edit = ({ navigation }) => {
             fontSize: 15,
             //marginTop: '20%',
             top: '-20%',
-            left: '7%',
+            left: '10%',
             color: '#B4B4B4',
 
           },
         ]}>
         Full name
       </Text>
-      <View style={[userStyles.textInput, { top: '-26%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-26%', left: '3%' }]}>
         <TextInput
           placeholder="John Doe"
           placeholderTextColor="#000000"
@@ -200,14 +200,14 @@ const Edit = ({ navigation }) => {
             fontFamily: 'Inter',
             fontSize: 15,
             top: '-25%',
-            left: '7%',
+            left: '10%',
             color: '#B4B4B4',
 
           },
         ]}>
         Surname
       </Text>
-      <View style={[userStyles.textInput, { top: '-31%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-31%', left: '3%' }]}>
         <TextInput
           placeholder="Doe"
           placeholderTextColor="#000000"
@@ -222,14 +222,14 @@ const Edit = ({ navigation }) => {
             fontFamily: 'Inter',
             fontSize: 15,
             top: '-30%',
-            left: '7%',
+            left: '10%',
             color: '#B4B4B4',
 
           },
         ]}>
         Phone
       </Text>
-      <View style={[userStyles.textInput, { top: '-36%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-36%', left: '3%' }]}>
         <TextInput
           placeholder="+8511 6654 5265"
           placeholderTextColor="#000000"
@@ -244,14 +244,14 @@ const Edit = ({ navigation }) => {
             fontFamily: 'Inter',
             fontSize: 15,
             top: '-35%',
-            left: '7%',
+            left: '10%',
             color: '#B4B4B4',
 
           },
         ]}>
         Gender
       </Text>
-      <View style={[userStyles.textInput, { top: '-41%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-41%', left: '3%' }]}>
         <TextInput
           placeholder="Male"
           placeholderTextColor="#000000"
@@ -266,14 +266,14 @@ const Edit = ({ navigation }) => {
             fontFamily: 'Inter',
             fontSize: 15,
             top: '-40%',
-            left: '7%',
+            left: '10%',
             color: '#B4B4B4',
 
           },
         ]}>
         Date of birth
       </Text>
-      <View style={[userStyles.textInput, { top: '-46%', left: '0%' }]}>
+      <View style={[userStyles.textInput, { top: '-46%', left: '3%' }]}>
         <TextInput
           placeholder="01-01-2001"
           placeholderTextColor="#000000"

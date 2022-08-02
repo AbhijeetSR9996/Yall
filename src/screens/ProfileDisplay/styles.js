@@ -33,7 +33,7 @@ export const Styles = StyleSheet.create({
   infocontainer: {
     width: '95%',
     height: 66,
-    bottom: 150,
+    bottom: 160,
     backgroundColor: 'white',
     position: 'relative',
     borderTopRightRadius: 20,
@@ -45,7 +45,7 @@ export const Styles = StyleSheet.create({
     width: 30,
     backgroundColor: 'transparent',
     //bottom: '73%',
-    bottom: '80%',
+    bottom: '79%',
     right: '-40%',
     alignItems: 'center',
     justifyContent: 'center',
@@ -65,7 +65,7 @@ export const Styles = StyleSheet.create({
     width: 30,
     backgroundColor: 'transparent',
     //bottom:'27%',
-    bottom: '5%',
+    bottom: '6%',
     right: '43%',
     alignItems: 'center',
     justifyContent: 'center',
@@ -95,6 +95,7 @@ export const Styles = StyleSheet.create({
     width: '30%',
     height: 62,
     right: 85,
+    marginLeft: '5%',
     backgroundColor: '#f9dfff',
     position: 'absolute',
     alignItems: 'space-between',
@@ -295,8 +296,12 @@ export const Styles = StyleSheet.create({
     bottom: 50,
   },
   imglike: {
-    height: 30,
-    width: 30
+    //height: 30,
+    height: 35,
+    //width: 30,
+    width: 35
+    // height: '10%',
+    // width: '10%'
   },
   vw: {
     width: '100%',

@@ -43,91 +43,6 @@ const MainBottomNavigation = () => {
         //tabBarStyle:{display:'none'}
       }}>
 
-      {/* <Tab.Screen
-        name="ProfileDisplay"
-        component={ProfileDisplay}
-        options={{
-          //tabBarStyle:{display:'none'},
-          tabBarIcon: () => (
-            <Image
-              source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
-            />
-          )
-        }}
-      />
-
-<Tab.Screen
-        name="Edit"
-        component={Edit}
-        options={{
-          tabBarStyle:{display:'none'},
-          tabBarIcon: () => (
-            <Image
-              source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
-            />
-          )
-        }}
-      />
-
-      <Tab.Screen
-        name="Liked"
-        component={Liked}
-        options={{
-          tabBarIcon: () => (
-            <Image
-              source={require('../assets/images/heart.png')}
-              style={{width: 22, height: 20}}
-            />
-          ),
-        }}
-      />
-     
-      <Tab.Screen
-        name="Events"
-        component={Events}
-        options={{
-          tabBarIcon: () => (
-            <Image
-              source={require('../assets/images/glass.png')}
-              style={{width: 13, height: 22}}
-            />
-          ),
-        }}
-      />
-
-      <Tab.Screen
-        name="WeekendEvent"
-        component={WeekendEvent}
-        options={{
-          tabBarIcon: () => (
-            <Image
-              source={require('../assets/images/message.png')}
-              style={{width: 20, height: 20}}
-            />
-          ),
-        }}
-      />
-
-      <Tab.Screen
-        name="BookingConfirm"
-        component={BookingConfirm}
-        options={{
-          tabBarIcon: () => (
-            <Image
-              source={require('../assets/images/user2.png')}
-              style={{width: 20, height: 20}}
-            />
-          ),
-        }}
-      />  */}
-
-
-
-      {/*=================================*/}
-
-
 
       <Tab.Screen
         name="ProfileDisplay"
@@ -277,11 +192,11 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}
-      />    */}
+      /> */}
 
       {/* <Tab.Screen
         name="TicketSold"
@@ -292,7 +207,7 @@ const MainBottomNavigation = () => {
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/home.png')}
-              style={{width: 22, height: 20}}
+              style={{ width: 22, height: 20 }}
             />
           )
         }}

@@ -1,14 +1,12 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, SafeAreaView, Button } from 'react-native';
+import { View, Text, TouchableOpacity, Image, SafeAreaView, Button, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 import styles from './styles';
 import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
 import { Rectangular } from '../../component/Buttons/rectangular';
-import { StyleSheet, Dimensions } from 'react-native';
 import { Icons } from '../../../assets/icons/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
-
-const { width, height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
 
 const EventTimer = ({ navigation }) => {
 
@@ -39,7 +37,7 @@ const EventTimer = ({ navigation }) => {
                             borderColor: '#FFFFFF',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            elevation:8
+                            elevation: 8
                         }
                     }>
                     <Text style={[styles.main_text, { color: '#000000', fontSize: 50, lineHeight: 70, letterSpacing: -0.017 }]}>07</Text>
@@ -60,8 +58,8 @@ const EventTimer = ({ navigation }) => {
                             textAlignVertical: 'center'
                         }
                     }>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
                 </View>
                 <View
                     style={
@@ -77,7 +75,7 @@ const EventTimer = ({ navigation }) => {
                             borderColor: '#FFFFFF',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            elevation:8
+                            elevation: 8
                         }
                     }>
                     <Text style={[styles.main_text, { color: '#000000', fontSize: 50, lineHeight: 70, letterSpacing: -0.017 }]}>48</Text>
@@ -96,11 +94,11 @@ const EventTimer = ({ navigation }) => {
                             // borderColor:'#000000',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            
+
                         }
                     }>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
-                    <View><Icon name="circle" style={{ color: '#FFFFFF',fontSize:10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
+                    <View><Icon name="circle" style={{ color: '#FFFFFF', fontSize: 10 }} /></View>
                 </View>
                 <View
                     style={
@@ -116,7 +114,7 @@ const EventTimer = ({ navigation }) => {
                             borderColor: '#FFFFFF',
                             //marginTop:'-0.5%',
                             textAlignVertical: 'center',
-                            elevation:8
+                            elevation: 8
                         }
                     }>
                     <Text style={[styles.main_text, { color: '#000000', fontSize: 50, lineHeight: 70, letterSpacing: -0.017 }]}>60</Text>
@@ -177,7 +175,7 @@ const EventTimer = ({ navigation }) => {
                             marginBottom: '5%'
                         }}
                             onPress={() => navigation.navigate('TicketSold')}>
-                            <Text style={[styles.desc_text, { paddingVertical: '10%', letterSpacing: -0.017, fontWeight: '500', fontSize: 10, lineHeight: 12, alignSelf:'center',color:'#000000' }]}>Click Here</Text>
+                            <Text style={[styles.desc_text, { paddingVertical: '10%', letterSpacing: -0.017, fontSize: 10, lineHeight: 12, alignSelf: 'center', color: '#000000' }]}>Click Here</Text>
                         </TouchableOpacity>
                     </View>
                     <View
@@ -195,9 +193,9 @@ const EventTimer = ({ navigation }) => {
                                 // borderColor:'#000000',
                             }
                         }>
-                        <View style={{marginTop:'20%'}}>
+                        <View style={{ marginTop: '20%' }}>
                             <TouchableOpacity >
-                            <Image source={require('../../../assets/images/cross-icon.png')}/>
+                                <Image source={require('../../../assets/images/cross-icon.png')} />
                             </TouchableOpacity>
                         </View>
                     </View>
