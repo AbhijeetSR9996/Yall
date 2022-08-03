@@ -11,14 +11,18 @@ export const Styles = StyleSheet.create({
   },
   container: {
     width: width,
-    height: 50,
+    //height: -15,
+    height: 60,
     top: 5,
     backgroundColor: 'transparent',
-    marginTop: '-20%'
+    marginTop: '-20%',
+    //bottom: '-60%'
+    //marginTop: '30%',
   },
   container2: {
     height: height / 1.15,
-    //top: 10,
+    //height: height / 1.18,
+    //top: 0,
     backgroundColor: 'white',
     position: 'relative',
   },
@@ -65,7 +69,7 @@ export const Styles = StyleSheet.create({
     width: 35,
     backgroundColor: 'transparent',
     //bottom:'27%',
-    bottom: '6%',
+    bottom: '8%',
     right: '43%',
     alignItems: 'center',
     justifyContent: 'center',
@@ -76,10 +80,11 @@ export const Styles = StyleSheet.create({
     width: '19%',
     height: 62,
     backgroundColor: '#f9dfff',
-    position: 'relative',
+    //position: 'relative',
     borderTopLeftRadius: 18,
-    alignItems: 'space-between',
-    justifyContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row'
     //borderWidth: 0.5,
   },
   infoview2: {
@@ -88,20 +93,27 @@ export const Styles = StyleSheet.create({
     left: 64,
     backgroundColor: '#f9dfff',
     position: 'absolute',
-    alignItems: 'space-between',
-    justifyContent: 'center',
+    //alignItems: 'space-between',
+    //justifyContent: 'center',
     borderWidth: 0.5,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row'
   },
   infoview3: {
     width: '30%',
     height: 62,
     right: 69,
-    marginLeft: '5%',
+    //marginLeft: '5%',
+    marginLeft: '10%',
     backgroundColor: '#f9dfff',
     position: 'absolute',
-    alignItems: 'space-between',
-    justifyContent: 'center',
+    //alignItems: 'space-between',
+    //justifyContent: 'center',
     borderWidth: 0.5,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row'
   },
   infoview4: {
     //width: 85,
@@ -112,8 +124,11 @@ export const Styles = StyleSheet.create({
     position: 'absolute',
     borderTopRightRadius: 18,
     //alignItems: 'center',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     borderWidth: 0.5,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row'
   },
   text: {
     color: '#000000',
@@ -128,40 +143,41 @@ export const Styles = StyleSheet.create({
   text2: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
-    position: 'absolute',
-    right: 10,
+    //position: 'absolute',
+    //right: 10,
     //fontWeight: '400',
     fontSize: 12,
-    bottom: '22%'
+    bottom: '-10%'
   },
   text3: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
-    position: 'absolute',
-    right: 8,
+    //position: 'absolute',
+    //right: 10,
     //fontWeight: '400',
     fontSize: 12,
-    bottom: '29%'
+    bottom: '-2%'
   },
   text4: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
-    position: 'absolute',
-    right: 33,
+    //position: 'absolute',
+    right: '29%',
     //fontWeight: '400',
     fontSize: 12,
-    bottom: '27%'
+    //bottom: '27%'
   },
   text5: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
-    position: 'absolute',
-    right: 6,
+    width: '60%',
+    //position: 'absolute',
+    //right: 6,
     //right: '5%',
-    //left: '40%',
+    left: '20%',
     //fontWeight: '400',
     fontSize: 12,
-    bottom: '16%'
+    //bottom: '16%'
   },
   text6: {
     fontFamily: 'BakbakOne-Regular',
@@ -180,7 +196,10 @@ export const Styles = StyleSheet.create({
     left: 50,
     fontSize: 12,
     right: 10,
-    letterSpacing: -0.017
+    letterSpacing: -0.017,
+    //width: 297
+    //width: '70%',
+    width: '83%',
   },
   text8: {
     fontFamily: 'BakbakOne-Regular',
@@ -227,12 +246,14 @@ export const Styles = StyleSheet.create({
     fontFamily: 'Inter',
     color: '#000000',
     position: 'absolute',
-    left: 40,
+    //left: 40,
+    left: 60,
     fontSize: 15,
     //fontWeight: '400',
     position: 'absolute',
-    right: 10,
-    letterSpacing: -0.017
+    //right: 10,
+    letterSpacing: -0.017,
+
   },
   img: {
     height: 260,
@@ -242,33 +263,33 @@ export const Styles = StyleSheet.create({
   img3: {
     height: 25,
     width: 23,
-    left: 10,
-    position: 'absolute',
-    bottom: '28%'
+    //left: 10,
+    //position: 'absolute',
+    //bottom: '28%'
   },
   img4: {
     //height: 30,
     height: 23,
     //width: 22,
     width: 17,
-    left: 9,
-    position: 'absolute',
-    bottom: '29%'
+    //left: 9,
+    //position: 'absolute',
+    //bottom: '29%'
   },
   img5: {
     height: 26,
-    width: 21,
-    left: 8,
-    position: 'absolute',
-    bottom: '26%'
+    width: 21.5,
+    left: '-12%',
+    //position: 'absolute',
+    //bottom: '26%'
   },
   img6: {
     height: 24,
     width: 24,
     //left: 5,
-    left: 6,
-    position: 'absolute',
-    bottom: '29%'
+    left: 10,
+    //position: 'absolute',
+    //bottom: '29%'
   },
   img8: {
     height: 32,

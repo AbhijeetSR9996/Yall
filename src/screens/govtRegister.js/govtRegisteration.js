@@ -11,7 +11,9 @@ import {
 import { Card } from 'react-native-paper';
 import { govtStyles } from './govtStyles';
 import { imageicon, icons } from '../../../assets/icons/icons';
+import { height, width } from '../../services/helper';
 import { CircularButton } from '../../component/Buttons/circular';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const GovtRegisterID = ({ navigation }) => {
   return (
@@ -62,7 +64,22 @@ const GovtRegisterID = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </Card>
-      <CircularButton path="Upload" style={{ marginTop: 280 }} />
+      {/* <CircularButton path="Upload" style={{ marginTop: 280 }} /> */}
+      <View style={{ display: 'flex', marginTop: '78%', marginRight: '10%', alignItems: 'flex-end' }}>
+        <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('Upload')}>
+          <View
+            style={{
+              //backgroundColor: '#DCC7E1',
+              justifyContent: 'flex-end',
+              marginTop: '100%',
+              borderRadius: 50,
+              width: 40
+            }}>
+            {/* {icons.rightcirclearrow} */}
+            <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
+          </View>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

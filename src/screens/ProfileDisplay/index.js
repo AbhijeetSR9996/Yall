@@ -12,7 +12,11 @@ const ProfileDisplay = () => {
         <Text style={Styles.text}> Priya Sharma </Text>
       </View>
 
-      <View style={[Styles.container2, { top: 35 }]}>
+      <View style={[Styles.container2, {
+        top: 35,
+        //top: 120,
+
+      }]}>
 
         <ScrollView style={Styles.container2}>
           <View style={Styles.itemcontainer}>
@@ -167,6 +171,17 @@ const ProfileDisplay = () => {
                     source={require('../../../assets/images/scroller.png')}
                     style={Styles.img12}
                   />
+                  <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-6%' }}>
+                    <TouchableOpacity >
+                      <Image source={require('../../../assets/images/ellipseblack.png')} style={{ paddingRight: '4%', }} />
+                    </TouchableOpacity>
+                    <TouchableOpacity >
+                      <Image source={require('../../../assets/images/ellipsewhite.png')} style={{ paddingRight: '4%' }} />
+                    </TouchableOpacity>
+                    <TouchableOpacity >
+                      <Image source={require('../../../assets/images/ellipsewhite.png')} style={{ paddingRight: '4%' }} />
+                    </TouchableOpacity>
+                  </View>
                 </View>
               </View>
             </View>

@@ -12,6 +12,8 @@ import {
 import { userStyles } from './userStyles';
 import { icons, imageicon } from '../../../assets/icons/icons';
 import { CircularButton } from '../../component/Buttons/circular';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import { height, width } from '../../services/helper';
 
 const UserName = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = React.useState(false);
@@ -59,7 +61,22 @@ const UserName = ({ navigation }) => {
           <Image source={require('../../../assets/images/toggle3.png')} style={{top:'-60%'}}/>
         </TouchableOpacity> */}
       </View>
-      <CircularButton path="UserDOB" style={{ top: -25 }} />
+      {/* <CircularButton path="UserDOB" style={{ top: -25 }} /> */}
+      <View style={{ display: 'flex', marginTop: '114%', marginRight: '10%', alignItems: 'flex-end' }}>
+        <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('UserDOB')}>
+          <View
+            style={{
+
+              justifyContent: 'flex-end',
+              marginTop: '100%',
+              borderRadius: 50,
+              //width: width * .105
+              width: 40
+            }}>
+            <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
+          </View>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

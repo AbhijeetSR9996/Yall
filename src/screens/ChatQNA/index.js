@@ -88,7 +88,7 @@ const ChatQNA = ({ navigation }) => {
               fontWeight: "200",
             }} />
           </TouchableOpacity>
-          <Image source={require('../../../assets/images/profilecircle2.png')} style={{ marginLeft: '0%', width: 40, height: 40 }} />
+          <Image source={require('../../../assets/images/profilecircle2.png')} style={{ marginLeft: '0%', width: 40, height: 40, marginBottom: '-5%' }} />
           <TouchableOpacity>
             <Text style={{
               color: '#000000',
@@ -111,12 +111,12 @@ const ChatQNA = ({ navigation }) => {
         </View>
 
       </View>
-      <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%' }} />
+      <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
       <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
-        <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
-        <View style={{ flex: 0.08, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
             <ImageBackground
               source={require('../../../assets/images/buttonbg2.png')}
@@ -166,10 +166,10 @@ const ChatQNA = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
-        <View style={{ flex: 0.08, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
 
           <TouchableOpacity>
             <ImageBackground
@@ -544,7 +544,7 @@ const ChatQNA = ({ navigation }) => {
         <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={[styles.text, { marginRight: '5%' }]}>Deliverd. 10:50 AM</Text>
         </View>
-        <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+        <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
             <TouchableOpacity onPress={() => createTwoButtonAlert()}>
               <Image source={require('../../../assets/images/camera2.png')} />
@@ -554,7 +554,8 @@ const ChatQNA = ({ navigation }) => {
             <Card style={{
               width: '100%',
               alignSelf: 'center',
-              height: 47,
+              //height: 47,
+              height: 37,
               borderWidth: 1,
               borderRadius: 100,
               borderColor: 'rgba(142,142,142,0.3)',
@@ -562,30 +563,33 @@ const ChatQNA = ({ navigation }) => {
               alignItems: 'center',
               justifyContent: 'space-evenly',
               flexDirection: 'row',
-              flex: 1
+              //flex: 1,
+              marginBottom: '4%',
+              marginLeft: '4%',
             }}>
-              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-15%', width: '30%', top: '55%' }}>
-                <TouchableOpacity>
+              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-20%', width: '30%', top: '60%' }}>
+                {/* <TouchableOpacity>
                   <Image source={require('../../../assets/images/gifattachment.png')} />
                 </TouchableOpacity>
-                <View style={{ bottom: '35%' }}><Image source={require('../../../assets/images/GIF.png')} /></View>
+                <View style={{ bottom: '35%' }}><Image source={require('../../../assets/images/GIF.png')} /></View> */}
               </View>
-              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', marginTop: '-25%', width: '80%', height: 47, borderRadius: 30, top: '5%' }}>
+              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', marginTop: '-25%', width: '80%', height: 37, borderRadius: 0, top: '0%', left: '5%' }}>
                 <TextInput
                   placeholder='Aa'
                   placeholderTextColor='#BEBEBE'
                   style={{
                     //flex: 1,
-                    width: '90%',
+                    width: '100%',
                     //height:47,
                     fontSize: 20,
                     color: '#000000',
                     fontWeight: '400',
-                    left: '2%',
-                    top: '7%',
+                    //left: '2%',
+                    //top: '7%',
                     lineHeight: 24,
                     letterSpacing: -0.017,
-                    fontFamily: 'Inter'
+                    fontFamily: 'Inter',
+                    marginBottom: '-20%'
                   }} />
               </View>
             </Card>

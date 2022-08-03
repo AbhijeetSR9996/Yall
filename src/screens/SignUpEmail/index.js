@@ -18,12 +18,14 @@ const SignUpEmail = ({ navigation }) => {
   return (
     <View style={{ flex: 1, backgroundColor: '#FFFFFF', justifyContent: 'center', flexDirection: 'column', alignItems: 'stretch' }}>
       {/* <View style={{ flex: 0.2, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }} /> */}
-      <View style={{ flex: 0.4, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'flex-start', }}>
-        <Text style={{ fontFamily: 'BakbakOne-Regular', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 297, color: '#000000', marginLeft: '5%' }}>When sent a 4 digit code to your mail@12354</Text>
+      <View style={{ flex: 0.4, backgroundColor: 'transparent', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', }}>
+        <Text style={{
+          fontFamily: 'BakbakOne-Regular', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 297, color: '#000000', marginLeft: '-5%'
+        }}>When sent a 4 digit code to your mail@12354</Text>
         {/* <Text style={{ fontFamily: 'Bakbak One', fontSize: 25, fontWeight: '400', lineHeight: 35, width: 307, color: '#000000', marginLeft: '6%' }}>your mail@12354 </Text> */}
       </View>
       {/* <View style={{ flex: 1.2, backgroundColor: 'transparent', flexDirection: 'column', alignItems: 'flex-start', marginTop: '0%', }}> */}
-      <View style={{ flex: 0.7, backgroundColor: 'transparent', marginTop: '-5%', }}>
+      <View style={{ flex: 0.7, backgroundColor: 'transparent', marginTop: '-5%', alignItems: 'center', justifyContent: 'flex-start' }}>
         <TextInput
           placeholder="Enter code"
           placeholderTextColor="#AAAAAA"
@@ -32,7 +34,7 @@ const SignUpEmail = ({ navigation }) => {
             fontFamily: 'Inter',
             borderBottomWidth: 1.5,
             width: 314,
-            left: 23,
+            //left: '3%',
             fontWeight: '400',
             color: '#000000',
             fontSize: 18,
@@ -42,7 +44,7 @@ const SignUpEmail = ({ navigation }) => {
       {/* </View> */}
       <View style={{
         //flex: 1.3, 
-        backgroundColor: 'transparent', //justifyContent: 'space-evenly', 
+        backgroundColor: 'transparent', justifyContent: 'space-evenly',
         flexDirection: 'column', alignItems: 'center'
       }}>
 
@@ -97,9 +99,9 @@ const SignUpEmail = ({ navigation }) => {
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: '#DCC7E1',
-              //position: 'absolute',
-              marginTop: '-8.1%'
-              //marginVertical: -1,
+              position: 'absolute',
+              //marginTop: '-8.27%'
+              marginVertical: -1,
             }}>{icons.rightarrow}</View>
           </View>
         </TouchableOpacity>
@@ -114,7 +116,8 @@ const SignUpEmail = ({ navigation }) => {
               //bottom: '20%',
               //top: '5%',
               //top: '6%',
-              top: '4%',
+              //top: '4%',
+              bottom: '-6%',
               right: '2%'
             },
           ]}>
@@ -156,9 +159,9 @@ const SignUpEmail = ({ navigation }) => {
               justifyContent: 'center',
               //backgroundColor: '#DCC7E1',
               backgroundColor: '#000000',
-              //position: 'absolute',
-              marginTop: '-8.1%'
-              //marginVertical: -1,
+              position: 'absolute',
+              //marginTop: '-8.27%'
+              marginVertical: -1,
             }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
           </View>
         </TouchableOpacity>
@@ -172,7 +175,8 @@ const SignUpEmail = ({ navigation }) => {
               borderWidth: 1,
               //bottom: '20%',
               //bottom: '25%',
-              top: '12%',
+              //top: '12%',
+              bottom: '-16%',
               right: '2%',
               //top: '10%',
             },
@@ -216,9 +220,10 @@ const SignUpEmail = ({ navigation }) => {
               justifyContent: 'center',
               //backgroundColor: '#DCC7E1',
               backgroundColor: '#000000',
-              //position: 'absolute',
-              marginTop: '-8.1%'
-              //marginVertical: -1,
+              position: 'absolute',
+              //top: '-55%'
+              //marginTop: '-8.27%'
+              marginVertical: -1,
             }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
           </View>
         </TouchableOpacity>

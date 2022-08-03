@@ -109,9 +109,8 @@ const Chat = ({ navigation }) => {
             <Image source={require('../../../assets/images/group.png')} />
           </TouchableOpacity>
         </View>
-
       </View>
-      <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2%' }} />
+      <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
       <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
         <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={styles.text}>March 9, 2020</Text>
@@ -166,7 +165,7 @@ const Chat = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ flex: 0.053, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={styles.text}>March 10, 2020</Text>
         </View>
         <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column', top: '0%' }}>
@@ -272,13 +271,13 @@ const Chat = ({ navigation }) => {
         </View>
         {/* <View style={{ flex: 0.1, width: width, backgroundColor: 'grey', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
         </View> */}
-        <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '1%' }}>
+        <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
             <TouchableOpacity onPress={() => createTwoButtonAlert()}>
-              <Image source={require('../../../assets/images/camera2.png')} />
+              <Image source={require('../../../assets/images/camera2.png')} style={{ height: 35, width: 50 }} />
             </TouchableOpacity>
           </View>
-          <View style={{ flex: 2.2, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
+          <View style={{ flex: 2.2, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: "center" }}>
             <Card style={{
               width: '100%',
               alignSelf: 'center',
@@ -292,7 +291,9 @@ const Chat = ({ navigation }) => {
               justifyContent: 'space-evenly',
               flexDirection: 'row',
               //flex: 1,
-              marginBottom: '2%'
+              marginBottom: '2%',
+              //marginBottom: '7%',
+              marginLeft: '4%',
             }}>
               <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-20%', width: '30%', top: '60%' }}>
                 {/* <TouchableOpacity>
@@ -309,7 +310,10 @@ const Chat = ({ navigation }) => {
                 </TouchableOpacity> */}
 
               </View>
-              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', width: '80%', height: 37, borderRadius: 0, top: '0%', left: '5%' }}>
+              <View style={{
+                flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start',
+                marginTop: '-25%', width: '80%', height: 37, borderRadius: 0, top: '0%', left: '5%',
+              }}>
                 <TextInput
                   placeholder='Aa'
                   placeholderTextColor='#BEBEBE'
@@ -327,7 +331,7 @@ const Chat = ({ navigation }) => {
                     lineHeight: 24,
                     letterSpacing: -0.017,
                     //backgroundColor: 'pink',
-                    marginBottom: '-5%'
+                    marginBottom: '-20%'
                   }} />
               </View>
             </Card>

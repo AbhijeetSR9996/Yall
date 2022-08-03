@@ -23,24 +23,24 @@ const SignedInMobile = ({ navigation }) => {
 
             <MobileNumber />
 
-            <View>
-                {/* <Pressable onPress={() => navigation.navigate('MobileCode1')}>
-                    <Text
+            <View style={{ display: 'flex', marginTop: '135%', marginRight: '10%', alignItems: 'flex-end' }}>
+                <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('MobileCode1')}>
+                    <View
                         style={{
-                            right: 20,
-                            alignSelf: 'flex-end',
-                            marginVertical: height / 1.6,
-                            position: 'absolute',
-                            backgroundColor: '#DCC7E1',
-                            borderRadius: 20,
-                            top: 30,
+                            justifyContent: 'flex-end',
+                            marginTop: '100%',
+                            borderRadius: 50,
+                            width: 40
+                            //width: width * .105
+                            //width: width / 10
                         }}>
-                        {icons.rightcirclearrow}
-                    </Text>
-                </Pressable> */}
+                        {/* {icons.rightcirclearrow} */}
+                        <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50 }} />
+                    </View>
+                </TouchableOpacity>
+            </View>
 
-                {/* <CircularButton path="MobileCode1" /> */}
-
+            {/* <View>
                 <TouchableOpacity onPress={() => navigation.navigate('MobileCode1')}>
                     <Text
                         style={{
@@ -55,9 +55,7 @@ const SignedInMobile = ({ navigation }) => {
                         {icons.rightcirclearrow}
                     </Text>
                 </TouchableOpacity>
-
-
-            </View>
+            </View> */}
         </View>
     );
 };

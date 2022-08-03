@@ -13,6 +13,8 @@ import { RadioButton } from 'react-native-paper';
 import { styles } from './styles';
 import { imageicon, icons } from '../../../assets/icons/icons';
 import { CircularButton } from '../../component/Buttons/circular';
+import { height, width } from '../../services/helper';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Gender = ({ navigation }) => {
   return (
@@ -505,25 +507,42 @@ const Gender = ({ navigation }) => {
           alignItems: 'center',
           justifyContent: 'space-between',
         }}>
-        <Text style={{ fontSize: 15, width: 270, color: '#000000', bottom: 20, fontFamily: 'Inter' }}>
+        <Text style={{ fontSize: 15, width: 270, color: '#000000', bottom: -25, fontFamily: 'Inter' }}>
           Learn more
         </Text>
         <Text
           style={{
             fontSize: 15,
             width: 270,
-            right: '230%',
-            bottom: 20,
+            //right: '230%',
+            right: '280%',
+            bottom: -25,
             color: '#AAAAAA',
             fontFamily: 'Inter'
           }}>
           about we sue your gender
         </Text>
-        <Text style={{ fontSize: 15, width: 270, right: '648%', bottom: 5, color: '#AAAAAA', fontFamily: 'Inter' }}>
+        <Text style={{ fontSize: 15, width: 270, right: '792%', bottom: -40, color: '#AAAAAA', fontFamily: 'Inter' }}>
           to recommend people on Yall
         </Text>
       </View>
-      <CircularButton path="Gender1" style={{ marginTop: 80 }} />
+      {/* <CircularButton path="Gender1" style={{ marginTop: 80 }} /> */}
+      <View style={{ display: 'flex', marginTop: '35%', marginRight: '10%', alignItems: 'flex-end' }}>
+        <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('Gender1')}>
+          <View
+            style={{
+
+              justifyContent: 'flex-end',
+              marginTop: '100%',
+              borderRadius: 50,
+              //width: width * .105
+              width: 40
+            }}>
+            {/* {icons.rightcirclearrow} */}
+            <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
+          </View>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

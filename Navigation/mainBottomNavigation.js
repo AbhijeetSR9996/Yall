@@ -266,7 +266,7 @@ const MainBottomNavigation = () => {
           //tabBarButton: () => null,
           tabBarIcon: () => (
             <Image
-              source={require('../assets/images/message.png')}
+              source={require('../assets/images/message_icon.png')}
               style={{ width: 20, height: 20 }}
             />
           )

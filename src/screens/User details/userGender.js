@@ -13,14 +13,15 @@ import {
 import { RadioButton } from 'react-native-paper';
 import { userStyles } from './userStyles';
 import { imageicon, icons } from '../../../assets/icons/icons';
-const { width, height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
 import { CircularButton } from '../../component/Buttons/circular';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const UserGender = ({ navigation }) => {
   return (
     <View style={[userStyles.container]}>
-      <Text style={userStyles.text}>Which gender best describe you? </Text>
-      <View style={{ flexDirection: 'row', marginBottom: 15 }}>
+      <Text style={[userStyles.text, { left: 11 }]}>Which gender best describe you? </Text>
+      <View style={{ flexDirection: 'row', marginBottom: 15, }}>
         <View
           style={{
             borderWidth: 1.5,
@@ -28,7 +29,8 @@ const UserGender = ({ navigation }) => {
             //top: 200,
             width: 70,
             height: 44,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -54,7 +56,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 100,
             height: 44,
-            left: 35,
+            //left: 35,
+            left: 25,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -78,9 +81,10 @@ const UserGender = ({ navigation }) => {
           style={{
             borderWidth: 1.5,
             top: 100,
-            width: 100,
+            width: 110,
             height: 44,
-            left: 50,
+            //left: 50,
+            left: 40,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -109,7 +113,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 90,
             height: 44,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -135,7 +140,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 120,
             height: 44,
-            left: 35,
+            //left: 35,
+            left: 25,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -160,7 +166,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 120,
             height: 45,
-            left: 50,
+            //left: 50,
+            left: 40,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -187,7 +194,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 110,
             height: 44,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -213,7 +221,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 70,
             height: 44,
-            left: 35,
+            left: 25,
+            //left: 35,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -238,7 +247,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 150,
             height: 44,
-            left: 50,
+            //left: 50,
+            left: 40,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -265,7 +275,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 180,
             height: 44,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -291,7 +302,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 120,
             height: 44,
-            left: 35,
+            //left: 35,
+            left: 25,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -318,7 +330,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 200,
             height: 44,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -344,7 +357,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 90,
             height: 44,
-            left: 35,
+            //left: 35,
+            left: 25,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -371,7 +385,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 110,
             height: 44,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -397,7 +412,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 110,
             height: 44,
-            left: 35,
+            //left: 35,
+            left: 25,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -422,7 +438,8 @@ const UserGender = ({ navigation }) => {
             top: 100,
             width: 110,
             height: 44,
-            left: 50,
+            //left: 50,
+            left: 40,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -450,7 +467,8 @@ const UserGender = ({ navigation }) => {
             width: 110,
             height: 44,
             //left: 35,
-            left: 22,
+            //left: 22,
+            left: 12,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -476,7 +494,8 @@ const UserGender = ({ navigation }) => {
             width: 110,
             height: 44,
             //left: 50,
-            left: 35,
+            //left: 35,
+            left: 25,
             backgroundColor: '#DCC7E1',
             borderBottomStartRadius: 20,
             borderTopLeftRadius: 20,
@@ -508,26 +527,43 @@ const UserGender = ({ navigation }) => {
           alignItems: 'center',
           justifyContent: 'space-between',
         }}>
-        <Text style={{ fontSize: 15, width: 270, color: '#AD5DD7', bottom: 20, fontFamily: 'Inter' }}>
+        <Text style={{ fontSize: 15, width: 270, color: '#AD5DD7', bottom: -10, fontFamily: 'Inter' }}>
           Learn more
         </Text>
         <Text
           style={{
             fontSize: 15,
             width: 270,
-            //right: '280%',
-            right: '230%',
-            bottom: 20,
+            right: '280%',
+            //right: '230%',
+            bottom: -10,
             color: '#AAAAAA',
             fontFamily: 'Inter'
           }}>
           about we sue your gender
         </Text>
-        <Text style={{ fontSize: 15, width: 270, right: '648%', bottom: 5, color: '#AAAAAA', fontFamily: 'Inter' }}>
+        <Text style={{ fontSize: 15, width: 270, right: '792%', bottom: -25, color: '#AAAAAA', fontFamily: 'Inter' }}>
           to recommend people on Yall
         </Text>
       </View>
-      <CircularButton path="UserJob" style={{ marginTop: 80 }} />
+      {/* <CircularButton path="UserJob" style={{ marginTop: 90 }} /> */}
+      <View style={{ display: 'flex', marginTop: '30%', marginRight: '10%', alignItems: 'flex-end' }}>
+        <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('UserJob')}>
+          <View
+            style={{
+
+              justifyContent: 'flex-end',
+              marginTop: '100%',
+              borderRadius: 50,
+              //width: width * .105
+              width: 40
+            }}>
+            {/* {icons.rightcirclearrow} */}
+            <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
+          </View>
+        </TouchableOpacity>
+      </View>
+
     </View>
   );
 };

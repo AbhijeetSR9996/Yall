@@ -12,6 +12,7 @@ export const userStyles = {
     width: 230,
     height: 70,
     top: 85,
+    //left: 21,
     left: 21,
   },
   textInput: {
