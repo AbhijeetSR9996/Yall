@@ -18,7 +18,8 @@ const ChatOwnQuestion = ({ navigation }) => {
                 style={Styles.image_background}>
                 <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column', }}>
                     <Text style={{
-                        width: 264,
+                        //width: 264,
+                        width: '100%',
                         height: 18,
                         fontFamily: 'Inter',
                         fontSize: 15,
@@ -43,10 +44,11 @@ const ChatOwnQuestion = ({ navigation }) => {
                             textAlign: 'center'
                         }} />
                 </View>
-                <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'flex-end', justifyContent: 'space-between', flexDirection: 'row', }}>
+                <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'flex-end', justifyContent: 'space-between', flexDirection: 'row', width: '100%' }}>
                     <TouchableOpacity>
                         <Text style={{
-                            width: 34,
+                            //width: 34,
+                            width: '100%',
                             height: 18,
                             fontFamily: 'Inter',
                             fontSize: 15,
@@ -54,11 +56,13 @@ const ChatOwnQuestion = ({ navigation }) => {
                             color: '#000000',
                             textAlign: "center",
                             bottom: '10%',
+                            marginLeft: '8%'
                         }}>Back</Text>
                     </TouchableOpacity>
                     <TouchableOpacity>
                         <Text style={{
-                            width: 34,
+                            //width: 34,
+                            width: '100%',
                             height: 18,
                             fontFamily: 'Inter',
                             fontSize: 15,
@@ -66,6 +70,7 @@ const ChatOwnQuestion = ({ navigation }) => {
                             color: '#000000',
                             textAlign: "center",
                             bottom: '10%',
+                            marginRight: '12%'
                         }}>Send Ques</Text>
                     </TouchableOpacity>
                 </View>

@@ -2,13 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-//import BottomStack from './BottomStack';
 
-import Screen1 from './BottomNav/Screen1';
-import Screen2 from './BottomNav/Screen2';
-import Screen3 from './BottomNav/Screen3';
-import Screen4 from './BottomNav/Screen4';
-import Screen5 from './BottomNav/Screen5';
 import ProfileDisplay from '../src/screens/ProfileDisplay/index';
 import Events from '../src/screens/Events';
 import Edit from '../src/screens/EditProfile/edit';
@@ -27,6 +21,8 @@ import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
 import ChatQNA2 from '../src/screens/ChatQNA2/index';
 import ChatQuestion from '../src/screens/ChatQuestion';
+import ManageProfile from '../src/screens/ManageProfile/index';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -307,6 +303,21 @@ const MainBottomNavigation = () => {
       <Tab.Screen
         name="Edit"
         component={Edit}
+        options={{
+          //tabBarStyle:{display:'none'},
+          tabBarButton: () => null,
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/user2.png')}
+              style={{ width: 20, height: 20 }}
+            />
+          )
+        }}
+      />
+
+      <Tab.Screen
+        name="ManageProfile"
+        component={ManageProfile}
         options={{
           //tabBarStyle:{display:'none'},
           //tabBarButton: () => null,

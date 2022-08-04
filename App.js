@@ -8,7 +8,7 @@ import SignedInMobile from './src/screens/SignedInMobile/index';
 import SignedUpMobile from './src/screens/SignedUpMobile/index';
 import MobileCode1 from './src/screens/MobileCode1';
 import MobileCode2 from './src/screens/MobileCode2';
-
+import ManageProfile from './src/screens/ManageProfile/index';
 import SignInMobile from './src/screens/SignUp/SignInMobile';
 import UserName from './src/screens/User details/userName';
 import UserDOB from './src/screens/User details/userDOB';
