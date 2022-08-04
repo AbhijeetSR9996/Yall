@@ -26,6 +26,7 @@ import Match from '../src/screens/Match';
 import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
 import ChatQNA2 from '../src/screens/ChatQNA2/index';
+import ChatQuestion from '../src/screens/ChatQuestion';
 
 const Tab = createBottomTabNavigator();
 
@@ -94,6 +95,21 @@ const MainBottomNavigation = () => {
       <Tab.Screen
         name="ChatQNA2"
         component={ChatQNA2}
+        options={{
+          //tabBarStyle:{display:'none'},
+          tabBarButton: () => null,
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/home.png')}
+              style={{ width: 22, height: 20 }}
+            />
+          )
+        }}
+      />
+
+      <Tab.Screen
+        name="ChatQuestion"
+        component={ChatQuestion}
         options={{
           //tabBarStyle:{display:'none'},
           tabBarButton: () => null,

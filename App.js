@@ -16,6 +16,7 @@ import UserEmail from './src/screens/User details/userEmail';
 import UserGender from './src/screens/User details/userGender';
 import GovtRegisterID from './src/screens/govtRegister.js/govtRegisteration';
 import UserJob from './src/screens/User details/userJob';
+import UserLocation from './src/screens/User details/userLocation';
 import SignEmail from './src/screens/SignInEmail/signEmail';
 import AboutPrivacy from './src/screens/aboutPrivacy/privacy';
 import Gender from './src/screens/genderScreens/gender';
@@ -40,6 +41,8 @@ import Match from './src/screens/Match';
 import Chat from './src/screens/Chat';
 import ChatQNA from './src/screens/ChatQNA';
 import ChatQNA2 from './src/screens/ChatQNA2';
+import ChatQuestion from './src/screens/ChatQuestion';
+import ChatOwnQuestion from './src/screens/ChatOwnQuestion';
 import SignUpEmail from './src/screens/SignUpEmail';
 
 import { NavigationContainer } from '@react-navigation/native';

@@ -43,7 +43,7 @@ const UserJob = ({ navigation }) => {
       </View>
       <View>
         <View style={{ display: 'flex', marginTop: '135%', marginRight: '10%', alignItems: 'flex-end' }}>
-          <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('AboutPrivacy')}>
+          <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('UserLocation')}>
             <View
               style={{
 

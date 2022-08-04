@@ -22,7 +22,7 @@ const SignedUpMobile = ({ navigation }) => {
 
       <MobileNumber />
 
-      <View style={{ display: 'flex', marginTop: '135%', marginRight: '10%', alignItems: 'flex-end' }}>
+      <View style={{ display: 'flex', marginTop: '130%', marginRight: '10%', alignItems: 'flex-end' }}>
         <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('MobileCode2')}>
           <View
             style={{

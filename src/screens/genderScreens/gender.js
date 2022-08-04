@@ -507,22 +507,25 @@ const Gender = ({ navigation }) => {
           alignItems: 'center',
           justifyContent: 'space-between',
         }}>
-        <Text style={{ fontSize: 15, width: 270, color: '#000000', bottom: -25, fontFamily: 'Inter' }}>
+        <Text style={{ fontSize: 15, width: 270, color: '#000000', bottom: -35, fontFamily: 'Inter' }}>
           Learn more
         </Text>
         <Text
           style={{
             fontSize: 15,
             width: 270,
-            //right: '230%',
-            right: '280%',
-            bottom: -25,
+            right: '240%',
+            //right: '280%',
+            bottom: -35,
             color: '#AAAAAA',
             fontFamily: 'Inter'
           }}>
           about we sue your gender
         </Text>
-        <Text style={{ fontSize: 15, width: 270, right: '792%', bottom: -40, color: '#AAAAAA', fontFamily: 'Inter' }}>
+        <Text style={{
+          fontSize: 15, width: 270, //right: '792%', 
+          right: '698%', bottom: -50, color: '#AAAAAA', fontFamily: 'Inter'
+        }}>
           to recommend people on Yall
         </Text>
       </View>

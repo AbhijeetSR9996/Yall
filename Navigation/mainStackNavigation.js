@@ -18,6 +18,7 @@ import UserDOB from '../src/screens/User details/userDOB';
 import UserEmail from '../src/screens/User details/userEmail';
 import UserGender from '../src/screens/User details/userGender';
 import UserJob from '../src/screens/User details/userJob';
+import UserLocation from '../src/screens/User details/userLocation';
 import GovtRegisterID from '../src/screens/govtRegister.js/govtRegisteration';
 import AboutPrivacy from '../src/screens/aboutPrivacy/privacy';
 import SignEmail from '../src/screens/SignInEmail/signEmail';
@@ -51,6 +52,7 @@ import Match from '../src/screens/Match';
 import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
 import SignUpEmail from '../src/screens/SignUpEmail';
+import ChatOwnQuestion from '../src/screens/ChatOwnQuestion';
 
 const Stack = createStackNavigator();
 
@@ -73,6 +75,7 @@ function MainStackNavigation() {
         <Stack.Screen name="UserEmail" component={UserEmail} />
         <Stack.Screen name="UserGender" component={UserGender} />
         <Stack.Screen name="UserJob" component={UserJob} />
+        <Stack.Screen name="UserLocation" component={UserLocation} />
         <Stack.Screen name="GovtRegisterID" component={GovtRegisterID} />
         <Stack.Screen name="AboutPrivacy" component={AboutPrivacy} />
         <Stack.Screen name="SignEmail" component={SignEmail} />
@@ -93,6 +96,7 @@ function MainStackNavigation() {
         <Stack.Screen name="SignedInMobile" component={SignedInMobile} />
         <Stack.Screen name="MobileCode1" component={MobileCode1} />
         <Stack.Screen name="MobileCode2" component={MobileCode2} />
+        <Stack.Screen name="ChatOwnQuestion" component={ChatOwnQuestion} />
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation} />
 

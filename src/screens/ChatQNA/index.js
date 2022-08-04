@@ -113,10 +113,10 @@ const ChatQNA = ({ navigation }) => {
       </View>
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
       <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
-        <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ flex: 0.07, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
-        <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ flex: 0.18, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
             <ImageBackground
               source={require('../../../assets/images/buttonbg2.png')}
@@ -166,10 +166,10 @@ const ChatQNA = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ flex: 0.08, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
-        <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ flex: 0.20, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
 
           <TouchableOpacity>
             <ImageBackground
@@ -222,7 +222,7 @@ const ChatQNA = ({ navigation }) => {
         </View>
 
 
-        <View style={{ flex: 0.17, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+        <View style={{ flex: 0.21, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
           <TouchableOpacity style={{
             alignItems: 'center',
             //borderWidth: 1.5,
@@ -308,8 +308,7 @@ const ChatQNA = ({ navigation }) => {
         <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={[styles.text, { marginRight: '5%' }]}>Today</Text>
         </View>
-        {/* <View style={{ flex: 0.17, width: width, backgroundColor: 'yellow', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}> 
-        </View> */}
+
         <View style={{ flex: 0.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
 

@@ -10,18 +10,17 @@ import {
   KeyboardAvoidingView,
   Keyboard,
   ImageBackground,
-  Alert
+  Alert,
+  StyleSheet
 } from 'react-native';
 import { Rectangular } from '../../component/Buttons/rectangular';
 import { styles } from './styles';
-import { StyleSheet, Dimensions } from 'react-native';
+import { height, width } from '../../services/helper';
 import { icons } from '../../../assets/icons/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { Card } from 'react-native-paper';
 import ImagePicker from 'react-native-image-crop-picker';
-
-const { width, height } = Dimensions.get('window');
 
 
 const Chat = ({ navigation }) => {
@@ -337,7 +336,7 @@ const Chat = ({ navigation }) => {
             </Card>
           </View>
           <View style={{ flex: 1.5, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-            <TouchableOpacity onPress={() => { navigation.navigate('ChatQNA') }}>
+            <TouchableOpacity onPress={() => { navigation.navigate('ChatQuestion') }}>
               <Image source={require('../../../assets/images/comment.png')} />
             </TouchableOpacity>
             <TouchableOpacity >

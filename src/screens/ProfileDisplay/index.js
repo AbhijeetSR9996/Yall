@@ -171,7 +171,7 @@ const ProfileDisplay = () => {
                     source={require('../../../assets/images/scroller.png')}
                     style={Styles.img12}
                   />
-                  <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-6%' }}>
+                  <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-5%' }}>
                     <TouchableOpacity >
                       <Image source={require('../../../assets/images/ellipseblack.png')} style={{ paddingRight: '4%', }} />
                     </TouchableOpacity>

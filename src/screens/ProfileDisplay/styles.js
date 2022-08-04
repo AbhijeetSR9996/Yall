@@ -199,7 +199,7 @@ export const Styles = StyleSheet.create({
     letterSpacing: -0.017,
     //width: 297
     //width: '70%',
-    width: '83%',
+    width: '85%',
   },
   text8: {
     fontFamily: 'BakbakOne-Regular',
@@ -247,7 +247,7 @@ export const Styles = StyleSheet.create({
     color: '#000000',
     position: 'absolute',
     //left: 40,
-    left: 60,
+    left: 20,
     fontSize: 15,
     //fontWeight: '400',
     position: 'absolute',
