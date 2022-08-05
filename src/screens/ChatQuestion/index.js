@@ -79,7 +79,7 @@ const ChatQuestion = ({ navigation }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
-            <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+            <View style={{ flex: 0.09, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
                 <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Icon name="angle-left" style={{
@@ -118,7 +118,7 @@ const ChatQuestion = ({ navigation }) => {
                 <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     <Text style={styles.text}>March 9, 2020</Text>
                 </View>
-                <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'center', flexDirection: 'column' }}>
+                <View style={{ flex: 0.11, width: width, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'center', flexDirection: 'column' }}>
                     <TouchableOpacity>
                         <ImageBackground
                             source={require('../../../assets/images/buttonbg2.png')}
@@ -168,10 +168,10 @@ const ChatQuestion = ({ navigation }) => {
                         </ImageBackground>
                     </TouchableOpacity>
                 </View>
-                <View style={{ flex: 0.053, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                <View style={{ flex: 0.053, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     <Text style={styles.text}>March 10, 2020</Text>
                 </View>
-                <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'center', flexDirection: 'column' }}>
+                <View style={{ flex: 0.14, width: width, backgroundColor: 'transparent', alignItems: 'flex-end', justifyContent: 'center', flexDirection: 'column' }}>
                     <TouchableOpacity>
                         <ImageBackground
                             source={require('../../../assets/images/buttonbg4.png')}
@@ -273,8 +273,8 @@ const ChatQuestion = ({ navigation }) => {
                             </ImageBackground>
                         </TouchableOpacity>
                     </View>
-                    <View style={{ flex: 0.55, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column' }}>
 
+                    <View style={{ flex: 0.55, width: width, backgroundColor: 'red', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column' }}>
 
                         <View style={{
                             backgroundColor: '#000000',
@@ -444,8 +444,64 @@ const ChatQuestion = ({ navigation }) => {
                                 </View>
                             </ImageBackground>
                         </View>
-
                     </View>
+
+                    {/* <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', top: '20%' }}>
+                        <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
+                            <TouchableOpacity onPress={() => createTwoButtonAlert()}>
+                                <Image source={require('../../../assets/images/camera2.png')} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={{ flex: 2.2, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
+                            <Card style={{
+                                width: '100%',
+                                alignSelf: 'center',
+                                //height: 47,
+                                height: 37,
+                                borderWidth: 1,
+                                borderRadius: 100,
+                                borderColor: 'rgba(142,142,142,0.3)',
+                                backgroundColor: '#F7F7F7',
+                                alignItems: 'center',
+                                justifyContent: 'space-evenly',
+                                flexDirection: 'row',
+                                //flex: 1,
+                                marginBottom: '4%',
+                                marginLeft: '4%',
+                            }}>
+                                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-20%', width: '30%', top: '60%' }}>
+                                </View>
+                                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', marginTop: '-25%', width: '80%', height: 37, borderRadius: 0, top: '0%', left: '5%' }}>
+                                    <TextInput
+                                        placeholder='Aa'
+                                        placeholderTextColor='#BEBEBE'
+                                        style={{
+                                            //flex: 1,
+                                            width: '100%',
+                                            //height:47,
+                                            fontSize: 20,
+                                            color: '#000000',
+                                            fontWeight: '400',
+                                            //left: '2%',
+                                            //top: '7%',
+                                            lineHeight: 24,
+                                            letterSpacing: -0.017,
+                                            fontFamily: 'Inter',
+                                            marginBottom: '-20%'
+                                        }} />
+                                </View>
+                            </Card>
+                        </View>
+                        <View style={{ flex: 1.5, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
+                            <TouchableOpacity onPress={() => { navigation.navigate('ChatQNA') }}>
+                                <Image source={require('../../../assets/images/comment.png')} />
+                            </TouchableOpacity>
+                            <TouchableOpacity >
+                                <Image source={require('../../../assets/images/microphone.png')} />
+                            </TouchableOpacity>
+                        </View>
+                    </View> */}
+
                 </View>
             </View >
         </View >

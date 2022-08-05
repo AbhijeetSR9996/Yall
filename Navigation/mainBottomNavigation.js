@@ -22,7 +22,7 @@ import ChatQNA from '../src/screens/ChatQNA/index';
 import ChatQNA2 from '../src/screens/ChatQNA2/index';
 import ChatQuestion from '../src/screens/ChatQuestion';
 import ManageProfile from '../src/screens/ManageProfile/index';
-
+import EditAccount from '../src/screens/EditAccount';
 
 const Tab = createBottomTabNavigator();
 
@@ -321,6 +321,21 @@ const MainBottomNavigation = () => {
         options={{
           //tabBarStyle:{display:'none'},
           //tabBarButton: () => null,
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/user2.png')}
+              style={{ width: 20, height: 20 }}
+            />
+          )
+        }}
+      />
+
+      <Tab.Screen
+        name="EditAccount"
+        component={EditAccount}
+        options={{
+          //tabBarStyle:{display:'none'},
+          tabBarButton: () => null,
           tabBarIcon: () => (
             <Image
               source={require('../assets/images/user2.png')}

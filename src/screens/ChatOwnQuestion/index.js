@@ -34,7 +34,8 @@ const ChatOwnQuestion = ({ navigation }) => {
                         placeholder='Type your own quest....'
                         placeholderTextColor='#000000'
                         style={{
-                            width: '100%',
+                            //width: '100%',
+                            width: '80%',
                             fontSize: 27,
                             color: '#000000',
                             //fontWeight: '400',
@@ -45,7 +46,7 @@ const ChatOwnQuestion = ({ navigation }) => {
                         }} />
                 </View>
                 <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'flex-end', justifyContent: 'space-between', flexDirection: 'row', width: '100%' }}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => { navigation.navigate('ChatQuestion') }}>
                         <Text style={{
                             //width: 34,
                             width: '100%',
@@ -59,7 +60,7 @@ const ChatOwnQuestion = ({ navigation }) => {
                             marginLeft: '8%'
                         }}>Back</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => { navigation.navigate('ChatQNA') }}>
                         <Text style={{
                             //width: 34,
                             width: '100%',

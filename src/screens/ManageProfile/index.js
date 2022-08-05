@@ -5,12 +5,7 @@ import {
     Text,
     Image,
     TouchableOpacity,
-    Pressable,
-    TextInput,
-    Switch,
-    Alert,
 } from 'react-native';
-import ImagePicker from 'react-native-image-crop-picker';
 import { styles } from '../genderScreens/styles';
 import { imageicon, icons } from '../../../assets/icons/icons';
 import { photoStyles } from '../AddPhoto/styles';
@@ -30,23 +25,24 @@ const ManageProfile = ({ navigation }) => {
                 <Text style={styles.moveBack}>{icons.back}</Text>
             </TouchableOpacity>
 
-            <View style={{ alignItems: 'stretch', justifyContent: 'center', bottom: '17%', backgroundColor: 'transparent', width: width, height: height * 0.11, flexDirection: 'row', marginLeft: '0%' }}>
-                <View style={{ backgroundColor: 'transparent', flex: 1.4, }}>
+            <View style={{ alignItems: 'stretch', justifyContent: 'center', bottom: '17%', backgroundColor: 'transparent', width: width, height: height * 0.11, flexDirection: 'row', marginLeft: '10%' }}>
+                <View style={{ backgroundColor: 'transparent', flex: 1, alignItems: 'center', justifyContent: 'flex-start', marginLeft: '0%' }}>
                     <Text
                         style={[
                             photoStyles.addPhotoText,
-                            { fontSize: 18, fontFamily: 'BakbakOne-Regular', letterSpacing: -0.017, marginLeft: '10%' },
+                            { fontSize: 18, fontFamily: 'BakbakOne-Regular', letterSpacing: -0.017, marginLeft: '20%', top: 34.5 },
                         ]}>
                         My Account
                     </Text>
                 </View>
-                <View style={{ backgroundColor: 'transparent', flex: 0.6, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                    <TouchableOpacity>
+                <View style={{ backgroundColor: 'transparent', flex: 1.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', }}>
+                    <TouchableOpacity onPress={() => { navigation.navigate('EditAccount') }}>
                         <Image
                             source={require('../../../assets/images/editicon.png')}
                             style={[
                                 {
-                                    marginTop: '65%'
+                                    marginTop: '65%',
+                                    left: '165%'
                                 },
                             ]}
                         />
@@ -65,33 +61,7 @@ const ManageProfile = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
             </View>
-            {/* <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
-                <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                    <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <Text style={styles.moveBack}>{icons.back}</Text>
-                    </TouchableOpacity>
-                    <Image source={require('../../../assets/images/profilecircle2.png')} style={{ marginLeft: '0%', width: 40, height: 40, marginBottom: '-5%' }} />
-                    <TouchableOpacity>
-                        <Text style={{
-                            color: '#000000',
-                            fontFamily: 'BakbakOne-Regular',
-                            //fontWeight: '400',
-                            fontSize: 15,
-                            lineHeight: 21,
-                            letterSpacing: -0.017,
-                        }}>PR</Text>
-                    </TouchableOpacity>
-                </View>
-                <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}></View>
-                <View style={{ flex: 1.2, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                    <TouchableOpacity>
-                        <Image source={require('../../../assets/images/videorecorder.png')} />
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Image source={require('../../../assets/images/group.png')} />
-                    </TouchableOpacity>
-                </View>
-            </View> */}
+
 
             <View style={{
                 borderBottomColor: 'black',
@@ -128,17 +98,18 @@ const ManageProfile = ({ navigation }) => {
                     Styles.infocontainer,
                     {
                         height: 30,
-                        width: 60,
+                        width: 70,
                         //bottom: '20.5%',
-                        marginTop: '18%',
+                        marginTop: '20%',
                         marginBottom: '10%',
                         //left: 150,
-                        left: '43%',
+                        left: '41%',
                         alignItems: 'center',
                         justifyContent: 'center',
                         backgroundColor: '#F9DFFF',
                         borderBottomWidth: 3.5,
-                        borderBottomColor: '#000000'
+                        borderBottomColor: '#000000',
+
                     },
                 ]}>
 
@@ -148,9 +119,10 @@ const ManageProfile = ({ navigation }) => {
                     color: '#000000',
                     letterSpacing: -0.017,
                     lineHeight: 28,
+                    bottom: '8%'
                 }}>60%</Text>
             </View>
-            <View style={{ backgroundColor: 'transparent', flex: 0.4, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', bottom: '50%' }}>
+            <View style={{ backgroundColor: 'transparent', flex: 0.8, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', bottom: '50%', marginTop: '5%', marginBottom: '0%' }}>
                 <Text
                     style={{
                         fontFamily: 'BakbakOne-Regular',
@@ -160,54 +132,123 @@ const ManageProfile = ({ navigation }) => {
                         lineHeight: 35,
                     }}>Sahil 21</Text>
             </View>
-
-
-            {/* <Text
-                style={[
-                    photoStyles.addPhotoText,
-                    {
-                        fontFamily: 'Inter',
-                        fontSize: 15,
-                        top: '-25%',
-                        left: '10%',
-                        color: '#B4B4B4',
-
-                    },
-                ]}>
-                Surname
-            </Text>
-
-
-            <Text
-                style={[
-                    photoStyles.addPhotoText,
-                    {
-                        fontFamily: 'Inter',
-                        fontSize: 15,
-                        top: '-30%',
-                        left: '10%',
-                        color: '#B4B4B4',
-
-                    },
-                ]}>
-                Phone
-            </Text>
-
-            <Text
-                style={[
-                    photoStyles.addPhotoText,
-                    {
-                        fontFamily: 'Inter',
-                        fontSize: 15,
-                        top: '-35%',
-                        left: '10%',
-                        color: '#B4B4B4',
-
-                    },
-                ]}>
-                Gender
-            </Text> */}
-
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '0%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }}>
+                <TouchableOpacity>
+                    <Image
+                        source={require('../../../assets/images/staricon.png')}
+                        style={[
+                            {
+                                //marginTop: '65%',
+                                right: '360%'
+                            },
+                        ]}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => { navigation.navigate('WeekendEvent') }}>
+                    <Text
+                        style={{
+                            fontFamily: 'BakbakOne-Regular',
+                            fontSize: 18,
+                            color: '#000000',
+                            letterSpacing: -0.017,
+                            lineHeight: 25,
+                            //right: '15%',
+                            //width: 154,
+                            width: '100%',
+                            right: '65%'
+                        }}>Manage my events</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={{ backgroundColor: 'transparent', flex: 0.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }}>
+                <TouchableOpacity>
+                    <Image
+                        source={require('../../../assets/images/usericon.png')}
+                        style={[
+                            {
+                                //marginTop: '65%',
+                                right: '140%'
+                            },
+                        ]}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text
+                        style={{
+                            fontFamily: 'BakbakOne-Regular',
+                            fontSize: 18,
+                            color: '#000000',
+                            letterSpacing: -0.017,
+                            lineHeight: 25,
+                            //right: '15%',
+                            //width: 154,
+                            width: '100%',
+                            right: '15%'
+                        }}>Manage my payment methods</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={{ backgroundColor: 'transparent', flex: 0.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }}>
+                <TouchableOpacity>
+                    <Image
+                        source={require('../../../assets/images/ticketicon.png')}
+                        style={[
+                            {
+                                //marginTop: '65%',
+                                right: '250%'
+                            },
+                        ]}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text
+                        style={{
+                            fontFamily: 'BakbakOne-Regular',
+                            fontSize: 18,
+                            color: '#000000',
+                            letterSpacing: -0.017,
+                            lineHeight: 25,
+                            right: '51%',
+                            //width: 154,
+                            width: '100%',
+                        }}>Manage my bookings</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={{ backgroundColor: 'transparent', flex: 0.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.2, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }} />
+            <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row', bottom: '50%' }}>
+                <TouchableOpacity>
+                    <Image
+                        source={require('../../../assets/images/walleticon.png')}
+                        style={[
+                            {
+                                //marginTop: '65%',
+                                right: '180%'
+                            },
+                        ]}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text
+                        style={{
+                            fontFamily: 'BakbakOne-Regular',
+                            fontSize: 18,
+                            color: '#000000',
+                            letterSpacing: -0.017,
+                            lineHeight: 25,
+                            right: '30%',
+                            //width: 154,
+                            width: '100%'
+                        }}>Manage my subscriptions</Text>
+                </TouchableOpacity>
+            </View>
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '49.5%', alignSelf: 'center' }} />
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '41.5%', alignSelf: 'center' }} />
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '34%', alignSelf: 'center' }} />
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '26%', alignSelf: 'center' }} />
 
 
         </View>
