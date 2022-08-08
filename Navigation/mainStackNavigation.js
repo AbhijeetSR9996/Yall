@@ -53,6 +53,7 @@ import Chat from '../src/screens/Chat';
 import ChatQNA from '../src/screens/ChatQNA/index';
 import SignUpEmail from '../src/screens/SignUpEmail';
 import ChatOwnQuestion from '../src/screens/ChatOwnQuestion';
+import AccountSettings from '../src/screens/AccountSettings';
 
 const Stack = createStackNavigator();
 
@@ -97,6 +98,7 @@ function MainStackNavigation() {
         <Stack.Screen name="MobileCode1" component={MobileCode1} />
         <Stack.Screen name="MobileCode2" component={MobileCode2} />
         <Stack.Screen name="ChatOwnQuestion" component={ChatOwnQuestion} />
+        <Stack.Screen name="AccountSettings" component={AccountSettings} />
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation} />
 

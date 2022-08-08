@@ -21,7 +21,7 @@
     "react-native": "0.68.2",
     "react-native-app-intro-slider": "^4.0.4",
     "react-native-confirmation-code-field": "^7.3.0",
-    "react-native-element-dropdown": "^1.8.12",
+    "react-native-element-dropdown": "^2.1.0",
     "react-native-floating-action": "^1.22.0",
     "react-native-gesture-handler": "^2.4.2",
     "react-native-image-crop-picker": "^0.37.3",

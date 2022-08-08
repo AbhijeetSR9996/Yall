@@ -45,6 +45,7 @@ import ChatQuestion from './src/screens/ChatQuestion';
 import ChatOwnQuestion from './src/screens/ChatOwnQuestion';
 import SignUpEmail from './src/screens/SignUpEmail';
 import EditAccount from './src/screens/EditAccount';
+import AccountSettings from './src/screens/AccountSettings';
 
 import { NavigationContainer } from '@react-navigation/native';
 

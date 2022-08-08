@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     View,
     Text,
@@ -10,7 +10,8 @@ import {
     KeyboardAvoidingView,
     Keyboard,
     Alert,
-    Switch
+    Switch,
+    BackHandler
 } from 'react-native';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import { styles } from './styles';
@@ -20,9 +21,29 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
+import { Dropdown } from 'react-native-element-dropdown';
 
 
 const EditAccount = ({ navigation }) => {
+
+    const handleBackButtonClick = () => {
+        navigation.goBack();
+        return true;
+    }
+
+    useEffect(() => {
+        BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
+        return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
+    }, []);
+
+    // const genderList = [
+    //     { label: 'Male', value: 'male' },
+    //     { label: 'Female', value: 'female' },
+    //     { label: 'Others', value: 'others' },
+    // ];
+
+    // const [showDropdown, setShowDropdown] = useState(false);
+    // const [gender, setGender] = useState();
 
     const [isEnabledAge, setIsEnabledAge] = React.useState(false);
     const [isEnabledDetails, setIsEnabledDetails] = React.useState(false);
@@ -467,6 +488,20 @@ const EditAccount = ({ navigation }) => {
                         </View>
                         <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
+                            {/* <Dropdown
+                                label='Gender'
+                                mode={'outlined'}
+                                value={gender}
+                                setValue={setGender}
+                                list={genderList}
+                                visible={showDropdown}
+                                showDropdown={() => setShowDropdown(true)}
+                                onDismiss={() => setShowDropdown(false)}
+                                inputProps={{
+                                    right: <TextInput.Icon name={'menu-down'} />
+                                }}
+                            /> */}
+
                             <TextInput
                                 placeholder=' Gender'
                                 placeholderTextColor='#000000'
@@ -856,8 +891,7 @@ const EditAccount = ({ navigation }) => {
                                 backgroundColor: 'transparent',
                                 borderWidth: 2,
                                 borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
+                                paddingLeft: '10%',
                             }} />
                         <Text style={{
                             fontSize: 13,

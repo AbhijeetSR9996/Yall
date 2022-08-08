@@ -19,6 +19,11 @@ import { height, width } from '../../services/helper';
 
 const ManageProfile = ({ navigation }) => {
 
+    const handleBackButtonClick = () => {
+        navigation.goBack();
+        return true;
+    }
+
     useEffect(() => {
         BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
         return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
@@ -52,7 +57,7 @@ const ManageProfile = ({ navigation }) => {
                             ]}
                         />
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => { navigation.navigate('AccountSettings') }}>
                         <Image
                             source={require('../../../assets/images/settingicon.png')}
                             style={[
