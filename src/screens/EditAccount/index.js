@@ -9,7 +9,8 @@ import {
     Platform,
     KeyboardAvoidingView,
     Keyboard,
-    Alert
+    Alert,
+    Switch
 } from 'react-native';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import { styles } from './styles';
@@ -23,14 +24,58 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 const EditAccount = ({ navigation }) => {
 
+    const [isEnabledAge, setIsEnabledAge] = React.useState(false);
+    const [isEnabledDetails, setIsEnabledDetails] = React.useState(false);
+    const toggleSwitch = () => setIsEnabledAge(previousState => !previousState);
+    const toggleSwitch2 = () => setIsEnabledDetails(previousState => !previousState);
+
     const [firstAbout, setFirstAbout] = useState("");
     const [firstGender, setFirstGender] = useState("");
+    const [firstInterest, setFirstInterest] = useState("");
+    const [firstFilm, setFirstFilm] = useState("");
+    const [firstHobby, setFirstHobby] = useState("");
+    const [firstGoingout, setFirstGoingout] = useState("");
+    const [firstMusic, setFirstMusic] = useState("");
+    const [firstFood, setFirstFood] = useState("");
+    const [firstPet, setFirstPet] = useState("");
+    const [firstDob, setFirstDob] = useState("");
+    const [firstEvent, setFirstEvent] = useState("");
+
     const handleFirst = (value) => {
         setFirstAbout(value);
     }
     const handleSecond = (value) => {
         setFirstGender(value);
     }
+    const handleThird = (value) => {
+        setFirstInterest(value);
+    }
+    const handleFourth = (value) => {
+        setFirstFilm(value);
+    }
+    const handleFifth = (value) => {
+        setFirstHobby(value);
+    }
+    const handleSixth = (value) => {
+        setFirstGoingout(value);
+    }
+    const handleSeventh = (value) => {
+        setFirstMusic(value);
+    }
+    const handleEigth = (value) => {
+        setFirstFood(value);
+    }
+    const handleNinth = (value) => {
+        setFirstPet(value);
+    }
+    const handleTenth = (value) => {
+        setFirstDob(value);
+    }
+    const handleEleventh = (value) => {
+        setFirstEvent(value);
+    }
+
+
 
     const requestCameraPermission = async () => {
         try {
@@ -46,12 +91,12 @@ const EditAccount = ({ navigation }) => {
                 },
             );
             if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                console.log('You can use the camera');
+                //console.log('You can use the camera');
             } else {
-                console.log('Camera permission denied');
+                //console.log('Camera permission denied');
             }
         } catch (err) {
-            console.warn(err);
+            //console.warn(err);
         }
     };
     const takePhotoFromCamera = () => {
@@ -123,7 +168,7 @@ const EditAccount = ({ navigation }) => {
             <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.2%' }} />
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '5%', marginBottom: '0%' }}>
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 522, marginTop: '0%', borderRadius: 20, alignSelf: 'center', }}>
-                    <View style={{ backgroundColor: 'lime', flex: 0.15, justifyContent: 'space-evenly', alignItems: 'flex-start', width: '100%', alignSelf: 'center', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
+                    <View style={{ backgroundColor: 'transparent', flex: 0.15, justifyContent: 'space-evenly', alignItems: 'flex-start', width: '100%', alignSelf: 'center', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
                         <View style={{ backgroundColor: '#DCC7E1', flex: 0.3, justifyContent: 'center', alignItems: 'flex-start', width: '100%', alignSelf: 'center', borderRadius: 20 }}>
                             <View style={{ backgroundColor: '#000000', flex: 1, width: '65%', alignSelf: 'flex-start', borderRadius: 20, justifyContent: 'center' }}>
                                 <Text style={{
@@ -141,8 +186,8 @@ const EditAccount = ({ navigation }) => {
 
                     </View>
                     <View style={{ backgroundColor: 'transparent', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'stretch', width: '100%', }}>
-                        <View style={{ flex: 3.5, backgroundColor: 'red', justifyContent: 'center' }}>
-                            <View style={{ flex: 1, backgroundColor: 'orange', justifyContent: 'space-between', alignItems: 'stretch', flexDirection: 'row', }}>
+                        <View style={{ flex: 3.5, backgroundColor: 'transparent', justifyContent: 'center' }}>
+                            <View style={{ flex: 1, backgroundColor: 'transparent', justifyContent: 'space-between', alignItems: 'stretch', flexDirection: 'row', }}>
 
                                 <Image
                                     source={require('../../../assets/images/editaccountpic.png')} style={{ height: '95%', width: '31%', borderRadius: 10, }}
@@ -214,7 +259,7 @@ const EditAccount = ({ navigation }) => {
                                     />
                                 </TouchableOpacity>
                             </View>
-                            <View style={{ flex: 1, backgroundColor: 'pink', justifyContent: 'space-between', alignItems: 'stretch', flexDirection: 'row', }}>
+                            <View style={{ flex: 1, backgroundColor: 'transparent', justifyContent: 'space-between', alignItems: 'stretch', flexDirection: 'row', }}>
                                 <Image
                                     source={require('../../../assets/images/editaccountpic4.png')} style={{ height: '95%', width: '31%', borderRadius: 10, }}
                                 />
@@ -357,10 +402,10 @@ const EditAccount = ({ navigation }) => {
                     </View>
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'red', alignItems: 'stretch', justifyContent: 'center', height: 279, marginTop: '5%', alignSelf: 'center' }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 279, marginTop: '5%', alignSelf: 'center' }}>
 
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'grey', alignItems: 'stretch', justifyContent: 'center', height: 279, marginTop: '0%', }}>
-                        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'lime', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 279, marginTop: '0%', }}>
+                        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                             <TextInput
                                 placeholder=' About Me '
@@ -420,7 +465,7 @@ const EditAccount = ({ navigation }) => {
                             }}>+22%
                             </Text>
                         </View>
-                        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                             <TextInput
                                 placeholder=' Gender'
@@ -469,13 +514,13 @@ const EditAccount = ({ navigation }) => {
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'red', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Interests'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleThird}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -510,16 +555,16 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstInterest}
                         </Text>
 
                     </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'lime', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Films & TV'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleFourth}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -554,20 +599,20 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstFilm}
                         </Text>
 
                     </View>
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'red', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Hobbies'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleFifth}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -602,16 +647,16 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstHobby}
                         </Text>
 
                     </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'lime', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Going out'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleSixth}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -646,20 +691,20 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstGoingout}
                         </Text>
 
                     </View>
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'red', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Music'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleSeventh}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -694,16 +739,16 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstMusic}
                         </Text>
 
                     </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'lime', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Food'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleEigth}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -738,20 +783,20 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstFood}
                         </Text>
 
                     </View>
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'red', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Pets'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleNinth}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -786,16 +831,16 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstPet}
                         </Text>
 
                     </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'lime', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Your date of birth'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleTenth}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -830,20 +875,20 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstDob}
                         </Text>
 
                     </View>
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'red', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' My Events'
                             placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
+                            onChangeText={handleEleventh}
                             style={{
                                 width: '100%',
                                 height: '30%',
@@ -878,59 +923,414 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstGender}
+                        }}>{firstEvent}
                         </Text>
 
                     </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'lime', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-
-                        <TextInput
-                            placeholder=' Select a Prompt'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleSecond}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                        <View style={{ flex: 0.6, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', borderWidth: 1, borderColor: '#6B6B6B' }}>
+                            <Text style={{
                                 fontSize: 15,
+                                fontFamily: 'BakbakOne-Regular',
+                                //fontFamily: 'Inter',
                                 color: '#000000',
-                                //fontWeight: '400',
+                                alignSelf: 'center',
+                                justifyContent: 'center',
+                                //paddingVertical: 10,
+                                //paddingVertical: 13,
+                                //top: '30.3%',
+                                marginRight: '-10%',
+                                marginTop: '5%',
+                                //right: '140%',
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
+                                width: '90%',
+                            }}>Select a Prompt
+                            </Text>
+                            <TouchableOpacity>
+                                <Text style={{
+                                    fontSize: 13,
+                                    //fontFamily: 'Bakbak One',
+                                    fontFamily: 'Inter',
+                                    color: '#919191',
+                                    //alignSelf: 'center',
+                                    //justifyContent: 'center',
+                                    //paddingVertical: 10,
+                                    //paddingVertical: 13,
+                                    //top: '30.3%',
+                                    marginRight: '52%',
+                                    top: '10%',
+                                    //right: '140%',
+                                    lineHeight: 15,
+                                    letterSpacing: -0.017,
+                                    width: '90%',
+
+                                }}>Add a question
+                                </Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{
+                                height: 20,
+                                width: 20,
                                 backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstGender}
-                        </Text>
-
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                borderRadius: 17,
+                                alignSelf: 'flex-end',
+                                bottom: '85%',
+                                left: '3%'
+                            }}
+                                onPress={() => navigation.navigate('EditAccount')}>
+                                <Image
+                                    source={require('../../../assets/images/crossiconwhite.png')}
+                                    style={{
+                                        height: 18,
+                                        width: 18,
+                                    }}
+                                />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={{ flex: 0.4, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', }}></View>
                     </View>
 
                 </View>
 
-            </ScrollView>
-        </View>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 139.5, marginTop: '-15%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
+                    <View style={{ flex: 0.3, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
+                        <Text style={{
+                            fontSize: 15,
+                            fontFamily: 'BakbakOne-Regular',
+                            //fontFamily: 'Inter',
+                            color: '#000000',
+                            alignSelf: 'center',
+                            justifyContent: 'center',
+                            //paddingVertical: 10,
+                            //paddingVertical: 13,
+                            //top: '30.3%',
+                            marginRight: '-10%',
+                            marginTop: '5%',
+                            //right: '140%',
+                            lineHeight: 21,
+                            letterSpacing: -0.017,
+                            width: '90%',
+                        }}>Add your 2AM Tweet
+                        </Text>
+                        <TouchableOpacity style={{
+                            height: 20,
+                            width: 20,
+                            backgroundColor: 'transparent',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderRadius: 17,
+                            alignSelf: 'flex-end',
+                            bottom: '85%',
+                            left: '3%'
+                        }}
+                            onPress={() => navigation.navigate('EditAccount')}>
+                            <Image
+                                source={require('../../../assets/images/crossiconwhite.png')}
+                                style={{
+                                    height: 18,
+                                    width: 18,
+                                }}
+                            />
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{ flex: 0.7, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', }}>
+                        <View style={{
+                            width: '100%',
+                            height: '100%',
+                            backgroundColor: 'transparent',
+                            position: 'relative',
+                            alignItems: 'space-between',
+                            justifyContent: 'center',
+                            //borderWidth: 0.5,
+                        }}>
+                            <Image
+                                source={require('../../../assets/images/twitter.png')}
+                                style={{
+                                    height: 32,
+                                    width: 30,
+                                    left: 10,
+                                    position: 'absolute',
+                                    bottom: 40,
+                                }}
+                            />
+                            <Text style={{
+                                fontFamily: 'Inter',
+                                position: 'absolute',
+                                //fontWeight: '400',
+                                color: '#000000',
+                                left: 50,
+                                fontSize: 12,
+                                right: 10,
+                                letterSpacing: -0.017,
+                                //width: 297
+                                //width: '70%',
+                                width: '85%',
+                            }}>
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been theLorem Ipsum is
+                                simply dummy text of the printing and typesetting industry.
+                            </Text>
+                        </View>
+                    </View>
+                </View>
+
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 189, marginTop: '0%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
+                    <View style={{ flex: 0.2, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
+                        <Text style={{
+                            fontSize: 15,
+                            fontFamily: 'BakbakOne-Regular',
+                            //fontFamily: 'Inter',
+                            color: '#000000',
+                            alignSelf: 'center',
+                            justifyContent: 'center',
+                            //paddingVertical: 10,
+                            //paddingVertical: 13,
+                            //top: '30.3%',
+                            marginRight: '-10%',
+                            marginTop: '5%',
+                            //right: '140%',
+                            lineHeight: 21,
+                            letterSpacing: -0.017,
+                            width: '90%',
+                        }}>Add a song that describe your life
+                        </Text>
+                        <TouchableOpacity style={{
+                            height: 20,
+                            width: 20,
+                            backgroundColor: 'transparent',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderRadius: 17,
+                            alignSelf: 'flex-end',
+                            bottom: '85%',
+                            left: '3%'
+                        }}
+                            onPress={() => navigation.navigate('EditAccount')}>
+                            <Image
+                                source={require('../../../assets/images/crossiconwhite.png')}
+                                style={{
+                                    height: 18,
+                                    width: 18,
+                                }}
+                            />
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{ flex: 0.8, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
+                        <View style={{
+                            width: '100%',
+                            height: 150,
+                            //height: '100%',
+                            backgroundColor: 'transparent',
+                            position: 'relative',
+                            alignItems: 'space-between',
+                            justifyContent: 'center',
+                            //marginBottom: '8.5%'
+                        }}>
+                            <Image
+                                source={require('../../../assets/images/spotify.png')}
+                                style={{
+                                    height: 23,
+                                    width: 24,
+                                    left: 8,
+                                    position: 'absolute',
+                                    bottom: 118,
+                                }}
+                            />
+                            <Text style={{
+                                fontFamily: 'BakbakOne-Regular',
+                                position: 'absolute',
+                                //fontWeight: '400',
+                                fontSize: 17,
+                                left: 45,
+                                top: 8,
+                                color: 'black',
+                                letterSpacing: -0.017,
+                                width: '100%',
+                            }}>
+                                Favourite Songs powered by Spotify
+                            </Text>
+                            <Image
+                                source={require('../../../assets/images/album.png')}
+                                style={{
+                                    height: 50,
+                                    width: 50,
+                                    left: 10,
+                                    position: 'absolute',
+                                    bottom: 50,
+                                }}
+                            />
+                            <Text style={{
+                                fontFamily: 'Inter',
+                                color: '#000000',
+                                position: 'absolute',
+                                //fontWeight: '600',
+                                fontSize: 12,
+                                left: 70,
+                                top: 55,
+                                position: 'absolute',
+                                letterSpacing: -0.017,
+                                lineHeight: 15
+                            }}>Cool Me Down</Text>
+                            <Text style={{
+                                fontFamily: 'Inter',
+                                color: '#000000',
+                                position: 'absolute',
+                                //fontWeight: '400',
+                                fontSize: 12,
+                                left: 70,
+                                top: 70,
+                                position: 'absolute',
+                                letterSpacing: -0.017
+                            }}>
+                                Gromee - Cool Me Down
+                            </Text>
+                            <Image
+                                source={require('../../../assets/images/playbtn.png')}
+                                style={{
+                                    height: 20,
+                                    width: 20,
+                                    left: 10,
+                                    top: 110,
+                                    position: 'absolute',
+                                    bottom: 50,
+                                }}
+                            />
+                            <Image
+                                source={require('../../../assets/images/scroller2.png')}
+                                style={{
+                                    height: 20,
+                                    width: 240,
+                                    left: 40,
+                                    top: 110,
+                                    position: 'absolute',
+                                    bottom: 50,
+                                }}
+                            />
+                            <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-5%' }}>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseviolet.png')} style={{ paddingRight: '4%', }} />
+                                </TouchableOpacity>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
+                                </TouchableOpacity>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+
+                    </View>
+                </View>
+
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 119.5, marginTop: '0%', marginBottom: '30%', alignSelf: 'center' }}>
+                    <View
+                        style={{
+                            flex: 1.3,
+                            //width: '100%',
+                            //height: '30%',
+                            //width: '80%',
+                            fontSize: 15,
+                            color: '#000000',
+                            //fontWeight: '400',
+                            lineHeight: 21,
+                            letterSpacing: -0.017,
+                            backgroundColor: 'transparent',
+                            borderWidth: 2,
+                            borderColor: '#6B6B6B',
+                            paddingLeft: '10%',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }} >
+                        <Text style={{
+                            fontSize: 15,
+                            fontFamily: 'BakbakOne-Regular',
+                            //fontFamily: 'Inter',
+                            color: '#000000',
+                            alignSelf: 'center',
+                            justifyContent: 'center',
+                            //paddingVertical: 10,
+                            //paddingVertical: 13,
+                            //top: '30.3%',
+                            marginRight: '10%',
+                            //marginTop: '5%',
+                            //right: '140%',
+                            lineHeight: 21,
+                            letterSpacing: -0.017,
+                            width: '90%',
+                        }}>Control your Profile
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            flex: 2.7,
+                            backgroundColor: 'transparent',
+                            //paddingLeft: '10%',
+                            flexDirection: 'column',
+                            alignItems: 'stretch',
+                            justifyContent: 'center'
+                        }} >
+                        <View
+                            style={{
+                                flex: 1,
+                                backgroundColor: 'transparent',
+                                //paddingLeft: '10%',
+                                alignItems: 'center',
+                                justifyContent: 'space-around',
+                                flexDirection: 'row'
+                            }} >
+                            <Text style={{
+                                fontSize: 15,
+                                fontFamily: 'Inter',
+                                color: '#919191',
+                                right: '-100%',
+                                lineHeight: 18,
+                                letterSpacing: -0.017,
+                                width: '90%',
+                            }}>Don't show my age
+                            </Text>
+                            <Switch
+                                //style={{ left: 10 }}
+                                trackColor={{ false: '#767577', true: '#008000' }}
+                                thumbColor={isEnabledAge ? '#008000' : '#f4f3f4'}
+                                ios_backgroundColor="#3e3e3e"
+                                onValueChange={toggleSwitch}
+                                value={isEnabledAge}
+                            />
+                        </View>
+                        <View
+                            style={{
+                                flex: 1,
+                                backgroundColor: 'transparent',
+                                alignItems: 'center',
+                                justifyContent: 'space-around',
+                                flexDirection: 'row'
+                            }} >
+                            <Text style={{
+                                fontSize: 15,
+                                fontFamily: 'Inter',
+                                color: '#919191',
+                                left: '100%',
+                                lineHeight: 18,
+                                letterSpacing: -0.017,
+                                width: '90%',
+                            }}>Don't show Contact details
+                            </Text>
+                            <Switch
+                                //style={{ left: 10 }}
+                                trackColor={{ false: '#767577', true: '#008000' }}
+                                thumbColor={isEnabledDetails ? '#008000' : '#f4f3f4'}
+                                ios_backgroundColor="#3e3e3e"
+                                onValueChange={toggleSwitch2}
+                                value={isEnabledDetails}
+                            />
+                        </View>
+                    </View>
+                </View>
+
+            </ScrollView >
+        </View >
 
     );
 };

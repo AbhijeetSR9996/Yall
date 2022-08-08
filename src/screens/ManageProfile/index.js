@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     StyleSheet,
     View,
     Text,
     Image,
     TouchableOpacity,
+    BackHandler
 } from 'react-native';
 import { styles } from '../genderScreens/styles';
 import { imageicon, icons } from '../../../assets/icons/icons';
@@ -18,6 +19,10 @@ import { height, width } from '../../services/helper';
 
 const ManageProfile = ({ navigation }) => {
 
+    useEffect(() => {
+        BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
+        return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
+    }, []);
 
     return (
         <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
@@ -245,10 +250,10 @@ const ManageProfile = ({ navigation }) => {
                         }}>Manage my subscriptions</Text>
                 </TouchableOpacity>
             </View>
-            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '49.5%', alignSelf: 'center' }} />
-            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '41.5%', alignSelf: 'center' }} />
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '48%', alignSelf: 'center' }} />
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '41%', alignSelf: 'center' }} />
             <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '34%', alignSelf: 'center' }} />
-            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '26%', alignSelf: 'center' }} />
+            <Image source={require('../../../assets/images/horizontaline3.png')} style={{ width: '90%', height: '0.1%', bottom: '27%', alignSelf: 'center' }} />
 
 
         </View>
