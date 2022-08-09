@@ -30,14 +30,13 @@ const MainBottomNavigation = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: false,//tabBarIconStyle:{display:'none'}
+        headerShown: false,
       }}
       backBehavior="none"
       tabBarOptions={{
         labelStyle: { fontSize: 0 },
         activeTintColor: 'white',
         inactiveTintColor: 'white',
-        //tabBarStyle:{display:'none'}
       }}>
 
 

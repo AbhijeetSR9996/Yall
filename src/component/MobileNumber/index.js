@@ -5,7 +5,8 @@ import Styles from './styles';
 import { Dropdown } from 'react-native-element-dropdown';
 import { CircularButton } from '../../component/Buttons/circular';
 import { icons } from '../../../assets/icons/icons';
-const { height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
+
 
 const data = [
     { label: 'IN +91', value: '1' },

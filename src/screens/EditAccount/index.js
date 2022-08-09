@@ -11,18 +11,28 @@ import {
     Keyboard,
     Alert,
     Switch,
-    BackHandler
+    BackHandler,
+    StyleSheet,
+    modal
 } from 'react-native';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import { styles } from './styles';
-import { StyleSheet, Dimensions } from 'react-native';
 import { icons } from '../../../assets/icons/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
+import { Picker } from '@react-native-picker/picker';
+import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
+//import DatePicker from 'react-native-date-picker';
 
+const data = [
+    { label: 'Gender', value: '' },
+    { label: 'Male', value: 'Male' },
+    { label: 'Female', value: 'Female' },
+    { label: 'Other', value: 'Other' },
+];
 
 const EditAccount = ({ navigation }) => {
 
@@ -30,28 +40,36 @@ const EditAccount = ({ navigation }) => {
         navigation.goBack();
         return true;
     }
-
     useEffect(() => {
         BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
         return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
     }, []);
 
-    // const genderList = [
-    //     { label: 'Male', value: 'male' },
-    //     { label: 'Female', value: 'female' },
-    //     { label: 'Others', value: 'others' },
-    // ];
+    // const [mydate, setDate] = useState(new Date());
+    // const [displaymode, setMode] = useState('date');
+    // const [isDisplayDate, setShow] = useState(false);
+    // const changeSelectedDate = (event, selectedDate) => {
+    //     const currentDate = selectedDate || mydate;
+    //     setDate(currentDate);
+    // };
+    // const showMode = (currentMode) => {
+    //     setShow(true);
+    //     setMode(currentMode);
+    // };
+    // const displayDatepicker = () => {
+    //     showMode('date');
+    // }
+    const [date, setDate] = useState(new Date());
+    const [open, setOpen] = useState(false);
 
-    // const [showDropdown, setShowDropdown] = useState(false);
-    // const [gender, setGender] = useState();
-
+    const [value, setValue] = React.useState(null);
     const [isEnabledAge, setIsEnabledAge] = React.useState(false);
     const [isEnabledDetails, setIsEnabledDetails] = React.useState(false);
     const toggleSwitch = () => setIsEnabledAge(previousState => !previousState);
     const toggleSwitch2 = () => setIsEnabledDetails(previousState => !previousState);
 
     const [firstAbout, setFirstAbout] = useState("");
-    const [firstGender, setFirstGender] = useState("");
+    //const [firstGender, setFirstGender] = useState("");
     const [firstInterest, setFirstInterest] = useState("");
     const [firstFilm, setFirstFilm] = useState("");
     const [firstHobby, setFirstHobby] = useState("");
@@ -360,8 +378,10 @@ const EditAccount = ({ navigation }) => {
                                 fontSize: 15,
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
-                                width: '90%',
-                                //width: 273,
+                                width: '100%',
+                                textAlign: 'center',
+                                //alignSelf: 'center'
+                                //width: 333,
                                 //alignSelf: 'center'
                             }}>Add a video, pic or loop to get 4% closer to
                                 completing your file and you may even get more
@@ -487,43 +507,71 @@ const EditAccount = ({ navigation }) => {
                             </Text>
                         </View>
                         <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                            <View style={{
+                                width: '100%',
+                                height: '30%',
+                                //width: '80%',
+                                fontSize: 15,
+                                color: '#000000',
+                                //fontWeight: '400',
+                                //lineHeight: 21,
+                                //letterSpacing: -0.017,
+                                //fontFamily: 'BakbakOne-Regular',
+                                //textAlign: 'left',
+                                alignSelf: 'center',
+                                backgroundColor: 'transparent',
+                                borderWidth: 2,
+                                borderColor: '#6B6B6B',
+                                //paddingLeft: '10%'
 
-                            {/* <Dropdown
-                                label='Gender'
-                                mode={'outlined'}
-                                value={gender}
-                                setValue={setGender}
-                                list={genderList}
-                                visible={showDropdown}
-                                showDropdown={() => setShowDropdown(true)}
-                                onDismiss={() => setShowDropdown(false)}
-                                inputProps={{
-                                    right: <TextInput.Icon name={'menu-down'} />
-                                }}
-                            /> */}
+                            }}>
 
-                            <TextInput
-                                placeholder=' Gender'
-                                placeholderTextColor='#000000'
-                                onChangeText={handleSecond}
-                                style={{
-                                    width: '100%',
-                                    height: '30%',
-                                    //width: '80%',
-                                    fontSize: 15,
-                                    color: '#000000',
-                                    //fontWeight: '400',
-                                    lineHeight: 21,
-                                    letterSpacing: -0.017,
-                                    fontFamily: 'BakbakOne-Regular',
-                                    textAlign: 'left',
-                                    alignSelf: 'center',
-                                    backgroundColor: 'transparent',
-                                    borderWidth: 2,
-                                    borderColor: '#6B6B6B',
-                                    paddingLeft: '10%'
+                                <Dropdown
+                                    style={{
+                                        //left: 22,
+                                        //right: '52%',
+                                        //width: 150,
+                                        width: '100%',
+                                        borderBottomColor: '#000000',
+                                        borderBottomWidth: 1,
+                                        //textAlign: 'center',
+                                        //alignItems: 'center',
+                                        color: '#000000',
+                                        height: 40,
+                                        backgroundColor: 'transparent'
+                                        //top: -10,
+                                    }}
+                                    placeholder="Gender"
+                                    placeholderStyle={{
+                                        fontSize: 15,
+                                        //alignItems: 'center',
+                                        textAlign: 'left',
+                                        height: 18,
+                                        fontFamily: 'BakbakOne-Regular',
+                                        lineHeight: 21,
+                                        letterSpacing: -0.017,
+                                        color: '#000000',
+                                    }}
+                                    selectedTextStyle={{
+                                        color: '#000000',
+                                        fontFamily: 'BakbakOne-Regular',
+                                        textAlign: 'left',
+                                        lineHeight: 21,
+                                        letterSpacing: -0.017,
+                                        left: '100%'
+                                    }}
+                                    data={data}
+                                    labelField="label"
+                                    valueField="value"
+                                    value={value}
+                                    onChange={item => {
+                                        setValue(item.value);
+                                    }}
+                                />
 
-                                }} />
+                            </View>
+
+
                             <Text style={{
                                 fontSize: 13,
                                 //fontFamily: 'Bakbak One',
@@ -531,16 +579,13 @@ const EditAccount = ({ navigation }) => {
                                 color: '#919191',
                                 alignSelf: 'center',
                                 justifyContent: 'center',
-                                //paddingVertical: 10,
-                                //paddingVertical: 13,
-                                //top: '30.3%',
-                                marginRight: '-10%',
+                                marginRight: '-13%',
                                 marginBottom: '10%',
                                 //right: '140%',
                                 lineHeight: 15,
                                 letterSpacing: -0.017,
                                 width: '90%',
-                            }}>{firstGender}
+                            }}>{value}
                             </Text>
 
                         </View>
@@ -872,6 +917,23 @@ const EditAccount = ({ navigation }) => {
                     </View>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
+                        {/* <TouchableOpacity onPress={() => setOpen(true)} title="Your date of birth"><Text>Your date of birth</Text></TouchableOpacity> */}
+                        {/* <DatePicker
+                            modal
+                            open={open}
+                            date={date}
+                            onConfirm={(date) => { setOpen(false), setDate(date) }}
+                            onCancel={() => { setOpen(false) }} /> */}
+
+                        {/* <DateTimePickerAndroid
+                            testID="dateTimePicker"
+                            value={mydate}
+                            mode={displaymode}
+                            is24Hour={true}
+                            display="default"
+                            onChange={changeSelectedDate} /> */}
+
+
                         <TextInput
                             placeholder=' Your date of birth'
                             placeholderTextColor='#000000'
@@ -893,6 +955,7 @@ const EditAccount = ({ navigation }) => {
                                 borderColor: '#6B6B6B',
                                 paddingLeft: '10%',
                             }} />
+
                         <Text style={{
                             fontSize: 13,
                             //fontFamily: 'Bakbak One',
