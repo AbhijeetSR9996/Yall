@@ -26,12 +26,12 @@ import { Dropdown } from 'react-native-element-dropdown';
 const AccountSettings = ({ navigation }) => {
 
 
-    const [isEnabledAge, setIsEnabledAge] = React.useState(false);
-    const [isEnabledDetails, setIsEnabledDetails] = React.useState(false);
-    const toggleSwitch = () => setIsEnabledAge(previousState => !previousState);
-    const toggleSwitch2 = () => setIsEnabledDetails(previousState => !previousState);
+    const [isEnabledDistance, setIsEnabledDistance] = React.useState(false);
+    const [isEnabledShow, setIsEnabledShow] = React.useState(false);
 
-    const [firstGender, setFirstGender] = useState("");
+    const toggleSwitch = () => setIsEnabledDistance(previousState => !previousState);
+    const toggleSwitch2 = () => setIsEnabledShow(previousState => !previousState);
+    //const [firstGender, setFirstGender] = useState("");
 
 
 
@@ -45,8 +45,9 @@ const AccountSettings = ({ navigation }) => {
                             color: '#000000',
                             fontWeight: "200",
                             //padding: '5%',
-                            left: '15%',
-                            marginRight: '5%'
+                            //left: '15%',
+                            marginLeft: '20%',
+                            //marginRight: '5%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
@@ -56,6 +57,7 @@ const AccountSettings = ({ navigation }) => {
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
+                        right: '60%'
                     }}>Setting</Text>
                 </View>
             </View>
@@ -115,7 +117,7 @@ const AccountSettings = ({ navigation }) => {
                                     //top: '30.3%',
                                     //marginRight: '10%',
                                     //marginTop: '5%',
-                                    right: '60%',
+                                    right: '65%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
                                     width: '100%',
@@ -180,9 +182,8 @@ const AccountSettings = ({ navigation }) => {
                         }}>Discovery Settings
                         </Text>
                         <TextInput
-                            placeholder='Location'
+                            placeholder=' Location'
                             placeholderTextColor='#4B4B4B'
-                            //onChangeText={handleSecond}
                             style={{
                                 width: '100%',
                                 height: '35%',
@@ -194,11 +195,12 @@ const AccountSettings = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 fontFamily: 'Inter',
                                 //textAlign: 'left',
-                                //alignSelf: 'center',
+                                alignSelf: 'center',
                                 backgroundColor: 'transparent',
                                 borderWidth: 2,
                                 borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
+                                //paddingLeft: '5%',
+
                             }} />
                         <Text style={{
                             fontSize: 12,
@@ -226,7 +228,7 @@ const AccountSettings = ({ navigation }) => {
                                 //justifyContent: 'center',
                                 //paddingVertical: 10,
                                 //paddingVertical: 13,
-                                bottom: '360%',
+                                bottom: '380%',
                                 //marginRight: '10%',
                                 //marginTop: '5%',
                                 left: '27%',
@@ -306,10 +308,10 @@ const AccountSettings = ({ navigation }) => {
                             <Switch
                                 style={{ right: 15 }}
                                 trackColor={{ false: '#767577', true: '#008000' }}
-                                thumbColor={isEnabledAge ? '#008000' : '#f4f3f4'}
+                                thumbColor={isEnabledDistance ? '#008000' : '#f4f3f4'}
                                 ios_backgroundColor="#3e3e3e"
                                 onValueChange={toggleSwitch}
-                                value={isEnabledAge}
+                                value={isEnabledDistance}
                             />
                         </View>
                     </View>
@@ -471,10 +473,10 @@ const AccountSettings = ({ navigation }) => {
                                 <Switch
                                     style={{ right: 15 }}
                                     trackColor={{ false: '#767577', true: '#767577' }}
-                                    thumbColor={isEnabledAge ? '#000000' : '#f4f3f4'}
+                                    thumbColor={isEnabledShow ? '#000000' : '#f4f3f4'}
                                     ios_backgroundColor="#3e3e3e"
                                     onValueChange={toggleSwitch2}
-                                    value={isEnabledAge}
+                                    value={isEnabledShow}
                                 />
                             </View>
                         </View>
@@ -535,7 +537,7 @@ const AccountSettings = ({ navigation }) => {
                                     //top: '30.3%',
                                     //marginRight: '10%',
                                     //marginTop: '5%',
-                                    right: '80%',
+                                    right: '85%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
                                     width: '100%',
@@ -605,7 +607,7 @@ const AccountSettings = ({ navigation }) => {
                                 fontSize: 15,
                                 fontFamily: 'Inter',
                                 color: '#4B4B4B',
-                                right: '55%',
+                                right: '60%',
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '100%',
@@ -853,14 +855,16 @@ const AccountSettings = ({ navigation }) => {
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 backgroundColor: 'transparent',
+                                //backgroundColor:{onPress} ,
                                 borderRadius: 3,
                                 //borderWidth: 2,
                                 //borderColor: '#6B6B6B',
                                 //paddingLeft: '10%',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                flexDirection: 'column'
-                            }} >
+                                flexDirection: 'column',
+                            }}
+                        >
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'Inter',
@@ -877,6 +881,7 @@ const AccountSettings = ({ navigation }) => {
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '100%',
+                                //onValueChange:{handleDistanceUnit}
                             }}>Km.
                             </Text>
                         </TouchableOpacity>
@@ -1105,7 +1110,7 @@ const AccountSettings = ({ navigation }) => {
                                 //top: '30.3%',
                                 //marginRight: '10%',
                                 //marginTop: '5%',
-                                right: '45%',
+                                right: '47%',
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '90%',
@@ -1363,7 +1368,7 @@ const AccountSettings = ({ navigation }) => {
                             //width: '38%',
                             width: '28%',
                             //height: '75%',
-                            height: '55.7%',
+                            height: '60%',
                             marginBottom: 10,
                             alignSelf: 'center',
                         }} source={imageicon.yallLogo} />

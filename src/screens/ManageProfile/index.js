@@ -184,7 +184,7 @@ const ManageProfile = ({ navigation }) => {
                         ]}
                     />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => { navigation.navigate('ManagePaymentMethods') }}>
                     <Text
                         style={{
                             fontFamily: 'BakbakOne-Regular',
@@ -213,7 +213,7 @@ const ManageProfile = ({ navigation }) => {
                         ]}
                     />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => { navigation.navigate('ManageBookings') }}>
                     <Text
                         style={{
                             fontFamily: 'BakbakOne-Regular',
@@ -241,7 +241,7 @@ const ManageProfile = ({ navigation }) => {
                         ]}
                     />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => { navigation.navigate('ManageSubscriptions') }}>
                     <Text
                         style={{
                             fontFamily: 'BakbakOne-Regular',

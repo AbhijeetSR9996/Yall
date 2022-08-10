@@ -24,7 +24,7 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
-import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
+//import DateTimePicker from '@react-native-community/datetimepicker';
 //import DatePicker from 'react-native-date-picker';
 
 const data = [
@@ -45,22 +45,9 @@ const EditAccount = ({ navigation }) => {
         return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
     }, []);
 
-    // const [mydate, setDate] = useState(new Date());
-    // const [displaymode, setMode] = useState('date');
-    // const [isDisplayDate, setShow] = useState(false);
-    // const changeSelectedDate = (event, selectedDate) => {
-    //     const currentDate = selectedDate || mydate;
-    //     setDate(currentDate);
-    // };
-    // const showMode = (currentMode) => {
-    //     setShow(true);
-    //     setMode(currentMode);
-    // };
-    // const displayDatepicker = () => {
-    //     showMode('date');
-    // }
-    const [date, setDate] = useState(new Date());
-    const [open, setOpen] = useState(false);
+
+    //const [date, setDate] = useState(new Date());
+    //const [open, setOpen] = useState(false);
 
     const [value, setValue] = React.useState(null);
     const [isEnabledAge, setIsEnabledAge] = React.useState(false);
@@ -190,8 +177,8 @@ const EditAccount = ({ navigation }) => {
                             color: '#000000',
                             fontWeight: "200",
                             //padding: '5%',
-                            left: '15%',
-                            marginRight: '5%'
+                            //left: '15%',
+                            marginLeft: '20%'
                         }} />
                     </TouchableOpacity>
                     <Text style={{
@@ -201,6 +188,7 @@ const EditAccount = ({ navigation }) => {
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
+                        right: '60%'
                     }}>Edit Profile</Text>
                 </View>
             </View>
@@ -561,6 +549,7 @@ const EditAccount = ({ navigation }) => {
                                         left: '100%'
                                     }}
                                     data={data}
+                                    iconColor='transparent'
                                     labelField="label"
                                     valueField="value"
                                     value={value}
@@ -917,13 +906,23 @@ const EditAccount = ({ navigation }) => {
                     </View>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
-                        {/* <TouchableOpacity onPress={() => setOpen(true)} title="Your date of birth"><Text>Your date of birth</Text></TouchableOpacity> */}
+                        {/* <TouchableOpacity onPress={() => setMode('date')} title="Your date of birth"><Text>Your date of birth</Text></TouchableOpacity>
+                        {show && <DateTimePicker
+                            testID="dateTimePicker"
+                            value={date}
+                            mode={mode}
+                            is24Hour={true}
+                            display="default"
+                            onChange={onChange} />} */}
+
                         {/* <DatePicker
+                            mode='date'
                             modal
                             open={open}
                             date={date}
-                            onConfirm={(date) => { setOpen(false), setDate(date) }}
+                            onConfirm={(date) => { setOpen(false), setDate(value) }}
                             onCancel={() => { setOpen(false) }} /> */}
+
 
                         {/* <DateTimePickerAndroid
                             testID="dateTimePicker"
