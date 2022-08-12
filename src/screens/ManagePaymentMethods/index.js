@@ -124,7 +124,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             height: '60%',
                             marginBottom: '3%'
                         }}
-                            onPress={() => navigation.navigate('ManagePaymentMethods')}>
+                            onPress={() => navigation.navigate('EditCard')}>
                             <Text style={{
                                 fontFamily: 'Inter',
                                 fontSize: 13,
@@ -210,7 +210,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             height: '60%',
                             marginBottom: '3%'
                         }}
-                            onPress={() => navigation.navigate('ManagePaymentMethods')}>
+                            onPress={() => navigation.navigate('EditCard')}>
                             <Text style={{
                                 fontFamily: 'Inter',
                                 fontSize: 13,
@@ -296,7 +296,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             height: '60%',
                             marginBottom: '3%'
                         }}
-                            onPress={() => navigation.navigate('ManagePaymentMethods')}>
+                            onPress={() => navigation.navigate('EditCard')}>
                             <Text style={{
                                 fontFamily: 'Inter',
                                 fontSize: 13,

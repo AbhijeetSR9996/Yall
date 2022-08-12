@@ -49,6 +49,8 @@ import AccountSettings from './src/screens/AccountSettings';
 import ManageBookings from './src/screens/ManageBookings';
 import ManagePaymentMethods from './src/screens/ManagePaymentMethods';
 import ManageSubscriptions from './src/screens/ManageSubscriptions/index';
+import EditCard from './src/screens/EditCard';
+import PremiumSubscription from './src/screens/PremiumSubscription';
 
 import { NavigationContainer } from '@react-navigation/native';
 

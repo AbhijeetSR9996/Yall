@@ -633,7 +633,7 @@ const ManageSubscriptions = ({ navigation }) => {
                         marginTop: '0%',
                         marginBottom: '20%'
                     }}
-                >
+                    onPress={() => navigation.navigate('PremiumSubscription')}>
                     <View style={{
                         left: 10,
                         top: 8,

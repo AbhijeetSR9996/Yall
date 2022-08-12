@@ -55,6 +55,7 @@ import SignUpEmail from '../src/screens/SignUpEmail';
 import ChatOwnQuestion from '../src/screens/ChatOwnQuestion';
 import AccountSettings from '../src/screens/AccountSettings';
 import ManageSubscriptions from '../src/screens/ManageSubscriptions/index';
+import PremiumSubscription from '../src/screens/PremiumSubscription';
 
 const Stack = createStackNavigator();
 
@@ -101,6 +102,7 @@ function MainStackNavigation() {
         <Stack.Screen name="ChatOwnQuestion" component={ChatOwnQuestion} />
         <Stack.Screen name="AccountSettings" component={AccountSettings} />
         <Stack.Screen name="ManageSubscriptions" component={ManageSubscriptions} />
+        <Stack.Screen name="PremiumSubscription" component={PremiumSubscription} />
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation} />
 

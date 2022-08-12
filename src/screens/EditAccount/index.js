@@ -95,9 +95,9 @@ const EditAccount = ({ navigation }) => {
     //const [date, setDate] = useState(new Date());
     //const [open, setOpen] = useState(false);
 
-    const [value, setValue] = React.useState(null);
-    const [isEnabledAge, setIsEnabledAge] = React.useState(false);
-    const [isEnabledDetails, setIsEnabledDetails] = React.useState(false);
+    const [value, setValue] = useState(null);
+    const [isEnabledAge, setIsEnabledAge] = useState(false);
+    const [isEnabledDetails, setIsEnabledDetails] = useState(false);
     const toggleSwitch = () => setIsEnabledAge(previousState => !previousState);
     const toggleSwitch2 = () => setIsEnabledDetails(previousState => !previousState);
 
