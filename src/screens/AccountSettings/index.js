@@ -21,10 +21,11 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
-
+//import Slider from '@react-native-community/slider';
 
 const AccountSettings = ({ navigation }) => {
 
+    //const [sliderValue, setSliderValue] = useState(15);
 
     const [isEnabledDistance, setIsEnabledDistance] = React.useState(false);
     const [isEnabledShow, setIsEnabledShow] = React.useState(false);
@@ -286,6 +287,15 @@ const AccountSettings = ({ navigation }) => {
                             <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 140 }} />
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 150, left: 15 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 150 }} />
+                            {/* <Slider
+                                maximumValue={100}
+                                minimumValue={0}
+                                step={1}
+                                value={sliderValue}
+                                minimumTrackTintColor='#307ecc'
+                                maximumTrackTintColor='#000000'
+                                onValueChange={(sliderValue) => setSliderValue(sliderValue)}
+                            /> */}
                         </View>
                         <View style={{ flex: 1.1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
                             <Text style={{
@@ -1368,7 +1378,7 @@ const AccountSettings = ({ navigation }) => {
                             //width: '38%',
                             width: '28%',
                             //height: '75%',
-                            height: '60%',
+                            height: '59.5%',
                             marginBottom: 10,
                             alignSelf: 'center',
                         }} source={imageicon.yallLogo} />

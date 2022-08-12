@@ -27,12 +27,58 @@ import { Picker } from '@react-native-picker/picker';
 //import DateTimePicker from '@react-native-community/datetimepicker';
 //import DatePicker from 'react-native-date-picker';
 
-const data = [
+const genderdata = [
     { label: 'Gender', value: '' },
-    { label: 'Male', value: 'Male' },
-    { label: 'Female', value: 'Female' },
-    { label: 'Other', value: 'Other' },
+    { label: 'Man', value: 'Man' },
+    { label: 'Woman', value: 'Woman' },
+    { label: 'Non-binary', value: 'Non-binary' },
+    { label: 'Agender', value: 'Agender' },
+    { label: 'Androgyne', value: 'Androgyne' },
+    { label: 'Bigender', value: 'Bigender' },
+    { label: 'Cisgender', value: 'Cisgender' },
+    { label: 'Enby', value: 'Enby' },
+    { label: 'Transgender', value: 'Transgender' },
+    { label: 'Transgender Woman', value: 'Transgender Woman' },
+    { label: 'Gender Fluid', value: 'Gender Fluid' },
+    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
+    { label: 'Neutrois', value: 'Neutrois' },
+    { label: 'Non-binary', value: 'Non-binary' },
+    { label: 'Pangender', value: 'Pangender' },
+    { label: 'Polygender', value: 'Polygender' },
+    { label: 'Omnigender', value: 'Omnigender' },
+    { label: 'Two Spirit', value: 'Two Spirit' },
 ];
+
+// const filmsdata = [
+//     { label: 'Soccer', value: 'Soccer' },
+//     { label: 'Running', value: 'Running' },
+//     { label: 'Cricker', value: 'Cricker' },
+//     { label: 'Kabaddi', value: 'Kabaddi' },
+//     { label: 'Football', value: 'Football' },
+//     { label: 'Basketball', value: 'Basketball' },
+//     { label: 'Volleyball', value: 'Volleyball' },
+//     { label: 'Table Tennis', value: 'Table Tennis' },
+//     { label: 'Others', value: 'Others' },
+// ]
+
+// const hobbiesdata = [
+//     {label: 'apple', value: 'Burger'},
+//     {label: 'Burger', value: 'Burger'},
+//     {label: 'Cricket', value: 'Cricket'},
+//     {label: 'Pizza', value: 'Pizza'},
+//     {label: 'kadhai paneer', value: 'kadhai paneer'},
+//     {label: 'icecream', value: 'icecream'},
+//     {label: 'watermelon', value: 'watermelon'},
+//     {label: 'apple', value: 'Burger'},
+//     {label: 'Burger', value: 'Burger'},
+//     {label: 'Cricket', value: 'Cricket'},
+//     {label: 'Pizza', value: 'Pizza'},
+//     {label: 'kadhai paneer', value: 'kadhai paneer'},
+//     {label: 'icecream', value: 'icecream'},
+//     {label: 'watermelon', value: 'watermelon'},
+//     {label: 'guava', value: 'guava'},
+//     {label: 'Others', value: 'Others'},
+// ]
 
 const EditAccount = ({ navigation }) => {
 
@@ -529,7 +575,7 @@ const EditAccount = ({ navigation }) => {
                                         backgroundColor: 'transparent'
                                         //top: -10,
                                     }}
-                                    placeholder="Gender"
+                                    placeholder="        Gender"
                                     placeholderStyle={{
                                         fontSize: 15,
                                         //alignItems: 'center',
@@ -548,7 +594,7 @@ const EditAccount = ({ navigation }) => {
                                         letterSpacing: -0.017,
                                         left: '100%'
                                     }}
-                                    data={data}
+                                    data={genderdata}
                                     iconColor='transparent'
                                     labelField="label"
                                     valueField="value"

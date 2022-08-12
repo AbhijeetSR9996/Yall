@@ -64,10 +64,10 @@ const ManageSubscriptions = ({ navigation }) => {
             </View>
             <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.2%' }} />
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '10%', marginBottom: '0%' }}>
-                <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', height: 209, marginTop: '0%', alignSelf: 'center', borderRadius: 5, }}>
-                    <View style={{ flex: 0.6, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-between', height: '100%', alignSelf: 'center' }}>
+                <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', height: 199, marginTop: '0%', alignSelf: 'center', borderRadius: 5, }}>
+                    <View style={{ flex: 0.45, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-between', height: '100%', alignSelf: 'center' }}>
                         <View style={{ flexDirection: 'column', width: '100%', backgroundColor: '#DCC7E1', alignItems: 'center', justifyContent: 'center', height: 83, marginTop: '0%', borderRadius: 15 }}>
-                            <Image source={require('../../../assets/images/unlimited.png')} />
+                            <Image source={require('../../../assets/images/unlimited.png')} style={{ width: '60.5%' }} />
                         </View>
                         <View style={{ flexDirection: 'column', width: '100%', backgroundColor: '#DCC7E1', alignItems: 'center', justifyContent: 'center', height: 83, marginTop: '0%', borderRadius: 15 }}>
                             <Image source={require('../../../assets/images/crown.png')} />
@@ -251,12 +251,156 @@ const ManageSubscriptions = ({ navigation }) => {
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 351, marginTop: '10%', alignSelf: 'center', borderRadius: 10, marginBottom: '10%' }}>
-                    {/* <ImageBackground 
-                    source={require('../../../assets/images/core/background-signup.png')}
-                    resizeMode="stretch"
-                    style={{}}> */}
-                    <View style={{ flexDirection: 'column', width: '100%', backgroundColor: '#9384C7', alignItems: 'center', justifyContent: 'center', marginTop: '0%', height: 220, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
-                    </View>
+
+
+                    <ImageBackground
+                        source={require('../../../assets/images/Gradient-Fill.png')}
+                        style={[{
+                            width: '100%',
+                            height: 220,
+                        }]}
+                        imageStyle={{
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                        }}
+                    >
+                        <View style={{ flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', height: '100%', borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+                            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{ backgroundColor: 'transparent', height: '90%', flex: 1, flexDirection: 'row', width: '100%', marginBottom: '8%', borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+                                <View style={{ flex: 1, flexDirection: 'column', width: 324, backgroundColor: 'transparent', alignItems: 'center', textAlign: 'center', justifyContent: 'space-evenly', height: 195, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+                                    <Text style={{
+                                        fontFamily: 'BakbakOne-Regular',
+                                        fontSize: 18,
+                                        color: '#000000',
+                                        lineHeight: 25,
+                                        letterSpacing: -0.017,
+                                        //top: '5%'
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Get Yall Subscriptions </Text>
+                                    <Image source={require('../../../assets/images/unlimitedloop.png')}
+                                        style={{ top: '2%', alignSelf: 'center', height: '36.5%', width: '22%' }} />
+                                    <Text style={{
+                                        fontFamily: 'Inter',
+                                        fontSize: 15,
+                                        color: '#000000',
+                                        lineHeight: 18,
+                                        letterSpacing: -0.017,
+                                        textAlign: 'center',
+                                        //bottom: '7%'
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        //textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Unlimited Likes </Text>
+                                    <Text style={{
+                                        fontFamily: 'Inter',
+                                        fontSize: 12,
+                                        color: '#000000',
+                                        lineHeight: 15,
+                                        bottom: '5%',
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Send as many likes as you want </Text>
+                                </View>
+                                <View style={{ flex: 1, flexDirection: 'column', width: 324, backgroundColor: 'transparent', alignItems: 'center', textAlign: 'center', justifyContent: 'space-evenly', height: 195, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+                                    <Text style={{
+                                        fontFamily: 'BakbakOne-Regular',
+                                        fontSize: 18,
+                                        color: '#000000',
+                                        lineHeight: 25,
+                                        letterSpacing: -0.017,
+                                        //top: '5%'
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Get Yall Subscriptions </Text>
+                                    <Image source={require('../../../assets/images/unlimitedloop.png')}
+                                        style={{ top: '2%', alignSelf: 'center', height: '36.5%', width: '22%' }} />
+                                    <Text style={{
+                                        fontFamily: 'Inter',
+                                        fontSize: 15,
+                                        color: '#000000',
+                                        lineHeight: 18,
+                                        letterSpacing: -0.017,
+                                        textAlign: 'center',
+                                        //bottom: '7%'
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        //textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Unlimited Likes </Text>
+                                    <Text style={{
+                                        fontFamily: 'Inter',
+                                        fontSize: 12,
+                                        color: '#000000',
+                                        lineHeight: 15,
+                                        bottom: '5%',
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Send as many likes as you want </Text>
+                                </View>
+                                <View style={{ flex: 1, flexDirection: 'column', width: 324, backgroundColor: 'transparent', alignItems: 'center', textAlign: 'center', justifyContent: 'space-evenly', height: 195, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+                                    <Text style={{
+                                        fontFamily: 'BakbakOne-Regular',
+                                        fontSize: 18,
+                                        color: '#000000',
+                                        lineHeight: 25,
+                                        letterSpacing: -0.017,
+                                        //top: '5%'
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Get Yall Subscriptions </Text>
+                                    <Image source={require('../../../assets/images/unlimitedloop.png')}
+                                        style={{ top: '2%', alignSelf: 'center', height: '36.5%', width: '22%' }} />
+                                    <Text style={{
+                                        fontFamily: 'Inter',
+                                        fontSize: 15,
+                                        color: '#000000',
+                                        lineHeight: 18,
+                                        letterSpacing: -0.017,
+                                        textAlign: 'center',
+                                        //bottom: '7%'
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        //textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Unlimited Likes </Text>
+                                    <Text style={{
+                                        fontFamily: 'Inter',
+                                        fontSize: 12,
+                                        color: '#000000',
+                                        lineHeight: 15,
+                                        bottom: '5%',
+                                        //marginLeft: '4.5%',
+                                        //marginBottom: '-3%'
+                                        textAlign: 'center',
+                                        justifyContent: 'center'
+                                    }}>Send as many likes as you want </Text>
+                                </View>
+                            </ScrollView>
+                            <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '-2%', width: '100%', marginHorizontal: '0%' }}>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseblack.png')} style={{ paddingRight: '4%', bottom: '255%' }} />
+                                </TouchableOpacity>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipsewhite.png')} style={{ paddingRight: '4%', bottom: '255%' }} />
+                                </TouchableOpacity>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipsewhite.png')} style={{ paddingRight: '4%', bottom: '255%' }} />
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+                    </ImageBackground>
+
                     <View style={{ flexDirection: 'row', width: '100%', backgroundColor: 'pink', alignItems: 'stretch', justifyContent: 'center', marginTop: '0%', height: 131, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 }}>
                         <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#E0CCE5', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', borderBottomLeftRadius: 10, borderBottomRightRadius: 0 }}>
                             <Text style={{
@@ -364,10 +508,9 @@ const ManageSubscriptions = ({ navigation }) => {
                             }}>INR 191.50/mo </Text>
                         </View>
                     </View>
-                    {/* </ImageBackground> */}
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', marginTop: '10%', alignSelf: 'center', borderBottomLeftRadius: 0, borderBottomRightRadius: 0, marginBottom: '10%', height: 451, }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', marginTop: '5%', alignSelf: 'center', borderBottomLeftRadius: 0, borderBottomRightRadius: 0, marginBottom: '10%', height: 451, }}>
                     <View style={{ flex: 0.2, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'space-evenly', marginTop: '0%', }}>
                         <Text style={{
                             color: '#000000',
@@ -434,7 +577,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '103%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-90%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-85%' }} />
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
                             <Text style={{
@@ -446,7 +589,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '60%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-5%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '10%' }} />
                             <Image source={require('../../../assets/images/greytickicon.png')} style={{ left: '33%' }} />
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
@@ -459,7 +602,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '103%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-90%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-70%' }} />
 
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
@@ -472,7 +615,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '60%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-5%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '15%' }} />
                             <Image source={require('../../../assets/images/greytickicon.png')} style={{ left: '33%' }} />
                         </View>
                     </View>
