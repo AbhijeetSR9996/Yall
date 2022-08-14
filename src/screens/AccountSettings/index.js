@@ -6,26 +6,23 @@ import {
     TextInput,
     TouchableOpacity,
     ScrollView,
-    Platform,
-    KeyboardAvoidingView,
-    Keyboard,
-    Alert,
-    Switch
+    Switch,
+    StyleSheet,
 } from 'react-native';
-import { Rectangular } from '../../component/Buttons/Rectangular';
 import { styles } from './styles';
-import { StyleSheet, Dimensions } from 'react-native';
 import { icons, imageicon } from '../../../assets/icons/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
-//import Slider from '@react-native-community/slider';
+import Slider from 'react-native-slider';
 
 const AccountSettings = ({ navigation }) => {
 
-    //const [sliderValue, setSliderValue] = useState(15);
+    //const onPress = () => { backgroundColor: '#DCC7E1' }
+
+    const [sliderValue, setSliderValue] = useState(15);
 
     const [isEnabledDistance, setIsEnabledDistance] = React.useState(false);
     const [isEnabledShow, setIsEnabledShow] = React.useState(false);
@@ -34,7 +31,8 @@ const AccountSettings = ({ navigation }) => {
     const toggleSwitch2 = () => setIsEnabledShow(previousState => !previousState);
     //const [firstGender, setFirstGender] = useState("");
 
-
+    //const [count, setCount] = useState(0);
+    //const onClick = () => setCount(prevCount => prevCount + 1);
 
     return (
         <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
@@ -62,7 +60,7 @@ const AccountSettings = ({ navigation }) => {
                     }}>Setting</Text>
                 </View>
             </View>
-            <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.2%' }} />
+            <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '0%' }} />
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '5%', marginBottom: '0%' }}>
 
 
@@ -283,19 +281,21 @@ const AccountSettings = ({ navigation }) => {
                             }}>80km.
                             </Text>
                         </View>
-                        <View style={{ flex: 0.8, flexDirection: 'row', backgroundColor: 'white', alignItems: 'center', justifyContent: 'center', marginTop: '0%', }}>
-                            <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 140 }} />
+                        <View style={{ flex: 0.8, flexDirection: 'row', backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', marginTop: '0%', }}>
+                            {/* <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 140 }} />
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 150, left: 15 }} />
-                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 150 }} />
-                            {/* <Slider
-                                maximumValue={100}
-                                minimumValue={0}
-                                step={1}
-                                value={sliderValue}
-                                minimumTrackTintColor='#307ecc'
-                                maximumTrackTintColor='#000000'
-                                onValueChange={(sliderValue) => setSliderValue(sliderValue)}
-                            /> */}
+                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 150 }} /> */}
+                            <TouchableOpacity>
+                                <Slider
+                                    style={{ width: 205, height: 40, marginRight: '28%' }}
+                                    maximumValue={10}
+                                    minimumValue={0}
+                                    step={1}
+                                    value={sliderValue}
+                                    minimumTrackTintColor='#000000'
+                                    maximumTrackTintColor='#FFFFFF'
+                                    onValueChange={(sliderValue) => setSliderValue(sliderValue)}
+                                /></TouchableOpacity>
                         </View>
                         <View style={{ flex: 1.1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
                             <Text style={{
@@ -841,7 +841,7 @@ const AccountSettings = ({ navigation }) => {
                             lineHeight: 18,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>Mi
+                        }}>
                         </Text>
                     </View>
                     <View
@@ -907,6 +907,7 @@ const AccountSettings = ({ navigation }) => {
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 backgroundColor: '#DCC7E1',
+                                //backgroundColor: 'transparent',
                                 borderRadius: 3,
                                 //borderWidth: 2,
                                 //borderColor: '#6B6B6B',
@@ -915,7 +916,7 @@ const AccountSettings = ({ navigation }) => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 flexDirection: 'column'
-                            }} >
+                            }}>
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'Inter',

@@ -364,7 +364,7 @@ const EditCard = ({ navigation }) => {
                             //justifyContent:'center'
                         }}>Phone : 79853489654</Text>
                         <TouchableOpacity>
-                            <Text style={{ left: 295, marginTop: -110, }}>
+                            <Text style={{ left: 300, marginTop: -110, }}>
                                 <EvilIcons name="chevron-right" size={35} color="#000000" />
                             </Text>
                         </TouchableOpacity>

@@ -62,12 +62,13 @@ const ManageSubscriptions = ({ navigation }) => {
                     }}>Manage subscription</Text>
                 </View>
             </View>
-            <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.2%' }} />
+            <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '0%' }} />
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '10%', marginBottom: '0%' }}>
                 <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', height: 199, marginTop: '0%', alignSelf: 'center', borderRadius: 5, }}>
                     <View style={{ flex: 0.45, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-between', height: '100%', alignSelf: 'center' }}>
                         <View style={{ flexDirection: 'column', width: '100%', backgroundColor: '#DCC7E1', alignItems: 'center', justifyContent: 'center', height: 83, marginTop: '0%', borderRadius: 15 }}>
-                            <Image source={require('../../../assets/images/unlimited.png')} style={{ width: '60.5%' }} />
+                            <Image source={require('../../../assets/images/unlimited.png')} //style={{ width: '60.5%' }} 
+                            />
                         </View>
                         <View style={{ flexDirection: 'column', width: '100%', backgroundColor: '#DCC7E1', alignItems: 'center', justifyContent: 'center', height: 83, marginTop: '0%', borderRadius: 15 }}>
                             <Image source={require('../../../assets/images/crown.png')} />
@@ -147,7 +148,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                     //marginTop: '5%',
                                     width: width * 0.17,
                                     //marginLeft: '10%',
-                                    right: '120%',
+                                    right: '150%',
                                     height: '70%'
                                 }}>
                                     <Text style={{
@@ -234,7 +235,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                     //marginTop: '5%',
                                     width: width * 0.17,
                                     //marginLeft: '10%',
-                                    right: '120%',
+                                    right: '150%',
                                     height: '70%'
                                 }}>
                                     <Text style={{
@@ -564,7 +565,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '103%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-90%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-92%' }} />
 
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
@@ -577,7 +578,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '103%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-85%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-92%' }} />
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
                             <Text style={{
@@ -589,7 +590,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '60%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '10%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-5%' }} />
                             <Image source={require('../../../assets/images/greytickicon.png')} style={{ left: '33%' }} />
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
@@ -602,7 +603,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '103%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-70%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-92%' }} />
 
                         </View>
                         <View style={{ flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', height: '13%', borderRadius: 3, borderWidth: 0.5, borderColor: '#857E7E' }}>
@@ -615,7 +616,7 @@ const ManageSubscriptions = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 right: '60%'
                             }}>Unlimited likes</Text>
-                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '15%' }} />
+                            <Image source={require('../../../assets/images/blacktickicon.png')} style={{ left: '-5%' }} />
                             <Image source={require('../../../assets/images/greytickicon.png')} style={{ left: '33%' }} />
                         </View>
                     </View>

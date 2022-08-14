@@ -28,7 +28,7 @@ import { Picker } from '@react-native-picker/picker';
 //import DatePicker from 'react-native-date-picker';
 
 const genderdata = [
-    { label: 'Gender', value: '' },
+    // { label: 'Gender', value: '' },
     { label: 'Man', value: 'Man' },
     { label: 'Woman', value: 'Woman' },
     { label: 'Non-binary', value: 'Non-binary' },
@@ -50,35 +50,184 @@ const genderdata = [
 ];
 
 // const filmsdata = [
-//     { label: 'Soccer', value: 'Soccer' },
-//     { label: 'Running', value: 'Running' },
-//     { label: 'Cricker', value: 'Cricker' },
-//     { label: 'Kabaddi', value: 'Kabaddi' },
-//     { label: 'Football', value: 'Football' },
-//     { label: 'Basketball', value: 'Basketball' },
-//     { label: 'Volleyball', value: 'Volleyball' },
-//     { label: 'Table Tennis', value: 'Table Tennis' },
-//     { label: 'Others', value: 'Others' },
-// ]
+//    { label: 'Agender', value: 'Agender' },
+//    { label: 'Androgyne', value: 'Androgyne' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'Cisgender', value: 'Cisgender' },
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'Transgender', value: 'Transgender' },
+//    { label: 'Transgender Woman', value: 'Transgender Woman' },
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
+//    { label: 'Neutrois', value: 'Neutrois' },
+//    { label: 'Non-binary', value: 'Non-binary' },
+//    { label: 'Pangender', value: 'Pangender' },
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'Omnigender', value: 'Omnigender' },
+//    { label: 'Two Spirit', value: 'Two Spirit' },
+//    { label: 'Others', value: 'Others' },
+//];
 
 // const hobbiesdata = [
-//     {label: 'apple', value: 'Burger'},
-//     {label: 'Burger', value: 'Burger'},
-//     {label: 'Cricket', value: 'Cricket'},
-//     {label: 'Pizza', value: 'Pizza'},
-//     {label: 'kadhai paneer', value: 'kadhai paneer'},
-//     {label: 'icecream', value: 'icecream'},
-//     {label: 'watermelon', value: 'watermelon'},
-//     {label: 'apple', value: 'Burger'},
-//     {label: 'Burger', value: 'Burger'},
-//     {label: 'Cricket', value: 'Cricket'},
-//     {label: 'Pizza', value: 'Pizza'},
-//     {label: 'kadhai paneer', value: 'kadhai paneer'},
-//     {label: 'icecream', value: 'icecream'},
-//     {label: 'watermelon', value: 'watermelon'},
-//     {label: 'guava', value: 'guava'},
-//     {label: 'Others', value: 'Others'},
-// ]
+//    { label: 'soccer', value: 'soccer' },     
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'soccer', value: 'soccer' },      
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'soccer', value: 'soccer' },      
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'Others', value: 'Others'},
+//];
+
+// const goingout = [
+//    { label: 'Agender', value: 'Agender' },
+//    { label: 'Androgyne', value: 'Androgyne' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'Cisgender', value: 'Cisgender' },
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'Transgender', value: 'Transgender' },
+//    { label: 'Transgender Woman', value: 'Transgender Woman' },
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
+//    { label: 'Neutrois', value: 'Neutrois' },
+//    { label: 'Non-binary', value: 'Non-binary' },
+//    { label: 'Pangender', value: 'Pangender' },
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'Omnigender', value: 'Omnigender' },
+//    { label: 'Two Spirit', value: 'Two Spirit' },
+//    { label: 'Others', value: 'Others' },
+//];
+
+// const musicdata = [
+//    { label: 'soccer', value: 'soccer' },     
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'soccer', value: 'soccer' },      
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'soccer', value: 'soccer' },      
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'Others', value: 'Others'},
+//];
+
+// const fooddata = [
+//    { label: 'Agender', value: 'Agender' },
+//    { label: 'Androgyne', value: 'Androgyne' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'Cisgender', value: 'Cisgender' },
+//    { label: 'Enby', value: 'Enby' },
+//    { label: 'Transgender', value: 'Transgender' },
+//    { label: 'Transgender Woman', value: 'Transgender Woman' },
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
+//    { label: 'Neutrois', value: 'Neutrois' },
+//    { label: 'Non-binary', value: 'Non-binary' },
+//    { label: 'Pangender', value: 'Pangender' },
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'Omnigender', value: 'Omnigender' },
+//    { label: 'Two Spirit', value: 'Two Spirit' },
+//    { label: 'Others', value: 'Others' },
+//];
+
+// const petsdata = [
+//    { label: 'soccer', value: 'soccer' },      
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//    { label: 'tennis', value: 'tennis'},
+//    { label: 'baseball', value: 'baseball'},
+//    { label: 'golf', value: 'golf'},
+//    { label: 'running', value: 'running'},
+//    { label: 'Gender Fluid', value: 'Gender Fluid' },
+//    { label: 'roller skating', value: 'roller skating'},
+//    { label: 'badminton', value: 'badminton'},
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'table tennis', value: 'table tennis' },
+//    { label: 'cricket', value: 'cricket'},
+//    { label: 'Polygender', value: 'Polygender' },
+//    { label: 'soccer', value: 'soccer' },      
+//    { label: 'basketball', value: 'basketball' },
+//    { label: 'Bigender', value: 'Bigender' },
+//];
+
+
+//     { label: '', value: ''},
 
 const EditAccount = ({ navigation }) => {
 
@@ -96,13 +245,15 @@ const EditAccount = ({ navigation }) => {
     //const [open, setOpen] = useState(false);
 
     const [value, setValue] = useState(null);
+
+
     const [isEnabledAge, setIsEnabledAge] = useState(false);
     const [isEnabledDetails, setIsEnabledDetails] = useState(false);
     const toggleSwitch = () => setIsEnabledAge(previousState => !previousState);
     const toggleSwitch2 = () => setIsEnabledDetails(previousState => !previousState);
 
     const [firstAbout, setFirstAbout] = useState("");
-    //const [firstGender, setFirstGender] = useState("");
+
     const [firstInterest, setFirstInterest] = useState("");
     const [firstFilm, setFirstFilm] = useState("");
     const [firstHobby, setFirstHobby] = useState("");
@@ -238,7 +389,7 @@ const EditAccount = ({ navigation }) => {
                     }}>Edit Profile</Text>
                 </View>
             </View>
-            <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.2%' }} />
+            <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '0%' }} />
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '5%', marginBottom: '0%' }}>
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 522, marginTop: '0%', borderRadius: 20, alignSelf: 'center', }}>
                     <View style={{ backgroundColor: 'transparent', flex: 0.15, justifyContent: 'space-evenly', alignItems: 'flex-start', width: '100%', alignSelf: 'center', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
@@ -501,8 +652,8 @@ const EditAccount = ({ navigation }) => {
                                     backgroundColor: 'transparent',
                                     borderWidth: 2,
                                     borderColor: '#6B6B6B',
-                                    paddingLeft: '10%'
-
+                                    paddingLeft: '10%',
+                                    //paddingBottom: '0%'
                                 }} />
                             <Text style={{
                                 fontSize: 13,
@@ -533,7 +684,7 @@ const EditAccount = ({ navigation }) => {
                                 //top: '30.3%',
                                 //margin: '18%',
                                 left: '80%',
-                                bottom: '58%',
+                                bottom: '57%',
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '90%'
@@ -585,6 +736,7 @@ const EditAccount = ({ navigation }) => {
                                         lineHeight: 21,
                                         letterSpacing: -0.017,
                                         color: '#000000',
+                                        bottom: '1%'
                                     }}
                                     selectedTextStyle={{
                                         color: '#000000',
@@ -675,6 +827,8 @@ const EditAccount = ({ navigation }) => {
 
                     </View>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+
+
 
                         <TextInput
                             placeholder=' Films & TV'
