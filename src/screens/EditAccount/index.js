@@ -3,6 +3,7 @@ import {
     View,
     Text,
     Image,
+    ImageBackground,
     TextInput,
     TouchableOpacity,
     ScrollView,
@@ -231,16 +232,21 @@ const EditAccount = ({ navigation }) => {
                                     borderRadius: 17,
                                     alignSelf: 'flex-end',
                                     right: '12%',
-                                    bottom: '0%'
+                                    bottom: '0.5%'
                                 }}
                                     onPress={() => navigation.navigate('EditAccount')}>
-                                    <Image
-                                        source={require('../../../assets/images/cross2.png')}
+                                    <ImageBackground
+                                        source={require('../../../assets/images/crossellipse.png')}
                                         style={{
                                             height: 27,
                                             width: 27,
+                                            bottom: '10%',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}
-                                    />
+                                    >
+                                        <Image source={require('../../../assets/images/cross3.png')} />
+                                    </ImageBackground>
                                 </TouchableOpacity>
                                 <Image
                                     source={require('../../../assets/images/editaccountpic2.png')} style={{ height: '95%', width: '30%', borderRadius: 10, marginLeft: '-4%' }}
@@ -254,16 +260,21 @@ const EditAccount = ({ navigation }) => {
                                     borderRadius: 17,
                                     alignSelf: 'flex-end',
                                     right: '12%',
-                                    bottom: '0%'
+                                    bottom: '0.5%'
                                 }}
                                     onPress={() => navigation.navigate('EditAccount')}>
-                                    <Image
-                                        source={require('../../../assets/images/cross2.png')}
+                                    <ImageBackground
+                                        source={require('../../../assets/images/crossellipse.png')}
                                         style={{
                                             height: 27,
                                             width: 27,
+                                            bottom: '10%',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}
-                                    />
+                                    >
+                                        <Image source={require('../../../assets/images/cross3.png')} />
+                                    </ImageBackground>
                                 </TouchableOpacity>
                                 <Image
                                     source={require('../../../assets/images/editaccountpic3.png')} style={{ height: '95%', width: '30%', borderRadius: 10, marginLeft: '-4%' }}
@@ -277,16 +288,21 @@ const EditAccount = ({ navigation }) => {
                                     borderRadius: 17,
                                     alignSelf: 'flex-end',
                                     right: '12%',
-                                    bottom: '0%'
+                                    bottom: '0.5%'
                                 }}
                                     onPress={() => navigation.navigate('EditAccount')}>
-                                    <Image
-                                        source={require('../../../assets/images/cross2.png')}
+                                    <ImageBackground
+                                        source={require('../../../assets/images/crossellipse.png')}
                                         style={{
                                             height: 27,
                                             width: 27,
+                                            bottom: '10%',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}
-                                    />
+                                    >
+                                        <Image source={require('../../../assets/images/cross3.png')} />
+                                    </ImageBackground>
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flex: 1, backgroundColor: 'transparent', justifyContent: 'space-between', alignItems: 'stretch', flexDirection: 'row', }}>
@@ -302,16 +318,21 @@ const EditAccount = ({ navigation }) => {
                                     borderRadius: 17,
                                     alignSelf: 'flex-end',
                                     right: '12%',
-                                    bottom: '0%'
+                                    bottom: '0.5%'
                                 }}
                                     onPress={() => navigation.navigate('EditAccount')}>
-                                    <Image
-                                        source={require('../../../assets/images/cross2.png')}
+                                    <ImageBackground
+                                        source={require('../../../assets/images/crossellipse.png')}
                                         style={{
                                             height: 27,
                                             width: 27,
+                                            bottom: '10%',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}
-                                    />
+                                    >
+                                        <Image source={require('../../../assets/images/cross3.png')} />
+                                    </ImageBackground>
                                 </TouchableOpacity>
                                 <Image
                                     source={require('../../../assets/images/editaccountpic5.png')} style={{ height: '95%', width: '30%', borderRadius: 10, marginLeft: '-4%' }}
@@ -325,16 +346,21 @@ const EditAccount = ({ navigation }) => {
                                     borderRadius: 17,
                                     alignSelf: 'flex-end',
                                     right: '12%',
-                                    bottom: '0%'
+                                    bottom: '0.5%'
                                 }}
                                     onPress={() => navigation.navigate('EditAccount')}>
-                                    <Image
-                                        source={require('../../../assets/images/cross2.png')}
+                                    <ImageBackground
+                                        source={require('../../../assets/images/crossellipse.png')}
                                         style={{
                                             height: 27,
                                             width: 27,
+                                            bottom: '10%',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}
-                                    />
+                                    >
+                                        <Image source={require('../../../assets/images/cross3.png')} />
+                                    </ImageBackground>
                                 </TouchableOpacity>
                                 <Image
                                     source={require('../../../assets/images/editaccountpic6.png')} style={{ height: '95%', width: '30%', borderRadius: 10, marginLeft: '-4%' }}
@@ -348,16 +374,21 @@ const EditAccount = ({ navigation }) => {
                                     borderRadius: 17,
                                     alignSelf: 'flex-end',
                                     right: '12%',
-                                    bottom: '0%'
+                                    bottom: '0.5%'
                                 }}
                                     onPress={() => navigation.navigate('EditAccount')}>
-                                    <Image
-                                        source={require('../../../assets/images/cross2.png')}
+                                    <ImageBackground
+                                        source={require('../../../assets/images/crossellipse.png')}
                                         style={{
                                             height: 27,
                                             width: 27,
+                                            bottom: '10%',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}
-                                    />
+                                    >
+                                        <Image source={require('../../../assets/images/cross3.png')} />
+                                    </ImageBackground>
                                 </TouchableOpacity>
                             </View>
                         </View>
@@ -590,7 +621,7 @@ const EditAccount = ({ navigation }) => {
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center', bottom: '3.5%' }}>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
@@ -925,7 +956,7 @@ const EditAccount = ({ navigation }) => {
 
                     </View> */}
 
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '155%' }}>
 
                         {/* <TouchableOpacity onPress={() => setMode('date')} title="Your date of birth"><Text>Your date of birth</Text></TouchableOpacity>
                         {show && <DateTimePicker
@@ -1000,7 +1031,7 @@ const EditAccount = ({ navigation }) => {
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '178%' }}>
 
                         <TextInput
                             placeholder=' My Events'
@@ -1045,7 +1076,7 @@ const EditAccount = ({ navigation }) => {
 
                     </View>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-                        <View style={{ flex: 0.6, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', borderWidth: 1, borderColor: '#6B6B6B' }}>
+                        <View style={{ flex: 0.6, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', borderWidth: 1, borderColor: '#6B6B6B', bottom: '375%' }}>
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'BakbakOne-Regular',
@@ -1064,7 +1095,7 @@ const EditAccount = ({ navigation }) => {
                                 width: '90%',
                             }}>Select a Prompt
                             </Text>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={() => { navigation.navigate('PromptOptions') }}>
                                 <Text style={{
                                     fontSize: 13,
                                     //fontFamily: 'Bakbak One',
@@ -1111,7 +1142,7 @@ const EditAccount = ({ navigation }) => {
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 139.5, marginTop: '-15%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 139.5, marginTop: '-160%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
                     <View style={{ flex: 0.3, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
                         <Text style={{
                             fontSize: 15,
@@ -1339,28 +1370,16 @@ const EditAccount = ({ navigation }) => {
                                 onValueChange={(value) => setSpeed(parseInt(value * 100))}
                                 onSlidingStart={() => setSlide('Sliding')}
                             />
-                            <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginHorizontal: '35%', bottom: '1%' }}>
+                            <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginHorizontal: '40%', bottom: '1%' }}>
                                 <TouchableOpacity >
-                                    <Image source={require('../../../assets/images/ellipseviolet.png')} style={{ paddingRight: '4%', }} />
+                                    <Image source={require('../../../assets/images/ellipseviolet.png')} style={{ paddingRight: '4%', paddingLeft: '10%' }} />
                                 </TouchableOpacity>
                                 <TouchableOpacity >
-                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
+                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '15%', }} />
                                 </TouchableOpacity>
                                 <TouchableOpacity >
                                     <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
                                 </TouchableOpacity></View>
-                            {/* </View> */}
-                            {/* <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-5%' }}>
-                                <TouchableOpacity >
-                                    <Image source={require('../../../assets/images/ellipseviolet.png')} style={{ paddingRight: '4%', }} />
-                                </TouchableOpacity>
-                                <TouchableOpacity >
-                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
-                                </TouchableOpacity>
-                                <TouchableOpacity >
-                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
-                                </TouchableOpacity>
-                            </View> */}
                         </View>
 
                     </View>

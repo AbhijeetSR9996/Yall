@@ -51,6 +51,9 @@ import ManagePaymentMethods from './src/screens/ManagePaymentMethods';
 import ManageSubscriptions from './src/screens/ManageSubscriptions/index';
 import EditCard from './src/screens/EditCard';
 import PremiumSubscription from './src/screens/PremiumSubscription';
+import RemoveConfirmation from './src/screens/RemoveConfirmation';
+import PromptOptions from './src/screens/PromptOptions';
+import WriteAnswer from './src/screens/WriteAnswer';
 
 import { NavigationContainer } from '@react-navigation/native';
 

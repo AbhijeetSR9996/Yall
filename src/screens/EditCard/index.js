@@ -441,7 +441,7 @@ const EditCard = ({ navigation }) => {
                         marginTop: '0%',
                         marginBottom: '5%'
                     }}
-                >
+                    onPress={() => navigation.navigate('RemoveConfirmation')}>
                     <View style={{
                         left: 10,
                         top: 8,

@@ -21,8 +21,12 @@ import Slider from 'react-native-slider';
 
 const AccountSettings = ({ navigation }) => {
 
+
+
     const [isActive, setIsActive] = useState(false);
     const btnClick = () => { setIsActive(current => !current); }
+
+    //const wordSelected = "Mi"
 
     //const [min, setMin] = useState(0);
     //const [max, setMax] = useState(500);

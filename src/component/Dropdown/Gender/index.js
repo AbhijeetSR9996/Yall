@@ -32,7 +32,7 @@ const Gender = () => {
     const [value, setValue] = useState(null);
 
     return (
-        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '14%' }}>
             <View style={{
                 width: '100%',
                 height: '30%',

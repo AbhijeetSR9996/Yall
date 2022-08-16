@@ -30,12 +30,17 @@ const PremiumSubscription = ({ navigation }) => {
                             //textAlign: 'center',
                             justifyContent: 'center',
                             marginRight: '4%',
+                            left: '5%'
                         }}>Boost </Text>
                     </View>
+
                     <View style={{ flex: 0.8, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'row', }}>
-                        <Image source={require('../../../assets/images/userpremium.png')}
-                            style={{ height: '27%', width: '7.3%', right: '80%', }}
-                        />
+                        <TouchableOpacity style={{ backgroundColor: 'transparent', right: '80%', height: '32%', width: '10%', alignItems: 'center', justifyContent: 'center' }}
+                            onPress={() => navigation.navigate('MainBottomNavigation')}>
+                            <Image source={require('../../../assets/images/userpremium.png')} />
+                        </TouchableOpacity>
+                        {/* <Image source={require('../../../assets/images/userpremium.png')}
+                            style={{ height: '27%', width: '7.3%', right: '80%', }} /> */}
                         <Image source={require('../../../assets/images/ellipsesubscription.png')}
                             style={{ right: '-10%' }}
                         />
@@ -237,7 +242,7 @@ const PremiumSubscription = ({ navigation }) => {
                                 //marginTop: '0%',
                                 //marginBottom: '18%'
                             }}
-                            onPress={() => navigation.navigate('PremiumSubscription')}>
+                            onPress={() => navigation.navigate('MainBottomNavigation')}>
                             <View style={{
                                 left: 10,
                                 top: 8,

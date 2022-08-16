@@ -26,6 +26,7 @@ import EditAccount from '../src/screens/EditAccount';
 import ManageBookings from '../src/screens/ManageBookings';
 import ManagePaymentMethods from '../src/screens/ManagePaymentMethods';
 import EditCard from '../src/screens/EditCard/index';
+import RemoveConfirmation from '../src/screens/RemoveConfirmation';
 
 const Tab = createBottomTabNavigator();
 
@@ -380,6 +381,21 @@ const MainBottomNavigation = () => {
       <Tab.Screen
         name="EditCard"
         component={EditCard}
+        options={{
+          //tabBarStyle:{display:'none'},
+          tabBarButton: () => null,
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/user2.png')}
+              style={{ width: 20, height: 20 }}
+            />
+          )
+        }}
+      />
+
+      <Tab.Screen
+        name="RemoveConfirmation"
+        component={RemoveConfirmation}
         options={{
           //tabBarStyle:{display:'none'},
           tabBarButton: () => null,
