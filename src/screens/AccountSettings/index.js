@@ -17,15 +17,21 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import Slider from 'react-native-slider';
+//import RangeSlider from 'react-native-range-slider';
 
 const AccountSettings = ({ navigation }) => {
 
-    //const onPress = () => { backgroundColor: '#DCC7E1' }
+    const [isActive, setIsActive] = useState(false);
+    const btnClick = () => { setIsActive(current => !current); }
 
-    const [sliderValue, setSliderValue] = useState(15);
+    //const [min, setMin] = useState(0);
+    //const [max, setMax] = useState(500);
 
-    const [isEnabledDistance, setIsEnabledDistance] = React.useState(false);
-    const [isEnabledShow, setIsEnabledShow] = React.useState(false);
+    const [range, setRange] = useState('50%');
+    const [sliding, setSliding] = useState('Inactive');
+
+    const [isEnabledDistance, setIsEnabledDistance] = useState(false);
+    const [isEnabledShow, setIsEnabledShow] = useState(false);
 
     const toggleSwitch = () => setIsEnabledDistance(previousState => !previousState);
     const toggleSwitch2 = () => setIsEnabledShow(previousState => !previousState);
@@ -274,28 +280,29 @@ const AccountSettings = ({ navigation }) => {
                                 //top: '30.3%',
                                 //marginRight: '10%',
                                 //marginTop: '5%',
-                                right: '125%',
+                                right: '135%',
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '100%',
-                            }}>80km.
+                            }}>{range}
                             </Text>
                         </View>
                         <View style={{ flex: 0.8, flexDirection: 'row', backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', marginTop: '0%', }}>
                             {/* <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 140 }} />
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 150, left: 15 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 150 }} /> */}
-                            <TouchableOpacity>
-                                <Slider
-                                    style={{ width: 205, height: 40, marginRight: '28%' }}
-                                    maximumValue={10}
-                                    minimumValue={0}
-                                    step={1}
-                                    value={sliderValue}
-                                    minimumTrackTintColor='#000000'
-                                    maximumTrackTintColor='#FFFFFF'
-                                    onValueChange={(sliderValue) => setSliderValue(sliderValue)}
-                                /></TouchableOpacity>
+                            <Slider
+                                style={{ width: 305, height: 40, marginRight: '1.5%' }}
+                                maximumValue={1}
+                                minimumValue={0}
+                                //step={1}
+                                value={.5}
+                                minimumTrackTintColor='#000000'
+                                maximumTrackTintColor='rgba(110, 62, 137, 0.2)'
+                                thumbColor='#000000'
+                                onValueChange={(value) => setRange(parseInt(value * 100) + 'km.')}
+                                onSlidingStart={() => setSliding('Sliding')}
+                            />
                         </View>
                         <View style={{ flex: 1.1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
                             <Text style={{
@@ -313,7 +320,7 @@ const AccountSettings = ({ navigation }) => {
                                 lineHeight: 15,
                                 letterSpacing: -0.017,
                                 width: '100%',
-                            }}>Only show people in the range
+                            }}> Only show people in the range
                             </Text>
                             <Switch
                                 style={{ right: 15 }}
@@ -409,7 +416,9 @@ const AccountSettings = ({ navigation }) => {
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '100%',
-                            }}>18 - 31
+                            }}>
+                                {/* 18 - 31 */}
+
                             </Text>
                         </View>
                         <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%' }}>
@@ -417,6 +426,35 @@ const AccountSettings = ({ navigation }) => {
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 260, left: 10 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 295 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 265 }} />
+                            {/* <RangeSlider
+                                defaultValue={[min, max]}
+                                className="slider"
+                                trackClassName="tracker"
+                                min={0}
+                                max={500}
+                                minDistance={50}
+                                step={50}
+                                withTracks={true}
+                                pearling={true}
+                                renderThumb={(props) => {
+                                    return <div {...props} className="thumb"></div>;
+                                }}
+                                renderTrack={(props) => {
+                                    return <div {...props} className="track"></div>;
+                                }}
+                                onChange={([min, max]) => {
+                                    setMax(max);
+                                    setMin(min);
+                                }}
+                            /> */}
+                            {/* <RangeSlider
+                            lineHeight={2}
+                            handleDiameter={18}
+                            minValue={0}
+                            maxValue={100}
+                            selectedMaximum={50}
+                            style={{flex:1,height:70,marginTop:20,padding:10}}
+                            onChange={(data)=>{console.log('slider data:',data)}}/> */}
                         </View>
                     </View>
                     <View style={{ flex: 0.5, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%', }}>
@@ -864,8 +902,8 @@ const AccountSettings = ({ navigation }) => {
                                 //fontWeight: '400',
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
-                                backgroundColor: 'transparent',
-                                //backgroundColor:{onPress} ,
+                                //backgroundColor: 'transparent',
+                                backgroundColor: isActive ? '#DCC7E1' : 'transparent',
                                 borderRadius: 3,
                                 //borderWidth: 2,
                                 //borderColor: '#6B6B6B',
@@ -874,7 +912,7 @@ const AccountSettings = ({ navigation }) => {
                                 justifyContent: 'center',
                                 flexDirection: 'column',
                             }}
-                        >
+                            onPress={btnClick}>
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'Inter',
@@ -906,8 +944,9 @@ const AccountSettings = ({ navigation }) => {
                                 //fontWeight: '400',
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
-                                backgroundColor: '#DCC7E1',
+                                //backgroundColor: '#DCC7E1',
                                 //backgroundColor: 'transparent',
+                                backgroundColor: isActive ? 'transparent' : '#DCC7E1',
                                 borderRadius: 3,
                                 //borderWidth: 2,
                                 //borderColor: '#6B6B6B',
@@ -916,7 +955,8 @@ const AccountSettings = ({ navigation }) => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 flexDirection: 'column'
-                            }}>
+                            }}
+                            onPress={btnClick}>
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'Inter',

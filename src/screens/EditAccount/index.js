@@ -24,212 +24,23 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
+import Slider from 'react-native-slider';
+import Gender from '../../component/Dropdown/Gender/index';
+import FilmsTV from '../../component/Dropdown/FilmsTV';
+import Hobbies from '../../component/Dropdown/Hobbies';
+import GoingOut from '../../component/Dropdown/GoingOut';
+import Music from '../../component/Dropdown/Music';
+import Food from '../../component/Dropdown/Food';
+import Pets from '../../component/Dropdown/Pets';
+
 //import DateTimePicker from '@react-native-community/datetimepicker';
 //import DatePicker from 'react-native-date-picker';
 
-const genderdata = [
-    // { label: 'Gender', value: '' },
-    { label: 'Man', value: 'Man' },
-    { label: 'Woman', value: 'Woman' },
-    { label: 'Non-binary', value: 'Non-binary' },
-    { label: 'Agender', value: 'Agender' },
-    { label: 'Androgyne', value: 'Androgyne' },
-    { label: 'Bigender', value: 'Bigender' },
-    { label: 'Cisgender', value: 'Cisgender' },
-    { label: 'Enby', value: 'Enby' },
-    { label: 'Transgender', value: 'Transgender' },
-    { label: 'Transgender Woman', value: 'Transgender Woman' },
-    { label: 'Gender Fluid', value: 'Gender Fluid' },
-    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
-    { label: 'Neutrois', value: 'Neutrois' },
-    { label: 'Non-binary', value: 'Non-binary' },
-    { label: 'Pangender', value: 'Pangender' },
-    { label: 'Polygender', value: 'Polygender' },
-    { label: 'Omnigender', value: 'Omnigender' },
-    { label: 'Two Spirit', value: 'Two Spirit' },
-];
-
-// const filmsdata = [
-//    { label: 'Agender', value: 'Agender' },
-//    { label: 'Androgyne', value: 'Androgyne' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'Cisgender', value: 'Cisgender' },
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'Transgender', value: 'Transgender' },
-//    { label: 'Transgender Woman', value: 'Transgender Woman' },
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
-//    { label: 'Neutrois', value: 'Neutrois' },
-//    { label: 'Non-binary', value: 'Non-binary' },
-//    { label: 'Pangender', value: 'Pangender' },
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'Omnigender', value: 'Omnigender' },
-//    { label: 'Two Spirit', value: 'Two Spirit' },
-//    { label: 'Others', value: 'Others' },
-//];
-
-// const hobbiesdata = [
-//    { label: 'soccer', value: 'soccer' },     
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'soccer', value: 'soccer' },      
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'soccer', value: 'soccer' },      
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'Others', value: 'Others'},
-//];
-
-// const goingout = [
-//    { label: 'Agender', value: 'Agender' },
-//    { label: 'Androgyne', value: 'Androgyne' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'Cisgender', value: 'Cisgender' },
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'Transgender', value: 'Transgender' },
-//    { label: 'Transgender Woman', value: 'Transgender Woman' },
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
-//    { label: 'Neutrois', value: 'Neutrois' },
-//    { label: 'Non-binary', value: 'Non-binary' },
-//    { label: 'Pangender', value: 'Pangender' },
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'Omnigender', value: 'Omnigender' },
-//    { label: 'Two Spirit', value: 'Two Spirit' },
-//    { label: 'Others', value: 'Others' },
-//];
-
-// const musicdata = [
-//    { label: 'soccer', value: 'soccer' },     
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'soccer', value: 'soccer' },      
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'soccer', value: 'soccer' },      
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'Others', value: 'Others'},
-//];
-
-// const fooddata = [
-//    { label: 'Agender', value: 'Agender' },
-//    { label: 'Androgyne', value: 'Androgyne' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'Cisgender', value: 'Cisgender' },
-//    { label: 'Enby', value: 'Enby' },
-//    { label: 'Transgender', value: 'Transgender' },
-//    { label: 'Transgender Woman', value: 'Transgender Woman' },
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'Gender Nonconforming', value: 'Gender Nonconforming' },
-//    { label: 'Neutrois', value: 'Neutrois' },
-//    { label: 'Non-binary', value: 'Non-binary' },
-//    { label: 'Pangender', value: 'Pangender' },
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'Omnigender', value: 'Omnigender' },
-//    { label: 'Two Spirit', value: 'Two Spirit' },
-//    { label: 'Others', value: 'Others' },
-//];
-
-// const petsdata = [
-//    { label: 'soccer', value: 'soccer' },      
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//    { label: 'tennis', value: 'tennis'},
-//    { label: 'baseball', value: 'baseball'},
-//    { label: 'golf', value: 'golf'},
-//    { label: 'running', value: 'running'},
-//    { label: 'Gender Fluid', value: 'Gender Fluid' },
-//    { label: 'roller skating', value: 'roller skating'},
-//    { label: 'badminton', value: 'badminton'},
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'table tennis', value: 'table tennis' },
-//    { label: 'cricket', value: 'cricket'},
-//    { label: 'Polygender', value: 'Polygender' },
-//    { label: 'soccer', value: 'soccer' },      
-//    { label: 'basketball', value: 'basketball' },
-//    { label: 'Bigender', value: 'Bigender' },
-//];
-
-
-//     { label: '', value: ''},
-
 const EditAccount = ({ navigation }) => {
+
+
+    const [speed, setSpeed] = useState('50%');
+    const [slide, setSlide] = useState('Inactive');
 
     const handleBackButtonClick = () => {
         navigation.goBack();
@@ -243,8 +54,6 @@ const EditAccount = ({ navigation }) => {
 
     //const [date, setDate] = useState(new Date());
     //const [open, setOpen] = useState(false);
-
-    const [value, setValue] = useState(null);
 
 
     const [isEnabledAge, setIsEnabledAge] = useState(false);
@@ -266,9 +75,6 @@ const EditAccount = ({ navigation }) => {
 
     const handleFirst = (value) => {
         setFirstAbout(value);
-    }
-    const handleSecond = (value) => {
-        setFirstGender(value);
     }
     const handleThird = (value) => {
         setFirstInterest(value);
@@ -691,7 +497,10 @@ const EditAccount = ({ navigation }) => {
                             }}>+22%
                             </Text>
                         </View>
-                        <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+
+                        <Gender />
+
+                        {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
                             <View style={{
                                 width: '100%',
                                 height: '30%',
@@ -775,7 +584,7 @@ const EditAccount = ({ navigation }) => {
                             }}>{value}
                             </Text>
 
-                        </View>
+                        </View> */}
                     </View>
 
 
@@ -826,10 +635,10 @@ const EditAccount = ({ navigation }) => {
                         </Text>
 
                     </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
+                    <FilmsTV />
 
-
+                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
                         <TextInput
                             placeholder=' Films & TV'
                             placeholderTextColor='#000000'
@@ -871,13 +680,17 @@ const EditAccount = ({ navigation }) => {
                         }}>{firstFilm}
                         </Text>
 
-                    </View>
+                    </View> */}
 
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
+                    <Hobbies />
+
+                    <GoingOut />
+
+                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
                         <TextInput
                             placeholder=' Hobbies'
                             placeholderTextColor='#000000'
@@ -919,9 +732,8 @@ const EditAccount = ({ navigation }) => {
                         }}>{firstHobby}
                         </Text>
 
-                    </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-
+                    </View> */}
+                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
                         <TextInput
                             placeholder=' Going out'
                             placeholderTextColor='#000000'
@@ -963,12 +775,17 @@ const EditAccount = ({ navigation }) => {
                         }}>{firstGoingout}
                         </Text>
 
-                    </View>
+                    </View> */}
 
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+
+                    <Music />
+
+                    <Food />
+
+                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Music'
@@ -1011,8 +828,8 @@ const EditAccount = ({ navigation }) => {
                         }}>{firstMusic}
                         </Text>
 
-                    </View>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                    </View> */}
+                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Food'
@@ -1055,12 +872,15 @@ const EditAccount = ({ navigation }) => {
                         }}>{firstFood}
                         </Text>
 
-                    </View>
+                    </View> */}
 
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
-                    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+
+                    <Pets />
+
+                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         <TextInput
                             placeholder=' Pets'
@@ -1103,7 +923,8 @@ const EditAccount = ({ navigation }) => {
                         }}>{firstPet}
                         </Text>
 
-                    </View>
+                    </View> */}
+
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
 
                         {/* <TouchableOpacity onPress={() => setMode('date')} title="Your date of birth"><Text>Your date of birth</Text></TouchableOpacity>
@@ -1375,7 +1196,7 @@ const EditAccount = ({ navigation }) => {
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 189, marginTop: '0%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
                     <View style={{ flex: 0.2, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
                         <Text style={{
-                            fontSize: 15,
+                            fontSize: 14,
                             fontFamily: 'BakbakOne-Regular',
                             //fontFamily: 'Inter',
                             color: '#000000',
@@ -1384,7 +1205,7 @@ const EditAccount = ({ navigation }) => {
                             //paddingVertical: 10,
                             //paddingVertical: 13,
                             //top: '30.3%',
-                            marginRight: '-10%',
+                            marginRight: '3%',
                             marginTop: '5%',
                             //right: '140%',
                             lineHeight: 21,
@@ -1429,7 +1250,7 @@ const EditAccount = ({ navigation }) => {
                                 style={{
                                     height: 23,
                                     width: 24,
-                                    left: 8,
+                                    left: 10,
                                     position: 'absolute',
                                     bottom: 118,
                                 }}
@@ -1493,7 +1314,8 @@ const EditAccount = ({ navigation }) => {
                                     bottom: 50,
                                 }}
                             />
-                            <Image
+
+                            {/* <Image
                                 source={require('../../../assets/images/scroller2.png')}
                                 style={{
                                     height: 20,
@@ -1503,8 +1325,32 @@ const EditAccount = ({ navigation }) => {
                                     position: 'absolute',
                                     bottom: 50,
                                 }}
+                            /> */}
+
+                            <Slider
+                                style={{ width: 215, height: 40, marginRight: '20%', marginTop: '30%' }}
+                                maximumValue={1}
+                                minimumValue={0}
+                                //step={1}
+                                value={.5}
+                                minimumTrackTintColor='#000000'
+                                maximumTrackTintColor='rgba(110, 62, 137, 0.2)'
+                                thumbColor='#AD5DD7'
+                                onValueChange={(value) => setSpeed(parseInt(value * 100))}
+                                onSlidingStart={() => setSlide('Sliding')}
                             />
-                            <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-5%' }}>
+                            <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginHorizontal: '35%', bottom: '1%' }}>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseviolet.png')} style={{ paddingRight: '4%', }} />
+                                </TouchableOpacity>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
+                                </TouchableOpacity>
+                                <TouchableOpacity >
+                                    <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
+                                </TouchableOpacity></View>
+                            {/* </View> */}
+                            {/* <View style={{ flex: 0.05, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '35%', width: '100%', marginHorizontal: '-5%' }}>
                                 <TouchableOpacity >
                                     <Image source={require('../../../assets/images/ellipseviolet.png')} style={{ paddingRight: '4%', }} />
                                 </TouchableOpacity>
@@ -1514,7 +1360,7 @@ const EditAccount = ({ navigation }) => {
                                 <TouchableOpacity >
                                     <Image source={require('../../../assets/images/ellipseviolet2.png')} style={{ paddingRight: '4%' }} />
                                 </TouchableOpacity>
-                            </View>
+                            </View> */}
                         </View>
 
                     </View>
