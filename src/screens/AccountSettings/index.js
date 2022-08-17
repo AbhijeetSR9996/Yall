@@ -22,7 +22,6 @@ import Slider from 'react-native-slider';
 const AccountSettings = ({ navigation }) => {
 
 
-
     const [isActive, setIsActive] = useState(false);
     const btnClick = () => { setIsActive(current => !current); }
 
@@ -31,7 +30,7 @@ const AccountSettings = ({ navigation }) => {
     //const [min, setMin] = useState(0);
     //const [max, setMax] = useState(500);
 
-    const [range, setRange] = useState('50%');
+    const [range, setRange] = useState('50km.');
     const [sliding, setSliding] = useState('Inactive');
 
     const [isEnabledDistance, setIsEnabledDistance] = useState(false);
@@ -113,8 +112,9 @@ const AccountSettings = ({ navigation }) => {
                                 alignItems: 'center',
                                 justifyContent: 'space-evenly',
                                 flexDirection: 'row'
-                            }} >
-                            <TouchableOpacity>
+                            }}
+                            onPress={() => { navigation.navigate('UpdatePhoneNumber') }}>
+                            <TouchableOpacity onPress={() => { navigation.navigate('UpdatePhoneNumber') }}>
                                 <Text style={{
                                     fontSize: 15,
                                     fontFamily: 'Inter',
@@ -133,7 +133,7 @@ const AccountSettings = ({ navigation }) => {
                                 }}>Phone Number
                                 </Text>
                             </TouchableOpacity>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={() => { navigation.navigate('UpdatePhoneNumber') }}>
                                 <Text style={{
                                     fontSize: 15,
                                     fontFamily: 'Inter',
@@ -296,7 +296,7 @@ const AccountSettings = ({ navigation }) => {
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 150, left: 15 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 150 }} /> */}
                             <Slider
-                                style={{ width: 305, height: 40, marginRight: '1.5%' }}
+                                style={{ width: 325, height: 40, marginRight: '2%' }}
                                 maximumValue={1}
                                 minimumValue={0}
                                 //step={1}
@@ -421,7 +421,7 @@ const AccountSettings = ({ navigation }) => {
                                 letterSpacing: -0.017,
                                 width: '100%',
                             }}>
-                                {/* 18 - 31 */}
+                                18 - 31
 
                             </Text>
                         </View>
@@ -576,7 +576,7 @@ const AccountSettings = ({ navigation }) => {
                                 alignItems: 'center',
                                 justifyContent: 'space-evenly',
                                 flexDirection: 'row'
-                            }} >
+                            }} onPress={() => { navigation.navigate('BlockUsers') }}>
                             <TouchableOpacity>
                                 <Text style={{
                                     fontSize: 15,
@@ -655,16 +655,20 @@ const AccountSettings = ({ navigation }) => {
                             justifyContent: 'center',
                             flexDirection: 'row'
                         }}>
-                            <Text style={{
-                                fontSize: 15,
-                                fontFamily: 'Inter',
-                                color: '#4B4B4B',
-                                right: '60%',
-                                lineHeight: 18,
-                                letterSpacing: -0.017,
-                                width: '100%',
-                            }}>Autoplay Video
-                            </Text>
+                            <TouchableOpacity style={{
+                                marginRight: '83%',
+                            }} onPress={() => { navigation.navigate('AutoplayVideo') }}>
+                                <Text style={{
+                                    fontSize: 15,
+                                    fontFamily: 'Inter',
+                                    color: '#4B4B4B',
+                                    //right: '60%',
+                                    lineHeight: 18,
+                                    letterSpacing: -0.017,
+                                    width: '100%',
+                                }}>Autoplay Video
+                                </Text>
+                            </TouchableOpacity>
                         </View>
                     </View>
                     <View style={{ flex: 0.4, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-between', top: '0%', }}>
@@ -705,19 +709,12 @@ const AccountSettings = ({ navigation }) => {
                                 alignItems: 'flex-start',
                                 justifyContent: 'space-evenly',
                                 flexDirection: 'column'
-                            }} >
-                            <TouchableOpacity>
+                            }} onPress={() => { navigation.navigate('WednesdayEvent') }}>
+                            <TouchableOpacity onPress={() => { navigation.navigate('WednesdayEvent') }}>
                                 <Text style={{
                                     fontSize: 15,
                                     fontFamily: 'Inter',
                                     color: '#000000',
-                                    //alignSelf: 'center',
-                                    //justifyContent: 'center',
-                                    //paddingVertical: 10,
-                                    //paddingVertical: 13,
-                                    //top: '30.3%',
-                                    //marginRight: '10%',
-                                    //marginTop: '5%',
                                     left: '-8%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,

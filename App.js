@@ -54,6 +54,10 @@ import PremiumSubscription from './src/screens/PremiumSubscription';
 import RemoveConfirmation from './src/screens/RemoveConfirmation';
 import PromptOptions from './src/screens/PromptOptions';
 import WriteAnswer from './src/screens/WriteAnswer';
+import UpdatePhoneNumber from './src/screens/UpdatePhoneNumber';
+import WednesdayEvent from './src/screens/WednesdayEvent';
+import BlockUsers from './src/screens/BlockUsers';
+import AutoplayVideo from './src/screens/AutoplayVideo';
 
 import { NavigationContainer } from '@react-navigation/native';
 

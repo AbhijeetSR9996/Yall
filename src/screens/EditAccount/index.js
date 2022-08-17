@@ -1076,19 +1076,20 @@ const EditAccount = ({ navigation }) => {
 
                     </View>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-                        <View style={{ flex: 0.6, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%', borderWidth: 1, borderColor: '#6B6B6B', bottom: '375%' }}>
+                        <View style={{ flex: 0.6, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-around', marginTop: '0%', borderWidth: 1, borderColor: '#6B6B6B', bottom: '375%' }}>
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'BakbakOne-Regular',
                                 //fontFamily: 'Inter',
                                 color: '#000000',
-                                alignSelf: 'center',
-                                justifyContent: 'center',
+                                //alignSelf: 'center',
+                                //justifyContent: 'center',
                                 //paddingVertical: 10,
                                 //paddingVertical: 13,
-                                //top: '30.3%',
+                                top: '15%',
+                                left: '-6%',
                                 marginRight: '-10%',
-                                marginTop: '5%',
+                                //marginTop: '5%',
                                 //right: '140%',
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
@@ -1107,12 +1108,12 @@ const EditAccount = ({ navigation }) => {
                                     //paddingVertical: 13,
                                     //top: '30.3%',
                                     marginRight: '52%',
-                                    top: '10%',
+                                    top: '50%',
                                     //right: '140%',
                                     lineHeight: 15,
                                     letterSpacing: -0.017,
                                     width: '90%',
-
+                                    left: '-6.5%',
                                 }}>Add a question
                                 </Text>
                             </TouchableOpacity>
@@ -1142,7 +1143,7 @@ const EditAccount = ({ navigation }) => {
 
                 </View>
 
-                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 139.5, marginTop: '-160%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
+                <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 129.5, marginTop: '-150%', marginBottom: '5%', alignSelf: 'center', borderWidth: 1, borderColor: '#6B6B6B' }}>
                     <View style={{ flex: 0.3, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '0%' }}>
                         <Text style={{
                             fontSize: 15,
@@ -1155,8 +1156,9 @@ const EditAccount = ({ navigation }) => {
                             //paddingVertical: 13,
                             //top: '30.3%',
                             marginRight: '-10%',
-                            marginTop: '5%',
-                            //right: '140%',
+                            //marginTop: '5%',
+                            top: '50%',
+                            left: '-6.5%',
                             lineHeight: 21,
                             letterSpacing: -0.017,
                             width: '90%',
@@ -1191,16 +1193,16 @@ const EditAccount = ({ navigation }) => {
                             position: 'relative',
                             alignItems: 'space-between',
                             justifyContent: 'center',
-                            //borderWidth: 0.5,
                         }}>
                             <Image
                                 source={require('../../../assets/images/twitter.png')}
                                 style={{
                                     height: 32,
-                                    width: 30,
+                                    width: 31,
                                     left: 10,
                                     position: 'absolute',
-                                    bottom: 40,
+                                    //bottom: 40,
+                                    bottom: 38,
                                 }}
                             />
                             <Text style={{
@@ -1208,13 +1210,14 @@ const EditAccount = ({ navigation }) => {
                                 position: 'absolute',
                                 //fontWeight: '400',
                                 color: '#000000',
-                                left: 50,
+                                left: 55,
                                 fontSize: 12,
-                                right: 10,
+                                //right: 20,
                                 letterSpacing: -0.017,
                                 //width: 297
                                 //width: '70%',
                                 width: '85%',
+                                bottom: '17%'
                             }}>
                                 Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. Lorem Ipsum has been theLorem Ipsum is

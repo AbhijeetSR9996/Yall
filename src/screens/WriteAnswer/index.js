@@ -78,7 +78,7 @@ const WriteAnswer = ({ navigation }) => {
                 <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', height: 75, marginTop: '0%', alignSelf: 'center', borderRadius: 5, borderWidth: 1, borderColor: '#6B6B6B' }}>
                     <View style={{ flex: 0.75, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'space-evenly', height: 75, alignSelf: 'center' }}>
                         <TextInput
-                            placeholder=' My greatest strength'
+                            placeholder='My greatest strength'
                             placeholderTextColor='#000000'
                             //onChangeText={handleThird}
                             style={{

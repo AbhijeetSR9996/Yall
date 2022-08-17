@@ -58,6 +58,9 @@ import ManageSubscriptions from '../src/screens/ManageSubscriptions/index';
 import PremiumSubscription from '../src/screens/PremiumSubscription';
 import PromptOptions from '../src/screens/PromptOptions';
 import WriteAnswer from '../src/screens/WriteAnswer';
+import UpdatePhoneNumber from '../src/screens/UpdatePhoneNumber';
+import WednesdayEvent from '../src/screens/WednesdayEvent';
+
 
 const Stack = createStackNavigator();
 
@@ -107,6 +110,8 @@ function MainStackNavigation() {
         <Stack.Screen name="PremiumSubscription" component={PremiumSubscription} />
         <Stack.Screen name="PromptOptions" component={PromptOptions} />
         <Stack.Screen name="WriteAnswer" component={WriteAnswer} />
+        <Stack.Screen name="UpdatePhoneNumber" component={UpdatePhoneNumber} />
+        <Stack.Screen name="WednesdayEvent" component={WednesdayEvent} />
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation} />
 
