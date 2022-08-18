@@ -1,11 +1,14 @@
-import React from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, ScrollView, Image, ImageBackground, TouchableOpacity, Modal, Pressable } from 'react-native';
 import { Styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import { height, width } from '../../services/helper';
 
 const ProfileDisplay = () => {
   const navigation = useNavigation();
+
+  const [modalVisible, setModalVisible] = useState(false);
+
   return (
     <View style={Styles.main}>
       <View style={Styles.container}>
@@ -251,12 +254,77 @@ const ProfileDisplay = () => {
 
       <TouchableOpacity style={Styles.crosscontainer}
         activeOpacity={0.5}
-        onPress={() => navigation.navigate('MainBottomNavigation')}>
+        onPress={() => setModalVisible(true)}>
         <Image
           source={require('../../../assets/images/cross2.png')}
           style={Styles.imglike}
           resizeMode="contain" />
       </TouchableOpacity>
+
+      {/* ---------------------------------- */}
+
+      <View >
+        <Modal
+          animationType="fade"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={() => {
+            //Alert.alert("Modal has been closed.");
+            setModalVisible(!modalVisible);
+          }}
+        >
+          <View style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: 22
+          }}>
+            <View style={{
+              width: '91%',
+              height: '80%',
+              margin: 20,
+              marginTop: '-23%',
+              backgroundColor: "transparent",
+              borderRadius: 15,
+              padding: 35,
+              alignItems: "center",
+              shadowColor: "#000",
+            }}>
+              {/* <Text style={{
+                marginBottom: 15,
+                textAlign: "center"
+              }}>Hello World!</Text> */}
+              <TouchableOpacity>
+                <Image source={require('../../../assets/images/adbanner_image.png')}
+                  style={{
+                    //width: '127%',
+                    width: 328,
+                    //height: '120%',
+                    height: 527,
+                    borderRadius: 15,
+                    bottom: '6.5%',
+                    aspectRatio: 0.57
+                  }}
+                /></TouchableOpacity>
+              {/* <Pressable
+                style={{
+                  borderRadius: 20,
+                  padding: 10,
+                  elevation: 2, backgroundColor: "#F194FF",
+                }}
+                onPress={() => setModalVisible(!modalVisible)}
+              >
+                <Text style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  textAlign: "center"
+                }}>Hide Modal</Text>
+              </Pressable> */}
+            </View>
+          </View>
+        </Modal>
+      </View>
+
     </View>
 
 

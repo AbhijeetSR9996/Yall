@@ -60,7 +60,10 @@ import PromptOptions from '../src/screens/PromptOptions';
 import WriteAnswer from '../src/screens/WriteAnswer';
 import UpdatePhoneNumber from '../src/screens/UpdatePhoneNumber';
 import WednesdayEvent from '../src/screens/WednesdayEvent';
-
+import Help from '../src/screens/Help';
+import HelpGettingStarted from '../src/screens/HelpGettingStarted';
+import HelpSupport from '../src/screens/HelpSupport';
+import HelpSafety from '../src/screens/HelpSafety';
 
 const Stack = createStackNavigator();
 
@@ -112,6 +115,10 @@ function MainStackNavigation() {
         <Stack.Screen name="WriteAnswer" component={WriteAnswer} />
         <Stack.Screen name="UpdatePhoneNumber" component={UpdatePhoneNumber} />
         <Stack.Screen name="WednesdayEvent" component={WednesdayEvent} />
+        <Stack.Screen name="Help" component={Help} />
+        <Stack.Screen name="HelpGettingStarted" component={HelpGettingStarted} />
+        <Stack.Screen name="HelpSupport" component={HelpSupport} />
+        <Stack.Screen name="HelpSafety" component={HelpSafety} />
 
         <Stack.Screen name="MainBottomNavigation" component={MainBottomNavigation} />
 

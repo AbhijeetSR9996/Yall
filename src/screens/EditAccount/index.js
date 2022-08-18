@@ -33,12 +33,17 @@ import GoingOut from '../../component/Dropdown/GoingOut';
 import Music from '../../component/Dropdown/Music';
 import Food from '../../component/Dropdown/Food';
 import Pets from '../../component/Dropdown/Pets';
-
+import DatePicker from 'react-native-neat-date-picker';
+import { Button } from 'react-native-paper';
 //import DateTimePicker from '@react-native-community/datetimepicker';
 //import DatePicker from 'react-native-date-picker';
 
 const EditAccount = ({ navigation }) => {
 
+    const [showDatePicker, setShowDatePicker] = useState(false);
+    const openDatePicker = () => { setShowDatePicker(true) }
+    const onCancel = () => { setShowDatePicker(false) }
+    const [date, setDate] = useState(new Date());
 
     const [speed, setSpeed] = useState('50%');
     const [slide, setSlide] = useState('Inactive');
@@ -51,10 +56,6 @@ const EditAccount = ({ navigation }) => {
         BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
         return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
     }, []);
-
-
-    //const [date, setDate] = useState(new Date());
-    //const [open, setOpen] = useState(false);
 
 
     const [isEnabledAge, setIsEnabledAge] = useState(false);
@@ -985,7 +986,7 @@ const EditAccount = ({ navigation }) => {
                             onChange={changeSelectedDate} /> */}
 
 
-                        <TextInput
+                        {/* <TextInput
                             placeholder=' Your date of birth'
                             placeholderTextColor='#000000'
                             onChangeText={handleTenth}
@@ -995,7 +996,6 @@ const EditAccount = ({ navigation }) => {
                                 //width: '80%',
                                 fontSize: 15,
                                 color: '#000000',
-                                //fontWeight: '400',
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 fontFamily: 'BakbakOne-Regular',
@@ -1005,7 +1005,15 @@ const EditAccount = ({ navigation }) => {
                                 borderWidth: 2,
                                 borderColor: '#6B6B6B',
                                 paddingLeft: '10%',
-                            }} />
+                            }} /> */}
+
+                        <TouchableOpacity onPress={openDatePicker} style={{
+                            height: '30%', width: '100%', justifyContent: 'center', alignItems: 'flex-start', backgroundColor: 'transparent', borderWidth: 2, borderColor: '#6B6B6B',
+                        }}>
+                            <Text style={{ left: '10%', fontFamily: 'BakbakOne-Regular', fontSize: 15, color: '#000000', lineHeight: 21, letterSpacing: -0.017, }}> Your date of birth</Text>
+                        </TouchableOpacity>
+                        <DatePicker isVisible={showDatePicker} mode={'single'} onCancel={onCancel} //onConfirm={onConfirm}
+                            onConfirm={(date) => { setShowDatePicker(false); setDate(date) }} />
 
                         <Text style={{
                             fontSize: 13,
@@ -1023,7 +1031,8 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstDob}
+                        }}>
+                            {/* {firstDob} */}
                         </Text>
 
                     </View>

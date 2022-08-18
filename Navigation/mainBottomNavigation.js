@@ -29,6 +29,7 @@ import EditCard from '../src/screens/EditCard/index';
 import RemoveConfirmation from '../src/screens/RemoveConfirmation';
 import BlockUsers from '../src/screens/BlockUsers';
 import AutoplayVideo from '../src/screens/AutoplayVideo';
+import ShareYall from '../src/screens/ShareYall';
 
 const Tab = createBottomTabNavigator();
 
@@ -428,6 +429,21 @@ const MainBottomNavigation = () => {
       <Tab.Screen
         name="AutoplayVideo"
         component={AutoplayVideo}
+        options={{
+          //tabBarStyle:{display:'none'},
+          tabBarButton: () => null,
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/images/user2.png')}
+              style={{ width: 20, height: 20 }}
+            />
+          )
+        }}
+      />
+
+      <Tab.Screen
+        name="ShareYall"
+        component={ShareYall}
         options={{
           //tabBarStyle:{display:'none'},
           tabBarButton: () => null,

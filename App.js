@@ -58,6 +58,11 @@ import UpdatePhoneNumber from './src/screens/UpdatePhoneNumber';
 import WednesdayEvent from './src/screens/WednesdayEvent';
 import BlockUsers from './src/screens/BlockUsers';
 import AutoplayVideo from './src/screens/AutoplayVideo';
+import Help from './src/screens/Help';
+import HelpGettingStarted from './src/screens/HelpGettingStarted';
+import HelpSupport from './src/screens/HelpSupport';
+import HelpSafety from './src/screens/HelpSafety';
+import ShareYall from './src/screens/ShareYall';
 
 import { NavigationContainer } from '@react-navigation/native';
 

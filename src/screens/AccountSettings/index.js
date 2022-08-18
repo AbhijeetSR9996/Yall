@@ -7,7 +7,8 @@ import {
     TouchableOpacity,
     ScrollView,
     Switch,
-    StyleSheet,
+    Modal,
+    Pressable
 } from 'react-native';
 import { styles } from './styles';
 import { icons, imageicon } from '../../../assets/icons/icons';
@@ -21,6 +22,7 @@ import Slider from 'react-native-slider';
 
 const AccountSettings = ({ navigation }) => {
 
+    const [modalVisible, setModalVisible] = useState(false);
 
     const [isActive, setIsActive] = useState(false);
     const btnClick = () => { setIsActive(current => !current); }
@@ -998,7 +1000,7 @@ const AccountSettings = ({ navigation }) => {
                             alignItems: 'center',
                             justifyContent: 'center'
                         }} >
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Help')}>
                             <Text style={{
                                 fontSize: 15,
                                 //fontFamily: 'BakbakOne-Regular',
@@ -1148,7 +1150,8 @@ const AccountSettings = ({ navigation }) => {
                             paddingLeft: '10%',
                             alignItems: 'center',
                             justifyContent: 'center'
-                        }} >
+                        }} //onPress={() => setModalVisible(true)}
+                        onPress={() => navigation.navigate('ShareYall')}>
                         <TouchableOpacity>
                             <Text style={{
                                 fontSize: 15,
@@ -1429,6 +1432,58 @@ const AccountSettings = ({ navigation }) => {
                 </View>
 
             </ScrollView >
+
+            {/* ------------------------------- */}
+            {/* <View >
+                <Modal
+                    animationType="slide"
+                    transparent={true}
+                    visible={modalVisible}
+                    onRequestClose={() => {
+                        Alert.alert("Modal has been closed.");
+                        setModalVisible(!modalVisible);
+                    }}
+                >
+                    <View style={{
+                        flex: 1,
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginTop: 22
+                    }}>
+                        <View style={{
+                            width: '100%',
+                            height: '50%',
+                            margin: 20,
+                            marginTop: '70%',
+                            backgroundColor: "grey",
+                            borderRadius: 20,
+                            padding: 35,
+                            alignItems: "center",
+                            shadowColor: "#000",
+                        }}>
+                            <Text style={{
+                                marginBottom: 15,
+                                textAlign: "center"
+                            }}>Hello World!</Text>
+                            <Pressable
+                                style={{
+                                    borderRadius: 20,
+                                    padding: 10,
+                                    elevation: 2, backgroundColor: "#F194FF",
+                                }}
+                                onPress={() => setModalVisible(!modalVisible)}
+                            >
+                                <Text style={{
+                                    color: "white",
+                                    fontWeight: "bold",
+                                    textAlign: "center"
+                                }}>Hide Modal</Text>
+                            </Pressable>
+                        </View>
+                    </View>
+                </Modal>
+            </View> */}
+
         </View >
 
     );
