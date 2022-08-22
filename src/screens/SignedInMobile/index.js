@@ -31,31 +31,12 @@ const SignedInMobile = ({ navigation }) => {
                             marginTop: '100%',
                             borderRadius: 50,
                             width: 40
-                            //width: width * .105
-                            //width: width / 10
                         }}>
-                        {/* {icons.rightcirclearrow} */}
                         <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50 }} />
                     </View>
                 </TouchableOpacity>
             </View>
 
-            {/* <View>
-                <TouchableOpacity onPress={() => navigation.navigate('MobileCode1')}>
-                    <Text
-                        style={{
-                            right: 20,
-                            alignSelf: 'flex-end',
-                            marginVertical: height / 1.6,
-                            position: 'absolute',
-                            backgroundColor: '#DCC7E1',
-                            borderRadius: 20,
-                            top: 30,
-                        }}>
-                        {icons.rightcirclearrow}
-                    </Text>
-                </TouchableOpacity>
-            </View> */}
         </View>
     );
 };
