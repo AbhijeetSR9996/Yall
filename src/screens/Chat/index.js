@@ -39,12 +39,12 @@ const Chat = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the camera');
+        //console.log('You can use the camera');
       } else {
-        console.log('Camera permission denied');
+        //console.log('Camera permission denied');
       }
     } catch (err) {
-      console.warn(err);
+      //console.warn(err);
     }
   };
   const takePhotoFromCamera = () => {
@@ -78,7 +78,7 @@ const Chat = ({ navigation }) => {
 
   return (
     <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
-      <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+      <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginTop: '2%', marginBottom: '1%' }}>
         <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Icon name="angle-left" style={{
@@ -110,11 +110,12 @@ const Chat = ({ navigation }) => {
         </View>
       </View>
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
-      <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
-        <View style={{ flex: 0.06, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+      <ScrollView>
+        {/* <View style={{ flex: 0.9, width: width, backgroundColor: 'grey', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}> */}
+        <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '2%' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
-        <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
             <ImageBackground
               source={require('../../../assets/images/buttonbg2.png')}
@@ -164,10 +165,10 @@ const Chat = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 0.053, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '12%', }}>
           <Text style={styles.text}>March 10, 2020</Text>
         </View>
-        <View style={{ flex: 0.14, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column', top: '0%' }}>
+        <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column', marginTop: '0%', marginBottom: '12%' }}>
           <TouchableOpacity>
             <ImageBackground
               source={require('../../../assets/images/buttonbg.png')}
@@ -218,7 +219,7 @@ const Chat = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-        <View style={{ flex: 0.6, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column', marginBottom: '95%' }}>
           <TouchableOpacity>
             <ImageBackground
               source={require('../../../assets/images/buttonbg3.png')}
@@ -270,7 +271,8 @@ const Chat = ({ navigation }) => {
         </View>
         {/* <View style={{ flex: 0.1, width: width, backgroundColor: 'grey', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
         </View> */}
-        <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
+
+        <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
             <TouchableOpacity onPress={() => createTwoButtonAlert()}>
               <Image source={require('../../../assets/images/camera2.png')} style={{ height: 35, width: 50 }} />
@@ -344,7 +346,8 @@ const Chat = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
-      </View>
+        {/* </View> */}
+      </ScrollView>
     </View>
 
   );

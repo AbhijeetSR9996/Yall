@@ -1,5 +1,4 @@
-import { Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
 
 export const styles = {
   container: {
@@ -39,7 +38,7 @@ export const styles = {
     fontFamily: 'Inter',
     borderBottomWidth: 1.5,
     //width: 367,
-    width: 309,
+    width: 319,
     height: 69,
     fontWeight: '500',
     color: '#000000',

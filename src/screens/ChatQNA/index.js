@@ -14,14 +14,12 @@ import {
 } from 'react-native';
 import { Rectangular } from '../../component/Buttons/rectangular';
 import { styles } from './styles';
-import { StyleSheet, Dimensions } from 'react-native';
 import { icons } from '../../../assets/icons/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { Card } from 'react-native-paper';
 import ImagePicker from 'react-native-image-crop-picker';
-
-const { width, height } = Dimensions.get('window');
+import { height, width } from '../../services/helper';
 
 
 const ChatQNA = ({ navigation }) => {
@@ -79,7 +77,7 @@ const ChatQNA = ({ navigation }) => {
 
   return (
     <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
-      <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+      <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginTop: '2%', marginBottom: '1%' }}>
         <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Icon name="angle-left" style={{
@@ -112,11 +110,12 @@ const ChatQNA = ({ navigation }) => {
 
       </View>
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
-      <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
-        <View style={{ flex: 0.07, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+      <ScrollView>
+        {/* <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}> */}
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '2%' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
-        <View style={{ flex: 0.18, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'column' }}>
           <TouchableOpacity>
             <ImageBackground
               source={require('../../../assets/images/buttonbg2.png')}
@@ -166,10 +165,10 @@ const ChatQNA = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 0.08, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-          <Text style={styles.text}>March 9, 2020</Text>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '1%' }}>
+          <Text style={styles.text}>March 10, 2020</Text>
         </View>
-        <View style={{ flex: 0.20, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
 
           <TouchableOpacity>
             <ImageBackground
@@ -221,10 +220,10 @@ const ChatQNA = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-
-        <View style={{ flex: 0.21, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginTop: '1%' }}>
           <TouchableOpacity style={{
             alignItems: 'center',
+            justifyContent: 'center',
             //borderWidth: 1.5,
             //borderColor: '#000000',
             backgroundColor: '#F6F6F6',
@@ -239,7 +238,7 @@ const ChatQNA = ({ navigation }) => {
             <Text style={{
               fontSize: 15,
               color: '#000000',
-              top: '7%',
+              //top: '7%',
               left: '-5%',
               textAlignVertical: 'center',
               fontFamily: 'Inter',
@@ -254,7 +253,7 @@ const ChatQNA = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-        <View style={{ flex: 0.09, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-end', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'flex-end', flexDirection: 'column', marginTop: '1%' }}>
 
           <TouchableOpacity>
             <ImageBackground
@@ -305,7 +304,7 @@ const ChatQNA = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '1%', marginBottom: '2%' }}>
           <Text style={[styles.text, { marginRight: '5%' }]}>Today</Text>
         </View>
 
@@ -430,7 +429,8 @@ const ChatQNA = ({ navigation }) => {
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
-                        textAlign: "center"
+                        textAlign: "center",
+                        top: '5%'
                       }}>show on netflix</Text>
                     </View>
 
@@ -439,11 +439,6 @@ const ChatQNA = ({ navigation }) => {
                       width: '126%',
                       // height: '100%', 
                       marginLeft: '-9%',
-                      // marginRight: '-3%',
-                      //alignSelf:'center',
-                      //paddingHorizontal:'10%',
-                      // borderTopLeftRadius: 20,
-                      // borderTopRightRadius: 20,
                       borderBottomRightRadius: 2,
                       borderBottomLeftRadius: 2,
                       backgroundColor: 'transparent',
@@ -453,14 +448,6 @@ const ChatQNA = ({ navigation }) => {
                     }}>
                       <View style={{
                         flex: 1,
-                        // width: '100%', 
-                        // height: '100%', 
-                        //marginLeft: '-12.5%',
-                        // marginRight: '-3%',
-                        //alignSelf:'center',
-                        //paddingHorizontal:'10%',
-                        // borderTopLeftRadius: 20,
-                        // borderTopRightRadius: 20,
                         borderBottomRightRadius: 2,
                         borderBottomLeftRadius: 2,
                         backgroundColor: 'transparent',
@@ -471,19 +458,11 @@ const ChatQNA = ({ navigation }) => {
                       }}>
                         <Image source={require('../../../assets/images/bluranswer.png')}
                           style={{
-                            top: '3%',
+                            top: '1%',
                           }} />
                       </View>
                       <View style={{
                         flex: 1,
-                        // width: '100%', 
-                        // height: '100%', 
-                        //marginLeft: '-12.5%',
-                        // marginRight: '-3%',
-                        //alignSelf:'center',
-                        //paddingHorizontal:'10%',
-                        // borderTopLeftRadius: 20,
-                        // borderTopRightRadius: 20,
                         borderBottomRightRadius: 2,
                         borderBottomLeftRadius: 2,
                         backgroundColor: 'transparent',
@@ -491,6 +470,7 @@ const ChatQNA = ({ navigation }) => {
                         justifyContent: 'center',
                         flexDirection: 'row',
                         borderWidth: 1,
+                        //textAlign: 'center'
                       }}>
                         <Text style={{
                           width: 135,
@@ -502,7 +482,7 @@ const ChatQNA = ({ navigation }) => {
                           lineHeight: 18,
                           color: '#FFFFFF',
                           textAlign: "center",
-                          top: '10%'
+                          top: '7%'
                         }}> My answer;hsc sdv</Text>
                       </View>
                     </View>
@@ -513,9 +493,10 @@ const ChatQNA = ({ navigation }) => {
             </View>
 
           </View>
-          <View style={{ flex: 0.4, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+          <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginBottom: '10%' }}>
             <Text style={{
-              width: 278,
+              //width: 278,
+              width: '85%',
               height: 50,
               //left: 73,
               fontFamily: 'BakbakOne-Regular',
@@ -543,7 +524,7 @@ const ChatQNA = ({ navigation }) => {
         <View style={{ flex: 0.05, width: width, backgroundColor: '#FFFFFF', alignItems: 'flex-end', justifyContent: 'center', flexDirection: 'column' }}>
           <Text style={[styles.text, { marginRight: '5%' }]}>Deliverd. 10:50 AM</Text>
         </View>
-        <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
+        <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
             <TouchableOpacity onPress={() => createTwoButtonAlert()}>
               <Image source={require('../../../assets/images/camera2.png')} />
@@ -582,13 +563,13 @@ const ChatQNA = ({ navigation }) => {
                     //height:47,
                     fontSize: 20,
                     color: '#000000',
-                    fontWeight: '400',
+                    //fontWeight: '400',
                     //left: '2%',
                     //top: '7%',
                     lineHeight: 24,
                     letterSpacing: -0.017,
                     fontFamily: 'Inter',
-                    marginBottom: '-20%'
+                    marginBottom: '-15%'
                   }} />
               </View>
             </Card>
@@ -602,7 +583,8 @@ const ChatQNA = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
-      </View>
+        {/* </View> */}
+      </ScrollView>
     </View>
 
   );

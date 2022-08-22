@@ -92,7 +92,7 @@ const EditCard = ({ navigation }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
-            <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}>
+            <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginTop: '0%', marginBottom: '2%' }}>
                 <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'row' }}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Icon name="angle-left" style={{
@@ -112,7 +112,7 @@ const EditCard = ({ navigation }) => {
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
-                        right: '70%'
+                        right: '110%'
                     }}>Edit payment method</Text>
                 </View>
             </View>
@@ -136,7 +136,7 @@ const EditCard = ({ navigation }) => {
                     <View style={{ flex: 3, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 149, alignSelf: 'center' }}>
                         <View style={{ flex: 1, flexDirection: 'row', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 149, alignSelf: 'center' }}>
                             <TextInput
-                                placeholder='  Sahil'
+                                placeholder='    Sahil'
                                 placeholderTextColor='#000000'
                                 //onChangeText={handleThird}
                                 style={{

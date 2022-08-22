@@ -253,12 +253,12 @@ export const Styles = StyleSheet.create({
     position: 'absolute',
     //right: 10,
     letterSpacing: -0.017,
-
   },
   img: {
     height: 260,
     //height: 366,
     width: width,
+    //aspectRatio:3/2
   },
   img3: {
     height: 25,

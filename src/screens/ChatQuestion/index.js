@@ -274,7 +274,7 @@ const ChatQuestion = ({ navigation }) => {
                         </TouchableOpacity>
                     </View>
 
-                    <View style={{ flex: 0.55, width: width, backgroundColor: 'red', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column' }}>
+                    <View style={{ flex: 0.55, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column' }}>
 
                         <View style={{
                             backgroundColor: '#000000',
@@ -282,7 +282,7 @@ const ChatQuestion = ({ navigation }) => {
                             //width: 365,
                             //height: 388,
                             height: '138%',
-                            left: '-3%',
+                            //left: '-3%',
                             marginTop: '5%',
                             //marginLeft: '20%',
                             paddingHorizontal: '10%',

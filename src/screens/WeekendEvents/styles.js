@@ -68,6 +68,6 @@ export default StyleSheet.create({
         fontFamily: 'Inter',
         fontSize: 15,
         color: '#000000',
-
+        bottom: '1%'
     },
 })

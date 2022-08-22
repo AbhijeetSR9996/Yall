@@ -268,6 +268,7 @@ const ProfileDisplay = () => {
           animationType="fade"
           transparent={true}
           visible={modalVisible}
+          statusBarTranslucent={true}
           onRequestClose={() => {
             //Alert.alert("Modal has been closed.");
             setModalVisible(!modalVisible);
@@ -277,18 +278,21 @@ const ProfileDisplay = () => {
             flex: 1,
             justifyContent: "center",
             alignItems: "center",
-            marginTop: 22
+            marginTop: 32,
           }}>
             <View style={{
-              width: '91%',
-              height: '80%',
+              width: '100%',
+              height: '100.5%',
               margin: 20,
-              marginTop: '-23%',
-              backgroundColor: "transparent",
-              borderRadius: 15,
+              //marginTop: '-23%',
+              marginTop: '-16%',
+              marginBottom: '15%',
+              backgroundColor: "rgba(0,0,0,0.5)",
+              borderRadius: 0,
               padding: 35,
               alignItems: "center",
               shadowColor: "#000",
+              //aspectRatio: 3 / 2
             }}>
               {/* <Text style={{
                 marginBottom: 15,
@@ -298,11 +302,12 @@ const ProfileDisplay = () => {
                 <Image source={require('../../../assets/images/adbanner_image.png')}
                   style={{
                     //width: '127%',
-                    width: 328,
+                    width: 348,
                     //height: '120%',
-                    height: 527,
+                    height: 567,
                     borderRadius: 15,
-                    bottom: '6.5%',
+                    //bottom: '6.5%',
+                    top: '5%',
                     aspectRatio: 0.57
                   }}
                 /></TouchableOpacity>
