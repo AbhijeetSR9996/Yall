@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Dimensions, TouchableOpacity } from 'react-native';
 import Styles from './styles';
 //import { signupStyles } from '../../screens/SignUp/signupStyles';
@@ -8,6 +8,7 @@ import { icons } from '../../../assets/icons/icons';
 import { height, width } from '../../services/helper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
 const data = [
     { label: 'IN +91', value: '1' },
     { label: '+92', value: '2' },
@@ -15,41 +16,50 @@ const data = [
     { label: '+12', value: '4' },
 ];
 
-// const saveData = () => {
-//     let name = "Abhi";
-//     AsyncStorage.setItem('user', name);
-// }
-
-// async function displayData() {
-//     try {
-//         let user = await AsyncStorage.getItem('user');
-//         alert(user);
-//     }
-//     catch (error) { alert(error) }
-// }
-
 
 export const MobileNumber = ({ navigation }) => {
 
-    const [value, setValue] = useState(null);
+    // const [userData, setUserData] = useState({
+    //     mobilenumber: null,
+    // });
+    const [value, setValue] = useState({
+        countrycode: 'IN +91',
+        mobilenumber: null
+    });
+    // const [value, setValue] = useState(null);
+    // const [number, setNumber] = useState("");
+    // const handleNumber = (value) => {
+    //     setNumber(value);
+    // }
 
-    const [number, setNumber] = useState("");
-    const handleNumber = (value) => {
-        setNumber(value);
-    }
+    const onChangeCountry = (values, key) => {
+        setValue({ ...value, [key]: values });
+    };
 
+    const onChangeNumber = (values, key) => {
+        setValue({ ...value, [key]: values });
+    };
+
+
+    // const storePhoneNumber = async (value) => {
+    //     try {
+    //         await AsyncStorage.setItem("phonenumber", JSON.stringify(number));
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // };
 
     return (
+
         <View>
             <View style={{ width: 214, height: 70, top: 85, left: 21 }}>
                 <Text style={{
                     color: '#000000',
                     fontFamily: 'BakbakOne-Regular',
-                    //fontWeight: '800',
                     fontSize: 25,
                     lineHeight: 35,
                 }}>Whats your phone number?
-                    {number}
+                    {/* {number} */}
                 </Text>
             </View>
             <View style={{ flexDirection: 'row', top: 120 }}>
@@ -83,9 +93,10 @@ export const MobileNumber = ({ navigation }) => {
                     labelField="label"
                     valueField="value"
                     value={value}
-                    onChange={item => {
-                        setValue(item.value);
-                    }}
+                    // onChange={item => {
+                    //     setValue(item.value);
+                    // }}
+                    onChange={(countrycode) => onChangeCountry(countrycode, "countrycode")}
                 />
 
                 <TextInput
@@ -93,7 +104,8 @@ export const MobileNumber = ({ navigation }) => {
                     placeholderTextColor="#000000"
                     keyboardType="numeric"
                     maxLength={10}
-                    onChangeText={handleNumber}
+                    // onChangeText={handleNumber}
+                    onChangeText={(mobilenumber) => onChangeNumber(mobilenumber, "mobilenumber")}
                     style={{
                         borderBottomWidth: 1.5,
                         width: 165,
@@ -134,10 +146,7 @@ export const MobileNumber = ({ navigation }) => {
                 }}>
                 account.
             </Text>
-            {/* <View>
-                <TouchableOpacity onPress={saveData}><Text>Click to save data</Text></TouchableOpacity>
-                <TouchableOpacity onPress={displayData}><Text>Click to display data</Text></TouchableOpacity>
-            </View> */}
+            {/* <TouchableOpacity onPress={storeUser} style={{ top: '20%' }}><Text>Click</Text></TouchableOpacity> */}
         </View>
     );
 };

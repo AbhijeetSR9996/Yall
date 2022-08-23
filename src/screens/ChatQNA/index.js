@@ -493,7 +493,7 @@ const ChatQNA = ({ navigation }) => {
             </View>
 
           </View>
-          <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginBottom: '10%' }}>
+          <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginBottom: '11%' }}>
             <Text style={{
               //width: 278,
               width: '85%',

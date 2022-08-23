@@ -8,11 +8,10 @@ import {
     useBlurOnFulfill,
     useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
+import { height } from '../../services/helper';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { CELL_COUNT } from '../../services/constant';
 
-
-const { height } = Dimensions.get('window');
-
-const CELL_COUNT = 4;
 
 export const VerifyingCode = ({ path, paths }) => {
 
@@ -24,6 +23,15 @@ export const VerifyingCode = ({ path, paths }) => {
         value,
         setValue,
     });
+
+    // const storePhoneCode = async (value) => {
+    //     try {
+    //         await AsyncStorage.setItem("phonecode", JSON.stringify(value));
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // };
+
     return (
         <View>
             <View style={{ width: 214, height: 70, top: 85, left: 21 }}>
@@ -36,7 +44,7 @@ export const VerifyingCode = ({ path, paths }) => {
                 }}>Enter your verification code.</Text>
             </View>
             <View style={{ flexDirection: 'row', top: 100, left: 22, width: 190 }}>
-                <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>Sent to 1234567990 - </Text>
+                <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>Sent to 1234567890 - </Text>
                 <TouchableOpacity onPress={() => navigation.navigate(path)}>
                     <Text style={{ color: '#000000', fontWeight: '500', fontFamily: 'Inter' }}>Edit</Text>
                 </TouchableOpacity>

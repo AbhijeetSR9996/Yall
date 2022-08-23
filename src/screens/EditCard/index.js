@@ -136,13 +136,12 @@ const EditCard = ({ navigation }) => {
                     <View style={{ flex: 3, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 149, alignSelf: 'center' }}>
                         <View style={{ flex: 1, flexDirection: 'row', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 149, alignSelf: 'center' }}>
                             <TextInput
-                                placeholder='    Sahil'
+                                placeholder='   Sahil'
                                 placeholderTextColor='#000000'
                                 //onChangeText={handleThird}
                                 style={{
                                     width: '90%',
                                     height: '70%',
-                                    //width: '80%',
                                     fontSize: 12,
                                     color: '#000000',
                                     //fontWeight: '400',

@@ -282,15 +282,16 @@ const ProfileDisplay = () => {
           }}>
             <View style={{
               width: '100%',
-              height: '100.5%',
+              height: '100%',
               margin: 20,
               //marginTop: '-23%',
               marginTop: '-16%',
-              marginBottom: '15%',
+              marginBottom: '12%',
               backgroundColor: "rgba(0,0,0,0.5)",
               borderRadius: 0,
               padding: 35,
               alignItems: "center",
+              justifyContent: 'center',
               shadowColor: "#000",
               //aspectRatio: 3 / 2
             }}>
@@ -307,7 +308,7 @@ const ProfileDisplay = () => {
                     height: 567,
                     borderRadius: 15,
                     //bottom: '6.5%',
-                    top: '5%',
+                    //top: '5%',
                     aspectRatio: 0.57
                   }}
                 /></TouchableOpacity>

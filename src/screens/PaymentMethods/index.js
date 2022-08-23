@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Image, SafeAreaView, Alert } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Image, SafeAreaView, Alert, StyleSheet, Dimensions } from 'react-native';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icon1 from 'react-native-vector-icons/Feather';
 import Icon2 from "react-native-vector-icons/EvilIcons";
-import { StyleSheet, Dimensions } from 'react-native';
 import { height, width } from '../../services/helper';
 import { Rectangular } from '../../component/Buttons/rectangular';
 import { icons } from '../../../assets/icons/icons';
 import ImagePicker from 'react-native-image-crop-picker';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const PaymentMethods = ({ navigation }) => {
 
@@ -244,14 +244,63 @@ const PaymentMethods = ({ navigation }) => {
                         <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '12%', fontSize: 25, letterSpacing: -0.017, fontFamily: 'Inter', }]}> $ 200</Text>
                         <Text style={[styles.icon_text, { position: 'absolute', marginLeft: '14%', fontSize: 15, marginTop: '30%', letterSpacing: -0.017, fontFamily: 'Inter' }]}> View Details</Text>
                     </View>
+
                     <TouchableOpacity
+                        style={[
+                            {
+                                width: width * 0.5,
+                                height: height * 0.07,
+                                borderWidth: 1,
+                                marginTop: '-28%',
+                                marginLeft: '43%',
+                            },
+                        ]}
+                        onPress={() => navigation.navigate('BookingConfirm')}>
+                        <View style={{
+                            left: 10,
+                            top: 8,
+                            width: width * 0.5,
+                            borderWidth: 1,
+                            borderColor: '#FFFFFF',
+                            borderRightWidth: 0,
+                            height: height * 0.07,
+                            alignSelf: 'center',
+                            backgroundColor: '#000000',
+                            position: 'relative',
+                        }}>
+                            <Text style={{
+                                fontSize: 18,
+                                fontFamily: 'BakbakOne-Regular',
+                                color: '#FFFFFF',
+                                alignSelf: 'center',
+                                justifyContent: 'center',
+                                right: '15%',
+                                top: '30.3%',
+                                lineHeight: 25,
+                                letterSpacing: -0.017
+                            }}>Pay Now</Text>
+                            <View style={{
+                                width: width * 0.15,
+                                borderWidth: 1,
+                                borderColor: '#FFFFFF',
+                                height: '104%',
+                                alignSelf: 'flex-end',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                backgroundColor: '#000000',
+                                position: 'absolute',
+                                marginVertical: -1,
+                            }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
+                        </View>
+                    </TouchableOpacity>
+                    {/* <TouchableOpacity
                         style={styles.payment_button}
                         onPress={() => navigation.navigate('BookingConfirm')}>
                         <View style={styles.payment_buttonview}>
                             <Text style={styles.payment_buttontext}>Pay Now</Text>
                             <View style={styles.payment_buttonicon}>{icons.rightarrow}</View>
                         </View>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                 </View>
             </View>
 
