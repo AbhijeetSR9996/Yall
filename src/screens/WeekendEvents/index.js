@@ -54,26 +54,30 @@ const WeekendEvent = ({ navigation }) => {
                     />
                 </View>
                 <View style={styles.weekend_container}>
-                    {event.map((element) => (
-                        <View>
-                            <ImageBackground
-                                key={element.id}
-                                source={element.cover_banner_url}
-                                style={styles.image_size}
-                                imageStyle={{ borderRadius: 10 }}
-                                resizeMode="stretch">
-                                <Text style={styles.image_inner_text}><Icon name="calendar" /> {element.date}</Text>
-                                <Text style={styles.image_inner_text}><Icon1 name="watch" /> {element.time}</Text>
-                            </ImageBackground>
-                            <View style={styles.right_container}>
-                                <Text style={styles.right_heading}>{element.bold_text}</Text>
-                                <TouchableOpacity style={styles.right_container_btn}
-                                    onPress={() => navigation.navigate('WednesdayLoveNight')}>
-                                    <Text style={styles.right_btn}>{element.button_text}</Text>
-                                </TouchableOpacity>
+                    {/* <FlatList data={event}
+                        renderItem={({ item }) => <Text>{item.bold_text}</Text>}
+                        keyExtractor={item => item.id} /> */}
+                    <ScrollView>
+                        {event.map((element) => (
+                            <View style={{ alignItems: 'stretch', flexDirection: 'row' }}>
+                                <ImageBackground
+                                    key={element.id}
+                                    source={element.cover_banner_url}
+                                    style={styles.image_size}
+                                    imageStyle={{ borderRadius: 10 }}
+                                    resizeMode="stretch">
+                                    <Text style={styles.image_inner_text}><Icon name="calendar" /> {element.date}</Text>
+                                    <Text style={styles.image_inner_text}><Icon1 name="watch" /> {element.time}</Text>
+                                </ImageBackground>
+                                <View style={styles.right_container}>
+                                    <Text style={styles.right_heading}>{element.bold_text}</Text>
+                                    <TouchableOpacity style={styles.right_container_btn}
+                                        onPress={() => navigation.navigate('WednesdayLoveNight')}>
+                                        <Text style={styles.right_btn}>{element.button_text}</Text>
+                                    </TouchableOpacity>
+                                </View>
                             </View>
-                        </View>
-                    ))}
+                        ))}</ScrollView>
                     {/* <ImageBackground
                         source={require('../../../assets/images/weekend.png')}
                         style={styles.image_size}
