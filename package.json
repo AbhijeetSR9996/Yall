@@ -19,6 +19,7 @@
     "@react-navigation/stack": "^6.2.1",
     "install": "^0.13.0",
     "npm": "^8.12.1",
+    "query-string": "^7.1.1",
     "react": "17.0.2",
     "react-native": "0.68.2",
     "react-native-app-intro-slider": "^4.0.4",

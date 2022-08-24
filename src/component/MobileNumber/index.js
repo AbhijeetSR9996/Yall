@@ -23,7 +23,7 @@ export const MobileNumber = ({ navigation }) => {
     //     mobilenumber: null,
     // });
     const [value, setValue] = useState({
-        countrycode: 'IN +91',
+        countrycode: null,
         mobilenumber: null
     });
     // const [value, setValue] = useState(null);
@@ -82,7 +82,6 @@ export const MobileNumber = ({ navigation }) => {
                         //fontWeight: '400',
                         height: 18,
                         fontFamily: 'Inter',
-                        //fontWeight: '400',
                         color: '#000000',
                     }}
                     selectedTextStyle={{

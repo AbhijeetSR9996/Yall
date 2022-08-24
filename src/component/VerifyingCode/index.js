@@ -11,7 +11,7 @@ import {
 import { height } from '../../services/helper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { CELL_COUNT } from '../../services/constant';
-
+import { mobileNumber } from '../../api/users';
 
 export const VerifyingCode = ({ path, paths }) => {
 
@@ -24,13 +24,11 @@ export const VerifyingCode = ({ path, paths }) => {
         setValue,
     });
 
-    // const storePhoneCode = async (value) => {
-    //     try {
-    //         await AsyncStorage.setItem("phonecode", JSON.stringify(value));
-    //     } catch (error) {
-    //         console.log(error);
-    //     }
-    // };
+    // const Number = async () => {
+    //     const res = await mobileNumber(userData);
+    //     const data = await res.json();
+    //     console.log('success');
+    // }
 
     return (
         <View>
@@ -44,7 +42,9 @@ export const VerifyingCode = ({ path, paths }) => {
                 }}>Enter your verification code.</Text>
             </View>
             <View style={{ flexDirection: 'row', top: 100, left: 22, width: 190 }}>
-                <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>Sent to 1234567890 - </Text>
+                <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>Sent to 1234567890
+                    {/* {Number} */}
+                    - </Text>
                 <TouchableOpacity onPress={() => navigation.navigate(path)}>
                     <Text style={{ color: '#000000', fontWeight: '500', fontFamily: 'Inter' }}>Edit</Text>
                 </TouchableOpacity>

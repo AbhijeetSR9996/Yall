@@ -18,7 +18,7 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import Slider from 'react-native-slider';
-//import RangeSlider from 'react-native-range-slider';
+import RangeSlider from 'react-native-range-slider';
 
 const AccountSettings = ({ navigation }) => {
 
@@ -429,14 +429,14 @@ const AccountSettings = ({ navigation }) => {
                         </View>
                         <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%' }}>
                             <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 50, left: 20 }} />
-                            <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 260, left: 10 }} />
-                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 295 }} />
-                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 265 }} />
+                            <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 285, left: 10 }} />
+                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 320 }} />
+                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 290 }} />
                             {/* <RangeSlider
                                 defaultValue={[min, max]}
                                 className="slider"
                                 trackClassName="tracker"
-                                min={0}
+                                min={10}
                                 max={500}
                                 minDistance={50}
                                 step={50}
@@ -452,15 +452,8 @@ const AccountSettings = ({ navigation }) => {
                                     setMax(max);
                                     setMin(min);
                                 }}
+                                style={{ flex: 1, height: 70, marginTop: 20, padding: 10 }}
                             /> */}
-                            {/* <RangeSlider
-                            lineHeight={2}
-                            handleDiameter={18}
-                            minValue={0}
-                            maxValue={100}
-                            selectedMaximum={50}
-                            style={{flex:1,height:70,marginTop:20,padding:10}}
-                            onChange={(data)=>{console.log('slider data:',data)}}/> */}
                         </View>
                     </View>
                     <View style={{ flex: 0.5, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%', }}>
