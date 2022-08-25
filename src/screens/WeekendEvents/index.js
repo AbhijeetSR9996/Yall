@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from "../../component/SearchBar";
 import Icon1 from 'react-native-vector-icons/Feather';
 import { getWeeklyEvents } from '../../api/events';
+import Moment from 'moment';
 
 const WeekendEvent = ({ navigation }) => {
 
@@ -48,10 +49,8 @@ const WeekendEvent = ({ navigation }) => {
                                     style={styles.image_size}
                                     imageStyle={{ borderRadius: 10 }}
                                     resizeMode="stretch">
-                                    {/* <Text style={styles.image_inner_text}><Icon name="calendar" />{JSON.stringify(arrayData.event_on.split(' '))}</Text>
-                                    <Text style={styles.image_inner_text}><Icon1 name="watch" />{JSON.stringify(arrayData.event_on.split(' '))}</Text> */}
-                                    <Text style={styles.image_inner_text}><Icon name="calendar" /> {arrayData.event_on}</Text>
-                                    <Text style={styles.image_inner_text}><Icon1 name="watch" /> 09:00 PM</Text>
+                                    <Text style={styles.image_inner_text}><Icon name="calendar" /> {Moment(arrayData.event_on).format('DD MMM YYYY')}</Text>
+                                    <Text style={styles.image_inner_text}><Icon1 name="watch" /> {Moment(arrayData.event_on).format('HH:MM A')}</Text>
                                 </ImageBackground>
                                 <View style={styles.right_container}>
                                     <Text style={styles.right_heading}>{arrayData.title}</Text>

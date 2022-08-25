@@ -147,7 +147,7 @@ const AccountSettings = ({ navigation }) => {
                                     //top: '30.3%',
                                     //marginRight: '10%',
                                     //marginTop: '5%',
-                                    left: '20%',
+                                    left: '30%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
                                     width: '100%',

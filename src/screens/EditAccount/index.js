@@ -1042,7 +1042,7 @@ const EditAccount = ({ navigation }) => {
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '178%' }}>
 
-                        <TextInput
+                        {/* <TextInput
                             placeholder=' My Events'
                             placeholderTextColor='#000000'
                             onChangeText={handleEleventh}
@@ -1063,7 +1063,16 @@ const EditAccount = ({ navigation }) => {
                                 borderColor: '#6B6B6B',
                                 paddingLeft: '10%'
 
-                            }} />
+                            }} /> */}
+
+                        <TouchableOpacity onPress={openDatePicker} style={{
+                            height: '30%', width: '100%', justifyContent: 'center', alignItems: 'flex-start', backgroundColor: 'transparent', borderWidth: 2, borderColor: '#6B6B6B',
+                        }}>
+                            <Text style={{ left: '10%', fontFamily: 'BakbakOne-Regular', fontSize: 15, color: '#000000', lineHeight: 21, letterSpacing: -0.017, }}> My Events</Text>
+                        </TouchableOpacity>
+                        <DatePicker isVisible={showDatePicker} mode={'single'} onCancel={onCancel} //onConfirm={onConfirm}
+                            onConfirm={(date) => { setShowDatePicker(false); setDate(date) }} />
+
                         <Text style={{
                             fontSize: 13,
                             //fontFamily: 'Bakbak One',
@@ -1080,7 +1089,8 @@ const EditAccount = ({ navigation }) => {
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>{firstEvent}
+                        }}>
+                            {/* {firstEvent} */}
                         </Text>
 
                     </View>
@@ -1357,18 +1367,6 @@ const EditAccount = ({ navigation }) => {
                                     bottom: 50,
                                 }}
                             />
-
-                            {/* <Image
-                                source={require('../../../assets/images/scroller2.png')}
-                                style={{
-                                    height: 20,
-                                    width: 240,
-                                    left: 40,
-                                    top: 110,
-                                    position: 'absolute',
-                                    bottom: 50,
-                                }}
-                            /> */}
 
                             <Slider
                                 style={{ width: 215, height: 40, marginRight: '20%', marginTop: '30%' }}

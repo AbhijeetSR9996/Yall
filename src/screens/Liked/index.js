@@ -125,7 +125,7 @@ const Liked = ({ navigation }) => {
                 marginLeft: '8%'
               }}>
                 <Text style={{
-                  fontSize: 15,
+                  fontSize: 14,
                   color: '#000000',
                   top: '20%',
                   fontFamily: 'Inter',
@@ -167,7 +167,7 @@ const Liked = ({ navigation }) => {
               }}>
                 <Text style={{
                   fontFamily: 'Inter',
-                  fontSize: 15,
+                  fontSize: 14,
                   //fontWeight: '400',
                   letterSpacing: -0.017,
                   lineHeight: 18,
