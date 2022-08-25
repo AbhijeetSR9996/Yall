@@ -374,7 +374,7 @@ const AccountSettings = ({ navigation }) => {
                                 bottom: '10%',
                                 //marginRight: '-10%',
                                 //marginTop: '5%',
-                                right: '2%',
+                                right: '2.5%',
                                 lineHeight: 15,
                                 letterSpacing: -0.017,
                                 width: '90%',
@@ -430,7 +430,7 @@ const AccountSettings = ({ navigation }) => {
                         <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%' }}>
                             <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 50, left: 20 }} />
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 285, left: 10 }} />
-                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 320 }} />
+                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 318 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 290 }} />
                             {/* <RangeSlider
                                 defaultValue={[min, max]}
@@ -584,7 +584,7 @@ const AccountSettings = ({ navigation }) => {
                                     //top: '30.3%',
                                     //marginRight: '10%',
                                     //marginTop: '5%',
-                                    right: '85%',
+                                    right: '88%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
                                     width: '100%',

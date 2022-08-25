@@ -7,7 +7,8 @@ export default StyleSheet.create({
         height: height,
     },
     first_container: {
-        flex: 1,
+        //flex: 1,
+        flex: 0.9,
         width: width,
         paddingTop: 50,
         paddingBottom: 0,
@@ -17,6 +18,7 @@ export default StyleSheet.create({
     weekend_event: {
         width: width * 0.88,
         height: height * 0.4,
+        marginBottom: '7%'
     },
     weekend_text: {
         //fontFamily: 'Inter',

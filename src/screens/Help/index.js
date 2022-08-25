@@ -232,7 +232,7 @@ const Help = ({ navigation }) => {
                             //paddingVertical: 10,
                             //paddingVertical: 13,
                             top: '30.3%',
-                            right: '9%',
+                            right: '10%',
                             //right: '20%',
                             lineHeight: 25,
                             letterSpacing: -0.017

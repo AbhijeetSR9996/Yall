@@ -305,7 +305,7 @@ const ProfileDisplay = () => {
                     //width: '127%',
                     width: 348,
                     //height: '120%',
-                    height: 567,
+                    height: 587,
                     borderRadius: 15,
                     //bottom: '6.5%',
                     //top: '5%',

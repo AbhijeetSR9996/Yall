@@ -32,7 +32,7 @@ export default StyleSheet.create({
         color: "#FFFFFF",
         fontSize: 10,
         //fontWeight: "500",
-        marginTop: '65%'
+        marginTop: '75%',
     },
     right_container: {
         display: 'flex',
