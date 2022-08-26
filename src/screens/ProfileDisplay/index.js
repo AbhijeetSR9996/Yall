@@ -303,7 +303,7 @@ const ProfileDisplay = () => {
                 <Image source={require('../../../assets/images/adbanner_image.png')}
                   style={{
                     //width: '127%',
-                    width: 348,
+                    width: 358,
                     //height: '120%',
                     height: 587,
                     borderRadius: 15,

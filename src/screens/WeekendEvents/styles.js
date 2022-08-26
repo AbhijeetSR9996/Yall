@@ -10,7 +10,7 @@ export default StyleSheet.create({
     letf_arrow: {
         fontSize: 50,
         color: '#000000',
-        marginLeft: 23,
+        marginLeft: 10,
         fontWeight: "200",
     },
     weekend_container: {

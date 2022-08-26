@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from "../../component/SearchBar";
 import Icon1 from 'react-native-vector-icons/Feather';
 import { getWeeklyEvents } from '../../api/events';
+import { width } from '../../services/helper';
 import Moment from 'moment';
 
 const WeekendEvent = ({ navigation }) => {
@@ -12,6 +13,8 @@ const WeekendEvent = ({ navigation }) => {
     const onPressSearch = () => {
         return;
     };
+
+    //const onPassData = (arg) => { console.log(arg); };
 
     const [weekevents, setWeekEvents] = useState([]);
 
@@ -32,18 +35,20 @@ const WeekendEvent = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
                 <View>
+                    <Text style={{
+                        fontFamily: 'Inter', fontSize: 16, lineHeight: 18, letterSpacing: -0.017, color: '#808080', width: width * 0.4, marginLeft: '3%', marginTop: '2%'
+                    }}>Current Location</Text>
                     <SearchBar
-                        title="Type location"
+                        //title="Type location"
+                        title="Mumbai"
                         onPressSearch={onPressSearch}
+                        style={{ marginLeft: '-2%', backgroundColor: 'transparent', fontSize: 13 }}
                     />
                 </View>
                 <View style={styles.weekend_container}>
-                    {/* <FlatList data={event}
-                        renderItem={({ item }) => <Text>{item.event_on}</Text>}
-                        keyExtractor={item => item.id} /> */}
                     <ScrollView>
                         {weekevents.map((arrayData) => (
-                            <View key={arrayData.id} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
+                            <View key={arrayData.id} slug_url={arrayData.slug_url} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
                                 <ImageBackground
                                     source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
                                     style={styles.image_size}
@@ -55,9 +60,9 @@ const WeekendEvent = ({ navigation }) => {
                                 <View style={styles.right_container}>
                                     <Text style={styles.right_heading}>{arrayData.title}</Text>
                                     <TouchableOpacity style={styles.right_container_btn}
-                                        onPress={() => navigation.navigate('WednesdayLoveNight')}>
-                                        <Text style={styles.right_btn}>Know More
-                                            {/* {arrayData.id} */}
+                                        onPress={() => navigation.navigate('WednesdayLoveNight', { slugUrl: arrayData.slug_url })}>
+                                        <Text style={styles.right_btn}>
+                                            Know More
                                         </Text>
                                     </TouchableOpacity>
                                 </View>

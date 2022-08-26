@@ -7,4 +7,10 @@ export const getWeeklyEvents = () => request(`${API_BASE_URL}/events`, {
 
 export const getEventTypes = () => request(`${API_BASE_URL}/eventType`, {
     method: "GET",
+
+});
+
+export const getEventData = (slug_url) => request(`${API_BASE_URL}/event/${slug_url}`, {
+    method: "GET",
+
 });

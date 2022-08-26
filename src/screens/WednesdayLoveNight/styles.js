@@ -1,6 +1,5 @@
-import { StyleSheet, Dimensions } from 'react-native';
-
-const { width, height } = Dimensions.get('window');
+import { StyleSheet } from 'react-native';
+import { height, width } from '../../services/helper';
 
 export default StyleSheet.create({
     image_background: {
@@ -8,6 +7,7 @@ export default StyleSheet.create({
         //height:height,
         width: 414,
         height: 332,
+        marginBottom: '120%'
     },
     left_arrow: {
         fontSize: 50,

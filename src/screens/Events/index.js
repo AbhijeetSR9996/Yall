@@ -15,15 +15,7 @@ const Events = () => {
             //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-
-
-    // const weekends = () => { eventtype.name == "Discover Dates" ? "()=>navigation.navigate('Discover')" : "() => navigation.navigate('WeekendEvent')" }
-    const weekends = () => {
-        if (eventtype.name == "wednesday nights") {
-            navigation.navigate('Discover');
-        }
-        else { navigation.navigate('WeekendEvent') }
-    }
+    //console.log(eventtype);
 
     return (
         <SafeAreaView >
@@ -33,7 +25,7 @@ const Events = () => {
                         {eventtype.map((arrayData) => (
                             <View key={arrayData.id} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
                                 <TouchableOpacity onPress={() => {
-                                    if (arrayData.name == "wednesday nights") {
+                                    if (arrayData.name == "WEEKEND EVENTS") {
                                         navigation.navigate('WeekendEvent')
                                     }
                                     else { navigation.navigate('Discover') }

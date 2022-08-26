@@ -7,8 +7,8 @@ export default StyleSheet.create({
         height: height,
     },
     first_container: {
-        //flex: 1,
-        flex: 0.9,
+        flex: 1,
+        //flex: 0.9,
         width: width,
         paddingTop: 50,
         paddingBottom: 0,

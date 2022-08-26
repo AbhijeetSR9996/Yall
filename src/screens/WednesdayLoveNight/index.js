@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Image, SafeAreaView } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, TouchableOpacity, ImageBackground, Image, SafeAreaView } from 'react-native';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { width, height } from '../../services/helper';
@@ -7,12 +7,31 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
+import { getEventData, getWeeklyEvents } from '../../api/events';
+import { ScrollView } from 'react-native-gesture-handler';
+import Moment from 'moment';
 
-const WednesdayLoveNight = ({ navigation }) => {
+
+const WednesdayLoveNight = ({ navigation, route }) => {
+    //const route = useRoute();
+    const [data, setData] = useState([]);
+    const { slugUrl } = route.params
+
+    useEffect(() => {
+        getEventData(slugUrl)
+            .then(res => setData(res.data))
+            //console.log(res.data))
+            .catch(err => console.log(err, 'Something went wrong!'));
+    }, [slugUrl]);
+    //console.log('route', route);
+    console.log('route', route.params)
 
     return (
         <SafeAreaView >
-            <ImageBackground style={styles.image_background} source={require('../../../assets/images/wednesday-night.png')}>
+            {/* <ScrollView>
+                {data?.map((arrayData) => ( */}
+            <ImageBackground style={styles.image_background} //source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
+                source={require('../../../assets/images/wednesday-night.png')}>
                 <View style={styles.main_view}>
                     <View style={{ marginRight: '95%', }}>
                         <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -21,7 +40,10 @@ const WednesdayLoveNight = ({ navigation }) => {
                     </View>
 
                     <View style={styles.main_view2}>
-                        <Text style={styles.big_text}>Wednesday Love Night </Text>
+                        <Text style={styles.big_text}>
+                            {/* {arrayData.name} */}
+                            Wednesday Love Night
+                        </Text>
                         <Text style={styles.small_text}>Lorem Ipsum is simply dummy text of the
                             printing and typesetting industry. Lorem Ipsum
                             has been the industry's standard. </Text>
@@ -46,7 +68,7 @@ const WednesdayLoveNight = ({ navigation }) => {
                                 <Text style={styles.buttonText}><Icon1 name="share-2" /> Share</Text>
                             </TouchableOpacity>
                         </View>
-                        {/* <Rectangular path="PaymentMethods" name="Book Now" style={styles.rectangularButton} /> */}
+
                         <TouchableOpacity
                             style={[
                                 {
@@ -98,6 +120,8 @@ const WednesdayLoveNight = ({ navigation }) => {
                     </View>
                 </View>
             </ImageBackground>
+            {/* ))}
+            </ScrollView> */}
         </SafeAreaView>
     )
 }
