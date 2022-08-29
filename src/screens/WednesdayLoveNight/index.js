@@ -7,31 +7,34 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
-import { getEventData, getWeeklyEvents } from '../../api/events';
+import { getEventData } from '../../api/events';
 import { ScrollView } from 'react-native-gesture-handler';
 import Moment from 'moment';
 
-
 const WednesdayLoveNight = ({ navigation, route }) => {
-    //const route = useRoute();
-    const [data, setData] = useState([]);
-    const { slugUrl } = route.params
+
+    const [fetch, setFetch] = useState([]);
+    const { slugUrl } = route.params;
 
     useEffect(() => {
         getEventData(slugUrl)
-            .then(res => setData(res.data))
+            .then(res => setFetch(res.data))
             //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, [slugUrl]);
-    //console.log('route', route);
-    console.log('route', route.params)
+    //console.log('route:', route);
+    //console.log('route params:', route.params);
+    //console.log(slugUrl);
+    //console.log(fetch);
+
 
     return (
         <SafeAreaView >
             {/* <ScrollView>
-                {data?.map((arrayData) => ( */}
+                {fetch.map((arrayData) => ( */}
             <ImageBackground style={styles.image_background} //source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
-                source={require('../../../assets/images/wednesday-night.png')}>
+                source={require('../../../assets/images/wednesday-night.png')}
+            >
                 <View style={styles.main_view}>
                     <View style={{ marginRight: '95%', }}>
                         <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -41,7 +44,7 @@ const WednesdayLoveNight = ({ navigation, route }) => {
 
                     <View style={styles.main_view2}>
                         <Text style={styles.big_text}>
-                            {/* {arrayData.name} */}
+                            {/* {arrayData.title} */}
                             Wednesday Love Night
                         </Text>
                         <Text style={styles.small_text}>Lorem Ipsum is simply dummy text of the

@@ -10,7 +10,7 @@ export const getEventTypes = () => request(`${API_BASE_URL}/eventType`, {
 
 });
 
-export const getEventData = (slug_url) => request(`${API_BASE_URL}/event/${slug_url}`, {
+export const getEventData = (slug_url) => request(`${API_BASE_URL}/event?slug_url=${slug_url}`, {
     method: "GET",
 
 });

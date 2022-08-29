@@ -22,10 +22,12 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
+import Pagination from 'react-native-animated-pagination-dot';
 
 
 const ManageSubscriptions = ({ navigation }) => {
 
+    const [curPage] = useState(0);
 
     const [isEnabledDistance, setIsEnabledDistance] = React.useState(false);
     const [isEnabledShow, setIsEnabledShow] = React.useState(false);
@@ -63,6 +65,9 @@ const ManageSubscriptions = ({ navigation }) => {
                 </View>
             </View>
             <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '0%' }} />
+
+            {/* <PaginationDot activeDotColor={'black'} curPage={curPage} maxPage={20} /> */}
+
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '10%', marginBottom: '0%' }}>
                 <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', height: 199, marginTop: '0%', alignSelf: 'center', borderRadius: 5, }}>
                     <View style={{ flex: 0.45, flexDirection: 'column', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-between', height: '100%', alignSelf: 'center' }}>

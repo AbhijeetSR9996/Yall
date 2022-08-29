@@ -7,6 +7,8 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { getWeeklyEvents } from '../../api/events';
 import { width } from '../../services/helper';
 import Moment from 'moment';
+import { S3_EVENTS_FOLDER } from '../../services/constant';
+import { getS3Url } from '../../services/helper';
 
 const WeekendEvent = ({ navigation }) => {
 
@@ -15,7 +17,6 @@ const WeekendEvent = ({ navigation }) => {
     };
 
     //const onPassData = (arg) => { console.log(arg); };
-
     const [weekevents, setWeekEvents] = useState([]);
 
     useEffect(() => {
@@ -36,21 +37,21 @@ const WeekendEvent = ({ navigation }) => {
                 </View>
                 <View>
                     <Text style={{
-                        fontFamily: 'Inter', fontSize: 16, lineHeight: 18, letterSpacing: -0.017, color: '#808080', width: width * 0.4, marginLeft: '3%', marginTop: '2%'
+                        fontFamily: 'Inter', fontSize: 16, lineHeight: 18, letterSpacing: -0.017, color: '#808080', width: width * 0.4, marginLeft: '17%', marginTop: '2%', marginBottom: '2%'
                     }}>Current Location</Text>
                     <SearchBar
                         //title="Type location"
                         title="Mumbai"
                         onPressSearch={onPressSearch}
-                        style={{ marginLeft: '-2%', backgroundColor: 'transparent', fontSize: 13 }}
+                    //style={{ fontSize: 13, }}
                     />
                 </View>
                 <View style={styles.weekend_container}>
                     <ScrollView>
                         {weekevents.map((arrayData) => (
-                            <View key={arrayData.id} slug_url={arrayData.slug_url} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
+                            <View key={arrayData.id} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
                                 <ImageBackground
-                                    source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
+                                    source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.front_banner_url) }}
                                     style={styles.image_size}
                                     imageStyle={{ borderRadius: 10 }}
                                     resizeMode="stretch">

@@ -3,6 +3,8 @@ import { View, Text, ImageBackground, Image, TouchableOpacity, ScrollView, SafeA
 import { useNavigation } from '@react-navigation/native';
 import styles from "./styles"
 import { getEventTypes } from '../../api/events';
+import { S3_EVENTS_FOLDER } from '../../services/constant';
+import { getS3Url } from '../../services/helper';
 
 const Events = () => {
     const navigation = useNavigation();
@@ -15,7 +17,8 @@ const Events = () => {
             //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-    //console.log(eventtype);
+
+
 
     return (
         <SafeAreaView >
@@ -23,7 +26,9 @@ const Events = () => {
                 <View style={styles.first_container}>
                     <ScrollView>
                         {eventtype.map((arrayData) => (
+
                             <View key={arrayData.id} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
+
                                 <TouchableOpacity onPress={() => {
                                     if (arrayData.name == "WEEKEND EVENTS") {
                                         navigation.navigate('WeekendEvent')
@@ -31,7 +36,7 @@ const Events = () => {
                                     else { navigation.navigate('Discover') }
                                 }}>
                                     <ImageBackground
-                                        source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
+                                        source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.banner_url) }}
                                         style={styles.weekend_event}
                                         imageStyle={{ borderRadius: 20 }}
                                         resizeMode="stretch">

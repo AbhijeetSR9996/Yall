@@ -23,10 +23,11 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
-import { Dropdown } from 'react-native-element-dropdown';
+//import { Dropdown } from 'react-native-element-dropdown';
+import { Dropdown } from 'react-native-select-dropdown';
 import { Picker } from '@react-native-picker/picker';
 import Slider from 'react-native-slider';
-import Gender from '../../component/Dropdown/Gender/index';
+import Gender from '../../component/Dropdown/Gender';
 import FilmsTV from '../../component/Dropdown/FilmsTV';
 import Hobbies from '../../component/Dropdown/Hobbies';
 import GoingOut from '../../component/Dropdown/GoingOut';
@@ -37,13 +38,23 @@ import DatePicker from 'react-native-neat-date-picker';
 import { Button } from 'react-native-paper';
 //import DateTimePicker from '@react-native-community/datetimepicker';
 //import DatePicker from 'react-native-date-picker';
+import Moment from 'moment';
+
 
 const EditAccount = ({ navigation }) => {
 
+    const [showDatePickers, setShowDatePickers] = useState(false);
     const [showDatePicker, setShowDatePicker] = useState(false);
+
+    const openDatePickers = () => { setShowDatePickers(true) }
     const openDatePicker = () => { setShowDatePicker(true) }
+
+    const onCancels = () => { setShowDatePickers(false) }
     const onCancel = () => { setShowDatePicker(false) }
-    const [date, setDate] = useState(new Date());
+
+
+    const [dateofbirth, setDateOfBirth] = useState([]);
+    const [dateevent, setDateEvent] = useState([]);
 
     const [speed, setSpeed] = useState('50%');
     const [slide, setSlide] = useState('Inactive');
@@ -56,7 +67,7 @@ const EditAccount = ({ navigation }) => {
         BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
         return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
     }, []);
-
+    //console.log('date: ', date);
 
     const [isEnabledAge, setIsEnabledAge] = useState(false);
     const [isEnabledDetails, setIsEnabledDetails] = useState(false);
@@ -959,33 +970,6 @@ const EditAccount = ({ navigation }) => {
 
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '155%' }}>
 
-                        {/* <TouchableOpacity onPress={() => setMode('date')} title="Your date of birth"><Text>Your date of birth</Text></TouchableOpacity>
-                        {show && <DateTimePicker
-                            testID="dateTimePicker"
-                            value={date}
-                            mode={mode}
-                            is24Hour={true}
-                            display="default"
-                            onChange={onChange} />} */}
-
-                        {/* <DatePicker
-                            mode='date'
-                            modal
-                            open={open}
-                            date={date}
-                            onConfirm={(date) => { setOpen(false), setDate(value) }}
-                            onCancel={() => { setOpen(false) }} /> */}
-
-
-                        {/* <DateTimePickerAndroid
-                            testID="dateTimePicker"
-                            value={mydate}
-                            mode={displaymode}
-                            is24Hour={true}
-                            display="default"
-                            onChange={changeSelectedDate} /> */}
-
-
                         {/* <TextInput
                             placeholder=' Your date of birth'
                             placeholderTextColor='#000000'
@@ -1007,13 +991,13 @@ const EditAccount = ({ navigation }) => {
                                 paddingLeft: '10%',
                             }} /> */}
 
-                        <TouchableOpacity onPress={openDatePicker} style={{
+                        <TouchableOpacity onPress={openDatePickers} style={{
                             height: '30%', width: '100%', justifyContent: 'center', alignItems: 'flex-start', backgroundColor: 'transparent', borderWidth: 2, borderColor: '#6B6B6B',
                         }}>
                             <Text style={{ left: '10%', fontFamily: 'BakbakOne-Regular', fontSize: 15, color: '#000000', lineHeight: 21, letterSpacing: -0.017, }}> Your date of birth</Text>
                         </TouchableOpacity>
-                        <DatePicker isVisible={showDatePicker} mode={'single'} onCancel={onCancel} //onConfirm={onConfirm}
-                            onConfirm={(date) => { setShowDatePicker(false); setDate(date) }} />
+                        <DatePicker isVisible={showDatePickers} mode={'single'} onCancel={onCancels}
+                            onConfirm={(dateofbirth) => { setShowDatePickers(false); setDateOfBirth(dateofbirth.dateString) }} />
 
                         <Text style={{
                             fontSize: 13,
@@ -1025,14 +1009,15 @@ const EditAccount = ({ navigation }) => {
                             //paddingVertical: 10,
                             //paddingVertical: 13,
                             //top: '30.3%',
-                            marginRight: '-10%',
+                            marginRight: '-13%',
                             marginBottom: '10%',
                             //right: '140%',
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
                         }}>
-                            {/* {firstDob} */}
+                            {/* {dateofbirth} */}
+                            {Moment(dateofbirth).format('DD/MM/YYYY')}
                         </Text>
 
                     </View>
@@ -1071,7 +1056,7 @@ const EditAccount = ({ navigation }) => {
                             <Text style={{ left: '10%', fontFamily: 'BakbakOne-Regular', fontSize: 15, color: '#000000', lineHeight: 21, letterSpacing: -0.017, }}> My Events</Text>
                         </TouchableOpacity>
                         <DatePicker isVisible={showDatePicker} mode={'single'} onCancel={onCancel} //onConfirm={onConfirm}
-                            onConfirm={(date) => { setShowDatePicker(false); setDate(date) }} />
+                            onConfirm={(dateevent) => { setShowDatePicker(false); setDateEvent(dateevent.dateString) }} />
 
                         <Text style={{
                             fontSize: 13,
@@ -1083,14 +1068,15 @@ const EditAccount = ({ navigation }) => {
                             //paddingVertical: 10,
                             //paddingVertical: 13,
                             //top: '30.3%',
-                            marginRight: '-10%',
+                            marginRight: '-13%',
                             marginBottom: '10%',
                             //right: '140%',
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
                         }}>
-                            {/* {firstEvent} */}
+                            {/* {dateevent} */}
+                            {Moment(dateevent).format('DD/MM/YYYY')}
                         </Text>
 
                     </View>

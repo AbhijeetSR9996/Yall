@@ -7,17 +7,17 @@ import { icons } from '../../../assets/icons/icons';
 import MobileNumber from '../../component/MobileNumber/index';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { height, width } from '../../services/helper';
-import { mobileNumber } from '../../api/users';
+import { handleNumber } from '../../component/MobileNumber/index';
 
 
 const SignedInMobile = ({ navigation }) => {
     const [value, setValue] = React.useState(null);
 
-    const Number = async () => {
-        const res = await mobileNumber(userData);
-        const data = await res.json();
-        console.log('success');
-    }
+    // const Number = async () => {
+    //     const res = await mobileNumber(userData);
+    //     const data = await res.json();
+    //     console.log('success');
+    // }
 
     return (
         <View style={{ flex: 1 }}>
@@ -25,7 +25,7 @@ const SignedInMobile = ({ navigation }) => {
             <MobileNumber />
 
             <View style={{ display: 'flex', marginTop: '130%', marginRight: '10%', alignItems: 'flex-end' }}>
-                <TouchableOpacity style={{ width: 20 }} onPress={() => [navigation.navigate('MobileCode1'), Number]}>
+                <TouchableOpacity style={{ width: 20 }} onPress={() => [navigation.navigate('MobileCode1'), handleNumber]}>
                     <View
                         style={{
                             justifyContent: 'flex-end',

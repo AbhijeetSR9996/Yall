@@ -22,23 +22,27 @@ export const MobileNumber = ({ navigation }) => {
     // const [userData, setUserData] = useState({
     //     mobilenumber: null,
     // });
-    const [value, setValue] = useState({
-        countrycode: null,
-        mobilenumber: null
-    });
-    // const [value, setValue] = useState(null);
-    // const [number, setNumber] = useState("");
-    // const handleNumber = (value) => {
-    //     setNumber(value);
-    // }
+    //console.log('userData', userData);
+    // const [value, setValue] = useState({
+    //     countrycode: null,
+    //     mobilenumber: null
+    // });
+    const [value, setValue] = useState(null);
+    const [number, setNumber] = useState("");
 
-    const onChangeCountry = (values, key) => {
-        setValue({ ...value, [key]: values });
-    };
+    const handleNumber = (value) => {
+        setNumber(value);
+    }
+    //console.log('Mobile number:', number);
+    console.log(number);
 
-    const onChangeNumber = (values, key) => {
-        setValue({ ...value, [key]: values });
-    };
+    // const onChangeCountry = (values, key) => {
+    //     setValue({ ...value, [key]: values });
+    // };
+
+    // const onChangeNumber = (values, key) => {
+    //     setValue({ ...value, [key]: values });
+    // };
 
 
     // const storePhoneNumber = async (value) => {
@@ -79,7 +83,6 @@ export const MobileNumber = ({ navigation }) => {
                     placeholderStyle={{
                         fontSize: 15,
                         alignItems: 'center',
-                        //fontWeight: '400',
                         height: 18,
                         fontFamily: 'Inter',
                         color: '#000000',
@@ -92,10 +95,10 @@ export const MobileNumber = ({ navigation }) => {
                     labelField="label"
                     valueField="value"
                     value={value}
-                    // onChange={item => {
-                    //     setValue(item.value);
-                    // }}
-                    onChange={(countrycode) => onChangeCountry(countrycode, "countrycode")}
+                    onChange={item => {
+                        setValue(item.value);
+                    }}
+                // onChange={(countrycode) => onChangeCountry(countrycode, "countrycode")}
                 />
 
                 <TextInput
@@ -103,8 +106,8 @@ export const MobileNumber = ({ navigation }) => {
                     placeholderTextColor="#000000"
                     keyboardType="numeric"
                     maxLength={10}
-                    // onChangeText={handleNumber}
-                    onChangeText={(mobilenumber) => onChangeNumber(mobilenumber, "mobilenumber")}
+                    onChangeText={handleNumber}
+                    // onChangeText={(mobilenumber) => onChangeNumber(mobilenumber, "mobilenumber")}
                     style={{
                         borderBottomWidth: 1.5,
                         width: 165,
