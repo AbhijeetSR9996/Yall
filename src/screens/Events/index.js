@@ -14,7 +14,6 @@ const Events = () => {
     useEffect(() => {
         getEventTypes()
             .then(res => setEventType(res.data))
-            //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
 
@@ -47,17 +46,6 @@ const Events = () => {
                         ))}
                     </ScrollView>
                 </View>
-                {/* <View style={styles.sceond_container}>
-                    <TouchableOpacity onPress={() => navigation.navigate('Discover')}>
-                        <ImageBackground
-                            source={require('../../../assets/images/discover-event.png')}
-                            style={styles.discover_dates}
-                            resizeMode="stretch">
-                            <Text style={styles.discover_text}>Discover Dates</Text>
-
-                        </ImageBackground>
-                    </TouchableOpacity>
-                </View> */}
 
             </ImageBackground>
         </SafeAreaView>

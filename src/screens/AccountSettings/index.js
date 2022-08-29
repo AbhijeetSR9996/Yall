@@ -19,18 +19,24 @@ import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import Slider from 'react-native-slider';
 import RangeSlider from 'react-native-range-slider';
+import { on } from 'npm';
 
 const AccountSettings = ({ navigation }) => {
 
     //const [modalVisible, setModalVisible] = useState(false);
 
     const [isActive, setIsActive] = useState(false);
-    const btnClick = () => { setIsActive(current => !current); }
-
-    //const wordSelected = "Mi"
+    const btnClick = () => {
+        setIsActive(current => !current);
+    }
 
     //const [min, setMin] = useState(0);
     //const [max, setMax] = useState(500);
+    // const onChange = (min, max) => {
+    //     console.log("max:", max);
+    //     console.log("min:", min);
+    // }
+
 
     const [range, setRange] = useState('50km.');
     const [sliding, setSliding] = useState('Inactive');
@@ -394,13 +400,6 @@ const AccountSettings = ({ navigation }) => {
                                 fontSize: 15,
                                 fontFamily: 'Inter',
                                 color: '#000000',
-                                //alignSelf: 'center',
-                                //justifyContent: 'center',
-                                //paddingVertical: 10,
-                                //paddingVertical: 13,
-                                //top: '30.3%',
-                                //marginRight: '10%',
-                                //marginTop: '5%',
                                 left: '20%',
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
@@ -428,10 +427,10 @@ const AccountSettings = ({ navigation }) => {
                             </Text>
                         </View>
                         <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%' }}>
-                            <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 50, left: 20 }} />
+                            {/* <Image source={require('../../../assets/images/scrollersettings2.png')} style={{ width: 50, left: 20 }} />
                             <Image source={require('../../../assets/images/scrollersettings.png')} style={{ width: 285, left: 10 }} />
                             <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 318 }} />
-                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 290 }} />
+                            <Image source={require('../../../assets/images/scrollerellipse.png')} style={{ right: 290 }} /> */}
                             {/* <RangeSlider
                                 defaultValue={[min, max]}
                                 className="slider"
@@ -454,6 +453,17 @@ const AccountSettings = ({ navigation }) => {
                                 }}
                                 style={{ flex: 1, height: 70, marginTop: 20, padding: 10 }}
                             /> */}
+                            {/* <RangeSlider
+                                min={10}
+                                step={30}
+                                max={100}
+                                tintColor={'#da0f22'}
+                                handleBorderWidth={1}
+                                handleBorderColor='#454d55'
+                                selectedMinimum={20}
+                                selectedMaximum={40}
+                                style={{ flex: 1, height: 70, padding: 10, backgroundColor: '#ddd' }}
+                                onChange={onChange} /> */}
                         </View>
                     </View>
                     <View style={{ flex: 0.5, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', marginTop: '0%', }}>
@@ -875,7 +885,7 @@ const AccountSettings = ({ navigation }) => {
                             lineHeight: 18,
                             letterSpacing: -0.017,
                             width: '90%',
-                        }}>
+                        }}>{isActive ? 'Km.' : 'Mi.'}
                         </Text>
                     </View>
                     <View

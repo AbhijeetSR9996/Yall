@@ -10,18 +10,20 @@ import { icons } from '../../../assets/icons/icons';
 import { getEventData } from '../../api/events';
 import { ScrollView } from 'react-native-gesture-handler';
 import Moment from 'moment';
+import { S3_EVENTS_FOLDER } from '../../services/constant';
+import { getS3Url } from '../../services/helper';
 
 const WednesdayLoveNight = ({ navigation, route }) => {
 
-    const [fetch, setFetch] = useState([]);
-    const { slugUrl } = route.params;
+    //const [fetch, setFetch] = useState([]);
+    //const { slugUrl } = route.params;
 
-    useEffect(() => {
-        getEventData(slugUrl)
-            .then(res => setFetch(res.data))
-            //console.log(res.data))
-            .catch(err => console.log(err, 'Something went wrong!'));
-    }, [slugUrl]);
+    // useEffect(() => {
+    //     getEventData(slugUrl)
+    //         .then(res => setFetch(res.data))
+
+    //         .catch(err => console.log(err, 'Something went wrong!'));
+    // }, [slugUrl]);
     //console.log('route:', route);
     //console.log('route params:', route.params);
     //console.log(slugUrl);
@@ -34,6 +36,7 @@ const WednesdayLoveNight = ({ navigation, route }) => {
                 {fetch.map((arrayData) => ( */}
             <ImageBackground style={styles.image_background} //source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
                 source={require('../../../assets/images/wednesday-night.png')}
+            //source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.banner_url) }}
             >
                 <View style={styles.main_view}>
                     <View style={{ marginRight: '95%', }}>
