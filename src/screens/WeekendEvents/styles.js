@@ -1,6 +1,6 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { width, height } from '../../services/helper';
 
-const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
     main_container: {

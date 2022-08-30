@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, FlatList, ImageBackground, Image, SafeAreaView } from 'react-native';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -8,8 +8,22 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
+import { getWeeklyEvents, getEventData } from '../../api/events';
 
-const JoinParty = ({ navigation }) => {
+const JoinParty = ({ navigation, route }) => {
+
+    const [weekevents, setWeekEvents] = useState([]);
+    //const { slugUrl } = route.params;
+
+    useEffect(() => {
+        getEventData()
+            .then(res => setWeekEvents(res.data))
+            //console.log(res.data))
+            .catch(err => console.log(err, 'Something went wrong!'));
+    }, []);
+
+    //console.log(weekevents);
+    //console.log(route);
 
     return (
         <View style={styles.main_view}>
@@ -62,7 +76,11 @@ const JoinParty = ({ navigation }) => {
                             right: '2%'
                         },
                     ]}
-                    onPress={() => { navigation.navigate('WednesdayLoveNight') }}>
+                    //onPress={() => { navigation.navigate('WednesdayLoveNight') }}
+                    onPress={() => navigation.navigate('WednesdayLoveNight',
+                        // { slugUrl: weekevents.slug_url }
+                        { data: weekevents[0] }
+                    )}>
                     <View style={{
                         left: 10,
                         top: 8,

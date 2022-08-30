@@ -16,16 +16,16 @@ const WeekendEvent = ({ navigation }) => {
         return;
     };
 
-    //const onPassData = (arg) => { console.log(arg); };
+
     const [weekevents, setWeekEvents] = useState([]);
 
     useEffect(() => {
         getWeeklyEvents()
-            .then(res => setWeekEvents(res.data))
-            //console.log(res.data))
+            .then(res => //setWeekEvents(res.data))
+                console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-    //console.log('data', weekevents);
+
 
     return (
         <SafeAreaView style={styles.main_container}>

@@ -15,28 +15,26 @@ import { getS3Url } from '../../services/helper';
 
 const WednesdayLoveNight = ({ navigation, route }) => {
 
-    //const [fetch, setFetch] = useState([]);
-    //const { slugUrl } = route.params;
+    const [fetch, setFetch] = useState([]);
+    const { slugUrl } = route.params;
 
-    // useEffect(() => {
-    //     getEventData(slugUrl)
-    //         .then(res => setFetch(res.data))
+    useEffect(() => {
+        getEventData(slugUrl)
+            .then(res => setFetch(res.data))
 
-    //         .catch(err => console.log(err, 'Something went wrong!'));
-    // }, [slugUrl]);
+            .catch(err => console.log(err, 'Something went wrong!'));
+    }, [slugUrl]);
     //console.log('route:', route);
     //console.log('route params:', route.params);
     //console.log(slugUrl);
-    //console.log(fetch);
+    console.log(fetch);
 
 
     return (
         <SafeAreaView >
-            {/* <ScrollView>
-                {fetch.map((arrayData) => ( */}
-            <ImageBackground style={styles.image_background} //source={{ uri: 'https://yall-app.s3.ap-south-1.amazonaws.com/event_media/logo_1661342738849.png' }}
-                source={require('../../../assets/images/wednesday-night.png')}
-            //source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.banner_url) }}
+            <ImageBackground style={styles.image_background}
+                //source={require('../../../assets/images/wednesday-night.png')}
+                source={{ uri: getS3Url(S3_EVENTS_FOLDER, fetch.cover_banner_url) }}
             >
                 <View style={styles.main_view}>
                     <View style={{ marginRight: '95%', }}>
@@ -47,22 +45,17 @@ const WednesdayLoveNight = ({ navigation, route }) => {
 
                     <View style={styles.main_view2}>
                         <Text style={styles.big_text}>
-                            {/* {arrayData.title} */}
-                            Wednesday Love Night
+                            {fetch.title}
                         </Text>
-                        <Text style={styles.small_text}>Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard. </Text>
+                        <Text style={styles.small_text}>{fetch.short_desc} </Text>
 
                         <Text style={[styles.icon_text, { marginLeft: '6%' }]}>
-                            <Image source={require('../../../assets/images/location.png')} style={{ width: 12, height: 17 }} />     Sector-62 Noida</Text>
+                            <Image source={require('../../../assets/images/location.png')} style={{ width: 12, height: 17 }} />     {fetch.location}</Text>
                         <Text style={styles.icon_text}>
-                            <Image source={require('../../../assets/images/watch.png')} />    07:00 PM</Text>
+                            <Image source={require('../../../assets/images/watch.png')} />    {Moment(fetch.event_on).format('DD MMM YYYY')}</Text>
                         <Text style={[styles.icon_text]}>
-                            <Image source={require('../../../assets/images/calendar.png')} />   20 Dec. 2020</Text>
-                        <Text style={styles.small_text2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard.</Text>
+                            <Image source={require('../../../assets/images/calendar.png')} />   {Moment(fetch.event_on).format('HH:MM A')}</Text>
+                        <Text style={styles.small_text2}>{fetch.long_desc}</Text>
 
                         <View style={styles.main_view3}>
                             <TouchableOpacity style={styles.buttonContainer}
@@ -126,8 +119,6 @@ const WednesdayLoveNight = ({ navigation, route }) => {
                     </View>
                 </View>
             </ImageBackground>
-            {/* ))}
-            </ScrollView> */}
         </SafeAreaView>
     )
 }

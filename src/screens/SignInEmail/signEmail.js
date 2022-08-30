@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { icons, imageicon } from '../../../assets/icons/icons';
 import { emailStyles } from '../SignInEmail/emailStyles';
+
+
 const SignEmail = ({ navigation }) => {
   return (
     <View style={emailStyles.container}>

@@ -16,7 +16,7 @@ const Events = () => {
             .then(res => setEventType(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-
+    console.log(eventtype);
 
 
     return (
