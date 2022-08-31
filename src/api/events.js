@@ -14,3 +14,4 @@ export const getEventData = (slug_url) => request(`${API_BASE_URL}/event?slug_ur
     method: "GET",
 
 });
+

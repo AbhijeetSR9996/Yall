@@ -8,7 +8,7 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
-import { getWeeklyEvents, getEventData } from '../../api/events';
+import { getWeeklyEvents } from '../../api/events';
 
 const JoinParty = ({ navigation, route }) => {
 
@@ -16,17 +16,17 @@ const JoinParty = ({ navigation, route }) => {
     //const { slugUrl } = route.params;
 
     useEffect(() => {
-        getEventData()
+        getWeeklyEvents()
             .then(res => setWeekEvents(res.data))
             //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
 
-    //console.log(weekevents);
-    //console.log(route);
+    console.log("data", weekevents);
+    //console.log("route", route);
 
     return (
-        <View style={styles.main_view}>
+        <View style={styles.main_view} >
             <Image
                 style={{ position: 'absolute' }}
                 source={require('../../../assets/images/joinpartybg.png')}
@@ -42,7 +42,6 @@ const JoinParty = ({ navigation, route }) => {
                     fontFamily: "BakbakOne-Regular",
                     color: "#FFFFFF",
                     fontSize: 35,
-                    //fontWeight: "400",
                     alignSelf: 'center',
                     letterSpacing: -0.017,
                     lineHeight: 49,
@@ -51,7 +50,6 @@ const JoinParty = ({ navigation, route }) => {
                     fontFamily: 'Inter',
                     color: "#FFFFFF",
                     fontSize: 15,
-                    //fontWeight: "400",
                     letterSpacing: -0.017,
                     width: 324,
                     //width: '90%',
@@ -78,8 +76,8 @@ const JoinParty = ({ navigation, route }) => {
                     ]}
                     //onPress={() => { navigation.navigate('WednesdayLoveNight') }}
                     onPress={() => navigation.navigate('WednesdayLoveNight',
-                        // { slugUrl: weekevents.slug_url }
-                        { data: weekevents[0] }
+                        { slugUrl: weekevents.slug_url }
+                        // { data: weekevents[0] }
                     )}>
                     <View style={{
                         left: 10,
@@ -117,16 +115,6 @@ const JoinParty = ({ navigation, route }) => {
                         }}>{icons.rightarrow}</View>
                     </View>
                 </TouchableOpacity>
-                {/* <Rectangular
-                    path="WednesdayLoveNight"
-                    style={{
-                        width: 10,
-                        position: 'absolute',
-                        alignSelf: 'center',
-                        top: '40%',
-                    }}
-                    name="Book Now"
-                /> */}
             </View>
             <View style={{ backgroundColor: 'transparent', flex: 0.5, alignItems: 'center', justifyContent: 'flex-start' }}></View>
         </View>

@@ -14,9 +14,10 @@ const Events = () => {
     useEffect(() => {
         getEventTypes()
             .then(res => setEventType(res.data))
+            //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-    console.log(eventtype);
+    //console.log(eventtype);
 
 
     return (
@@ -30,15 +31,16 @@ const Events = () => {
 
                                 <TouchableOpacity onPress={() => {
                                     if (arrayData.name == "WEEKEND EVENTS") {
-                                        navigation.navigate('WeekendEvent')
+                                        navigation.navigate('WeekendEvent', { event_id: arrayData.id })
                                     }
-                                    else { navigation.navigate('Discover') }
+                                    else { navigation.navigate('Discover', { event_id: arrayData.id }) }
                                 }}>
                                     <ImageBackground
                                         source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.banner_url) }}
                                         style={styles.weekend_event}
                                         imageStyle={{ borderRadius: 20 }}
-                                        resizeMode="stretch">
+                                        resizeMode="stretch"
+                                    >
                                         <Text style={styles.weekend_text}>{arrayData.name}</Text>
                                     </ImageBackground>
                                 </TouchableOpacity>

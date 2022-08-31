@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -12,9 +12,19 @@ import { icons } from '../../../assets/icons/icons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { height, width } from '../../services/helper';
 import { Rectangular } from '../../component/Buttons/Rectangular/index';
+import { getAllUsers } from '../../api/users';
 
 const SignUpEmail = ({ navigation }) => {
 
+  const [allusersdata, setAllUsersData] = useState([]);
+
+  useEffect(() => {
+    getAllUsers()
+      .then(res => setAllUsersData(res.data))
+      //console.log(res.data))
+      .catch(err => console.log(err, 'Something went wrong!'));
+  }, []);
+  console.log('data of users: ', allusersdata);
 
   return (
     <View style={{ flex: 1, backgroundColor: '#FFFFFF', justifyContent: 'center', flexDirection: 'column', alignItems: 'stretch' }}>
@@ -68,7 +78,7 @@ const SignUpEmail = ({ navigation }) => {
                 right: '2%'
               },
             ]}
-            onPress={() => { navigation.navigate('MainBottomNavigation') }}>
+            onPress={() => { navigation.navigate('MainBottomNavigation', { id: allusersdata.id }) }}>
 
             <View style={{
               left: 10,

@@ -1,18 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, Image, ImageBackground, TouchableOpacity, Modal, Pressable } from 'react-native';
 import { Styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import { height, width } from '../../services/helper';
+import { getUsers } from '../../api/users';
 
-const ProfileDisplay = () => {
+const ProfileDisplay = ({ route }) => {
   const navigation = useNavigation();
 
   const [modalVisible, setModalVisible] = useState(false);
+  const [userdata, setUserData] = useState([]);
+  //const { id } = route.params;
+
+  useEffect(() => {
+    getUsers()
+      .then(res => //setUserData(res.data))
+        console.log(res.data))
+      .catch(err => console.log(err, 'Something went wrong!'));
+  }, []);
+  console.log('data of user: ', userdata);
+  console.log('route:', route);
+  console.log('route params:', route.params);
 
   return (
     <View style={Styles.main}>
       <View style={Styles.container}>
-        <Text style={Styles.text}> Priya Sharma </Text>
+        <Text style={Styles.text}> Priya Sharma
+          {/* {userdata.full_name}  */}
+        </Text>
       </View>
 
       <View style={[Styles.container2, {

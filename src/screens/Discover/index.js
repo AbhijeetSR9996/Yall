@@ -5,21 +5,23 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from "../../component/SearchBar";
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { getWeeklyEvents } from '../../api/events';
+import { S3_EVENTS_FOLDER } from '../../services/constant';
+import { getS3Url } from '../../services/helper';
 
 const Discover = ({ navigation }) => {
     const onPressSearch = () => {
         return;
     };
 
-    const [weekevents, setWeekEvents] = useState([]);
+    const [discoverevents, setDiscoverEvents] = useState([]);
 
     useEffect(() => {
         getWeeklyEvents()
-            .then(res => //setWeekEvents(res.data))
-                console.log(res.data))
+            .then(res => setDiscoverEvents(res.data))
+            //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-
+    //console.log('data', discoverevents);
     return (
         <SafeAreaView style={styles.main_container}>
             <ScrollView>
@@ -35,112 +37,25 @@ const Discover = ({ navigation }) => {
                     />
                 </View>
                 <View style={styles.discover_second_container}>
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
+                    <ScrollView>
+                        {discoverevents.map((arrayData) => (
+                            <TouchableOpacity key={arrayData.id} onPress={() => navigation.navigate('JoinParty')}
+                                style={{ marginVertical: '2%', left: '0.5%' }}>
+                                <ImageBackground
+                                    source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.cover_banner_url) }}
+                                    style={styles.image_size}
+                                    resizeMode="stretch"
+                                >
+                                    <Text style={styles.discover_top_heading_text}>Music Mode</Text>
+                                    <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
+                                    <Text style={styles.discover_sub_title_text}>Discover</Text>
+                                </ImageBackground>
 
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
+                            </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigation.navigate('JoinParty')}
-                        style={{ marginVertical: '2%', left: '0.5%' }}>
-                        <ImageBackground
-                            source={require('../../../assets/images/weekend.png')}
-                            style={styles.image_size}
-                            resizeMode="stretch"
-                        >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
-                            <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
-                            <Text style={styles.discover_sub_title_text}>Discover</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-
-
+                        ))}</ScrollView>
                 </View>
+
             </ScrollView>
         </SafeAreaView>
     )

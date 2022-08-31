@@ -36,7 +36,7 @@ const SignEmail = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity
               style={emailStyles.Touchablemail2}
-              onPress={() => navigation.navigate('MainBottomNavigation')}>
+              onPress={() => navigation.navigate('SignUpEmail')}>
               <View style={{ flexDirection: 'row' }}>
                 <Image
                   source={imageicon.profile3}
@@ -50,7 +50,7 @@ const SignEmail = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity
               style={emailStyles.Touchablemail3}
-              onPress={() => navigation.navigate('MainBottomNavigation')}>
+              onPress={() => navigation.navigate('SignUpEmail')}>
               <View style={{ flexDirection: 'row' }}>
                 <Image source={imageicon.profile} style={{ margin: 15 }} />
                 <View>

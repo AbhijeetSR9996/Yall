@@ -22,7 +22,6 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
-import Pagination from 'react-native-animated-pagination-dot';
 
 
 const ManageSubscriptions = ({ navigation }) => {
@@ -65,8 +64,6 @@ const ManageSubscriptions = ({ navigation }) => {
                 </View>
             </View>
             <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '0%' }} />
-
-            {/* <PaginationDot activeDotColor={'black'} curPage={curPage} maxPage={20} /> */}
 
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '10%', marginBottom: '0%' }}>
                 <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', height: 199, marginTop: '0%', alignSelf: 'center', borderRadius: 5, }}>
