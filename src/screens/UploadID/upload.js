@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -17,10 +17,14 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import { icons } from '../../../assets/icons/icons';
 import styles from './styles';
 import { height, width } from '../../services/helper';
-
+import Slider from 'react-native-slider';
 
 
 const Upload = ({ navigation }) => {
+
+  const [speed, setSpeed] = useState('50%');
+  const [slide, setSlide] = useState('Inactive');
+
   const requestCameraPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
@@ -222,7 +226,20 @@ const Upload = ({ navigation }) => {
         ]}>
         Aadhaar card
       </Text>
-      <Image
+
+      <Slider
+        style={{ width: 250, height: 25, marginLeft: '20%', marginTop: '0%', }}
+        maximumValue={1}
+        minimumValue={0}
+        value={.5}
+        minimumTrackTintColor='#000000'
+        maximumTrackTintColor='rgba(110, 62, 137, 0.2)'
+        thumbColor='#AD5DD7'
+        onValueChange={(value) => setSpeed(parseInt(value * 100))}
+        onSlidingStart={() => setSlide('Sliding')}
+      />
+
+      {/* <Image
         source={require('../../../assets/images/scroller.png')}
         style={{
           width: '73%',
@@ -231,7 +248,7 @@ const Upload = ({ navigation }) => {
           //left: -25,
           marginLeft: '20%'
         }}
-      />
+      /> */}
 
 
       <TouchableOpacity

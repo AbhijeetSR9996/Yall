@@ -45,9 +45,10 @@ const Discover = ({ navigation }) => {
                         <ImageBackground
                             source={{ uri: getS3Url(S3_EVENTS_FOLDER, item.cover_banner_url) }}
                             style={styles.image_size}
+                            imageStyle={{ borderRadius: 5 }}
                             resizeMode="stretch"
                         >
-                            <Text style={styles.discover_top_heading_text}>Music Mode</Text>
+                            <Text style={styles.discover_top_heading_text}>{item.title}</Text>
                             <Text style={styles.discover_title_text}>Add Your Anthem!</Text>
                             <Text style={styles.discover_sub_title_text}>Discover</Text>
                         </ImageBackground>
@@ -58,7 +59,6 @@ const Discover = ({ navigation }) => {
                     numColumns={2} />
 
             </View>
-
 
         </SafeAreaView>
     )

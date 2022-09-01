@@ -36,7 +36,6 @@ import Food from '../../component/Dropdown/Food';
 import Pets from '../../component/Dropdown/Pets';
 import DatePicker from 'react-native-neat-date-picker';
 import { Button } from 'react-native-paper';
-
 import Moment from 'moment';
 
 
@@ -950,7 +949,6 @@ const EditAccount = ({ navigation }) => {
                                 style={{ width: 215, height: 40, marginRight: '20%', marginTop: '30%' }}
                                 maximumValue={1}
                                 minimumValue={0}
-
                                 value={.5}
                                 minimumTrackTintColor='#000000'
                                 maximumTrackTintColor='rgba(110, 62, 137, 0.2)'

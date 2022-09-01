@@ -24,7 +24,6 @@ export default StyleSheet.create({
         width: width * 0.44,
         height: height * 0.30,
         margin: '3%'
-
     },
     discover_top_heading_text: {
         fontWeight: '800',
