@@ -8,22 +8,21 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
-import { getWeeklyEvents } from '../../api/events';
+import { getEventData } from '../../api/events';
 
-const JoinParty = ({ navigation }) => {
+const JoinParty = ({ navigation, route }) => {
 
-    const [weekevents, setWeekEvents] = useState([]);
-
+    const [events, setEvents] = useState([]);
+    const { slugUrl } = route.params;
 
     useEffect(() => {
-        getWeeklyEvents()
-            .then(res => setWeekEvents(res.data))
-
+        getEventData(slugUrl)
+            .then(res => setEvents(res.data))
+            //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
-    }, []);
+    }, [slugUrl]);
 
-    console.log("data", weekevents);
-
+    console.log("data:", events);
 
     return (
         <View style={styles.main_view} >
@@ -52,9 +51,7 @@ const JoinParty = ({ navigation }) => {
                     fontSize: 15,
                     letterSpacing: -0.017,
                     width: 324,
-
                     height: 54,
-
                     textAlign: 'center',
                     lineHeight: 18
                 }}>Lorem Ipsum is simply dummy text of the
@@ -75,7 +72,7 @@ const JoinParty = ({ navigation }) => {
                         },
                     ]}
                     onPress={() => navigation.navigate('WednesdayLoveNight',
-                        { slugUrl: weekevents.slug_url }
+                        { slugUrl: events.slug_url }
 
                     )}>
                     <View style={{

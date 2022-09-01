@@ -3,14 +3,14 @@ import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 export default StyleSheet.create({
-    main_container:{
-        backgroundColor:"#FFFFFF"
+    main_container: {
+        backgroundColor: "#FFFFFF"
     },
     letf_arrow: {
         fontSize: 50,
         color: '#000000',
         marginLeft: 23,
-        fontWeight:"200",
+        fontWeight: "200",
     },
     discover_second_container: {
         display: 'flex',
@@ -31,6 +31,7 @@ export default StyleSheet.create({
         fontSize: 30,
         lineHeight: 30,
         marginTop: "82%",
+        //marginTop: "72%",
         marginLeft: "7%",
         marginRight: '10%',
         alignItems: 'center',
@@ -49,7 +50,7 @@ export default StyleSheet.create({
         fontWeight: "400",
         fontSize: 8,
         marginLeft: "7%",
-        marginTop:"3%",
+        marginTop: "3%",
         lineHeight: 10,
         color: "#FFFFFF",
     }
