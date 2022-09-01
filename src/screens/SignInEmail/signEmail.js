@@ -12,7 +12,7 @@ const SignEmail = ({ navigation }) => {
         resizeMode="stretch"
         style={{
           flex: 1,
-          //justifyContent: 'center'
+
         }}
       >
         <View style={emailStyles.mainCardView}>

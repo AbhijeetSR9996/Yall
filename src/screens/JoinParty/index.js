@@ -10,20 +10,20 @@ import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
 import { getWeeklyEvents } from '../../api/events';
 
-const JoinParty = ({ navigation, route }) => {
+const JoinParty = ({ navigation }) => {
 
     const [weekevents, setWeekEvents] = useState([]);
-    //const { slugUrl } = route.params;
+
 
     useEffect(() => {
         getWeeklyEvents()
             .then(res => setWeekEvents(res.data))
-            //console.log(res.data))
+
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
 
     console.log("data", weekevents);
-    //console.log("route", route);
+
 
     return (
         <View style={styles.main_view} >
@@ -52,9 +52,9 @@ const JoinParty = ({ navigation, route }) => {
                     fontSize: 15,
                     letterSpacing: -0.017,
                     width: 324,
-                    //width: '90%',
+
                     height: 54,
-                    //alignSelf:'center',
+
                     textAlign: 'center',
                     lineHeight: 18
                 }}>Lorem Ipsum is simply dummy text of the
@@ -74,10 +74,9 @@ const JoinParty = ({ navigation, route }) => {
                             right: '2%'
                         },
                     ]}
-                    //onPress={() => { navigation.navigate('WednesdayLoveNight') }}
                     onPress={() => navigation.navigate('WednesdayLoveNight',
                         { slugUrl: weekevents.slug_url }
-                        // { data: weekevents[0] }
+
                     )}>
                     <View style={{
                         left: 10,
@@ -86,19 +85,19 @@ const JoinParty = ({ navigation, route }) => {
                         borderWidth: 1,
                         borderRightWidth: 0,
                         height: height * 0.07,
-                        //alignItems: 'center',
+
                         alignSelf: 'center',
                         backgroundColor: '#DCC7E1',
                         position: 'relative',
                     }}>
                         <Text style={{
-                            //fontWeight: '900',
+
                             fontSize: 18,
                             fontFamily: 'BakbakOne-Regular',
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
+
                             top: '30.3%',
                             right: '28%',
                         }}>Book Now</Text>

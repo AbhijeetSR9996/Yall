@@ -1,5 +1,5 @@
-import { StyleSheet, Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
+import { StyleSheet } from 'react-native';
+import { height, width } from '../../services/helper';
 
 export default StyleSheet.create({
     image_bg: {
@@ -38,18 +38,18 @@ export default StyleSheet.create({
         fontFamily: 'BakbakOne-Regular',
         color: "#000000",
         fontSize: 30,
-        //fontWeight: "700",
+
         alignSelf: 'center',
-        //marginHorizontal: '10%',
+
         letterSpacing: -0.017,
-        //width: width * 0.7,
+
     },
     desc_text: {
         fontFamily: 'Inter',
         fontSize: 15,
-        //fontWeight: "400",
+
         letterSpacing: -0.017,
-        //width: 324,
+
         width: '90%',
         height: 54,
         color: '#AAAAAA',
@@ -75,13 +75,13 @@ export default StyleSheet.create({
         position: 'relative',
     },
     buttonText: {
-        //fontWeight: '900',
+
         fontSize: 18,
         fontFamily: 'BakbakOne-Regular',
         color: '#000000',
         alignSelf: 'center',
         justifyContent: 'center',
-        //paddingVertical: 10,
+
         top: '30.3%',
         right: '27%',
     },

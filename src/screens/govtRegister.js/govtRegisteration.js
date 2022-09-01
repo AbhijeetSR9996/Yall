@@ -31,11 +31,7 @@ const GovtRegisterID = ({ navigation }) => {
           </View>
           <View style={govtStyles.textMain}>
             <Text style={govtStyles.textIDCard}>Driver’s License </Text>
-            {/* <Text
-              style={[govtStyles.textIDCard, { marginTop: -25, left: '30%' }]}>
-              {' '}
-              License
-            </Text> */}
+
             <Text style={govtStyles.textCard}>
               Lorem Ipsum is simply dummy text of the printing
             </Text>
@@ -64,18 +60,18 @@ const GovtRegisterID = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </Card>
-      {/* <CircularButton path="Upload" style={{ marginTop: 280 }} /> */}
+
       <View style={{ display: 'flex', marginTop: '78%', marginRight: '10%', alignItems: 'flex-end' }}>
         <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('Upload')}>
           <View
             style={{
-              //backgroundColor: '#DCC7E1',
+
               justifyContent: 'flex-end',
               marginTop: '100%',
               borderRadius: 50,
               width: 40
             }}>
-            {/* {icons.rightcirclearrow} */}
+
             <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
           </View>
         </TouchableOpacity>

@@ -25,8 +25,7 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
-//import DateTimePicker from '@react-native-community/datetimepicker';
-//import DatePicker from 'react-native-date-picker';
+
 
 const data = [
     { label: 'Gender', value: '' },
@@ -55,16 +54,14 @@ const ManageBookings = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -81,7 +78,7 @@ const ManageBookings = ({ navigation }) => {
                     <ImageBackground
                         source={require('../../../assets/images/managebookings_img.png')}
                         style={{
-                            //width: width * 0.55,
+
                             width: width * 0.50,
                             height: height * 0.20,
                             margin: '3%',
@@ -103,7 +100,7 @@ const ManageBookings = ({ navigation }) => {
                     }}>
                         <Text style={{
                             fontFamily: 'BakbakOne-Regular',
-                            //fontWeight: '400',
+
                             fontSize: 17,
                             lineHeight: 28,
                             letterSpacing: -0.017,
@@ -111,7 +108,7 @@ const ManageBookings = ({ navigation }) => {
                             display: 'flex',
                             color: '#232323',
                             width: width * 0.5,
-                            //width: '100%',
+
                             paddingLeft: '4%',
                             marginLeft: '-9%',
                             marginTop: '9%'
@@ -151,9 +148,9 @@ const ManageBookings = ({ navigation }) => {
                                     borderWidth: 1.5,
                                     borderColor: '#C4C4C4',
                                     backgroundColor: '#FFFFFF',
-                                    //marginTop: '5%',
+
                                     width: width * 0.17,
-                                    //marginLeft: '10%',
+
                                     marginLeft: '-5%',
                                     height: '50%'
                                 }}
@@ -162,8 +159,7 @@ const ManageBookings = ({ navigation }) => {
                                         fontFamily: 'Inter',
                                         fontSize: 11,
                                         color: '#4B4B4B',
-                                        //textAlign: 'center',
-                                        //justifyContent:'center'
+
                                     }}>View</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={{
@@ -174,9 +170,9 @@ const ManageBookings = ({ navigation }) => {
                                     borderWidth: 1.5,
                                     borderColor: '#C4C4C4',
                                     backgroundColor: '#FFFFFF',
-                                    //marginTop: '5%',
+
                                     width: width * 0.17,
-                                    //marginLeft: '10%',
+
                                     left: '-6%',
                                     height: '50%'
                                 }}>
@@ -184,8 +180,7 @@ const ManageBookings = ({ navigation }) => {
                                         fontFamily: 'Inter',
                                         fontSize: 11,
                                         color: '#4B4B4B',
-                                        //textAlign: 'center',
-                                        //justifyContent:'center'
+
                                     }}>Cancel</Text>
                                 </TouchableOpacity>
                             </View>

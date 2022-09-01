@@ -29,16 +29,13 @@ const AboutPrivacy = ({ navigation }) => {
         industry. Lorem Ipsum has been the industry's standard.
       </Text>
       <View >
-        {/* <Rectangular path="Gender" name="Accept" style={{ marginTop: '70%' }} /> */}
         <TouchableOpacity
           style={{
             marginTop: '85%',
-            //marginTop: '60%',
             alignSelf: 'center',
             width: width * 0.8,
             height: height * 0.07,
             borderWidth: 1,
-            //alignSelf: 'center',
             right: '2%'
           }}
           onPress={() => { navigation.navigate('Gender') }}>
@@ -49,16 +46,15 @@ const AboutPrivacy = ({ navigation }) => {
             borderWidth: 1,
             borderRightWidth: 0,
             height: height * 0.07,
-            //alignItems: 'center',
+
             alignSelf: 'center',
             backgroundColor: '#DCC7E1',
             position: 'relative',
           }}>
             <Text style={{
-              //fontWeight: '400',
-              //fontWeight: '900',
+
               fontSize: 17,
-              //fontFamily: 'Bakbak One',
+
               fontFamily: 'BakbakOne-Regular',
               color: '#000000',
               alignSelf: 'center',
@@ -86,20 +82,6 @@ const AboutPrivacy = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View >
-        {/* <TouchableOpacity
-          style={[
-            signupStyles.touchablebuttons,
-            { alignSelf: 'center', top: '90%' },
-          ]}>
-          <View style={signupStyles.borderView}>
-            <Text style={[signupStyles.loginButtonText, { textAlign: 'center' }]}>
-              Decline
-            </Text>
-            <View style={signupStyles.borderView1}>
-              <Text style={signupStyles.arrowIcon}>{icons.rightarrow}</Text>
-            </View>
-          </View>
-        </TouchableOpacity> */}
         <TouchableOpacity>
           <Text style={{ alignSelf: 'center', fontSize: 15, fontFamily: 'Inter', lineHeight: 18, letterSpacing: -0.017, color: '#000000', marginTop: '7%', marginLeft: '-55%' }}>Decline</Text>
         </TouchableOpacity>

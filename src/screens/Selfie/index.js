@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
-//import { Styles } from '../../screens/ProfileDisplay/styles';
+
 import { Card } from 'react-native-paper';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
-//import { splashStyles } from '../splashScreen/splashStyles';
+
 import Styles from './styles';
 import { icons } from '../../../assets/icons/icons';
 
@@ -24,12 +24,12 @@ const Selfie = ({ navigation }) => {
                 },
             );
             if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                //console.log('You can use the camera');
+
             } else {
-                //console.log('Camera permission denied');
+
             }
         } catch (err) {
-            //console.warn(err);
+
         }
     };
     const takePhotoFromCamera = () => {
@@ -65,10 +65,7 @@ const Selfie = ({ navigation }) => {
                     text: 'Camera',
                     onPress: () => takePhotoFromCamera(),
                 },
-                // {
-                //   text: 'Choose from Gallery',
-                //   onPress: () => choosePhotoFromLibrary(),
-                // },
+
             ],
             { cancelable: false },
         );
@@ -104,11 +101,7 @@ const Selfie = ({ navigation }) => {
                         <View style={Styles.borderView1}>{icons.rightarrow}</View>
                     </View>
                 </TouchableOpacity>
-                {/* <Rectangular
-                    path="UserName"
-                    style={Styles.button}
-                    name="Continue"
-                /> */}
+
             </ImageBackground>
         </View>
     );

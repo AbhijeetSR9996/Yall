@@ -36,9 +36,9 @@ const Edit = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        //console.log('You can use the camera');
+
       } else {
-        //console.log('Camera permission denied');
+
       }
     } catch (err) {
       console.warn(err);
@@ -147,10 +147,10 @@ const Edit = ({ navigation }) => {
           {
             height: 30,
             width: 60,
-            //bottom: '20.5%',
+
             marginTop: '18%',
             marginBottom: '10%',
-            //left: 150,
+
             left: '43%',
             alignItems: 'center',
             justifyContent: 'center',
@@ -163,7 +163,7 @@ const Edit = ({ navigation }) => {
             {
               height: 20,
               width: 30,
-              //left: '0%',
+
               alignSelf: 'center'
             },
           ]}
@@ -176,7 +176,7 @@ const Edit = ({ navigation }) => {
           {
             fontFamily: 'Inter',
             fontSize: 15,
-            //marginTop: '20%',
+
             top: '-20%',
             left: '10%',
             color: '#B4B4B4',

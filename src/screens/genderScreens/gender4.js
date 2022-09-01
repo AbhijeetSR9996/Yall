@@ -312,16 +312,7 @@ const Gender4 = ({ navigation }) => {
           }}>{icons.rightarrow}</View>
         </View>
       </TouchableOpacity>
-      {/* <Rectangular
-        path="AddPhoto"
-        style={{
-          width: 10,
-          position: 'absolute',
-          alignSelf: 'center',
-          top: '90%',
-        }}
-        name="Continue [4/4]"
-      /> */}
+
     </View>
   );
 };

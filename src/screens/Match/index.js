@@ -56,16 +56,16 @@ const Match = ({ navigation }) => {
                 <Text style={[{
                   paddingVertical: '0%',
                   letterSpacing: -0.017,
-                  //fontWeight: '600',
+
                   fontSize: 10,
                   lineHeight: 12,
                   alignSelf: 'center',
                   color: '#000000',
                   fontFamily: 'Inter',
                   width: 324,
-                  //width: '90%',
+
                   height: 54,
-                  //alignSelf:'center',
+
                   textAlign: 'center',
                   margin: '4%',
                 }]}>Your Turn</Text>
@@ -102,16 +102,16 @@ const Match = ({ navigation }) => {
                 <Text style={[{
                   paddingVertical: '0%',
                   letterSpacing: -0.017,
-                  //fontWeight: '600',
+
                   fontSize: 10,
                   lineHeight: 12,
                   alignSelf: 'center',
                   color: '#000000',
                   fontFamily: 'Inter',
                   width: 324,
-                  //width: '90%',
+
                   height: 54,
-                  //alignSelf:'center',
+
                   textAlign: 'center',
                   margin: '4%',
                 }]}>Your Turn</Text>
@@ -147,16 +147,16 @@ const Match = ({ navigation }) => {
                 <Text style={[{
                   paddingVertical: '0%',
                   letterSpacing: -0.017,
-                  //fontWeight: '600',
+
                   fontSize: 10,
                   lineHeight: 12,
                   alignSelf: 'center',
                   color: '#000000',
                   fontFamily: 'Inter',
                   width: 324,
-                  //width: '90%',
+
                   height: 54,
-                  //alignSelf:'center',
+
                   textAlign: 'center',
                   margin: '4%',
                 }]}>Your Turn</Text>

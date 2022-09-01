@@ -25,7 +25,7 @@ const Gender = ({ navigation }) => {
         <View
           style={{
             borderWidth: 1.5,
-            // top: 110,
+
             width: 'auto',
             height: 44,
             left: 22,
@@ -515,7 +515,7 @@ const Gender = ({ navigation }) => {
             fontSize: 15,
             width: 270,
             right: '240%',
-            //right: '280%',
+
             bottom: -35,
             color: '#AAAAAA',
             fontFamily: 'Inter'
@@ -523,13 +523,13 @@ const Gender = ({ navigation }) => {
           about we sue your gender
         </Text>
         <Text style={{
-          fontSize: 15, width: 270, //right: '792%', 
+          fontSize: 15, width: 270,
           right: '698%', bottom: -50, color: '#AAAAAA', fontFamily: 'Inter'
         }}>
           to recommend people on Yall
         </Text>
       </View>
-      {/* <CircularButton path="Gender1" style={{ marginTop: 80 }} /> */}
+
       <View style={{ display: 'flex', marginTop: '35%', marginRight: '10%', alignItems: 'flex-end' }}>
         <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('Gender1')}>
           <View
@@ -538,10 +538,10 @@ const Gender = ({ navigation }) => {
               justifyContent: 'flex-end',
               marginTop: '100%',
               borderRadius: 50,
-              //width: width * .105
+
               width: 40
             }}>
-            {/* {icons.rightcirclearrow} */}
+
             <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
           </View>
         </TouchableOpacity>

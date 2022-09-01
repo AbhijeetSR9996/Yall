@@ -68,15 +68,14 @@ const Help = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
+
                             marginLeft: '20%'
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -101,7 +100,7 @@ const Help = ({ navigation }) => {
                             width: 311,
                             height: 288,
                         }} />
-                    {/* </TouchableOpacity> */}
+
                 </View>
 
                 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', marginTop: '0%', }}>
@@ -110,14 +109,12 @@ const Help = ({ navigation }) => {
                         alignSelf: 'center',
                         height: '80%',
                         borderBottomWidth: 1,
-                        //borderRadius: 10,
+
                         borderBottomColor: '#000000',
-                        //backgroundColor: 'lime',
+
                     }}>
                         <TouchableOpacity>
-                            {/* <Icons name="search"
-                                size={30} style={{ right: '2%', top: '105%' }}
-                            ></Icons> */}
+
                             <Image source={require('../../../assets/images/searchicon.png')}
                                 style={{ right: '0%', top: '127%' }} />
                         </TouchableOpacity>
@@ -142,12 +139,12 @@ const Help = ({ navigation }) => {
 
                 <TouchableOpacity
                     style={{
-                        //top: '8%',
+
                         alignSelf: 'center',
                         width: width * 0.8,
                         height: height * 0.07,
                         borderWidth: 1,
-                        //alignSelf: 'center',
+
                         right: '2%',
                         marginTop: '10%',
                         marginBottom: '2%'
@@ -197,12 +194,12 @@ const Help = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={{
-                        //top: '8%',
+
                         alignSelf: 'center',
                         width: width * 0.8,
                         height: height * 0.07,
                         borderWidth: 1,
-                        //alignSelf: 'center',
+
                         right: '2%',
                         marginTop: '5%',
                         marginBottom: '2%'
@@ -215,25 +212,22 @@ const Help = ({ navigation }) => {
                         borderWidth: 1,
                         borderRightWidth: 0,
                         height: height * 0.07,
-                        //alignItems: 'center',
+
                         alignSelf: 'center',
                         backgroundColor: '#DCC7E1',
                         position: 'relative',
                     }}>
                         <Text style={{
-                            //fontWeight: '400',
-                            //fontWeight: '900',
+
                             fontSize: 17,
-                            //fontFamily: 'Bakbak One',
+
                             fontFamily: 'BakbakOne-Regular',
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
+
                             top: '30.3%',
                             right: '10%',
-                            //right: '20%',
                             lineHeight: 25,
                             letterSpacing: -0.017
                         }}>Safety, Security and Privacy</Text>
@@ -252,12 +246,12 @@ const Help = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={{
-                        //top: '8%',
+
                         alignSelf: 'center',
                         width: width * 0.8,
                         height: height * 0.07,
                         borderWidth: 1,
-                        //alignSelf: 'center',
+
                         right: '2%',
                         marginTop: '5%',
                         marginBottom: '25%'
@@ -270,25 +264,23 @@ const Help = ({ navigation }) => {
                         borderWidth: 1,
                         borderRightWidth: 0,
                         height: height * 0.07,
-                        //alignItems: 'center',
+
                         alignSelf: 'center',
                         backgroundColor: '#DCC7E1',
                         position: 'relative',
                     }}>
                         <Text style={{
-                            //fontWeight: '400',
-                            //fontWeight: '900',
+
                             fontSize: 17,
-                            //fontFamily: 'Bakbak One',
+
                             fontFamily: 'BakbakOne-Regular',
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
+
                             top: '30.3%',
                             right: '37%',
-                            //right: '20%',
+
                             lineHeight: 25,
                             letterSpacing: -0.017
                         }}>Support</Text>

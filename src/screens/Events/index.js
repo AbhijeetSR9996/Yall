@@ -14,10 +14,10 @@ const Events = () => {
     useEffect(() => {
         getEventTypes()
             .then(res => setEventType(res.data))
-            //console.log(res.data))
+
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-    //console.log(eventtype);
+
 
 
     return (

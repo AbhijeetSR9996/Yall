@@ -33,12 +33,12 @@ const AddPhoto = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the camera');
+
       } else {
-        console.log('Camera permission denied');
+
       }
     } catch (err) {
-      console.warn(err);
+
     }
   };
   const takePhotoFromCamera = () => {
@@ -101,7 +101,7 @@ const AddPhoto = ({ navigation }) => {
             height: 30,
             width: 30,
             borderRadius: 10,
-            // top: 200,
+
           }}
           onPress={() => createTwoButtonAlert()}>
           <Text>{icons.plus}</Text>
@@ -114,7 +114,7 @@ const AddPhoto = ({ navigation }) => {
             height: 30,
             width: 30,
             borderRadius: 10,
-            // top: 200,
+
           }}
           onPress={() => createTwoButtonAlert()}>
           <Text>{icons.plus}</Text>
@@ -126,7 +126,7 @@ const AddPhoto = ({ navigation }) => {
             height: 30,
             width: 30,
             borderRadius: 10,
-            // top: 200,
+
           }}
           onPress={() => createTwoButtonAlert()}>
           <Text>{icons.plus}</Text>
@@ -140,7 +140,7 @@ const AddPhoto = ({ navigation }) => {
             height: 30,
             width: 30,
             borderRadius: 10,
-            // top: 200,
+
           }}
           oonPress={() => createTwoButtonAlert()}>
           <Text>{icons.plus}</Text>
@@ -152,7 +152,7 @@ const AddPhoto = ({ navigation }) => {
             height: 30,
             width: 30,
             borderRadius: 10,
-            // top: 200,
+
           }}
           onPress={() => createTwoButtonAlert()}>
           <Text>{icons.plus}</Text>
@@ -169,16 +169,7 @@ const AddPhoto = ({ navigation }) => {
           <Text>{icons.plus}</Text>
         </TouchableOpacity>
       </View>
-      {/* <Rectangular
-        path="Edit"
-        style={{
-          width: 10,
-          position: 'absolute',
-          alignSelf: 'center',
-          top: '90%',
-        }}
-        name="Continue"
-      /> */}
+
       <TouchableOpacity
         style={{
           top: '63%',
@@ -186,7 +177,7 @@ const AddPhoto = ({ navigation }) => {
           width: width * 0.8,
           height: height * 0.07,
           borderWidth: 1,
-          //alignSelf: 'center',
+
           right: '2%'
         }}
         onPress={() => { navigation.navigate('Edit') }}>
@@ -197,25 +188,23 @@ const AddPhoto = ({ navigation }) => {
           borderWidth: 1,
           borderRightWidth: 0,
           height: height * 0.07,
-          //alignItems: 'center',
+
           alignSelf: 'center',
           backgroundColor: '#DCC7E1',
           position: 'relative',
         }}>
           <Text style={{
-            //fontWeight: '400',
-            //fontWeight: '900',
+
             fontSize: 17,
-            //fontFamily: 'Bakbak One',
+
             fontFamily: 'BakbakOne-Regular',
             color: '#000000',
             alignSelf: 'center',
             justifyContent: 'center',
-            //paddingVertical: 10,
-            //paddingVertical: 13,
+
             top: '30.3%',
             right: '31%',
-            //right: '20%',
+
             lineHeight: 25,
             letterSpacing: -0.017
           }}>Continue </Text>

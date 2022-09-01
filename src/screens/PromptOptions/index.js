@@ -47,16 +47,14 @@ const PromptOptions = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,

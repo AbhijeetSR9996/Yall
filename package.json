@@ -23,7 +23,6 @@
     "query-string": "^7.1.1",
     "react": "17.0.2",
     "react-native": "0.68.2",
-    "react-native-animated-pagination-dot": "^0.3.2",
     "react-native-app-intro-slider": "^4.0.4",
     "react-native-confirmation-code-field": "^7.3.0",
     "react-native-element-dropdown": "^2.2.0",

@@ -21,7 +21,7 @@ const WeekendEvent = ({ navigation }) => {
     useEffect(() => {
         getWeeklyEvents()
             .then(res => setWeekEvents(res.data))
-            //console.log(res.data))
+
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
     console.log(weekevents);
@@ -39,10 +39,10 @@ const WeekendEvent = ({ navigation }) => {
                         fontFamily: 'Inter', fontSize: 16, lineHeight: 18, letterSpacing: -0.017, color: '#808080', width: width * 0.4, marginLeft: '17%', marginTop: '2%', marginBottom: '2%'
                     }}>Current Location</Text>
                     <SearchBar
-                        //title="Type location"
+
                         title="Mumbai"
                         onPressSearch={onPressSearch}
-                    //style={{ fontSize: 13, }}
+
                     />
                 </View>
                 <View style={styles.weekend_container}>

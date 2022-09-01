@@ -39,7 +39,7 @@ const UpdatePhoneNumber = ({ navigation }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
-            {/* <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}> */}
+
             <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginTop: '2%', marginBottom: '5%' }}>
                 <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'row' }}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -47,16 +47,14 @@ const UpdatePhoneNumber = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -68,7 +66,7 @@ const UpdatePhoneNumber = ({ navigation }) => {
 
             <ScrollView style={{ backgroundColor: '#FFFFFF', height: '90%', flex: 1, width: width, marginTop: '0%', marginBottom: '0%', bottom: '0%' }}>
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-start', height: 49, marginTop: '5%', alignSelf: 'center', borderRadius: 5, marginBottom: '-5%' }}>
-                    {/* <TouchableOpacity> */}
+
                     <Text style={{
                         fontFamily: 'BakbakOne-Regular',
                         fontSize: 18,
@@ -76,7 +74,7 @@ const UpdatePhoneNumber = ({ navigation }) => {
                         lineHeight: 25,
                         letterSpacing: -0.017
                     }}>Phone Number</Text>
-                    {/* </TouchableOpacity> */}
+
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'row', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 45, marginTop: '0%', alignSelf: 'center', borderRadius: 5, borderWidth: 1, borderColor: '#6B6B6B' }}>
@@ -86,23 +84,22 @@ const UpdatePhoneNumber = ({ navigation }) => {
                             placeholderTextColor='#4B4B4B'
                             keyboardType='numeric'
                             maxLength={10}
-                            //onChangeText={handleThird}
+
                             style={{
                                 width: '90%',
                                 height: '100%',
                                 fontSize: 15,
                                 color: '#4B4B4B',
-                                //fontWeight: '400',
+
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 fontFamily: 'Inter',
-                                //textAlign: 'left',
+
                                 alignSelf: 'center',
                                 backgroundColor: 'transparent',
-                                //borderWidth: 1,
-                                //borderRadius: 5,
+
                                 borderColor: '#6B6B6B',
-                                //paddingLeft: '-10%'
+
                             }} />
                     </View>
                     <View style={{
@@ -142,7 +139,7 @@ const UpdatePhoneNumber = ({ navigation }) => {
                             color: '#000000',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                         }}>Update My Phone Number</Text>
                     </TouchableOpacity>
                 </View>

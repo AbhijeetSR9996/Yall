@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Dimensions, TouchableOpacity } from 'react-native';
 import Styles from './styles';
-//import { signupStyles } from '../../screens/SignUp/signupStyles';
+
 import { Dropdown } from 'react-native-element-dropdown';
 import { CircularButton } from '../../component/Buttons/circular';
 import { icons } from '../../../assets/icons/icons';
@@ -19,39 +19,16 @@ const data = [
 
 export const MobileNumber = ({ navigation }) => {
 
-    // const [userData, setUserData] = useState({
-    //     mobilenumber: null,
-    // });
-    //console.log('userData', userData);
-    // const [value, setValue] = useState({
-    //     countrycode: null,
-    //     mobilenumber: null
-    // });
+
     const [value, setValue] = useState(null);
     const [number, setNumber] = useState("");
 
     const handleNumber = (value) => {
         setNumber(value);
     }
-    //console.log('Mobile number:', number);
+
     console.log(number);
 
-    // const onChangeCountry = (values, key) => {
-    //     setValue({ ...value, [key]: values });
-    // };
-
-    // const onChangeNumber = (values, key) => {
-    //     setValue({ ...value, [key]: values });
-    // };
-
-
-    // const storePhoneNumber = async (value) => {
-    //     try {
-    //         await AsyncStorage.setItem("phonenumber", JSON.stringify(number));
-    //     } catch (error) {
-    //         console.log(error);
-    //     }
-    // };
 
     return (
 
@@ -98,7 +75,7 @@ export const MobileNumber = ({ navigation }) => {
                     onChange={item => {
                         setValue(item.value);
                     }}
-                // onChange={(countrycode) => onChangeCountry(countrycode, "countrycode")}
+
                 />
 
                 <TextInput
@@ -107,7 +84,7 @@ export const MobileNumber = ({ navigation }) => {
                     keyboardType="numeric"
                     maxLength={10}
                     onChangeText={handleNumber}
-                    // onChangeText={(mobilenumber) => onChangeNumber(mobilenumber, "mobilenumber")}
+
                     style={{
                         borderBottomWidth: 1.5,
                         width: 165,
@@ -125,7 +102,7 @@ export const MobileNumber = ({ navigation }) => {
                     left: 25,
                     top: 130,
                     fontFamily: 'Inter',
-                    //fontWeight: '400',
+
                     fontSize: 15,
                     display: 'flex',
                     alignItems: 'center',
@@ -140,7 +117,7 @@ export const MobileNumber = ({ navigation }) => {
                     left: 25,
                     top: 130,
                     fontFamily: 'Inter',
-                    //fontWeight: '400',
+
                     fontSize: 15,
                     display: 'flex',
                     alignItems: 'center',
@@ -148,7 +125,7 @@ export const MobileNumber = ({ navigation }) => {
                 }}>
                 account.
             </Text>
-            {/* <TouchableOpacity onPress={storeUser} style={{ top: '20%' }}><Text>Click</Text></TouchableOpacity> */}
+
         </View>
     );
 };

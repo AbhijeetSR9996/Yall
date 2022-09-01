@@ -18,10 +18,10 @@ const Discover = ({ navigation }) => {
     useEffect(() => {
         getWeeklyEvents()
             .then(res => setDiscoverEvents(res.data))
-            //console.log(res.data))
+
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-    //console.log('data', discoverevents);
+
     return (
         <SafeAreaView style={styles.main_container}>
             <ScrollView>

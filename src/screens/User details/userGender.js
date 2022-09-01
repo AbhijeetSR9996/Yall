@@ -558,10 +558,10 @@ const UserGender = ({ navigation }) => {
               justifyContent: 'flex-end',
               marginTop: '100%',
               borderRadius: 50,
-              //width: width * .105
+
               width: 40
             }}>
-            {/* {icons.rightcirclearrow} */}
+
             <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
           </View>
         </TouchableOpacity>

@@ -26,12 +26,12 @@ const PaymentMethods = ({ navigation }) => {
                 },
             );
             if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                //console.log('You can use the camera');
+
             } else {
-                //console.log('Camera permission denied');
+
             }
         } catch (err) {
-            //console.warn(err);
+
         }
     };
     const takePhotoFromCamera = () => {
@@ -293,14 +293,7 @@ const PaymentMethods = ({ navigation }) => {
                             }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
                         </View>
                     </TouchableOpacity>
-                    {/* <TouchableOpacity
-                        style={styles.payment_button}
-                        onPress={() => navigation.navigate('BookingConfirm')}>
-                        <View style={styles.payment_buttonview}>
-                            <Text style={styles.payment_buttontext}>Pay Now</Text>
-                            <View style={styles.payment_buttonicon}>{icons.rightarrow}</View>
-                        </View>
-                    </TouchableOpacity> */}
+
                 </View>
             </View>
 

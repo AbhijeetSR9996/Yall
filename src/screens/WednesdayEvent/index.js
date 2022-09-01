@@ -25,8 +25,7 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
-//import DateTimePicker from '@react-native-community/datetimepicker';
-//import DatePicker from 'react-native-date-picker';
+
 
 const data = [
     { label: 'Gender', value: '' },
@@ -48,7 +47,7 @@ const WednesdayEvent = ({ navigation }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
-            {/* <View style={{ flex: 0.1, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}> */}
+
             <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginTop: '2%', marginBottom: '5%' }}>
                 <View style={{ flex: 1.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'row' }}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -56,16 +55,14 @@ const WednesdayEvent = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -94,7 +91,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -105,7 +102,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -119,7 +116,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -130,7 +127,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -144,7 +141,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -155,7 +152,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -169,7 +166,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -180,7 +177,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -204,7 +201,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -215,7 +212,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -229,7 +226,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -240,7 +237,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -254,7 +251,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -265,7 +262,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>
@@ -279,7 +276,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginLeft: '10%'
                         }}>01/02/2022</Text>
                     </TouchableOpacity>
@@ -290,7 +287,7 @@ const WednesdayEvent = ({ navigation }) => {
                             color: '#4B4B4B',
                             lineHeight: 18,
                             letterSpacing: -0.017,
-                            //left: '1%'
+
                             marginRight: '4%'
                         }}>Mumbai</Text>
                     </TouchableOpacity>

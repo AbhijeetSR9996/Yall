@@ -55,13 +55,9 @@ const UserName = ({ navigation }) => {
           onValueChange={toggleSwitch}
           value={isEnabled}
         />
-        {/* <TouchableOpacity style={{backgroundColor:'lime',}}>
-          <Image source={require('../../../assets/images/toggle1.png')} />
-          <Image source={require('../../../assets/images/toggle2.png')} style={{bottom:'38%',left:'15%'}}/>
-          <Image source={require('../../../assets/images/toggle3.png')} style={{top:'-60%'}}/>
-        </TouchableOpacity> */}
+
       </View>
-      {/* <CircularButton path="UserDOB" style={{ top: -25 }} /> */}
+
       <View style={{ display: 'flex', marginTop: '114%', marginRight: '10%', alignItems: 'flex-end' }}>
         <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('UserDOB')}>
           <View
@@ -70,7 +66,7 @@ const UserName = ({ navigation }) => {
               justifyContent: 'flex-end',
               marginTop: '100%',
               borderRadius: 50,
-              //width: width * .105
+
               width: 40
             }}>
             <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />

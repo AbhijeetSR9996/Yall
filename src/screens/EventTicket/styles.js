@@ -10,7 +10,7 @@ export default StyleSheet.create({
         flexDirection: 'column'
     },
     first_view: {
-        //flex:1,
+
         flex: 0.5,
         flexDirection: 'column',
         alignItems: 'center',
@@ -38,26 +38,20 @@ export default StyleSheet.create({
         alignSelf: 'center',
         height: 418,
         alignItems: 'center',
-        //justifyContent: 'space-around',
+
         color: '#e8e6e6',
         borderRadius: 20,
-        // borderWidth:1,
-        // borderStyle:'dashed',
-        // borderColor:'#000000'
+
     },
     card_view2: {
         width: '90%',
-        //alignSelf: 'center',
+
         height: 91,
         alignItems: 'center',
         justifyContent: 'center',
         color: '#e8e6e6',
         borderRadius: 20,
-        // borderStyle:'dashed',
-        // borderWidth:1 ,
-        // borderColor:'#000000',
-        //bottom:'22%'
-        //marginTop:'-0.5%',
+
     },
     view1: {
         flex: 1,

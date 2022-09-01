@@ -27,8 +27,7 @@ import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-//import DateTimePicker from '@react-native-community/datetimepicker';
-//import DatePicker from 'react-native-date-picker';
+
 
 const monthdata = [
     { label: '01', value: '01' },
@@ -99,16 +98,14 @@ const RemoveConfirmation = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -129,8 +126,7 @@ const RemoveConfirmation = ({ navigation }) => {
                             lineHeight: 15,
                             marginLeft: '16%',
                             top: '5%'
-                            //textAlign: 'center',
-                            //justifyContent:'center',
+
                         }}> Kotak Mahindra Bank debit card***</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -139,8 +135,7 @@ const RemoveConfirmation = ({ navigation }) => {
                             lineHeight: 15,
                             marginLeft: '3%',
                             bottom: '3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center',
+
                         }}>Remove:                                                                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem the industry's standard.Ipsum is simply dummy text of the printing and typesetting industry. Lorem the industry's standard.text of the printing and typesetting industry. Lorem the industry's standard.Ipsum is simply dummy text of the printing and typesetting industry. Lorem the industry's standard.</Text>
 
                     </View>
@@ -150,12 +145,12 @@ const RemoveConfirmation = ({ navigation }) => {
 
                 <TouchableOpacity
                     style={{
-                        //top: '8%',
+
                         alignSelf: 'center',
                         width: width * 0.8,
                         height: height * 0.07,
                         borderWidth: 1,
-                        //alignSelf: 'center',
+
                         right: '2%',
                         marginTop: '10%',
                         marginBottom: '7%'
@@ -168,25 +163,23 @@ const RemoveConfirmation = ({ navigation }) => {
                         borderWidth: 1,
                         borderRightWidth: 0,
                         height: height * 0.07,
-                        //alignItems: 'center',
+
                         alignSelf: 'center',
                         backgroundColor: '#DCC7E1',
                         position: 'relative',
                     }}>
                         <Text style={{
-                            //fontWeight: '400',
-                            //fontWeight: '900',
+
                             fontSize: 17,
-                            //fontFamily: 'Bakbak One',
+
                             fontFamily: 'BakbakOne-Regular',
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
+
                             top: '30.3%',
                             right: '27%',
-                            //right: '20%',
+
                             lineHeight: 25,
                             letterSpacing: -0.017
                         }}>Yes</Text>
@@ -206,12 +199,12 @@ const RemoveConfirmation = ({ navigation }) => {
 
                 <TouchableOpacity
                     style={{
-                        //top: '8%',
+
                         alignSelf: 'center',
                         width: width * 0.8,
                         height: height * 0.07,
                         borderWidth: 1,
-                        //alignSelf: 'center',
+
                         right: '2%',
                         marginTop: '0%',
                         marginBottom: '5%'
@@ -225,25 +218,23 @@ const RemoveConfirmation = ({ navigation }) => {
                         borderColor: '#FFFFFF',
                         borderRightWidth: 0,
                         height: height * 0.07,
-                        //alignItems: 'center',
+
                         alignSelf: 'center',
                         backgroundColor: '#000000',
-                        //position: 'relative',
+
                     }}>
                         <Text style={{
-                            //fontWeight: '400',
-                            //fontWeight: '900',
+
                             fontSize: 17,
-                            //fontFamily: 'Bakbak One',
+
                             fontFamily: 'BakbakOne-Regular',
                             color: '#FFFFFF',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
+
                             top: '30.3%',
                             right: '27.5%',
-                            //right: '20%',
+
                             lineHeight: 25,
                             letterSpacing: -0.017
                         }}>No</Text>
@@ -270,7 +261,7 @@ const RemoveConfirmation = ({ navigation }) => {
                             color: '#857E7E',
                             lineHeight: 18,
                             width: 264,
-                            //width: '60%',
+
                             textAlign: 'center',
                             justifyContent: 'center'
                         }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem the industry's standard.</Text>

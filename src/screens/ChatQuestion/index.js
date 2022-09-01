@@ -40,12 +40,12 @@ const ChatQuestion = ({ navigation }) => {
                 },
             );
             if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                console.log('You can use the camera');
+
             } else {
-                console.log('Camera permission denied');
+
             }
         } catch (err) {
-            console.warn(err);
+
         }
     };
     const takePhotoFromCamera = () => {
@@ -93,7 +93,7 @@ const ChatQuestion = ({ navigation }) => {
                         <Text style={{
                             color: '#000000',
                             fontFamily: 'BakbakOne-Regular',
-                            //fontWeight: '400',
+
                             fontSize: 15,
                             lineHeight: 21,
                             letterSpacing: -0.017,
@@ -139,8 +139,7 @@ const ChatQuestion = ({ navigation }) => {
                                     fontSize: 15,
                                     color: '#000000',
                                     backgroundColor: 'transparent',
-                                    //top: '60%',
-                                    //left: '25%',
+
                                     fontFamily: 'Inter',
                                     fontWeight: '400',
                                     letterSpacing: -0.017,
@@ -157,10 +156,9 @@ const ChatQuestion = ({ navigation }) => {
                                 <Text style={{
                                     fontSize: 15,
                                     color: '#000000',
-                                    //top: '60%',
-                                    //left: '25%',
+
                                     fontFamily: 'Inter',
-                                    //fontWeight: '400',
+
                                     letterSpacing: -0.017,
                                     lineHeight: 18
                                 }}> Hey </Text>
@@ -192,8 +190,7 @@ const ChatQuestion = ({ navigation }) => {
                                     fontSize: 15,
                                     color: '#000000',
                                     backgroundColor: 'transparent',
-                                    //top: '60%',
-                                    //left: '25%',
+
                                     fontFamily: 'Inter',
                                     fontWeight: '400',
                                     letterSpacing: -0.017,
@@ -210,10 +207,9 @@ const ChatQuestion = ({ navigation }) => {
                                 <Text style={{
                                     fontSize: 15,
                                     color: '#000000',
-                                    //top: '60%',
-                                    //left: '25%',
+
                                     fontFamily: 'Inter',
-                                    //fontWeight: '400',
+
                                     letterSpacing: -0.017,
                                     lineHeight: 18
                                 }}> Hey </Text>
@@ -244,8 +240,7 @@ const ChatQuestion = ({ navigation }) => {
                                         fontSize: 15,
                                         color: '#000000',
                                         backgroundColor: 'transparent',
-                                        //top: '60%',
-                                        //left: '25%',
+
                                         fontFamily: 'Inter',
                                         fontWeight: '400',
                                         letterSpacing: -0.017,
@@ -262,10 +257,9 @@ const ChatQuestion = ({ navigation }) => {
                                     <Text style={{
                                         fontSize: 15,
                                         color: '#000000',
-                                        //top: '60%',
-                                        //left: '25%',
+
                                         fontFamily: 'Inter',
-                                        //fontWeight: '400',
+
                                         letterSpacing: -0.017,
                                         lineHeight: 18
                                     }}> Djadsahk, </Text>
@@ -279,12 +273,11 @@ const ChatQuestion = ({ navigation }) => {
                         <View style={{
                             backgroundColor: '#000000',
                             width: '80%',
-                            //width: 365,
-                            //height: 388,
+
                             height: '138%',
-                            //left: '-3%',
+
                             marginTop: '5%',
-                            //marginLeft: '20%',
+
                             paddingHorizontal: '10%',
                             borderTopLeftRadius: 20,
                             borderTopRightRadius: 20,
@@ -300,9 +293,8 @@ const ChatQuestion = ({ navigation }) => {
                                     height: '100%',
                                     bottom: '2%',
                                     left: '4%',
-                                    //marginLeft: '20%',
-                                    //marginRight: '-3%',
-                                    //alignSelf:'center',
+
+
                                     paddingHorizontal: '10%',
                                     marginHorizontal: '-23%'
                                 }]}
@@ -323,10 +315,7 @@ const ChatQuestion = ({ navigation }) => {
                                     imageStyle={{
                                         borderTopLeftRadius: 20,
                                         borderTopRightRadius: 20,
-                                        //borderWidth: 1.5,
-                                        //borderColor: '#000000'
-                                        //borderBottomWidth:1.5,
-                                        //borderBottomColor:'#000000'
+
                                     }}>
                                     <View style={{
                                         flex: 0.3, width: '111.5%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', borderTopLeftRadius: 20,
@@ -336,14 +325,14 @@ const ChatQuestion = ({ navigation }) => {
                                         <Text style={{
                                             width: 264,
                                             height: 18,
-                                            //left: 73,
+
                                             fontFamily: 'Inter',
-                                            //fontWeight: '400',
+
                                             fontSize: 13,
                                             lineHeight: 18,
                                             color: '#000000',
                                             textAlign: "center",
-                                            //top: '25%',
+
 
                                         }}>Ask a question for you both to answer:</Text>
                                     </View>
@@ -352,11 +341,11 @@ const ChatQuestion = ({ navigation }) => {
                                     }}>
                                         <Text style={{
                                             width: 213,
-                                            //height: 74,
+
                                             height: '20%',
-                                            //left: 73,
+
                                             fontFamily: 'BakbakOne-Regular',
-                                            //fontWeight: '400',
+
                                             fontSize: 22,
                                             lineHeight: 42,
                                             color: '#FFFFFF',
@@ -365,11 +354,11 @@ const ChatQuestion = ({ navigation }) => {
                                         }}>What is your </Text>
                                         <Text style={{
                                             width: 213,
-                                            //height: 74,
+
                                             height: '20%',
-                                            //left: 73,
+
                                             fontFamily: 'BakbakOne-Regular',
-                                            //fontWeight: '400',
+
                                             fontSize: 22,
                                             lineHeight: 42,
                                             color: '#FFFFFF',
@@ -388,14 +377,14 @@ const ChatQuestion = ({ navigation }) => {
                                                 <Text style={{
                                                     width: 162,
                                                     height: 22,
-                                                    //left: 73,
+
                                                     fontFamily: 'Inter',
-                                                    //fontWeight: '400',
+
                                                     fontSize: 17,
                                                     lineHeight: 22,
                                                     color: '#FFFFFF',
                                                     textAlign: "center",
-                                                    //top: '25%',
+
                                                     left: '5%'
                                                 }}>Get a new question</Text>
                                             </View>
@@ -414,14 +403,14 @@ const ChatQuestion = ({ navigation }) => {
                                             <Text style={{
                                                 width: 120,
                                                 height: 22,
-                                                //left: 73,
+
                                                 fontFamily: 'Inter',
-                                                //fontWeight: '400',
+
                                                 fontSize: 17,
                                                 lineHeight: 22,
                                                 color: '#000000',
                                                 textAlign: "center",
-                                                //top: '25%',
+
                                             }}>Send question</Text>
                                         </TouchableOpacity>
                                     </View>
@@ -430,14 +419,14 @@ const ChatQuestion = ({ navigation }) => {
                                             <Text style={{
                                                 width: 264,
                                                 height: 18,
-                                                //left: 73,
+
                                                 fontFamily: 'Inter',
-                                                //fontWeight: '400',
+
                                                 fontSize: 17,
                                                 lineHeight: 18,
                                                 color: '#000000',
                                                 textAlign: "center",
-                                                //top: '25%'
+
                                             }}>Type your own question</Text>
                                         </TouchableOpacity>
                                     </View>
@@ -446,61 +435,6 @@ const ChatQuestion = ({ navigation }) => {
                         </View>
                     </View>
 
-                    {/* <View style={{ flex: 0.1, width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', top: '20%' }}>
-                        <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                            <TouchableOpacity onPress={() => createTwoButtonAlert()}>
-                                <Image source={require('../../../assets/images/camera2.png')} />
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{ flex: 2.2, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
-                            <Card style={{
-                                width: '100%',
-                                alignSelf: 'center',
-                                //height: 47,
-                                height: 37,
-                                borderWidth: 1,
-                                borderRadius: 100,
-                                borderColor: 'rgba(142,142,142,0.3)',
-                                backgroundColor: '#F7F7F7',
-                                alignItems: 'center',
-                                justifyContent: 'space-evenly',
-                                flexDirection: 'row',
-                                //flex: 1,
-                                marginBottom: '4%',
-                                marginLeft: '4%',
-                            }}>
-                                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-20%', width: '30%', top: '60%' }}>
-                                </View>
-                                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', marginTop: '-25%', width: '80%', height: 37, borderRadius: 0, top: '0%', left: '5%' }}>
-                                    <TextInput
-                                        placeholder='Aa'
-                                        placeholderTextColor='#BEBEBE'
-                                        style={{
-                                            //flex: 1,
-                                            width: '100%',
-                                            //height:47,
-                                            fontSize: 20,
-                                            color: '#000000',
-                                            fontWeight: '400',
-                                            //left: '2%',
-                                            //top: '7%',
-                                            lineHeight: 24,
-                                            letterSpacing: -0.017,
-                                            fontFamily: 'Inter',
-                                            marginBottom: '-20%'
-                                        }} />
-                                </View>
-                            </Card>
-                        </View>
-                        <View style={{ flex: 1.5, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
-                            <TouchableOpacity onPress={() => { navigation.navigate('ChatQNA') }}>
-                                <Image source={require('../../../assets/images/comment.png')} />
-                            </TouchableOpacity>
-                            <TouchableOpacity >
-                                <Image source={require('../../../assets/images/microphone.png')} />
-                            </TouchableOpacity>
-                        </View>
-                    </View> */}
 
                 </View>
             </View >

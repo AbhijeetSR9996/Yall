@@ -8,7 +8,7 @@ export default StyleSheet.create({
     },
     first_container: {
         flex: 1,
-        //flex: 0.9,
+
         width: width,
         paddingTop: 50,
         paddingBottom: 0,
@@ -21,18 +21,17 @@ export default StyleSheet.create({
         marginBottom: '7%'
     },
     weekend_text: {
-        //fontFamily: 'Inter',
+
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,
-        //marginTop: "68%",
-        //marginTop: "66%",
+
         marginTop: "70%",
         marginLeft: '6.94%',
-        //marginBottom: '7.5%',
+
         marginBottom: '3.5%',
         marginRight: '40%',
-        // display: 'flex',
+
         alignItems: 'center',
         letterSpacing: -0.017,
         color: "#FFFFFF",
@@ -41,7 +40,7 @@ export default StyleSheet.create({
     sceond_container: {
         flex: 1,
         width: width,
-        //marginTop:"-8%",
+
         marginTop: "-12%",
         paddingHorizontal: '6%',
     },
@@ -50,16 +49,16 @@ export default StyleSheet.create({
         height: height * 0.4
     },
     discover_text: {
-        //fontFamily: 'Inter',
+
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,
-        //marginTop: '68%',
+
         marginTop: "66%",
         marginLeft: '6.95%',
         marginBottom: '7.5%',
         marginRight: '40%',
-        // display: 'flex',
+
         alignItems: 'center',
         letterSpacing: -0.017,
         color: "#FFFFFF",

@@ -39,40 +39,7 @@ const SignedUpMobile = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-      {/* <View style={{ flex: 1, marginTop: '90%' }}>
-        <TouchableOpacity onPress={() => navigation.navigate('MobileCode2')}>
-          <Text
-            style={{
-              right: 20,
-              alignSelf: 'flex-end',
-              marginVertical: height / 1.6,
-              position: 'absolute',
-              backgroundColor: '#DCC7E1',
-              borderRadius: 20,
-              top: 30,
-            }}>
-          </Text>
-          {icons.rightcirclearrow}
-          <View style={{ alignItems: "flex-end", justifyContent: 'flex-end' }}><AntDesign name="rightcircleo" size={40} color="black" /></View>
-        </TouchableOpacity>
-      </View> */}
 
-      {/* <View>
-        <TouchableOpacity onPress={() => navigation.navigate('MobileCode2')}>
-          <Text
-            style={{
-              right: 20,
-              alignSelf: 'flex-end',
-              marginVertical: height / 1.6,
-              position: 'absolute',
-              backgroundColor: '#DCC7E1',
-              borderRadius: 20,
-              top: 30,
-            }}>
-            {icons.rightcirclearrow}
-          </Text>
-        </TouchableOpacity>
-      </View> */}
     </View>
   );
 };

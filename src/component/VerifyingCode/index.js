@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
-//import { signupStyles } from '../../screens/SignUp/signupStyles';
+
 import { useNavigation } from '@react-navigation/native';
 import {
     CodeField,
@@ -24,11 +24,7 @@ export const VerifyingCode = ({ path, paths }) => {
         setValue,
     });
 
-    // const Number = async () => {
-    //     const res = await mobileNumber(userData);
-    //     const data = await res.json();
-    //     console.log('success');
-    // }
+
 
     return (
         <View>
@@ -36,14 +32,14 @@ export const VerifyingCode = ({ path, paths }) => {
                 <Text style={{
                     color: '#000000',
                     fontFamily: 'BakbakOne-Regular',
-                    //fontWeight: '800',
+
                     fontSize: 25,
                     lineHeight: 35,
                 }}>Enter your verification code.</Text>
             </View>
             <View style={{ flexDirection: 'row', top: 100, left: 22, width: 190 }}>
                 <Text style={{ color: '#AAAAAA', fontFamily: 'Inter' }}>Sent to 1234567890
-                    {/* {Number} */}
+
                     - </Text>
                 <TouchableOpacity onPress={() => navigation.navigate(path)}>
                     <Text style={{ color: '#000000', fontWeight: '500', fontFamily: 'Inter' }}>Edit</Text>

@@ -39,12 +39,12 @@ const ChatQNA2 = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        //console.log('You can use the camera');
+
       } else {
-        //console.log('Camera permission denied');
+
       }
     } catch (err) {
-      //console.warn(err);
+
     }
   };
   const takePhotoFromCamera = () => {
@@ -92,7 +92,7 @@ const ChatQNA2 = ({ navigation }) => {
             <Text style={{
               color: '#000000',
               fontFamily: 'BakbakOne-Regular',
-              //fontWeight: '400',
+
               fontSize: 15,
               lineHeight: 21,
               letterSpacing: -0.017,
@@ -112,7 +112,6 @@ const ChatQNA2 = ({ navigation }) => {
       </View>
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
       <ScrollView>
-        {/* <View style={{ flex: 0.9, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}> */}
         <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '2%' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
@@ -137,8 +136,7 @@ const ChatQNA2 = ({ navigation }) => {
                   fontSize: 15,
                   color: '#000000',
                   backgroundColor: 'transparent',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
                   fontWeight: '400',
                   letterSpacing: -0.017,
@@ -155,10 +153,9 @@ const ChatQNA2 = ({ navigation }) => {
                 <Text style={{
                   fontSize: 15,
                   color: '#000000',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -191,8 +188,7 @@ const ChatQNA2 = ({ navigation }) => {
                   fontSize: 15,
                   color: '#000000',
                   backgroundColor: 'transparent',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
                   fontWeight: '400',
                   letterSpacing: -0.017,
@@ -209,10 +205,9 @@ const ChatQNA2 = ({ navigation }) => {
                 <Text style={{
                   fontSize: 15,
                   color: '#000000',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -226,8 +221,7 @@ const ChatQNA2 = ({ navigation }) => {
           <TouchableOpacity style={{
             alignItems: 'center',
             justifyContent: 'center',
-            //borderWidth: 1.5,
-            //borderColor: '#000000',
+
             backgroundColor: '#F6F6F6',
             width: 275,
             height: 95,
@@ -240,11 +234,11 @@ const ChatQNA2 = ({ navigation }) => {
             <Text style={{
               fontSize: 15,
               color: '#000000',
-              //top: '7%',
+
               left: '-5%',
               textAlignVertical: 'center',
               fontFamily: 'Inter',
-              //fontWeight: '400',
+
               letterSpacing: -0.017,
               lineHeight: 18,
               width: 208
@@ -277,8 +271,7 @@ const ChatQNA2 = ({ navigation }) => {
                   fontSize: 15,
                   color: '#000000',
                   backgroundColor: 'transparent',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
                   fontWeight: '400',
                   letterSpacing: -0.017,
@@ -295,10 +288,9 @@ const ChatQNA2 = ({ navigation }) => {
                 <Text style={{
                   fontSize: 15,
                   color: '#000000',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -309,8 +301,6 @@ const ChatQNA2 = ({ navigation }) => {
         <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '1%', marginBottom: '2%' }}>
           <Text style={[styles.text, { marginRight: '5%' }]}>Today</Text>
         </View>
-        {/* <View style={{ flex: 0.17, width: width, backgroundColor: 'yellow', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row' }}> 
-        </View> */}
         <View style={{ flex: 0.5, width: width, backgroundColor: '#FFFFFF', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
 
@@ -320,7 +310,6 @@ const ChatQNA2 = ({ navigation }) => {
               width: '80%',
               height: '100%',
               left: '-3%',
-              //marginLeft: '20%',
               paddingHorizontal: '10%',
               borderTopLeftRadius: 20,
               borderTopRightRadius: 20,
@@ -334,9 +323,7 @@ const ChatQNA2 = ({ navigation }) => {
                   height: '100%',
                   bottom: '2%',
                   left: '4%',
-                  //marginLeft: '20%',
-                  //marginRight: '-3%',
-                  //alignSelf:'center',
+
                   paddingHorizontal: '10%',
                   marginHorizontal: '-23%'
                 }]}
@@ -351,10 +338,7 @@ const ChatQNA2 = ({ navigation }) => {
                   flex: 1,
                   width: '100%',
                   height: '100%',
-                  //marginLeft: '-12.5%',
-                  // marginRight: '-3%',
-                  //alignSelf:'center',
-                  //paddingHorizontal:'10%',
+
                   borderTopLeftRadius: 20,
                   borderTopRightRadius: 20,
                   borderBottomRightRadius: 2,
@@ -369,10 +353,7 @@ const ChatQNA2 = ({ navigation }) => {
                     flex: 1,
                     width: '100%',
                     height: '100%',
-                    //marginLeft: '-12.5%',
-                    // marginRight: '-3%',
-                    //alignSelf:'center',
-                    //paddingHorizontal:'10%',
+
                     borderTopLeftRadius: 20,
                     borderTopRightRadius: 20,
                     borderBottomRightRadius: 2,
@@ -385,11 +366,8 @@ const ChatQNA2 = ({ navigation }) => {
                     <View style={{
                       flex: 1.5,
                       width: '126%',
-                      // height: '100%', 
+
                       marginLeft: '-9.5%',
-                      // marginRight: '-3%',
-                      //alignSelf:'center',
-                      //paddingHorizontal:'10%',
                       borderTopLeftRadius: 20,
                       borderTopRightRadius: 20,
                       borderBottomRightRadius: 2,
@@ -398,14 +376,14 @@ const ChatQNA2 = ({ navigation }) => {
                       alignItems: 'center',
                       flexDirection: 'column',
                       justifyContent: 'center',
-                      //borderWidth: 1,
+
                     }}>
                       <Text style={{
                         width: 75,
                         height: 18,
-                        //left: 73,
+
                         fontFamily: 'Inter',
-                        //fontWeight: '400',
+
                         fontSize: 15,
                         lineHeight: 18,
                         color: '#FFFFFF',
@@ -415,9 +393,9 @@ const ChatQNA2 = ({ navigation }) => {
                       <Text style={{
                         width: 184,
                         height: 50,
-                        //left: 73,
+
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
@@ -427,9 +405,9 @@ const ChatQNA2 = ({ navigation }) => {
                       <Text style={{
                         width: 184,
                         height: 50,
-                        //left: 73,
+
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         color: '#FFFFFF',
@@ -441,13 +419,9 @@ const ChatQNA2 = ({ navigation }) => {
                     <View style={{
                       flex: 1,
                       width: '126%',
-                      // height: '100%', 
+
                       marginLeft: '-9%',
-                      // marginRight: '-3%',
-                      //alignSelf:'center',
-                      //paddingHorizontal:'10%',
-                      // borderTopLeftRadius: 20,
-                      // borderTopRightRadius: 20,
+
                       borderBottomRightRadius: 2,
                       borderBottomLeftRadius: 2,
                       backgroundColor: 'transparent',
@@ -457,14 +431,6 @@ const ChatQNA2 = ({ navigation }) => {
                     }}>
                       <View style={{
                         flex: 1,
-                        // width: '100%', 
-                        // height: '100%', 
-                        //marginLeft: '-12.5%',
-                        // marginRight: '-3%',
-                        //alignSelf:'center',
-                        //paddingHorizontal:'10%',
-                        // borderTopLeftRadius: 20,
-                        // borderTopRightRadius: 20,
                         borderBottomRightRadius: 2,
                         borderBottomLeftRadius: 2,
                         backgroundColor: 'transparent',
@@ -477,9 +443,9 @@ const ChatQNA2 = ({ navigation }) => {
                         <Text style={{
                           width: 135,
                           height: 41,
-                          //left: 73,
+
                           fontFamily: 'Inter',
-                          //fontWeight: '500',
+
                           fontSize: 15,
                           lineHeight: 18,
                           color: '#FFFFFF',
@@ -489,14 +455,7 @@ const ChatQNA2 = ({ navigation }) => {
                       </View>
                       <View style={{
                         flex: 1,
-                        // width: '100%', 
-                        // height: '100%', 
-                        //marginLeft: '-12.5%',
-                        // marginRight: '-3%',
-                        //alignSelf:'center',
-                        //paddingHorizontal:'10%',
-                        // borderTopLeftRadius: 20,
-                        // borderTopRightRadius: 20,
+
                         borderBottomRightRadius: 2,
                         borderBottomLeftRadius: 2,
                         backgroundColor: 'transparent',
@@ -508,9 +467,9 @@ const ChatQNA2 = ({ navigation }) => {
                         <Text style={{
                           width: 135,
                           height: 41,
-                          //left: 73,
+
                           fontFamily: 'Inter',
-                          //fontWeight: '500',
+
                           fontSize: 15,
                           lineHeight: 18,
                           color: '#FFFFFF',
@@ -530,12 +489,12 @@ const ChatQNA2 = ({ navigation }) => {
           </View>
           <View style={{ width: width, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginBottom: '11%' }}>
             <Text style={{
-              //width: 278,
+
               width: '85%',
               height: 50,
-              //left: 73,
+
               fontFamily: 'BakbakOne-Regular',
-              //fontWeight: '400',
+
               fontSize: 18,
               lineHeight: 25,
               color: '#000000',
@@ -545,9 +504,9 @@ const ChatQNA2 = ({ navigation }) => {
             <Text style={{
               width: 268,
               height: 50,
-              //left: 73,
+
               fontFamily: 'BakbakOne-Regular',
-              //fontWeight: '400',
+
               fontSize: 18,
               lineHeight: 25,
               color: '#000000',
@@ -577,30 +536,26 @@ const ChatQNA2 = ({ navigation }) => {
               alignItems: 'center',
               justifyContent: 'space-evenly',
               flexDirection: 'row',
-              //flex: 1,
+
               marginBottom: '4%',
               marginLeft: '4%',
             }}>
               <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-15%', width: '30%', top: '55%' }}>
-                {/* <TouchableOpacity>
-                  <Image source={require('../../../assets/images/gifattachment.png')} />
-                </TouchableOpacity>
-                <View style={{ bottom: '35%' }}><Image source={require('../../../assets/images/GIF.png')} /></View> */}
+
               </View>
               <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-start', marginTop: '-25%', width: '80%', height: 37, borderRadius: 0, top: '0%', left: '5%' }}>
                 <TextInput
                   placeholder='Aa'
                   placeholderTextColor='#BEBEBE'
                   style={{
-                    //flex: 1,
+
                     width: '100%',
-                    //height:47,
+
                     fontFamily: 'Inter',
                     fontSize: 20,
                     color: '#000000',
-                    //fontWeight: '400',
-                    //left: '2%',
-                    //top: '7%',
+
+
                     lineHeight: 24,
                     letterSpacing: -0.017,
                     marginBottom: '-13%'
@@ -617,7 +572,6 @@ const ChatQNA2 = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
-        {/* </View> */}
       </ScrollView>
     </View>
 

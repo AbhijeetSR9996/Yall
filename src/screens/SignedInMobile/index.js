@@ -13,11 +13,7 @@ import { handleNumber } from '../../component/MobileNumber/index';
 const SignedInMobile = ({ navigation }) => {
     const [value, setValue] = React.useState(null);
 
-    // const Number = async () => {
-    //     const res = await mobileNumber(userData);
-    //     const data = await res.json();
-    //     console.log('success');
-    // }
+
 
     return (
         <View style={{ flex: 1 }}>

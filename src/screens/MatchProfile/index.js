@@ -39,7 +39,7 @@ const MatchProfile = ({ navigation }) => {
           <TouchableOpacity
             style={{
               width: width * 0.8,
-              //height: height * 0.07,
+
               borderWidth: 1,
               right: '2%'
             }}
@@ -56,16 +56,16 @@ const MatchProfile = ({ navigation }) => {
               position: 'relative',
             }}>
               <Text style={{
-                //fontWeight: '900',
+
                 fontSize: 18,
                 fontFamily: 'BakbakOne-Regular',
                 color: '#000000',
                 alignSelf: 'center',
                 justifyContent: 'center',
-                //paddingVertical: 10,
+
                 top: '30.3%',
                 right: '30%',
-                //right: '30%',
+
                 lineHeight: 25,
                 letterSpacing: -0.017
               }}>Send Like</Text>

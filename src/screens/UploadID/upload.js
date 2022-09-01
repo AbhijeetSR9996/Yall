@@ -12,7 +12,6 @@ import { ProfileDisplayStyles } from '../../screens/ProfileDisplay/ProfileDispla
 import { Card } from 'react-native-paper';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import ImagePicker from 'react-native-image-crop-picker';
-//import { splashStyles } from '../../screens/splashScreen/splashStyles';
 import Styles from '../GetStarted/styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { icons } from '../../../assets/icons/icons';
@@ -36,12 +35,12 @@ const Upload = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        //console.log('You can use the camera');
+
       } else {
-        //console.log('Camera permission denied');
+
       }
     } catch (err) {
-      //console.warn(err);
+
     }
   };
   const takePhotoFromCamera = () => {
@@ -113,7 +112,7 @@ const Upload = ({ navigation }) => {
         style={[
           govtStyles.borderBox,
           {
-            //width: 368,
+
             width: 330,
             top: '5%',
             height: 250,
@@ -121,7 +120,7 @@ const Upload = ({ navigation }) => {
             justifyContent: 'center',
             color: '#e8e6e6',
 
-            //marginHorizontal: '20%'
+
           },
         ]}>
         <View
@@ -141,7 +140,7 @@ const Upload = ({ navigation }) => {
                     width: 95,
                     height: 100,
                     top: 6,
-                    //left: '0%',
+
                     alignSelf: 'center'
                   }
                 }
@@ -174,14 +173,14 @@ const Upload = ({ navigation }) => {
                 position: 'relative',
               }}>
                 <Text style={{
-                  //fontWeight: '400',
+
                   fontSize: 18,
-                  //fontFamily: 'Bakbak One',
+
                   fontFamily: 'BakbakOneRegular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  //paddingVertical: 10,
+
                   paddingVertical: 13,
                   right: '15%',
                   lineHeight: 25,
@@ -207,16 +206,12 @@ const Upload = ({ navigation }) => {
       <Image
         source={require('../../../assets/images/file.png')}
         style={{
-          //width: 40,
-          //height: 50,
+
           width: 28,
           height: 35,
-          //top: 23,
-          //top: 18,
+
           top: '6%',
-          //left: -300,
-          //marginLeft:'7%',
-          //marginLeft: '4%',
+
           marginLeft: '8%'
         }}
       />
@@ -238,17 +233,7 @@ const Upload = ({ navigation }) => {
         }}
       />
 
-      {/* <Rectangular
-        path="Selfie"
-        style={{
-          width: 10,
-          position: 'absolute',
-          alignSelf: 'center',
-          top: '80%',
-          //top: '13%',
-        }}
-        name="Verify & Continue"
-      /> */}
+
       <TouchableOpacity
         style={{
           top: '7%',
@@ -256,9 +241,9 @@ const Upload = ({ navigation }) => {
           width: width * 0.8,
           height: height * 0.07,
           borderWidth: 1,
-          //alignSelf: 'center',
+
           right: '2%',
-          //top: '-20%',
+
         }}
         onPress={() => { navigation.navigate('Selfie') }}>
         <View style={{
@@ -268,25 +253,23 @@ const Upload = ({ navigation }) => {
           borderWidth: 1,
           borderRightWidth: 0,
           height: height * 0.07,
-          //alignItems: 'center',
+
           alignSelf: 'center',
           backgroundColor: '#DCC7E1',
           position: 'relative',
         }}>
           <Text style={{
-            //fontWeight: '400',
 
             fontSize: 17,
-            //fontFamily: 'Bakbak One',
+
             fontFamily: 'BakbakOne-Regular',
             color: '#000000',
             alignSelf: 'center',
             justifyContent: 'center',
-            //paddingVertical: 10,
-            //paddingVertical: 13,
+
             top: '33%',
             right: '16%',
-            //right: '20%',
+
             lineHeight: 25,
             letterSpacing: -0.017
           }}>Verify & Continue</Text>
@@ -309,10 +292,9 @@ const Upload = ({ navigation }) => {
             alignSelf: 'center', width: width * 0.8,
             height: height * 0.07,
             borderWidth: 1,
-            //bottom: '20%',
-            //bottom: '25%',
+
             right: '2%',
-            //top: '3%',
+
             top: '10%'
           },
         ]}
@@ -325,9 +307,9 @@ const Upload = ({ navigation }) => {
           borderColor: '#FFFFFF',
           borderRightWidth: 0,
           height: height * 0.07,
-          //alignItems: 'center',
+
           alignSelf: 'center',
-          //backgroundColor: '#DCC7E1',
+
           backgroundColor: '#000000',
           position: 'relative',
         }}>
@@ -335,12 +317,11 @@ const Upload = ({ navigation }) => {
 
             fontSize: 18,
             fontFamily: 'BakbakOne-Regular',
-            //color: '#000000',
+
             color: '#FFFFFF',
             alignSelf: 'center',
             justifyContent: 'center',
-            //paddingVertical: 10,
-            //right: '10%',
+
             top: '33%',
             right: '32%',
             lineHeight: 25,
@@ -354,23 +335,13 @@ const Upload = ({ navigation }) => {
             alignSelf: 'flex-end',
             alignItems: 'center',
             justifyContent: 'center',
-            //backgroundColor: '#DCC7E1',
             backgroundColor: '#000000',
             position: 'absolute',
             marginVertical: -1,
           }}><AntDesign name="arrowright" size={30} color="#FFFFFF" /></View>
         </View>
       </TouchableOpacity>
-      {/* <Rectangular
-        path="GovtRegisterID"
-        style={{
-          width: 10,
-          position: 'absolute',
-          alignSelf: 'center',
-          top: '90%',
-        }}
-        name="Back"
-      /> */}
+
     </View>
   );
 };

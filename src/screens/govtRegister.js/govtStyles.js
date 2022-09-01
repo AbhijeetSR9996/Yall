@@ -11,7 +11,7 @@ export const govtStyles = {
   text: {
     color: '#000000',
     fontFamily: 'BakbakOne-Regular',
-    //fontWeight: '800',
+
     fontSize: 25,
     lineHeight: 35,
     width: 207,
@@ -28,10 +28,10 @@ export const govtStyles = {
     color: '#AAAAAA',
   },
   borderBox: {
-    //width: 370,
+
     width: 320,
     alignSelf: 'center',
-    //marginHorizontal: '0%',
+
     top: 180,
     height: 92,
     left: 0,
@@ -49,7 +49,7 @@ export const govtStyles = {
   insideBox: {
     borderWidth: 1,
     margin: 10,
-    // width: 66,
+
     height: 66,
     backgroundColor: '#DCC7E1',
     borderRadius: 40,
@@ -58,9 +58,9 @@ export const govtStyles = {
   textIDCard: {
     fontFamily: 'BakbakOne-Regular',
     fontSize: 18,
-    //width: 133,
+
     width: 143,
-    //fontWeight: '700',
+
     color: '#000000',
   },
   textCard: {
@@ -69,21 +69,21 @@ export const govtStyles = {
     fontSize: 12,
     width: 193,
     top: 5,
-    //fontWeight: '400',
+
     lineHeight: 15,
     letterSpacing: -0.017
   },
   moveRight: {
-    //left: 20,
+
     left: -15,
     textAlign: 'center',
     marginTop: 30,
     color: '#797979'
   },
   govtPageArrowIcon: {
-    //left:348,
+
     left: 300,
-    //top: 390,
+
     top: 239,
     position: 'absolute',
     backgroundColor: '#DCC7E1',

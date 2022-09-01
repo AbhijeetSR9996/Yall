@@ -10,11 +10,11 @@ const ProfileDisplay = ({ route }) => {
 
   const [modalVisible, setModalVisible] = useState(false);
   const [userdata, setUserData] = useState([]);
-  //const { id } = route.params;
+
 
   useEffect(() => {
     getUsers()
-      .then(res => //setUserData(res.data))
+      .then(res =>
         console.log(res.data))
       .catch(err => console.log(err, 'Something went wrong!'));
   }, []);
@@ -26,13 +26,12 @@ const ProfileDisplay = ({ route }) => {
     <View style={Styles.main}>
       <View style={Styles.container}>
         <Text style={Styles.text}> Priya Sharma
-          {/* {userdata.full_name}  */}
+
         </Text>
       </View>
 
       <View style={[Styles.container2, {
         top: 35,
-        //top: 120,
 
       }]}>
 
@@ -42,12 +41,6 @@ const ProfileDisplay = ({ route }) => {
               source={require('../../../assets/images/profilegirl.png')}
               style={Styles.img} />
 
-            {/* <TouchableOpacity style={Styles.iconcontainer}
-            onPress={()=> navigation.navigate('MatchProfile')}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}/>
-            </TouchableOpacity> */}
 
 
 
@@ -90,13 +83,7 @@ const ProfileDisplay = ({ route }) => {
               source={require('../../../assets/images/profilegirl.png')}
               style={Styles.img}
             />
-            {/* <TouchableOpacity style={[Styles.iconcontainer,{bottom:'67%'}]}
-            onPress={()=> navigation.navigate('MatchProfile')}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}
-              />
-            </TouchableOpacity> */}
+
 
             <View
               style={[
@@ -111,11 +98,6 @@ const ProfileDisplay = ({ route }) => {
                   ]}>
                   <Text style={Styles.text6}>Ask a questions</Text>
 
-                  {/* <TouchableOpacity style={Styles.iconcontainer2}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}/>
-              </TouchableOpacity>    */}
                 </View>
 
 
@@ -139,13 +121,7 @@ const ProfileDisplay = ({ route }) => {
               source={require('../../../assets/images/profilegirl.png')}
               style={Styles.img}
             />
-            {/* <TouchableOpacity style={[Styles.iconcontainer,{bottom:'56%'}]}
-            onPress={()=> navigation.navigate('MatchProfile')}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}
-              />
-            </TouchableOpacity> */}
+
 
             <View
               style={[
@@ -159,11 +135,7 @@ const ProfileDisplay = ({ route }) => {
                     { width: '100%', height: 53, borderTopRightRadius: 16 },
                   ]}>
                   <Text style={Styles.text8}>Ask a questions</Text>
-                  {/* <TouchableOpacity style={Styles.iconcontainer2}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}/>
-              </TouchableOpacity> */}
+
                 </View>
                 <View style={Styles.vw2}>
                   <Image
@@ -210,20 +182,7 @@ const ProfileDisplay = ({ route }) => {
               source={require('../../../assets/images/profilegirl.png')}
               style={Styles.img}
             />
-            {/* <TouchableOpacity style={[Styles.iconcontainer,{bottom:'67%'}]}
-            onPress={()=> navigation.navigate('MatchProfile')}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}
-              />
-            </TouchableOpacity> */}
 
-            {/* <TouchableOpacity style={Styles.crosscontainer}
-            onPress={()=> navigation.navigate('MainBottomNavigation')}>
-              <Image
-              source={require('../../../assets/images/cross.png')}
-              style={Styles.imglike}/>
-              </TouchableOpacity> */}
 
             <View
               style={[
@@ -237,11 +196,7 @@ const ProfileDisplay = ({ route }) => {
                     { width: '100%', height: 53, borderTopRightRadius: 16 },
                   ]}>
                   <Text style={Styles.text6}>Ask a questions</Text>
-                  {/* <TouchableOpacity style={Styles.iconcontainer2}>
-              <Image
-              source={require('../../../assets/images/likebtn2.png')}
-              style={Styles.imglike}/>
-              </TouchableOpacity> */}
+
 
                 </View>
                 <View style={Styles.vw3}>
@@ -285,7 +240,7 @@ const ProfileDisplay = ({ route }) => {
           visible={modalVisible}
           statusBarTranslucent={true}
           onRequestClose={() => {
-            //Alert.alert("Modal has been closed.");
+
             setModalVisible(!modalVisible);
           }}
         >
@@ -299,7 +254,7 @@ const ProfileDisplay = ({ route }) => {
               width: '100%',
               height: '100%',
               margin: 20,
-              //marginTop: '-23%',
+
               marginTop: '-16%',
               marginBottom: '12%',
               backgroundColor: "rgba(0,0,0,0.5)",
@@ -310,37 +265,20 @@ const ProfileDisplay = ({ route }) => {
               shadowColor: "#000",
               //aspectRatio: 3 / 2
             }}>
-              {/* <Text style={{
-                marginBottom: 15,
-                textAlign: "center"
-              }}>Hello World!</Text> */}
+
               <TouchableOpacity>
                 <Image source={require('../../../assets/images/adbanner_image.png')}
                   style={{
-                    //width: '127%',
+
                     width: 358,
-                    //height: '120%',
+
                     height: 587,
                     borderRadius: 15,
-                    //bottom: '6.5%',
-                    //top: '5%',
+
                     aspectRatio: 0.57
                   }}
                 /></TouchableOpacity>
-              {/* <Pressable
-                style={{
-                  borderRadius: 20,
-                  padding: 10,
-                  elevation: 2, backgroundColor: "#F194FF",
-                }}
-                onPress={() => setModalVisible(!modalVisible)}
-              >
-                <Text style={{
-                  color: "white",
-                  fontWeight: "bold",
-                  textAlign: "center"
-                }}>Hide Modal</Text>
-              </Pressable> */}
+
             </View>
           </View>
         </Modal>

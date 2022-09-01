@@ -19,7 +19,7 @@ const ChatOwnQuestion = ({ navigation }) => {
                 <ScrollView>
                     <View style={{ marginTop: '10%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column', }}>
                         <Text style={{
-                            //width: 264,
+
                             width: '100%',
                             height: 18,
                             fontFamily: 'Inter',
@@ -35,11 +35,11 @@ const ChatOwnQuestion = ({ navigation }) => {
                             placeholder='Type your own quest....'
                             placeholderTextColor='#000000'
                             style={{
-                                //width: '100%',
+
                                 width: '80%',
                                 fontSize: 27,
                                 color: '#000000',
-                                //fontWeight: '400',
+
                                 lineHeight: 42,
                                 letterSpacing: -0.017,
                                 fontFamily: 'BakbakOne-Regular',
@@ -49,7 +49,7 @@ const ChatOwnQuestion = ({ navigation }) => {
                     <View style={{ marginTop: '80%', backgroundColor: 'transparent', alignItems: 'flex-end', justifyContent: 'space-between', flexDirection: 'row', width: '100%' }}>
                         <TouchableOpacity onPress={() => { navigation.navigate('ChatQuestion') }}>
                             <Text style={{
-                                //width: 34,
+
                                 width: '100%',
                                 height: 18,
                                 fontFamily: 'Inter',
@@ -63,7 +63,7 @@ const ChatOwnQuestion = ({ navigation }) => {
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => { navigation.navigate('ChatQNA') }}>
                             <Text style={{
-                                //width: 34,
+
                                 width: '100%',
                                 height: 18,
                                 fontFamily: 'Inter',

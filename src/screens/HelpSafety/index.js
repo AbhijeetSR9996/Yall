@@ -68,15 +68,14 @@ const HelpSafety = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
+
                             marginLeft: '20%'
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -88,7 +87,7 @@ const HelpSafety = ({ navigation }) => {
             <ScrollView style={{ backgroundColor: 'transparent', height: '90%', flex: 1, width: width, marginTop: '8%', marginBottom: '0%' }}>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-start', height: 49, marginTop: '3%', alignSelf: 'center', borderRadius: 5, marginBottom: '-5%' }}>
-                    {/* <TouchableOpacity> */}
+
                     <Text style={{
                         fontFamily: 'Inter',
                         fontSize: 12,
@@ -97,21 +96,21 @@ const HelpSafety = ({ navigation }) => {
                         letterSpacing: -0.017,
                         left: '0.5%'
                     }}>Yall    /    Safety Security, and Privacy</Text>
-                    {/* </TouchableOpacity> */}
+
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-start', height: 65, marginTop: '5%', bottom: '3%', alignSelf: 'center', borderRadius: 5, marginBottom: '-5%' }}>
-                    {/* <TouchableOpacity> */}
+
                     <Text style={{
                         fontFamily: 'BakbakOne-Regular',
                         fontSize: 25,
                         color: '#000000',
                         lineHeight: 35,
                         letterSpacing: -0.017,
-                        //width: '100%',
+
                         width: 234
                     }}>Safety Security, and Privacy</Text>
-                    {/* </TouchableOpacity> */}
+
                 </View>
 
                 <TouchableOpacity style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'flex-start', height: 39, marginTop: '10%', alignSelf: 'center', borderRadius: 5, marginBottom: '10%' }}>

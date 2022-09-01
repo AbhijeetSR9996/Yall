@@ -37,10 +37,7 @@ const SignUp = ({ navigation }) => {
             flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center',
             justifyContent: 'flex-end', flexDirection: 'column'
           }}>
-            {/* <Text style={[signupStyles.headline]}>
-              By clicking “Log in”, you agree with our Terms. learn how we process
-              your data in our privacy policy and cokkies policy.
-            </Text> */}
+
             <Text style={[signupStyles.headline, { top: '55%', }]}>By clicking “Log in”, you agree with our Terms. Learn, how we process
               your data in our privacy policy and cokkies policy.</Text>
           </View>
@@ -49,14 +46,12 @@ const SignUp = ({ navigation }) => {
             justifyContent: 'space-evenly'
           }}>
 
-            {/* <Rectangular path="SignInMobile" name="Sign In" style={{ bottom: '4%' }} />
-            <Rectangular path="SignUpMobile" name="Sign Up" style={{ bottom: '12%' }} />
-            <Rectangular path="SignEmail" name="Sign In With Email" style={{ bottom: '20%' }} /> */}
+
 
             <TouchableOpacity
               style={{
                 bottom: '-10%',
-                //alignSelf: 'center',
+
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
@@ -70,24 +65,22 @@ const SignUp = ({ navigation }) => {
                 borderWidth: 1,
                 borderRightWidth: 0,
                 height: height * 0.07,
-                //alignItems: 'center',
+
                 alignSelf: 'center',
                 backgroundColor: '#DCC7E1',
                 position: 'relative',
               }}>
                 <Text style={{
-                  //fontWeight: '400',
-                  //fontWeight: '900',
+
                   fontSize: 17,
-                  //fontFamily: 'Bakbak One',
+
                   fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  //paddingVertical: 10,
-                  //paddingVertical: 13,
+
                   top: '30.3%',
-                  //right: '35%',
+
                   right: '30%',
                   lineHeight: 25,
                   letterSpacing: -0.017
@@ -108,7 +101,7 @@ const SignUp = ({ navigation }) => {
             <TouchableOpacity
               style={{
                 bottom: '-1%',
-                //alignSelf: 'center',
+
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
@@ -122,24 +115,22 @@ const SignUp = ({ navigation }) => {
                 borderWidth: 1,
                 borderRightWidth: 0,
                 height: height * 0.07,
-                //alignItems: 'center',
+
                 alignSelf: 'center',
                 backgroundColor: '#DCC7E1',
                 position: 'relative',
               }}>
                 <Text style={{
-                  //fontWeight: '400',
-                  //fontWeight: '900',
+
                   fontSize: 17,
-                  //fontFamily: 'Bakbak One',
+
                   fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  //paddingVertical: 10,
-                  //paddingVertical: 13,
+
                   top: '30.3%',
-                  //right: '35%',
+
                   right: '30%',
                   lineHeight: 25,
                   letterSpacing: -0.017
@@ -160,7 +151,7 @@ const SignUp = ({ navigation }) => {
             <TouchableOpacity
               style={{
                 bottom: '8%',
-                //alignSelf: 'center',
+
                 width: width * 0.8,
                 height: height * 0.07,
                 borderWidth: 1,
@@ -174,25 +165,22 @@ const SignUp = ({ navigation }) => {
                 borderWidth: 1,
                 borderRightWidth: 0,
                 height: height * 0.07,
-                //alignItems: 'center',
+
                 alignSelf: 'center',
                 backgroundColor: '#DCC7E1',
                 position: 'relative',
               }}>
                 <Text style={{
-                  //fontWeight: '400',
-                  //fontWeight: '900',
+
                   fontSize: 17,
-                  //fontFamily: 'Bakbak One',
+
                   fontFamily: 'BakbakOne-Regular',
                   color: '#000000',
                   alignSelf: 'center',
                   justifyContent: 'center',
-                  //paddingVertical: 10,
-                  //paddingVertical: 13,
+
                   top: '30.3%',
-                  //right: '40%',
-                  //right: '23%',
+
                   right: '16%',
                   lineHeight: 25,
                   letterSpacing: -0.017

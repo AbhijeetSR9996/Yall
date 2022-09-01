@@ -7,7 +7,7 @@ export const styles = {
    text: {
       color: 'black',
       fontFamily: 'BakbakOne-Regular',
-      //fontWeight: '800',
+
       fontSize: 25,
       lineHeight: 35,
       width: 230,
@@ -18,13 +18,13 @@ export const styles = {
    //==============================gender1 styles==================
    moveBack: {
       left: 15,
-      // textAlign:'center',
+
       marginTop: 15
    },
    gender1Text: {
       color: '#000000',
       fontFamily: 'BakbakOne-Regular',
-      //fontWeight: '400',
+
       fontSize: 25,
       lineHeight: 35,
       //width: 222,

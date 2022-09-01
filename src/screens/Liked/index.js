@@ -47,7 +47,7 @@ const Liked = ({ navigation }) => {
                 fontSize: 15,
                 color: '#000000',
                 top: '25%',
-                //fontWeight:'400',
+
                 letterSpacing: -0.017,
                 lineHeight: 18
               }}> Liked your photo</Text>
@@ -129,7 +129,7 @@ const Liked = ({ navigation }) => {
                   color: '#000000',
                   top: '20%',
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Liked your photo</Text>
@@ -168,7 +168,7 @@ const Liked = ({ navigation }) => {
                 <Text style={{
                   fontFamily: 'Inter',
                   fontSize: 14,
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18,
                   color: '#000000',

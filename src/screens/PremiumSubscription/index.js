@@ -10,7 +10,7 @@ const PremiumSubscription = ({ navigation }) => {
     return (
         <View style={Styles.main_container}>
             <ImageBackground
-                //source={require('../../../assets/images/ownquestionbg.png')}
+
                 resizeMode="stretch"
                 style={Styles.image_background}>
                 <View style={{ flex: 1, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column', }}>
@@ -22,12 +22,9 @@ const PremiumSubscription = ({ navigation }) => {
                             fontSize: 25,
                             color: '#000000',
                             lineHeight: 35,
-                            //textAlign: 'center',
+
                             letterSpacing: -0.017,
-                            //bottom: '7%'
-                            //marginLeft: '4.5%',
-                            //marginBottom: '-3%'
-                            //textAlign: 'center',
+
                             justifyContent: 'center',
                             marginRight: '4%',
                             left: '5%'
@@ -39,8 +36,7 @@ const PremiumSubscription = ({ navigation }) => {
                             onPress={() => navigation.navigate('MainBottomNavigation')}>
                             <Image source={require('../../../assets/images/userpremium.png')} />
                         </TouchableOpacity>
-                        {/* <Image source={require('../../../assets/images/userpremium.png')}
-                            style={{ height: '27%', width: '7.3%', right: '80%', }} /> */}
+
                         <Image source={require('../../../assets/images/ellipsesubscription.png')}
                             style={{ right: '-10%' }}
                         />
@@ -56,10 +52,7 @@ const PremiumSubscription = ({ navigation }) => {
                             lineHeight: 35,
                             textAlign: 'center',
                             letterSpacing: -0.017,
-                            //bottom: '7%'
-                            //marginLeft: '4.5%',
-                            //marginBottom: '-3%'
-                            //textAlign: 'center',
+
                             justifyContent: 'center'
                         }}>Unlimited Likes </Text>
                         <Text style={{
@@ -69,8 +62,7 @@ const PremiumSubscription = ({ navigation }) => {
                             lineHeight: 18,
                             letterSpacing: -0.017,
                             bottom: '5%',
-                            //marginLeft: '4.5%',
-                            //marginBottom: '-3%'
+
                             textAlign: 'center',
                             justifyContent: 'center',
                             width: 304
@@ -84,10 +76,7 @@ const PremiumSubscription = ({ navigation }) => {
                             lineHeight: 18,
                             letterSpacing: -0.017,
                             textAlign: 'center',
-                            //bottom: '7%'
-                            //marginLeft: '4.5%',
-                            //marginBottom: '-3%'
-                            //textAlign: 'center',
+
                             justifyContent: 'center'
                         }}>Google Wallet </Text>
 
@@ -98,14 +87,14 @@ const PremiumSubscription = ({ navigation }) => {
                     <View style={{ flex: 0.75, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column', borderTopLeftRadius: 35, borderTopRightRadius: 35 }}>
                         <View style={{ flex: 0.1, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'row', borderTopLeftRadius: 35, borderTopRightRadius: 35 }}>
                             <Text style={{
-                                //width: 264,
+
                                 width: '100%',
                                 height: 18,
                                 fontFamily: 'BakbakOne-Regular',
                                 fontSize: 15,
                                 lineHeight: 21,
                                 color: '#6B6B6B',
-                                //textAlign: 'left',
+
                                 left: '148%',
                                 top: '2%'
                             }}>Google Play</Text>
@@ -126,21 +115,21 @@ const PremiumSubscription = ({ navigation }) => {
                                 </View>
                                 <View style={{ flex: 0.7, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'space-evenly', flexDirection: 'column', }}>
                                     <Text style={{
-                                        //width: 264,
+
                                         width: '100%',
-                                        //height: 18,
+
                                         fontFamily: 'Inter',
                                         fontSize: 15,
                                         lineHeight: 18,
                                         color: '#010101',
                                         top: '7%',
-                                        //textAlign: 'left',
+
                                         left: '3%',
                                     }}>1 Month - Yall Premium</Text>
                                     <Text style={{
-                                        //width: 264,
+
                                         width: '100%',
-                                        //height: 18,
+
                                         fontFamily: 'Inter',
                                         fontSize: 12,
                                         lineHeight: 15,
@@ -154,39 +143,39 @@ const PremiumSubscription = ({ navigation }) => {
                             <View style={{ flex: 0.1, borderBottomColor: 'rgba(0, 0, 0, 0.2)', borderBottomWidth: 1, top: '36%' }} />
                             <View style={{ flex: 0.3, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', }}>
                                 <Text style={{
-                                    //width: 264,
+
                                     width: '100%',
-                                    //height: 18,
+
                                     fontFamily: 'Inter',
                                     fontSize: 12,
                                     lineHeight: 15,
                                     color: '#000000',
-                                    //top: '7%',
-                                    //textAlign: 'left',
+
+
                                     left: '8%',
                                 }}>Starting today</Text>
                                 <Text style={{
-                                    //width: 264,
+
                                     width: '100%',
-                                    //height: 18,
+
                                     fontFamily: 'Inter',
                                     fontSize: 12,
                                     lineHeight: 15,
                                     color: '#000000',
                                     bottom: '35%',
-                                    //textAlign: 'left',
+
                                     left: '63%',
                                 }}>INR 609.00 / month</Text>
                                 <Text style={{
-                                    //width: 264,
+
                                     width: '100%',
-                                    //height: 18,
+
                                     fontFamily: 'Inter',
                                     fontSize: 12,
                                     lineHeight: 15,
                                     color: '#000000',
-                                    //top: '7%',
-                                    //textAlign: 'left',
+
+
                                     left: '8%',
                                 }}>Cancel anytime in subscription on Google Play</Text>
 
@@ -200,22 +189,22 @@ const PremiumSubscription = ({ navigation }) => {
                             </View>
                             <View style={{ flex: 0.7, backgroundColor: 'transparent', alignItems: 'flex-start', justifyContent: 'space-evenly', flexDirection: 'column', }}>
                                 <Text style={{
-                                    //width: 264,
+
                                     width: '100%',
-                                    //height: 18,
+
                                     fontFamily: 'Inter',
                                     fontSize: 12,
                                     lineHeight: 15,
                                     color: '#000000',
                                     top: '9%',
                                     left: '3%',
-                                    //textAlign: 'left',
-                                    //left: '45%',
+
+
                                 }}>*******265415@ybl</Text>
                                 <Text style={{
-                                    //width: 264,
+
                                     width: '100%',
-                                    //height: 18,
+
                                     fontFamily: 'Inter',
                                     fontSize: 10,
                                     lineHeight: 12,
@@ -232,15 +221,14 @@ const PremiumSubscription = ({ navigation }) => {
                     <View style={{ flex: 0.25, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'flex-start', flexDirection: 'column', }}>
                         <TouchableOpacity
                             style={{
-                                //top: '8%',
+
                                 alignSelf: 'center',
                                 width: width * 0.8,
                                 height: height * 0.07,
                                 borderWidth: 1,
-                                //alignSelf: 'center',
+
                                 right: '2%',
-                                //marginTop: '0%',
-                                //marginBottom: '18%'
+
                             }}
                             onPress={() => navigation.navigate('MainBottomNavigation')}>
                             <View style={{
@@ -250,25 +238,23 @@ const PremiumSubscription = ({ navigation }) => {
                                 borderWidth: 1,
                                 borderRightWidth: 0,
                                 height: height * 0.07,
-                                //alignItems: 'center',
+
                                 alignSelf: 'center',
                                 backgroundColor: '#DCC7E1',
                                 position: 'relative',
                             }}>
                                 <Text style={{
-                                    //fontWeight: '400',
-                                    //fontWeight: '900',
+
                                     fontSize: 17,
-                                    //fontFamily: 'Bakbak One',
+
                                     fontFamily: 'BakbakOne-Regular',
                                     color: '#000000',
                                     alignSelf: 'center',
                                     justifyContent: 'center',
-                                    //paddingVertical: 10,
-                                    //paddingVertical: 13,
+
                                     top: '30.3%',
                                     right: '25%',
-                                    //right: '20%',
+
                                     lineHeight: 25,
                                     letterSpacing: -0.017
                                 }}>Continue</Text>

@@ -56,7 +56,7 @@ const UserDOB = ({ navigation }) => {
         />
       </View>
 
-      {/* <CircularButton path="UserEmail" style={{ top: 45 }} /> */}
+
 
 
       <View style={{ display: 'flex', marginTop: '135%', marginRight: '10%', alignItems: 'flex-end' }}>
@@ -67,10 +67,10 @@ const UserDOB = ({ navigation }) => {
               justifyContent: 'flex-end',
               marginTop: '100%',
               borderRadius: 50,
-              //width: width * .105
+
               width: 40
             }}>
-            {/* {icons.rightcirclearrow} */}
+
             <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
           </View>
         </TouchableOpacity>

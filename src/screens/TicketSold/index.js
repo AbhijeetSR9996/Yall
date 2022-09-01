@@ -44,7 +44,7 @@ const TicketSold = ({ navigation }) => {
                             borderRadius: 15,
                             borderWidth: 1,
                             borderColor: '#FFFFFF',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center',
                             elevation: 8
                         }
@@ -60,10 +60,8 @@ const TicketSold = ({ navigation }) => {
                             alignItems: 'center',
                             justifyContent: 'space-evenly',
                             backgroundColor: 'transparent',
-                            // borderRadius: 5,
-                            // borderWidth:1 ,
-                            // borderColor:'#000000',
-                            //marginTop:'-0.5%',
+
+
                             textAlignVertical: 'center'
                         }
                     }>
@@ -82,7 +80,7 @@ const TicketSold = ({ navigation }) => {
                             borderRadius: 15,
                             borderWidth: 1,
                             borderColor: '#FFFFFF',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center',
                             elevation: 8
                         }
@@ -98,10 +96,7 @@ const TicketSold = ({ navigation }) => {
                             alignItems: 'center',
                             justifyContent: 'space-evenly',
                             backgroundColor: 'transparent',
-                            // borderRadius: 5,
-                            // borderWidth:1 ,
-                            // borderColor:'#000000',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center'
                         }
                     }>
@@ -120,7 +115,7 @@ const TicketSold = ({ navigation }) => {
                             borderRadius: 15,
                             borderWidth: 1,
                             borderColor: '#FFFFFF',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center',
                             elevation: 8
                         }

@@ -25,8 +25,6 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
-//import DateTimePicker from '@react-native-community/datetimepicker';
-//import DatePicker from 'react-native-date-picker';
 
 
 const BlockUsers = ({ navigation }) => {
@@ -49,16 +47,14 @@ const BlockUsers = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -91,16 +87,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'
@@ -130,16 +126,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'
@@ -169,16 +165,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'
@@ -208,16 +204,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'
@@ -247,16 +243,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'
@@ -286,16 +282,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'
@@ -325,16 +321,16 @@ const BlockUsers = ({ navigation }) => {
                         }}
                             onPress={() => navigation.navigate('BlockUsers')}>
                             <Text style={[{
-                                //paddingVertical: '0%',
+
                                 letterSpacing: -0.017,
-                                //fontWeight: '500',
+
                                 fontSize: 10,
                                 lineHeight: 12,
-                                //alignSelf: 'center',
+
                                 color: '#000000',
                                 fontFamily: 'Inter',
                                 width: 324,
-                                //width: '90%',
+
                                 height: 54,
                                 marginLeft: '26%',
                                 marginTop: '7%'

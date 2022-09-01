@@ -4,7 +4,7 @@ import { Rectangular } from '../../component/Buttons/Rectangular/index';
 import { icons } from '../../../assets/icons/icons';
 import { height, width } from '../../services/helper';
 import Styles from "./styles";
-//import BakbakOneRegular from '../../../assets/fonts/BakbakOneRegular.woff';
+
 
 const GetStarted = ({ navigation }) => {
     return (
@@ -28,7 +28,7 @@ const GetStarted = ({ navigation }) => {
                             your data in our privacy policy and cokkies policy.</Text>
                     </View>
                     <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center' }}>
-                        {/* <Rectangular path="SignUp" name="Get Started" style={{ marginRight: '0%', }} /> */}
+
                         <TouchableOpacity
                             style={{
                                 top: '0%',
@@ -36,7 +36,7 @@ const GetStarted = ({ navigation }) => {
                                 width: width * 0.8,
                                 height: height * 0.07,
                                 borderWidth: 1,
-                                //alignSelf: 'center',
+
                                 right: '2%'
                             }}
                             onPress={() => { navigation.navigate('SignUp') }}>
@@ -47,25 +47,22 @@ const GetStarted = ({ navigation }) => {
                                 borderWidth: 1,
                                 borderRightWidth: 0,
                                 height: height * 0.07,
-                                //alignItems: 'center',
+
                                 alignSelf: 'center',
                                 backgroundColor: '#DCC7E1',
                                 position: 'relative',
                             }}>
                                 <Text style={{
-                                    //fontWeight: '400',
-                                    //fontWeight: '900',
+
                                     fontSize: 17,
                                     fontFamily: "BakbakOne-Regular",
-                                    //fontFamily: "BakbakOneRegular",
+
                                     color: '#000000',
                                     alignSelf: 'center',
                                     justifyContent: 'center',
-                                    //paddingVertical: 10,
-                                    //paddingVertical: 13,
+
                                     top: '30%',
-                                    //right: '10%',
-                                    //right: '30.3%',
+
                                     right: '25.3%',
                                     lineHeight: 25,
                                     letterSpacing: -0.017

@@ -19,7 +19,7 @@ export default StyleSheet.create({
     second_view: {
         flex: 1,
         width: '90%',
-        //width:width - 10,
+
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -51,22 +51,22 @@ export default StyleSheet.create({
         fontFamily: "BakbakOne-Regular",
         color: "#FFFFFF",
         fontSize: 30,
-        //fontWeight: "400",
+
         alignSelf: 'center',
         letterSpacing: -0.017,
         lineHeight: 42,
-        //paddingVertical:'5%'
+
     },
     desc_text: {
         fontFamily: 'Inter',
         color: "#FFFFFF",
         fontSize: 15,
-        //fontWeight: "400",
+
         letterSpacing: -0.017,
         width: 324,
-        //width: '90%',
+
         height: 54,
-        //alignSelf:'center',
+
         textAlign: 'center',
         lineHeight: 18
     },

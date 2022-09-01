@@ -71,9 +71,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -117,9 +117,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -164,9 +164,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -211,9 +211,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -258,9 +258,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -305,9 +305,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -352,9 +352,9 @@ const SendTicket = ({ navigation }) => {
                                                     fontWeight: "400",
                                                     letterSpacing: -0.017,
                                                     width: 324,
-                                                    //width: '90%',
+
                                                     height: 54,
-                                                    //alignSelf:'center',
+
                                                     textAlign: 'center',
                                                     lineHeight: 18
                                                 }]}>Send</Text>
@@ -374,7 +374,7 @@ const SendTicket = ({ navigation }) => {
                                             alignSelf: 'center', width: width * 0.8,
                                             height: height * 0.07,
                                             borderWidth: 1,
-                                            //bottom: '20%',
+
                                             bottom: '28%',
                                             right: '2%'
                                         },
@@ -386,7 +386,7 @@ const SendTicket = ({ navigation }) => {
                                         borderWidth: 1,
                                         borderRightWidth: 0,
                                         height: height * 0.07,
-                                        //alignItems: 'center',
+
                                         alignSelf: 'center',
                                         backgroundColor: '#DCC7E1',
                                         position: 'relative',

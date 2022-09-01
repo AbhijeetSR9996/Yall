@@ -64,7 +64,7 @@ const WeeklyEventLocation = ({ navigation }) => {
                                         <Text style={styles.buttonText}><Icon1 name="share-2" /> Share</Text>
                                     </TouchableOpacity>
                                 </View>
-                                {/* <Rectangular path="WeeklyEventMap" name="Book Now" style={styles.rectangularButton} /> */}
+
                                 <TouchableOpacity
                                     style={[
                                         {
@@ -84,19 +84,19 @@ const WeeklyEventLocation = ({ navigation }) => {
                                         borderWidth: 1,
                                         borderRightWidth: 0,
                                         height: height * 0.07,
-                                        //alignItems: 'center',
+
                                         alignSelf: 'center',
                                         backgroundColor: '#DCC7E1',
                                         position: 'relative',
                                     }}>
                                         <Text style={{
-                                            //fontWeight: '900',
+
                                             fontSize: 18,
                                             fontFamily: 'BakbakOne-Regular',
                                             color: '#000000',
                                             alignSelf: 'center',
                                             justifyContent: 'center',
-                                            //paddingVertical: 10,
+
                                             top: '30.3%',
                                             right: '30%',
                                         }}>Book Now</Text>

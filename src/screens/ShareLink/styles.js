@@ -5,14 +5,10 @@ const { width, height } = Dimensions.get('window');
 export default StyleSheet.create({
     image_background: {
         backgroundColor: '#E5E5E5',
-        //height:height,
-        //width:414,
+
         width: '100%',
         height: '100%'
-        //width:1344,
-        //height:896,
-        //height:332,
-        //height:532,
+
     },
     left_arrow: {
         fontSize: 50,
@@ -29,11 +25,11 @@ export default StyleSheet.create({
         height: height,
     },
     main_view2: {
-        //marginTop:'20%',
+
         marginTop: '60%',
-        //flex:1,
+
         width: width,
-        //height: height * 0.75,
+
         height: height * 0.95,
         backgroundColor: '#FFFFFF',
         borderTopLeftRadius: 30,
@@ -53,7 +49,7 @@ export default StyleSheet.create({
         marginTop: '5%',
         marginLeft: '5%',
         letterSpacing: -1,
-        //width: width * 0.7
+
         width: 227
     },
     small_text: {
@@ -112,8 +108,7 @@ export default StyleSheet.create({
         width: 10,
         position: 'absolute',
         alignSelf: 'center',
-        //top: '73%',
-        //marginTop:'65%'
+
         marginTop: '60%'
     },
 

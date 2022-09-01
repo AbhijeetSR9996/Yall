@@ -2,11 +2,11 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
 import Styles from './styles';
-//import { icons } from '../../../assets/icons/icons';
+
 import { icons } from '../../../../assets/icons/icons';
 import { height, width } from '../../../services/helper';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-//import Icon1 from 'react-native-vector-icons/Feather';
+
 
 
 export const Rectangular = props => {
@@ -24,7 +24,7 @@ export const Rectangular = props => {
                     right: rgt,
                     top: top
                 }}>
-                {/* <View style={Styles.borderView}> */}
+
                 <View style={{
                     left: 10,
                     top: 8,
@@ -36,7 +36,7 @@ export const Rectangular = props => {
                     backgroundColor: bgcolor,
                     position: 'relative',
                 }}>
-                    {/* <Text style={Styles.buttonText}>{name}</Text> */}
+
                     <Text style={{
                         fontSize: 18,
                         fontFamily: 'BakbakOne-Regular',
@@ -48,7 +48,7 @@ export const Rectangular = props => {
                         lineHeight: 25,
                         letterSpacing: -0.017
                     }}>{name}</Text>
-                    {/* <View style={Styles.borderView1}> */}
+
                     <View style={{
                         width: width * 0.15,
                         borderWidth: 1,
@@ -60,7 +60,7 @@ export const Rectangular = props => {
                         position: 'absolute',
                         marginVertical: -1,
                     }}>
-                        {/* {icons.rightarrow} */}
+
                         <AntDesign name="arrowright" size={30} color={txtcolor2} />
                     </View>
                 </View>

@@ -39,12 +39,12 @@ const Chat = ({ navigation }) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        //console.log('You can use the camera');
+
       } else {
-        //console.log('Camera permission denied');
+
       }
     } catch (err) {
-      //console.warn(err);
+
     }
   };
   const takePhotoFromCamera = () => {
@@ -92,7 +92,7 @@ const Chat = ({ navigation }) => {
             <Text style={{
               color: '#000000',
               fontFamily: 'BakbakOne-Regular',
-              //fontWeight: '400',
+
               fontSize: 15,
               lineHeight: 21,
               letterSpacing: -0.017,
@@ -111,7 +111,6 @@ const Chat = ({ navigation }) => {
       </View>
       <Image source={require('../../../assets/images/horizontaline.png')} style={{ width: '100%', height: '0.1%', marginTop: '2.4%' }} />
       <ScrollView>
-        {/* <View style={{ flex: 0.9, width: width, backgroundColor: 'grey', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'column' }}> */}
         <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '2%' }}>
           <Text style={styles.text}>March 9, 2020</Text>
         </View>
@@ -136,8 +135,7 @@ const Chat = ({ navigation }) => {
                   fontSize: 15,
                   color: '#000000',
                   backgroundColor: 'transparent',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
                   fontWeight: '400',
                   letterSpacing: -0.017,
@@ -154,10 +152,9 @@ const Chat = ({ navigation }) => {
                 <Text style={{
                   fontSize: 15,
                   color: '#000000',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -189,8 +186,7 @@ const Chat = ({ navigation }) => {
                   fontSize: 15,
                   color: '#000000',
                   backgroundColor: 'transparent',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
                   fontWeight: '400',
                   letterSpacing: -0.017,
@@ -207,10 +203,9 @@ const Chat = ({ navigation }) => {
                 <Text style={{
                   fontSize: 15,
                   color: '#000000',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Hey </Text>
@@ -240,8 +235,7 @@ const Chat = ({ navigation }) => {
                   fontSize: 15,
                   color: '#000000',
                   backgroundColor: 'transparent',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
                   fontWeight: '400',
                   letterSpacing: -0.017,
@@ -258,10 +252,9 @@ const Chat = ({ navigation }) => {
                 <Text style={{
                   fontSize: 15,
                   color: '#000000',
-                  //top: '60%',
-                  //left: '25%',
+
                   fontFamily: 'Inter',
-                  //fontWeight: '400',
+
                   letterSpacing: -0.017,
                   lineHeight: 18
                 }}> Djadsahk, </Text>
@@ -269,8 +262,6 @@ const Chat = ({ navigation }) => {
             </ImageBackground>
           </TouchableOpacity>
         </View>
-        {/* <View style={{ flex: 0.1, width: width, backgroundColor: 'grey', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-        </View> */}
 
         <View style={{ width: width, backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
           <View style={{ flex: 0.8, width: width, backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', flexDirection: 'row' }}>
@@ -282,7 +273,7 @@ const Chat = ({ navigation }) => {
             <Card style={{
               width: '100%',
               alignSelf: 'center',
-              //height: 47,
+
               height: 37,
               borderWidth: 1,
               borderRadius: 100,
@@ -291,24 +282,12 @@ const Chat = ({ navigation }) => {
               alignItems: 'center',
               justifyContent: 'space-evenly',
               flexDirection: 'row',
-              //flex: 1,
+
               marginBottom: '2%',
-              //marginBottom: '7%',
+
               marginLeft: '4%',
             }}>
               <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', alignSelf: 'flex-end', marginTop: '-20%', width: '30%', top: '60%' }}>
-                {/* <TouchableOpacity>
-                  <Image source={require('../../../assets/images/gifattachment.png')} />
-                </TouchableOpacity>
-                <View style={{ bottom: '33%' }}><Image source={require('../../../assets/images/GIF.png')} /></View> */}
-                {/* <TouchableOpacity>
-                  <Icon name="GIF" style={{
-                    //fontSize: 50,
-                    //color: '#000000',
-                    //fontWeight: "200",
-                    top: '0%',
-                  }} />
-                </TouchableOpacity> */}
 
               </View>
               <View style={{
@@ -319,19 +298,17 @@ const Chat = ({ navigation }) => {
                   placeholder='Aa'
                   placeholderTextColor='#BEBEBE'
                   style={{
-                    //flex: 1,
+
                     width: '100%',
-                    //height:47,
+
                     fontFamily: 'Inter',
                     fontSize: 20,
                     color: '#000000',
-                    //fontWeight: '400',
-                    //left: '2%',
-                    //top: '7%',
+
                     height: 40,
                     lineHeight: 24,
                     letterSpacing: -0.017,
-                    //backgroundColor: 'pink',
+
                     marginBottom: '-20%'
                   }} />
               </View>
@@ -346,7 +323,6 @@ const Chat = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </View>
-        {/* </View> */}
       </ScrollView>
     </View>
 

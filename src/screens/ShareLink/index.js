@@ -32,7 +32,7 @@ const ShareLink = ({ navigation }) => {
                             }}>
 
                                 <ScrollView>
-                                    {/* <View style={{ flex: 0.15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', marginTop: '-75%' }}> */}
+
                                     <Card style={{
                                         width: '90%',
                                         alignSelf: 'center',
@@ -62,7 +62,7 @@ const ShareLink = ({ navigation }) => {
                                     </Card>
 
 
-                                    {/* </View> */}
+
 
                                     <View style={{ alignItems: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '15%' }}>
 

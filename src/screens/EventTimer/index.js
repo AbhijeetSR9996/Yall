@@ -35,7 +35,7 @@ const EventTimer = ({ navigation }) => {
                             borderRadius: 15,
                             borderWidth: 1,
                             borderColor: '#FFFFFF',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center',
                             elevation: 8
                         }
@@ -51,10 +51,7 @@ const EventTimer = ({ navigation }) => {
                             alignItems: 'center',
                             justifyContent: 'space-evenly',
                             backgroundColor: 'transparent',
-                            // borderRadius: 5,
-                            // borderWidth:1 ,
-                            // borderColor:'#000000',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center'
                         }
                     }>
@@ -73,7 +70,7 @@ const EventTimer = ({ navigation }) => {
                             borderRadius: 15,
                             borderWidth: 1,
                             borderColor: '#FFFFFF',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center',
                             elevation: 8
                         }
@@ -89,10 +86,7 @@ const EventTimer = ({ navigation }) => {
                             alignItems: 'center',
                             justifyContent: 'space-evenly',
                             backgroundColor: 'transparent',
-                            // borderRadius: 5,
-                            // borderWidth:1 ,
-                            // borderColor:'#000000',
-                            //marginTop:'-0.5%',
+
                             textAlignVertical: 'center',
 
                         }
@@ -151,9 +145,7 @@ const EventTimer = ({ navigation }) => {
                         style={
                             {
                                 flex: 5,
-                                //width: '30%',
-                                //alignSelf: 'center',
-                                //height: '100%',
+
                                 alignItems: 'center',
                                 justifyContent: 'space-around',
                                 backgroundColor: 'transparent',
@@ -182,15 +174,12 @@ const EventTimer = ({ navigation }) => {
                         style={
                             {
                                 flex: 1,
-                                //width: '50%',
-                                //alignSelf: 'center',
-                                //height: '100%',
+
                                 alignItems: 'center',
                                 justifyContent: 'flex-start',
                                 backgroundColor: 'transparent',
                                 borderRadius: 15,
-                                // borderWidth:1 ,
-                                // borderColor:'#000000',
+
                             }
                         }>
                         <View style={{ marginTop: '20%' }}>

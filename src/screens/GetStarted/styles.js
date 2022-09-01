@@ -18,13 +18,13 @@ const Styles = StyleSheet.create({
   },
   headline: {
     fontFamily: 'Inter',
-    //fontWeight: '400',
+
     fontSize: 15,
-    //width: width * 0.8,
+
     width: 319,
     alignSelf: 'center',
     textAlign: 'center',
-    //letterSpacing: 0.1,
+
     letterSpacing: -0.017,
     color: '#FFFFFF',
     lineHeight: 18,

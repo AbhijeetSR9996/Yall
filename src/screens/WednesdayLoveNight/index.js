@@ -24,16 +24,14 @@ const WednesdayLoveNight = ({ navigation, route }) => {
 
             .catch(err => console.log(err, 'Something went wrong!'));
     }, [slugUrl]);
-    //console.log('route:', route);
-    //console.log('route params:', route.params);
-    //console.log(slugUrl);
+
     console.log(fetch);
 
 
     return (
         <SafeAreaView >
             <ImageBackground style={styles.image_background}
-                //source={require('../../../assets/images/wednesday-night.png')}
+
                 source={{ uri: getS3Url(S3_EVENTS_FOLDER, fetch.cover_banner_url) }}
             >
                 <View style={styles.main_view}>
@@ -87,19 +85,19 @@ const WednesdayLoveNight = ({ navigation, route }) => {
                                 borderWidth: 1,
                                 borderRightWidth: 0,
                                 height: height * 0.07,
-                                //alignItems: 'center',
+
                                 alignSelf: 'center',
                                 backgroundColor: '#DCC7E1',
                                 position: 'relative',
                             }}>
                                 <Text style={{
-                                    //fontWeight: '900',
+
                                     fontSize: 18,
                                     fontFamily: 'BakbakOne-Regular',
                                     color: '#000000',
                                     alignSelf: 'center',
                                     justifyContent: 'center',
-                                    //paddingVertical: 10,
+
                                     top: '30.3%',
                                     right: '30%',
                                 }}>Book Now</Text>

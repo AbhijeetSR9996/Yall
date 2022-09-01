@@ -62,8 +62,7 @@ const ManageProfile = ({ navigation }) => {
                             source={require('../../../assets/images/settingicon.png')}
                             style={[
                                 {
-                                    //height: 20,
-                                    //width: 30,
+
                                     marginTop: '65%'
                                 },
                             ]}
@@ -109,10 +108,10 @@ const ManageProfile = ({ navigation }) => {
                     {
                         height: 30,
                         width: 70,
-                        //bottom: '20.5%',
+
                         marginTop: '20%',
                         marginBottom: '10%',
-                        //left: 150,
+
                         left: '41%',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -149,7 +148,7 @@ const ManageProfile = ({ navigation }) => {
                         source={require('../../../assets/images/staricon.png')}
                         style={[
                             {
-                                //marginTop: '65%',
+
                                 right: '360%'
                             },
                         ]}
@@ -163,8 +162,7 @@ const ManageProfile = ({ navigation }) => {
                             color: '#000000',
                             letterSpacing: -0.017,
                             lineHeight: 25,
-                            //right: '15%',
-                            //width: 154,
+
                             width: '100%',
                             right: '65%'
                         }}>Manage my events</Text>
@@ -178,7 +176,7 @@ const ManageProfile = ({ navigation }) => {
                         source={require('../../../assets/images/usericon.png')}
                         style={[
                             {
-                                //marginTop: '65%',
+
                                 right: '140%'
                             },
                         ]}
@@ -192,8 +190,7 @@ const ManageProfile = ({ navigation }) => {
                             color: '#000000',
                             letterSpacing: -0.017,
                             lineHeight: 25,
-                            //right: '15%',
-                            //width: 154,
+
                             width: '100%',
                             right: '15%'
                         }}>Manage my payment methods</Text>
@@ -207,7 +204,7 @@ const ManageProfile = ({ navigation }) => {
                         source={require('../../../assets/images/ticketicon.png')}
                         style={[
                             {
-                                //marginTop: '65%',
+
                                 right: '250%'
                             },
                         ]}
@@ -222,7 +219,7 @@ const ManageProfile = ({ navigation }) => {
                             letterSpacing: -0.017,
                             lineHeight: 25,
                             right: '51%',
-                            //width: 154,
+
                             width: '100%',
                         }}>Manage my bookings</Text>
                 </TouchableOpacity>
@@ -235,7 +232,7 @@ const ManageProfile = ({ navigation }) => {
                         source={require('../../../assets/images/walleticon.png')}
                         style={[
                             {
-                                //marginTop: '65%',
+
                                 right: '180%'
                             },
                         ]}
@@ -250,7 +247,7 @@ const ManageProfile = ({ navigation }) => {
                             letterSpacing: -0.017,
                             lineHeight: 25,
                             right: '30%',
-                            //width: 154,
+
                             width: '100%'
                         }}>Manage my subscriptions</Text>
                 </TouchableOpacity>

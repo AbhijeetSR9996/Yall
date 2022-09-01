@@ -36,8 +36,7 @@ import Food from '../../component/Dropdown/Food';
 import Pets from '../../component/Dropdown/Pets';
 import DatePicker from 'react-native-neat-date-picker';
 import { Button } from 'react-native-paper';
-//import DateTimePicker from '@react-native-community/datetimepicker';
-//import DatePicker from 'react-native-date-picker';
+
 import Moment from 'moment';
 
 
@@ -67,7 +66,7 @@ const EditAccount = ({ navigation }) => {
         BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
         return () => { BackHandler.removeEventListener('hardwareBackPress', handleBackButtonClick); };
     }, []);
-    //console.log('date: ', date);
+
 
     const [isEnabledAge, setIsEnabledAge] = useState(false);
     const [isEnabledDetails, setIsEnabledDetails] = useState(false);
@@ -133,12 +132,12 @@ const EditAccount = ({ navigation }) => {
                 },
             );
             if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                //console.log('You can use the camera');
+
             } else {
-                //console.log('Camera permission denied');
+
             }
         } catch (err) {
-            //console.warn(err);
+
         }
     };
     const takePhotoFromCamera = () => {
@@ -192,15 +191,14 @@ const EditAccount = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
+
                             marginLeft: '20%'
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -217,7 +215,7 @@ const EditAccount = ({ navigation }) => {
                                 <Text style={{
                                     color: '#000000',
                                     fontFamily: 'BakbakOne-Regular',
-                                    //fontWeight: '400',
+
                                     fontSize: 15,
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
@@ -408,26 +406,24 @@ const EditAccount = ({ navigation }) => {
                             <Text style={{
                                 color: '#000000',
                                 fontFamily: 'Inter',
-                                //fontWeight: '400',
+
                                 fontSize: 15,
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
                                 width: '100%',
                                 textAlign: 'center',
-                                //alignSelf: 'center'
-                                //width: 333,
-                                //alignSelf: 'center'
+
                             }}>Add a video, pic or loop to get 4% closer to
                                 completing your file and you may even get more
                                 Likes.</Text>
                             <TouchableOpacity
                                 style={{
-                                    //top: '8%',
+
                                     alignSelf: 'center',
                                     width: width * 0.8,
                                     height: height * 0.07,
                                     borderWidth: 1,
-                                    //alignSelf: 'center',
+
                                     right: '2%'
                                 }}
                                 onPress={() => createTwoButtonAlert()}>
@@ -438,25 +434,24 @@ const EditAccount = ({ navigation }) => {
                                     borderWidth: 1,
                                     borderRightWidth: 0,
                                     height: height * 0.07,
-                                    //alignItems: 'center',
+
                                     alignSelf: 'center',
                                     backgroundColor: '#DCC7E1',
                                     position: 'relative',
                                 }}>
                                     <Text style={{
-                                        //fontWeight: '400',
-                                        //fontWeight: '900',
+
+
                                         fontSize: 17,
-                                        //fontFamily: 'Bakbak One',
+
                                         fontFamily: 'BakbakOne-Regular',
                                         color: '#000000',
                                         alignSelf: 'center',
                                         justifyContent: 'center',
-                                        //paddingVertical: 10,
-                                        //paddingVertical: 13,
+
                                         top: '30.3%',
                                         right: '25%',
-                                        //right: '20%',
+
                                         lineHeight: 25,
                                         letterSpacing: -0.017
                                     }}>Add Media</Text>
@@ -481,41 +476,47 @@ const EditAccount = ({ navigation }) => {
 
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'center', height: 279, marginTop: '0%', }}>
                         <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
+                            <View style={{
+                                width: '100%',
+                                height: '31%',
+                                alignSelf: 'center',
 
-                            <TextInput
-                                placeholder=' About Me '
-                                placeholderTextColor='#000000'
-                                onChangeText={handleFirst}
-                                style={{
-                                    width: '100%',
-                                    height: '30%',
-                                    //width: '80%',
-                                    fontSize: 15,
-                                    color: '#000000',
-                                    //fontWeight: '400',
-                                    lineHeight: 21,
-                                    letterSpacing: -0.017,
-                                    fontFamily: 'BakbakOne-Regular',
-                                    textAlign: 'left',
-                                    alignSelf: 'center',
-                                    backgroundColor: 'transparent',
-                                    borderWidth: 2,
-                                    borderColor: '#6B6B6B',
-                                    paddingLeft: '10%',
-                                    //paddingBottom: '0%'
-                                }} />
+                                borderWidth: 2,
+                                borderColor: '#6B6B6B',
+                                paddingLeft: '10%',
+                            }}>
+                                <TextInput
+                                    placeholder=' About Me '
+                                    placeholderTextColor='#000000'
+                                    onChangeText={handleFirst}
+                                    style={{
+                                        width: '90%',
+                                        height: '110%',
+
+                                        fontSize: 15,
+                                        color: '#000000',
+
+                                        lineHeight: 21,
+                                        letterSpacing: -0.017,
+                                        fontFamily: 'BakbakOne-Regular',
+                                        textAlign: 'left',
+                                        alignSelf: 'center',
+                                        backgroundColor: 'transparent',
+
+                                        paddingLeft: '10%',
+                                        marginRight: '33%'
+
+                                    }} /></View>
                             <Text style={{
                                 fontSize: 13,
-                                //fontFamily: 'Bakbak One',
+
                                 fontFamily: 'Inter',
                                 color: '#919191',
                                 alignSelf: 'center',
                                 justifyContent: 'center',
-                                //paddingVertical: 10,
-                                //paddingVertical: 13,
-                                //top: '30.3%',
+
                                 marginRight: '-10%',
-                                //right: '140%',
+
                                 lineHeight: 15,
                                 letterSpacing: -0.017,
                                 width: '90%'
@@ -523,15 +524,12 @@ const EditAccount = ({ navigation }) => {
                             </Text>
                             <Text style={{
                                 fontSize: 15,
-                                //fontFamily: 'Bakbak One',
+
                                 fontFamily: 'Inter',
                                 color: '#000000',
-                                //alignSelf: 'center',
+
                                 justifyContent: 'center',
-                                //paddingVertical: 10,
-                                //paddingVertical: 13,
-                                //top: '30.3%',
-                                //margin: '18%',
+
                                 left: '80%',
                                 bottom: '57%',
                                 lineHeight: 18,
@@ -543,91 +541,7 @@ const EditAccount = ({ navigation }) => {
 
                         <Gender />
 
-                        {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-                            <View style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                //lineHeight: 21,
-                                //letterSpacing: -0.017,
-                                //fontFamily: 'BakbakOne-Regular',
-                                //textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                //paddingLeft: '10%'
 
-                            }}>
-
-                                <Dropdown
-                                    style={{
-                                        //left: 22,
-                                        //right: '52%',
-                                        //width: 150,
-                                        width: '100%',
-                                        borderBottomColor: '#000000',
-                                        borderBottomWidth: 1,
-                                        //textAlign: 'center',
-                                        //alignItems: 'center',
-                                        color: '#000000',
-                                        height: 40,
-                                        backgroundColor: 'transparent'
-                                        //top: -10,
-                                    }}
-                                    placeholder="        Gender"
-                                    placeholderStyle={{
-                                        fontSize: 15,
-                                        //alignItems: 'center',
-                                        textAlign: 'left',
-                                        height: 18,
-                                        fontFamily: 'BakbakOne-Regular',
-                                        lineHeight: 21,
-                                        letterSpacing: -0.017,
-                                        color: '#000000',
-                                        bottom: '1%'
-                                    }}
-                                    selectedTextStyle={{
-                                        color: '#000000',
-                                        fontFamily: 'BakbakOne-Regular',
-                                        textAlign: 'left',
-                                        lineHeight: 21,
-                                        letterSpacing: -0.017,
-                                        left: '100%'
-                                    }}
-                                    data={genderdata}
-                                    iconColor='transparent'
-                                    labelField="label"
-                                    valueField="value"
-                                    value={value}
-                                    onChange={item => {
-                                        setValue(item.value);
-                                    }}
-                                />
-
-                            </View>
-
-
-                            <Text style={{
-                                fontSize: 13,
-                                //fontFamily: 'Bakbak One',
-                                fontFamily: 'Inter',
-                                color: '#919191',
-                                alignSelf: 'center',
-                                justifyContent: 'center',
-                                marginRight: '-13%',
-                                marginBottom: '10%',
-                                //right: '140%',
-                                lineHeight: 15,
-                                letterSpacing: -0.017,
-                                width: '90%',
-                            }}>{value}
-                            </Text>
-
-                        </View> */}
                     </View>
 
 
@@ -646,7 +560,7 @@ const EditAccount = ({ navigation }) => {
                                 //width: '80%',
                                 fontSize: 15,
                                 color: '#000000',
-                                //fontWeight: '400',
+
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 fontFamily: 'BakbakOne-Regular',
@@ -660,17 +574,15 @@ const EditAccount = ({ navigation }) => {
                             }} />
                         <Text style={{
                             fontSize: 13,
-                            //fontFamily: 'Bakbak One',
+
                             fontFamily: 'Inter',
                             color: '#919191',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
+
                             marginRight: '-10%',
                             marginBottom: '10%',
-                            //right: '140%',
+
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
@@ -681,49 +593,6 @@ const EditAccount = ({ navigation }) => {
 
                     <FilmsTV />
 
-                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-                        <TextInput
-                            placeholder=' Films & TV'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleFourth}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstFilm}
-                        </Text>
-
-                    </View> */}
 
                 </View>
 
@@ -733,92 +602,6 @@ const EditAccount = ({ navigation }) => {
 
                     <GoingOut />
 
-                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-                        <TextInput
-                            placeholder=' Hobbies'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleFifth}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstHobby}
-                        </Text>
-
-                    </View> */}
-                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-                        <TextInput
-                            placeholder=' Going out'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleSixth}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstGoingout}
-                        </Text>
-
-                    </View> */}
 
                 </View>
 
@@ -828,94 +611,6 @@ const EditAccount = ({ navigation }) => {
 
                     <Food />
 
-                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-
-                        <TextInput
-                            placeholder=' Music'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleSeventh}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstMusic}
-                        </Text>
-
-                    </View> */}
-                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-
-                        <TextInput
-                            placeholder=' Food'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleEigth}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstFood}
-                        </Text>
-
-                    </View> */}
 
                 </View>
 
@@ -923,73 +618,10 @@ const EditAccount = ({ navigation }) => {
 
                     <Pets />
 
-                    {/* <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', }}>
-
-                        <TextInput
-                            placeholder=' Pets'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleNinth}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} />
-                        <Text style={{
-                            fontSize: 13,
-                            //fontFamily: 'Bakbak One',
-                            fontFamily: 'Inter',
-                            color: '#919191',
-                            alignSelf: 'center',
-                            justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            marginRight: '-10%',
-                            marginBottom: '10%',
-                            //right: '140%',
-                            lineHeight: 15,
-                            letterSpacing: -0.017,
-                            width: '90%',
-                        }}>{firstPet}
-                        </Text>
-
-                    </View> */}
 
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '155%' }}>
 
-                        {/* <TextInput
-                            placeholder=' Your date of birth'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleTenth}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%',
-                            }} /> */}
+
 
                         <TouchableOpacity onPress={openDatePickers} style={{
                             height: '30%', width: '100%', justifyContent: 'center', alignItems: 'flex-start', backgroundColor: 'transparent', borderWidth: 2, borderColor: '#6B6B6B',
@@ -1001,22 +633,19 @@ const EditAccount = ({ navigation }) => {
 
                         <Text style={{
                             fontSize: 13,
-                            //fontFamily: 'Bakbak One',
                             fontFamily: 'Inter',
                             color: '#919191',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
+
                             marginRight: '-13%',
                             marginBottom: '10%',
-                            //right: '140%',
+
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
                         }}>
-                            {/* {dateofbirth} */}
+
                             {Moment(dateofbirth).format('DD/MM/YYYY')}
                         </Text>
 
@@ -1027,28 +656,6 @@ const EditAccount = ({ navigation }) => {
                 <View style={{ flex: 1, flexDirection: 'column', width: '90%', backgroundColor: 'transparent', alignItems: 'stretch', justifyContent: 'space-between', height: 279, marginTop: '0%', marginBottom: '5%', alignSelf: 'center' }}>
                     <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 279, marginTop: '0%', bottom: '178%' }}>
 
-                        {/* <TextInput
-                            placeholder=' My Events'
-                            placeholderTextColor='#000000'
-                            onChangeText={handleEleventh}
-                            style={{
-                                width: '100%',
-                                height: '30%',
-                                //width: '80%',
-                                fontSize: 15,
-                                color: '#000000',
-                                //fontWeight: '400',
-                                lineHeight: 21,
-                                letterSpacing: -0.017,
-                                fontFamily: 'BakbakOne-Regular',
-                                textAlign: 'left',
-                                alignSelf: 'center',
-                                backgroundColor: 'transparent',
-                                borderWidth: 2,
-                                borderColor: '#6B6B6B',
-                                paddingLeft: '10%'
-
-                            }} /> */}
 
                         <TouchableOpacity onPress={openDatePicker} style={{
                             height: '30%', width: '100%', justifyContent: 'center', alignItems: 'flex-start', backgroundColor: 'transparent', borderWidth: 2, borderColor: '#6B6B6B',
@@ -1060,22 +667,20 @@ const EditAccount = ({ navigation }) => {
 
                         <Text style={{
                             fontSize: 13,
-                            //fontFamily: 'Bakbak One',
+
                             fontFamily: 'Inter',
                             color: '#919191',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
+
                             marginRight: '-13%',
                             marginBottom: '10%',
-                            //right: '140%',
+
                             lineHeight: 15,
                             letterSpacing: -0.017,
                             width: '90%',
                         }}>
-                            {/* {dateevent} */}
+
                             {Moment(dateevent).format('DD/MM/YYYY')}
                         </Text>
 
@@ -1085,17 +690,13 @@ const EditAccount = ({ navigation }) => {
                             <Text style={{
                                 fontSize: 15,
                                 fontFamily: 'BakbakOne-Regular',
-                                //fontFamily: 'Inter',
+
                                 color: '#000000',
-                                //alignSelf: 'center',
-                                //justifyContent: 'center',
-                                //paddingVertical: 10,
-                                //paddingVertical: 13,
+
                                 top: '15%',
                                 left: '-6%',
                                 marginRight: '-10%',
-                                //marginTop: '5%',
-                                //right: '140%',
+
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 width: '90%',
@@ -1104,17 +705,13 @@ const EditAccount = ({ navigation }) => {
                             <TouchableOpacity onPress={() => { navigation.navigate('PromptOptions') }}>
                                 <Text style={{
                                     fontSize: 13,
-                                    //fontFamily: 'Bakbak One',
+
                                     fontFamily: 'Inter',
                                     color: '#919191',
-                                    //alignSelf: 'center',
-                                    //justifyContent: 'center',
-                                    //paddingVertical: 10,
-                                    //paddingVertical: 13,
-                                    //top: '30.3%',
+
                                     marginRight: '52%',
                                     top: '50%',
-                                    //right: '140%',
+
                                     lineHeight: 15,
                                     letterSpacing: -0.017,
                                     width: '90%',
@@ -1153,15 +750,13 @@ const EditAccount = ({ navigation }) => {
                         <Text style={{
                             fontSize: 15,
                             fontFamily: 'BakbakOne-Regular',
-                            //fontFamily: 'Inter',
+
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
+
                             marginRight: '-10%',
-                            //marginTop: '5%',
+
                             top: '50%',
                             left: '-6.5%',
                             lineHeight: 21,
@@ -1206,21 +801,20 @@ const EditAccount = ({ navigation }) => {
                                     width: 31,
                                     left: 10,
                                     position: 'absolute',
-                                    //bottom: 40,
+
                                     bottom: 38,
                                 }}
                             />
                             <Text style={{
                                 fontFamily: 'Inter',
                                 position: 'absolute',
-                                //fontWeight: '400',
+
                                 color: '#000000',
                                 left: 55,
                                 fontSize: 12,
-                                //right: 20,
+
                                 letterSpacing: -0.017,
-                                //width: 297
-                                //width: '70%',
+
                                 width: '85%',
                                 bottom: '17%'
                             }}>
@@ -1237,16 +831,14 @@ const EditAccount = ({ navigation }) => {
                         <Text style={{
                             fontSize: 14,
                             fontFamily: 'BakbakOne-Regular',
-                            //fontFamily: 'Inter',
+
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
+
                             marginRight: '3%',
-                            marginTop: '5%',
-                            //right: '140%',
+
+
                             lineHeight: 21,
                             letterSpacing: -0.017,
                             width: '90%',
@@ -1277,12 +869,12 @@ const EditAccount = ({ navigation }) => {
                         <View style={{
                             width: '100%',
                             height: 150,
-                            //height: '100%',
+
                             backgroundColor: 'transparent',
                             position: 'relative',
                             alignItems: 'space-between',
                             justifyContent: 'center',
-                            //marginBottom: '8.5%'
+
                         }}>
                             <Image
                                 source={require('../../../assets/images/spotify.png')}
@@ -1297,7 +889,7 @@ const EditAccount = ({ navigation }) => {
                             <Text style={{
                                 fontFamily: 'BakbakOne-Regular',
                                 position: 'absolute',
-                                //fontWeight: '400',
+
                                 fontSize: 17,
                                 left: 45,
                                 top: 8,
@@ -1321,7 +913,7 @@ const EditAccount = ({ navigation }) => {
                                 fontFamily: 'Inter',
                                 color: '#000000',
                                 position: 'absolute',
-                                //fontWeight: '600',
+
                                 fontSize: 12,
                                 left: 70,
                                 top: 55,
@@ -1333,7 +925,7 @@ const EditAccount = ({ navigation }) => {
                                 fontFamily: 'Inter',
                                 color: '#000000',
                                 position: 'absolute',
-                                //fontWeight: '400',
+
                                 fontSize: 12,
                                 left: 70,
                                 top: 70,
@@ -1358,7 +950,7 @@ const EditAccount = ({ navigation }) => {
                                 style={{ width: 215, height: 40, marginRight: '20%', marginTop: '30%' }}
                                 maximumValue={1}
                                 minimumValue={0}
-                                //step={1}
+
                                 value={.5}
                                 minimumTrackTintColor='#000000'
                                 maximumTrackTintColor='rgba(110, 62, 137, 0.2)'
@@ -1385,12 +977,10 @@ const EditAccount = ({ navigation }) => {
                     <View
                         style={{
                             flex: 1.3,
-                            //width: '100%',
-                            //height: '30%',
-                            //width: '80%',
+
                             fontSize: 15,
                             color: '#000000',
-                            //fontWeight: '400',
+
                             lineHeight: 21,
                             letterSpacing: -0.017,
                             backgroundColor: 'transparent',
@@ -1403,16 +993,14 @@ const EditAccount = ({ navigation }) => {
                         <Text style={{
                             fontSize: 15,
                             fontFamily: 'BakbakOne-Regular',
-                            //fontFamily: 'Inter',
+
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
+
                             marginRight: '10%',
-                            //marginTop: '5%',
-                            //right: '140%',
+
+
                             lineHeight: 21,
                             letterSpacing: -0.017,
                             width: '90%',
@@ -1423,7 +1011,7 @@ const EditAccount = ({ navigation }) => {
                         style={{
                             flex: 2.7,
                             backgroundColor: 'transparent',
-                            //paddingLeft: '10%',
+
                             flexDirection: 'column',
                             alignItems: 'stretch',
                             justifyContent: 'center'
@@ -1432,7 +1020,7 @@ const EditAccount = ({ navigation }) => {
                             style={{
                                 flex: 1,
                                 backgroundColor: 'transparent',
-                                //paddingLeft: '10%',
+
                                 alignItems: 'center',
                                 justifyContent: 'space-around',
                                 flexDirection: 'row'
@@ -1448,7 +1036,7 @@ const EditAccount = ({ navigation }) => {
                             }}>Don't show my age
                             </Text>
                             <Switch
-                                //style={{ left: 10 }}
+
                                 trackColor={{ false: '#767577', true: '#008000' }}
                                 thumbColor={isEnabledAge ? '#008000' : '#f4f3f4'}
                                 ios_backgroundColor="#3e3e3e"
@@ -1475,7 +1063,6 @@ const EditAccount = ({ navigation }) => {
                             }}>Don't show Contact details
                             </Text>
                             <Switch
-                                //style={{ left: 10 }}
                                 trackColor={{ false: '#767577', true: '#008000' }}
                                 thumbColor={isEnabledDetails ? '#008000' : '#f4f3f4'}
                                 ios_backgroundColor="#3e3e3e"

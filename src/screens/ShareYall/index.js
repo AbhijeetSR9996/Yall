@@ -17,7 +17,7 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import Slider from 'react-native-slider';
-//import RangeSlider from 'react-native-range-slider';
+
 import { Card } from 'react-native-paper';
 
 const ShareYall = ({ navigation }) => {
@@ -26,10 +26,6 @@ const ShareYall = ({ navigation }) => {
     const [isActive, setIsActive] = useState(false);
     const btnClick = () => { setIsActive(current => !current); }
 
-    //const wordSelected = "Mi"
-
-    //const [min, setMin] = useState(0);
-    //const [max, setMax] = useState(500);
 
     const [range, setRange] = useState('50km.');
     const [sliding, setSliding] = useState('Inactive');
@@ -49,16 +45,15 @@ const ShareYall = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
+
                             marginLeft: '20%',
-                            //marginRight: '5%',
+
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -76,16 +71,11 @@ const ShareYall = ({ navigation }) => {
                         <Text style={{
                             fontSize: 18,
                             fontFamily: 'BakbakOne-Regular',
-                            //fontFamily: 'Inter',
+
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            //marginRight: '10%',
-                            //marginTop: '5%',
-                            //right: '140%',
+
                             lineHeight: 25,
                             letterSpacing: -0.017,
                             width: '100%',
@@ -93,13 +83,13 @@ const ShareYall = ({ navigation }) => {
                         </Text>
                         <TouchableOpacity
                             style={{
-                                //flex: 1.3,
+
                                 width: '100%',
                                 height: '35%',
-                                //width: '80%',
+
                                 fontSize: 15,
                                 color: '#000000',
-                                //fontWeight: '400',
+
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 backgroundColor: 'transparent',
@@ -116,13 +106,7 @@ const ShareYall = ({ navigation }) => {
                                     fontSize: 15,
                                     fontFamily: 'Inter',
                                     color: '#000000',
-                                    //alignSelf: 'center',
-                                    //justifyContent: 'center',
-                                    //paddingVertical: 10,
-                                    //paddingVertical: 13,
-                                    //top: '30.3%',
-                                    //marginRight: '10%',
-                                    //marginTop: '5%',
+
                                     right: '65%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
@@ -137,11 +121,7 @@ const ShareYall = ({ navigation }) => {
                                     color: '#000000',
                                     alignSelf: 'center',
                                     justifyContent: 'center',
-                                    //paddingVertical: 10,
-                                    //paddingVertical: 13,
-                                    //top: '30.3%',
-                                    //marginRight: '10%',
-                                    //marginTop: '5%',
+
                                     left: '30%',
                                     lineHeight: 18,
                                     letterSpacing: -0.017,
@@ -155,12 +135,7 @@ const ShareYall = ({ navigation }) => {
                             fontFamily: 'Inter',
                             color: '#4B4B4B',
                             alignSelf: 'center',
-                            //justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            //marginRight: '10%',
-                            //marginTop: '5%',
+
                             left: '0%',
                             lineHeight: 15,
                             letterSpacing: -0.017,
@@ -172,16 +147,11 @@ const ShareYall = ({ navigation }) => {
                         <Text style={{
                             fontSize: 18,
                             fontFamily: 'BakbakOne-Regular',
-                            //fontFamily: 'Inter',
+
                             color: '#000000',
                             alignSelf: 'center',
                             justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            //marginRight: '10%',
-                            //marginTop: '5%',
-                            //right: '140%',
+
                             lineHeight: 25,
                             letterSpacing: -0.017,
                             width: '100%',
@@ -193,19 +163,19 @@ const ShareYall = ({ navigation }) => {
                             style={{
                                 width: '100%',
                                 height: '35%',
-                                //width: '80%',
+
                                 fontSize: 15,
                                 color: '#000000',
-                                //fontWeight: '400',
+
                                 lineHeight: 21,
                                 letterSpacing: -0.017,
                                 fontFamily: 'Inter',
-                                //textAlign: 'left',
+
                                 alignSelf: 'center',
                                 backgroundColor: 'transparent',
                                 borderWidth: 2,
                                 borderColor: '#6B6B6B',
-                                //paddingLeft: '5%',
+
 
                             }} />
                         <Text style={{
@@ -213,12 +183,7 @@ const ShareYall = ({ navigation }) => {
                             fontFamily: 'Inter',
                             color: '#4B4B4B',
                             alignSelf: 'center',
-                            //justifyContent: 'center',
-                            //paddingVertical: 10,
-                            //paddingVertical: 13,
-                            //top: '30.3%',
-                            //marginRight: '10%',
-                            //marginTop: '5%',
+
                             left: '0%',
                             lineHeight: 15,
                             letterSpacing: -0.017,
@@ -230,13 +195,9 @@ const ShareYall = ({ navigation }) => {
                                 fontSize: 15,
                                 fontFamily: 'Inter',
                                 color: '#000000',
-                                //alignSelf: 'center',
-                                //justifyContent: 'center',
-                                //paddingVertical: 10,
-                                //paddingVertical: 13,
+
                                 bottom: '380%',
-                                //marginRight: '10%',
-                                //marginTop: '5%',
+
                                 left: '28%',
                                 lineHeight: 18,
                                 letterSpacing: -0.017,
@@ -257,7 +218,7 @@ const ShareYall = ({ navigation }) => {
 
             }}>
                 <ScrollView >
-                    {/* <View style={{ flex: 0.15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', marginTop: '15%', marginBottom: '5%' }}> */}
+
                     <Card style={{
                         width: '90%',
                         alignSelf: 'center',
@@ -285,7 +246,7 @@ const ShareYall = ({ navigation }) => {
                                 width: '85%'
                             }} />
                     </Card>
-                    {/* </View> */}
+
 
                     <View style={{ alignItems: 'center', flexDirection: 'row', backgroundColor: 'transparent', marginTop: '-3%', top: '8%' }}>
 

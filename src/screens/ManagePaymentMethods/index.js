@@ -25,8 +25,6 @@ import { height, width } from '../../services/helper';
 import ImagePicker from 'react-native-image-crop-picker';
 import { Dropdown } from 'react-native-element-dropdown';
 import { Picker } from '@react-native-picker/picker';
-//import DateTimePicker from '@react-native-community/datetimepicker';
-//import DatePicker from 'react-native-date-picker';
 
 const data = [
     { label: 'Gender', value: '' },
@@ -55,16 +53,14 @@ const ManagePaymentMethods = ({ navigation }) => {
                             fontSize: 40,
                             color: '#000000',
                             fontWeight: "200",
-                            //padding: '5%',
-                            //left: '15%',
-                            //marginRight: '5%',
+
                             marginLeft: '20%',
                         }} />
                     </TouchableOpacity>
                     <Text style={{
                         color: '#000000',
                         fontFamily: 'BakbakOne-Regular',
-                        //fontWeight: '400',
+
                         fontSize: 18,
                         lineHeight: 25,
                         letterSpacing: -0.017,
@@ -84,8 +80,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 22,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center',
+
                         }}>SBI Credit</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -94,8 +89,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 18,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center'
+
                         }}>Sahil</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -104,8 +98,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 18,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center'
+
                         }}>Expire 12/2022</Text>
                     </View>
                     <View style={{ flex: 0.8, flexDirection: 'row', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 149, alignSelf: 'center' }}>
@@ -117,10 +110,9 @@ const ManagePaymentMethods = ({ navigation }) => {
                             borderWidth: 1,
                             borderColor: '#C4C4C4',
                             backgroundColor: '#FFFFFF',
-                            //marginTop: '5%',
+
                             width: width * 0.4,
-                            //marginLeft: '10%',
-                            //marginLeft: '-5%',
+
                             height: '60%',
                             marginBottom: '3%'
                         }}
@@ -130,8 +122,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                                 fontSize: 13,
                                 color: '#4B4B4B',
                                 lineHeight: 15
-                                //textAlign: 'center',
-                                //justifyContent:'center'
+
                             }}>Edit</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={{
@@ -142,10 +133,9 @@ const ManagePaymentMethods = ({ navigation }) => {
                             borderWidth: 1,
                             borderColor: '#C4C4C4',
                             backgroundColor: '#FFFFFF',
-                            //marginTop: '5%',
+
                             width: width * 0.4,
-                            //marginLeft: '10%',
-                            //left: '-6%',
+
                             height: '60%',
                             marginBottom: '3%'
                         }}>
@@ -154,8 +144,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                                 fontSize: 13,
                                 color: '#4B4B4B',
                                 lineHeight: 15
-                                //textAlign: 'center',
-                                //justifyContent:'center'
+
                             }}>Remove</Text>
                         </TouchableOpacity>
                     </View>
@@ -170,8 +159,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 22,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center',
+
                         }}>Kodak Mahindra Bank debit card***</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -180,8 +168,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 18,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center'
+
                         }}>Sahil</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -190,8 +177,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 18,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center'
+
                         }}>Expire 12/2022</Text>
                     </View>
                     <View style={{ flex: 0.8, flexDirection: 'row', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 149, alignSelf: 'center' }}>
@@ -203,10 +189,9 @@ const ManagePaymentMethods = ({ navigation }) => {
                             borderWidth: 1,
                             borderColor: '#C4C4C4',
                             backgroundColor: '#FFFFFF',
-                            //marginTop: '5%',
+
                             width: width * 0.4,
-                            //marginLeft: '10%',
-                            //marginLeft: '-5%',
+
                             height: '60%',
                             marginBottom: '3%'
                         }}
@@ -216,8 +201,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                                 fontSize: 13,
                                 color: '#4B4B4B',
                                 lineHeight: 15
-                                //textAlign: 'center',
-                                //justifyContent:'center'
+
                             }}>Edit</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={{
@@ -228,10 +212,9 @@ const ManagePaymentMethods = ({ navigation }) => {
                             borderWidth: 1,
                             borderColor: '#C4C4C4',
                             backgroundColor: '#FFFFFF',
-                            //marginTop: '5%',
+
                             width: width * 0.4,
-                            //marginLeft: '10%',
-                            //left: '-6%',
+
                             height: '60%',
                             marginBottom: '3%'
                         }}>
@@ -240,8 +223,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                                 fontSize: 13,
                                 color: '#4B4B4B',
                                 lineHeight: 15
-                                //textAlign: 'center',
-                                //justifyContent:'center'
+
                             }}>Remove</Text>
                         </TouchableOpacity>
                     </View>
@@ -256,8 +238,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 22,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center',
+
                         }}>SBI Credit</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -266,8 +247,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 18,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center'
+
                         }}>Sahil</Text>
                         <Text style={{
                             fontFamily: 'Inter',
@@ -276,8 +256,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                             lineHeight: 18,
                             marginLeft: '4.5%',
                             marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center'
+
                         }}>Expire 12/2022</Text>
                     </View>
                     <View style={{ flex: 0.8, flexDirection: 'row', width: '100%', backgroundColor: 'transparent', alignItems: 'center', justifyContent: 'space-evenly', height: 149, alignSelf: 'center' }}>
@@ -289,10 +268,9 @@ const ManagePaymentMethods = ({ navigation }) => {
                             borderWidth: 1,
                             borderColor: '#C4C4C4',
                             backgroundColor: '#FFFFFF',
-                            //marginTop: '5%',
+
                             width: width * 0.4,
-                            //marginLeft: '10%',
-                            //marginLeft: '-5%',
+
                             height: '60%',
                             marginBottom: '3%'
                         }}
@@ -302,8 +280,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                                 fontSize: 13,
                                 color: '#4B4B4B',
                                 lineHeight: 15
-                                //textAlign: 'center',
-                                //justifyContent:'center'
+
                             }}>Edit</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={{
@@ -314,10 +291,9 @@ const ManagePaymentMethods = ({ navigation }) => {
                             borderWidth: 1,
                             borderColor: '#C4C4C4',
                             backgroundColor: '#FFFFFF',
-                            //marginTop: '5%',
+
                             width: width * 0.4,
-                            //marginLeft: '10%',
-                            //left: '-6%',
+
                             height: '60%',
                             marginBottom: '3%'
                         }}>
@@ -326,8 +302,7 @@ const ManagePaymentMethods = ({ navigation }) => {
                                 fontSize: 13,
                                 color: '#4B4B4B',
                                 lineHeight: 15
-                                //textAlign: 'center',
-                                //justifyContent:'center'
+
                             }}>Remove</Text>
                         </TouchableOpacity>
                     </View>
@@ -340,10 +315,8 @@ const ManagePaymentMethods = ({ navigation }) => {
                             fontSize: 18,
                             color: '#000000',
                             lineHeight: 22,
-                            //marginLeft: '4.5%',
-                            //marginBottom: '-3%'
-                            //textAlign: 'center',
-                            //justifyContent:'center',
+
+
                         }}>Add a payment method</Text>
                     </TouchableOpacity>
                 </View>

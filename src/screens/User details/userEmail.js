@@ -42,7 +42,7 @@ const UserEmail = ({ navigation }) => {
         />
       </View>
       <View>
-        {/* <CircularButton path="UserGender" style={{top: 45}} /> */}
+
         <View style={{ display: 'flex', marginTop: '135%', marginRight: '10%', alignItems: 'flex-end' }}>
           <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('UserGender')}>
             <View
@@ -51,15 +51,15 @@ const UserEmail = ({ navigation }) => {
                 justifyContent: 'flex-end',
                 marginTop: '100%',
                 borderRadius: 50,
-                //width: width * .105
+
                 width: 40
               }}>
-              {/* {icons.rightcirclearrow} */}
+
               <AntDesign name="rightcircleo" size={40} color="black" style={{ backgroundColor: '#DCC7E1', borderRadius: 50, }} />
             </View>
           </TouchableOpacity>
         </View>
-        {/* <CircularButton path="Gender" style={{top: 45}} /> */}
+
       </View>
     </View>
   );
