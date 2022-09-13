@@ -8,21 +8,8 @@ import Icon1 from 'react-native-vector-icons/Feather';
 import { Rectangular } from '../../component/Buttons/Rectangular';
 import Icon2 from "react-native-vector-icons/EvilIcons";
 import { icons } from '../../../assets/icons/icons';
-import { getEventData } from '../../api/events';
 
-const JoinParty = ({ navigation, route }) => {
-
-    const [events, setEvents] = useState([]);
-    const { slugUrl } = route.params;
-
-    useEffect(() => {
-        getEventData(slugUrl)
-            .then(res => setEvents(res.data))
-            //console.log(res.data))
-            .catch(err => console.log(err, 'Something went wrong!'));
-    }, [slugUrl]);
-
-    console.log("data:", events);
+const JoinParty = ({ navigation }) => {
 
     return (
         <View style={styles.main_view} >
@@ -72,8 +59,7 @@ const JoinParty = ({ navigation, route }) => {
                         },
                     ]}
                     onPress={() => navigation.navigate('WednesdayLoveNight',
-                        { slugUrl: events.slug_url }
-
+                        // { slugUrl: events.slug_url }
                     )}>
                     <View style={{
                         left: 10,

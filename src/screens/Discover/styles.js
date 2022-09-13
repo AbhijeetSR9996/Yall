@@ -24,13 +24,13 @@ export default StyleSheet.create({
         width: width * 0.44,
         height: height * 0.30,
         margin: '3%'
+
     },
     discover_top_heading_text: {
         fontWeight: '800',
         fontSize: 30,
         lineHeight: 30,
         marginTop: "82%",
-        //marginTop: "72%",
         marginLeft: "7%",
         marginRight: '10%',
         alignItems: 'center',

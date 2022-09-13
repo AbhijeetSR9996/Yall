@@ -3,8 +3,6 @@ import { View, Text, ImageBackground, Image, TouchableOpacity, ScrollView, SafeA
 import { useNavigation } from '@react-navigation/native';
 import styles from "./styles"
 import { getEventTypes } from '../../api/events';
-import { S3_EVENTS_FOLDER } from '../../services/constant';
-import { getS3Url } from '../../services/helper';
 
 const Events = () => {
     const navigation = useNavigation();
@@ -14,39 +12,36 @@ const Events = () => {
     useEffect(() => {
         getEventTypes()
             .then(res => setEventType(res.data))
-
+            //console.log(res.data))
             .catch(err => console.log(err, 'Something went wrong!'));
     }, []);
-
-
+    //console.log('data', eventtype);
+    //const arrayData = res.data;
 
     return (
         <SafeAreaView >
             <ImageBackground style={styles.main_container} source={require('../../../assets/images/Gradient-Fill.png')}>
                 <View style={styles.first_container}>
-                    <ScrollView>
-                        {eventtype.map((arrayData) => (
+                    <TouchableOpacity onPress={() => navigation.navigate('WeekendEvent')}>
+                        <ImageBackground
+                            source={require('../../../assets/images/weekend.png')}
+                            style={styles.weekend_event}
+                            resizeMode="stretch"
+                        >
+                            <Text style={styles.weekend_text}>Weekend Events</Text>
+                        </ImageBackground>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.sceond_container}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Discover')}>
+                        <ImageBackground
+                            source={require('../../../assets/images/discover-event.png')}
+                            style={styles.discover_dates}
+                            resizeMode="stretch">
+                            <Text style={styles.discover_text}>Discover Dates</Text>
 
-                            <View key={arrayData.id} style={{ alignItems: 'stretch', flexDirection: 'row' }}>
-
-                                <TouchableOpacity onPress={() => {
-                                    if (arrayData.name == "WEEKEND EVENTS") {
-                                        navigation.navigate('WeekendEvent', { event_id: arrayData.id })
-                                    }
-                                    else { navigation.navigate('Discover', { event_id: arrayData.id }) }
-                                }}>
-                                    <ImageBackground
-                                        source={{ uri: getS3Url(S3_EVENTS_FOLDER, arrayData.banner_url) }}
-                                        style={styles.weekend_event}
-                                        imageStyle={{ borderRadius: 20 }}
-                                        resizeMode="stretch"
-                                    >
-                                        <Text style={styles.weekend_text}>{arrayData.name}</Text>
-                                    </ImageBackground>
-                                </TouchableOpacity>
-                            </View>
-                        ))}
-                    </ScrollView>
+                        </ImageBackground>
+                    </TouchableOpacity>
                 </View>
 
             </ImageBackground>
