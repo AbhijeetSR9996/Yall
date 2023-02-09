@@ -1,109 +1,82 @@
-import React from 'react';
-import { View, Text, Image, TouchableOpacity, Alert, ImageBackground } from 'react-native';
-import { govtStyles } from '../../screens/govtRegister.js/govtStyles';
-
+import React, { useState, useCallback } from 'react';
+import { View, Text, TouchableOpacity, ImageBackground, Image } from 'react-native';
 import { Card } from 'react-native-paper';
-import { Rectangular } from '../../component/Buttons/Rectangular';
-import ImagePicker from 'react-native-image-crop-picker';
-
+import * as ImagePicker from 'react-native-image-picker';
 import Styles from './styles';
 import { icons } from '../../../assets/icons/icons';
+import { ImagePickerModal } from '../../component/ImagePicker/image-picker-modal';
 
 const Selfie = ({ navigation }) => {
-    const requestCameraPermission = async () => {
-        try {
-            const granted = await PermissionsAndroid.request(
-                PermissionsAndroid.PERMISSIONS.CAMERA,
-                {
-                    title: 'Camera Permission',
-                    message: 'Yall needs access to your camera ',
 
-                    buttonNeutral: 'Ask Me Later',
-                    buttonNegative: 'Cancel',
-                    buttonPositive: 'OK',
-                },
-            );
-            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+  const [pickerResponse, setPickerResponse] = useState(null);
+  const [visible, setVisible] = useState(false);
 
-            } else {
-
-            }
-        } catch (err) {
-
-        }
+  const onImageLibraryPress = useCallback(() => {
+    const options = {
+      selectionLimit: 1,
+      mediaType: 'photo',
+      includeBase64: false,
     };
-    const takePhotoFromCamera = () => {
-        ImagePicker.openCamera({
-            width: 700,
-            height: 700,
-            compressImageQuality: 0.7,
-            compressImageMaxWidth: 700,
-            compressImageMaxHeight: 700,
-            includeBase64: true,
-        }).catch(error => { });
+    ImagePicker.launchImageLibrary(options, setPickerResponse);
+  }, []);
+
+  const onCameraPress = useCallback(() => {
+    const options = {
+      saveToPhotos: true,
+      mediaType: 'photo',
+      includeBase64: false,
     };
-    const choosePhotoFromLibrary = () => {
-        ImagePicker.openPicker({
-            width: 700,
-            height: 700,
-            includeBase64: true,
-            compressImageQuality: 0.5,
-        });
-    };
-    const createTwoButtonAlert = () =>
-        Alert.alert(
-            '',
-            'ADD PICTURE',
+    ImagePicker.launchCamera(options, setPickerResponse);
+  }, []);
 
-            [
-                {
-                    text: 'Cancel',
-                    onPress: () => console.log('Cancel Pressed'),
-                    style: 'cancel',
-                },
-                {
-                    text: 'Camera',
-                    onPress: () => takePhotoFromCamera(),
-                },
+  const uri = pickerResponse?.assets && pickerResponse.assets[0].uri;
 
-            ],
-            { cancelable: false },
-        );
+  return (
+    <View style={Styles.container}>
+      <ImageBackground
+        source={require('../../../assets/images/selfieimage.png')}
+        resizeMode='stretch'
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+        }} >
+        <Card style={Styles.card_box}>
+          <Image
+            style={{
+              height: 290,
+              width: 290,
+              borderRadius: 290 / 2,
+            }}
+            source={uri ? { uri } : ''}
+          />
+        </Card>
 
-    return (
-        <View style={Styles.container}>
-            <ImageBackground
-                source={require('../../../assets/images/selfieimage.png')}
-                resizeMode='stretch'
-                style={{
-                    flex: 1,
-                    justifyContent: 'center',
-                }}
-            >
+        <TouchableOpacity
+          onPress={() => setVisible(true)}
+          style={Styles.button_container}>
+          <View style={Styles.borderView}>
+            <Text style={Styles.buttonText}>Take a selfie</Text>
+            <View style={Styles.borderView1}>{icons.rightarrow}</View>
+          </View>
+        </TouchableOpacity>
 
-                <Card
-                    style={Styles.card_box}></Card>
-
-                <TouchableOpacity
-                    onPress={() => createTwoButtonAlert()}
-                    style={Styles.button_container}>
-                    <View style={Styles.borderView}>
-                        <Text style={Styles.buttonText}>Take a selfie</Text>
-                        <View style={Styles.borderView1}>{icons.rightarrow}</View>
-                    </View>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    onPress={() => { navigation.navigate('UserName') }}
-                    style={[Styles.button_container, { top: '15%' }]}>
-                    <View style={Styles.borderView}>
-                        <Text style={[Styles.buttonText, { right: '30%' }]}>Continue</Text>
-                        <View style={Styles.borderView1}>{icons.rightarrow}</View>
-                    </View>
-                </TouchableOpacity>
-
-            </ImageBackground>
-        </View>
-    );
+        <TouchableOpacity
+          onPress={() => { navigation.navigate('UserName') }}
+          style={[Styles.button_container, { top: '15%' }]}>
+          <View style={Styles.borderView}>
+            <Text style={[Styles.buttonText, { right: '30%' }]}>Continue</Text>
+            <View style={Styles.borderView1}>{icons.rightarrow}</View>
+          </View>
+        </TouchableOpacity>
+        <ImagePickerModal
+          isVisible={visible}
+          onClose={() => setVisible(false)}
+          onImageLibraryPress={onImageLibraryPress}
+          onCameraPress={onCameraPress}
+        />
+      </ImageBackground>
+    </View>
+  );
 };
 export default Selfie;
+
