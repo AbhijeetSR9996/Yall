@@ -4,7 +4,7 @@ import { Card } from 'react-native-paper';
 import * as ImagePicker from 'react-native-image-picker';
 import Styles from './styles';
 import { icons } from '../../../assets/icons/icons';
-import { ImagePickerModal } from '../../component/ImagePicker/image-picker-modal';
+import { ImagePickerModal } from '../../component/image-picker-modal';
 
 const Selfie = ({ navigation }) => {
 
